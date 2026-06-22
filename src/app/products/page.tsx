@@ -96,6 +96,25 @@ export default function ProductsPage() {
                 />
               </div>
 
+              {/* Brands */}
+              <div>
+                <h3 className="font-syncopate text-sm font-bold tracking-widest text-[#111] mb-4">BRANDS</h3>
+                <ul className="space-y-3 font-space text-sm text-gray-600">
+                  {brands.map((brand) => (
+                    <li key={brand} className="flex items-center gap-2">
+                      <input 
+                        type="checkbox" 
+                        id={brand} 
+                        checked={selectedBrands.includes(brand)}
+                        onChange={() => toggleBrand(brand)}
+                        className="accent-[#111] w-4 h-4 rounded-none" 
+                      />
+                      <label htmlFor={brand} className="cursor-pointer hover:text-[#111] transition-colors">{brand}</label>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
               {/* Categories */}
               <div>
                 <div className="flex items-center gap-2 mb-4">
@@ -116,7 +135,7 @@ export default function ProductsPage() {
                 </ul>
               </div>
 
-              {/* Brands */}
+              {/* Brands
               <div>
                 <h3 className="font-syncopate text-sm font-bold tracking-widest text-[#111] mb-4">BRANDS</h3>
                 <ul className="space-y-3 font-space text-sm text-gray-600">
@@ -133,7 +152,7 @@ export default function ProductsPage() {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </div> */}
 
             </div>
           </motion.aside>

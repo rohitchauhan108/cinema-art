@@ -23,13 +23,13 @@ export interface Product {
   originalPrice?: string;
   slug: string;
   status: string;
-  desc: string; // Short description for the shop card
+  desc?: string; // Short description for the shop card
   colors: ProductColor[];
   lenses?: string[]; // Optional lens configurations
-  overview: string; // Detailed description for the product page
-  keyFeatures: string[]; // Bullet points for quick scanning
-  richFeatures: ProductFeature[]; // Detailed sections with title/desc
-  specs: ProductSpec[]; // Specifications for accordion
+  overview?: string; // Detailed description for the product page
+  keyFeatures?: string[]; // Bullet points for quick scanning
+  richFeatures?: ProductFeature[]; // Detailed sections with title/desc
+  specs?: ProductSpec[]; // Specifications for accordion
 }
 
 export const products: Product[] = [
@@ -5123,6 +5123,873 @@ export const products: Product[] = [
         },
       ],
     },
+  ],
+},
+
+// === nikon brand start from here camera's
+
+{
+  id: "z-89",
+  name: "Z 89",
+  category: "Mirrorless Cameras",
+  brand: "Nikon",
+  price: "₹2,99,495",
+  slug: "z-89",
+  status: "In Stock",
+
+  colors: [
+    {
+      name: "Black",
+      images: [
+        "/products/nikon/z-8/n1.jpg",
+        "/products/nikon/z-8/n3.jpg",
+        "/products/nikon/z-8/n4.jpg",
+        "/products/nikon/z-8/n5.jpg",
+        "/products/nikon/z-8/n6.jpg",
+        "/products/nikon/z-8/n8.jpg",
+        "/products/nikon/z-8/n9.jpg",
+        "/products/nikon/z-8/n10.jpg",
+        "/products/nikon/z-8/n11.jpg",
+        "/products/nikon/z-8/n12.jpg",
+        "/products/nikon/z-8/n13.jpg",
+        "/products/nikon/z-8/n14.jpg",
+        "/products/nikon/z-8/n15.jpg",
+        "/products/nikon/z-8/n16.jpg",
+      ],
+    },
+  ],
+
+  lenses: ["Body Only"],
+
+  overview:
+    "A legacy inspired by agility and performance. Relish in the autofocus (AF) performance, 9 types of subjects at a time. With the dedicated new airplane mode added to the AF detection menu, the Z 8’s powerful combination of subject detection and 3D-tracking allows you to easily capture fast, erratically moving subjects; while the wide-area AF offers 20 custom options to provide flexibility for any shooting situation. Experience excellent video features with multiple video formats of your choice to tell your visual narratives. Record to your heart’s content with up to 125 minutes of continuous recording in 4K UHD/60p, together with a variety of accessories to elevate your videography creations.",
+
+  specs: [
+    {
+      category: "General Specifications",
+      items: [
+        {
+          label: "Type",
+          value: "Digital camera with support for interchangeable lenses",
+        },
+        {
+          label: "Lens Mount",
+          value: "Nikon Z mount",
+        },
+        {
+          label: "Picture Angle",
+          value: "Full-frame / FX-Format",
+        },
+      ],
+    },
+
+    {
+      category: "Image Sensor",
+      items: [
+        {
+          label: "Sensor Size",
+          value: "35.9 mm × 23.9 mm",
+        },
+        {
+          label: "Sensor Type",
+          value: "CMOS",
+        },
+        {
+          label: "Effective Pixels",
+          value: "45.7 million",
+        },
+        {
+          label: "Total Pixels",
+          value: "52.37 million",
+        },
+        {
+          label: "Image Sensor Format",
+          value: "Full-frame / FX-format",
+        },
+      ],
+    },
+
+    {
+      category: "Movie",
+      items: [
+        {
+          label: "Video Resolution",
+          value: "8K UHD (7680×4320) up to 30p, 4K UHD (3840×2160) up to 120p",
+        },
+        {
+          label: "Movie File Format",
+          value: "NEV, MOV, MP4",
+        },
+        {
+          label: "Video Compression",
+          value: "N-RAW, Apple ProRes RAW HQ, Apple ProRes 422 HQ, H.265/HEVC, H.264/AVC",
+        },
+        {
+          label: "Maximum Recording Time",
+          value: "125 min",
+        },
+        {
+          label: "Audio",
+          value: "Built-in stereo or external microphone",
+        },
+      ],
+    },
+
+    {
+      category: "Storage",
+      items: [
+        {
+          label: "Storage Media",
+          value: "CFexpress Type B, XQD, SD, SDHC (UHS-II), SDXC (UHS-II)",
+        },
+        {
+          label: "Card Slots",
+          value: "1 CFexpress/XQD + 1 SD card slot",
+        },
+      ],
+    },
+
+    {
+      category: "Viewfinder",
+      items: [
+        {
+          label: "Viewfinder Type",
+          value: "OLED Electronic Viewfinder",
+        },
+        {
+          label: "Resolution",
+          value: "Approx. 3690k-dot",
+        },
+        {
+          label: "Frame Coverage",
+          value: "Approx. 100% horizontal and vertical",
+        },
+        {
+          label: "Magnification",
+          value: "Approx. 0.8x",
+        },
+      ],
+    },
+
+    {
+      category: "Shutter",
+      items: [
+        {
+          label: "Shutter Type",
+          value: "Electronic shutter with shutter sound and sensor shield",
+        },
+        {
+          label: "Shutter Speed",
+          value: "1/32000 sec to 30 sec, Bulb, Time",
+        },
+        {
+          label: "Continuous Shooting",
+          value: "Up to 120 fps",
+        },
+      ],
+    },
+
+    {
+      category: "Exposure & ISO",
+      items: [
+        {
+          label: "Exposure Modes",
+          value: "P, S, A, M",
+        },
+        {
+          label: "ISO Range",
+          value: "ISO 64–25600 (expandable to ISO 102400)",
+        },
+      ],
+    },
+
+    {
+      category: "Autofocus",
+      items: [
+        {
+          label: "Autofocus System",
+          value: "Hybrid phase-detection / contrast AF",
+        },
+        {
+          label: "Focus Points",
+          value: "493",
+        },
+        {
+          label: "Image Stabilization",
+          value: "5-axis image sensor shift VR",
+        },
+        {
+          label: "Animal Eye AF",
+          value: "Yes",
+        },
+      ],
+    },
+
+    {
+      category: "Monitor",
+      items: [
+        {
+          label: "Monitor Size",
+          value: "3.2-inch",
+        },
+        {
+          label: "Resolution",
+          value: "Approx. 2100k-dot",
+        },
+        {
+          label: "Type",
+          value: "Vertically and horizontally tilting TFT touch-sensitive LCD",
+        },
+      ],
+    },
+
+    {
+      category: "Connectivity",
+      items: [
+        {
+          label: "USB",
+          value: "USB Type-C",
+        },
+        {
+          label: "HDMI",
+          value: "Type-A",
+        },
+        {
+          label: "Wi-Fi",
+          value: "IEEE 802.11 a/b/g/n/ac",
+        },
+        {
+          label: "App Connectivity",
+          value: "SnapBridge",
+        },
+      ],
+    },
+
+    {
+      category: "Power",
+      items: [
+        {
+          label: "Battery",
+          value: "EN-EL15c Rechargeable Li-ion Battery",
+        },
+      ],
+    },
+
+    {
+      category: "Physical",
+      items: [
+        {
+          label: "Weight",
+          value: "Approx. 910g with battery and memory card",
+        },
+        {
+          label: "Dimensions",
+          value: "Approx. 144 × 118.5 × 83 mm",
+        },
+        {
+          label: "4K UHD",
+          value: "Yes",
+        },
+      ],
+    },
+  ],
+},
+{
+  id: "z-9",
+  name: "Z 9",
+  category: "Mirrorless Cameras",
+  brand: "Nikon",
+  price: "₹4,75,995",
+  slug: "z-9",
+  status: "In Stock",
+
+  colors: [
+    {
+      name: "Black",
+      images: [
+        "/products/nikon/z-9/n1.jpg",
+        "/products/nikon/z-9/n2.jpg",
+        "/products/nikon/z-9/n3.jpg",
+        "/products/nikon/z-9/n4.jpg",
+        "/products/nikon/z-9/n5.jpg",
+        "/products/nikon/z-9/n6.jpg",
+        "/products/nikon/z-9/n7.jpg",
+        "/products/nikon/z-9/n8.jpg",
+      ],
+    },
+  ],
+
+  lenses: ["Body Only"],
+
+  overview:
+    "The time has come for the arrival of a true next level flagship mirrorless camera. Fast, powerful, dependable - in an incredible range of scenarios. With its revolutionary real-time Viewfinder with no blackout, its advanced subject detection technology, and high-speed frame capture, never miss a moment with the Z 9. Film up to 125 minutes of non-stop, in-camera, 8K UHD footage and experience the astonishing resolving power of the NIKKOR Z S-line lenses powered by the Z mount to reveal amazingly sharp detail from edge to edge. Shoot in harsh conditions with absolute confidence of never missing a detail. You'll be ready.",
+   specs: [
+    {
+      category: "General Specifications",
+      items: [
+        { label: "Type", value: "Digital camera with support for interchangeable lenses" },
+        { label: "Lens Mount", value: "Nikon Z mount" },
+        { label: "Picture Angle", value: "Full-frame / FX-format" },
+      ],
+    },
+
+    {
+      category: "Image Sensor",
+      items: [
+        { label: "Sensor Size", value: "35.9 mm × 23.9 mm" },
+        { label: "Sensor Type", value: "Stacked CMOS Sensor" },
+        { label: "Effective Pixels", value: "45.7 million" },
+        { label: "Total Pixels", value: "52.37 million" },
+        { label: "Image Sensor Format", value: "Full-frame / FX-format" },
+      ],
+    },
+
+    {
+      category: "Movie",
+      items: [
+        { label: "Video Resolution", value: "8K UHD up to 30p, 4K UHD up to 120p, Full HD up to 120p" },
+        { label: "Movie File Format", value: "MOV, MP4" },
+        { label: "Video Compression", value: "N-RAW, Apple ProRes RAW HQ, ProRes 422 HQ, H.265/HEVC, H.264/AVC" },
+        { label: "Maximum Recording Time", value: "2 hours 5 minutes" },
+        { label: "Audio", value: "Built-in stereo or external microphone" },
+      ],
+    },
+
+    {
+      category: "Storage",
+      items: [
+        { label: "Storage Media", value: "CFexpress Type B, XQD" },
+        { label: "Card Slots", value: "Dual CFexpress/XQD card slots" },
+      ],
+    },
+
+    {
+      category: "Viewfinder",
+      items: [
+        { label: "Viewfinder Type", value: "OLED Electronic Viewfinder" },
+        { label: "Resolution", value: "Approx. 3690k-dot" },
+        { label: "Frame Coverage", value: "Approx. 100% horizontal and vertical" },
+        { label: "Magnification", value: "Approx. 0.8x" },
+      ],
+    },
+
+    {
+      category: "Shutter",
+      items: [
+        { label: "Shutter Type", value: "Electronic shutter with shutter sound and sensor shield" },
+        { label: "Shutter Speed", value: "1/32000 sec to 30 sec, Bulb, Time" },
+        { label: "Continuous Shooting", value: "Up to 120 fps" },
+      ],
+    },
+
+    {
+      category: "Exposure & ISO",
+      items: [
+        { label: "Exposure Modes", value: "Matrix, Center-weighted, Spot, Highlight-weighted" },
+        { label: "ISO Range", value: "ISO 64–25600 (expandable to ISO 102400)" },
+      ],
+    },
+
+    {
+      category: "Autofocus",
+      items: [
+        { label: "Autofocus System", value: "Hybrid phase-detection / contrast AF" },
+        { label: "Focus Points", value: "493" },
+        { label: "Image Stabilization", value: "5-axis image sensor shift VR" },
+        { label: "Animal Eye AF", value: "Yes" },
+      ],
+    },
+
+    {
+      category: "Monitor",
+      items: [
+        { label: "Monitor Size", value: "3.2-inch" },
+        { label: "Resolution", value: "Approx. 2100k-dot" },
+        { label: "Type", value: "Vertically and horizontally tilting TFT touch-sensitive LCD" },
+      ],
+    },
+
+    {
+      category: "Connectivity",
+      items: [
+        { label: "USB", value: "USB Type-C" },
+        { label: "HDMI", value: "Type-A" },
+        { label: "Wi-Fi", value: "IEEE 802.11 b/g/n/a/ac" },
+        { label: "App Connectivity", value: "SnapBridge" },
+      ],
+    },
+
+    {
+      category: "Power",
+      items: [
+        { label: "Battery", value: "EN-EL18d Rechargeable Li-ion Battery" },
+      ],
+    },
+
+    {
+      category: "Physical",
+      items: [
+        { label: "Weight", value: "Approx. 1340g with battery and memory card" },
+        { label: "Dimensions", value: "149 × 149.5 × 90.5 mm" },
+        { label: "4K UHD", value: "Yes" },
+      ],
+    },
+  ],
+},
+{
+  id: "z-6ii-nikkor-z-24-105mm-f/4-7.1",
+  name: "Z 6II + NIKKOR Z 24-105mm f/4-7.1",
+  category: "Mirrorless Cameras",
+  brand: "Nikon",
+  price: "₹1,71,225",
+  slug: "z-6ii-nikkor-z-24-105mm-f-4-7.1",
+  status: "In Stock",
+
+  colors: [
+    {
+      name: "Black",
+      images: [
+        "/products/nikon/z-6ii/n1.jpg",
+        "/products/nikon/z-6ii/n2.jpg",
+      ],
+    },
+  ],
+
+  lenses: ["Body Only"],
+
+  overview:
+    "The time has come for the arrival of a true next level flagship mirrorless camera. Fast, powerful, dependable - in an incredible range of scenarios. With its revolutionary real-time Viewfinder with no blackout, its advanced subject detection technology, and high-speed frame capture, never miss a moment with the Z 9. Film up to 125 minutes of non-stop, in-camera, 8K UHD footage and experience the astonishing resolving power of the NIKKOR Z S-line lenses powered by the Z mount to reveal amazingly sharp detail from edge to edge. Shoot in harsh conditions with absolute confidence of never missing a detail. You'll be ready.",
+    specs: [
+    {
+      category: "General Specifications",
+      items: [
+        { label: "Type", value: "Digital camera with support for interchangeable lenses" },
+        { label: "Lens Mount", value: "Nikon Z mount" },
+        { label: "Picture Angle", value: "N/A" },
+      ],
+    },
+
+    {
+      category: "Image Sensor",
+      items: [
+        { label: "Sensor Size", value: "35.9 mm × 23.9 mm" },
+        { label: "Sensor Type", value: "CMOS" },
+        { label: "Effective Pixels", value: "24.5 million" },
+        { label: "Total Pixels", value: "25.28 million" },
+        { label: "Image Sensor Format", value: "Full-frame / FX-format" },
+      ],
+    },
+
+    {
+      category: "Movie",
+      items: [
+        { label: "Video Resolution", value: "4K UHD up to 30p, Full HD up to 120p" },
+        { label: "Movie File Format", value: "MOV, MP4" },
+        { label: "Video Compression", value: "H.264 / MPEG-4 AVC" },
+        { label: "Maximum Recording Time", value: "29 min 59 sec" },
+        { label: "Audio", value: "Built-in stereo or external microphone" },
+      ],
+    },
+
+    {
+      category: "Storage",
+      items: [
+        { label: "Storage Media", value: "CFexpress Type B, XQD, SD/SDHC/SDXC UHS-II" },
+        { label: "Card Slots", value: "Dual Slots" },
+      ],
+    },
+
+    {
+      category: "Viewfinder",
+      items: [
+        { label: "Viewfinder Type", value: "OLED Electronic Viewfinder" },
+        { label: "Resolution", value: "Approx. 3690k-dot" },
+        { label: "Frame Coverage", value: "Approx. 100% horizontal and vertical" },
+        { label: "Magnification", value: "Approx. 0.8x" },
+      ],
+    },
+
+    {
+      category: "Shutter",
+      items: [
+        { label: "Shutter Type", value: "Mechanical, Electronic Front-Curtain, Electronic" },
+        { label: "Shutter Speed", value: "1/8000 sec to 900 sec" },
+        { label: "Continuous Shooting", value: "Up to 14 fps" },
+      ],
+    },
+
+    {
+      category: "Exposure & ISO",
+      items: [
+        { label: "Exposure Modes", value: "P, S, A, M, U1, U2, U3" },
+        { label: "ISO Range", value: "ISO 100–51200 (expandable to ISO 204800)" },
+      ],
+    },
+
+    {
+      category: "Autofocus",
+      items: [
+        { label: "Autofocus System", value: "Hybrid phase-detection / contrast AF" },
+        { label: "Focus Points", value: "273" },
+        { label: "Image Stabilization", value: "5-axis image sensor shift VR" },
+        { label: "Animal Eye AF", value: "Yes" },
+      ],
+    },
+
+    {
+      category: "Monitor",
+      items: [
+        { label: "Monitor Size", value: "3.2-inch" },
+        { label: "Resolution", value: "Approx. 2100k-dot" },
+        { label: "Type", value: "Tilting TFT Touch-Sensitive LCD" },
+      ],
+    },
+
+    {
+      category: "Connectivity",
+      items: [
+        { label: "USB", value: "USB Type-C" },
+        { label: "HDMI", value: "Type-C" },
+        { label: "Wi-Fi", value: "IEEE 802.11 b/g/n/a/ac" },
+        { label: "App Connectivity", value: "SnapBridge" },
+      ],
+    },
+
+    {
+      category: "Power",
+      items: [
+        { label: "Battery", value: "EN-EL15c Rechargeable Li-ion Battery" },
+      ],
+    },
+
+    {
+      category: "Physical",
+      items: [
+        { label: "Weight", value: "Approx. 615g" },
+        { label: "Dimensions", value: "134 × 100.5 × 69.5 mm" },
+        { label: "4K UHD", value: "Yes" },
+      ],
+    },
+  ],
+},
+
+// Insta360 brand start from here camera's
+
+{
+  id: "insta360-x4-air",
+  name: "Insta360 X4 Air",
+  category: "Mirrorless Cameras",
+  brand: "Insta360",
+  price: "₹45,990",
+  slug: "insta360-x4-air",
+  status: "In Stock",
+
+  colors: [
+    {
+      name: "Gray",
+      images: [
+        "/products/insta360/x4-1.jpg",
+        "/products/insta360/x4-2.jpg",
+        "/products/insta360/x4-3.jpg",
+      ],
+    },
+  ],
+},
+{
+  id: "insta360-x5-standalone",
+  name: "Insta X5 Standalone",
+  category: "Mirrorless Cameras",
+  brand: "Insta360",
+  price: "₹58,990",
+  slug: "insta360-x5-standalone",
+  status: "In Stock",
+
+  colors: [
+    {
+      name: "Black",
+      images: [
+        "/products/insta360/x5-1.jpg",
+        "/products/insta360/x5-2.jpg",
+        "/products/insta360/x5-3.jpg",
+        "/products/insta360/x5-4.jpg",
+        "/products/insta360/x5-5.jpg",
+        "/products/insta360/x5-6.jpg",
+        "/products/insta360/x5-7.jpg",
+        "/products/insta360/x5-8.jpg",
+      ],
+    },
+  ],
+},
+{
+  id: "insta360-flow-2",
+  name: "Insta Flow 2",
+  category: "Mirrorless Cameras",
+  brand: "Insta360",
+  price: "₹58,990",
+  slug: "insta360-flow-2",
+  status: "In Stock",
+
+  colors: [
+    {
+      name: "Black",
+      images: [
+        "/products/insta360/link1.jpg",
+        "/products/insta360/link2.jpg",
+        "/products/insta360/link3.jpg",
+        "/products/insta360/link4.jpg",
+        "/products/insta360/link5.jpg",
+        "/products/insta360/link6.jpg",
+        "/products/insta360/link7.jpg",
+        "/products/insta360/link8.jpg",
+      ],
+    },
+  ],
+},
+{
+  id: "insta360-link-2",
+  name: "Insta link 2",
+  category: "Mirrorless Cameras",
+  brand: "Insta360",
+  price: "₹58,990",
+  slug: "insta360-flow-2",
+  status: "In Stock",
+
+  colors: [
+    {
+      name: "Gray",
+      images: [
+        "/products/insta360/flow1.jpg",
+        "/products/insta360/flow2.jpg",
+        "/products/insta360/flow3.jpg",
+        "/products/insta360/flow4.jpg",
+        "/products/insta360/flow5.jpg",
+      ],
+    },
+  ],
+},
+{
+  id: "insta360-x5-motorcycle-bundle",
+  name: "Insta X5 Motorcycle Bundle",
+  category: "Mirrorless Cameras",
+  brand: "Insta360",
+  price: "₹58,990",
+  slug: "insta360-x5-motorcycle-bundle",
+  status: "In Stock",
+
+  colors: [
+    {
+      name: "Black",
+      images: [
+        "/products/insta360/bundle1.jpg",
+        "/products/insta360/bundle2.jpg",
+        "/products/insta360/bundle3.jpg",
+        "/products/insta360/bundle4.jpg",
+      ],
+    },
+  ],
+},
+
+// dji brand start from here camera's
+
+{
+  id: "osmo-pocket-4-creator-combo",
+  name: "Osmo Pocket 4 Creator Combo",
+  category: "Mirrorless Cameras",
+  brand: "DJI",
+  price: "₹69,990",
+  slug: "osmo-pocket-4-creator-combo",
+  status: "In Stock",
+
+  colors: [
+    {
+      name: "Black",
+      images: [
+        "/products/dji/creator1.jpg",
+        "/products/dji/creator2.jpg",
+        "/products/dji/creator3.jpg",
+        "/products/dji/creator4.jpg",
+        "/products/dji/creator5.jpg",
+        "/products/dji/creator6.jpg",
+      ],
+    },
+  ],
+  keyFeatures: [
+      '1" CMOS & 4K/240fps',
+      "14-Stop Dynamic Range",
+      "10-bit D-Log",
+      "3-Axis Stabilization & Rotatable Touchscreen",
+      "2× Lossless Zoom",
+      "107GB Built-In Storage & 800MB/s Transfer",
+      "New ActiveTrack & Intelligent Focusing",
+      "OsmoAudio 4-Channel Output"
+    ],
+},
+{
+  id: "osmo-pocket-4-standard-combo",
+  name: "Osmo Pocket 4 Standard Combo",
+  category: "Mirrorless Cameras",
+  brand: "DJI",
+  price: "₹52,990",
+  slug: "osmo-pocket-4-standard-combo",
+  status: "In Stock",
+
+  colors: [
+    {
+      name: "Black",
+      images: [
+        "/products/dji/standard.jpg",
+        "/products/dji/creator3.jpg",
+        "/products/dji/creator4.jpg",
+        "/products/dji/creator5.jpg",
+        "/products/dji/creator6.jpg",
+      ],
+    },
+  ],
+  keyFeatures: [
+      '1" CMOS & 4K/240fps',
+      "14-Stop Dynamic Range",
+      "10-bit D-Log",
+      "3-Axis Stabilization & Rotatable Touchscreen",
+      "2× Lossless Zoom",
+      "107GB Built-In Storage & 800MB/s Transfer",
+      "New ActiveTrack & Intelligent Focusing",
+      "Osmo Audio 4-Channel Output"
+    ],
+},
+{
+  id: "osmo-mobile-7p",
+  name: "Osmo Mobile 7P",
+  category: "Mirrorless Cameras",
+  brand: "DJI",
+  price: "₹52,990",
+  slug: "osmo-mobile-7p",
+  status: "In Stock",
+
+  colors: [
+    {
+      name: "Black",
+      images: [
+        "/products/dji/7p-1.jpg",
+        "/products/dji/7p-3.jpg",
+        "/products/dji/7p-4.jpg",
+        "/products/dji/7p-5.jpg",
+        "/products/dji/7p-6.jpg",
+        "/products/dji/7p-7.jpg",
+        "/products/dji/7p-8.jpg",
+      ],
+    },
+  ],
+  keyFeatures: [
+      "Native Tracking With Integrated Audio & Lighting Capabilities [1]",
+      "Robust 3-Axis Gimbal Stabilization",
+      "Robust 3-Axis Gimbal Stabilization",
+      "Easy Tutorials & One-Tap Editing",
+      "Built-in Extension Rod & Tripod",
+      "Quick Fold & Quick Launch",
+      "10-Hour Battery Life & Phone Charging",
+      "Includes the Multifunctional Module offering intelligent tracking, DJI Mic Mini reception, and lighting features. Unlock tracking with your phone's native camera app or third-party apps, and use the built-in extension rod and tripod for effortless filming."
+    ],
+},
+{
+  id: "dji-osmo-action-5-pro-adventure-combo",
+  name: "DJI Osmo Action 5 Pro Adventure Combo",
+  category: "Mirrorless Cameras",
+  brand: "DJI",
+  price: "₹45,990",
+  slug: "dji-osmo-action-5-pro-adventure-combo",
+  status: "In Stock",
+
+  colors: [
+    {
+      name: "Black",
+      images: [
+        "/products/dji/adventure1.jpg",
+        "/products/dji/adventure2.jpg",
+        "/products/dji/adventure3.jpg",
+        "/products/dji/adventure4.jpg",
+        "/products/dji/adventure5.jpg",
+        "/products/dji/adventure6.jpg",
+        "/products/dji/adventure7.jpg",
+        "/products/dji/adventure8.jpg",
+        "/products/dji/adventure9.jpg",
+        "/products/dji/adventure10.jpg",
+      ],
+    },
+  ],
+  keyFeatures: [
+    "Revolutionary Imaging Performance With an All-New 1/1.3' Sensor",
+    "Center and Track Subjects With Enhanced Precision",
+    "capture more With 4hrs Extended Battery Life",
+    "Dual OLED High-Brightness Touchscreens",
+    "Robust Stabilization With 360 Horizon Steady",
+    "Professional Audio Recording With DJI Microphone Connection",
+    "Includes two additional Extreme Batteries Plus (1950mAh), a Multifunctional Battery Case2, and a 1.5m Extension Rod, ideal for extended outdoor shooting and capturing various angles."
+  ],
+},
+{
+  id: "dji-rs-4-mini",
+  name: "DJI RS 4 Mini",
+  category: "Mirrorless Cameras",
+  brand: "DJI",
+  price: "₹32,990",
+  slug: "dji-rs-4-mini",
+  status: "In Stock",
+
+  colors: [
+    {
+      name: "Gray",
+      images: [
+        "/products/dji/mini1.jpg",
+        "/products/dji/mini3.jpg",
+        "/products/dji/mini4.jpg",
+        "/products/dji/mini5.jpg",
+        "/products/dji/mini6.jpg",
+        "/products/dji/mini7.jpg",
+        "/products/dji/mini8.jpg",
+        "/products/dji/mini9.jpg",
+      ],
+    },
+  ],
+  keyFeatures: [
+    "2nd-Gen Automated Axis Locks",
+    "Intelligent Tracking and Composition",
+    "Teflon™ Enhanced Balancing",
+    "3rd-Gen Native Vertical Shooting",
+    "Responsive Follow Mode",
+    "Handles Cameras and Smartphones"
+  ],
+},
+{
+  id: "osmo-pocket-3-creator-combo",
+  name: "Osmo Pocket 3 Creator Combo",
+  category: "Mirrorless Cameras",
+  brand: "DJI",
+  price: "₹60,990",
+  slug: "osmo-pocket-3-creator-combo",
+  status: "In Stock",
+
+  colors: [
+    {
+      name: "Black",
+      images: [
+        "/products/dji/combo1.jpg",
+        "/products/dji/combo3.jpg",
+        "/products/dji/combo4.jpg",
+        "/products/dji/combo5.jpg",
+        "/products/dji/combo6.jpg",
+        "/products/dji/combo7.jpg",
+      ],
+    },
+  ],
+  keyFeatures: [
+    "1-Inch CMOS & 4K/120fps",
+    "2-inch Rotatable Screen & Smart Horizontal-Vertical Shooting",
+    "3-Axis Gimbal Mechanical Stabilization",
+    "ActiveTrack 6.0",
+    "Full-Pixel Fast Focusing",
+    "D-Log M & 10-Bit",
+    "Stereo Recording",
+    "pocket-Sized"
   ],
 },
 ];
