@@ -284,7 +284,7 @@ export default function ProductPage({
                 ))}
               </ul> */}
               {/* fix code when feature are not in the data there */}
-                {product.keyFeatures?.length > 0 && (
+                {product.keyFeatures && product.keyFeatures.length > 0 && (
                   <>
                     <h3 className="font-syncopate text-sm font-bold tracking-[0.2em] text-[#111] uppercase">
                       KEY FEATURES

@@ -233,17 +233,19 @@ export default function ProductPage({ params }: { params: Promise<{ category: st
               </div>
             )}
 
-            <div className="space-y-4 mb-10">
-              <h3 className="font-syncopate text-sm font-bold tracking-[0.2em] text-[#111] uppercase">KEY FEATURES</h3>
-              <ul className="space-y-3">
-                {product.keyFeatures.map((feature, i) => (
-                  <li key={i} className="flex items-start gap-3 font-space text-sm text-gray-600">
-                    <span className="text-[#111] mt-0.5 opacity-40">■</span>
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {product.keyFeatures && product.keyFeatures.length > 0 && (
+              <div className="space-y-4 mb-10">
+                <h3 className="font-syncopate text-sm font-bold tracking-[0.2em] text-[#111] uppercase">KEY FEATURES</h3>
+                <ul className="space-y-3">
+                  {product.keyFeatures.map((feature, i) => (
+                    <li key={i} className="flex items-start gap-3 font-space text-sm text-gray-600">
+                      <span className="text-[#111] mt-0.5 opacity-40">■</span>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             {/* Actions */}
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
