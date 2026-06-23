@@ -5672,13 +5672,622 @@ export const products: Product[] = [
     },
   ],
 },
+{
+  id: "z-30",
+  name: "Z 30",
+  category: "Mirrorless Cameras",
+  brand: "Nikon",
+  price: "₹59,895",
+  slug: "z-30",
+  status: "In Stock",
+
+  colors: [
+    {
+      name: "Black",
+      images: [
+        "/products/nikon/z-30/n1.jpg",
+        "/products/nikon/z-30/n2.jpg",
+        "/products/nikon/z-30/n3.jpg",
+        "/products/nikon/z-30/n4.jpg",
+        "/products/nikon/z-30/n5.jpg",
+        "/products/nikon/z-30/n6.jpg",
+        "/products/nikon/z-30/n7.jpg",
+        "/products/nikon/z-30/n8.jpg",
+        "/products/nikon/z-30/n9.jpg",
+        "/products/nikon/z-30/n10.jpg",
+        "/products/nikon/z-30/n11.jpg",
+        "/products/nikon/z-30/n12.jpg",
+      ],
+    },
+  ],
+
+  lenses: ["Body Only"],
+
+  overview:
+        "The Z 30 is made for your inner videographer. Hit record with ease whenever inspiration strikes. Excite the ears of your audience with premium sound quality from dual microphones. From teasers to reels to stories to streams, this is where heroes of content are born.",
+  specs: [
+  {
+    category: "General Specifications",
+    items: [
+      { label: "Type", value: "Digital camera with support for interchangeable lenses" },
+      { label: "Lens Mount", value: "Nikon Z mount" },
+      { label: "Picture Angle", value: "APS-C Size / DX-Format" },
+    ],
+  },
+
+  {
+    category: "Image Sensor",
+    items: [
+      { label: "Sensor Size", value: "23.5 mm × 15.7 mm" },
+      { label: "Sensor Type", value: "CMOS" },
+      { label: "Effective Pixels", value: "20.9 million" },
+      { label: "Total Pixels", value: "21.51 million" },
+      { label: "Image Sensor Format", value: "APS-C / DX-format" },
+    ],
+  },
+
+  {
+    category: "Movie",
+    items: [
+      { label: "Video Resolution", value: "4K UHD up to 30p, Full HD up to 120p" },
+      { label: "Movie File Format", value: "MOV, MP4" },
+      { label: "Video Compression", value: "H.264 / MPEG-4 AVC" },
+      { label: "Maximum Recording Time", value: "125 minutes" },
+      { label: "Audio", value: "Built-in stereo or external microphone" },
+    ],
+  },
+
+  {
+    category: "Storage",
+    items: [
+      { label: "Storage Media", value: "SD Memory Card" },
+      { label: "Card Slots", value: "Single Slot" },
+    ],
+  },
+
+  {
+    category: "Viewfinder",
+    items: [
+      { label: "Lens Compatibility", value: "Z mount NIKKOR lenses, F mount NIKKOR lenses (adapter required)" },
+    ],
+  },
+
+  {
+    category: "Shutter",
+    items: [
+      { label: "Shutter Type", value: "Mechanical, Electronic Front-Curtain, Electronic" },
+      { label: "Shutter Speed", value: "30 sec to 1/4000 sec" },
+      { label: "Continuous Shooting", value: "Up to 11 fps" },
+    ],
+  },
+
+  {
+    category: "Exposure & ISO",
+    items: [
+      { label: "Exposure Compensation", value: "±5 EV in 1/3-step increments" },
+      { label: "ISO Range", value: "ISO 100–51200 (expandable to ISO 204800)" },
+      { label: "Metering", value: "Matrix, Center-weighted, Spot, Highlight-weighted" },
+    ],
+  },
+
+  {
+    category: "Autofocus",
+    items: [
+      { label: "Autofocus System", value: "Hybrid phase-detection / contrast AF" },
+      { label: "Focus Points", value: "209" },
+      { label: "Detection Range", value: "-4.5 to +19 EV" },
+      { label: "Animal Eye AF", value: "Yes" },
+    ],
+  },
+
+  {
+    category: "Monitor",
+    items: [
+      { label: "Monitor Size", value: "3.0-inch" },
+      { label: "Resolution", value: "Approx. 1040k-dot" },
+      { label: "Type", value: "Vari-angle TFT Touch-Sensitive LCD" },
+    ],
+  },
+
+  {
+    category: "Connectivity",
+    items: [
+      { label: "USB", value: "USB Type-C (SuperSpeed USB)" },
+      { label: "HDMI", value: "Type-D HDMI" },
+      { label: "Wi-Fi", value: "IEEE 802.11 b/g/n" },
+      { label: "Microphone Input", value: "3.5mm Stereo Mini Jack" },
+    ],
+  },
+
+  {
+    category: "Power",
+    items: [
+      { label: "Battery", value: "EN-EL25 Rechargeable Li-ion Battery" },
+      { label: "Battery Charger", value: "EH-7P Charging AC Adapter (optional)" },
+    ],
+  },
+
+  {
+    category: "Physical",
+    items: [
+      { label: "Weight", value: "Approx. 405g (with battery and memory card)" },
+      { label: "Dimensions", value: "128 × 73.5 × 59.5 mm" },
+      { label: "4K UHD", value: "Yes" },
+    ],
+  },
+],
+},
+{
+  id: "z-50",
+  name: "Z 50",
+  category: "Mirrorless Cameras",
+  brand: "Nikon",
+  price: "₹70,995",
+  slug: "z-50",
+  status: "In Stock",
+
+  colors: [
+    {
+      name: "Black",
+      images: [
+        "/products/nikon/z-50/n1.jpg",
+        "/products/nikon/z-50/n2.jpg",
+        "/products/nikon/z-50/n3.jpg",
+        "/products/nikon/z-50/n4.jpg",
+        "/products/nikon/z-50/n5.jpg",
+      ],
+    },
+  ],
+
+  lenses: ["Body Only"],
+
+  overview:
+        "Small but mighty, simple but powerful—a Z series camera for creating amazing online stories. Professional looking stills, 4K Ultra HD videos, slow motion, time-lapse and more. Wi-Fi® and Bluetooth enabled, plus in-camera video editing. Beautifully designed with a comfortable grip, flip-down touchscreen LCD, smart button layout, extended Electronic Viewfinder and travel-proof ruggedness.",
+  specs: [
+  {
+    category: "General Specifications",
+    items: [
+      { label: "Type", value: "Digital camera with support for interchangeable lenses" },
+      { label: "Lens Mount", value: "Nikon Z mount" },
+      { label: "Picture Angle", value: "APS-C Size / DX-Format" },
+    ],
+  },
+
+  {
+    category: "Image Sensor",
+    items: [
+      { label: "Sensor Size", value: "23.5 × 15.7 mm" },
+      { label: "Sensor Type", value: "CMOS" },
+      { label: "Effective Pixels", value: "20.9 million" },
+      { label: "Total Pixels", value: "21.51 million" },
+      { label: "Image Sensor Format", value: "APS-C / DX-format" },
+    ],
+  },
+
+  {
+    category: "Movie",
+    items: [
+      { label: "Video Resolution", value: "4K UHD up to 30p, Full HD up to 120p" },
+      { label: "Movie File Format", value: "MOV, MP4" },
+      { label: "Video Compression", value: "H.264 / MPEG-4 AVC" },
+      { label: "Maximum Recording Time", value: "29 min 59 sec" },
+      { label: "Audio", value: "Built-in stereo or external microphone" },
+    ],
+  },
+
+  {
+    category: "Storage",
+    items: [
+      { label: "Storage Media", value: "SD, SDHC, SDXC (UHS-I)" },
+      { label: "Card Slots", value: "Single Slot" },
+    ],
+  },
+
+  {
+    category: "Viewfinder",
+    items: [
+      { label: "Viewfinder Type", value: "OLED Electronic Viewfinder" },
+      { label: "Resolution", value: "Approx. 2360k-dot" },
+      { label: "Frame Coverage", value: "Approx. 100% horizontal and vertical" },
+      { label: "Magnification", value: "Approx. 1.02x" },
+    ],
+  },
+
+  {
+    category: "Shutter",
+    items: [
+      { label: "Shutter Type", value: "Mechanical, Electronic Front-Curtain, Electronic" },
+      { label: "Shutter Speed", value: "1/8000 sec to 30 sec" },
+      { label: "Continuous Shooting", value: "Up to 11 fps" },
+    ],
+  },
+
+  {
+    category: "Exposure & ISO",
+    items: [
+      { label: "Exposure Modes", value: "P, S, A, M, U1, U2, U3" },
+      { label: "ISO Range", value: "ISO 100–51200 (expandable to ISO 204800)" },
+    ],
+  },
+
+  {
+    category: "Autofocus",
+    items: [
+      { label: "Autofocus System", value: "Hybrid phase-detection / contrast AF" },
+      { label: "Focus Points", value: "209" },
+      { label: "Image Stabilization", value: "Lens-shift VR (lens dependent)" },
+      { label: "Animal Eye AF", value: "No" },
+    ],
+  },
+
+  {
+    category: "Monitor",
+    items: [
+      { label: "Monitor Size", value: "3.2-inch" },
+      { label: "Resolution", value: "Approx. 1040k-dot" },
+      { label: "Type", value: "Tilting TFT Touch-Sensitive LCD" },
+    ],
+  },
+
+  {
+    category: "Connectivity",
+    items: [
+      { label: "USB", value: "Micro-B USB" },
+      { label: "HDMI", value: "Type-D" },
+      { label: "Wi-Fi", value: "IEEE 802.11 b/g/n/a/ac" },
+      { label: "App Connectivity", value: "SnapBridge" },
+    ],
+  },
+
+  {
+    category: "Power",
+    items: [
+      { label: "Battery", value: "EN-EL25 Rechargeable Li-ion Battery" },
+    ],
+  },
+
+  {
+    category: "Physical",
+    items: [
+      { label: "Weight", value: "Approx. 395g" },
+      { label: "Dimensions", value: "126.5 × 93.5 × 60 mm" },
+      { label: "4K UHD", value: "Yes" },
+    ],
+  },
+],
+},
+{
+  id: "z-50-ii",
+  name: "Z 50II",
+  category: "Mirrorless Cameras",
+  brand: "Nikon",
+  price: "₹77,995",
+  slug: "z-50-ii",
+  status: "In Stock",
+
+  colors: [
+    {
+      name: "Black",
+      images: [
+        "/products/nikon/z-50ii/n1.webp",
+        "/products/nikon/z-50ii/n2.webp",
+        "/products/nikon/z-50ii/n3.webp",
+        "/products/nikon/z-50ii/n4.webp",
+        "/products/nikon/z-50ii/n5.webp",
+        "/products/nikon/z-50ii/n6.webp",
+        "/products/nikon/z-50ii/n7.webp",
+        "/products/nikon/z-50ii/n8.webp",
+        "/products/nikon/z-50ii/n9.webp",
+      ],
+    },
+  ],
+
+  lenses: ["Body Only"],
+
+  overview:
+        "Free your imagination with the Z50II, a compact APS-C mirrorless camera   (DX-format) with mighty yet intuitive features for the emerging content creators. Create cinematic stories and shoot 4K videos with rich detail, even in low light, using the 5.6K oversampling sensor  . Perfect for vlogging and livestreaming, Z50II features product review mode, Hi-Res Zoom, plug-and-play webcam support, and audio recording options. Express your individuality with diverse colour settings,   creator-crafted Imaging Recipes, and 31 types of Creative Picture Controls. Enjoy excellent subject detection, AF performance and powerful image processing for confident and stylish creations.",
+ specs: [
+  {
+    category: "General Specifications",
+    items: [
+      { label: "Type", value: "Digital camera with support for interchangeable lenses" },
+      { label: "Lens Mount", value: "Nikon Z mount" },
+      { label: "Picture Angle", value: "DX-Format (APS-C)" },
+    ],
+  },
+
+  {
+    category: "Image Sensor",
+    items: [
+      { label: "Sensor Size", value: "23.5 × 15.7 mm" },
+      { label: "Sensor Type", value: "CMOS" },
+      { label: "Effective Pixels", value: "20.9 million" },
+      { label: "Total Pixels", value: "21.51 million" },
+      { label: "Dust Reduction", value: "Image Dust Off reference data support" },
+    ],
+  },
+
+  {
+    category: "Video",
+    items: [
+      { label: "Video Resolution", value: "4K UHD up to 60p, Full HD up to 120p" },
+      { label: "Video File Format", value: "MOV, MP4" },
+      { label: "Video Compression", value: "H.265/HEVC (8/10-bit), H.264/AVC (8-bit)" },
+      { label: "Audio Recording", value: "Linear PCM, AAC" },
+      { label: "Special Video Features", value: "N-Log, HLG HDR, Time-lapse, Hi-Res Zoom, Time Codes" },
+    ],
+  },
+
+  {
+    category: "Storage",
+    items: [
+      { label: "Storage Media", value: "SD, SDHC, SDXC (UHS-II Compatible)" },
+      { label: "Card Slots", value: "1 × SD Card Slot" },
+      { label: "File System", value: "DCF 2.0, Exif 2.32, MPEG-A MIAF" },
+    ],
+  },
+
+  {
+    category: "Viewfinder",
+    items: [
+      { label: "Viewfinder Type", value: "0.39-inch OLED Electronic Viewfinder" },
+      { label: "Resolution", value: "Approx. 2360k-dot" },
+      { label: "Frame Coverage", value: "Approx. 100% Horizontal and Vertical" },
+      { label: "Magnification", value: "Approx. 1.02x" },
+      { label: "Eyepoint", value: "19.5 mm" },
+    ],
+  },
+
+  {
+    category: "Shutter",
+    items: [
+      { label: "Shutter Type", value: "Mechanical, Electronic Front-Curtain, Electronic" },
+      { label: "Shutter Speed", value: "1/4000 sec to 30 sec (extendable to 900 sec)" },
+      { label: "Continuous Shooting", value: "Up to 30 fps" },
+      { label: "Flash Sync Speed", value: "Up to 1/250 sec" },
+    ],
+  },
+
+  {
+    category: "Exposure & ISO",
+    items: [
+      { label: "Exposure Modes", value: "P, S, A, M, Auto, Scene Modes" },
+      { label: "Metering", value: "Matrix, Center-Weighted, Spot, Highlight-Weighted" },
+      { label: "Exposure Compensation", value: "±5 EV" },
+      { label: "ISO Range", value: "ISO 100–51200 (expandable to ISO 204800)" },
+    ],
+  },
+
+  {
+    category: "Autofocus",
+    items: [
+      { label: "AF Modes", value: "AF-S, AF-C, AF-A, AF-F, Manual Focus" },
+      { label: "AF Area Modes", value: "Pinpoint, Single-Point, Dynamic-Area, Wide-Area, Auto-Area, 3D Tracking" },
+      { label: "Detection Range", value: "-9 to +19 EV" },
+      { label: "Focus Lock", value: "Half-Press Shutter or AE-L/AF-L Button" },
+    ],
+  },
+
+  {
+    category: "White Balance",
+    items: [
+      { label: "White Balance Modes", value: "Auto, Natural Light Auto, Daylight, Cloudy, Shade, Incandescent, Fluorescent, Flash" },
+      { label: "Color Temperature", value: "2500K – 10000K" },
+      { label: "Custom Presets", value: "Up to 6 Presets" },
+    ],
+  },
+
+  {
+    category: "Monitor",
+    items: [
+      { label: "Monitor Size", value: "3.2-inch Vari-angle LCD" },
+      { label: "Resolution", value: "Approx. 1040k-dot" },
+      { label: "Type", value: "TFT Touch-Sensitive LCD" },
+      { label: "Viewing Angle", value: "170°" },
+    ],
+  },
+
+  {
+    category: "Connectivity",
+    items: [
+      { label: "USB", value: "USB Type-C (SuperSpeed USB)" },
+      { label: "HDMI", value: "Type-D HDMI" },
+      { label: "Microphone Input", value: "3.5 mm Stereo Mini Jack" },
+      { label: "Headphone Output", value: "3.5 mm Stereo Mini Jack" },
+    ],
+  },
+
+  {
+    category: "Power",
+    items: [
+      { label: "Battery", value: "EN-EL25a Rechargeable Li-ion Battery" },
+      { label: "AC Adapter Support", value: "EH-8P AC Adapter (Optional)" },
+    ],
+  },
+
+  {
+    category: "Physical",
+    items: [
+      { label: "Weight", value: "Approx. 550 g with Battery & Card, 495 g Body Only" },
+      { label: "Dimensions", value: "127 × 96.8 × 66.5 mm" },
+      { label: "Card Slot", value: "Single SD Card Slot" },
+    ],
+  },
+]
+},
+{
+  id: "z-f-c",
+  name: "Z FC",
+  category: "Mirrorless Cameras",
+  brand: "Nikon",
+  price: "₹84,995",
+  slug: "z-f-c",
+  status: "In Stock",
+
+  colors: [
+    {
+      name: "All",
+      images: [
+        "/products/nikon/z-fc/n1.webp",
+        "/products/nikon/z-fc/n2.webp",
+        "/products/nikon/z-fc/n3.webp",
+        "/products/nikon/z-fc/n4.webp",
+        "/products/nikon/z-fc/n5.webp",
+        "/products/nikon/z-fc/n6.webp",
+        "/products/nikon/z-fc/n7.webp",
+        "/products/nikon/z-fc/n8.webp",
+        "/products/nikon/z-fc/n9.webp",
+        "/products/nikon/z-fc/n10.webp",
+      ],
+    },
+  ],
+
+  lenses: ["Body Only"],
+
+  overview:
+        "Z fc fuses classic design with Z series technology. Small size with big image quality. 4K videos with full-time Eye-Detection AF. A flip out vlogger screen with live streaming capabilities. This is a camera you think you’ve seen before. But the performance is entirely new.",
+ specs: [
+  {
+    category: "General Specifications",
+    items: [
+      { label: "Type", value: "Digital camera with support for interchangeable lenses" },
+      { label: "Lens Mount", value: "Nikon Z mount" },
+      { label: "Picture Angle", value: "APS-C Size / DX-Format" },
+    ],
+  },
+
+  {
+    category: "Image Sensor",
+    items: [
+      { label: "Sensor Size", value: "23.5 × 15.7 mm" },
+      { label: "Sensor Type", value: "CMOS" },
+      { label: "Effective Pixels", value: "20.9 million" },
+      { label: "Total Pixels", value: "21.51 million" },
+      { label: "Image Sensor Format", value: "APS-C / DX-Format" },
+    ],
+  },
+
+  {
+    category: "Movie",
+    items: [
+      { label: "Video Resolution", value: "4K UHD up to 30p, Full HD up to 120p" },
+      { label: "Movie File Format", value: "MOV, MP4" },
+      { label: "Video Compression", value: "H.264 / MPEG-4 AVC" },
+      { label: "Maximum Recording Time", value: "29 min 59 sec" },
+      { label: "Audio", value: "Built-in Stereo or External Microphone" },
+      { label: "Special Features", value: "Time-Lapse Movie, HDMI Output, Time Code, Active D-Lighting" },
+    ],
+  },
+
+  {
+    category: "Storage",
+    items: [
+      { label: "Storage Media", value: "SD, SDHC, SDXC (UHS-I)" },
+      { label: "Card Slots", value: "Single Slot" },
+      { label: "File System", value: "DCF 2.0, Exif 2.31" },
+    ],
+  },
+
+  {
+    category: "Viewfinder",
+    items: [
+      { label: "Viewfinder Type", value: "OLED Electronic Viewfinder" },
+      { label: "Resolution", value: "Approx. 2360k-dot" },
+      { label: "Frame Coverage", value: "Approx. 100% Horizontal and Vertical" },
+      { label: "Magnification", value: "Approx. 1.02x" },
+      { label: "Eyepoint", value: "19.5 mm" },
+    ],
+  },
+
+  {
+    category: "Shutter",
+    items: [
+      { label: "Shutter Type", value: "Mechanical, Electronic Front-Curtain, Electronic" },
+      { label: "Shutter Speed", value: "1/4000 sec to 900 sec" },
+      { label: "Continuous Shooting", value: "Up to 11 fps" },
+      { label: "Flash Sync Speed", value: "1/200 sec" },
+    ],
+  },
+
+  {
+    category: "Exposure & ISO",
+    items: [
+      { label: "Exposure Modes", value: "Auto, P, S, A, M" },
+      { label: "Metering", value: "Matrix, Center-Weighted, Spot, Highlight-Weighted" },
+      { label: "Exposure Compensation", value: "±3 EV (up to ±5 EV with compensation dial)" },
+      { label: "ISO Range", value: "ISO 100–51200 (expandable to ISO 204800)" },
+    ],
+  },
+
+  {
+    category: "Autofocus",
+    items: [
+      { label: "Autofocus System", value: "Hybrid Phase-Detection / Contrast AF" },
+      { label: "Focus Points", value: "209" },
+      { label: "AF Modes", value: "AF-S, AF-C, AF-A, AF-F, Manual Focus" },
+      { label: "Detection Range", value: "-4.5 to +19 EV" },
+      { label: "Animal Eye AF", value: "Yes" },
+    ],
+  },
+
+  {
+    category: "Monitor",
+    items: [
+      { label: "Monitor Size", value: "3.0-inch" },
+      { label: "Resolution", value: "Approx. 1040k-dot" },
+      { label: "Type", value: "Vari-angle TFT Touch-Sensitive LCD" },
+      { label: "Viewing Angle", value: "170°" },
+    ],
+  },
+
+  {
+    category: "Connectivity",
+    items: [
+      { label: "USB", value: "USB Type-C (SuperSpeed USB)" },
+      { label: "HDMI", value: "Type-D HDMI" },
+      { label: "Microphone Input", value: "3.5 mm Stereo Mini Jack" },
+      { label: "Wi-Fi", value: "IEEE 802.11 b/g/n/a/ac" },
+      { label: "GPS", value: "No" },
+    ],
+  },
+
+  {
+    category: "White Balance",
+    items: [
+      { label: "White Balance Modes", value: "Auto, Daylight, Cloudy, Shade, Incandescent, Fluorescent, Flash" },
+      { label: "White Balance Bracketing", value: "Yes" },
+      { label: "Custom Presets", value: "Supported" },
+    ],
+  },
+
+  {
+    category: "Power",
+    items: [
+      { label: "Battery", value: "EN-EL25 Rechargeable Li-ion Battery" },
+      { label: "Battery Life", value: "Approx. 300 Shots (CIPA)" },
+      { label: "Movie Recording Time", value: "Approx. 75 Minutes" },
+      { label: "Battery Charger", value: "MH-32" },
+    ],
+  },
+
+  {
+    category: "Physical",
+    items: [
+      { label: "Weight", value: "Approx. 380 g" },
+      { label: "Dimensions", value: "134.5 × 93.5 × 43.5 mm" },
+      { label: "Tripod Socket", value: '1/4" (ISO 1222)' },
+      { label: "4K UHD", value: "Yes" },
+    ],
+  },
+]
+},
 
 // Insta360 brand start from here camera's
 
 {
   id: "insta360-x4-air",
   name: "Insta360 X4 Air",
-  category: "Mirrorless Cameras",
+  category: "360 Cameras",
   brand: "Insta360",
   price: "₹45,990",
   slug: "insta360-x4-air",
@@ -5698,7 +6307,7 @@ export const products: Product[] = [
 {
   id: "insta360-x5-standalone",
   name: "Insta X5 Standalone",
-  category: "Mirrorless Cameras",
+  category: "360 Cameras",
   brand: "Insta360",
   price: "₹58,990",
   slug: "insta360-x5-standalone",
@@ -5723,7 +6332,7 @@ export const products: Product[] = [
 {
   id: "insta360-flow-2",
   name: "Insta Flow 2",
-  category: "Mirrorless Cameras",
+  category: "360 Cameras",
   brand: "Insta360",
   price: "₹58,990",
   slug: "insta360-flow-2",
@@ -5748,7 +6357,7 @@ export const products: Product[] = [
 {
   id: "insta360-link-2",
   name: "Insta link 2",
-  category: "Mirrorless Cameras",
+  category: "360 Cameras",
   brand: "Insta360",
   price: "₹58,990",
   slug: "insta360-flow-2",
@@ -5770,7 +6379,7 @@ export const products: Product[] = [
 {
   id: "insta360-x5-motorcycle-bundle",
   name: "Insta X5 Motorcycle Bundle",
-  category: "Mirrorless Cameras",
+  category: "360 Cameras",
   brand: "Insta360",
   price: "₹58,990",
   slug: "insta360-x5-motorcycle-bundle",
@@ -5991,5 +6600,1066 @@ export const products: Product[] = [
     "Stereo Recording",
     "pocket-Sized"
   ],
+},
+
+// GoPro brand start from here
+// compact part
+{
+  id: "mission-1",
+  name: "Mission 1",
+  category: "Compact Cameras",
+  brand: "GoPro",
+  price: "$599.99",
+  slug: "mission-1",
+  status: "In Stock",
+
+  colors: [
+    {
+      name: "Black",
+      images: [
+        "/products/gopro/mission1.webp",
+      ],
+    },
+  ],
+
+  lenses: ["Body Only"],
+  overview:"Compact cinematic camera with a fixed 14mm GoPro lens for serious creators",
+specs: [
+  {
+    category: "General Specifications",
+    items: [
+      { label: "Category", value: "Single-Lens Capture" },
+      { label: "Processor", value: "GP3" },
+      { label: "Image Sensor", value: '1-inch' },
+      { label: "Lens Aperture", value: "F2.8" },
+      { label: "35mm Equivalent Focal Length", value: "15mm - 27mm" },
+    ],
+  },
+
+  {
+    category: "Video",
+    items: [
+      { label: "Maximum Resolution", value: "8K up to 60fps" },
+      { label: "4K Recording", value: "Up to 240fps" },
+      { label: "1080p Recording", value: "Up to 480fps" },
+      { label: "Video Format", value: "MP4" },
+      { label: "Video Compression", value: "H.265 (HEVC)" },
+      { label: "Maximum Bit Rate", value: "240 Mbps" },
+      { label: "Color Depth", value: "8-bit, 10-bit" },
+      { label: "GP-Log Encoding", value: "GP-Log2 with LUT Support" },
+    ],
+  },
+
+  {
+    category: "Photo",
+    items: [
+      { label: "Photo Resolution", value: "50MP, 12MP" },
+      { label: "Photo Format", value: "JPG, GPR (RAW)" },
+      { label: "Photo Output", value: "SuperPhoto, Standard, RAW" },
+      { label: "Photo Aspect Ratio", value: "4:3" },
+      { label: "Frame Grabs From Video", value: "Up to 44.2MP from 8K video" },
+    ],
+  },
+
+  {
+    category: "Time Lapse",
+    items: [
+      { label: "TimeWarp", value: "8K30, 4K30, 1080p30" },
+      { label: "Time Lapse", value: "Video up to 8K30, Photo up to 44MP" },
+      { label: "Night Lapse", value: "Integrated with Time Lapse" },
+      { label: "Creative Effects", value: "Star Trails, Light Painting, Vehicle Lights" },
+    ],
+  },
+
+  {
+    category: "Imaging",
+    items: [
+      { label: "ISO Range", value: "Video: 25-6400, Photo: 100-3200" },
+      { label: "White Balance", value: "2300K - 6500K" },
+      { label: "Exposure Compensation", value: "±2 EV" },
+      { label: "Shutter Speed", value: "1/8 sec - 1/16000 sec (Photo)" },
+      { label: "Color Profiles", value: "Vibrant, Natural, Cinematic, Flat, GP-Log2" },
+    ],
+  },
+
+  {
+    category: "Stabilization",
+    items: [
+      { label: "Video Stabilization", value: "HyperSmooth" },
+      { label: "Horizon Lock", value: "360° Horizon Lock" },
+      { label: "HDR Video", value: "HLG HDR" },
+    ],
+  },
+
+  {
+    category: "Audio",
+    items: [
+      { label: "Audio Modes", value: "Stereo" },
+      { label: "Microphones", value: "4" },
+      { label: "RAW Audio", value: "24-bit PCM, 32-bit Float" },
+      { label: "Multitrack Audio", value: "Up to 3 Tracks" },
+      { label: "Directional Audio", value: "Supported" },
+      { label: "USB Audio", value: "Supported" },
+      { label: "Wireless Audio", value: "Supported" },
+    ],
+  },
+
+  {
+    category: "Capture Modes",
+    items: [
+      { label: "Video Modes", value: "Video, Low Light, Slo-Mo, Burst Slo-Mo, HLG HDR, Subject Tracking, Looping, Endurance" },
+      { label: "Photo Modes", value: "Single Photo, Interval, Burst" },
+      { label: "Time Lapse Modes", value: "Time Lapse, Night Lapse, Star Trails, Light Painting, Vehicle Lights" },
+    ],
+  },
+
+  {
+    category: "Lens Options",
+    items: [
+      { label: "Digital Lenses (Video)", value: "SuperView, Wide, Linear" },
+      { label: "Digital Lenses (Photo)", value: "Wide, Linear" },
+      { label: "Aspect Ratios", value: "16:9, 4:3, 9:16" },
+    ],
+  },
+],
+},
+{
+  id: "mission-1-pro",
+  name: "Mission 1 Pro",
+  category: "Compact Cameras",
+  brand: "GoPro",
+  price: "$699.99",
+  slug: "mission-1-pro",
+  status: "In Stock",
+
+  colors: [
+    {
+      name: "Black",
+      images: [
+        "/products/gopro/mission-1-pro.webp",
+      ],
+    },
+  ],
+
+  lenses: ["Body Only"],
+  overview:"Advance features with a fixed 14mm GoPro lens for Pro level capture",
+specs: [
+  {
+  category: "General Specifications",
+  items: [
+    { label: "Category", value: "Single-Lens Capture" },
+    { label: "Processor", value: "GP3" },
+    { label: "Image Sensor", value: '1"' },
+    { label: "Lens Aperture", value: "F2.8" },
+    { label: "35mm Equivalent Focal Length", value: "15mm - 27mm" },
+  ],
+},
+
+{
+  category: "Imaging",
+  items: [
+    { label: "Shutter Speed", value: "Video: 1/7680 sec, Photo: 1/8 - 1/16000 sec" },
+    { label: "Exposure Compensation", value: "±2 EV" },
+    { label: "White Balance", value: "2300K - 6500K" },
+    { label: "ISO Range", value: "Video: 25-6400, Photo: 100-3200" },
+    { label: "Color Profiles", value: "Vibrant, Natural, Cinematic, Flat, GP-Log2" },
+  ],
+},
+
+{
+  category: "Video",
+  items: [
+    { label: "Maximum Resolution", value: "8K up to 60fps" },
+    { label: "4K Recording", value: "Up to 240fps" },
+    { label: "1080p Recording", value: "Up to 480fps" },
+    { label: "Slow Motion", value: "Up to 16x (480fps)" },
+    { label: "Burst Slow Motion", value: "32x (960fps for 10 sec)" },
+    { label: "Video Format", value: "MP4" },
+    { label: "Video Compression", value: "H.265 (HEVC)" },
+    { label: "Color Bit Depth", value: "8-bit, 10-bit" },
+    { label: "Max Bit Rate", value: "240 Mbps" },
+    { label: "GP-Log", value: "GP-Log2 with LUT Support" },
+  ],
+},
+
+{
+  category: "Photo",
+  items: [
+    { label: "Photo Resolution", value: "50MP, 12MP" },
+    { label: "Photo Output", value: "SuperPhoto, Standard, RAW" },
+    { label: "Photo Format", value: "JPG, GPR (RAW)" },
+    { label: "Aspect Ratio", value: "4:3" },
+    { label: "Frame Grabs", value: "Up to 44.2MP from 8K Video" },
+  ],
+},
+
+{
+  category: "Time Lapse",
+  items: [
+    { label: "TimeWarp", value: "8K30, 4K30, 1080p30" },
+    { label: "Time Lapse", value: "Video up to 8K30, Photo up to 44MP" },
+    { label: "Night Lapse", value: "Supported" },
+    { label: "Creative Effects", value: "Star Trails, Light Painting, Vehicle Lights" },
+  ],
+},
+
+{
+  category: "Stabilization",
+  items: [
+    { label: "Video Stabilization", value: "HyperSmooth" },
+    { label: "Horizon Lock", value: "360° Horizon Lock" },
+    { label: "HDR Video", value: "HLG HDR" },
+  ],
+},
+
+{
+  category: "Capture Modes",
+  items: [
+    { label: "Video Modes", value: "Video, Low Light, Slo-Mo, Burst Slo-Mo, HLG HDR, Subject Tracking, Looping, Endurance" },
+    { label: "Photo Modes", value: "Single Photo, Interval, Burst" },
+    { label: "Time Lapse Modes", value: "Time Lapse, Night Lapse, Star Trails, Light Painting, Vehicle Lights" },
+  ],
+},
+
+{
+  category: "Lens Options",
+  items: [
+    { label: "Digital Lenses (Video)", value: "SuperView, Wide, Linear" },
+    { label: "Digital Lenses (Photo)", value: "Wide, Linear" },
+    { label: "Aspect Ratios", value: "16:9, 4:3, 9:16" },
+  ],
+},
+],
+},
+{
+  id: "mission-1-pro-ils",
+  name: "Mission 1 Pro Ils",
+  category: "Compact Cameras",
+  brand: "GoPro",
+  price: "$699.99",
+  slug: "mission-1-pro",
+  status: "In Stock",
+
+  colors: [
+    {
+      name: "Black",
+      images: [
+        "/products/gopro/mission-1-pro-ils.webp",
+      ],
+    },
+  ],
+
+  lenses: ["Body Only"],
+  overview:"Specialized version for compatibility with interchangeable Micro Four Thirds (MFT) lenses",
+specs: [
+  {
+  category: "General Specifications",
+  items: [
+    { label: "Category", value: "Single-Lens Capture" },
+    { label: "Processor", value: "GP3" },
+    { label: "Image Sensor", value: '1"' },
+    { label: "Lens Aperture", value: "F2.8" },
+    { label: "35mm Equivalent Focal Length", value: "15mm - 27mm" },
+  ],
+},
+
+{
+  category: "Imaging",
+  items: [
+    { label: "Shutter Speed", value: "Video: 1/7680 sec, Photo: 1/8 - 1/16000 sec" },
+    { label: "Exposure Compensation", value: "±2 EV" },
+    { label: "White Balance", value: "2300K - 6500K" },
+    { label: "ISO Range", value: "Video: 25-6400, Photo: 100-3200" },
+    { label: "Color Profiles", value: "Vibrant, Natural, Cinematic, Flat, GP-Log2" },
+  ],
+},
+
+{
+  category: "Video",
+  items: [
+    { label: "Maximum Resolution", value: "8K up to 60fps" },
+    { label: "4K Recording", value: "Up to 240fps" },
+    { label: "1080p Recording", value: "Up to 480fps" },
+    { label: "Slow Motion", value: "Up to 16x (480fps)" },
+    { label: "Burst Slow Motion", value: "32x (960fps for 10 sec)" },
+    { label: "Video Format", value: "MP4" },
+    { label: "Video Compression", value: "H.265 (HEVC)" },
+    { label: "Color Bit Depth", value: "8-bit, 10-bit" },
+    { label: "Max Bit Rate", value: "240 Mbps" },
+    { label: "GP-Log", value: "GP-Log2 with LUT Support" },
+  ],
+},
+
+{
+  category: "Photo",
+  items: [
+    { label: "Photo Resolution", value: "50MP, 12MP" },
+    { label: "Photo Output", value: "SuperPhoto, Standard, RAW" },
+    { label: "Photo Format", value: "JPG, GPR (RAW)" },
+    { label: "Aspect Ratio", value: "4:3" },
+    { label: "Frame Grabs", value: "Up to 44.2MP from 8K Video" },
+  ],
+},
+
+{
+  category: "Time Lapse",
+  items: [
+    { label: "TimeWarp", value: "8K30, 4K30, 1080p30" },
+    { label: "Time Lapse", value: "Video up to 8K30, Photo up to 44MP" },
+    { label: "Night Lapse", value: "Supported" },
+    { label: "Creative Effects", value: "Star Trails, Light Painting, Vehicle Lights" },
+  ],
+},
+
+{
+  category: "Stabilization",
+  items: [
+    { label: "Video Stabilization", value: "HyperSmooth" },
+    { label: "Horizon Lock", value: "360° Horizon Lock" },
+    { label: "HDR Video", value: "HLG HDR" },
+  ],
+},
+
+{
+  category: "Capture Modes",
+  items: [
+    { label: "Video Modes", value: "Video, Low Light, Slo-Mo, Burst Slo-Mo, HLG HDR, Subject Tracking, Looping, Endurance" },
+    { label: "Photo Modes", value: "Single Photo, Interval, Burst" },
+    { label: "Time Lapse Modes", value: "Time Lapse, Night Lapse, Star Trails, Light Painting, Vehicle Lights" },
+  ],
+},
+
+{
+  category: "Lens Options",
+  items: [
+    { label: "Digital Lenses (Video)", value: "SuperView, Wide, Linear" },
+    { label: "Digital Lenses (Photo)", value: "Wide, Linear" },
+    { label: "Aspect Ratios", value: "16:9, 4:3, 9:16" },
+  ],
+},
+],
+},
+// action camera part
+{
+  id: "hero-13-black",
+  name: "HERO13 Black",
+  category: "Action Cameras",
+  brand: "GoPro",
+  price: "$429.99",
+  slug: "hero-13-black",
+  status: "In Stock",
+
+  colors: [
+    {
+      name: "Black",
+      images: [
+        "/products/gopro/hero-13-black.webp",
+      ],
+    },
+  ],
+
+  lenses: ["Body Only"],
+  overview:"Works with the new HB-Series Lenses, improved power solutions, magnetic mounting + more",
+specs: [
+  {
+    category: "General Specifications",
+    items: [
+      { label: "Category", value: "Single-Lens Capture" },
+      { label: "Processor", value: "GP2" },
+      { label: "Image Sensor", value: '1/1.9" CMOS (27.6MP)' },
+      { label: "Lens Aperture", value: "F2.5" },
+      { label: "35mm Equivalent Focal Length", value: "12mm - 39mm" },
+    ],
+  },
+
+  {
+    category: "Design & Build",
+    items: [
+      { label: "Dimensions", value: "71.8 × 50.8 × 33.6 mm" },
+      { label: "Weight", value: "159g (with battery), 125g (without battery)" },
+      { label: "Battery", value: "1900mAh Enduro Battery" },
+      { label: "Waterproof", value: "10m (33ft)" },
+      { label: "Operating Temperature", value: "-10°C to 35°C" },
+    ],
+  },
+
+  {
+    category: "Display",
+    items: [
+      { label: "Rear Display", value: '2.27" Touch Display' },
+      { label: "Front Display", value: '1.4" Color Display' },
+      { label: "Cover Glass", value: "Removable Water-Repelling Cover Glass" },
+    ],
+  },
+
+  {
+    category: "Video",
+    items: [
+      { label: "Maximum Resolution", value: "5.3K up to 60fps" },
+      { label: "4K Recording", value: "Up to 120fps" },
+      { label: "1080p Recording", value: "Up to 240fps" },
+      { label: "Slow Motion", value: "8x (1080p, 2.7K), 4x (4K), 2x (5.3K)" },
+      { label: "Burst Slow Motion", value: "13x (400fps), 12x (360fps)" },
+      { label: "Video Compression", value: "H.265 (HEVC)" },
+      { label: "Color Bit Depth", value: "8-bit, 10-bit (4K and higher)" },
+      { label: "Maximum Bit Rate", value: "120 Mbps" },
+      { label: "HDR Video", value: "Supported" },
+    ],
+  },
+
+  {
+    category: "Photo",
+    items: [
+      { label: "Photo Resolution", value: "27.13MP (5568 × 4872)" },
+      { label: "Photo Output", value: "SuperPhoto, HDR, Standard, RAW" },
+      { label: "Photo Format", value: "JPG, GPR (RAW)" },
+      { label: "RAW Capture", value: "27.13MP" },
+      { label: "Frame Grabs", value: "Up to 24.69MP from 5.3K Video" },
+    ],
+  },
+
+  {
+    category: "Time Lapse",
+    items: [
+      { label: "TimeWarp", value: "TimeWarp 3.0 up to 5.3K" },
+      { label: "TimeWarp Speeds", value: "Auto, 2x, 5x, 10x, 15x, 30x" },
+      { label: "Time Lapse Resolution", value: "Up to 5.3K" },
+      { label: "Night Lapse", value: "Up to 5.3K" },
+      { label: "Creative Effects", value: "Star Trails, Light Painting, Vehicle Light Trails" },
+    ],
+  },
+
+  {
+    category: "Stabilization",
+    items: [
+      { label: "Video Stabilization", value: "HyperSmooth 6.0" },
+      { label: "Horizon Lock", value: "360° Horizon Lock & Horizon Leveling" },
+      { label: "Exposure Control", value: "Supported" },
+      { label: "Exposure Compensation", value: "±2 EV" },
+    ],
+  },
+
+  {
+    category: "Capture Modes",
+    items: [
+      { label: "Photo Modes", value: "Standard Photo, Burst Photo, Night Photo" },
+      { label: "Looping Video", value: "Supported" },
+      { label: "HindSight", value: "Supported" },
+      { label: "Scheduled Capture", value: "Supported" },
+      { label: "Duration Capture", value: "Supported" },
+    ],
+  },
+
+  {
+    category: "Lens Options",
+    items: [
+      { label: "Digital Lenses (Video)", value: "HyperView, SuperView, Wide, Linear, Linear + Horizon Lock" },
+      { label: "Digital Lenses (Photo)", value: "Wide, Linear" },
+      { label: "Aspect Ratios", value: "16:9, 9:16, 4:3, 8:7" },
+    ],
+  },
+
+  {
+    category: "Connectivity",
+    items: [
+      { label: "Storage", value: "microSD (A2 V30 or higher)" },
+      { label: "USB", value: "USB-C" },
+      { label: "Live Streaming", value: "1080p30 with HyperSmooth" },
+      { label: "Webcam Mode", value: "Up to 1080p30" },
+      { label: "Timecode Sync", value: "Supported" },
+    ],
+  },
+],
+},
+{
+  id: "hero-13-black-creator-edition",
+  name: "HERO13 Black Creator Edition",
+  category: "Action Cameras",
+  brand: "GoPro",
+  price: "$649.99",
+  slug: "hero-13-black-creator-edition",
+  status: "In Stock",
+
+  colors: [
+    {
+      name: "Black",
+      images: [
+        "/products/gopro/creator-edition.webp",
+      ],
+    },
+  ],
+
+  lenses: ["Body Only"],
+  overview:"HERO13 Black, battery hand grip, directional mic + LED lighting.",
+specs: [
+  {
+    category: "General Specifications",
+    items: [
+      { label: "Processor", value: "GP2" },
+      { label: "Image Sensor", value: '1/1.9" CMOS, 27.6MP' },
+      { label: "Lens Aperture", value: "F2.5" },
+      { label: "35mm Equivalent Focal Length", value: "12mm - 39mm" },
+      { label: "Battery", value: "Removable 1900mAh Enduro Battery" },
+    ],
+  },
+
+  {
+    category: "Design & Build",
+    items: [
+      { label: "Dimensions", value: "71.8 × 50.8 × 33.6 mm" },
+      { label: "Weight", value: "159g (with battery), 125g (without battery)" },
+      { label: "Displays", value: 'Rear 2.27" Touch Display, Front 1.4" Color Display' },
+      { label: "Waterproof Rating", value: "10m (33ft)" },
+      { label: "Operating Temperature", value: "-10°C to 35°C" },
+    ],
+  },
+
+  {
+    category: "Video",
+    items: [
+      { label: "Maximum Resolution", value: "5.3K up to 60fps" },
+      { label: "4K Recording", value: "Up to 120fps" },
+      { label: "1080p Recording", value: "Up to 240fps" },
+      { label: "Slow Motion", value: "Up to 8x" },
+      { label: "Burst Slow Motion", value: "Up to 13x (400fps)" },
+      { label: "Video Compression", value: "H.265 (HEVC)" },
+      { label: "Color Bit Depth", value: "8-bit, 10-bit (4K and above)" },
+      { label: "Maximum Bit Rate", value: "120 Mbps" },
+      { label: "Aspect Ratios", value: "16:9, 9:16, 4:3, 8:7" },
+      { label: "Video Stabilization", value: "HyperSmooth 6.0" },
+    ],
+  },
+
+  {
+    category: "Photo",
+    items: [
+      { label: "Photo Resolution", value: "27.13MP (5568 × 4872)" },
+      { label: "Photo Modes", value: "Standard Photo, Burst Photo, Night Photo" },
+      { label: "Photo Output", value: "SuperPhoto, HDR, Standard, RAW" },
+      { label: "Photo Format", value: "JPG, GPR (RAW)" },
+      { label: "RAW Capture", value: "27.13MP RAW" },
+      { label: "Frame Grabs", value: "Up to 24.69MP from 5.3K Video" },
+    ],
+  },
+
+  {
+    category: "Time Lapse",
+    items: [
+      { label: "TimeWarp", value: "TimeWarp 3.0 up to 5.3K" },
+      { label: "TimeWarp Speeds", value: "Auto, 2x, 5x, 10x, 15x, 30x" },
+      { label: "Time Lapse Resolution", value: "Up to 5.3K" },
+      { label: "Night Lapse", value: "Supported up to 5.3K" },
+      { label: "Creative Effects", value: "Star Trails, Light Painting, Vehicle Light Trails" },
+    ],
+  },
+
+  {
+    category: "Stabilization & HDR",
+    items: [
+      { label: "Video Stabilization", value: "HyperSmooth 6.0" },
+      { label: "Horizon Lock", value: "360° Horizon Lock & Horizon Leveling" },
+      { label: "HDR Video", value: "Supported up to 5.3K" },
+      { label: "Exposure Compensation", value: "±2 EV" },
+    ],
+  },
+
+  {
+    category: "Lens Options",
+    items: [
+      { label: "Digital Lenses (Video)", value: "HyperView, SuperView, Wide, Linear" },
+      { label: "Horizon Lock Lens", value: "Linear + Horizon Lock / Leveling" },
+      { label: "Digital Lenses (Photo)", value: "Wide, Linear" },
+      { label: "Video Zoom", value: "Up to 2x" },
+    ],
+  },
+
+  {
+    category: "Connectivity & Storage",
+    items: [
+      { label: "Storage", value: "microSD (Class A2 V30 or higher)" },
+      { label: "USB", value: "USB-C" },
+      { label: "HDMI", value: "Media Mod Compatible" },
+      { label: "Live Streaming", value: "1080p30 with HyperSmooth" },
+      { label: "Webcam Mode", value: "Up to 1080p30" },
+    ],
+  },
+
+  {
+    category: "Advanced Features",
+    items: [
+      { label: "Looping Video", value: "Yes" },
+      { label: "HindSight", value: "Yes" },
+      { label: "Scheduled Capture", value: "Yes" },
+      { label: "Duration Capture", value: "Yes" },
+      { label: "Timecode Sync", value: "Yes" },
+    ],
+  },
+],
+},
+{
+  id: "hero-13-black-ultra-wide-edition",
+  name: "HERO13 Black Ultra Wide Edition",
+  category: "Action Cameras",
+  brand: "GoPro",
+  price: "$649.99",
+  slug: "hero-13-black-ultra-wide-edition",
+  status: "In Stock",
+
+  colors: [
+    {
+      name: "Black",
+      images: [
+        "/products/gopro/ultra-wide-edition.webp",
+      ],
+    },
+  ],
+
+  lenses: ["Body Only"],
+  overview:"Widest + tallest POV shots, including a 177° field of view in 4K60.",
+specs: [
+  {
+    category: "General Specifications",
+    items: [
+      { label: "Processor", value: "GP2" },
+      { label: "Image Sensor", value: '1/1.9" CMOS, 27.6MP' },
+      { label: "Lens Aperture", value: "F2.5" },
+      { label: "35mm Equivalent Focal Length", value: "12mm - 39mm" },
+      { label: "Battery", value: "Removable 1900mAh Enduro Battery" },
+    ],
+  },
+
+  {
+    category: "Design & Build",
+    items: [
+      { label: "Dimensions", value: "71.8 × 50.8 × 33.6 mm (Standard Lens)" },
+      { label: "Dimensions (Ultra Wide Lens)", value: "72.4 × 51.3 × 42.1 mm" },
+      { label: "Weight", value: "159g (Standard Lens), 178g (Ultra Wide Lens)" },
+      { label: "Displays", value: 'Rear 2.27" Touch Display, Front 1.4" Color Display' },
+      { label: "Waterproof Rating", value: "10m (Standard Lens), 5m (Ultra Wide Lens)" },
+    ],
+  },
+
+  {
+    category: "Video",
+    items: [
+      { label: "Maximum Resolution", value: "5.3K up to 60fps (Standard Lens)" },
+      { label: "4K Recording", value: "Up to 120fps (Standard Lens), 60fps (Ultra Wide Lens)" },
+      { label: "1080p Recording", value: "Up to 240fps" },
+      { label: "Video Compression", value: "H.265 (HEVC)" },
+      { label: "Color Bit Depth", value: "8-bit, 10-bit (4K and above)" },
+      { label: "Maximum Bit Rate", value: "120 Mbps" },
+      { label: "Aspect Ratios", value: "16:9, 9:16, 4:3, 8:7, 1:1" },
+      { label: "Video Stabilization", value: "HyperSmooth 6.0" },
+    ],
+  },
+
+  {
+    category: "Photo",
+    items: [
+      { label: "Photo Resolution", value: "27.13MP (Standard Lens), 15MP (Ultra Wide Lens)" },
+      { label: "Photo Modes", value: "Standard Photo, Burst Photo, Night Photo" },
+      { label: "Photo Output", value: "SuperPhoto, HDR, Standard, RAW" },
+      { label: "Photo Format", value: "JPG, GPR (RAW)" },
+      { label: "RAW Capture", value: "27.13MP RAW (Standard Lens)" },
+      { label: "Frame Grabs", value: "Up to 24.69MP from 5.3K Video" },
+    ],
+  },
+
+  {
+    category: "Time Lapse",
+    items: [
+      { label: "TimeWarp", value: "TimeWarp 3.0 up to 5.3K (Standard Lens), 4K (Ultra Wide Lens)" },
+      { label: "TimeWarp Speeds", value: "Auto, 2x, 5x, 10x, 15x, 30x" },
+      { label: "Time Lapse Resolution", value: "Up to 5.3K" },
+      { label: "Night Lapse", value: "Supported up to 5.3K" },
+      { label: "Creative Effects", value: "Star Trails, Light Painting, Vehicle Light Trails" },
+    ],
+  },
+
+  {
+    category: "Stabilization & HDR",
+    items: [
+      { label: "Video Stabilization", value: "HyperSmooth 6.0" },
+      { label: "Horizon Lock", value: "360° Horizon Lock (Ultra Wide Lens Mod)" },
+      { label: "HDR Video", value: "Supported up to 5.3K" },
+      { label: "Exposure Control", value: "Supported" },
+    ],
+  },
+
+  {
+    category: "Lens Options",
+    items: [
+      { label: "Digital Lenses (Standard Lens)", value: "HyperView, SuperView, Wide, Linear" },
+      { label: "Digital Lenses (Ultra Wide Lens)", value: "Ultra HyperView, Ultra SuperView, Ultra Wide, Wide, Linear" },
+      { label: "Horizon Lock Lens", value: "Linear + Horizon Lock / Leveling" },
+      { label: "Video Zoom", value: "Up to 2x (Standard Lens)" },
+    ],
+  },
+
+  {
+    category: "Connectivity & Storage",
+    items: [
+      { label: "Storage", value: "microSD (Class A2 V30 or higher)" },
+      { label: "USB", value: "USB-C" },
+      { label: "HDMI", value: "Media Mod Compatible" },
+      { label: "Live Streaming", value: "1080p30 with HyperSmooth" },
+      { label: "Webcam Mode", value: "Up to 1080p30" },
+    ],
+  },
+
+  {
+    category: "Advanced Features",
+    items: [
+      { label: "Looping Video", value: "Yes" },
+      { label: "HindSight", value: "Yes" },
+      { label: "Scheduled Capture", value: "Yes" },
+      { label: "Duration Capture", value: "Yes" },
+      { label: "Timecode Sync", value: "Yes" },
+    ],
+  },
+],
+},
+{
+  id: "hero-12-black",
+  name: "HERO12 Black",
+  category: "Action Cameras",
+  brand: "GoPro",
+  price: "$649.99",
+  slug: "hero-12-black",
+  status: "In Stock",
+
+  colors: [
+    {
+      name: "Black",
+      images: [
+        "/products/gopro/hero-12.webp",
+      ],
+    },
+  ],
+
+  lenses: ["Body Only"],
+  overview:"Iconic design for immersive videos.",
+specs: [
+  {
+    category: "General Specifications",
+    items: [
+      { label: "Processor", value: "GP2" },
+      { label: "Image Sensor", value: '1/1.9" CMOS, 27.6MP' },
+      { label: "Lens Aperture", value: "F2.5" },
+      { label: "Field of View", value: "156° (8:7 aspect ratio)" },
+      { label: "35mm Equivalent Focal Length", value: "12mm - 39mm" },
+    ],
+  },
+
+  {
+    category: "Design & Build",
+    items: [
+      { label: "Dimensions", value: "71.8 × 50.8 × 33.6 mm" },
+      { label: "Weight", value: "154g (with battery), 121g (without battery)" },
+      { label: "Displays", value: 'Rear 2.27" Touch Display, Front 1.4" Color Display' },
+      { label: "Waterproof Rating", value: "10m without housing, 60m with protective housing" },
+      { label: "Battery", value: "Removable 1720mAh Enduro Battery" },
+    ],
+  },
+
+  {
+    category: "Video",
+    items: [
+      { label: "Maximum Resolution", value: "5.3K up to 60fps" },
+      { label: "4K Recording", value: "Up to 120fps" },
+      { label: "1080p Recording", value: "Up to 240fps" },
+      { label: "Slow Motion", value: "Up to 8x" },
+      { label: "Video Compression", value: "H.265 (HEVC)" },
+      { label: "Color Bit Depth", value: "8-bit, 10-bit (4K and higher)" },
+      { label: "Maximum Bit Rate", value: "120 Mbps" },
+      { label: "Aspect Ratios", value: "16:9, 9:16, 4:3, 8:7" },
+      { label: "Video Stabilization", value: "HyperSmooth 6.0" },
+    ],
+  },
+
+  {
+    category: "Photo",
+    items: [
+      { label: "Photo Resolution", value: "27.13MP (5568 × 4872)" },
+      { label: "Photo Modes", value: "Standard Photo, Burst Photo, Night Photo" },
+      { label: "Photo Output", value: "SuperPhoto, HDR, Standard, RAW" },
+      { label: "Photo Format", value: "JPG, GPR (RAW)" },
+      { label: "RAW Capture", value: "27.13MP RAW" },
+      { label: "Frame Grabs", value: "Up to 24.69MP from 5.3K Video" },
+    ],
+  },
+
+  {
+    category: "Time Lapse",
+    items: [
+      { label: "TimeWarp", value: "TimeWarp 3.0 up to 5.3K" },
+      { label: "TimeWarp Speeds", value: "Auto, 2x, 5x, 10x, 15x, 30x" },
+      { label: "Time Lapse Resolution", value: "Up to 5.3K" },
+      { label: "Night Lapse", value: "Supported up to 5.3K" },
+      { label: "Creative Effects", value: "Star Trails, Light Painting, Vehicle Light Trails" },
+    ],
+  },
+
+  {
+    category: "Stabilization & HDR",
+    items: [
+      { label: "Video Stabilization", value: "HyperSmooth 6.0" },
+      { label: "Horizon Lock", value: "360° Horizon Lock & Horizon Leveling" },
+      { label: "HDR Video", value: "Supported up to 5.3K" },
+      { label: "Exposure Compensation", value: "±2 EV" },
+    ],
+  },
+
+  {
+    category: "Lens Options",
+    items: [
+      { label: "Digital Lenses (Video)", value: "HyperView, SuperView, Wide, Linear" },
+      { label: "Horizon Lock Lens", value: "Linear + Horizon Lock / Leveling" },
+      { label: "Digital Lenses (Photo)", value: "Wide, Linear" },
+      { label: "Video Zoom", value: "Up to 2x" },
+    ],
+  },
+
+  {
+    category: "Connectivity & Storage",
+    items: [
+      { label: "Storage", value: "microSD (Class A2 V30 or higher)" },
+      { label: "USB", value: "USB-C" },
+      { label: "HDMI", value: "Media Mod Compatible" },
+      { label: "Live Streaming", value: "1080p60 with HyperSmooth" },
+      { label: "Webcam Mode", value: "Up to 1080p30" },
+    ],
+  },
+
+  {
+    category: "Advanced Features",
+    items: [
+      { label: "Looping Video", value: "Yes" },
+      { label: "HindSight", value: "Yes" },
+      { label: "Scheduled Capture", value: "Yes" },
+      { label: "Duration Capture", value: "Yes" },
+      { label: "Timecode Sync", value: "Yes" },
+    ],
+  },
+],
+},
+// 360 camera
+{
+  id: "max-2",
+  name: "Max2",
+  category: "360 Cameras",
+  brand: "GoPro",
+  price: "$499.99",
+  slug: "max-2",
+  status: "In Stock",
+
+  colors: [
+    {
+      name: "Black",
+      images: [
+        "/products/gopro/max2.webp",
+      ],
+    },
+  ],
+
+  lenses: ["Body Only"],
+  overview:"True 8K 360 video, replaceable glass lenses + new Reframe tools.",
+specs: [
+  {
+    category: "General Specifications",
+    items: [
+      { label: "Video Modes", value: "360 Video, POV, Selfie, Looping, Single-Lens Video" },
+      { label: "Image Processor", value: "GP2" },
+      { label: "Image Sensor", value: '1/2.3"' },
+      { label: "Lens Aperture", value: "F1.8" },
+      { label: "35mm Equivalent Focal Length", value: "14mm - 26mm" },
+    ],
+  },
+
+  {
+    category: "Design & Build",
+    items: [
+      { label: "Dimensions", value: "64.0 × 69.7 × 48.7 mm" },
+      { label: "Weight", value: "195g" },
+      { label: "Battery", value: "1960mAh Enduro Battery" },
+      { label: "Display", value: '1.82" Touch LCD' },
+      { label: "Waterproof Rating", value: "5m (16 ft)" },
+      { label: "Replaceable Lenses", value: "Yes" },
+    ],
+  },
+
+  {
+    category: "Video",
+    items: [
+      { label: "360 Video Resolution", value: "8K up to 30fps, 5.6K up to 60fps, 4K up to 100fps" },
+      { label: "Single-Lens Resolution", value: "4K up to 60fps, 1080p up to 60fps" },
+      { label: "Slow Motion", value: "Up to 3x (4K100)" },
+      { label: "Video Stabilization", value: "Max HyperSmooth with 360° Horizon Lock" },
+      { label: "Video Format", value: ".360, .MP4" },
+      { label: "Video Compression", value: "H.265 (HEVC)" },
+      { label: "Color Bit Depth", value: "8-bit, 10-bit" },
+      { label: "Max Bit Rate", value: "120 Mbps" },
+      { label: "GP-Log", value: "GP-Log with LUT Support" },
+    ],
+  },
+
+  {
+    category: "Photo",
+    items: [
+      { label: "360 Photo Resolution", value: "29MP (7680 × 3840)" },
+      { label: "Single-Lens Photo Resolution", value: "12MP (4000 × 3000)" },
+      { label: "Photo Output", value: "Standard, RAW (Single Lens)" },
+      { label: "Photo Formats", value: ".36P, JPG, GPR" },
+      { label: "Aspect Ratio", value: "4:3" },
+      { label: "Frame Grabs", value: "Up to 12MP from 4K (4:3) Video" },
+    ],
+  },
+
+  {
+    category: "Time Lapse",
+    items: [
+      { label: "TimeWarp", value: "360: 8K30, 5.6K30 | Single-Lens: 4K30, 1080p30" },
+      { label: "Time Lapse", value: "360: 8K30, 5.6K30" },
+      { label: "Night Lapse", value: "360: 8K30, 5.6K30" },
+      { label: "Creative Effects", value: "Star Trails, Light Painting, Vehicle Lights" },
+    ],
+  },
+
+  {
+    category: "Stabilization",
+    items: [
+      { label: "Video Stabilization", value: "Max HyperSmooth" },
+      { label: "Horizon Lock", value: "360° Horizon Lock" },
+      { label: "Lens Priority Exposure", value: "Supported" },
+    ],
+  },
+
+  {
+    category: "Capture Modes",
+    items: [
+      { label: "360 Modes", value: "Video, POV, Selfie, Looping" },
+      { label: "Single-Lens Modes", value: "Video, Photo, TimeWarp" },
+      { label: "Photo Modes", value: "Photo, Burst Photo, Night Photo" },
+      { label: "Time Lapse Modes", value: "TimeWarp, Time Lapse, Night Lapse, Star Trails, Light Painting, Vehicle Lights" },
+    ],
+  },
+
+  {
+    category: "Lens Options",
+    items: [
+      { label: "Digital Lenses", value: "Max HyperView, Max SuperView, Ultra Wide, Wide, Linear" },
+      { label: "Photo Lenses", value: "Ultra Wide, Wide, Linear" },
+      { label: "Aspect Ratios", value: "16:9, 9:16, 4:3" },
+    ],
+  },
+],
+},
+{
+  id: "max",
+  name: "Max",
+  category: "360 Cameras",
+  brand: "GoPro",
+  price: "$369.99",
+  slug: "max",
+  status: "In Stock",
+
+  colors: [
+    {
+      name: "Black",
+      images: [
+        "/products/gopro/max.webp",
+      ],
+    },
+  ],
+
+  lenses: ["Body Only"],
+  overview:"5.6K 360 video, easy Reframing + more.",
+specs: [
+  {
+  category: "Camera Features",
+  items: [
+    { label: "Capture Types", value: "Traditional GoPro HERO Capture, 360 Capture" },
+    { label: "Video Stabilization", value: "Max HyperSmooth" },
+    { label: "Horizon Leveling", value: "Supported" },
+    { label: "PowerPano", value: "Supported" },
+    { label: "Audio", value: "Premium 360 Audio, Stereo Audio, Directional Audio" },
+    { label: "Live Streaming", value: "1080p Live Streaming" },
+    { label: "Voice Control", value: "Supported" },
+    { label: "360 Editing", value: "In-Camera Stitching, Reframe via GoPro App" },
+    { label: "Design", value: "Compact Design with Built-In Folding Fingers" },
+    { label: "Waterproof Rating", value: "5m (16 ft)" },
+  ],
+},
+
+{
+  category: "Audio & Connectivity",
+  items: [
+    { label: "Microphone System", value: "6-Mic Processing with Advanced Wind Noise Reduction" },
+    { label: "Audio Recording", value: "Stereo Audio, 360 Audio, RAW Audio (.wav)" },
+    { label: "Wireless Connectivity", value: "Wi-Fi, Bluetooth" },
+    { label: "GPS", value: "Built-in GPS" },
+    { label: "Mobile Connectivity", value: "GoPro App Support" },
+    { label: "Cloud Backup", value: "Auto Upload with GoPro PLUS Subscription" },
+    { label: "Port", value: "USB-C" },
+  ],
+},
+
+{
+  category: "Video",
+  items: [
+    { label: "360 Video", value: "6K Source / 5.6K Stitched, 3K Source / Stitched" },
+    { label: "HERO Video", value: "1440p, 1080p" },
+    { label: "Video Format", value: "MP4 (H.264/AVC, H.265/HEVC)" },
+    { label: "Max Bit Rate", value: "78 Mbps" },
+    { label: "Slow Motion", value: "Up to 2x" },
+    { label: "Additional Features", value: "Exposure Control, Live Streaming, Short Clips, On-Screen Shortcuts" },
+  ],
+},
+
+{
+  category: "Photo",
+  items: [
+    { label: "360 Photos", value: "18MP Source, 16.6MP Stitched" },
+    { label: "HERO Photo", value: "5.5MP" },
+    { label: "PowerPano", value: "6.2MP 270° Panoramic Photo" },
+    { label: "Photo Lenses", value: "Max SuperView, Wide" },
+    { label: "Additional Features", value: "Photo Timer, Horizon Leveling, Protune" },
+  ],
+},
+
+{
+  category: "Time Lapse",
+  items: [
+    { label: "TimeWarp", value: "360 TimeWarp, HERO TimeWarp" },
+    { label: "Time Lapse Modes", value: "360 Time Lapse Video, 360 Time Lapse Photo, HERO Time Lapse Video, HERO Time Lapse Photo" },
+    { label: "Intervals", value: "0.5s to 60min" },
+    { label: "Additional Features", value: "Protune, On-Screen Shortcuts" },
+  ],
+},
+
+{
+  category: "Hardware",
+  items: [
+    { label: "Processor", value: "GP1" },
+    { label: "Battery", value: "Removable 1600mAh Enduro Lithium-Ion Battery" },
+    { label: "Digital Lenses", value: "Supported" },
+    { label: "Touch Display", value: "Intuitive Touch Screen with Touch Zoom" },
+  ],
+},
+
+{
+  category: "In The Box",
+  items: [
+    { label: "Included Items", value: "GoPro MAX Camera, Enduro Battery, Curved Adhesive Mount, 2 Rubber Lens Caps, Microfiber Bag, Mounting Buckle, USB-C Cable, Long Thumbscrew, Stickers, Warranty" },
+  ],
+},
+
+{
+  category: "Compatibility",
+  items: [
+    { label: "Accessories Support", value: "Compatible with 30+ GoPro Accessories" },
+  ],
+},
+],
 },
 ];
