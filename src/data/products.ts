@@ -17,7 +17,8 @@ export interface ProductColor {
 export interface Product {
   id: string;
   name: string;
-  category: string;
+  category?: string; // Single category (backward compatibility)
+  categories?: string[]; // Multiple categories
   brand: string;
   price: string;
   originalPrice?: string;
@@ -2302,150 +2303,150 @@ export const products: Product[] = [
     ],
   },
   {
-  id: "ilce-1",
-  name: "ILCE-1",
-  category: "Mirrorless Cameras",
-  brand: "Sony",
-  price: "₹599,990",
-  slug: "ilce-1",
-  status: "In Stock",
-  desc: "Sony's groundbreaking flagship full-frame mirrorless camera featuring a 50.1MP stacked Exmor RS sensor, blackout-free 30fps shooting, advanced AI autofocus, and professional 8K video recording for sports, wildlife, commercial, and cinematic productions.",
+    id: "ilce-1",
+    name: "ILCE-1",
+    category: "Mirrorless Cameras",
+    brand: "Sony",
+    price: "₹599,990",
+    slug: "ilce-1",
+    status: "In Stock",
+    desc: "Sony's groundbreaking flagship full-frame mirrorless camera featuring a 50.1MP stacked Exmor RS sensor, blackout-free 30fps shooting, advanced AI autofocus, and professional 8K video recording for sports, wildlife, commercial, and cinematic productions.",
 
-  colors: [
-    {
-      name: "Black",
-      images: ["/products/sony/sony4.jpg"],
-    },
-  ],
+    colors: [
+      {
+        name: "Black",
+        images: ["/products/sony/sony4.jpg"],
+      },
+    ],
 
-  lenses: ["Body Only"],
+    lenses: ["Body Only"],
 
-  overview:
-    "The SONY ILCE-1 redefines flagship performance by combining ultra-high 50.1MP resolution with blistering 30fps continuous shooting in a single camera body. Powered by a full-frame stacked Exmor RS CMOS sensor and BIONZ XR processor, it delivers exceptional image quality, blackout-free shooting, advanced subject tracking, and professional 8K video recording. Designed for photographers and filmmakers who refuse to compromise between speed and resolution.",
+    overview:
+      "The SONY ILCE-1 redefines flagship performance by combining ultra-high 50.1MP resolution with blistering 30fps continuous shooting in a single camera body. Powered by a full-frame stacked Exmor RS CMOS sensor and BIONZ XR processor, it delivers exceptional image quality, blackout-free shooting, advanced subject tracking, and professional 8K video recording. Designed for photographers and filmmakers who refuse to compromise between speed and resolution.",
 
-  keyFeatures: [
-    "50.1MP Full-Frame Stacked Exmor RS CMOS Sensor",
-    "Up to 30fps Blackout-Free Continuous Shooting",
-    "8K 30p and 4K 120p Video Recording",
-    "759-Point Fast Hybrid Autofocus System",
-    "Real-Time Eye AF for Humans, Animals & Birds",
-    "5-Axis In-Body Image Stabilization",
-  ],
+    keyFeatures: [
+      "50.1MP Full-Frame Stacked Exmor RS CMOS Sensor",
+      "Up to 30fps Blackout-Free Continuous Shooting",
+      "8K 30p and 4K 120p Video Recording",
+      "759-Point Fast Hybrid Autofocus System",
+      "Real-Time Eye AF for Humans, Animals & Birds",
+      "5-Axis In-Body Image Stabilization",
+    ],
 
-  richFeatures: [
-    {
-      title: "50.1MP Resolution Meets 30fps Speed",
-      description:
-        "The stacked full-frame Exmor RS sensor delivers extraordinary image quality while enabling continuous shooting at up to 30 frames per second with AF and AE tracking.",
-    },
-    {
-      title: "Blackout-Free Electronic Viewfinder",
-      description:
-        "Experience uninterrupted subject tracking with blackout-free shooting and a high-resolution 9.44-million-dot OLED electronic viewfinder operating at up to 240fps refresh rate.",
-    },
-    {
-      title: "Professional 8K Cinema Performance",
-      description:
-        "Capture stunning 8K 30p footage with 8.6K oversampling, advanced color science, S-Cinetone support, and high-quality 4K 120p recording for cinematic workflows.",
-    },
-  ],
+    richFeatures: [
+      {
+        title: "50.1MP Resolution Meets 30fps Speed",
+        description:
+          "The stacked full-frame Exmor RS sensor delivers extraordinary image quality while enabling continuous shooting at up to 30 frames per second with AF and AE tracking.",
+      },
+      {
+        title: "Blackout-Free Electronic Viewfinder",
+        description:
+          "Experience uninterrupted subject tracking with blackout-free shooting and a high-resolution 9.44-million-dot OLED electronic viewfinder operating at up to 240fps refresh rate.",
+      },
+      {
+        title: "Professional 8K Cinema Performance",
+        description:
+          "Capture stunning 8K 30p footage with 8.6K oversampling, advanced color science, S-Cinetone support, and high-quality 4K 120p recording for cinematic workflows.",
+      },
+    ],
 
-  specs: [
-    {
-      category: "General Specifications",
-      items: [
-        {
-          label: "Camera Type",
-          value: "Interchangeable Lens Digital Camera",
-        },
-        {
-          label: "Lens Mount",
-          value: "Sony E-Mount",
-        },
-        {
-          label: "Weight",
-          value: "Approx. 737g (with battery and memory card)",
-        },
-      ],
-    },
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          {
+            label: "Camera Type",
+            value: "Interchangeable Lens Digital Camera",
+          },
+          {
+            label: "Lens Mount",
+            value: "Sony E-Mount",
+          },
+          {
+            label: "Weight",
+            value: "Approx. 737g (with battery and memory card)",
+          },
+        ],
+      },
 
-    {
-      category: "Terminals & Interfaces",
-      items: [
-        {
-          label: "USB Interface",
-          value: "USB Type-C SuperSpeed USB 10Gbps",
-        },
-        {
-          label: "HDMI Output",
-          value: "Full-Size HDMI Type-A",
-        },
-        {
-          label: "Wireless Connectivity",
-          value: "Wi-Fi, Bluetooth 5.0, Gigabit Ethernet",
-        },
-        {
-          label: "Storage Slots",
-          value: "Dual CFexpress Type A / SD UHS-II Compatible Slots",
-        },
-      ],
-    },
+      {
+        category: "Terminals & Interfaces",
+        items: [
+          {
+            label: "USB Interface",
+            value: "USB Type-C SuperSpeed USB 10Gbps",
+          },
+          {
+            label: "HDMI Output",
+            value: "Full-Size HDMI Type-A",
+          },
+          {
+            label: "Wireless Connectivity",
+            value: "Wi-Fi, Bluetooth 5.0, Gigabit Ethernet",
+          },
+          {
+            label: "Storage Slots",
+            value: "Dual CFexpress Type A / SD UHS-II Compatible Slots",
+          },
+        ],
+      },
 
-    {
-      category: "Imaging & Video",
-      items: [
-        {
-          label: "Sensor",
-          value: "35mm Full-Frame Stacked Exmor RS CMOS Sensor",
-        },
-        {
-          label: "Effective Resolution",
-          value: "Approx. 50.1 Megapixels",
-        },
-        {
-          label: "Processor",
-          value: "BIONZ XR Image Processor",
-        },
-        {
-          label: "File Formats",
-          value: "JPEG, HEIF, RAW (Sony ARW)",
-        },
-        {
-          label: "ISO Range",
-          value: "ISO 100-32000 (Expandable to ISO 50-102400)",
-        },
-        {
-          label: "Autofocus System",
-          value: "759-Point Phase Detection Fast Hybrid AF",
-        },
-        {
-          label: "Image Stabilization",
-          value: "5-Axis Sensor Shift In-Body Stabilization",
-        },
-        {
-          label: "Shutter Speed",
-          value: "Electronic: 1/32000s to 30s | Mechanical: 1/8000s to 30s",
-        },
-        {
-          label: "Continuous Shooting",
-          value: "Up to 30fps with AF/AE Tracking",
-        },
-        {
-          label: "Viewfinder",
-          value: "9.44M-Dot Quad-XGA OLED EVF, Up to 240fps Refresh Rate",
-        },
-        {
-          label: "LCD Screen",
-          value: "3.0-inch Tilting Touchscreen LCD, 1.44M Dots",
-        },
-        {
-          label: "Movie Recording",
-          value: "8K 30p | 4K 120p | 10-bit 4:2:2 Internal Recording",
-        },
-      ],
-    },
-  ],
-},
+      {
+        category: "Imaging & Video",
+        items: [
+          {
+            label: "Sensor",
+            value: "35mm Full-Frame Stacked Exmor RS CMOS Sensor",
+          },
+          {
+            label: "Effective Resolution",
+            value: "Approx. 50.1 Megapixels",
+          },
+          {
+            label: "Processor",
+            value: "BIONZ XR Image Processor",
+          },
+          {
+            label: "File Formats",
+            value: "JPEG, HEIF, RAW (Sony ARW)",
+          },
+          {
+            label: "ISO Range",
+            value: "ISO 100-32000 (Expandable to ISO 50-102400)",
+          },
+          {
+            label: "Autofocus System",
+            value: "759-Point Phase Detection Fast Hybrid AF",
+          },
+          {
+            label: "Image Stabilization",
+            value: "5-Axis Sensor Shift In-Body Stabilization",
+          },
+          {
+            label: "Shutter Speed",
+            value: "Electronic: 1/32000s to 30s | Mechanical: 1/8000s to 30s",
+          },
+          {
+            label: "Continuous Shooting",
+            value: "Up to 30fps with AF/AE Tracking",
+          },
+          {
+            label: "Viewfinder",
+            value: "9.44M-Dot Quad-XGA OLED EVF, Up to 240fps Refresh Rate",
+          },
+          {
+            label: "LCD Screen",
+            value: "3.0-inch Tilting Touchscreen LCD, 1.44M Dots",
+          },
+          {
+            label: "Movie Recording",
+            value: "8K 30p | 4K 120p | 10-bit 4:2:2 Internal Recording",
+          },
+        ],
+      },
+    ],
+  },
   {
     id: "ilce-9m3",
     name: "ILCE-9M3",
@@ -2588,3841 +2589,4050 @@ export const products: Product[] = [
     ],
   },
   {
-  id: "ilce-9m2",
-  name: "ILCE-9M2",
-  category: "Mirrorless Cameras",
-  brand: "Sony",
-  price: "₹423,990",
-  slug: "ilce-9m2",
-  status: "In Stock",
+    id: "ilce-9m2",
+    name: "ILCE-9M2",
+    category: "Mirrorless Cameras",
+    brand: "Sony",
+    price: "₹423,990",
+    slug: "ilce-9m2",
+    status: "In Stock",
+
+    desc: "Sony's professional full-frame sports mirrorless camera featuring a 24.2MP stacked Exmor RS sensor, blackout-free 20fps shooting, Real-Time Tracking autofocus, advanced connectivity, and workflow enhancements designed for sports photographers and photojournalists.",
+
+    colors: [
+      {
+        name: "Black",
+        images: ["/products/sony/sony5.jpg"],
+      },
+    ],
+
+    lenses: ["Body Only"],
+
+    overview:
+      "The SONY ILCE-9M2 (Alpha 9 II) builds upon the renowned Alpha 9 platform with enhanced connectivity, durability, and workflow features tailored for professional sports and news photography. Featuring a 24.2MP full-frame stacked Exmor RS CMOS sensor, blackout-free continuous shooting at up to 20fps, advanced Real-Time Tracking autofocus, and improved FTP transfer capabilities, it delivers exceptional speed, reliability, and image quality in demanding environments.",
+
+    keyFeatures: [
+      "24.2MP Full-Frame Stacked Exmor RS CMOS Sensor",
+      "Up to 20fps Blackout-Free Continuous Shooting",
+      "693-Point Phase Detection Autofocus System",
+      "Real-Time Tracking & Real-Time Eye AF",
+      "5-Axis In-Body Image Stabilization",
+      "4K Video Recording with Full Pixel Readout",
+    ],
+
+    richFeatures: [
+      {
+        title: "24.2MP Stacked Exmor RS Sensor",
+        description:
+          "The full-frame stacked sensor with integral memory enables ultra-fast readout speeds, exceptional image quality, and blackout-free continuous shooting for fast-paced action photography.",
+      },
+      {
+        title: "Professional Sports Performance",
+        description:
+          "Capture critical moments at up to 20fps with continuous autofocus and auto-exposure tracking, making it ideal for sports, wildlife, and photojournalism applications.",
+      },
+      {
+        title: "Enhanced Professional Workflow",
+        description:
+          "Built-in Gigabit Ethernet, faster FTP transfer, USB Type-C connectivity, voice memo support, and dual UHS-II card slots streamline professional image delivery workflows.",
+      },
+    ],
 
-  desc: "Sony's professional full-frame sports mirrorless camera featuring a 24.2MP stacked Exmor RS sensor, blackout-free 20fps shooting, Real-Time Tracking autofocus, advanced connectivity, and workflow enhancements designed for sports photographers and photojournalists.",
-
-  colors: [
-    {
-      name: "Black",
-      images: ["/products/sony/sony5.jpg"],
-    },
-  ],
-
-  lenses: ["Body Only"],
-
-  overview:
-    "The SONY ILCE-9M2 (Alpha 9 II) builds upon the renowned Alpha 9 platform with enhanced connectivity, durability, and workflow features tailored for professional sports and news photography. Featuring a 24.2MP full-frame stacked Exmor RS CMOS sensor, blackout-free continuous shooting at up to 20fps, advanced Real-Time Tracking autofocus, and improved FTP transfer capabilities, it delivers exceptional speed, reliability, and image quality in demanding environments.",
-
-  keyFeatures: [
-    "24.2MP Full-Frame Stacked Exmor RS CMOS Sensor",
-    "Up to 20fps Blackout-Free Continuous Shooting",
-    "693-Point Phase Detection Autofocus System",
-    "Real-Time Tracking & Real-Time Eye AF",
-    "5-Axis In-Body Image Stabilization",
-    "4K Video Recording with Full Pixel Readout",
-  ],
-
-  richFeatures: [
-    {
-      title: "24.2MP Stacked Exmor RS Sensor",
-      description:
-        "The full-frame stacked sensor with integral memory enables ultra-fast readout speeds, exceptional image quality, and blackout-free continuous shooting for fast-paced action photography.",
-    },
-    {
-      title: "Professional Sports Performance",
-      description:
-        "Capture critical moments at up to 20fps with continuous autofocus and auto-exposure tracking, making it ideal for sports, wildlife, and photojournalism applications.",
-    },
-    {
-      title: "Enhanced Professional Workflow",
-      description:
-        "Built-in Gigabit Ethernet, faster FTP transfer, USB Type-C connectivity, voice memo support, and dual UHS-II card slots streamline professional image delivery workflows.",
-    },
-  ],
-
-  specs: [
-    {
-      category: "General Specifications",
-      items: [
-        {
-          label: "Camera Type",
-          value: "Interchangeable Lens Digital Camera",
-        },
-        {
-          label: "Lens Mount",
-          value: "Sony E-Mount",
-        },
-        {
-          label: "Weight",
-          value: "Approx. 678g (with battery and memory card)",
-        },
-      ],
-    },
-
-    {
-      category: "Terminals & Interfaces",
-      items: [
-        {
-          label: "USB Interface",
-          value: "USB Type-C (USB 3.2 Gen 1)",
-        },
-        {
-          label: "HDMI Output",
-          value: "Full-Size HDMI Type-A",
-        },
-        {
-          label: "Wireless Connectivity",
-          value: "Wi-Fi 2.4GHz / 5GHz, Bluetooth",
-        },
-        {
-          label: "Network",
-          value: "Gigabit Ethernet (1000BASE-T)",
-        },
-        {
-          label: "Storage Slots",
-          value: "Dual SD Card Slots (Both UHS-II Compatible)",
-        },
-      ],
-    },
-
-    {
-      category: "Imaging & Video",
-      items: [
-        {
-          label: "Sensor",
-          value: "35mm Full-Frame Stacked Exmor RS CMOS Sensor",
-        },
-        {
-          label: "Effective Resolution",
-          value: "Approx. 24.2 Megapixels",
-        },
-        {
-          label: "Processor",
-          value: "BIONZ X Image Processor",
-        },
-        {
-          label: "File Formats",
-          value: "JPEG, RAW (Sony ARW)",
-        },
-        {
-          label: "ISO Range",
-          value: "ISO 100-51200 (Expandable to ISO 50-204800)",
-        },
-        {
-          label: "Autofocus System",
-          value: "693-Point Phase Detection AF + 425 Contrast Detection AF",
-        },
-        {
-          label: "Image Stabilization",
-          value: "5-Axis Sensor Shift Stabilization (Up to 5.5 Stops)",
-        },
-        {
-          label: "Shutter Speed",
-          value: "Electronic: 1/32000s to 30s | Mechanical: 1/8000s to 30s",
-        },
-        {
-          label: "Continuous Shooting",
-          value: "Up to 20fps Electronic | Up to 10fps Mechanical",
-        },
-        {
-          label: "Viewfinder",
-          value: "3.69M-Dot OLED Tru-Finder EVF",
-        },
-        {
-          label: "LCD Screen",
-          value: "3.0-inch Tilting Touchscreen LCD, 1.44M Dots",
-        },
-        {
-          label: "Movie Recording",
-          value: "4K UHD 30p | Full HD 120p | Full Pixel Readout",
-        },
-      ],
-    },
-  ],
-},
-{
-  id: "ilce-7rm5",
-  name: "ILCE-7RM5",
-  category: "Mirrorless Cameras",
-  brand: "Sony",
-  price: "₹353,990",
-  slug: "ilce-7rm5",
-  status: "In Stock",
-
-  desc: "Sony's ultra-high-resolution full-frame mirrorless camera featuring a 61MP Exmor R CMOS sensor, dedicated AI Processing Unit, advanced subject recognition autofocus, 8K video recording, and professional imaging performance for photographers and filmmakers.",
-
-  colors: [
-    {
-      name: "Black",
-      images: ["/products/sony/sony6.jpg"],
-    },
-  ],
-
-  lenses: ["Body Only"],
-
-  overview:
-    "The SONY ILCE-7RM5 (Alpha 7R V) combines extraordinary 61MP resolution with next-generation AI-powered autofocus technology. Built around a full-frame back-illuminated Exmor R CMOS sensor and Sony's BIONZ XR processor, it delivers remarkable detail, enhanced subject recognition, advanced image stabilization, and professional 8K video recording. Designed for landscape, wildlife, commercial, portrait, and studio photographers who demand maximum image quality without compromise.",
-
-  keyFeatures: [
-    "61MP Full-Frame Back-Illuminated Exmor R CMOS Sensor",
-    "Dedicated AI Processing Unit for Subject Recognition",
-    "8K 24p and 4K 60p Video Recording",
-    "693-Point Fast Hybrid Autofocus System",
-    "8-Stop 5-Axis In-Body Image Stabilization",
-    "4-Axis Multi-Angle Touchscreen LCD",
-  ],
-
-  richFeatures: [
-    {
-      title: "61MP High-Resolution Imaging",
-      description:
-        "The full-frame Exmor R sensor delivers extraordinary detail, dynamic range, and color accuracy, making it ideal for landscape, commercial, portrait, and fine-art photography.",
-    },
-    {
-      title: "Next-Generation AI Autofocus",
-      description:
-        "A dedicated AI Processing Unit accurately recognizes and tracks humans, animals, birds, insects, cars, trains, and aircraft with exceptional precision.",
-    },
-    {
-      title: "Professional Hybrid Performance",
-      description:
-        "Capture stunning 8K video, advanced 10-bit recording formats, and highly stabilized handheld footage with up to 8 stops of image stabilization.",
-    },
-  ],
-
-  specs: [
-    {
-      category: "General Specifications",
-      items: [
-        {
-          label: "Camera Type",
-          value: "Interchangeable Lens Digital Camera",
-        },
-        {
-          label: "Lens Mount",
-          value: "Sony E-Mount",
-        },
-        {
-          label: "Weight",
-          value: "Approx. 723g (with battery and memory card)",
-        },
-      ],
-    },
-
-    {
-      category: "Terminals & Interfaces",
-      items: [
-        {
-          label: "USB Interface",
-          value: "USB Type-C SuperSpeed USB 10Gbps",
-        },
-        {
-          label: "HDMI Output",
-          value: "Full-Size HDMI Type-A",
-        },
-        {
-          label: "Wireless Connectivity",
-          value: "Wi-Fi, Bluetooth 5.0",
-        },
-        {
-          label: "Storage Slots",
-          value: "Dual CFexpress Type A / SD UHS-II Compatible Slots",
-        },
-      ],
-    },
-
-    {
-      category: "Imaging & Video",
-      items: [
-        {
-          label: "Sensor",
-          value: "35mm Full-Frame Back-Illuminated Exmor R CMOS Sensor",
-        },
-        {
-          label: "Effective Resolution",
-          value: "Approx. 61.0 Megapixels",
-        },
-        {
-          label: "Processor",
-          value: "BIONZ XR Image Processor + AI Processing Unit",
-        },
-        {
-          label: "File Formats",
-          value: "JPEG, HEIF, RAW (Sony ARW)",
-        },
-        {
-          label: "ISO Range",
-          value: "ISO 100-32000 (Expandable to ISO 50-102400)",
-        },
-        {
-          label: "Autofocus System",
-          value: "693-Point Phase Detection Fast Hybrid AF",
-        },
-        {
-          label: "Image Stabilization",
-          value: "5-Axis Sensor Shift Stabilization (Up to 8 Stops)",
-        },
-        {
-          label: "Shutter Speed",
-          value: "1/8000s to 30s, Bulb",
-        },
-        {
-          label: "Continuous Shooting",
-          value: "Up to 10fps with AF/AE Tracking",
-        },
-        {
-          label: "Viewfinder",
-          value: "9.44M-Dot Quad-XGA OLED EVF, Up to 120fps Refresh Rate",
-        },
-        {
-          label: "LCD Screen",
-          value: "3.2-inch 4-Axis Multi-Angle Touchscreen, 2.1M Dots",
-        },
-        {
-          label: "Movie Recording",
-          value: "8K 24p | 4K 60p | 10-bit 4:2:2 Internal Recording",
-        },
-      ],
-    },
-  ],
-},
-{
-  id: "ilce-7sm3",
-  name: "ILCE-7SM3",
-  category: "Mirrorless Cameras",
-  brand: "Sony",
-  price: "₹348,490",
-  slug: "ilce-7sm3",
-  status: "In Stock",
-
-  desc: "Sony's professional full-frame cinema-focused mirrorless camera featuring a 12.1MP Exmor R CMOS sensor, exceptional low-light performance, 4K 120p recording, 10-bit 4:2:2 internal video, and advanced autofocus for filmmakers and content creators.",
-
-  colors: [
-    {
-      name: "Black",
-      images: ["/products/sony/sony7.jpg"],
-    },
-  ],
-
-  lenses: ["Body Only"],
-
-  overview:
-    "The SONY ILCE-7SM3 (Alpha 7S III) is designed for visual storytellers who demand uncompromising video performance. Featuring a newly developed 12.1MP full-frame back-illuminated Exmor R CMOS sensor and BIONZ XR processor, it delivers extraordinary low-light capability, 15-stop dynamic range, advanced autofocus, and professional 4K recording up to 120fps. With 10-bit 4:2:2 internal recording, RAW output, and industry-leading workflow tools, it remains one of the most respected hybrid cinema cameras available.",
-
-  keyFeatures: [
-    "12.1MP Full-Frame Back-Illuminated Exmor R CMOS Sensor",
-    "4K 120p 10-Bit 4:2:2 Internal Recording",
-    "759-Point Fast Hybrid Autofocus System",
-    "Ultra-High ISO up to 409600 (Expanded)",
-    "5-Axis In-Body Image Stabilization with Active Mode",
-    "Dual CFexpress Type A / SD UHS-II Card Slots",
-  ],
-
-  richFeatures: [
-    {
-      title: "Exceptional Low-Light Performance",
-      description:
-        "The 12.1MP full-frame sensor delivers outstanding sensitivity, low noise, and wide dynamic range, making it ideal for professional video production in challenging lighting conditions.",
-    },
-    {
-      title: "Professional 4K Cinema Recording",
-      description:
-        "Record up to 4K 120p with 10-bit 4:2:2 color depth, advanced codecs, S-Log3, HLG, and RAW HDMI output for maximum post-production flexibility.",
-    },
-    {
-      title: "Advanced Autofocus for Video",
-      description:
-        "Fast Hybrid AF with 759 phase-detection points provides reliable subject tracking and Real-Time Eye AF for both stills and video production.",
-    },
-  ],
-
-  specs: [
-    {
-      category: "General Specifications",
-      items: [
-        {
-          label: "Camera Type",
-          value: "Interchangeable Lens Digital Camera",
-        },
-        {
-          label: "Lens Mount",
-          value: "Sony E-Mount",
-        },
-        {
-          label: "Weight",
-          value: "Approx. 699g (with battery and memory card)",
-        },
-      ],
-    },
-
-    {
-      category: "Terminals & Interfaces",
-      items: [
-        {
-          label: "USB Interface",
-          value: "USB Type-C SuperSpeed USB 5Gbps",
-        },
-        {
-          label: "HDMI Output",
-          value: "Full-Size HDMI Type-A",
-        },
-        {
-          label: "Wireless Connectivity",
-          value: "Wi-Fi 2.4GHz / 5GHz, Bluetooth 5.0",
-        },
-        {
-          label: "Audio Interfaces",
-          value: "3.5mm Mic Input, 3.5mm Headphone Output",
-        },
-        {
-          label: "Storage Slots",
-          value: "Dual CFexpress Type A / SD UHS-II Compatible Slots",
-        },
-      ],
-    },
-
-    {
-      category: "Imaging & Video",
-      items: [
-        {
-          label: "Sensor",
-          value: "35mm Full-Frame Back-Illuminated Exmor R CMOS Sensor",
-        },
-        {
-          label: "Effective Resolution",
-          value: "Approx. 12.1 Megapixels",
-        },
-        {
-          label: "Processor",
-          value: "BIONZ XR Image Processor",
-        },
-        {
-          label: "File Formats",
-          value: "JPEG, HEIF, RAW (Sony ARW)",
-        },
-        {
-          label: "ISO Range",
-          value: "ISO 80-102400 (Expandable to ISO 40-409600)",
-        },
-        {
-          label: "Autofocus System",
-          value: "759-Point Phase Detection Fast Hybrid AF",
-        },
-        {
-          label: "Image Stabilization",
-          value: "5-Axis Sensor Shift Stabilization (Up to 5.5 Stops)",
-        },
-        {
-          label: "Shutter Speed",
-          value: "1/8000s to 30s, Bulb",
-        },
-        {
-          label: "Continuous Shooting",
-          value: "Up to 10fps with AF/AE Tracking",
-        },
-        {
-          label: "Viewfinder",
-          value: "9.44M-Dot OLED Electronic Viewfinder",
-        },
-        {
-          label: "LCD Screen",
-          value: "3.0-inch Vari-Angle Touchscreen LCD, 1.44M Dots",
-        },
-        {
-          label: "Movie Recording",
-          value: "4K 120p | 4K 60p | 10-Bit 4:2:2 Internal Recording | RAW HDMI Output",
-        },
-      ],
-    },
-  ],
-},
-{
-  id: "ilce-7cr",
-  name: "ILCE-7CR",
-  category: "Mirrorless Cameras",
-  brand: "Sony",
-  price: "₹305,490",
-  slug: "ilce-7cr",
-  status: "In Stock",
-
-  desc: "Sony's ultra-compact high-resolution full-frame mirrorless camera featuring a 61MP Exmor R CMOS sensor, AI-powered autofocus, advanced image stabilization, and professional 4K video capabilities in the lightweight Alpha 7C series body.",
-
-  colors: [
-    {
-      name: "Black",
-      images: ["/products/sony/sony8.jpg"],
-    },
-  ],
-
-  lenses: ["Body Only"],
-
-  overview:
-    "The SONY ILCE-7CR combines the acclaimed 61MP full-frame sensor from the Alpha 7R series with the compact and portable Alpha 7C design. Powered by the BIONZ XR processor and a dedicated AI Processing Unit, it delivers extraordinary detail, intelligent subject recognition, advanced stabilization, and professional-grade video recording. Designed for travel, street, landscape, portrait, and content creators who want flagship image quality in a compact form factor.",
-
-  keyFeatures: [
-    "61MP Full-Frame Back-Illuminated Exmor R CMOS Sensor",
-    "Dedicated AI Processing Unit for Subject Recognition",
-    "693-Point Fast Hybrid Autofocus System",
-    "7-Stop 5-Axis In-Body Image Stabilization",
-    "4K 60p Video Recording & 6.2K Oversampling",
-    "Compact Alpha 7C Series Design",
-  ],
-
-  richFeatures: [
-    {
-      title: "61MP Resolution in a Compact Body",
-      description:
-        "Experience exceptional image quality and detail with the same 61MP full-frame sensor found in Sony's flagship high-resolution cameras, now packed into an ultra-portable body.",
-    },
-    {
-      title: "Advanced AI Subject Recognition",
-      description:
-        "The dedicated AI Processing Unit recognizes humans, animals, birds, insects, cars, trains, and aircraft for highly accurate autofocus and tracking performance.",
-    },
-    {
-      title: "Powerful Stabilization System",
-      description:
-        "Advanced 5-axis image stabilization provides up to 7 stops of compensation, enabling sharper handheld photography and smoother video recording.",
-    },
-  ],
-
-  specs: [
-    {
-      category: "General Specifications",
-      items: [
-        {
-          label: "Camera Type",
-          value: "Interchangeable Lens Digital Camera",
-        },
-        {
-          label: "Lens Mount",
-          value: "Sony E-Mount",
-        },
-        {
-          label: "Weight",
-          value: "Approx. 515g (with battery and memory card)",
-        },
-      ],
-    },
-
-    {
-      category: "Terminals & Interfaces",
-      items: [
-        {
-          label: "USB Interface",
-          value: "USB Type-C SuperSpeed USB 5Gbps",
-        },
-        {
-          label: "HDMI Output",
-          value: "Micro HDMI (Type-D)",
-        },
-        {
-          label: "Wireless Connectivity",
-          value: "Wi-Fi 2.4GHz / 5GHz, Bluetooth 4.2",
-        },
-        {
-          label: "Audio Interfaces",
-          value: "3.5mm Mic Input, 3.5mm Headphone Output",
-        },
-        {
-          label: "Storage Slots",
-          value: "Single SD Card Slot (UHS-I / UHS-II Compatible)",
-        },
-      ],
-    },
-
-    {
-      category: "Imaging & Video",
-      items: [
-        {
-          label: "Sensor",
-          value: "35mm Full-Frame Back-Illuminated Exmor R CMOS Sensor",
-        },
-        {
-          label: "Effective Resolution",
-          value: "Approx. 61.0 Megapixels",
-        },
-        {
-          label: "Processor",
-          value: "BIONZ XR Image Processor + AI Processing Unit",
-        },
-        {
-          label: "File Formats",
-          value: "JPEG, HEIF, RAW (Sony ARW)",
-        },
-        {
-          label: "ISO Range",
-          value: "ISO 100-32000 (Expandable to ISO 50-102400)",
-        },
-        {
-          label: "Autofocus System",
-          value: "693-Point Fast Hybrid AF",
-        },
-        {
-          label: "Image Stabilization",
-          value: "5-Axis Sensor Shift Stabilization (Up to 7 Stops)",
-        },
-        {
-          label: "Shutter Speed",
-          value: "1/4000s to 30s, Bulb",
-        },
-        {
-          label: "Continuous Shooting",
-          value: "Up to 8fps with AF/AE Tracking",
-        },
-        {
-          label: "Viewfinder",
-          value: "0.39-inch OLED EVF, 2.36M Dots",
-        },
-        {
-          label: "LCD Screen",
-          value: "3.0-inch Vari-Angle Touchscreen LCD, 1.03M Dots",
-        },
-        {
-          label: "Movie Recording",
-          value: "4K 60p | 10-Bit 4:2:2 | 6.2K Oversampled Recording",
-        },
-      ],
-    },
-  ],
-},
-{
-  id: "ilce-7rm4",
-  name: "ILCE-7RM4",
-  category: "Mirrorless Cameras",
-  brand: "Sony",
-  price: "₹297,990",
-  slug: "ilce-7rm4",
-  status: "In Stock",
-
-  desc: "Sony's high-resolution full-frame mirrorless camera featuring a 61MP Exmor R CMOS sensor, advanced autofocus, 10fps continuous shooting, and professional-grade image quality for landscape, portrait, wildlife, and commercial photography.",
-
-  colors: [
-    {
-      name: "Black",
-      images: ["/products/sony/sony9.jpg"],
-    },
-  ],
-
-  lenses: ["Body Only"],
-
-  overview:
-    "The SONY ILCE-7RM4 (Alpha 7R IV) pushes full-frame resolution to new heights with its groundbreaking 61MP back-illuminated Exmor R CMOS sensor. Combined with the BIONZ X image processor, advanced autofocus technology, and 5-axis image stabilization, it delivers exceptional detail, dynamic range, and color reproduction. Designed for professionals and enthusiasts alike, the Alpha 7R IV excels in landscape, studio, commercial, wildlife, and fine-art photography while also offering advanced 4K video capabilities.",
-
-  keyFeatures: [
-    "61MP Full-Frame Back-Illuminated Exmor R CMOS Sensor",
-    "567-Point Phase Detection Autofocus System",
-    "Up to 10fps Continuous Shooting",
-    "5.5-Stop 5-Axis In-Body Image Stabilization",
-    "4K Video Recording with Full Pixel Readout",
-    "Dual UHS-II SD Card Slots",
-  ],
-
-  richFeatures: [
-    {
-      title: "Industry-Leading 61MP Resolution",
-      description:
-        "The high-resolution full-frame Exmor R sensor captures extraordinary detail, dynamic range, and color accuracy suitable for large-format printing and professional commercial work.",
-    },
-    {
-      title: "Advanced Autofocus Performance",
-      description:
-        "Fast Hybrid AF combines 567 phase-detection points and 425 contrast-detection points for precise subject tracking and Real-Time Eye AF for humans and animals.",
-    },
-    {
-      title: "Professional Imaging Workflow",
-      description:
-        "Dual UHS-II card slots, high-speed connectivity, and robust weather-sealed construction ensure reliable performance in demanding professional environments.",
-    },
-  ],
-
-  specs: [
-    {
-      category: "General Specifications",
-      items: [
-        {
-          label: "Camera Type",
-          value: "Interchangeable Lens Digital Camera",
-        },
-        {
-          label: "Lens Mount",
-          value: "Sony E-Mount",
-        },
-        {
-          label: "Weight",
-          value: "Approx. 665g (with battery and memory card)",
-        },
-      ],
-    },
-
-    {
-      category: "Terminals & Interfaces",
-      items: [
-        {
-          label: "USB Interface",
-          value: "USB Type-C SuperSpeed USB 5Gbps",
-        },
-        {
-          label: "HDMI Output",
-          value: "Micro HDMI (Type-D)",
-        },
-        {
-          label: "Wireless Connectivity",
-          value: "Wi-Fi 2.4GHz / 5GHz, Bluetooth",
-        },
-        {
-          label: "Storage Slots",
-          value: "Dual SD Card Slots (Both UHS-II Compatible)",
-        },
-      ],
-    },
-
-    {
-      category: "Imaging & Video",
-      items: [
-        {
-          label: "Sensor",
-          value: "35mm Full-Frame Back-Illuminated Exmor R CMOS Sensor",
-        },
-        {
-          label: "Effective Resolution",
-          value: "Approx. 61.0 Megapixels",
-        },
-        {
-          label: "Processor",
-          value: "BIONZ X Image Processor",
-        },
-        {
-          label: "File Formats",
-          value: "JPEG, RAW (Sony ARW)",
-        },
-        {
-          label: "ISO Range",
-          value: "ISO 100-32000 (Expandable to ISO 50-102400)",
-        },
-        {
-          label: "Autofocus System",
-          value: "567-Point Phase Detection AF + 425 Contrast Detection AF",
-        },
-        {
-          label: "Image Stabilization",
-          value: "5-Axis Sensor Shift Stabilization (Up to 5.5 Stops)",
-        },
-        {
-          label: "Shutter Speed",
-          value: "1/8000s to 30s, Bulb",
-        },
-        {
-          label: "Continuous Shooting",
-          value: "Up to 10fps with AF/AE Tracking",
-        },
-        {
-          label: "Viewfinder",
-          value: "5.76M-Dot OLED Tru-Finder EVF, Up to 120fps Refresh Rate",
-        },
-        {
-          label: "LCD Screen",
-          value: "3.0-inch Tilting Touchscreen LCD, 1.44M Dots",
-        },
-        {
-          label: "Movie Recording",
-          value: "4K UHD 30p | Full HD 120p | S-Log2 / S-Log3 Support",
-        },
-      ],
-    },
-  ],
-},
-{
-  id: "zv-e1",
-  name: "ZV-E1",
-  category: "Vlog Cameras",
-  brand: "Sony",
-  price: "₹223,490",
-  slug: "zv-e1",
-  status: "In Stock",
-
-  desc: "Sony's full-frame vlog camera featuring a 12.1MP Exmor R CMOS sensor, AI-powered subject recognition, exceptional low-light performance, 4K 120p recording, and advanced stabilization in the world's most compact and lightweight interchangeable-lens full-frame camera.",
-
-  colors: [
-    {
-      name: "Black",
-      images: ["/products/sony/sony10.jpg"],
-    },
-  ],
-
-  lenses: ["Body Only"],
-
-  overview:
-    "The SONY ZV-E1 is designed specifically for content creators and vloggers who want professional full-frame image quality in an ultra-compact body. Featuring the same 12.1MP full-frame Exmor R sensor technology found in Sony's professional cinema-oriented cameras, the ZV-E1 combines exceptional low-light performance, AI-powered autofocus, advanced stabilization, and cinematic video features. With dedicated creator tools such as Auto Framing, Product Showcase Mode, Cinematic Vlog settings, and an intelligent 3-capsule microphone, it provides a complete solution for modern content creation.",
-
-  keyFeatures: [
-    "12.1MP Full-Frame Back-Illuminated Exmor R CMOS Sensor",
-    "AI Processing Unit for Advanced Subject Recognition",
-    "4K 120p Video Recording",
-    "Dynamic Active Stabilization",
-    "Auto Framing & Product Showcase Mode",
-    "Intelligent 3-Capsule Directional Microphone",
-  ],
-
-  richFeatures: [
-    {
-      title: "Full-Frame Sensor for Creators",
-      description:
-        "The 12.1MP full-frame Exmor R sensor delivers exceptional low-light performance, cinematic depth of field, and impressive dynamic range for professional-looking content.",
-    },
-    {
-      title: "AI-Powered Content Creation",
-      description:
-        "A dedicated AI Processing Unit enables advanced subject recognition, Auto Framing, multiple face recognition, and highly accurate Real-Time Tracking autofocus.",
-    },
-    {
-      title: "Professional Video Performance",
-      description:
-        "Capture stunning 4K footage at up to 120fps with 10-bit recording, S-Log3 support, Cinematic Vlog settings, and advanced stabilization for smooth handheld shooting.",
-    },
-  ],
-
-  specs: [
-    {
-      category: "General Specifications",
-      items: [
-        {
-          label: "Camera Type",
-          value: "Interchangeable Lens Vlog Camera",
-        },
-        {
-          label: "Lens Mount",
-          value: "Sony E-Mount",
-        },
-        {
-          label: "Weight",
-          value: "Approx. 483g (with battery and memory card)",
-        },
-      ],
-    },
-
-    {
-      category: "Terminals & Interfaces",
-      items: [
-        {
-          label: "USB Interface",
-          value: "USB Type-C SuperSpeed USB 5Gbps",
-        },
-        {
-          label: "HDMI Output",
-          value: "Micro HDMI (Type-D)",
-        },
-        {
-          label: "Wireless Connectivity",
-          value: "Wi-Fi 2.4GHz / 5GHz, Bluetooth",
-        },
-        {
-          label: "Audio Interfaces",
-          value: "3.5mm Microphone Input, 3.5mm Headphone Output, Multi Interface Shoe",
-        },
-        {
-          label: "Storage Slots",
-          value: "Single SD Card Slot (UHS-II Compatible)",
-        },
-      ],
-    },
-
-    {
-      category: "Imaging & Video",
-      items: [
-        {
-          label: "Sensor",
-          value: "35mm Full-Frame Back-Illuminated Exmor R CMOS Sensor",
-        },
-        {
-          label: "Effective Resolution",
-          value: "Approx. 12.1 Megapixels",
-        },
-        {
-          label: "Processor",
-          value: "BIONZ XR Image Processor + AI Processing Unit",
-        },
-        {
-          label: "File Formats",
-          value: "JPEG, HEIF, RAW (Sony ARW)",
-        },
-        {
-          label: "ISO Range",
-          value: "ISO 80-102400 (Expandable to ISO 40-409600)",
-        },
-        {
-          label: "Autofocus System",
-          value: "759-Point Fast Hybrid AF with Real-Time Tracking",
-        },
-        {
-          label: "Image Stabilization",
-          value: "5-Axis In-Body Stabilization with Active & Dynamic Active Mode",
-        },
-        {
-          label: "Shutter Speed",
-          value: "1/8000s to 30s, Bulb",
-        },
-        {
-          label: "Continuous Shooting",
-          value: "Up to 10fps",
-        },
-        {
-          label: "Viewfinder",
-          value: "No Electronic Viewfinder",
-        },
-        {
-          label: "LCD Screen",
-          value: "3.0-inch Fully Articulating Touchscreen LCD, 1.03M Dots",
-        },
-        {
-          label: "Movie Recording",
-          value: "4K 120p | 4K 60p | 10-Bit 4:2:2 Internal Recording | S-Log3 | HLG",
-        },
-      ],
-    },
-  ],
-},
-{
-  id: "ilce-7cm2",
-  name: "ILCE-7CM2",
-  category: "Mirrorless Cameras",
-  brand: "Sony",
-  price: "₹223,990",
-  slug: "ilce-7cm2",
-  status: "In Stock",
-
-  desc: "Sony's compact full-frame mirrorless camera featuring a 33MP Exmor R CMOS sensor, AI-powered subject recognition autofocus, 4K 60p video recording, and advanced image stabilization in the lightweight Alpha 7C series body.",
-
-  colors: [
-    {
-      name: "Black",
-      images: ["/products/sony/sony11.jpg"],
-    },
-  ],
-
-  lenses: ["Body Only"],
-
-  overview:
-    "The SONY ILCE-7CM2 (Alpha 7C II) combines the powerful imaging technology of Sony's latest full-frame cameras with an ultra-compact and lightweight design. Featuring a 33MP back-illuminated Exmor R CMOS sensor, BIONZ XR processor, dedicated AI Processing Unit, and advanced autofocus system, it delivers exceptional image quality, intelligent subject tracking, and professional video capabilities. Designed for travel, street photography, content creation, and everyday shooting, the Alpha 7C II offers full-frame performance without the bulk of traditional camera bodies.",
-
-  keyFeatures: [
-    "33MP Full-Frame Back-Illuminated Exmor R CMOS Sensor",
-    "Dedicated AI Processing Unit for Subject Recognition",
-    "759-Point Fast Hybrid Autofocus System",
-    "4K 60p Video Recording with 10-Bit 4:2:2",
-    "7-Stop 5-Axis In-Body Image Stabilization",
-    "Compact and Lightweight Alpha 7C Series Design",
-  ],
-
-  richFeatures: [
-    {
-      title: "Compact Full-Frame Performance",
-      description:
-        "The 33MP Exmor R sensor delivers outstanding image quality, dynamic range, and low-light performance in one of Sony's most portable full-frame camera bodies.",
-    },
-    {
-      title: "AI-Powered Autofocus",
-      description:
-        "A dedicated AI Processing Unit accurately recognizes and tracks humans, animals, birds, insects, cars, trains, and aircraft for reliable autofocus performance.",
-    },
-    {
-      title: "Advanced Hybrid Shooting",
-      description:
-        "Capture professional-quality stills and oversampled 4K video with advanced stabilization, subject tracking, and creator-friendly shooting features.",
-    },
-  ],
-
-  specs: [
-    {
-      category: "General Specifications",
-      items: [
-        {
-          label: "Camera Type",
-          value: "Interchangeable Lens Digital Camera",
-        },
-        {
-          label: "Lens Mount",
-          value: "Sony E-Mount",
-        },
-        {
-          label: "Weight",
-          value: "Approx. 514g (with battery and memory card)",
-        },
-      ],
-    },
-
-    {
-      category: "Terminals & Interfaces",
-      items: [
-        {
-          label: "USB Interface",
-          value: "USB Type-C SuperSpeed USB 5Gbps",
-        },
-        {
-          label: "HDMI Output",
-          value: "Micro HDMI (Type-D)",
-        },
-        {
-          label: "Wireless Connectivity",
-          value: "Wi-Fi 2.4GHz / 5GHz, Bluetooth 4.2",
-        },
-        {
-          label: "Audio Interfaces",
-          value: "3.5mm Microphone Input, 3.5mm Headphone Output",
-        },
-        {
-          label: "Storage Slots",
-          value: "Single SD Card Slot (UHS-I / UHS-II Compatible)",
-        },
-      ],
-    },
-
-    {
-      category: "Imaging & Video",
-      items: [
-        {
-          label: "Sensor",
-          value: "35mm Full-Frame Back-Illuminated Exmor R CMOS Sensor",
-        },
-        {
-          label: "Effective Resolution",
-          value: "Approx. 33.0 Megapixels",
-        },
-        {
-          label: "Processor",
-          value: "BIONZ XR Image Processor + AI Processing Unit",
-        },
-        {
-          label: "File Formats",
-          value: "JPEG, HEIF, RAW (Sony ARW)",
-        },
-        {
-          label: "ISO Range",
-          value: "ISO 100-51200 (Expandable to ISO 50-204800)",
-        },
-        {
-          label: "Autofocus System",
-          value: "759-Point Phase Detection Fast Hybrid AF",
-        },
-        {
-          label: "Image Stabilization",
-          value: "5-Axis Sensor Shift Stabilization (Up to 7 Stops)",
-        },
-        {
-          label: "Shutter Speed",
-          value: "Mechanical: 1/4000s to 30s | Electronic: 1/8000s to 30s",
-        },
-        {
-          label: "Continuous Shooting",
-          value: "Up to 10fps with AF/AE Tracking",
-        },
-        {
-          label: "Viewfinder",
-          value: "0.39-inch XGA OLED EVF, 2.36M Dots",
-        },
-        {
-          label: "LCD Screen",
-          value: "3.0-inch Vari-Angle Touchscreen LCD, 1.03M Dots",
-        },
-        {
-          label: "Movie Recording",
-          value: "4K 60p | 10-Bit 4:2:2 Internal Recording | S-Log3 | HLG",
-        },
-      ],
-    },
-  ],
-},
-{
-  id: "ilce-7m4",
-  name: "ILCE-7M4",
-  category: "Mirrorless Cameras",
-  brand: "Sony",
-  price: "₹210,990",
-  slug: "ilce-7m4",
-  status: "In Stock",
-
-  desc: "Sony's versatile full-frame hybrid mirrorless camera featuring a 33MP Exmor R CMOS sensor, advanced autofocus, 4K 60p video recording, and professional imaging performance for photographers, filmmakers, and content creators.",
-
-  colors: [
-    {
-      name: "Black",
-      images: ["/products/sony/sony12.jpg"],
-    },
-  ],
-
-  lenses: ["Body Only"],
-
-  overview:
-    "The SONY ILCE-7M4 (Alpha 7 IV) is a powerful hybrid camera that combines outstanding still-image quality with advanced video capabilities. Built around a 33MP full-frame back-illuminated Exmor R CMOS sensor and the BIONZ XR processor, it delivers exceptional image quality, fast autofocus, improved color science, and professional video features. Whether shooting weddings, portraits, travel, wildlife, or cinematic content, the Alpha 7 IV provides the versatility and reliability demanded by modern creators.",
-
-  keyFeatures: [
-    "33MP Full-Frame Back-Illuminated Exmor R CMOS Sensor",
-    "759-Point Fast Hybrid Autofocus System",
-    "4K 60p 10-Bit 4:2:2 Video Recording",
-    "Real-Time Eye AF & Subject Tracking",
-    "5.5-Stop 5-Axis In-Body Image Stabilization",
-    "10fps Continuous Shooting with AF/AE Tracking",
-  ],
-
-  richFeatures: [
-    {
-      title: "33MP Full-Frame Imaging",
-      description:
-        "The Exmor R CMOS sensor delivers an ideal balance of resolution, dynamic range, low-light performance, and manageable file sizes for professional photography.",
-    },
-    {
-      title: "Next-Generation Autofocus",
-      description:
-        "With 759 phase-detection points and Real-Time Tracking, the camera provides highly accurate subject recognition and Eye AF for humans, animals, and birds.",
-    },
-    {
-      title: "Professional Hybrid Performance",
-      description:
-        "Capture oversampled 4K video with 10-bit 4:2:2 recording, advanced color profiles, and creator-focused workflow features alongside high-quality still photography.",
-    },
-  ],
-
-  specs: [
-    {
-      category: "General Specifications",
-      items: [
-        {
-          label: "Camera Type",
-          value: "Interchangeable Lens Digital Camera",
-        },
-        {
-          label: "Lens Mount",
-          value: "Sony E-Mount",
-        },
-        {
-          label: "Weight",
-          value: "Approx. 658g (with battery and memory card)",
-        },
-      ],
-    },
-
-    {
-      category: "Terminals & Interfaces",
-      items: [
-        {
-          label: "USB Interface",
-          value: "USB Type-C SuperSpeed USB 10Gbps",
-        },
-        {
-          label: "HDMI Output",
-          value: "Full-Size HDMI Type-A",
-        },
-        {
-          label: "Wireless Connectivity",
-          value: "Wi-Fi 2.4GHz / 5GHz, Bluetooth 4.1",
-        },
-        {
-          label: "Audio Interfaces",
-          value: "3.5mm Microphone Input, 3.5mm Headphone Output",
-        },
-        {
-          label: "Storage Slots",
-          value: "Dual Card Slots (CFexpress Type A / SD UHS-II + SD UHS-II)",
-        },
-      ],
-    },
-
-    {
-      category: "Imaging & Video",
-      items: [
-        {
-          label: "Sensor",
-          value: "35mm Full-Frame Back-Illuminated Exmor R CMOS Sensor",
-        },
-        {
-          label: "Effective Resolution",
-          value: "Approx. 33.0 Megapixels",
-        },
-        {
-          label: "Processor",
-          value: "BIONZ XR Image Processor",
-        },
-        {
-          label: "File Formats",
-          value: "JPEG, HEIF, RAW (Sony ARW)",
-        },
-        {
-          label: "ISO Range",
-          value: "ISO 100-51200 (Expandable to ISO 50-204800)",
-        },
-        {
-          label: "Autofocus System",
-          value: "759-Point Phase Detection AF + 425 Contrast Detection AF",
-        },
-        {
-          label: "Image Stabilization",
-          value: "5-Axis Sensor Shift Stabilization (Up to 5.5 Stops)",
-        },
-        {
-          label: "Shutter Speed",
-          value: "1/8000s to 30s, Bulb",
-        },
-        {
-          label: "Continuous Shooting",
-          value: "Up to 10fps with AF/AE Tracking",
-        },
-        {
-          label: "Viewfinder",
-          value: "3.69M-Dot OLED Electronic Viewfinder, Up to 120fps Refresh Rate",
-        },
-        {
-          label: "LCD Screen",
-          value: "3.0-inch Vari-Angle Touchscreen LCD, 1.03M Dots",
-        },
-        {
-          label: "Movie Recording",
-          value: "4K 60p | 4K 30p 7K Oversampled | 10-Bit 4:2:2 Internal Recording",
-        },
-      ],
-    },
-  ],
-},
-{
-  id: "ilce-7rm3",
-  name: "ILCE-7RM3",
-  category: "Mirrorless Cameras",
-  brand: "Sony",
-  price: "₹204,990",
-  slug: "ilce-7rm3",
-  status: "In Stock",
-
-  desc: "Sony's professional high-resolution full-frame mirrorless camera featuring a 42.4MP Exmor R CMOS sensor, advanced autofocus, 10fps continuous shooting, and outstanding image quality for landscape, portrait, wildlife, and commercial photography.",
-
-  colors: [
-    {
-      name: "Black",
-      images: ["/products/sony/sony13.jpg"],
-    },
-  ],
-
-  lenses: ["Body Only"],
-
-  overview:
-    "The SONY ILCE-7RM3 (Alpha 7R III) combines exceptional 42.4MP resolution with impressive speed and versatility. Built around a full-frame back-illuminated Exmor R CMOS sensor and BIONZ X image processor, it delivers extraordinary detail, wide dynamic range, fast autofocus performance, and professional-grade video capabilities. Designed for photographers who demand both resolution and responsiveness, the Alpha 7R III excels in landscape, portrait, studio, wildlife, and commercial photography.",
-
-  keyFeatures: [
-    "42.4MP Full-Frame Back-Illuminated Exmor R CMOS Sensor",
-    "399-Point Phase Detection Autofocus System",
-    "Up to 10fps Continuous Shooting with AF/AE Tracking",
-    "5-Axis In-Body Image Stabilization",
-    "4K UHD Video Recording with Full Pixel Readout",
-    "Dual UHS-II SD Card Slots",
-  ],
-
-  richFeatures: [
-    {
-      title: "42.4MP High-Resolution Imaging",
-      description:
-        "The full-frame Exmor R CMOS sensor delivers remarkable detail, dynamic range, and low-noise performance, making it ideal for professional photography and large-format prints.",
-    },
-    {
-      title: "Speed Meets Resolution",
-      description:
-        "Capture fast-moving subjects at up to 10fps with continuous autofocus and auto-exposure tracking, combining high resolution with impressive shooting speed.",
-    },
-    {
-      title: "Professional Hybrid Performance",
-      description:
-        "Record detailed 4K video, utilize advanced Picture Profiles including S-Log3 and HLG, and benefit from professional workflow features for both photography and filmmaking.",
-    },
-  ],
-
-  specs: [
-    {
-      category: "General Specifications",
-      items: [
-        {
-          label: "Camera Type",
-          value: "Interchangeable Lens Digital Camera",
-        },
-        {
-          label: "Lens Mount",
-          value: "Sony E-Mount",
-        },
-        {
-          label: "Weight",
-          value: "Approx. 657g (with battery and memory card)",
-        },
-      ],
-    },
-
-    {
-      category: "Terminals & Interfaces",
-      items: [
-        {
-          label: "USB Interface",
-          value: "USB Type-C (USB 3.1 Gen 1)",
-        },
-        {
-          label: "HDMI Output",
-          value: "Micro HDMI (Type-D)",
-        },
-        {
-          label: "Wireless Connectivity",
-          value: "Wi-Fi, NFC, Bluetooth",
-        },
-        {
-          label: "Storage Slots",
-          value: "Dual SD Card Slots (UHS-II Compatible)",
-        },
-      ],
-    },
-
-    {
-      category: "Imaging & Video",
-      items: [
-        {
-          label: "Sensor",
-          value: "35mm Full-Frame Back-Illuminated Exmor R CMOS Sensor",
-        },
-        {
-          label: "Effective Resolution",
-          value: "Approx. 42.4 Megapixels",
-        },
-        {
-          label: "Processor",
-          value: "BIONZ X Image Processor",
-        },
-        {
-          label: "File Formats",
-          value: "JPEG, RAW (Sony ARW)",
-        },
-        {
-          label: "ISO Range",
-          value: "ISO 100-32000 (Expandable to ISO 50-102400)",
-        },
-        {
-          label: "Autofocus System",
-          value: "399-Point Phase Detection AF + 425 Contrast Detection AF",
-        },
-        {
-          label: "Image Stabilization",
-          value: "5-Axis Sensor Shift Stabilization (Up to 5.5 Stops)",
-        },
-        {
-          label: "Shutter Speed",
-          value: "1/8000s to 30s, Bulb",
-        },
-        {
-          label: "Continuous Shooting",
-          value: "Up to 10fps with AF/AE Tracking",
-        },
-        {
-          label: "Viewfinder",
-          value: "3.69M-Dot Quad-VGA OLED Electronic Viewfinder",
-        },
-        {
-          label: "LCD Screen",
-          value: "3.0-inch Tilting LCD Touchscreen, 1.44M Dots",
-        },
-        {
-          label: "Movie Recording",
-          value: "4K UHD 30p | Full HD 120p | S-Log3 | HLG",
-        },
-      ],
-    },
-  ],
-},
-{
-  id: "ilce-7c",
-  name: "ILCE-7C",
-  category: "Mirrorless Cameras",
-  brand: "Sony",
-  price: "₹148,490",
-  slug: "ilce-7c",
-  status: "In Stock",
-
-  desc: "Sony's compact full-frame mirrorless camera featuring a 24.2MP Exmor R CMOS sensor, advanced Real-Time Eye AF, 4K video recording, and 5-axis image stabilization in one of the world's smallest and lightest full-frame camera bodies.",
-
-  colors: [
-    {
-      name: "Black",
-      images: ["/products/sony/sony14.jpg"],
-    },
-  ],
-
-  lenses: ["Body Only"],
-
-  overview:
-    "The SONY ILCE-7C (Alpha 7C) brings full-frame image quality into an ultra-compact and lightweight body. Featuring a 24.2MP back-illuminated Exmor R CMOS sensor, BIONZ X processor, Real-Time Eye AF, and advanced 5-axis stabilization, it delivers outstanding performance for travel, street photography, content creation, and everyday shooting. Its compact design, vari-angle touchscreen, and powerful video capabilities make it one of Sony's most versatile full-frame cameras.",
-
-  keyFeatures: [
-    "24.2MP Full-Frame Back-Illuminated Exmor R CMOS Sensor",
-    "693-Point Fast Hybrid Autofocus System",
-    "Real-Time Eye AF & Real-Time Tracking",
-    "4K UHD Video Recording with Full Pixel Readout",
-    "5-Axis In-Body Image Stabilization",
-    "Ultra-Compact Full-Frame Design",
-  ],
-
-  richFeatures: [
-    {
-      title: "Compact Full-Frame Freedom",
-      description:
-        "Designed for creators on the move, the Alpha 7C delivers professional full-frame image quality in one of the smallest and lightest full-frame camera bodies available.",
-    },
-    {
-      title: "Advanced Autofocus Technology",
-      description:
-        "Featuring 693 phase-detection AF points and Real-Time Tracking, the camera delivers fast, accurate focusing and Eye AF for both humans and animals.",
-    },
-    {
-      title: "Professional Video Capabilities",
-      description:
-        "Record oversampled 4K UHD video with full pixel readout, advanced Picture Profiles including S-Log2, S-Log3, and HLG for greater creative flexibility.",
-    },
-  ],
-
-  specs: [
-    {
-      category: "General Specifications",
-      items: [
-        {
-          label: "Camera Type",
-          value: "Interchangeable Lens Digital Camera",
-        },
-        {
-          label: "Lens Mount",
-          value: "Sony E-Mount",
-        },
-        {
-          label: "Weight",
-          value: "Approx. 509g (with battery and memory card)",
-        },
-      ],
-    },
-
-    {
-      category: "Terminals & Interfaces",
-      items: [
-        {
-          label: "USB Interface",
-          value: "USB Type-C (USB 3.1 Gen 1)",
-        },
-        {
-          label: "HDMI Output",
-          value: "Micro HDMI (Type-D)",
-        },
-        {
-          label: "Wireless Connectivity",
-          value: "Wi-Fi, NFC, Bluetooth 4.1",
-        },
-        {
-          label: "Audio Interfaces",
-          value: "3.5mm Microphone Input, 3.5mm Headphone Output",
-        },
-        {
-          label: "Storage Slots",
-          value: "Single SD Card Slot (UHS-I / UHS-II Compatible)",
-        },
-      ],
-    },
-
-    {
-      category: "Imaging & Video",
-      items: [
-        {
-          label: "Sensor",
-          value: "35mm Full-Frame Back-Illuminated Exmor R CMOS Sensor",
-        },
-        {
-          label: "Effective Resolution",
-          value: "Approx. 24.2 Megapixels",
-        },
-        {
-          label: "Processor",
-          value: "BIONZ X Image Processor",
-        },
-        {
-          label: "File Formats",
-          value: "JPEG, RAW (Sony ARW)",
-        },
-        {
-          label: "ISO Range",
-          value: "ISO 100-51200 (Expandable to ISO 50-204800)",
-        },
-        {
-          label: "Autofocus System",
-          value: "693-Point Phase Detection AF + 425 Contrast Detection AF",
-        },
-        {
-          label: "Image Stabilization",
-          value: "5-Axis Sensor Shift Stabilization (Up to 5 Stops)",
-        },
-        {
-          label: "Shutter Speed",
-          value: "Mechanical: 1/4000s to 30s | Electronic: 1/8000s to 30s",
-        },
-        {
-          label: "Continuous Shooting",
-          value: "Up to 10fps with AF/AE Tracking",
-        },
-        {
-          label: "Viewfinder",
-          value: "0.39-inch OLED Electronic Viewfinder, 2.36M Dots",
-        },
-        {
-          label: "LCD Screen",
-          value: "3.0-inch Vari-Angle Touchscreen LCD, 921K Dots",
-        },
-        {
-          label: "Movie Recording",
-          value: "4K UHD 30p | Full HD 120p | S-Log2 | S-Log3 | HLG",
-        },
-      ],
-    },
-  ],
-},
-{
-  id: "ilce-7m3",
-  name: "ILCE-7M3",
-  category: "Mirrorless Cameras",
-  brand: "Sony",
-  price: "₹146,990",
-  slug: "ilce-7m3",
-  status: "In Stock",
-
-  desc: "Sony's highly acclaimed full-frame mirrorless camera featuring a 24.2MP Exmor R CMOS sensor, advanced 693-point autofocus system, 10fps continuous shooting, 4K HDR video recording, and exceptional low-light performance for photographers and content creators.",
-
-  colors: [
-    {
-      name: "Black",
-      images: ["/products/sony/sony15.jpg"],
-    },
-  ],
-
-  lenses: ["Body Only"],
-
-  overview:
-    "The SONY ILCE-7M3 (Alpha 7 III) is one of the most versatile full-frame mirrorless cameras ever created. Combining a 24.2MP back-illuminated Exmor R CMOS sensor with the powerful BIONZ X processor, it delivers outstanding image quality, impressive dynamic range, excellent low-light performance, and professional autofocus capabilities. Whether shooting portraits, weddings, landscapes, wildlife, travel, or video content, the Alpha 7 III provides exceptional performance and reliability in a compact body.",
-
-  keyFeatures: [
-    "24.2MP Full-Frame Back-Illuminated Exmor R CMOS Sensor",
-    "693-Point Fast Hybrid Autofocus System",
-    "Up to 10fps Continuous Shooting with AF/AE Tracking",
-    "4K UHD HDR Video Recording",
-    "5-Axis In-Body Image Stabilization",
-    "Dual SD Card Slots with Extended Battery Life",
-  ],
-
-  richFeatures: [
-    {
-      title: "24.2MP Full-Frame Performance",
-      description:
-        "The back-illuminated Exmor R sensor delivers exceptional image quality, dynamic range, and low-light performance with natural color reproduction and excellent detail.",
-    },
-    {
-      title: "Advanced Autofocus System",
-      description:
-        "Featuring 693 phase-detection AF points covering approximately 93% of the frame, the camera delivers fast and accurate subject tracking with Real-Time Eye AF.",
-    },
-    {
-      title: "Professional Hybrid Capabilities",
-      description:
-        "Capture stunning stills and oversampled 4K HDR video with advanced stabilization, high-speed shooting, and extensive creative controls.",
-    },
-  ],
-
-  specs: [
-    {
-      category: "General Specifications",
-      items: [
-        {
-          label: "Camera Type",
-          value: "Interchangeable Lens Digital Camera",
-        },
-        {
-          label: "Lens Mount",
-          value: "Sony E-Mount",
-        },
-        {
-          label: "Weight",
-          value: "Approx. 650g (with battery and memory card)",
-        },
-      ],
-    },
-
-    {
-      category: "Terminals & Interfaces",
-      items: [
-        {
-          label: "USB Interface",
-          value: "USB Type-C (USB 3.1 Gen 1)",
-        },
-        {
-          label: "HDMI Output",
-          value: "Micro HDMI (Type-D)",
-        },
-        {
-          label: "Wireless Connectivity",
-          value: "Wi-Fi, NFC, Bluetooth",
-        },
-        {
-          label: "Audio Interfaces",
-          value: "3.5mm Microphone Input, 3.5mm Headphone Output",
-        },
-        {
-          label: "Storage Slots",
-          value: "Dual SD Card Slots (Slot 1 UHS-II, Slot 2 UHS-I)",
-        },
-      ],
-    },
-
-    {
-      category: "Imaging & Video",
-      items: [
-        {
-          label: "Sensor",
-          value: "35mm Full-Frame Back-Illuminated Exmor R CMOS Sensor",
-        },
-        {
-          label: "Effective Resolution",
-          value: "Approx. 24.2 Megapixels",
-        },
-        {
-          label: "Processor",
-          value: "BIONZ X Image Processor",
-        },
-        {
-          label: "File Formats",
-          value: "JPEG, RAW (Sony ARW)",
-        },
-        {
-          label: "ISO Range",
-          value: "ISO 100-51200 (Expandable to ISO 50-204800)",
-        },
-        {
-          label: "Autofocus System",
-          value: "693-Point Phase Detection AF + 425 Contrast Detection AF",
-        },
-        {
-          label: "Image Stabilization",
-          value: "5-Axis Sensor Shift Stabilization (Up to 5 Stops)",
-        },
-        {
-          label: "Shutter Speed",
-          value: "1/8000s to 30s, Bulb",
-        },
-        {
-          label: "Continuous Shooting",
-          value: "Up to 10fps with AF/AE Tracking",
-        },
-        {
-          label: "Viewfinder",
-          value: "0.5-inch XGA OLED Electronic Viewfinder, 2.36M Dots",
-        },
-        {
-          label: "LCD Screen",
-          value: "3.0-inch Tilting Touchscreen LCD, 922K Dots",
-        },
-        {
-          label: "Movie Recording",
-          value: "4K UHD 30p | Full HD 120p | HLG HDR | S-Log2 | S-Log3",
-        },
-      ],
-    },
-  ],
-},
-{
-  id: "ilce-6700",
-  name: "ILCE-6700",
-  category: "Mirrorless Cameras",
-  brand: "Sony",
-  price: "₹142,490",
-  slug: "ilce-6700",
-  status: "In Stock",
-
-  desc: "Sony's flagship APS-C mirrorless camera featuring a 26MP Exmor R CMOS sensor, AI-powered subject recognition, advanced autofocus, 4K 120p video recording, and Cinema Line-inspired features for photographers, filmmakers, and content creators.",
-
-  colors: [
-    {
-      name: "Black",
-      images: ["/products/sony/sony16.jpg"],
-    },
-  ],
-
-  lenses: ["Body Only"],
-
-  overview:
-    "The SONY ILCE-6700 (Alpha 6700) combines cutting-edge AI technology with Sony's latest APS-C imaging system in a compact and lightweight body. Featuring a 26MP back-illuminated Exmor R CMOS sensor, BIONZ XR processor, dedicated AI Processing Unit, and advanced autofocus capabilities, it delivers exceptional image quality, intelligent subject tracking, and professional-grade video performance. With Cinema Line-inspired features such as 4K 120p recording, S-Cinetone, and 10-bit 4:2:2 recording, the Alpha 6700 is built for creators who demand versatility without compromise.",
-  
-  keyFeatures: [
-    "26MP APS-C Back-Illuminated Exmor R CMOS Sensor",
-    "Dedicated AI Processing Unit for Subject Recognition",
-    "759-Point Fast Hybrid Autofocus System",
-    "4K 120p 10-Bit Video Recording",
-    "5-Axis In-Body Image Stabilization",
-    "S-Cinetone and S-Log3 Professional Video Profiles",
-  ],
-
-  richFeatures: [
-    {
-      title: "Next-Generation AI Autofocus",
-      description:
-        "The dedicated AI Processing Unit recognizes humans, animals, birds, insects, cars, trains, and aircraft for highly accurate tracking and autofocus performance.",
-    },
-    {
-      title: "Cinema Line Inspired Video",
-      description:
-        "Capture oversampled 4K video from 6K data, record up to 4K 120p, and utilize S-Cinetone and S-Log3 for professional cinematic workflows.",
-    },
-    {
-      title: "Compact APS-C Powerhouse",
-      description:
-        "Combining advanced imaging technology with a lightweight body, the Alpha 6700 is ideal for travel, wildlife, vlogging, photography, and filmmaking.",
-    },
-  ],
-
-  specs: [
-    {
-      category: "General Specifications",
-      items: [
-        {
-          label: "Camera Type",
-          value: "Interchangeable Lens Digital Camera",
-        },
-        {
-          label: "Lens Mount",
-          value: "Sony E-Mount",
-        },
-        {
-          label: "Weight",
-          value: "Approx. 493g (with battery and memory card)",
-        },
-      ],
-    },
-
-    {
-      category: "Terminals & Interfaces",
-      items: [
-        {
-          label: "USB Interface",
-          value: "USB Type-C (USB 3.2 Gen 2)",
-        },
-        {
-          label: "HDMI Output",
-          value: "Micro HDMI (Type-D)",
-        },
-        {
-          label: "Wireless Connectivity",
-          value: "Wi-Fi 2.4GHz / 5GHz, Bluetooth",
-        },
-        {
-          label: "Audio Interfaces",
-          value: "3.5mm Microphone Input, 3.5mm Headphone Output, Multi Interface Shoe",
-        },
-        {
-          label: "Storage Slots",
-          value: "Single SD Card Slot (UHS-I / UHS-II Compatible)",
-        },
-      ],
-    },
-
-    {
-      category: "Imaging & Video",
-      items: [
-        {
-          label: "Sensor",
-          value: "APS-C Back-Illuminated Exmor R CMOS Sensor",
-        },
-        {
-          label: "Effective Resolution",
-          value: "Approx. 26.0 Megapixels",
-        },
-        {
-          label: "Processor",
-          value: "BIONZ XR Image Processor + AI Processing Unit",
-        },
-        {
-          label: "File Formats",
-          value: "JPEG, HEIF, RAW (Sony ARW)",
-        },
-        {
-          label: "ISO Range",
-          value: "ISO 100-32000 (Expandable to ISO 50-102400)",
-        },
-        {
-          label: "Autofocus System",
-          value: "759-Point Phase Detection Fast Hybrid AF",
-        },
-        {
-          label: "Image Stabilization",
-          value: "5-Axis Sensor Shift Stabilization (Up to 5 Stops)",
-        },
-        {
-          label: "Shutter Speed",
-          value: "1/8000s to 30s, Bulb",
-        },
-        {
-          label: "Continuous Shooting",
-          value: "Up to 11fps with AF/AE Tracking",
-        },
-        {
-          label: "Viewfinder",
-          value: "0.39-inch XGA OLED EVF, 2.36M Dots",
-        },
-        {
-          label: "LCD Screen",
-          value: "3.0-inch Vari-Angle Touchscreen LCD, 1.03M Dots",
-        },
-        {
-          label: "Movie Recording",
-          value: "4K 120p | 4K 60p Oversampled from 6K | 10-Bit 4:2:2 | S-Cinetone | S-Log3",
-        },
-      ],
-    },
-  ],
-},
-{
-  id: "ilce-6600",
-  name: "ILCE-6600",
-  category: "Mirrorless Cameras",
-  brand: "Sony",
-  price: "₹124,990",
-  slug: "ilce-6600",
-  status: "In Stock",
-
-  desc: "Sony's premium APS-C mirrorless camera featuring a 24.2MP Exmor CMOS sensor, Real-Time Eye AF, 5-axis image stabilization, 4K HDR video recording, and extended battery life for photographers and content creators.",
-
-  colors: [
-    {
-      name: "Black",
-      images: ["/products/sony/sony17.jpg"],
-    },
-  ],
-
-  lenses: ["Body Only"],
-
-  overview:
-    "The SONY ILCE-6600 (Alpha 6600) is the flagship APS-C mirrorless camera of its generation, combining exceptional image quality, advanced autofocus technology, and professional video capabilities in a compact body. Featuring a 24.2MP APS-C Exmor CMOS sensor, BIONZ X processor, Real-Time Tracking, Real-Time Eye AF, and 5-axis image stabilization, it delivers outstanding performance for photography, videography, travel, wildlife, and vlogging. Its large Z-series battery provides industry-leading endurance for extended shooting sessions.",
-
-  keyFeatures: [
-    "24.2MP APS-C Exmor CMOS Sensor",
-    "425-Point Fast Hybrid Autofocus System",
-    "Real-Time Eye AF & Real-Time Tracking",
-    "5-Axis In-Body Image Stabilization",
-    "4K UHD HDR Video Recording",
-    "High-Capacity Z-Series Battery",
-  ],
-
-  richFeatures: [
-    {
-      title: "Advanced Autofocus Performance",
-      description:
-        "Fast Hybrid AF with 425 phase-detection and contrast-detection points delivers highly accurate subject tracking and Real-Time Eye AF for humans and animals.",
-    },
-    {
-      title: "Professional Stabilization",
-      description:
-        "Built-in 5-axis image stabilization compensates for camera shake, enabling sharper handheld photos and smoother video recording.",
-    },
-    {
-      title: "Extended Battery Life",
-      description:
-        "Powered by Sony's high-capacity NP-FZ100 battery, the Alpha 6600 delivers significantly longer shooting endurance than previous APS-C models.",
-    },
-  ],
-
-  specs: [
-    {
-      category: "General Specifications",
-      items: [
-        {
-          label: "Camera Type",
-          value: "Interchangeable Lens Digital Camera",
-        },
-        {
-          label: "Lens Mount",
-          value: "Sony E-Mount",
-        },
-        {
-          label: "Weight",
-          value: "Approx. 503g (with battery and memory card)",
-        },
-      ],
-    },
-
-    {
-      category: "Terminals & Interfaces",
-      items: [
-        {
-          label: "USB Interface",
-          value: "USB Type-C (USB 3.1 Gen 1)",
-        },
-        {
-          label: "HDMI Output",
-          value: "Micro HDMI (Type-D)",
-        },
-        {
-          label: "Wireless Connectivity",
-          value: "Wi-Fi, NFC, Bluetooth",
-        },
-        {
-          label: "Audio Interfaces",
-          value: "3.5mm Microphone Input",
-        },
-        {
-          label: "Storage Slots",
-          value: "Single SD Card Slot (UHS-I Compatible)",
-        },
-      ],
-    },
-
-    {
-      category: "Imaging & Video",
-      items: [
-        {
-          label: "Sensor",
-          value: "APS-C Exmor CMOS Sensor",
-        },
-        {
-          label: "Effective Resolution",
-          value: "Approx. 24.2 Megapixels",
-        },
-        {
-          label: "Processor",
-          value: "BIONZ X Image Processor",
-        },
-        {
-          label: "File Formats",
-          value: "JPEG, RAW (Sony ARW)",
-        },
-        {
-          label: "ISO Range",
-          value: "ISO 100-32000 (Expandable to ISO 50-102400)",
-        },
-        {
-          label: "Autofocus System",
-          value: "425-Point Phase Detection AF + 425 Contrast Detection AF",
-        },
-        {
-          label: "Image Stabilization",
-          value: "5-Axis Sensor Shift Stabilization",
-        },
-        {
-          label: "Shutter Speed",
-          value: "1/4000s to 30s, Bulb",
-        },
-        {
-          label: "Continuous Shooting",
-          value: "Up to 11fps with AF/AE Tracking",
-        },
-        {
-          label: "Viewfinder",
-          value: "0.39-inch XGA OLED Electronic Viewfinder, 2.36M Dots",
-        },
-        {
-          label: "LCD Screen",
-          value: "3.0-inch Tilting Touchscreen LCD, 921K Dots",
-        },
-        {
-          label: "Movie Recording",
-          value: "4K UHD 30p | Full HD 120p | HLG HDR | S-Log2 | S-Log3",
-        },
-      ],
-    },
-  ],
-},
-{
-  id: "zv-e10m2",
-  name: "ZV-E10M2",
-  category: "Vlog Cameras",
-  brand: "Sony",
-  price: "₹99,490",
-  slug: "zv-e10m2",
-  status: "In Stock",
-
-  desc: "Sony's second-generation APS-C vlog camera featuring a 26MP Exmor R CMOS sensor, cinematic 4K 60p video, advanced creator tools, AI-powered autofocus, and interchangeable-lens flexibility for content creators and vloggers.",
-
-  colors: [
-    {
-      name: "Black",
-      images: ["/products/sony/sony18.jpg"],
-    },
-  ],
-
-  lenses: ["Body Only"],
-
-  overview:
-    "The SONY ZV-E10M2 (ZV-E10 II) is a powerful APS-C interchangeable-lens vlog camera built for modern content creators. Equipped with a 26MP back-illuminated Exmor R CMOS sensor, BIONZ XR processor, and advanced autofocus technology, it delivers exceptional image quality for both stills and video. Designed specifically for creators, it features Cinematic Vlog settings, Product Showcase Mode, Background Defocus, improved battery life, and professional 4K recording capabilities in a lightweight and portable body.",
-
-  keyFeatures: [
-    "26MP APS-C Back-Illuminated Exmor R CMOS Sensor",
-    "4K 60p 10-Bit Video Recording",
-    "759-Point Fast Hybrid Autofocus System",
-    "Cinematic Vlog & Product Showcase Modes",
-    "Background Defocus & Real-Time Eye AF",
-    "Interchangeable Sony E-Mount Lens System",
-  ],
-
-  richFeatures: [
-    {
-      title: "Built for Content Creators",
-      description:
-        "Dedicated creator tools including Product Showcase Mode, Background Defocus, Cinematic Vlog settings, and advanced microphone controls simplify professional content production.",
-    },
-    {
-      title: "High-Quality 4K Video",
-      description:
-        "Capture oversampled 4K footage from 5.6K sensor data with rich detail, 10-bit color recording, and advanced color profiles for cinematic results.",
-    },
-    {
-      title: "Fast and Intelligent Autofocus",
-      description:
-        "The Fast Hybrid AF system with Real-Time Eye AF and subject tracking ensures reliable focus performance during vlogging, interviews, and creative productions.",
-    },
-  ],
-
-  specs: [
-    {
-      category: "General Specifications",
-      items: [
-        {
-          label: "Camera Type",
-          value: "Interchangeable Lens Vlog Camera",
-        },
-        {
-          label: "Lens Mount",
-          value: "Sony E-Mount",
-        },
-        {
-          label: "Weight",
-          value: "Approx. 377g (with battery and memory card)",
-        },
-      ],
-    },
-
-    {
-      category: "Terminals & Interfaces",
-      items: [
-        {
-          label: "USB Interface",
-          value: "USB Type-C (USB 3.2 Gen 1)",
-        },
-        {
-          label: "HDMI Output",
-          value: "Micro HDMI (Type-D)",
-        },
-        {
-          label: "Wireless Connectivity",
-          value: "Wi-Fi 2.4GHz / 5GHz, Bluetooth",
-        },
-        {
-          label: "Audio Interfaces",
-          value: "3.5mm Microphone Input, Multi Interface Shoe",
-        },
-        {
-          label: "Storage Slots",
-          value: "Single SD Card Slot (UHS-I Compatible)",
-        },
-      ],
-    },
-
-    {
-      category: "Imaging & Video",
-      items: [
-        {
-          label: "Sensor",
-          value: "APS-C Back-Illuminated Exmor R CMOS Sensor",
-        },
-        {
-          label: "Effective Resolution",
-          value: "Approx. 26.0 Megapixels",
-        },
-        {
-          label: "Processor",
-          value: "BIONZ XR Image Processor",
-        },
-        {
-          label: "File Formats",
-          value: "JPEG, HEIF, RAW (Sony ARW)",
-        },
-        {
-          label: "ISO Range",
-          value: "ISO 100-32000 (Expandable to ISO 50-102400)",
-        },
-        {
-          label: "Autofocus System",
-          value: "759-Point Fast Hybrid AF",
-        },
-        {
-          label: "Image Stabilization",
-          value: "Electronic Active Mode Stabilization",
-        },
-        {
-          label: "Shutter Speed",
-          value: "1/4000s to 30s, Bulb",
-        },
-        {
-          label: "Continuous Shooting",
-          value: "Up to 11fps",
-        },
-        {
-          label: "Viewfinder",
-          value: "No Electronic Viewfinder",
-        },
-        {
-          label: "LCD Screen",
-          value: "3.0-inch Vari-Angle Touchscreen LCD, 1.04M Dots",
-        },
-        {
-          label: "Movie Recording",
-          value: "4K 60p | 10-Bit 4:2:2 | S-Cinetone | S-Log3 | HLG",
-        },
-      ],
-    },
-  ],
-},
-{
-  id: "ilce-6400",
-  name: "ILCE-6400",
-  category: "Mirrorless Cameras",
-  brand: "Sony",
-  price: "₹82,990",
-  slug: "ilce-6400",
-  status: "In Stock",
-
-  desc: "Sony's compact APS-C mirrorless camera featuring a 24.2MP Exmor CMOS sensor, industry-leading autofocus, Real-Time Eye AF, 4K video recording, and a 180-degree tilting touchscreen for photographers and content creators.",
-
-  colors: [
-    {
-      name: "Black",
-      images: ["/products/sony/sony19.jpg"],
-    },
-  ],
-
-  lenses: ["Body Only"],
-
-  overview:
-    "The SONY ILCE-6400 (Alpha 6400) combines exceptional autofocus performance, high-quality imaging, and advanced video features in a compact APS-C mirrorless body. Equipped with a 24.2MP Exmor CMOS sensor and BIONZ X image processor, it delivers outstanding image quality, rapid autofocus acquisition, and professional-level tracking performance. Its 180-degree flip-up touchscreen and 4K video capabilities make it a favorite among photographers, vloggers, travelers, and content creators.",
-
-  keyFeatures: [
-    "24.2MP APS-C Exmor CMOS Sensor",
-    "425-Point Fast Hybrid Autofocus System",
-    "Real-Time Eye AF & Real-Time Tracking",
-    "4K UHD Video Recording with Full Pixel Readout",
-    "180° Tilting Touchscreen LCD",
-    "Up to 11fps Continuous Shooting",
-  ],
-
-  richFeatures: [
-    {
-      title: "Lightning-Fast Autofocus",
-      description:
-        "Sony's Fast Hybrid AF system with 425 phase-detection points delivers rapid focus acquisition and accurate subject tracking for stills and video.",
-    },
-    {
-      title: "Creator-Friendly Design",
-      description:
-        "The 180-degree flip-up touchscreen enables easy self-recording for vlogging, live streaming, and content creation.",
-    },
-    {
-      title: "High-Quality 4K Video",
-      description:
-        "Capture detailed 4K footage using full pixel readout without pixel binning, delivering exceptional clarity and color reproduction.",
-    },
-  ],
-
-  specs: [
-    {
-      category: "General Specifications",
-      items: [
-        {
-          label: "Camera Type",
-          value: "Interchangeable Lens Digital Camera",
-        },
-        {
-          label: "Lens Mount",
-          value: "Sony E-Mount",
-        },
-        {
-          label: "Weight",
-          value: "Approx. 403g (with battery and memory card)",
-        },
-      ],
-    },
-
-    {
-      category: "Terminals & Interfaces",
-      items: [
-        {
-          label: "USB Interface",
-          value: "Micro USB (USB 2.0)",
-        },
-        {
-          label: "HDMI Output",
-          value: "Micro HDMI (Type-D)",
-        },
-        {
-          label: "Wireless Connectivity",
-          value: "Wi-Fi, NFC, Bluetooth",
-        },
-        {
-          label: "Audio Interfaces",
-          value: "3.5mm Microphone Input",
-        },
-        {
-          label: "Storage Slots",
-          value: "Single SD Card Slot (UHS-I Compatible)",
-        },
-      ],
-    },
-
-    {
-      category: "Imaging & Video",
-      items: [
-        {
-          label: "Sensor",
-          value: "APS-C Exmor CMOS Sensor",
-        },
-        {
-          label: "Effective Resolution",
-          value: "Approx. 24.2 Megapixels",
-        },
-        {
-          label: "Processor",
-          value: "BIONZ X Image Processor",
-        },
-        {
-          label: "File Formats",
-          value: "JPEG, RAW (Sony ARW)",
-        },
-        {
-          label: "ISO Range",
-          value: "ISO 100-32000 (Expandable to ISO 102400)",
-        },
-        {
-          label: "Autofocus System",
-          value: "425-Point Phase Detection AF + 425 Contrast Detection AF",
-        },
-        {
-          label: "Image Stabilization",
-          value: "Lens-Based Optical Stabilization (No In-Body Stabilization)",
-        },
-        {
-          label: "Shutter Speed",
-          value: "1/4000s to 30s, Bulb",
-        },
-        {
-          label: "Continuous Shooting",
-          value: "Up to 11fps with AF/AE Tracking",
-        },
-        {
-          label: "Viewfinder",
-          value: "0.39-inch XGA OLED Electronic Viewfinder, 2.36M Dots",
-        },
-        {
-          label: "LCD Screen",
-          value: "3.0-inch 180° Tilting Touchscreen LCD, 921K Dots",
-        },
-        {
-          label: "Movie Recording",
-          value: "4K UHD 30p | Full HD 120p | S-Log2 | S-Log3 | HLG",
-        },
-      ],
-    },
-  ],
-},
-{
-  id: "ilce-6100",
-  name: "ILCE-6100",
-  category: "Mirrorless Cameras",
-  brand: "Sony",
-  price: "₹66,990",
-  slug: "ilce-6100",
-  status: "In Stock",
-
-  desc: "Sony's entry-level APS-C mirrorless camera featuring a 24.2MP Exmor CMOS sensor, Real-Time Eye AF, 425-point autofocus system, 4K video recording, and a lightweight design ideal for beginners, travelers, and content creators.",
-
-  colors: [
-    {
-      name: "Black",
-      images: ["/products/sony/sony20.jpg"],
-    },
-  ],
-
-  lenses: ["Body Only"],
-
-  overview:
-    "The SONY ILCE-6100 (Alpha 6100) delivers impressive imaging performance and advanced autofocus technology in a compact and affordable APS-C mirrorless camera. Equipped with a 24.2MP Exmor CMOS sensor and Sony's Fast Hybrid AF system, it provides fast subject tracking, Real-Time Eye AF, and excellent image quality for both photography and video. Its 180-degree tilting touchscreen and 4K recording capabilities make it a great choice for beginners, vloggers, travelers, and everyday creators.",
-
-  keyFeatures: [
-    "24.2MP APS-C Exmor CMOS Sensor",
-    "425-Point Fast Hybrid Autofocus System",
-    "Real-Time Eye AF & Real-Time Tracking",
-    "4K UHD Video Recording",
-    "180° Tilting Touchscreen LCD",
-    "Up to 11fps Continuous Shooting",
-  ],
-
-  richFeatures: [
-    {
-      title: "Advanced Autofocus Technology",
-      description:
-        "The Fast Hybrid AF system with 425 phase-detection and 425 contrast-detection points delivers quick focus acquisition and reliable subject tracking.",
-    },
-    {
-      title: "Perfect for Content Creation",
-      description:
-        "The 180-degree flip-up touchscreen makes self-recording simple, while 4K video recording delivers high-quality footage for vlogging and social media.",
-    },
-    {
-      title: "Compact Everyday Companion",
-      description:
-        "Lightweight and easy to carry, the Alpha 6100 offers excellent image quality and intuitive controls for photographers of all experience levels.",
-    },
-  ],
-
-  specs: [
-    {
-      category: "General Specifications",
-      items: [
-        {
-          label: "Camera Type",
-          value: "Interchangeable Lens Digital Camera",
-        },
-        {
-          label: "Lens Mount",
-          value: "Sony E-Mount",
-        },
-        {
-          label: "Weight",
-          value: "Approx. 396g (with battery and memory card)",
-        },
-      ],
-    },
-
-    {
-      category: "Terminals & Interfaces",
-      items: [
-        {
-          label: "USB Interface",
-          value: "Micro USB (USB 2.0)",
-        },
-        {
-          label: "HDMI Output",
-          value: "Micro HDMI (Type-D)",
-        },
-        {
-          label: "Wireless Connectivity",
-          value: "Wi-Fi, NFC, Bluetooth 4.1",
-        },
-        {
-          label: "Audio Interfaces",
-          value: "3.5mm Microphone Input",
-        },
-        {
-          label: "Storage Slots",
-          value: "Single SD Card Slot (UHS-I Compatible)",
-        },
-      ],
-    },
-
-    {
-      category: "Imaging & Video",
-      items: [
-        {
-          label: "Sensor",
-          value: "APS-C Exmor CMOS Sensor",
-        },
-        {
-          label: "Effective Resolution",
-          value: "Approx. 24.2 Megapixels",
-        },
-        {
-          label: "Processor",
-          value: "BIONZ X Image Processor",
-        },
-        {
-          label: "File Formats",
-          value: "JPEG, RAW (Sony ARW)",
-        },
-        {
-          label: "ISO Range",
-          value: "ISO 100-32000 (Expandable to ISO 51200)",
-        },
-        {
-          label: "Autofocus System",
-          value: "425-Point Phase Detection AF + 425 Contrast Detection AF",
-        },
-        {
-          label: "Image Stabilization",
-          value: "Lens-Based Optical Stabilization (No In-Body Stabilization)",
-        },
-        {
-          label: "Shutter Speed",
-          value: "1/4000s to 30s, Bulb",
-        },
-        {
-          label: "Continuous Shooting",
-          value: "Up to 11fps with AF/AE Tracking",
-        },
-        {
-          label: "Viewfinder",
-          value: "0.39-inch OLED Electronic Viewfinder, 1.44M Dots",
-        },
-        {
-          label: "LCD Screen",
-          value: "3.0-inch 180° Tilting Touchscreen LCD, 921K Dots",
-        },
-        {
-          label: "Movie Recording",
-          value: "4K UHD 30p | Full HD 120p",
-        },
-      ],
-    },
-  ],
-},
-{
-  id: "zv-e10",
-  name: "ZV-E10",
-  category: "Vlog Cameras",
-  brand: "Sony",
-  price: "₹61,990",
-  slug: "zv-e10",
-  status: "In Stock",
-
-  desc: "Sony's APS-C interchangeable-lens vlog camera featuring a 24.2MP Exmor CMOS sensor, Real-Time Eye AF, 4K video recording, Product Showcase Mode, and a fully articulating touchscreen designed specifically for content creators and vloggers.",
-
-  colors: [
-    {
-      name: "Black",
-      images: ["/products/sony/sony21.jpg"],
-    },
-  ],
-
-  lenses: ["Body Only"],
-
-  overview:
-    "The SONY ZV-E10 is a creator-focused APS-C mirrorless camera designed for vloggers, streamers, and content creators. Combining a 24.2MP APS-C Exmor CMOS sensor with Sony's renowned autofocus system, it delivers high-quality photos and 4K video while offering the flexibility of interchangeable E-mount lenses. Dedicated creator features such as Product Showcase Mode, Background Defocus, a directional 3-capsule microphone, and a fully articulating touchscreen make content production simple and professional." , 
-
-  keyFeatures: [
-    "24.2MP APS-C Exmor CMOS Sensor",
-    "425-Point Fast Hybrid Autofocus System",
-    "4K UHD Video Recording",
-    "Product Showcase & Background Defocus Modes",
-    "Real-Time Eye AF and Real-Time Tracking",
-    "Fully Articulating Touchscreen LCD",
-  ],
-
-  richFeatures: [
-    {
-      title: "Built for Vloggers",
-      description:
-        "Dedicated creator tools such as Product Showcase Mode, Background Defocus, and a directional microphone make professional-looking content easy to create.",
-    },
-    {
-      title: "Interchangeable Lens Flexibility",
-      description:
-        "Compatible with Sony's E-mount lens ecosystem, allowing creators to choose lenses for vlogging, portraits, travel, product videos, and filmmaking.",
-    },
-    {
-      title: "Advanced Autofocus Performance",
-      description:
-        "Real-Time Eye AF and Real-Time Tracking help maintain accurate focus on subjects during video recording and photography.",
-    },
-  ],
-
-  specs: [
-    {
-      category: "General Specifications",
-      items: [
-        {
-          label: "Camera Type",
-          value: "Interchangeable Lens Vlog Camera",
-        },
-        {
-          label: "Lens Mount",
-          value: "Sony E-Mount",
-        },
-        {
-          label: "Weight",
-          value: "Approx. 343g (with battery and memory card)",
-        },
-      ],
-    },
-
-    {
-      category: "Terminals & Interfaces",
-      items: [
-        {
-          label: "USB Interface",
-          value: "USB Type-C (USB 3.2 Gen 1)",
-        },
-        {
-          label: "HDMI Output",
-          value: "Micro HDMI (Type-D)",
-        },
-        {
-          label: "Wireless Connectivity",
-          value: "Wi-Fi, Bluetooth",
-        },
-        {
-          label: "Audio Interfaces",
-          value: "3.5mm Microphone Input, Multi Interface Shoe",
-        },
-        {
-          label: "Storage Slots",
-          value: "Single SD Card Slot (UHS-I Compatible)",
-        },
-      ],
-    },
-
-    {
-      category: "Imaging & Video",
-      items: [
-        {
-          label: "Sensor",
-          value: "APS-C Exmor CMOS Sensor",
-        },
-        {
-          label: "Effective Resolution",
-          value: "Approx. 24.2 Megapixels",
-        },
-        {
-          label: "Processor",
-          value: "BIONZ X Image Processor",
-        },
-        {
-          label: "File Formats",
-          value: "JPEG, RAW (Sony ARW)",
-        },
-        {
-          label: "ISO Range",
-          value: "ISO 100-32000 (Expandable to ISO 50-51200)",
-        },
-        {
-          label: "Autofocus System",
-          value: "425-Point Phase Detection AF + 425 Contrast Detection AF",
-        },
-        {
-          label: "Image Stabilization",
-          value: "Lens-Based Stabilization + Electronic Active Mode",
-        },
-        {
-          label: "Shutter Speed",
-          value: "1/4000s to 30s, Bulb",
-        },
-        {
-          label: "Continuous Shooting",
-          value: "Up to 11fps",
-        },
-        {
-          label: "Viewfinder",
-          value: "No Electronic Viewfinder",
-        },
-        {
-          label: "LCD Screen",
-          value: "3.0-inch Fully Articulating Touchscreen LCD, 921K Dots",
-        },
-        {
-          label: "Movie Recording",
-          value: "4K UHD 30p | Full HD 120p | S-Log2 | S-Log3 | HLG",
-        },
-      ],
-    },
-  ],
-},
-
-// === nikon brand start from here camera's
-
-{
-  id: "z-89",
-  name: "Z 89",
-  category: "Mirrorless Cameras",
-  brand: "Nikon",
-  price: "₹2,99,495",
-  slug: "z-89",
-  status: "In Stock",
-
-  colors: [
-    {
-      name: "Black",
-      images: [
-        "/products/nikon/z-8/n1.jpg",
-        "/products/nikon/z-8/n3.jpg",
-        "/products/nikon/z-8/n4.jpg",
-        "/products/nikon/z-8/n5.jpg",
-        "/products/nikon/z-8/n6.jpg",
-        "/products/nikon/z-8/n8.jpg",
-        "/products/nikon/z-8/n9.jpg",
-        "/products/nikon/z-8/n10.jpg",
-        "/products/nikon/z-8/n11.jpg",
-        "/products/nikon/z-8/n12.jpg",
-        "/products/nikon/z-8/n13.jpg",
-        "/products/nikon/z-8/n14.jpg",
-        "/products/nikon/z-8/n15.jpg",
-        "/products/nikon/z-8/n16.jpg",
-      ],
-    },
-  ],
-
-  lenses: ["Body Only"],
-
-  overview:
-    "A legacy inspired by agility and performance. Relish in the autofocus (AF) performance, 9 types of subjects at a time. With the dedicated new airplane mode added to the AF detection menu, the Z 8’s powerful combination of subject detection and 3D-tracking allows you to easily capture fast, erratically moving subjects; while the wide-area AF offers 20 custom options to provide flexibility for any shooting situation. Experience excellent video features with multiple video formats of your choice to tell your visual narratives. Record to your heart’s content with up to 125 minutes of continuous recording in 4K UHD/60p, together with a variety of accessories to elevate your videography creations.",
-
-  specs: [
-    {
-      category: "General Specifications",
-      items: [
-        {
-          label: "Type",
-          value: "Digital camera with support for interchangeable lenses",
-        },
-        {
-          label: "Lens Mount",
-          value: "Nikon Z mount",
-        },
-        {
-          label: "Picture Angle",
-          value: "Full-frame / FX-Format",
-        },
-      ],
-    },
-
-    {
-      category: "Image Sensor",
-      items: [
-        {
-          label: "Sensor Size",
-          value: "35.9 mm × 23.9 mm",
-        },
-        {
-          label: "Sensor Type",
-          value: "CMOS",
-        },
-        {
-          label: "Effective Pixels",
-          value: "45.7 million",
-        },
-        {
-          label: "Total Pixels",
-          value: "52.37 million",
-        },
-        {
-          label: "Image Sensor Format",
-          value: "Full-frame / FX-format",
-        },
-      ],
-    },
-
-    {
-      category: "Movie",
-      items: [
-        {
-          label: "Video Resolution",
-          value: "8K UHD (7680×4320) up to 30p, 4K UHD (3840×2160) up to 120p",
-        },
-        {
-          label: "Movie File Format",
-          value: "NEV, MOV, MP4",
-        },
-        {
-          label: "Video Compression",
-          value: "N-RAW, Apple ProRes RAW HQ, Apple ProRes 422 HQ, H.265/HEVC, H.264/AVC",
-        },
-        {
-          label: "Maximum Recording Time",
-          value: "125 min",
-        },
-        {
-          label: "Audio",
-          value: "Built-in stereo or external microphone",
-        },
-      ],
-    },
-
-    {
-      category: "Storage",
-      items: [
-        {
-          label: "Storage Media",
-          value: "CFexpress Type B, XQD, SD, SDHC (UHS-II), SDXC (UHS-II)",
-        },
-        {
-          label: "Card Slots",
-          value: "1 CFexpress/XQD + 1 SD card slot",
-        },
-      ],
-    },
-
-    {
-      category: "Viewfinder",
-      items: [
-        {
-          label: "Viewfinder Type",
-          value: "OLED Electronic Viewfinder",
-        },
-        {
-          label: "Resolution",
-          value: "Approx. 3690k-dot",
-        },
-        {
-          label: "Frame Coverage",
-          value: "Approx. 100% horizontal and vertical",
-        },
-        {
-          label: "Magnification",
-          value: "Approx. 0.8x",
-        },
-      ],
-    },
-
-    {
-      category: "Shutter",
-      items: [
-        {
-          label: "Shutter Type",
-          value: "Electronic shutter with shutter sound and sensor shield",
-        },
-        {
-          label: "Shutter Speed",
-          value: "1/32000 sec to 30 sec, Bulb, Time",
-        },
-        {
-          label: "Continuous Shooting",
-          value: "Up to 120 fps",
-        },
-      ],
-    },
-
-    {
-      category: "Exposure & ISO",
-      items: [
-        {
-          label: "Exposure Modes",
-          value: "P, S, A, M",
-        },
-        {
-          label: "ISO Range",
-          value: "ISO 64–25600 (expandable to ISO 102400)",
-        },
-      ],
-    },
-
-    {
-      category: "Autofocus",
-      items: [
-        {
-          label: "Autofocus System",
-          value: "Hybrid phase-detection / contrast AF",
-        },
-        {
-          label: "Focus Points",
-          value: "493",
-        },
-        {
-          label: "Image Stabilization",
-          value: "5-axis image sensor shift VR",
-        },
-        {
-          label: "Animal Eye AF",
-          value: "Yes",
-        },
-      ],
-    },
-
-    {
-      category: "Monitor",
-      items: [
-        {
-          label: "Monitor Size",
-          value: "3.2-inch",
-        },
-        {
-          label: "Resolution",
-          value: "Approx. 2100k-dot",
-        },
-        {
-          label: "Type",
-          value: "Vertically and horizontally tilting TFT touch-sensitive LCD",
-        },
-      ],
-    },
-
-    {
-      category: "Connectivity",
-      items: [
-        {
-          label: "USB",
-          value: "USB Type-C",
-        },
-        {
-          label: "HDMI",
-          value: "Type-A",
-        },
-        {
-          label: "Wi-Fi",
-          value: "IEEE 802.11 a/b/g/n/ac",
-        },
-        {
-          label: "App Connectivity",
-          value: "SnapBridge",
-        },
-      ],
-    },
-
-    {
-      category: "Power",
-      items: [
-        {
-          label: "Battery",
-          value: "EN-EL15c Rechargeable Li-ion Battery",
-        },
-      ],
-    },
-
-    {
-      category: "Physical",
-      items: [
-        {
-          label: "Weight",
-          value: "Approx. 910g with battery and memory card",
-        },
-        {
-          label: "Dimensions",
-          value: "Approx. 144 × 118.5 × 83 mm",
-        },
-        {
-          label: "4K UHD",
-          value: "Yes",
-        },
-      ],
-    },
-  ],
-},
-{
-  id: "z-9",
-  name: "Z 9",
-  category: "Mirrorless Cameras",
-  brand: "Nikon",
-  price: "₹4,75,995",
-  slug: "z-9",
-  status: "In Stock",
-
-  colors: [
-    {
-      name: "Black",
-      images: [
-        "/products/nikon/z-9/n1.jpg",
-        "/products/nikon/z-9/n2.jpg",
-        "/products/nikon/z-9/n3.jpg",
-        "/products/nikon/z-9/n4.jpg",
-        "/products/nikon/z-9/n5.jpg",
-        "/products/nikon/z-9/n6.jpg",
-        "/products/nikon/z-9/n7.jpg",
-        "/products/nikon/z-9/n8.jpg",
-      ],
-    },
-  ],
-
-  lenses: ["Body Only"],
-
-  overview:
-    "The time has come for the arrival of a true next level flagship mirrorless camera. Fast, powerful, dependable - in an incredible range of scenarios. With its revolutionary real-time Viewfinder with no blackout, its advanced subject detection technology, and high-speed frame capture, never miss a moment with the Z 9. Film up to 125 minutes of non-stop, in-camera, 8K UHD footage and experience the astonishing resolving power of the NIKKOR Z S-line lenses powered by the Z mount to reveal amazingly sharp detail from edge to edge. Shoot in harsh conditions with absolute confidence of never missing a detail. You'll be ready.",
-   specs: [
-    {
-      category: "General Specifications",
-      items: [
-        { label: "Type", value: "Digital camera with support for interchangeable lenses" },
-        { label: "Lens Mount", value: "Nikon Z mount" },
-        { label: "Picture Angle", value: "Full-frame / FX-format" },
-      ],
-    },
-
-    {
-      category: "Image Sensor",
-      items: [
-        { label: "Sensor Size", value: "35.9 mm × 23.9 mm" },
-        { label: "Sensor Type", value: "Stacked CMOS Sensor" },
-        { label: "Effective Pixels", value: "45.7 million" },
-        { label: "Total Pixels", value: "52.37 million" },
-        { label: "Image Sensor Format", value: "Full-frame / FX-format" },
-      ],
-    },
-
-    {
-      category: "Movie",
-      items: [
-        { label: "Video Resolution", value: "8K UHD up to 30p, 4K UHD up to 120p, Full HD up to 120p" },
-        { label: "Movie File Format", value: "MOV, MP4" },
-        { label: "Video Compression", value: "N-RAW, Apple ProRes RAW HQ, ProRes 422 HQ, H.265/HEVC, H.264/AVC" },
-        { label: "Maximum Recording Time", value: "2 hours 5 minutes" },
-        { label: "Audio", value: "Built-in stereo or external microphone" },
-      ],
-    },
-
-    {
-      category: "Storage",
-      items: [
-        { label: "Storage Media", value: "CFexpress Type B, XQD" },
-        { label: "Card Slots", value: "Dual CFexpress/XQD card slots" },
-      ],
-    },
-
-    {
-      category: "Viewfinder",
-      items: [
-        { label: "Viewfinder Type", value: "OLED Electronic Viewfinder" },
-        { label: "Resolution", value: "Approx. 3690k-dot" },
-        { label: "Frame Coverage", value: "Approx. 100% horizontal and vertical" },
-        { label: "Magnification", value: "Approx. 0.8x" },
-      ],
-    },
-
-    {
-      category: "Shutter",
-      items: [
-        { label: "Shutter Type", value: "Electronic shutter with shutter sound and sensor shield" },
-        { label: "Shutter Speed", value: "1/32000 sec to 30 sec, Bulb, Time" },
-        { label: "Continuous Shooting", value: "Up to 120 fps" },
-      ],
-    },
-
-    {
-      category: "Exposure & ISO",
-      items: [
-        { label: "Exposure Modes", value: "Matrix, Center-weighted, Spot, Highlight-weighted" },
-        { label: "ISO Range", value: "ISO 64–25600 (expandable to ISO 102400)" },
-      ],
-    },
-
-    {
-      category: "Autofocus",
-      items: [
-        { label: "Autofocus System", value: "Hybrid phase-detection / contrast AF" },
-        { label: "Focus Points", value: "493" },
-        { label: "Image Stabilization", value: "5-axis image sensor shift VR" },
-        { label: "Animal Eye AF", value: "Yes" },
-      ],
-    },
-
-    {
-      category: "Monitor",
-      items: [
-        { label: "Monitor Size", value: "3.2-inch" },
-        { label: "Resolution", value: "Approx. 2100k-dot" },
-        { label: "Type", value: "Vertically and horizontally tilting TFT touch-sensitive LCD" },
-      ],
-    },
-
-    {
-      category: "Connectivity",
-      items: [
-        { label: "USB", value: "USB Type-C" },
-        { label: "HDMI", value: "Type-A" },
-        { label: "Wi-Fi", value: "IEEE 802.11 b/g/n/a/ac" },
-        { label: "App Connectivity", value: "SnapBridge" },
-      ],
-    },
-
-    {
-      category: "Power",
-      items: [
-        { label: "Battery", value: "EN-EL18d Rechargeable Li-ion Battery" },
-      ],
-    },
-
-    {
-      category: "Physical",
-      items: [
-        { label: "Weight", value: "Approx. 1340g with battery and memory card" },
-        { label: "Dimensions", value: "149 × 149.5 × 90.5 mm" },
-        { label: "4K UHD", value: "Yes" },
-      ],
-    },
-  ],
-},
-{
-  id: "z-6ii-nikkor-z-24-105mm-f/4-7.1",
-  name: "Z 6II + NIKKOR Z 24-105mm f/4-7.1",
-  category: "Mirrorless Cameras",
-  brand: "Nikon",
-  price: "₹1,71,225",
-  slug: "z-6ii-nikkor-z-24-105mm-f-4-7.1",
-  status: "In Stock",
-
-  colors: [
-    {
-      name: "Black",
-      images: [
-        "/products/nikon/z-6ii/n1.jpg",
-        "/products/nikon/z-6ii/n2.jpg",
-      ],
-    },
-  ],
-
-  lenses: ["Body Only"],
-
-  overview:
-    "The time has come for the arrival of a true next level flagship mirrorless camera. Fast, powerful, dependable - in an incredible range of scenarios. With its revolutionary real-time Viewfinder with no blackout, its advanced subject detection technology, and high-speed frame capture, never miss a moment with the Z 9. Film up to 125 minutes of non-stop, in-camera, 8K UHD footage and experience the astonishing resolving power of the NIKKOR Z S-line lenses powered by the Z mount to reveal amazingly sharp detail from edge to edge. Shoot in harsh conditions with absolute confidence of never missing a detail. You'll be ready.",
     specs: [
-    {
-      category: "General Specifications",
-      items: [
-        { label: "Type", value: "Digital camera with support for interchangeable lenses" },
-        { label: "Lens Mount", value: "Nikon Z mount" },
-        { label: "Picture Angle", value: "N/A" },
-      ],
-    },
+      {
+        category: "General Specifications",
+        items: [
+          {
+            label: "Camera Type",
+            value: "Interchangeable Lens Digital Camera",
+          },
+          {
+            label: "Lens Mount",
+            value: "Sony E-Mount",
+          },
+          {
+            label: "Weight",
+            value: "Approx. 678g (with battery and memory card)",
+          },
+        ],
+      },
 
-    {
-      category: "Image Sensor",
-      items: [
-        { label: "Sensor Size", value: "35.9 mm × 23.9 mm" },
-        { label: "Sensor Type", value: "CMOS" },
-        { label: "Effective Pixels", value: "24.5 million" },
-        { label: "Total Pixels", value: "25.28 million" },
-        { label: "Image Sensor Format", value: "Full-frame / FX-format" },
-      ],
-    },
+      {
+        category: "Terminals & Interfaces",
+        items: [
+          {
+            label: "USB Interface",
+            value: "USB Type-C (USB 3.2 Gen 1)",
+          },
+          {
+            label: "HDMI Output",
+            value: "Full-Size HDMI Type-A",
+          },
+          {
+            label: "Wireless Connectivity",
+            value: "Wi-Fi 2.4GHz / 5GHz, Bluetooth",
+          },
+          {
+            label: "Network",
+            value: "Gigabit Ethernet (1000BASE-T)",
+          },
+          {
+            label: "Storage Slots",
+            value: "Dual SD Card Slots (Both UHS-II Compatible)",
+          },
+        ],
+      },
 
-    {
-      category: "Movie",
-      items: [
-        { label: "Video Resolution", value: "4K UHD up to 30p, Full HD up to 120p" },
-        { label: "Movie File Format", value: "MOV, MP4" },
-        { label: "Video Compression", value: "H.264 / MPEG-4 AVC" },
-        { label: "Maximum Recording Time", value: "29 min 59 sec" },
-        { label: "Audio", value: "Built-in stereo or external microphone" },
-      ],
-    },
-
-    {
-      category: "Storage",
-      items: [
-        { label: "Storage Media", value: "CFexpress Type B, XQD, SD/SDHC/SDXC UHS-II" },
-        { label: "Card Slots", value: "Dual Slots" },
-      ],
-    },
-
-    {
-      category: "Viewfinder",
-      items: [
-        { label: "Viewfinder Type", value: "OLED Electronic Viewfinder" },
-        { label: "Resolution", value: "Approx. 3690k-dot" },
-        { label: "Frame Coverage", value: "Approx. 100% horizontal and vertical" },
-        { label: "Magnification", value: "Approx. 0.8x" },
-      ],
-    },
-
-    {
-      category: "Shutter",
-      items: [
-        { label: "Shutter Type", value: "Mechanical, Electronic Front-Curtain, Electronic" },
-        { label: "Shutter Speed", value: "1/8000 sec to 900 sec" },
-        { label: "Continuous Shooting", value: "Up to 14 fps" },
-      ],
-    },
-
-    {
-      category: "Exposure & ISO",
-      items: [
-        { label: "Exposure Modes", value: "P, S, A, M, U1, U2, U3" },
-        { label: "ISO Range", value: "ISO 100–51200 (expandable to ISO 204800)" },
-      ],
-    },
-
-    {
-      category: "Autofocus",
-      items: [
-        { label: "Autofocus System", value: "Hybrid phase-detection / contrast AF" },
-        { label: "Focus Points", value: "273" },
-        { label: "Image Stabilization", value: "5-axis image sensor shift VR" },
-        { label: "Animal Eye AF", value: "Yes" },
-      ],
-    },
-
-    {
-      category: "Monitor",
-      items: [
-        { label: "Monitor Size", value: "3.2-inch" },
-        { label: "Resolution", value: "Approx. 2100k-dot" },
-        { label: "Type", value: "Tilting TFT Touch-Sensitive LCD" },
-      ],
-    },
-
-    {
-      category: "Connectivity",
-      items: [
-        { label: "USB", value: "USB Type-C" },
-        { label: "HDMI", value: "Type-C" },
-        { label: "Wi-Fi", value: "IEEE 802.11 b/g/n/a/ac" },
-        { label: "App Connectivity", value: "SnapBridge" },
-      ],
-    },
-
-    {
-      category: "Power",
-      items: [
-        { label: "Battery", value: "EN-EL15c Rechargeable Li-ion Battery" },
-      ],
-    },
-
-    {
-      category: "Physical",
-      items: [
-        { label: "Weight", value: "Approx. 615g" },
-        { label: "Dimensions", value: "134 × 100.5 × 69.5 mm" },
-        { label: "4K UHD", value: "Yes" },
-      ],
-    },
-  ],
-},
-{
-  id: "z-30",
-  name: "Z 30",
-  category: "Mirrorless Cameras",
-  brand: "Nikon",
-  price: "₹59,895",
-  slug: "z-30",
-  status: "In Stock",
-
-  colors: [
-    {
-      name: "Black",
-      images: [
-        "/products/nikon/z-30/n1.jpg",
-        "/products/nikon/z-30/n2.jpg",
-        "/products/nikon/z-30/n3.jpg",
-        "/products/nikon/z-30/n4.jpg",
-        "/products/nikon/z-30/n5.jpg",
-        "/products/nikon/z-30/n6.jpg",
-        "/products/nikon/z-30/n7.jpg",
-        "/products/nikon/z-30/n8.jpg",
-        "/products/nikon/z-30/n9.jpg",
-        "/products/nikon/z-30/n10.jpg",
-        "/products/nikon/z-30/n11.jpg",
-        "/products/nikon/z-30/n12.jpg",
-      ],
-    },
-  ],
-
-  lenses: ["Body Only"],
-
-  overview:
-        "The Z 30 is made for your inner videographer. Hit record with ease whenever inspiration strikes. Excite the ears of your audience with premium sound quality from dual microphones. From teasers to reels to stories to streams, this is where heroes of content are born.",
-  specs: [
+      {
+        category: "Imaging & Video",
+        items: [
+          {
+            label: "Sensor",
+            value: "35mm Full-Frame Stacked Exmor RS CMOS Sensor",
+          },
+          {
+            label: "Effective Resolution",
+            value: "Approx. 24.2 Megapixels",
+          },
+          {
+            label: "Processor",
+            value: "BIONZ X Image Processor",
+          },
+          {
+            label: "File Formats",
+            value: "JPEG, RAW (Sony ARW)",
+          },
+          {
+            label: "ISO Range",
+            value: "ISO 100-51200 (Expandable to ISO 50-204800)",
+          },
+          {
+            label: "Autofocus System",
+            value: "693-Point Phase Detection AF + 425 Contrast Detection AF",
+          },
+          {
+            label: "Image Stabilization",
+            value: "5-Axis Sensor Shift Stabilization (Up to 5.5 Stops)",
+          },
+          {
+            label: "Shutter Speed",
+            value: "Electronic: 1/32000s to 30s | Mechanical: 1/8000s to 30s",
+          },
+          {
+            label: "Continuous Shooting",
+            value: "Up to 20fps Electronic | Up to 10fps Mechanical",
+          },
+          {
+            label: "Viewfinder",
+            value: "3.69M-Dot OLED Tru-Finder EVF",
+          },
+          {
+            label: "LCD Screen",
+            value: "3.0-inch Tilting Touchscreen LCD, 1.44M Dots",
+          },
+          {
+            label: "Movie Recording",
+            value: "4K UHD 30p | Full HD 120p | Full Pixel Readout",
+          },
+        ],
+      },
+    ],
+  },
   {
-    category: "General Specifications",
-    items: [
-      { label: "Type", value: "Digital camera with support for interchangeable lenses" },
-      { label: "Lens Mount", value: "Nikon Z mount" },
-      { label: "Picture Angle", value: "APS-C Size / DX-Format" },
+    id: "ilce-7rm5",
+    name: "ILCE-7RM5",
+    category: "Mirrorless Cameras",
+    brand: "Sony",
+    price: "₹353,990",
+    slug: "ilce-7rm5",
+    status: "In Stock",
+
+    desc: "Sony's ultra-high-resolution full-frame mirrorless camera featuring a 61MP Exmor R CMOS sensor, dedicated AI Processing Unit, advanced subject recognition autofocus, 8K video recording, and professional imaging performance for photographers and filmmakers.",
+
+    colors: [
+      {
+        name: "Black",
+        images: ["/products/sony/sony6.jpg"],
+      },
+    ],
+
+    lenses: ["Body Only"],
+
+    overview:
+      "The SONY ILCE-7RM5 (Alpha 7R V) combines extraordinary 61MP resolution with next-generation AI-powered autofocus technology. Built around a full-frame back-illuminated Exmor R CMOS sensor and Sony's BIONZ XR processor, it delivers remarkable detail, enhanced subject recognition, advanced image stabilization, and professional 8K video recording. Designed for landscape, wildlife, commercial, portrait, and studio photographers who demand maximum image quality without compromise.",
+
+    keyFeatures: [
+      "61MP Full-Frame Back-Illuminated Exmor R CMOS Sensor",
+      "Dedicated AI Processing Unit for Subject Recognition",
+      "8K 24p and 4K 60p Video Recording",
+      "693-Point Fast Hybrid Autofocus System",
+      "8-Stop 5-Axis In-Body Image Stabilization",
+      "4-Axis Multi-Angle Touchscreen LCD",
+    ],
+
+    richFeatures: [
+      {
+        title: "61MP High-Resolution Imaging",
+        description:
+          "The full-frame Exmor R sensor delivers extraordinary detail, dynamic range, and color accuracy, making it ideal for landscape, commercial, portrait, and fine-art photography.",
+      },
+      {
+        title: "Next-Generation AI Autofocus",
+        description:
+          "A dedicated AI Processing Unit accurately recognizes and tracks humans, animals, birds, insects, cars, trains, and aircraft with exceptional precision.",
+      },
+      {
+        title: "Professional Hybrid Performance",
+        description:
+          "Capture stunning 8K video, advanced 10-bit recording formats, and highly stabilized handheld footage with up to 8 stops of image stabilization.",
+      },
+    ],
+
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          {
+            label: "Camera Type",
+            value: "Interchangeable Lens Digital Camera",
+          },
+          {
+            label: "Lens Mount",
+            value: "Sony E-Mount",
+          },
+          {
+            label: "Weight",
+            value: "Approx. 723g (with battery and memory card)",
+          },
+        ],
+      },
+
+      {
+        category: "Terminals & Interfaces",
+        items: [
+          {
+            label: "USB Interface",
+            value: "USB Type-C SuperSpeed USB 10Gbps",
+          },
+          {
+            label: "HDMI Output",
+            value: "Full-Size HDMI Type-A",
+          },
+          {
+            label: "Wireless Connectivity",
+            value: "Wi-Fi, Bluetooth 5.0",
+          },
+          {
+            label: "Storage Slots",
+            value: "Dual CFexpress Type A / SD UHS-II Compatible Slots",
+          },
+        ],
+      },
+
+      {
+        category: "Imaging & Video",
+        items: [
+          {
+            label: "Sensor",
+            value: "35mm Full-Frame Back-Illuminated Exmor R CMOS Sensor",
+          },
+          {
+            label: "Effective Resolution",
+            value: "Approx. 61.0 Megapixels",
+          },
+          {
+            label: "Processor",
+            value: "BIONZ XR Image Processor + AI Processing Unit",
+          },
+          {
+            label: "File Formats",
+            value: "JPEG, HEIF, RAW (Sony ARW)",
+          },
+          {
+            label: "ISO Range",
+            value: "ISO 100-32000 (Expandable to ISO 50-102400)",
+          },
+          {
+            label: "Autofocus System",
+            value: "693-Point Phase Detection Fast Hybrid AF",
+          },
+          {
+            label: "Image Stabilization",
+            value: "5-Axis Sensor Shift Stabilization (Up to 8 Stops)",
+          },
+          {
+            label: "Shutter Speed",
+            value: "1/8000s to 30s, Bulb",
+          },
+          {
+            label: "Continuous Shooting",
+            value: "Up to 10fps with AF/AE Tracking",
+          },
+          {
+            label: "Viewfinder",
+            value: "9.44M-Dot Quad-XGA OLED EVF, Up to 120fps Refresh Rate",
+          },
+          {
+            label: "LCD Screen",
+            value: "3.2-inch 4-Axis Multi-Angle Touchscreen, 2.1M Dots",
+          },
+          {
+            label: "Movie Recording",
+            value: "8K 24p | 4K 60p | 10-bit 4:2:2 Internal Recording",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "ilce-7sm3",
+    name: "ILCE-7SM3",
+    category: "Mirrorless Cameras",
+    brand: "Sony",
+    price: "₹348,490",
+    slug: "ilce-7sm3",
+    status: "In Stock",
+
+    desc: "Sony's professional full-frame cinema-focused mirrorless camera featuring a 12.1MP Exmor R CMOS sensor, exceptional low-light performance, 4K 120p recording, 10-bit 4:2:2 internal video, and advanced autofocus for filmmakers and content creators.",
+
+    colors: [
+      {
+        name: "Black",
+        images: ["/products/sony/sony7.jpg"],
+      },
+    ],
+
+    lenses: ["Body Only"],
+
+    overview:
+      "The SONY ILCE-7SM3 (Alpha 7S III) is designed for visual storytellers who demand uncompromising video performance. Featuring a newly developed 12.1MP full-frame back-illuminated Exmor R CMOS sensor and BIONZ XR processor, it delivers extraordinary low-light capability, 15-stop dynamic range, advanced autofocus, and professional 4K recording up to 120fps. With 10-bit 4:2:2 internal recording, RAW output, and industry-leading workflow tools, it remains one of the most respected hybrid cinema cameras available.",
+
+    keyFeatures: [
+      "12.1MP Full-Frame Back-Illuminated Exmor R CMOS Sensor",
+      "4K 120p 10-Bit 4:2:2 Internal Recording",
+      "759-Point Fast Hybrid Autofocus System",
+      "Ultra-High ISO up to 409600 (Expanded)",
+      "5-Axis In-Body Image Stabilization with Active Mode",
+      "Dual CFexpress Type A / SD UHS-II Card Slots",
+    ],
+
+    richFeatures: [
+      {
+        title: "Exceptional Low-Light Performance",
+        description:
+          "The 12.1MP full-frame sensor delivers outstanding sensitivity, low noise, and wide dynamic range, making it ideal for professional video production in challenging lighting conditions.",
+      },
+      {
+        title: "Professional 4K Cinema Recording",
+        description:
+          "Record up to 4K 120p with 10-bit 4:2:2 color depth, advanced codecs, S-Log3, HLG, and RAW HDMI output for maximum post-production flexibility.",
+      },
+      {
+        title: "Advanced Autofocus for Video",
+        description:
+          "Fast Hybrid AF with 759 phase-detection points provides reliable subject tracking and Real-Time Eye AF for both stills and video production.",
+      },
+    ],
+
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          {
+            label: "Camera Type",
+            value: "Interchangeable Lens Digital Camera",
+          },
+          {
+            label: "Lens Mount",
+            value: "Sony E-Mount",
+          },
+          {
+            label: "Weight",
+            value: "Approx. 699g (with battery and memory card)",
+          },
+        ],
+      },
+
+      {
+        category: "Terminals & Interfaces",
+        items: [
+          {
+            label: "USB Interface",
+            value: "USB Type-C SuperSpeed USB 5Gbps",
+          },
+          {
+            label: "HDMI Output",
+            value: "Full-Size HDMI Type-A",
+          },
+          {
+            label: "Wireless Connectivity",
+            value: "Wi-Fi 2.4GHz / 5GHz, Bluetooth 5.0",
+          },
+          {
+            label: "Audio Interfaces",
+            value: "3.5mm Mic Input, 3.5mm Headphone Output",
+          },
+          {
+            label: "Storage Slots",
+            value: "Dual CFexpress Type A / SD UHS-II Compatible Slots",
+          },
+        ],
+      },
+
+      {
+        category: "Imaging & Video",
+        items: [
+          {
+            label: "Sensor",
+            value: "35mm Full-Frame Back-Illuminated Exmor R CMOS Sensor",
+          },
+          {
+            label: "Effective Resolution",
+            value: "Approx. 12.1 Megapixels",
+          },
+          {
+            label: "Processor",
+            value: "BIONZ XR Image Processor",
+          },
+          {
+            label: "File Formats",
+            value: "JPEG, HEIF, RAW (Sony ARW)",
+          },
+          {
+            label: "ISO Range",
+            value: "ISO 80-102400 (Expandable to ISO 40-409600)",
+          },
+          {
+            label: "Autofocus System",
+            value: "759-Point Phase Detection Fast Hybrid AF",
+          },
+          {
+            label: "Image Stabilization",
+            value: "5-Axis Sensor Shift Stabilization (Up to 5.5 Stops)",
+          },
+          {
+            label: "Shutter Speed",
+            value: "1/8000s to 30s, Bulb",
+          },
+          {
+            label: "Continuous Shooting",
+            value: "Up to 10fps with AF/AE Tracking",
+          },
+          {
+            label: "Viewfinder",
+            value: "9.44M-Dot OLED Electronic Viewfinder",
+          },
+          {
+            label: "LCD Screen",
+            value: "3.0-inch Vari-Angle Touchscreen LCD, 1.44M Dots",
+          },
+          {
+            label: "Movie Recording",
+            value:
+              "4K 120p | 4K 60p | 10-Bit 4:2:2 Internal Recording | RAW HDMI Output",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "ilce-7cr",
+    name: "ILCE-7CR",
+    category: "Mirrorless Cameras",
+    brand: "Sony",
+    price: "₹305,490",
+    slug: "ilce-7cr",
+    status: "In Stock",
+
+    desc: "Sony's ultra-compact high-resolution full-frame mirrorless camera featuring a 61MP Exmor R CMOS sensor, AI-powered autofocus, advanced image stabilization, and professional 4K video capabilities in the lightweight Alpha 7C series body.",
+
+    colors: [
+      {
+        name: "Black",
+        images: ["/products/sony/sony8.jpg"],
+      },
+    ],
+
+    lenses: ["Body Only"],
+
+    overview:
+      "The SONY ILCE-7CR combines the acclaimed 61MP full-frame sensor from the Alpha 7R series with the compact and portable Alpha 7C design. Powered by the BIONZ XR processor and a dedicated AI Processing Unit, it delivers extraordinary detail, intelligent subject recognition, advanced stabilization, and professional-grade video recording. Designed for travel, street, landscape, portrait, and content creators who want flagship image quality in a compact form factor.",
+
+    keyFeatures: [
+      "61MP Full-Frame Back-Illuminated Exmor R CMOS Sensor",
+      "Dedicated AI Processing Unit for Subject Recognition",
+      "693-Point Fast Hybrid Autofocus System",
+      "7-Stop 5-Axis In-Body Image Stabilization",
+      "4K 60p Video Recording & 6.2K Oversampling",
+      "Compact Alpha 7C Series Design",
+    ],
+
+    richFeatures: [
+      {
+        title: "61MP Resolution in a Compact Body",
+        description:
+          "Experience exceptional image quality and detail with the same 61MP full-frame sensor found in Sony's flagship high-resolution cameras, now packed into an ultra-portable body.",
+      },
+      {
+        title: "Advanced AI Subject Recognition",
+        description:
+          "The dedicated AI Processing Unit recognizes humans, animals, birds, insects, cars, trains, and aircraft for highly accurate autofocus and tracking performance.",
+      },
+      {
+        title: "Powerful Stabilization System",
+        description:
+          "Advanced 5-axis image stabilization provides up to 7 stops of compensation, enabling sharper handheld photography and smoother video recording.",
+      },
+    ],
+
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          {
+            label: "Camera Type",
+            value: "Interchangeable Lens Digital Camera",
+          },
+          {
+            label: "Lens Mount",
+            value: "Sony E-Mount",
+          },
+          {
+            label: "Weight",
+            value: "Approx. 515g (with battery and memory card)",
+          },
+        ],
+      },
+
+      {
+        category: "Terminals & Interfaces",
+        items: [
+          {
+            label: "USB Interface",
+            value: "USB Type-C SuperSpeed USB 5Gbps",
+          },
+          {
+            label: "HDMI Output",
+            value: "Micro HDMI (Type-D)",
+          },
+          {
+            label: "Wireless Connectivity",
+            value: "Wi-Fi 2.4GHz / 5GHz, Bluetooth 4.2",
+          },
+          {
+            label: "Audio Interfaces",
+            value: "3.5mm Mic Input, 3.5mm Headphone Output",
+          },
+          {
+            label: "Storage Slots",
+            value: "Single SD Card Slot (UHS-I / UHS-II Compatible)",
+          },
+        ],
+      },
+
+      {
+        category: "Imaging & Video",
+        items: [
+          {
+            label: "Sensor",
+            value: "35mm Full-Frame Back-Illuminated Exmor R CMOS Sensor",
+          },
+          {
+            label: "Effective Resolution",
+            value: "Approx. 61.0 Megapixels",
+          },
+          {
+            label: "Processor",
+            value: "BIONZ XR Image Processor + AI Processing Unit",
+          },
+          {
+            label: "File Formats",
+            value: "JPEG, HEIF, RAW (Sony ARW)",
+          },
+          {
+            label: "ISO Range",
+            value: "ISO 100-32000 (Expandable to ISO 50-102400)",
+          },
+          {
+            label: "Autofocus System",
+            value: "693-Point Fast Hybrid AF",
+          },
+          {
+            label: "Image Stabilization",
+            value: "5-Axis Sensor Shift Stabilization (Up to 7 Stops)",
+          },
+          {
+            label: "Shutter Speed",
+            value: "1/4000s to 30s, Bulb",
+          },
+          {
+            label: "Continuous Shooting",
+            value: "Up to 8fps with AF/AE Tracking",
+          },
+          {
+            label: "Viewfinder",
+            value: "0.39-inch OLED EVF, 2.36M Dots",
+          },
+          {
+            label: "LCD Screen",
+            value: "3.0-inch Vari-Angle Touchscreen LCD, 1.03M Dots",
+          },
+          {
+            label: "Movie Recording",
+            value: "4K 60p | 10-Bit 4:2:2 | 6.2K Oversampled Recording",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "ilce-7rm4",
+    name: "ILCE-7RM4",
+    category: "Mirrorless Cameras",
+    brand: "Sony",
+    price: "₹297,990",
+    slug: "ilce-7rm4",
+    status: "In Stock",
+
+    desc: "Sony's high-resolution full-frame mirrorless camera featuring a 61MP Exmor R CMOS sensor, advanced autofocus, 10fps continuous shooting, and professional-grade image quality for landscape, portrait, wildlife, and commercial photography.",
+
+    colors: [
+      {
+        name: "Black",
+        images: ["/products/sony/sony9.jpg"],
+      },
+    ],
+
+    lenses: ["Body Only"],
+
+    overview:
+      "The SONY ILCE-7RM4 (Alpha 7R IV) pushes full-frame resolution to new heights with its groundbreaking 61MP back-illuminated Exmor R CMOS sensor. Combined with the BIONZ X image processor, advanced autofocus technology, and 5-axis image stabilization, it delivers exceptional detail, dynamic range, and color reproduction. Designed for professionals and enthusiasts alike, the Alpha 7R IV excels in landscape, studio, commercial, wildlife, and fine-art photography while also offering advanced 4K video capabilities.",
+
+    keyFeatures: [
+      "61MP Full-Frame Back-Illuminated Exmor R CMOS Sensor",
+      "567-Point Phase Detection Autofocus System",
+      "Up to 10fps Continuous Shooting",
+      "5.5-Stop 5-Axis In-Body Image Stabilization",
+      "4K Video Recording with Full Pixel Readout",
+      "Dual UHS-II SD Card Slots",
+    ],
+
+    richFeatures: [
+      {
+        title: "Industry-Leading 61MP Resolution",
+        description:
+          "The high-resolution full-frame Exmor R sensor captures extraordinary detail, dynamic range, and color accuracy suitable for large-format printing and professional commercial work.",
+      },
+      {
+        title: "Advanced Autofocus Performance",
+        description:
+          "Fast Hybrid AF combines 567 phase-detection points and 425 contrast-detection points for precise subject tracking and Real-Time Eye AF for humans and animals.",
+      },
+      {
+        title: "Professional Imaging Workflow",
+        description:
+          "Dual UHS-II card slots, high-speed connectivity, and robust weather-sealed construction ensure reliable performance in demanding professional environments.",
+      },
+    ],
+
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          {
+            label: "Camera Type",
+            value: "Interchangeable Lens Digital Camera",
+          },
+          {
+            label: "Lens Mount",
+            value: "Sony E-Mount",
+          },
+          {
+            label: "Weight",
+            value: "Approx. 665g (with battery and memory card)",
+          },
+        ],
+      },
+
+      {
+        category: "Terminals & Interfaces",
+        items: [
+          {
+            label: "USB Interface",
+            value: "USB Type-C SuperSpeed USB 5Gbps",
+          },
+          {
+            label: "HDMI Output",
+            value: "Micro HDMI (Type-D)",
+          },
+          {
+            label: "Wireless Connectivity",
+            value: "Wi-Fi 2.4GHz / 5GHz, Bluetooth",
+          },
+          {
+            label: "Storage Slots",
+            value: "Dual SD Card Slots (Both UHS-II Compatible)",
+          },
+        ],
+      },
+
+      {
+        category: "Imaging & Video",
+        items: [
+          {
+            label: "Sensor",
+            value: "35mm Full-Frame Back-Illuminated Exmor R CMOS Sensor",
+          },
+          {
+            label: "Effective Resolution",
+            value: "Approx. 61.0 Megapixels",
+          },
+          {
+            label: "Processor",
+            value: "BIONZ X Image Processor",
+          },
+          {
+            label: "File Formats",
+            value: "JPEG, RAW (Sony ARW)",
+          },
+          {
+            label: "ISO Range",
+            value: "ISO 100-32000 (Expandable to ISO 50-102400)",
+          },
+          {
+            label: "Autofocus System",
+            value: "567-Point Phase Detection AF + 425 Contrast Detection AF",
+          },
+          {
+            label: "Image Stabilization",
+            value: "5-Axis Sensor Shift Stabilization (Up to 5.5 Stops)",
+          },
+          {
+            label: "Shutter Speed",
+            value: "1/8000s to 30s, Bulb",
+          },
+          {
+            label: "Continuous Shooting",
+            value: "Up to 10fps with AF/AE Tracking",
+          },
+          {
+            label: "Viewfinder",
+            value: "5.76M-Dot OLED Tru-Finder EVF, Up to 120fps Refresh Rate",
+          },
+          {
+            label: "LCD Screen",
+            value: "3.0-inch Tilting Touchscreen LCD, 1.44M Dots",
+          },
+          {
+            label: "Movie Recording",
+            value: "4K UHD 30p | Full HD 120p | S-Log2 / S-Log3 Support",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "zv-e1",
+    name: "ZV-E1",
+    category: "Vlog Cameras",
+    brand: "Sony",
+    price: "₹223,490",
+    slug: "zv-e1",
+    status: "In Stock",
+
+    desc: "Sony's full-frame vlog camera featuring a 12.1MP Exmor R CMOS sensor, AI-powered subject recognition, exceptional low-light performance, 4K 120p recording, and advanced stabilization in the world's most compact and lightweight interchangeable-lens full-frame camera.",
+
+    colors: [
+      {
+        name: "Black",
+        images: ["/products/sony/sony10.jpg"],
+      },
+    ],
+
+    lenses: ["Body Only"],
+
+    overview:
+      "The SONY ZV-E1 is designed specifically for content creators and vloggers who want professional full-frame image quality in an ultra-compact body. Featuring the same 12.1MP full-frame Exmor R sensor technology found in Sony's professional cinema-oriented cameras, the ZV-E1 combines exceptional low-light performance, AI-powered autofocus, advanced stabilization, and cinematic video features. With dedicated creator tools such as Auto Framing, Product Showcase Mode, Cinematic Vlog settings, and an intelligent 3-capsule microphone, it provides a complete solution for modern content creation.",
+
+    keyFeatures: [
+      "12.1MP Full-Frame Back-Illuminated Exmor R CMOS Sensor",
+      "AI Processing Unit for Advanced Subject Recognition",
+      "4K 120p Video Recording",
+      "Dynamic Active Stabilization",
+      "Auto Framing & Product Showcase Mode",
+      "Intelligent 3-Capsule Directional Microphone",
+    ],
+
+    richFeatures: [
+      {
+        title: "Full-Frame Sensor for Creators",
+        description:
+          "The 12.1MP full-frame Exmor R sensor delivers exceptional low-light performance, cinematic depth of field, and impressive dynamic range for professional-looking content.",
+      },
+      {
+        title: "AI-Powered Content Creation",
+        description:
+          "A dedicated AI Processing Unit enables advanced subject recognition, Auto Framing, multiple face recognition, and highly accurate Real-Time Tracking autofocus.",
+      },
+      {
+        title: "Professional Video Performance",
+        description:
+          "Capture stunning 4K footage at up to 120fps with 10-bit recording, S-Log3 support, Cinematic Vlog settings, and advanced stabilization for smooth handheld shooting.",
+      },
+    ],
+
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          {
+            label: "Camera Type",
+            value: "Interchangeable Lens Vlog Camera",
+          },
+          {
+            label: "Lens Mount",
+            value: "Sony E-Mount",
+          },
+          {
+            label: "Weight",
+            value: "Approx. 483g (with battery and memory card)",
+          },
+        ],
+      },
+
+      {
+        category: "Terminals & Interfaces",
+        items: [
+          {
+            label: "USB Interface",
+            value: "USB Type-C SuperSpeed USB 5Gbps",
+          },
+          {
+            label: "HDMI Output",
+            value: "Micro HDMI (Type-D)",
+          },
+          {
+            label: "Wireless Connectivity",
+            value: "Wi-Fi 2.4GHz / 5GHz, Bluetooth",
+          },
+          {
+            label: "Audio Interfaces",
+            value:
+              "3.5mm Microphone Input, 3.5mm Headphone Output, Multi Interface Shoe",
+          },
+          {
+            label: "Storage Slots",
+            value: "Single SD Card Slot (UHS-II Compatible)",
+          },
+        ],
+      },
+
+      {
+        category: "Imaging & Video",
+        items: [
+          {
+            label: "Sensor",
+            value: "35mm Full-Frame Back-Illuminated Exmor R CMOS Sensor",
+          },
+          {
+            label: "Effective Resolution",
+            value: "Approx. 12.1 Megapixels",
+          },
+          {
+            label: "Processor",
+            value: "BIONZ XR Image Processor + AI Processing Unit",
+          },
+          {
+            label: "File Formats",
+            value: "JPEG, HEIF, RAW (Sony ARW)",
+          },
+          {
+            label: "ISO Range",
+            value: "ISO 80-102400 (Expandable to ISO 40-409600)",
+          },
+          {
+            label: "Autofocus System",
+            value: "759-Point Fast Hybrid AF with Real-Time Tracking",
+          },
+          {
+            label: "Image Stabilization",
+            value:
+              "5-Axis In-Body Stabilization with Active & Dynamic Active Mode",
+          },
+          {
+            label: "Shutter Speed",
+            value: "1/8000s to 30s, Bulb",
+          },
+          {
+            label: "Continuous Shooting",
+            value: "Up to 10fps",
+          },
+          {
+            label: "Viewfinder",
+            value: "No Electronic Viewfinder",
+          },
+          {
+            label: "LCD Screen",
+            value: "3.0-inch Fully Articulating Touchscreen LCD, 1.03M Dots",
+          },
+          {
+            label: "Movie Recording",
+            value:
+              "4K 120p | 4K 60p | 10-Bit 4:2:2 Internal Recording | S-Log3 | HLG",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "ilce-7cm2",
+    name: "ILCE-7CM2",
+    category: "Mirrorless Cameras",
+    brand: "Sony",
+    price: "₹223,990",
+    slug: "ilce-7cm2",
+    status: "In Stock",
+
+    desc: "Sony's compact full-frame mirrorless camera featuring a 33MP Exmor R CMOS sensor, AI-powered subject recognition autofocus, 4K 60p video recording, and advanced image stabilization in the lightweight Alpha 7C series body.",
+
+    colors: [
+      {
+        name: "Black",
+        images: ["/products/sony/sony11.jpg"],
+      },
+    ],
+
+    lenses: ["Body Only"],
+
+    overview:
+      "The SONY ILCE-7CM2 (Alpha 7C II) combines the powerful imaging technology of Sony's latest full-frame cameras with an ultra-compact and lightweight design. Featuring a 33MP back-illuminated Exmor R CMOS sensor, BIONZ XR processor, dedicated AI Processing Unit, and advanced autofocus system, it delivers exceptional image quality, intelligent subject tracking, and professional video capabilities. Designed for travel, street photography, content creation, and everyday shooting, the Alpha 7C II offers full-frame performance without the bulk of traditional camera bodies.",
+
+    keyFeatures: [
+      "33MP Full-Frame Back-Illuminated Exmor R CMOS Sensor",
+      "Dedicated AI Processing Unit for Subject Recognition",
+      "759-Point Fast Hybrid Autofocus System",
+      "4K 60p Video Recording with 10-Bit 4:2:2",
+      "7-Stop 5-Axis In-Body Image Stabilization",
+      "Compact and Lightweight Alpha 7C Series Design",
+    ],
+
+    richFeatures: [
+      {
+        title: "Compact Full-Frame Performance",
+        description:
+          "The 33MP Exmor R sensor delivers outstanding image quality, dynamic range, and low-light performance in one of Sony's most portable full-frame camera bodies.",
+      },
+      {
+        title: "AI-Powered Autofocus",
+        description:
+          "A dedicated AI Processing Unit accurately recognizes and tracks humans, animals, birds, insects, cars, trains, and aircraft for reliable autofocus performance.",
+      },
+      {
+        title: "Advanced Hybrid Shooting",
+        description:
+          "Capture professional-quality stills and oversampled 4K video with advanced stabilization, subject tracking, and creator-friendly shooting features.",
+      },
+    ],
+
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          {
+            label: "Camera Type",
+            value: "Interchangeable Lens Digital Camera",
+          },
+          {
+            label: "Lens Mount",
+            value: "Sony E-Mount",
+          },
+          {
+            label: "Weight",
+            value: "Approx. 514g (with battery and memory card)",
+          },
+        ],
+      },
+
+      {
+        category: "Terminals & Interfaces",
+        items: [
+          {
+            label: "USB Interface",
+            value: "USB Type-C SuperSpeed USB 5Gbps",
+          },
+          {
+            label: "HDMI Output",
+            value: "Micro HDMI (Type-D)",
+          },
+          {
+            label: "Wireless Connectivity",
+            value: "Wi-Fi 2.4GHz / 5GHz, Bluetooth 4.2",
+          },
+          {
+            label: "Audio Interfaces",
+            value: "3.5mm Microphone Input, 3.5mm Headphone Output",
+          },
+          {
+            label: "Storage Slots",
+            value: "Single SD Card Slot (UHS-I / UHS-II Compatible)",
+          },
+        ],
+      },
+
+      {
+        category: "Imaging & Video",
+        items: [
+          {
+            label: "Sensor",
+            value: "35mm Full-Frame Back-Illuminated Exmor R CMOS Sensor",
+          },
+          {
+            label: "Effective Resolution",
+            value: "Approx. 33.0 Megapixels",
+          },
+          {
+            label: "Processor",
+            value: "BIONZ XR Image Processor + AI Processing Unit",
+          },
+          {
+            label: "File Formats",
+            value: "JPEG, HEIF, RAW (Sony ARW)",
+          },
+          {
+            label: "ISO Range",
+            value: "ISO 100-51200 (Expandable to ISO 50-204800)",
+          },
+          {
+            label: "Autofocus System",
+            value: "759-Point Phase Detection Fast Hybrid AF",
+          },
+          {
+            label: "Image Stabilization",
+            value: "5-Axis Sensor Shift Stabilization (Up to 7 Stops)",
+          },
+          {
+            label: "Shutter Speed",
+            value: "Mechanical: 1/4000s to 30s | Electronic: 1/8000s to 30s",
+          },
+          {
+            label: "Continuous Shooting",
+            value: "Up to 10fps with AF/AE Tracking",
+          },
+          {
+            label: "Viewfinder",
+            value: "0.39-inch XGA OLED EVF, 2.36M Dots",
+          },
+          {
+            label: "LCD Screen",
+            value: "3.0-inch Vari-Angle Touchscreen LCD, 1.03M Dots",
+          },
+          {
+            label: "Movie Recording",
+            value: "4K 60p | 10-Bit 4:2:2 Internal Recording | S-Log3 | HLG",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "ilce-7m4",
+    name: "ILCE-7M4",
+    category: "Mirrorless Cameras",
+    brand: "Sony",
+    price: "₹210,990",
+    slug: "ilce-7m4",
+    status: "In Stock",
+
+    desc: "Sony's versatile full-frame hybrid mirrorless camera featuring a 33MP Exmor R CMOS sensor, advanced autofocus, 4K 60p video recording, and professional imaging performance for photographers, filmmakers, and content creators.",
+
+    colors: [
+      {
+        name: "Black",
+        images: ["/products/sony/sony12.jpg"],
+      },
+    ],
+
+    lenses: ["Body Only"],
+
+    overview:
+      "The SONY ILCE-7M4 (Alpha 7 IV) is a powerful hybrid camera that combines outstanding still-image quality with advanced video capabilities. Built around a 33MP full-frame back-illuminated Exmor R CMOS sensor and the BIONZ XR processor, it delivers exceptional image quality, fast autofocus, improved color science, and professional video features. Whether shooting weddings, portraits, travel, wildlife, or cinematic content, the Alpha 7 IV provides the versatility and reliability demanded by modern creators.",
+
+    keyFeatures: [
+      "33MP Full-Frame Back-Illuminated Exmor R CMOS Sensor",
+      "759-Point Fast Hybrid Autofocus System",
+      "4K 60p 10-Bit 4:2:2 Video Recording",
+      "Real-Time Eye AF & Subject Tracking",
+      "5.5-Stop 5-Axis In-Body Image Stabilization",
+      "10fps Continuous Shooting with AF/AE Tracking",
+    ],
+
+    richFeatures: [
+      {
+        title: "33MP Full-Frame Imaging",
+        description:
+          "The Exmor R CMOS sensor delivers an ideal balance of resolution, dynamic range, low-light performance, and manageable file sizes for professional photography.",
+      },
+      {
+        title: "Next-Generation Autofocus",
+        description:
+          "With 759 phase-detection points and Real-Time Tracking, the camera provides highly accurate subject recognition and Eye AF for humans, animals, and birds.",
+      },
+      {
+        title: "Professional Hybrid Performance",
+        description:
+          "Capture oversampled 4K video with 10-bit 4:2:2 recording, advanced color profiles, and creator-focused workflow features alongside high-quality still photography.",
+      },
+    ],
+
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          {
+            label: "Camera Type",
+            value: "Interchangeable Lens Digital Camera",
+          },
+          {
+            label: "Lens Mount",
+            value: "Sony E-Mount",
+          },
+          {
+            label: "Weight",
+            value: "Approx. 658g (with battery and memory card)",
+          },
+        ],
+      },
+
+      {
+        category: "Terminals & Interfaces",
+        items: [
+          {
+            label: "USB Interface",
+            value: "USB Type-C SuperSpeed USB 10Gbps",
+          },
+          {
+            label: "HDMI Output",
+            value: "Full-Size HDMI Type-A",
+          },
+          {
+            label: "Wireless Connectivity",
+            value: "Wi-Fi 2.4GHz / 5GHz, Bluetooth 4.1",
+          },
+          {
+            label: "Audio Interfaces",
+            value: "3.5mm Microphone Input, 3.5mm Headphone Output",
+          },
+          {
+            label: "Storage Slots",
+            value: "Dual Card Slots (CFexpress Type A / SD UHS-II + SD UHS-II)",
+          },
+        ],
+      },
+
+      {
+        category: "Imaging & Video",
+        items: [
+          {
+            label: "Sensor",
+            value: "35mm Full-Frame Back-Illuminated Exmor R CMOS Sensor",
+          },
+          {
+            label: "Effective Resolution",
+            value: "Approx. 33.0 Megapixels",
+          },
+          {
+            label: "Processor",
+            value: "BIONZ XR Image Processor",
+          },
+          {
+            label: "File Formats",
+            value: "JPEG, HEIF, RAW (Sony ARW)",
+          },
+          {
+            label: "ISO Range",
+            value: "ISO 100-51200 (Expandable to ISO 50-204800)",
+          },
+          {
+            label: "Autofocus System",
+            value: "759-Point Phase Detection AF + 425 Contrast Detection AF",
+          },
+          {
+            label: "Image Stabilization",
+            value: "5-Axis Sensor Shift Stabilization (Up to 5.5 Stops)",
+          },
+          {
+            label: "Shutter Speed",
+            value: "1/8000s to 30s, Bulb",
+          },
+          {
+            label: "Continuous Shooting",
+            value: "Up to 10fps with AF/AE Tracking",
+          },
+          {
+            label: "Viewfinder",
+            value:
+              "3.69M-Dot OLED Electronic Viewfinder, Up to 120fps Refresh Rate",
+          },
+          {
+            label: "LCD Screen",
+            value: "3.0-inch Vari-Angle Touchscreen LCD, 1.03M Dots",
+          },
+          {
+            label: "Movie Recording",
+            value:
+              "4K 60p | 4K 30p 7K Oversampled | 10-Bit 4:2:2 Internal Recording",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "ilce-7rm3",
+    name: "ILCE-7RM3",
+    category: "Mirrorless Cameras",
+    brand: "Sony",
+    price: "₹204,990",
+    slug: "ilce-7rm3",
+    status: "In Stock",
+
+    desc: "Sony's professional high-resolution full-frame mirrorless camera featuring a 42.4MP Exmor R CMOS sensor, advanced autofocus, 10fps continuous shooting, and outstanding image quality for landscape, portrait, wildlife, and commercial photography.",
+
+    colors: [
+      {
+        name: "Black",
+        images: ["/products/sony/sony13.jpg"],
+      },
+    ],
+
+    lenses: ["Body Only"],
+
+    overview:
+      "The SONY ILCE-7RM3 (Alpha 7R III) combines exceptional 42.4MP resolution with impressive speed and versatility. Built around a full-frame back-illuminated Exmor R CMOS sensor and BIONZ X image processor, it delivers extraordinary detail, wide dynamic range, fast autofocus performance, and professional-grade video capabilities. Designed for photographers who demand both resolution and responsiveness, the Alpha 7R III excels in landscape, portrait, studio, wildlife, and commercial photography.",
+
+    keyFeatures: [
+      "42.4MP Full-Frame Back-Illuminated Exmor R CMOS Sensor",
+      "399-Point Phase Detection Autofocus System",
+      "Up to 10fps Continuous Shooting with AF/AE Tracking",
+      "5-Axis In-Body Image Stabilization",
+      "4K UHD Video Recording with Full Pixel Readout",
+      "Dual UHS-II SD Card Slots",
+    ],
+
+    richFeatures: [
+      {
+        title: "42.4MP High-Resolution Imaging",
+        description:
+          "The full-frame Exmor R CMOS sensor delivers remarkable detail, dynamic range, and low-noise performance, making it ideal for professional photography and large-format prints.",
+      },
+      {
+        title: "Speed Meets Resolution",
+        description:
+          "Capture fast-moving subjects at up to 10fps with continuous autofocus and auto-exposure tracking, combining high resolution with impressive shooting speed.",
+      },
+      {
+        title: "Professional Hybrid Performance",
+        description:
+          "Record detailed 4K video, utilize advanced Picture Profiles including S-Log3 and HLG, and benefit from professional workflow features for both photography and filmmaking.",
+      },
+    ],
+
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          {
+            label: "Camera Type",
+            value: "Interchangeable Lens Digital Camera",
+          },
+          {
+            label: "Lens Mount",
+            value: "Sony E-Mount",
+          },
+          {
+            label: "Weight",
+            value: "Approx. 657g (with battery and memory card)",
+          },
+        ],
+      },
+
+      {
+        category: "Terminals & Interfaces",
+        items: [
+          {
+            label: "USB Interface",
+            value: "USB Type-C (USB 3.1 Gen 1)",
+          },
+          {
+            label: "HDMI Output",
+            value: "Micro HDMI (Type-D)",
+          },
+          {
+            label: "Wireless Connectivity",
+            value: "Wi-Fi, NFC, Bluetooth",
+          },
+          {
+            label: "Storage Slots",
+            value: "Dual SD Card Slots (UHS-II Compatible)",
+          },
+        ],
+      },
+
+      {
+        category: "Imaging & Video",
+        items: [
+          {
+            label: "Sensor",
+            value: "35mm Full-Frame Back-Illuminated Exmor R CMOS Sensor",
+          },
+          {
+            label: "Effective Resolution",
+            value: "Approx. 42.4 Megapixels",
+          },
+          {
+            label: "Processor",
+            value: "BIONZ X Image Processor",
+          },
+          {
+            label: "File Formats",
+            value: "JPEG, RAW (Sony ARW)",
+          },
+          {
+            label: "ISO Range",
+            value: "ISO 100-32000 (Expandable to ISO 50-102400)",
+          },
+          {
+            label: "Autofocus System",
+            value: "399-Point Phase Detection AF + 425 Contrast Detection AF",
+          },
+          {
+            label: "Image Stabilization",
+            value: "5-Axis Sensor Shift Stabilization (Up to 5.5 Stops)",
+          },
+          {
+            label: "Shutter Speed",
+            value: "1/8000s to 30s, Bulb",
+          },
+          {
+            label: "Continuous Shooting",
+            value: "Up to 10fps with AF/AE Tracking",
+          },
+          {
+            label: "Viewfinder",
+            value: "3.69M-Dot Quad-VGA OLED Electronic Viewfinder",
+          },
+          {
+            label: "LCD Screen",
+            value: "3.0-inch Tilting LCD Touchscreen, 1.44M Dots",
+          },
+          {
+            label: "Movie Recording",
+            value: "4K UHD 30p | Full HD 120p | S-Log3 | HLG",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "ilce-7c",
+    name: "ILCE-7C",
+    category: "Mirrorless Cameras",
+    brand: "Sony",
+    price: "₹148,490",
+    slug: "ilce-7c",
+    status: "In Stock",
+
+    desc: "Sony's compact full-frame mirrorless camera featuring a 24.2MP Exmor R CMOS sensor, advanced Real-Time Eye AF, 4K video recording, and 5-axis image stabilization in one of the world's smallest and lightest full-frame camera bodies.",
+
+    colors: [
+      {
+        name: "Black",
+        images: ["/products/sony/sony14.jpg"],
+      },
+    ],
+
+    lenses: ["Body Only"],
+
+    overview:
+      "The SONY ILCE-7C (Alpha 7C) brings full-frame image quality into an ultra-compact and lightweight body. Featuring a 24.2MP back-illuminated Exmor R CMOS sensor, BIONZ X processor, Real-Time Eye AF, and advanced 5-axis stabilization, it delivers outstanding performance for travel, street photography, content creation, and everyday shooting. Its compact design, vari-angle touchscreen, and powerful video capabilities make it one of Sony's most versatile full-frame cameras.",
+
+    keyFeatures: [
+      "24.2MP Full-Frame Back-Illuminated Exmor R CMOS Sensor",
+      "693-Point Fast Hybrid Autofocus System",
+      "Real-Time Eye AF & Real-Time Tracking",
+      "4K UHD Video Recording with Full Pixel Readout",
+      "5-Axis In-Body Image Stabilization",
+      "Ultra-Compact Full-Frame Design",
+    ],
+
+    richFeatures: [
+      {
+        title: "Compact Full-Frame Freedom",
+        description:
+          "Designed for creators on the move, the Alpha 7C delivers professional full-frame image quality in one of the smallest and lightest full-frame camera bodies available.",
+      },
+      {
+        title: "Advanced Autofocus Technology",
+        description:
+          "Featuring 693 phase-detection AF points and Real-Time Tracking, the camera delivers fast, accurate focusing and Eye AF for both humans and animals.",
+      },
+      {
+        title: "Professional Video Capabilities",
+        description:
+          "Record oversampled 4K UHD video with full pixel readout, advanced Picture Profiles including S-Log2, S-Log3, and HLG for greater creative flexibility.",
+      },
+    ],
+
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          {
+            label: "Camera Type",
+            value: "Interchangeable Lens Digital Camera",
+          },
+          {
+            label: "Lens Mount",
+            value: "Sony E-Mount",
+          },
+          {
+            label: "Weight",
+            value: "Approx. 509g (with battery and memory card)",
+          },
+        ],
+      },
+
+      {
+        category: "Terminals & Interfaces",
+        items: [
+          {
+            label: "USB Interface",
+            value: "USB Type-C (USB 3.1 Gen 1)",
+          },
+          {
+            label: "HDMI Output",
+            value: "Micro HDMI (Type-D)",
+          },
+          {
+            label: "Wireless Connectivity",
+            value: "Wi-Fi, NFC, Bluetooth 4.1",
+          },
+          {
+            label: "Audio Interfaces",
+            value: "3.5mm Microphone Input, 3.5mm Headphone Output",
+          },
+          {
+            label: "Storage Slots",
+            value: "Single SD Card Slot (UHS-I / UHS-II Compatible)",
+          },
+        ],
+      },
+
+      {
+        category: "Imaging & Video",
+        items: [
+          {
+            label: "Sensor",
+            value: "35mm Full-Frame Back-Illuminated Exmor R CMOS Sensor",
+          },
+          {
+            label: "Effective Resolution",
+            value: "Approx. 24.2 Megapixels",
+          },
+          {
+            label: "Processor",
+            value: "BIONZ X Image Processor",
+          },
+          {
+            label: "File Formats",
+            value: "JPEG, RAW (Sony ARW)",
+          },
+          {
+            label: "ISO Range",
+            value: "ISO 100-51200 (Expandable to ISO 50-204800)",
+          },
+          {
+            label: "Autofocus System",
+            value: "693-Point Phase Detection AF + 425 Contrast Detection AF",
+          },
+          {
+            label: "Image Stabilization",
+            value: "5-Axis Sensor Shift Stabilization (Up to 5 Stops)",
+          },
+          {
+            label: "Shutter Speed",
+            value: "Mechanical: 1/4000s to 30s | Electronic: 1/8000s to 30s",
+          },
+          {
+            label: "Continuous Shooting",
+            value: "Up to 10fps with AF/AE Tracking",
+          },
+          {
+            label: "Viewfinder",
+            value: "0.39-inch OLED Electronic Viewfinder, 2.36M Dots",
+          },
+          {
+            label: "LCD Screen",
+            value: "3.0-inch Vari-Angle Touchscreen LCD, 921K Dots",
+          },
+          {
+            label: "Movie Recording",
+            value: "4K UHD 30p | Full HD 120p | S-Log2 | S-Log3 | HLG",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "ilce-7m3",
+    name: "ILCE-7M3",
+    category: "Mirrorless Cameras",
+    brand: "Sony",
+    price: "₹146,990",
+    slug: "ilce-7m3",
+    status: "In Stock",
+
+    desc: "Sony's highly acclaimed full-frame mirrorless camera featuring a 24.2MP Exmor R CMOS sensor, advanced 693-point autofocus system, 10fps continuous shooting, 4K HDR video recording, and exceptional low-light performance for photographers and content creators.",
+
+    colors: [
+      {
+        name: "Black",
+        images: ["/products/sony/sony15.jpg"],
+      },
+    ],
+
+    lenses: ["Body Only"],
+
+    overview:
+      "The SONY ILCE-7M3 (Alpha 7 III) is one of the most versatile full-frame mirrorless cameras ever created. Combining a 24.2MP back-illuminated Exmor R CMOS sensor with the powerful BIONZ X processor, it delivers outstanding image quality, impressive dynamic range, excellent low-light performance, and professional autofocus capabilities. Whether shooting portraits, weddings, landscapes, wildlife, travel, or video content, the Alpha 7 III provides exceptional performance and reliability in a compact body.",
+
+    keyFeatures: [
+      "24.2MP Full-Frame Back-Illuminated Exmor R CMOS Sensor",
+      "693-Point Fast Hybrid Autofocus System",
+      "Up to 10fps Continuous Shooting with AF/AE Tracking",
+      "4K UHD HDR Video Recording",
+      "5-Axis In-Body Image Stabilization",
+      "Dual SD Card Slots with Extended Battery Life",
+    ],
+
+    richFeatures: [
+      {
+        title: "24.2MP Full-Frame Performance",
+        description:
+          "The back-illuminated Exmor R sensor delivers exceptional image quality, dynamic range, and low-light performance with natural color reproduction and excellent detail.",
+      },
+      {
+        title: "Advanced Autofocus System",
+        description:
+          "Featuring 693 phase-detection AF points covering approximately 93% of the frame, the camera delivers fast and accurate subject tracking with Real-Time Eye AF.",
+      },
+      {
+        title: "Professional Hybrid Capabilities",
+        description:
+          "Capture stunning stills and oversampled 4K HDR video with advanced stabilization, high-speed shooting, and extensive creative controls.",
+      },
+    ],
+
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          {
+            label: "Camera Type",
+            value: "Interchangeable Lens Digital Camera",
+          },
+          {
+            label: "Lens Mount",
+            value: "Sony E-Mount",
+          },
+          {
+            label: "Weight",
+            value: "Approx. 650g (with battery and memory card)",
+          },
+        ],
+      },
+
+      {
+        category: "Terminals & Interfaces",
+        items: [
+          {
+            label: "USB Interface",
+            value: "USB Type-C (USB 3.1 Gen 1)",
+          },
+          {
+            label: "HDMI Output",
+            value: "Micro HDMI (Type-D)",
+          },
+          {
+            label: "Wireless Connectivity",
+            value: "Wi-Fi, NFC, Bluetooth",
+          },
+          {
+            label: "Audio Interfaces",
+            value: "3.5mm Microphone Input, 3.5mm Headphone Output",
+          },
+          {
+            label: "Storage Slots",
+            value: "Dual SD Card Slots (Slot 1 UHS-II, Slot 2 UHS-I)",
+          },
+        ],
+      },
+
+      {
+        category: "Imaging & Video",
+        items: [
+          {
+            label: "Sensor",
+            value: "35mm Full-Frame Back-Illuminated Exmor R CMOS Sensor",
+          },
+          {
+            label: "Effective Resolution",
+            value: "Approx. 24.2 Megapixels",
+          },
+          {
+            label: "Processor",
+            value: "BIONZ X Image Processor",
+          },
+          {
+            label: "File Formats",
+            value: "JPEG, RAW (Sony ARW)",
+          },
+          {
+            label: "ISO Range",
+            value: "ISO 100-51200 (Expandable to ISO 50-204800)",
+          },
+          {
+            label: "Autofocus System",
+            value: "693-Point Phase Detection AF + 425 Contrast Detection AF",
+          },
+          {
+            label: "Image Stabilization",
+            value: "5-Axis Sensor Shift Stabilization (Up to 5 Stops)",
+          },
+          {
+            label: "Shutter Speed",
+            value: "1/8000s to 30s, Bulb",
+          },
+          {
+            label: "Continuous Shooting",
+            value: "Up to 10fps with AF/AE Tracking",
+          },
+          {
+            label: "Viewfinder",
+            value: "0.5-inch XGA OLED Electronic Viewfinder, 2.36M Dots",
+          },
+          {
+            label: "LCD Screen",
+            value: "3.0-inch Tilting Touchscreen LCD, 922K Dots",
+          },
+          {
+            label: "Movie Recording",
+            value: "4K UHD 30p | Full HD 120p | HLG HDR | S-Log2 | S-Log3",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "ilce-6700",
+    name: "ILCE-6700",
+    category: "Mirrorless Cameras",
+    brand: "Sony",
+    price: "₹142,490",
+    slug: "ilce-6700",
+    status: "In Stock",
+
+    desc: "Sony's flagship APS-C mirrorless camera featuring a 26MP Exmor R CMOS sensor, AI-powered subject recognition, advanced autofocus, 4K 120p video recording, and Cinema Line-inspired features for photographers, filmmakers, and content creators.",
+
+    colors: [
+      {
+        name: "Black",
+        images: ["/products/sony/sony16.jpg"],
+      },
+    ],
+
+    lenses: ["Body Only"],
+
+    overview:
+      "The SONY ILCE-6700 (Alpha 6700) combines cutting-edge AI technology with Sony's latest APS-C imaging system in a compact and lightweight body. Featuring a 26MP back-illuminated Exmor R CMOS sensor, BIONZ XR processor, dedicated AI Processing Unit, and advanced autofocus capabilities, it delivers exceptional image quality, intelligent subject tracking, and professional-grade video performance. With Cinema Line-inspired features such as 4K 120p recording, S-Cinetone, and 10-bit 4:2:2 recording, the Alpha 6700 is built for creators who demand versatility without compromise.",
+
+    keyFeatures: [
+      "26MP APS-C Back-Illuminated Exmor R CMOS Sensor",
+      "Dedicated AI Processing Unit for Subject Recognition",
+      "759-Point Fast Hybrid Autofocus System",
+      "4K 120p 10-Bit Video Recording",
+      "5-Axis In-Body Image Stabilization",
+      "S-Cinetone and S-Log3 Professional Video Profiles",
+    ],
+
+    richFeatures: [
+      {
+        title: "Next-Generation AI Autofocus",
+        description:
+          "The dedicated AI Processing Unit recognizes humans, animals, birds, insects, cars, trains, and aircraft for highly accurate tracking and autofocus performance.",
+      },
+      {
+        title: "Cinema Line Inspired Video",
+        description:
+          "Capture oversampled 4K video from 6K data, record up to 4K 120p, and utilize S-Cinetone and S-Log3 for professional cinematic workflows.",
+      },
+      {
+        title: "Compact APS-C Powerhouse",
+        description:
+          "Combining advanced imaging technology with a lightweight body, the Alpha 6700 is ideal for travel, wildlife, vlogging, photography, and filmmaking.",
+      },
+    ],
+
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          {
+            label: "Camera Type",
+            value: "Interchangeable Lens Digital Camera",
+          },
+          {
+            label: "Lens Mount",
+            value: "Sony E-Mount",
+          },
+          {
+            label: "Weight",
+            value: "Approx. 493g (with battery and memory card)",
+          },
+        ],
+      },
+
+      {
+        category: "Terminals & Interfaces",
+        items: [
+          {
+            label: "USB Interface",
+            value: "USB Type-C (USB 3.2 Gen 2)",
+          },
+          {
+            label: "HDMI Output",
+            value: "Micro HDMI (Type-D)",
+          },
+          {
+            label: "Wireless Connectivity",
+            value: "Wi-Fi 2.4GHz / 5GHz, Bluetooth",
+          },
+          {
+            label: "Audio Interfaces",
+            value:
+              "3.5mm Microphone Input, 3.5mm Headphone Output, Multi Interface Shoe",
+          },
+          {
+            label: "Storage Slots",
+            value: "Single SD Card Slot (UHS-I / UHS-II Compatible)",
+          },
+        ],
+      },
+
+      {
+        category: "Imaging & Video",
+        items: [
+          {
+            label: "Sensor",
+            value: "APS-C Back-Illuminated Exmor R CMOS Sensor",
+          },
+          {
+            label: "Effective Resolution",
+            value: "Approx. 26.0 Megapixels",
+          },
+          {
+            label: "Processor",
+            value: "BIONZ XR Image Processor + AI Processing Unit",
+          },
+          {
+            label: "File Formats",
+            value: "JPEG, HEIF, RAW (Sony ARW)",
+          },
+          {
+            label: "ISO Range",
+            value: "ISO 100-32000 (Expandable to ISO 50-102400)",
+          },
+          {
+            label: "Autofocus System",
+            value: "759-Point Phase Detection Fast Hybrid AF",
+          },
+          {
+            label: "Image Stabilization",
+            value: "5-Axis Sensor Shift Stabilization (Up to 5 Stops)",
+          },
+          {
+            label: "Shutter Speed",
+            value: "1/8000s to 30s, Bulb",
+          },
+          {
+            label: "Continuous Shooting",
+            value: "Up to 11fps with AF/AE Tracking",
+          },
+          {
+            label: "Viewfinder",
+            value: "0.39-inch XGA OLED EVF, 2.36M Dots",
+          },
+          {
+            label: "LCD Screen",
+            value: "3.0-inch Vari-Angle Touchscreen LCD, 1.03M Dots",
+          },
+          {
+            label: "Movie Recording",
+            value:
+              "4K 120p | 4K 60p Oversampled from 6K | 10-Bit 4:2:2 | S-Cinetone | S-Log3",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "ilce-6600",
+    name: "ILCE-6600",
+    category: "Mirrorless Cameras",
+    brand: "Sony",
+    price: "₹124,990",
+    slug: "ilce-6600",
+    status: "In Stock",
+
+    desc: "Sony's premium APS-C mirrorless camera featuring a 24.2MP Exmor CMOS sensor, Real-Time Eye AF, 5-axis image stabilization, 4K HDR video recording, and extended battery life for photographers and content creators.",
+
+    colors: [
+      {
+        name: "Black",
+        images: ["/products/sony/sony17.jpg"],
+      },
+    ],
+
+    lenses: ["Body Only"],
+
+    overview:
+      "The SONY ILCE-6600 (Alpha 6600) is the flagship APS-C mirrorless camera of its generation, combining exceptional image quality, advanced autofocus technology, and professional video capabilities in a compact body. Featuring a 24.2MP APS-C Exmor CMOS sensor, BIONZ X processor, Real-Time Tracking, Real-Time Eye AF, and 5-axis image stabilization, it delivers outstanding performance for photography, videography, travel, wildlife, and vlogging. Its large Z-series battery provides industry-leading endurance for extended shooting sessions.",
+
+    keyFeatures: [
+      "24.2MP APS-C Exmor CMOS Sensor",
+      "425-Point Fast Hybrid Autofocus System",
+      "Real-Time Eye AF & Real-Time Tracking",
+      "5-Axis In-Body Image Stabilization",
+      "4K UHD HDR Video Recording",
+      "High-Capacity Z-Series Battery",
+    ],
+
+    richFeatures: [
+      {
+        title: "Advanced Autofocus Performance",
+        description:
+          "Fast Hybrid AF with 425 phase-detection and contrast-detection points delivers highly accurate subject tracking and Real-Time Eye AF for humans and animals.",
+      },
+      {
+        title: "Professional Stabilization",
+        description:
+          "Built-in 5-axis image stabilization compensates for camera shake, enabling sharper handheld photos and smoother video recording.",
+      },
+      {
+        title: "Extended Battery Life",
+        description:
+          "Powered by Sony's high-capacity NP-FZ100 battery, the Alpha 6600 delivers significantly longer shooting endurance than previous APS-C models.",
+      },
+    ],
+
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          {
+            label: "Camera Type",
+            value: "Interchangeable Lens Digital Camera",
+          },
+          {
+            label: "Lens Mount",
+            value: "Sony E-Mount",
+          },
+          {
+            label: "Weight",
+            value: "Approx. 503g (with battery and memory card)",
+          },
+        ],
+      },
+
+      {
+        category: "Terminals & Interfaces",
+        items: [
+          {
+            label: "USB Interface",
+            value: "USB Type-C (USB 3.1 Gen 1)",
+          },
+          {
+            label: "HDMI Output",
+            value: "Micro HDMI (Type-D)",
+          },
+          {
+            label: "Wireless Connectivity",
+            value: "Wi-Fi, NFC, Bluetooth",
+          },
+          {
+            label: "Audio Interfaces",
+            value: "3.5mm Microphone Input",
+          },
+          {
+            label: "Storage Slots",
+            value: "Single SD Card Slot (UHS-I Compatible)",
+          },
+        ],
+      },
+
+      {
+        category: "Imaging & Video",
+        items: [
+          {
+            label: "Sensor",
+            value: "APS-C Exmor CMOS Sensor",
+          },
+          {
+            label: "Effective Resolution",
+            value: "Approx. 24.2 Megapixels",
+          },
+          {
+            label: "Processor",
+            value: "BIONZ X Image Processor",
+          },
+          {
+            label: "File Formats",
+            value: "JPEG, RAW (Sony ARW)",
+          },
+          {
+            label: "ISO Range",
+            value: "ISO 100-32000 (Expandable to ISO 50-102400)",
+          },
+          {
+            label: "Autofocus System",
+            value: "425-Point Phase Detection AF + 425 Contrast Detection AF",
+          },
+          {
+            label: "Image Stabilization",
+            value: "5-Axis Sensor Shift Stabilization",
+          },
+          {
+            label: "Shutter Speed",
+            value: "1/4000s to 30s, Bulb",
+          },
+          {
+            label: "Continuous Shooting",
+            value: "Up to 11fps with AF/AE Tracking",
+          },
+          {
+            label: "Viewfinder",
+            value: "0.39-inch XGA OLED Electronic Viewfinder, 2.36M Dots",
+          },
+          {
+            label: "LCD Screen",
+            value: "3.0-inch Tilting Touchscreen LCD, 921K Dots",
+          },
+          {
+            label: "Movie Recording",
+            value: "4K UHD 30p | Full HD 120p | HLG HDR | S-Log2 | S-Log3",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "zv-e10m2",
+    name: "ZV-E10M2",
+    category: "Vlog Cameras",
+    brand: "Sony",
+    price: "₹99,490",
+    slug: "zv-e10m2",
+    status: "In Stock",
+
+    desc: "Sony's second-generation APS-C vlog camera featuring a 26MP Exmor R CMOS sensor, cinematic 4K 60p video, advanced creator tools, AI-powered autofocus, and interchangeable-lens flexibility for content creators and vloggers.",
+
+    colors: [
+      {
+        name: "Black",
+        images: ["/products/sony/sony18.jpg"],
+      },
+    ],
+
+    lenses: ["Body Only"],
+
+    overview:
+      "The SONY ZV-E10M2 (ZV-E10 II) is a powerful APS-C interchangeable-lens vlog camera built for modern content creators. Equipped with a 26MP back-illuminated Exmor R CMOS sensor, BIONZ XR processor, and advanced autofocus technology, it delivers exceptional image quality for both stills and video. Designed specifically for creators, it features Cinematic Vlog settings, Product Showcase Mode, Background Defocus, improved battery life, and professional 4K recording capabilities in a lightweight and portable body.",
+
+    keyFeatures: [
+      "26MP APS-C Back-Illuminated Exmor R CMOS Sensor",
+      "4K 60p 10-Bit Video Recording",
+      "759-Point Fast Hybrid Autofocus System",
+      "Cinematic Vlog & Product Showcase Modes",
+      "Background Defocus & Real-Time Eye AF",
+      "Interchangeable Sony E-Mount Lens System",
+    ],
+
+    richFeatures: [
+      {
+        title: "Built for Content Creators",
+        description:
+          "Dedicated creator tools including Product Showcase Mode, Background Defocus, Cinematic Vlog settings, and advanced microphone controls simplify professional content production.",
+      },
+      {
+        title: "High-Quality 4K Video",
+        description:
+          "Capture oversampled 4K footage from 5.6K sensor data with rich detail, 10-bit color recording, and advanced color profiles for cinematic results.",
+      },
+      {
+        title: "Fast and Intelligent Autofocus",
+        description:
+          "The Fast Hybrid AF system with Real-Time Eye AF and subject tracking ensures reliable focus performance during vlogging, interviews, and creative productions.",
+      },
+    ],
+
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          {
+            label: "Camera Type",
+            value: "Interchangeable Lens Vlog Camera",
+          },
+          {
+            label: "Lens Mount",
+            value: "Sony E-Mount",
+          },
+          {
+            label: "Weight",
+            value: "Approx. 377g (with battery and memory card)",
+          },
+        ],
+      },
+
+      {
+        category: "Terminals & Interfaces",
+        items: [
+          {
+            label: "USB Interface",
+            value: "USB Type-C (USB 3.2 Gen 1)",
+          },
+          {
+            label: "HDMI Output",
+            value: "Micro HDMI (Type-D)",
+          },
+          {
+            label: "Wireless Connectivity",
+            value: "Wi-Fi 2.4GHz / 5GHz, Bluetooth",
+          },
+          {
+            label: "Audio Interfaces",
+            value: "3.5mm Microphone Input, Multi Interface Shoe",
+          },
+          {
+            label: "Storage Slots",
+            value: "Single SD Card Slot (UHS-I Compatible)",
+          },
+        ],
+      },
+
+      {
+        category: "Imaging & Video",
+        items: [
+          {
+            label: "Sensor",
+            value: "APS-C Back-Illuminated Exmor R CMOS Sensor",
+          },
+          {
+            label: "Effective Resolution",
+            value: "Approx. 26.0 Megapixels",
+          },
+          {
+            label: "Processor",
+            value: "BIONZ XR Image Processor",
+          },
+          {
+            label: "File Formats",
+            value: "JPEG, HEIF, RAW (Sony ARW)",
+          },
+          {
+            label: "ISO Range",
+            value: "ISO 100-32000 (Expandable to ISO 50-102400)",
+          },
+          {
+            label: "Autofocus System",
+            value: "759-Point Fast Hybrid AF",
+          },
+          {
+            label: "Image Stabilization",
+            value: "Electronic Active Mode Stabilization",
+          },
+          {
+            label: "Shutter Speed",
+            value: "1/4000s to 30s, Bulb",
+          },
+          {
+            label: "Continuous Shooting",
+            value: "Up to 11fps",
+          },
+          {
+            label: "Viewfinder",
+            value: "No Electronic Viewfinder",
+          },
+          {
+            label: "LCD Screen",
+            value: "3.0-inch Vari-Angle Touchscreen LCD, 1.04M Dots",
+          },
+          {
+            label: "Movie Recording",
+            value: "4K 60p | 10-Bit 4:2:2 | S-Cinetone | S-Log3 | HLG",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "ilce-6400",
+    name: "ILCE-6400",
+    category: "Mirrorless Cameras",
+    brand: "Sony",
+    price: "₹82,990",
+    slug: "ilce-6400",
+    status: "In Stock",
+
+    desc: "Sony's compact APS-C mirrorless camera featuring a 24.2MP Exmor CMOS sensor, industry-leading autofocus, Real-Time Eye AF, 4K video recording, and a 180-degree tilting touchscreen for photographers and content creators.",
+
+    colors: [
+      {
+        name: "Black",
+        images: ["/products/sony/sony19.jpg"],
+      },
+    ],
+
+    lenses: ["Body Only"],
+
+    overview:
+      "The SONY ILCE-6400 (Alpha 6400) combines exceptional autofocus performance, high-quality imaging, and advanced video features in a compact APS-C mirrorless body. Equipped with a 24.2MP Exmor CMOS sensor and BIONZ X image processor, it delivers outstanding image quality, rapid autofocus acquisition, and professional-level tracking performance. Its 180-degree flip-up touchscreen and 4K video capabilities make it a favorite among photographers, vloggers, travelers, and content creators.",
+
+    keyFeatures: [
+      "24.2MP APS-C Exmor CMOS Sensor",
+      "425-Point Fast Hybrid Autofocus System",
+      "Real-Time Eye AF & Real-Time Tracking",
+      "4K UHD Video Recording with Full Pixel Readout",
+      "180° Tilting Touchscreen LCD",
+      "Up to 11fps Continuous Shooting",
+    ],
+
+    richFeatures: [
+      {
+        title: "Lightning-Fast Autofocus",
+        description:
+          "Sony's Fast Hybrid AF system with 425 phase-detection points delivers rapid focus acquisition and accurate subject tracking for stills and video.",
+      },
+      {
+        title: "Creator-Friendly Design",
+        description:
+          "The 180-degree flip-up touchscreen enables easy self-recording for vlogging, live streaming, and content creation.",
+      },
+      {
+        title: "High-Quality 4K Video",
+        description:
+          "Capture detailed 4K footage using full pixel readout without pixel binning, delivering exceptional clarity and color reproduction.",
+      },
+    ],
+
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          {
+            label: "Camera Type",
+            value: "Interchangeable Lens Digital Camera",
+          },
+          {
+            label: "Lens Mount",
+            value: "Sony E-Mount",
+          },
+          {
+            label: "Weight",
+            value: "Approx. 403g (with battery and memory card)",
+          },
+        ],
+      },
+
+      {
+        category: "Terminals & Interfaces",
+        items: [
+          {
+            label: "USB Interface",
+            value: "Micro USB (USB 2.0)",
+          },
+          {
+            label: "HDMI Output",
+            value: "Micro HDMI (Type-D)",
+          },
+          {
+            label: "Wireless Connectivity",
+            value: "Wi-Fi, NFC, Bluetooth",
+          },
+          {
+            label: "Audio Interfaces",
+            value: "3.5mm Microphone Input",
+          },
+          {
+            label: "Storage Slots",
+            value: "Single SD Card Slot (UHS-I Compatible)",
+          },
+        ],
+      },
+
+      {
+        category: "Imaging & Video",
+        items: [
+          {
+            label: "Sensor",
+            value: "APS-C Exmor CMOS Sensor",
+          },
+          {
+            label: "Effective Resolution",
+            value: "Approx. 24.2 Megapixels",
+          },
+          {
+            label: "Processor",
+            value: "BIONZ X Image Processor",
+          },
+          {
+            label: "File Formats",
+            value: "JPEG, RAW (Sony ARW)",
+          },
+          {
+            label: "ISO Range",
+            value: "ISO 100-32000 (Expandable to ISO 102400)",
+          },
+          {
+            label: "Autofocus System",
+            value: "425-Point Phase Detection AF + 425 Contrast Detection AF",
+          },
+          {
+            label: "Image Stabilization",
+            value:
+              "Lens-Based Optical Stabilization (No In-Body Stabilization)",
+          },
+          {
+            label: "Shutter Speed",
+            value: "1/4000s to 30s, Bulb",
+          },
+          {
+            label: "Continuous Shooting",
+            value: "Up to 11fps with AF/AE Tracking",
+          },
+          {
+            label: "Viewfinder",
+            value: "0.39-inch XGA OLED Electronic Viewfinder, 2.36M Dots",
+          },
+          {
+            label: "LCD Screen",
+            value: "3.0-inch 180° Tilting Touchscreen LCD, 921K Dots",
+          },
+          {
+            label: "Movie Recording",
+            value: "4K UHD 30p | Full HD 120p | S-Log2 | S-Log3 | HLG",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "ilce-6100",
+    name: "ILCE-6100",
+    category: "Mirrorless Cameras",
+    brand: "Sony",
+    price: "₹66,990",
+    slug: "ilce-6100",
+    status: "In Stock",
+
+    desc: "Sony's entry-level APS-C mirrorless camera featuring a 24.2MP Exmor CMOS sensor, Real-Time Eye AF, 425-point autofocus system, 4K video recording, and a lightweight design ideal for beginners, travelers, and content creators.",
+
+    colors: [
+      {
+        name: "Black",
+        images: ["/products/sony/sony20.jpg"],
+      },
+    ],
+
+    lenses: ["Body Only"],
+
+    overview:
+      "The SONY ILCE-6100 (Alpha 6100) delivers impressive imaging performance and advanced autofocus technology in a compact and affordable APS-C mirrorless camera. Equipped with a 24.2MP Exmor CMOS sensor and Sony's Fast Hybrid AF system, it provides fast subject tracking, Real-Time Eye AF, and excellent image quality for both photography and video. Its 180-degree tilting touchscreen and 4K recording capabilities make it a great choice for beginners, vloggers, travelers, and everyday creators.",
+
+    keyFeatures: [
+      "24.2MP APS-C Exmor CMOS Sensor",
+      "425-Point Fast Hybrid Autofocus System",
+      "Real-Time Eye AF & Real-Time Tracking",
+      "4K UHD Video Recording",
+      "180° Tilting Touchscreen LCD",
+      "Up to 11fps Continuous Shooting",
+    ],
+
+    richFeatures: [
+      {
+        title: "Advanced Autofocus Technology",
+        description:
+          "The Fast Hybrid AF system with 425 phase-detection and 425 contrast-detection points delivers quick focus acquisition and reliable subject tracking.",
+      },
+      {
+        title: "Perfect for Content Creation",
+        description:
+          "The 180-degree flip-up touchscreen makes self-recording simple, while 4K video recording delivers high-quality footage for vlogging and social media.",
+      },
+      {
+        title: "Compact Everyday Companion",
+        description:
+          "Lightweight and easy to carry, the Alpha 6100 offers excellent image quality and intuitive controls for photographers of all experience levels.",
+      },
+    ],
+
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          {
+            label: "Camera Type",
+            value: "Interchangeable Lens Digital Camera",
+          },
+          {
+            label: "Lens Mount",
+            value: "Sony E-Mount",
+          },
+          {
+            label: "Weight",
+            value: "Approx. 396g (with battery and memory card)",
+          },
+        ],
+      },
+
+      {
+        category: "Terminals & Interfaces",
+        items: [
+          {
+            label: "USB Interface",
+            value: "Micro USB (USB 2.0)",
+          },
+          {
+            label: "HDMI Output",
+            value: "Micro HDMI (Type-D)",
+          },
+          {
+            label: "Wireless Connectivity",
+            value: "Wi-Fi, NFC, Bluetooth 4.1",
+          },
+          {
+            label: "Audio Interfaces",
+            value: "3.5mm Microphone Input",
+          },
+          {
+            label: "Storage Slots",
+            value: "Single SD Card Slot (UHS-I Compatible)",
+          },
+        ],
+      },
+
+      {
+        category: "Imaging & Video",
+        items: [
+          {
+            label: "Sensor",
+            value: "APS-C Exmor CMOS Sensor",
+          },
+          {
+            label: "Effective Resolution",
+            value: "Approx. 24.2 Megapixels",
+          },
+          {
+            label: "Processor",
+            value: "BIONZ X Image Processor",
+          },
+          {
+            label: "File Formats",
+            value: "JPEG, RAW (Sony ARW)",
+          },
+          {
+            label: "ISO Range",
+            value: "ISO 100-32000 (Expandable to ISO 51200)",
+          },
+          {
+            label: "Autofocus System",
+            value: "425-Point Phase Detection AF + 425 Contrast Detection AF",
+          },
+          {
+            label: "Image Stabilization",
+            value:
+              "Lens-Based Optical Stabilization (No In-Body Stabilization)",
+          },
+          {
+            label: "Shutter Speed",
+            value: "1/4000s to 30s, Bulb",
+          },
+          {
+            label: "Continuous Shooting",
+            value: "Up to 11fps with AF/AE Tracking",
+          },
+          {
+            label: "Viewfinder",
+            value: "0.39-inch OLED Electronic Viewfinder, 1.44M Dots",
+          },
+          {
+            label: "LCD Screen",
+            value: "3.0-inch 180° Tilting Touchscreen LCD, 921K Dots",
+          },
+          {
+            label: "Movie Recording",
+            value: "4K UHD 30p | Full HD 120p",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "zv-e10",
+    name: "ZV-E10",
+    category: "Vlog Cameras",
+    brand: "Sony",
+    price: "₹61,990",
+    slug: "zv-e10",
+    status: "In Stock",
+
+    desc: "Sony's APS-C interchangeable-lens vlog camera featuring a 24.2MP Exmor CMOS sensor, Real-Time Eye AF, 4K video recording, Product Showcase Mode, and a fully articulating touchscreen designed specifically for content creators and vloggers.",
+
+    colors: [
+      {
+        name: "Black",
+        images: ["/products/sony/sony21.jpg"],
+      },
+    ],
+
+    lenses: ["Body Only"],
+
+    overview:
+      "The SONY ZV-E10 is a creator-focused APS-C mirrorless camera designed for vloggers, streamers, and content creators. Combining a 24.2MP APS-C Exmor CMOS sensor with Sony's renowned autofocus system, it delivers high-quality photos and 4K video while offering the flexibility of interchangeable E-mount lenses. Dedicated creator features such as Product Showcase Mode, Background Defocus, a directional 3-capsule microphone, and a fully articulating touchscreen make content production simple and professional.",
+
+    keyFeatures: [
+      "24.2MP APS-C Exmor CMOS Sensor",
+      "425-Point Fast Hybrid Autofocus System",
+      "4K UHD Video Recording",
+      "Product Showcase & Background Defocus Modes",
+      "Real-Time Eye AF and Real-Time Tracking",
+      "Fully Articulating Touchscreen LCD",
+    ],
+
+    richFeatures: [
+      {
+        title: "Built for Vloggers",
+        description:
+          "Dedicated creator tools such as Product Showcase Mode, Background Defocus, and a directional microphone make professional-looking content easy to create.",
+      },
+      {
+        title: "Interchangeable Lens Flexibility",
+        description:
+          "Compatible with Sony's E-mount lens ecosystem, allowing creators to choose lenses for vlogging, portraits, travel, product videos, and filmmaking.",
+      },
+      {
+        title: "Advanced Autofocus Performance",
+        description:
+          "Real-Time Eye AF and Real-Time Tracking help maintain accurate focus on subjects during video recording and photography.",
+      },
+    ],
+
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          {
+            label: "Camera Type",
+            value: "Interchangeable Lens Vlog Camera",
+          },
+          {
+            label: "Lens Mount",
+            value: "Sony E-Mount",
+          },
+          {
+            label: "Weight",
+            value: "Approx. 343g (with battery and memory card)",
+          },
+        ],
+      },
+
+      {
+        category: "Terminals & Interfaces",
+        items: [
+          {
+            label: "USB Interface",
+            value: "USB Type-C (USB 3.2 Gen 1)",
+          },
+          {
+            label: "HDMI Output",
+            value: "Micro HDMI (Type-D)",
+          },
+          {
+            label: "Wireless Connectivity",
+            value: "Wi-Fi, Bluetooth",
+          },
+          {
+            label: "Audio Interfaces",
+            value: "3.5mm Microphone Input, Multi Interface Shoe",
+          },
+          {
+            label: "Storage Slots",
+            value: "Single SD Card Slot (UHS-I Compatible)",
+          },
+        ],
+      },
+
+      {
+        category: "Imaging & Video",
+        items: [
+          {
+            label: "Sensor",
+            value: "APS-C Exmor CMOS Sensor",
+          },
+          {
+            label: "Effective Resolution",
+            value: "Approx. 24.2 Megapixels",
+          },
+          {
+            label: "Processor",
+            value: "BIONZ X Image Processor",
+          },
+          {
+            label: "File Formats",
+            value: "JPEG, RAW (Sony ARW)",
+          },
+          {
+            label: "ISO Range",
+            value: "ISO 100-32000 (Expandable to ISO 50-51200)",
+          },
+          {
+            label: "Autofocus System",
+            value: "425-Point Phase Detection AF + 425 Contrast Detection AF",
+          },
+          {
+            label: "Image Stabilization",
+            value: "Lens-Based Stabilization + Electronic Active Mode",
+          },
+          {
+            label: "Shutter Speed",
+            value: "1/4000s to 30s, Bulb",
+          },
+          {
+            label: "Continuous Shooting",
+            value: "Up to 11fps",
+          },
+          {
+            label: "Viewfinder",
+            value: "No Electronic Viewfinder",
+          },
+          {
+            label: "LCD Screen",
+            value: "3.0-inch Fully Articulating Touchscreen LCD, 921K Dots",
+          },
+          {
+            label: "Movie Recording",
+            value: "4K UHD 30p | Full HD 120p | S-Log2 | S-Log3 | HLG",
+          },
+        ],
+      },
     ],
   },
 
+  // === nikon brand start from here camera's
+
   {
-    category: "Image Sensor",
-    items: [
-      { label: "Sensor Size", value: "23.5 mm × 15.7 mm" },
-      { label: "Sensor Type", value: "CMOS" },
-      { label: "Effective Pixels", value: "20.9 million" },
-      { label: "Total Pixels", value: "21.51 million" },
-      { label: "Image Sensor Format", value: "APS-C / DX-format" },
+    id: "z-89",
+    name: "Z 89",
+    category: "Mirrorless Cameras",
+    brand: "Nikon",
+    price: "₹2,99,495",
+    slug: "z-89",
+    status: "In Stock",
+
+    colors: [
+      {
+        name: "Black",
+        images: [
+          "/products/nikon/z-8/n1.jpg",
+          "/products/nikon/z-8/n3.jpg",
+          "/products/nikon/z-8/n4.jpg",
+          "/products/nikon/z-8/n5.jpg",
+          "/products/nikon/z-8/n6.jpg",
+          "/products/nikon/z-8/n8.jpg",
+          "/products/nikon/z-8/n9.jpg",
+          "/products/nikon/z-8/n10.jpg",
+          "/products/nikon/z-8/n11.jpg",
+          "/products/nikon/z-8/n12.jpg",
+          "/products/nikon/z-8/n13.jpg",
+          "/products/nikon/z-8/n14.jpg",
+          "/products/nikon/z-8/n15.jpg",
+          "/products/nikon/z-8/n16.jpg",
+        ],
+      },
+    ],
+
+    lenses: ["Body Only"],
+
+    overview:
+      "A legacy inspired by agility and performance. Relish in the autofocus (AF) performance, 9 types of subjects at a time. With the dedicated new airplane mode added to the AF detection menu, the Z 8’s powerful combination of subject detection and 3D-tracking allows you to easily capture fast, erratically moving subjects; while the wide-area AF offers 20 custom options to provide flexibility for any shooting situation. Experience excellent video features with multiple video formats of your choice to tell your visual narratives. Record to your heart’s content with up to 125 minutes of continuous recording in 4K UHD/60p, together with a variety of accessories to elevate your videography creations.",
+
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          {
+            label: "Type",
+            value: "Digital camera with support for interchangeable lenses",
+          },
+          {
+            label: "Lens Mount",
+            value: "Nikon Z mount",
+          },
+          {
+            label: "Picture Angle",
+            value: "Full-frame / FX-Format",
+          },
+        ],
+      },
+
+      {
+        category: "Image Sensor",
+        items: [
+          {
+            label: "Sensor Size",
+            value: "35.9 mm × 23.9 mm",
+          },
+          {
+            label: "Sensor Type",
+            value: "CMOS",
+          },
+          {
+            label: "Effective Pixels",
+            value: "45.7 million",
+          },
+          {
+            label: "Total Pixels",
+            value: "52.37 million",
+          },
+          {
+            label: "Image Sensor Format",
+            value: "Full-frame / FX-format",
+          },
+        ],
+      },
+
+      {
+        category: "Movie",
+        items: [
+          {
+            label: "Video Resolution",
+            value:
+              "8K UHD (7680×4320) up to 30p, 4K UHD (3840×2160) up to 120p",
+          },
+          {
+            label: "Movie File Format",
+            value: "NEV, MOV, MP4",
+          },
+          {
+            label: "Video Compression",
+            value:
+              "N-RAW, Apple ProRes RAW HQ, Apple ProRes 422 HQ, H.265/HEVC, H.264/AVC",
+          },
+          {
+            label: "Maximum Recording Time",
+            value: "125 min",
+          },
+          {
+            label: "Audio",
+            value: "Built-in stereo or external microphone",
+          },
+        ],
+      },
+
+      {
+        category: "Storage",
+        items: [
+          {
+            label: "Storage Media",
+            value: "CFexpress Type B, XQD, SD, SDHC (UHS-II), SDXC (UHS-II)",
+          },
+          {
+            label: "Card Slots",
+            value: "1 CFexpress/XQD + 1 SD card slot",
+          },
+        ],
+      },
+
+      {
+        category: "Viewfinder",
+        items: [
+          {
+            label: "Viewfinder Type",
+            value: "OLED Electronic Viewfinder",
+          },
+          {
+            label: "Resolution",
+            value: "Approx. 3690k-dot",
+          },
+          {
+            label: "Frame Coverage",
+            value: "Approx. 100% horizontal and vertical",
+          },
+          {
+            label: "Magnification",
+            value: "Approx. 0.8x",
+          },
+        ],
+      },
+
+      {
+        category: "Shutter",
+        items: [
+          {
+            label: "Shutter Type",
+            value: "Electronic shutter with shutter sound and sensor shield",
+          },
+          {
+            label: "Shutter Speed",
+            value: "1/32000 sec to 30 sec, Bulb, Time",
+          },
+          {
+            label: "Continuous Shooting",
+            value: "Up to 120 fps",
+          },
+        ],
+      },
+
+      {
+        category: "Exposure & ISO",
+        items: [
+          {
+            label: "Exposure Modes",
+            value: "P, S, A, M",
+          },
+          {
+            label: "ISO Range",
+            value: "ISO 64–25600 (expandable to ISO 102400)",
+          },
+        ],
+      },
+
+      {
+        category: "Autofocus",
+        items: [
+          {
+            label: "Autofocus System",
+            value: "Hybrid phase-detection / contrast AF",
+          },
+          {
+            label: "Focus Points",
+            value: "493",
+          },
+          {
+            label: "Image Stabilization",
+            value: "5-axis image sensor shift VR",
+          },
+          {
+            label: "Animal Eye AF",
+            value: "Yes",
+          },
+        ],
+      },
+
+      {
+        category: "Monitor",
+        items: [
+          {
+            label: "Monitor Size",
+            value: "3.2-inch",
+          },
+          {
+            label: "Resolution",
+            value: "Approx. 2100k-dot",
+          },
+          {
+            label: "Type",
+            value:
+              "Vertically and horizontally tilting TFT touch-sensitive LCD",
+          },
+        ],
+      },
+
+      {
+        category: "Connectivity",
+        items: [
+          {
+            label: "USB",
+            value: "USB Type-C",
+          },
+          {
+            label: "HDMI",
+            value: "Type-A",
+          },
+          {
+            label: "Wi-Fi",
+            value: "IEEE 802.11 a/b/g/n/ac",
+          },
+          {
+            label: "App Connectivity",
+            value: "SnapBridge",
+          },
+        ],
+      },
+
+      {
+        category: "Power",
+        items: [
+          {
+            label: "Battery",
+            value: "EN-EL15c Rechargeable Li-ion Battery",
+          },
+        ],
+      },
+
+      {
+        category: "Physical",
+        items: [
+          {
+            label: "Weight",
+            value: "Approx. 910g with battery and memory card",
+          },
+          {
+            label: "Dimensions",
+            value: "Approx. 144 × 118.5 × 83 mm",
+          },
+          {
+            label: "4K UHD",
+            value: "Yes",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "z-9",
+    name: "Z 9",
+    category: "Mirrorless Cameras",
+    brand: "Nikon",
+    price: "₹4,75,995",
+    slug: "z-9",
+    status: "In Stock",
+
+    colors: [
+      {
+        name: "Black",
+        images: [
+          "/products/nikon/z-9/n1.jpg",
+          "/products/nikon/z-9/n2.jpg",
+          "/products/nikon/z-9/n3.jpg",
+          "/products/nikon/z-9/n4.jpg",
+          "/products/nikon/z-9/n5.jpg",
+          "/products/nikon/z-9/n6.jpg",
+          "/products/nikon/z-9/n7.jpg",
+          "/products/nikon/z-9/n8.jpg",
+        ],
+      },
+    ],
+
+    lenses: ["Body Only"],
+
+    overview:
+      "The time has come for the arrival of a true next level flagship mirrorless camera. Fast, powerful, dependable - in an incredible range of scenarios. With its revolutionary real-time Viewfinder with no blackout, its advanced subject detection technology, and high-speed frame capture, never miss a moment with the Z 9. Film up to 125 minutes of non-stop, in-camera, 8K UHD footage and experience the astonishing resolving power of the NIKKOR Z S-line lenses powered by the Z mount to reveal amazingly sharp detail from edge to edge. Shoot in harsh conditions with absolute confidence of never missing a detail. You'll be ready.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          {
+            label: "Type",
+            value: "Digital camera with support for interchangeable lenses",
+          },
+          { label: "Lens Mount", value: "Nikon Z mount" },
+          { label: "Picture Angle", value: "Full-frame / FX-format" },
+        ],
+      },
+
+      {
+        category: "Image Sensor",
+        items: [
+          { label: "Sensor Size", value: "35.9 mm × 23.9 mm" },
+          { label: "Sensor Type", value: "Stacked CMOS Sensor" },
+          { label: "Effective Pixels", value: "45.7 million" },
+          { label: "Total Pixels", value: "52.37 million" },
+          { label: "Image Sensor Format", value: "Full-frame / FX-format" },
+        ],
+      },
+
+      {
+        category: "Movie",
+        items: [
+          {
+            label: "Video Resolution",
+            value: "8K UHD up to 30p, 4K UHD up to 120p, Full HD up to 120p",
+          },
+          { label: "Movie File Format", value: "MOV, MP4" },
+          {
+            label: "Video Compression",
+            value:
+              "N-RAW, Apple ProRes RAW HQ, ProRes 422 HQ, H.265/HEVC, H.264/AVC",
+          },
+          { label: "Maximum Recording Time", value: "2 hours 5 minutes" },
+          { label: "Audio", value: "Built-in stereo or external microphone" },
+        ],
+      },
+
+      {
+        category: "Storage",
+        items: [
+          { label: "Storage Media", value: "CFexpress Type B, XQD" },
+          { label: "Card Slots", value: "Dual CFexpress/XQD card slots" },
+        ],
+      },
+
+      {
+        category: "Viewfinder",
+        items: [
+          { label: "Viewfinder Type", value: "OLED Electronic Viewfinder" },
+          { label: "Resolution", value: "Approx. 3690k-dot" },
+          {
+            label: "Frame Coverage",
+            value: "Approx. 100% horizontal and vertical",
+          },
+          { label: "Magnification", value: "Approx. 0.8x" },
+        ],
+      },
+
+      {
+        category: "Shutter",
+        items: [
+          {
+            label: "Shutter Type",
+            value: "Electronic shutter with shutter sound and sensor shield",
+          },
+          {
+            label: "Shutter Speed",
+            value: "1/32000 sec to 30 sec, Bulb, Time",
+          },
+          { label: "Continuous Shooting", value: "Up to 120 fps" },
+        ],
+      },
+
+      {
+        category: "Exposure & ISO",
+        items: [
+          {
+            label: "Exposure Modes",
+            value: "Matrix, Center-weighted, Spot, Highlight-weighted",
+          },
+          {
+            label: "ISO Range",
+            value: "ISO 64–25600 (expandable to ISO 102400)",
+          },
+        ],
+      },
+
+      {
+        category: "Autofocus",
+        items: [
+          {
+            label: "Autofocus System",
+            value: "Hybrid phase-detection / contrast AF",
+          },
+          { label: "Focus Points", value: "493" },
+          {
+            label: "Image Stabilization",
+            value: "5-axis image sensor shift VR",
+          },
+          { label: "Animal Eye AF", value: "Yes" },
+        ],
+      },
+
+      {
+        category: "Monitor",
+        items: [
+          { label: "Monitor Size", value: "3.2-inch" },
+          { label: "Resolution", value: "Approx. 2100k-dot" },
+          {
+            label: "Type",
+            value:
+              "Vertically and horizontally tilting TFT touch-sensitive LCD",
+          },
+        ],
+      },
+
+      {
+        category: "Connectivity",
+        items: [
+          { label: "USB", value: "USB Type-C" },
+          { label: "HDMI", value: "Type-A" },
+          { label: "Wi-Fi", value: "IEEE 802.11 b/g/n/a/ac" },
+          { label: "App Connectivity", value: "SnapBridge" },
+        ],
+      },
+
+      {
+        category: "Power",
+        items: [
+          { label: "Battery", value: "EN-EL18d Rechargeable Li-ion Battery" },
+        ],
+      },
+
+      {
+        category: "Physical",
+        items: [
+          {
+            label: "Weight",
+            value: "Approx. 1340g with battery and memory card",
+          },
+          { label: "Dimensions", value: "149 × 149.5 × 90.5 mm" },
+          { label: "4K UHD", value: "Yes" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "z-6ii-nikkor-z-24-105mm-f/4-7.1",
+    name: "Z 6II + NIKKOR Z 24-105mm f/4-7.1",
+    category: "Mirrorless Cameras",
+    brand: "Nikon",
+    price: "₹1,71,225",
+    slug: "z-6ii-nikkor-z-24-105mm-f-4-7.1",
+    status: "In Stock",
+
+    colors: [
+      {
+        name: "Black",
+        images: [
+          "/products/nikon/z-6ii/n1.jpg",
+          "/products/nikon/z-6ii/n2.jpg",
+        ],
+      },
+    ],
+
+    lenses: ["Body Only"],
+
+    overview:
+      "The time has come for the arrival of a true next level flagship mirrorless camera. Fast, powerful, dependable - in an incredible range of scenarios. With its revolutionary real-time Viewfinder with no blackout, its advanced subject detection technology, and high-speed frame capture, never miss a moment with the Z 9. Film up to 125 minutes of non-stop, in-camera, 8K UHD footage and experience the astonishing resolving power of the NIKKOR Z S-line lenses powered by the Z mount to reveal amazingly sharp detail from edge to edge. Shoot in harsh conditions with absolute confidence of never missing a detail. You'll be ready.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          {
+            label: "Type",
+            value: "Digital camera with support for interchangeable lenses",
+          },
+          { label: "Lens Mount", value: "Nikon Z mount" },
+          { label: "Picture Angle", value: "N/A" },
+        ],
+      },
+
+      {
+        category: "Image Sensor",
+        items: [
+          { label: "Sensor Size", value: "35.9 mm × 23.9 mm" },
+          { label: "Sensor Type", value: "CMOS" },
+          { label: "Effective Pixels", value: "24.5 million" },
+          { label: "Total Pixels", value: "25.28 million" },
+          { label: "Image Sensor Format", value: "Full-frame / FX-format" },
+        ],
+      },
+
+      {
+        category: "Movie",
+        items: [
+          {
+            label: "Video Resolution",
+            value: "4K UHD up to 30p, Full HD up to 120p",
+          },
+          { label: "Movie File Format", value: "MOV, MP4" },
+          { label: "Video Compression", value: "H.264 / MPEG-4 AVC" },
+          { label: "Maximum Recording Time", value: "29 min 59 sec" },
+          { label: "Audio", value: "Built-in stereo or external microphone" },
+        ],
+      },
+
+      {
+        category: "Storage",
+        items: [
+          {
+            label: "Storage Media",
+            value: "CFexpress Type B, XQD, SD/SDHC/SDXC UHS-II",
+          },
+          { label: "Card Slots", value: "Dual Slots" },
+        ],
+      },
+
+      {
+        category: "Viewfinder",
+        items: [
+          { label: "Viewfinder Type", value: "OLED Electronic Viewfinder" },
+          { label: "Resolution", value: "Approx. 3690k-dot" },
+          {
+            label: "Frame Coverage",
+            value: "Approx. 100% horizontal and vertical",
+          },
+          { label: "Magnification", value: "Approx. 0.8x" },
+        ],
+      },
+
+      {
+        category: "Shutter",
+        items: [
+          {
+            label: "Shutter Type",
+            value: "Mechanical, Electronic Front-Curtain, Electronic",
+          },
+          { label: "Shutter Speed", value: "1/8000 sec to 900 sec" },
+          { label: "Continuous Shooting", value: "Up to 14 fps" },
+        ],
+      },
+
+      {
+        category: "Exposure & ISO",
+        items: [
+          { label: "Exposure Modes", value: "P, S, A, M, U1, U2, U3" },
+          {
+            label: "ISO Range",
+            value: "ISO 100–51200 (expandable to ISO 204800)",
+          },
+        ],
+      },
+
+      {
+        category: "Autofocus",
+        items: [
+          {
+            label: "Autofocus System",
+            value: "Hybrid phase-detection / contrast AF",
+          },
+          { label: "Focus Points", value: "273" },
+          {
+            label: "Image Stabilization",
+            value: "5-axis image sensor shift VR",
+          },
+          { label: "Animal Eye AF", value: "Yes" },
+        ],
+      },
+
+      {
+        category: "Monitor",
+        items: [
+          { label: "Monitor Size", value: "3.2-inch" },
+          { label: "Resolution", value: "Approx. 2100k-dot" },
+          { label: "Type", value: "Tilting TFT Touch-Sensitive LCD" },
+        ],
+      },
+
+      {
+        category: "Connectivity",
+        items: [
+          { label: "USB", value: "USB Type-C" },
+          { label: "HDMI", value: "Type-C" },
+          { label: "Wi-Fi", value: "IEEE 802.11 b/g/n/a/ac" },
+          { label: "App Connectivity", value: "SnapBridge" },
+        ],
+      },
+
+      {
+        category: "Power",
+        items: [
+          { label: "Battery", value: "EN-EL15c Rechargeable Li-ion Battery" },
+        ],
+      },
+
+      {
+        category: "Physical",
+        items: [
+          { label: "Weight", value: "Approx. 615g" },
+          { label: "Dimensions", value: "134 × 100.5 × 69.5 mm" },
+          { label: "4K UHD", value: "Yes" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "z-30",
+    name: "Z 30",
+    category: "Mirrorless Cameras",
+    brand: "Nikon",
+    price: "₹59,895",
+    slug: "z-30",
+    status: "In Stock",
+
+    colors: [
+      {
+        name: "Black",
+        images: [
+          "/products/nikon/z-30/n1.jpg",
+          "/products/nikon/z-30/n2.jpg",
+          "/products/nikon/z-30/n3.jpg",
+          "/products/nikon/z-30/n4.jpg",
+          "/products/nikon/z-30/n5.jpg",
+          "/products/nikon/z-30/n6.jpg",
+          "/products/nikon/z-30/n7.jpg",
+          "/products/nikon/z-30/n8.jpg",
+          "/products/nikon/z-30/n9.jpg",
+          "/products/nikon/z-30/n10.jpg",
+          "/products/nikon/z-30/n11.jpg",
+          "/products/nikon/z-30/n12.jpg",
+        ],
+      },
+    ],
+
+    lenses: ["Body Only"],
+
+    overview:
+      "The Z 30 is made for your inner videographer. Hit record with ease whenever inspiration strikes. Excite the ears of your audience with premium sound quality from dual microphones. From teasers to reels to stories to streams, this is where heroes of content are born.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          {
+            label: "Type",
+            value: "Digital camera with support for interchangeable lenses",
+          },
+          { label: "Lens Mount", value: "Nikon Z mount" },
+          { label: "Picture Angle", value: "APS-C Size / DX-Format" },
+        ],
+      },
+
+      {
+        category: "Image Sensor",
+        items: [
+          { label: "Sensor Size", value: "23.5 mm × 15.7 mm" },
+          { label: "Sensor Type", value: "CMOS" },
+          { label: "Effective Pixels", value: "20.9 million" },
+          { label: "Total Pixels", value: "21.51 million" },
+          { label: "Image Sensor Format", value: "APS-C / DX-format" },
+        ],
+      },
+
+      {
+        category: "Movie",
+        items: [
+          {
+            label: "Video Resolution",
+            value: "4K UHD up to 30p, Full HD up to 120p",
+          },
+          { label: "Movie File Format", value: "MOV, MP4" },
+          { label: "Video Compression", value: "H.264 / MPEG-4 AVC" },
+          { label: "Maximum Recording Time", value: "125 minutes" },
+          { label: "Audio", value: "Built-in stereo or external microphone" },
+        ],
+      },
+
+      {
+        category: "Storage",
+        items: [
+          { label: "Storage Media", value: "SD Memory Card" },
+          { label: "Card Slots", value: "Single Slot" },
+        ],
+      },
+
+      {
+        category: "Viewfinder",
+        items: [
+          {
+            label: "Lens Compatibility",
+            value:
+              "Z mount NIKKOR lenses, F mount NIKKOR lenses (adapter required)",
+          },
+        ],
+      },
+
+      {
+        category: "Shutter",
+        items: [
+          {
+            label: "Shutter Type",
+            value: "Mechanical, Electronic Front-Curtain, Electronic",
+          },
+          { label: "Shutter Speed", value: "30 sec to 1/4000 sec" },
+          { label: "Continuous Shooting", value: "Up to 11 fps" },
+        ],
+      },
+
+      {
+        category: "Exposure & ISO",
+        items: [
+          {
+            label: "Exposure Compensation",
+            value: "±5 EV in 1/3-step increments",
+          },
+          {
+            label: "ISO Range",
+            value: "ISO 100–51200 (expandable to ISO 204800)",
+          },
+          {
+            label: "Metering",
+            value: "Matrix, Center-weighted, Spot, Highlight-weighted",
+          },
+        ],
+      },
+
+      {
+        category: "Autofocus",
+        items: [
+          {
+            label: "Autofocus System",
+            value: "Hybrid phase-detection / contrast AF",
+          },
+          { label: "Focus Points", value: "209" },
+          { label: "Detection Range", value: "-4.5 to +19 EV" },
+          { label: "Animal Eye AF", value: "Yes" },
+        ],
+      },
+
+      {
+        category: "Monitor",
+        items: [
+          { label: "Monitor Size", value: "3.0-inch" },
+          { label: "Resolution", value: "Approx. 1040k-dot" },
+          { label: "Type", value: "Vari-angle TFT Touch-Sensitive LCD" },
+        ],
+      },
+
+      {
+        category: "Connectivity",
+        items: [
+          { label: "USB", value: "USB Type-C (SuperSpeed USB)" },
+          { label: "HDMI", value: "Type-D HDMI" },
+          { label: "Wi-Fi", value: "IEEE 802.11 b/g/n" },
+          { label: "Microphone Input", value: "3.5mm Stereo Mini Jack" },
+        ],
+      },
+
+      {
+        category: "Power",
+        items: [
+          { label: "Battery", value: "EN-EL25 Rechargeable Li-ion Battery" },
+          {
+            label: "Battery Charger",
+            value: "EH-7P Charging AC Adapter (optional)",
+          },
+        ],
+      },
+
+      {
+        category: "Physical",
+        items: [
+          {
+            label: "Weight",
+            value: "Approx. 405g (with battery and memory card)",
+          },
+          { label: "Dimensions", value: "128 × 73.5 × 59.5 mm" },
+          { label: "4K UHD", value: "Yes" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "z-50",
+    name: "Z 50",
+    category: "Mirrorless Cameras",
+    brand: "Nikon",
+    price: "₹70,995",
+    slug: "z-50",
+    status: "In Stock",
+
+    colors: [
+      {
+        name: "Black",
+        images: [
+          "/products/nikon/z-50/n1.jpg",
+          "/products/nikon/z-50/n2.jpg",
+          "/products/nikon/z-50/n3.jpg",
+          "/products/nikon/z-50/n4.jpg",
+          "/products/nikon/z-50/n5.jpg",
+        ],
+      },
+    ],
+
+    lenses: ["Body Only"],
+
+    overview:
+      "Small but mighty, simple but powerful—a Z series camera for creating amazing online stories. Professional looking stills, 4K Ultra HD videos, slow motion, time-lapse and more. Wi-Fi® and Bluetooth enabled, plus in-camera video editing. Beautifully designed with a comfortable grip, flip-down touchscreen LCD, smart button layout, extended Electronic Viewfinder and travel-proof ruggedness.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          {
+            label: "Type",
+            value: "Digital camera with support for interchangeable lenses",
+          },
+          { label: "Lens Mount", value: "Nikon Z mount" },
+          { label: "Picture Angle", value: "APS-C Size / DX-Format" },
+        ],
+      },
+
+      {
+        category: "Image Sensor",
+        items: [
+          { label: "Sensor Size", value: "23.5 × 15.7 mm" },
+          { label: "Sensor Type", value: "CMOS" },
+          { label: "Effective Pixels", value: "20.9 million" },
+          { label: "Total Pixels", value: "21.51 million" },
+          { label: "Image Sensor Format", value: "APS-C / DX-format" },
+        ],
+      },
+
+      {
+        category: "Movie",
+        items: [
+          {
+            label: "Video Resolution",
+            value: "4K UHD up to 30p, Full HD up to 120p",
+          },
+          { label: "Movie File Format", value: "MOV, MP4" },
+          { label: "Video Compression", value: "H.264 / MPEG-4 AVC" },
+          { label: "Maximum Recording Time", value: "29 min 59 sec" },
+          { label: "Audio", value: "Built-in stereo or external microphone" },
+        ],
+      },
+
+      {
+        category: "Storage",
+        items: [
+          { label: "Storage Media", value: "SD, SDHC, SDXC (UHS-I)" },
+          { label: "Card Slots", value: "Single Slot" },
+        ],
+      },
+
+      {
+        category: "Viewfinder",
+        items: [
+          { label: "Viewfinder Type", value: "OLED Electronic Viewfinder" },
+          { label: "Resolution", value: "Approx. 2360k-dot" },
+          {
+            label: "Frame Coverage",
+            value: "Approx. 100% horizontal and vertical",
+          },
+          { label: "Magnification", value: "Approx. 1.02x" },
+        ],
+      },
+
+      {
+        category: "Shutter",
+        items: [
+          {
+            label: "Shutter Type",
+            value: "Mechanical, Electronic Front-Curtain, Electronic",
+          },
+          { label: "Shutter Speed", value: "1/8000 sec to 30 sec" },
+          { label: "Continuous Shooting", value: "Up to 11 fps" },
+        ],
+      },
+
+      {
+        category: "Exposure & ISO",
+        items: [
+          { label: "Exposure Modes", value: "P, S, A, M, U1, U2, U3" },
+          {
+            label: "ISO Range",
+            value: "ISO 100–51200 (expandable to ISO 204800)",
+          },
+        ],
+      },
+
+      {
+        category: "Autofocus",
+        items: [
+          {
+            label: "Autofocus System",
+            value: "Hybrid phase-detection / contrast AF",
+          },
+          { label: "Focus Points", value: "209" },
+          {
+            label: "Image Stabilization",
+            value: "Lens-shift VR (lens dependent)",
+          },
+          { label: "Animal Eye AF", value: "No" },
+        ],
+      },
+
+      {
+        category: "Monitor",
+        items: [
+          { label: "Monitor Size", value: "3.2-inch" },
+          { label: "Resolution", value: "Approx. 1040k-dot" },
+          { label: "Type", value: "Tilting TFT Touch-Sensitive LCD" },
+        ],
+      },
+
+      {
+        category: "Connectivity",
+        items: [
+          { label: "USB", value: "Micro-B USB" },
+          { label: "HDMI", value: "Type-D" },
+          { label: "Wi-Fi", value: "IEEE 802.11 b/g/n/a/ac" },
+          { label: "App Connectivity", value: "SnapBridge" },
+        ],
+      },
+
+      {
+        category: "Power",
+        items: [
+          { label: "Battery", value: "EN-EL25 Rechargeable Li-ion Battery" },
+        ],
+      },
+
+      {
+        category: "Physical",
+        items: [
+          { label: "Weight", value: "Approx. 395g" },
+          { label: "Dimensions", value: "126.5 × 93.5 × 60 mm" },
+          { label: "4K UHD", value: "Yes" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "z-50-ii",
+    name: "Z 50II",
+    category: "Mirrorless Cameras",
+    brand: "Nikon",
+    price: "₹77,995",
+    slug: "z-50-ii",
+    status: "In Stock",
+
+    colors: [
+      {
+        name: "Black",
+        images: [
+          "/products/nikon/z-50ii/n1.webp",
+          "/products/nikon/z-50ii/n2.webp",
+          "/products/nikon/z-50ii/n3.webp",
+          "/products/nikon/z-50ii/n4.webp",
+          "/products/nikon/z-50ii/n5.webp",
+          "/products/nikon/z-50ii/n6.webp",
+          "/products/nikon/z-50ii/n7.webp",
+          "/products/nikon/z-50ii/n8.webp",
+          "/products/nikon/z-50ii/n9.webp",
+        ],
+      },
+    ],
+
+    lenses: ["Body Only"],
+
+    overview:
+      "Free your imagination with the Z50II, a compact APS-C mirrorless camera   (DX-format) with mighty yet intuitive features for the emerging content creators. Create cinematic stories and shoot 4K videos with rich detail, even in low light, using the 5.6K oversampling sensor  . Perfect for vlogging and livestreaming, Z50II features product review mode, Hi-Res Zoom, plug-and-play webcam support, and audio recording options. Express your individuality with diverse colour settings,   creator-crafted Imaging Recipes, and 31 types of Creative Picture Controls. Enjoy excellent subject detection, AF performance and powerful image processing for confident and stylish creations.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          {
+            label: "Type",
+            value: "Digital camera with support for interchangeable lenses",
+          },
+          { label: "Lens Mount", value: "Nikon Z mount" },
+          { label: "Picture Angle", value: "DX-Format (APS-C)" },
+        ],
+      },
+
+      {
+        category: "Image Sensor",
+        items: [
+          { label: "Sensor Size", value: "23.5 × 15.7 mm" },
+          { label: "Sensor Type", value: "CMOS" },
+          { label: "Effective Pixels", value: "20.9 million" },
+          { label: "Total Pixels", value: "21.51 million" },
+          {
+            label: "Dust Reduction",
+            value: "Image Dust Off reference data support",
+          },
+        ],
+      },
+
+      {
+        category: "Video",
+        items: [
+          {
+            label: "Video Resolution",
+            value: "4K UHD up to 60p, Full HD up to 120p",
+          },
+          { label: "Video File Format", value: "MOV, MP4" },
+          {
+            label: "Video Compression",
+            value: "H.265/HEVC (8/10-bit), H.264/AVC (8-bit)",
+          },
+          { label: "Audio Recording", value: "Linear PCM, AAC" },
+          {
+            label: "Special Video Features",
+            value: "N-Log, HLG HDR, Time-lapse, Hi-Res Zoom, Time Codes",
+          },
+        ],
+      },
+
+      {
+        category: "Storage",
+        items: [
+          {
+            label: "Storage Media",
+            value: "SD, SDHC, SDXC (UHS-II Compatible)",
+          },
+          { label: "Card Slots", value: "1 × SD Card Slot" },
+          { label: "File System", value: "DCF 2.0, Exif 2.32, MPEG-A MIAF" },
+        ],
+      },
+
+      {
+        category: "Viewfinder",
+        items: [
+          {
+            label: "Viewfinder Type",
+            value: "0.39-inch OLED Electronic Viewfinder",
+          },
+          { label: "Resolution", value: "Approx. 2360k-dot" },
+          {
+            label: "Frame Coverage",
+            value: "Approx. 100% Horizontal and Vertical",
+          },
+          { label: "Magnification", value: "Approx. 1.02x" },
+          { label: "Eyepoint", value: "19.5 mm" },
+        ],
+      },
+
+      {
+        category: "Shutter",
+        items: [
+          {
+            label: "Shutter Type",
+            value: "Mechanical, Electronic Front-Curtain, Electronic",
+          },
+          {
+            label: "Shutter Speed",
+            value: "1/4000 sec to 30 sec (extendable to 900 sec)",
+          },
+          { label: "Continuous Shooting", value: "Up to 30 fps" },
+          { label: "Flash Sync Speed", value: "Up to 1/250 sec" },
+        ],
+      },
+
+      {
+        category: "Exposure & ISO",
+        items: [
+          { label: "Exposure Modes", value: "P, S, A, M, Auto, Scene Modes" },
+          {
+            label: "Metering",
+            value: "Matrix, Center-Weighted, Spot, Highlight-Weighted",
+          },
+          { label: "Exposure Compensation", value: "±5 EV" },
+          {
+            label: "ISO Range",
+            value: "ISO 100–51200 (expandable to ISO 204800)",
+          },
+        ],
+      },
+
+      {
+        category: "Autofocus",
+        items: [
+          { label: "AF Modes", value: "AF-S, AF-C, AF-A, AF-F, Manual Focus" },
+          {
+            label: "AF Area Modes",
+            value:
+              "Pinpoint, Single-Point, Dynamic-Area, Wide-Area, Auto-Area, 3D Tracking",
+          },
+          { label: "Detection Range", value: "-9 to +19 EV" },
+          {
+            label: "Focus Lock",
+            value: "Half-Press Shutter or AE-L/AF-L Button",
+          },
+        ],
+      },
+
+      {
+        category: "White Balance",
+        items: [
+          {
+            label: "White Balance Modes",
+            value:
+              "Auto, Natural Light Auto, Daylight, Cloudy, Shade, Incandescent, Fluorescent, Flash",
+          },
+          { label: "Color Temperature", value: "2500K – 10000K" },
+          { label: "Custom Presets", value: "Up to 6 Presets" },
+        ],
+      },
+
+      {
+        category: "Monitor",
+        items: [
+          { label: "Monitor Size", value: "3.2-inch Vari-angle LCD" },
+          { label: "Resolution", value: "Approx. 1040k-dot" },
+          { label: "Type", value: "TFT Touch-Sensitive LCD" },
+          { label: "Viewing Angle", value: "170°" },
+        ],
+      },
+
+      {
+        category: "Connectivity",
+        items: [
+          { label: "USB", value: "USB Type-C (SuperSpeed USB)" },
+          { label: "HDMI", value: "Type-D HDMI" },
+          { label: "Microphone Input", value: "3.5 mm Stereo Mini Jack" },
+          { label: "Headphone Output", value: "3.5 mm Stereo Mini Jack" },
+        ],
+      },
+
+      {
+        category: "Power",
+        items: [
+          { label: "Battery", value: "EN-EL25a Rechargeable Li-ion Battery" },
+          { label: "AC Adapter Support", value: "EH-8P AC Adapter (Optional)" },
+        ],
+      },
+
+      {
+        category: "Physical",
+        items: [
+          {
+            label: "Weight",
+            value: "Approx. 550 g with Battery & Card, 495 g Body Only",
+          },
+          { label: "Dimensions", value: "127 × 96.8 × 66.5 mm" },
+          { label: "Card Slot", value: "Single SD Card Slot" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "z-f-c",
+    name: "Z FC",
+    category: "Mirrorless Cameras",
+    brand: "Nikon",
+    price: "₹84,995",
+    slug: "z-f-c",
+    status: "In Stock",
+
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/products/nikon/z-fc/n1.webp",
+          "/products/nikon/z-fc/n2.webp",
+          "/products/nikon/z-fc/n3.webp",
+          "/products/nikon/z-fc/n4.webp",
+          "/products/nikon/z-fc/n5.webp",
+          "/products/nikon/z-fc/n6.webp",
+          "/products/nikon/z-fc/n7.webp",
+          "/products/nikon/z-fc/n8.webp",
+          "/products/nikon/z-fc/n9.webp",
+          "/products/nikon/z-fc/n10.webp",
+        ],
+      },
+    ],
+
+    lenses: ["Body Only"],
+
+    overview:
+      "Z fc fuses classic design with Z series technology. Small size with big image quality. 4K videos with full-time Eye-Detection AF. A flip out vlogger screen with live streaming capabilities. This is a camera you think you’ve seen before. But the performance is entirely new.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          {
+            label: "Type",
+            value: "Digital camera with support for interchangeable lenses",
+          },
+          { label: "Lens Mount", value: "Nikon Z mount" },
+          { label: "Picture Angle", value: "APS-C Size / DX-Format" },
+        ],
+      },
+
+      {
+        category: "Image Sensor",
+        items: [
+          { label: "Sensor Size", value: "23.5 × 15.7 mm" },
+          { label: "Sensor Type", value: "CMOS" },
+          { label: "Effective Pixels", value: "20.9 million" },
+          { label: "Total Pixels", value: "21.51 million" },
+          { label: "Image Sensor Format", value: "APS-C / DX-Format" },
+        ],
+      },
+
+      {
+        category: "Movie",
+        items: [
+          {
+            label: "Video Resolution",
+            value: "4K UHD up to 30p, Full HD up to 120p",
+          },
+          { label: "Movie File Format", value: "MOV, MP4" },
+          { label: "Video Compression", value: "H.264 / MPEG-4 AVC" },
+          { label: "Maximum Recording Time", value: "29 min 59 sec" },
+          { label: "Audio", value: "Built-in Stereo or External Microphone" },
+          {
+            label: "Special Features",
+            value:
+              "Time-Lapse Movie, HDMI Output, Time Code, Active D-Lighting",
+          },
+        ],
+      },
+
+      {
+        category: "Storage",
+        items: [
+          { label: "Storage Media", value: "SD, SDHC, SDXC (UHS-I)" },
+          { label: "Card Slots", value: "Single Slot" },
+          { label: "File System", value: "DCF 2.0, Exif 2.31" },
+        ],
+      },
+
+      {
+        category: "Viewfinder",
+        items: [
+          { label: "Viewfinder Type", value: "OLED Electronic Viewfinder" },
+          { label: "Resolution", value: "Approx. 2360k-dot" },
+          {
+            label: "Frame Coverage",
+            value: "Approx. 100% Horizontal and Vertical",
+          },
+          { label: "Magnification", value: "Approx. 1.02x" },
+          { label: "Eyepoint", value: "19.5 mm" },
+        ],
+      },
+
+      {
+        category: "Shutter",
+        items: [
+          {
+            label: "Shutter Type",
+            value: "Mechanical, Electronic Front-Curtain, Electronic",
+          },
+          { label: "Shutter Speed", value: "1/4000 sec to 900 sec" },
+          { label: "Continuous Shooting", value: "Up to 11 fps" },
+          { label: "Flash Sync Speed", value: "1/200 sec" },
+        ],
+      },
+
+      {
+        category: "Exposure & ISO",
+        items: [
+          { label: "Exposure Modes", value: "Auto, P, S, A, M" },
+          {
+            label: "Metering",
+            value: "Matrix, Center-Weighted, Spot, Highlight-Weighted",
+          },
+          {
+            label: "Exposure Compensation",
+            value: "±3 EV (up to ±5 EV with compensation dial)",
+          },
+          {
+            label: "ISO Range",
+            value: "ISO 100–51200 (expandable to ISO 204800)",
+          },
+        ],
+      },
+
+      {
+        category: "Autofocus",
+        items: [
+          {
+            label: "Autofocus System",
+            value: "Hybrid Phase-Detection / Contrast AF",
+          },
+          { label: "Focus Points", value: "209" },
+          { label: "AF Modes", value: "AF-S, AF-C, AF-A, AF-F, Manual Focus" },
+          { label: "Detection Range", value: "-4.5 to +19 EV" },
+          { label: "Animal Eye AF", value: "Yes" },
+        ],
+      },
+
+      {
+        category: "Monitor",
+        items: [
+          { label: "Monitor Size", value: "3.0-inch" },
+          { label: "Resolution", value: "Approx. 1040k-dot" },
+          { label: "Type", value: "Vari-angle TFT Touch-Sensitive LCD" },
+          { label: "Viewing Angle", value: "170°" },
+        ],
+      },
+
+      {
+        category: "Connectivity",
+        items: [
+          { label: "USB", value: "USB Type-C (SuperSpeed USB)" },
+          { label: "HDMI", value: "Type-D HDMI" },
+          { label: "Microphone Input", value: "3.5 mm Stereo Mini Jack" },
+          { label: "Wi-Fi", value: "IEEE 802.11 b/g/n/a/ac" },
+          { label: "GPS", value: "No" },
+        ],
+      },
+
+      {
+        category: "White Balance",
+        items: [
+          {
+            label: "White Balance Modes",
+            value:
+              "Auto, Daylight, Cloudy, Shade, Incandescent, Fluorescent, Flash",
+          },
+          { label: "White Balance Bracketing", value: "Yes" },
+          { label: "Custom Presets", value: "Supported" },
+        ],
+      },
+
+      {
+        category: "Power",
+        items: [
+          { label: "Battery", value: "EN-EL25 Rechargeable Li-ion Battery" },
+          { label: "Battery Life", value: "Approx. 300 Shots (CIPA)" },
+          { label: "Movie Recording Time", value: "Approx. 75 Minutes" },
+          { label: "Battery Charger", value: "MH-32" },
+        ],
+      },
+
+      {
+        category: "Physical",
+        items: [
+          { label: "Weight", value: "Approx. 380 g" },
+          { label: "Dimensions", value: "134.5 × 93.5 × 43.5 mm" },
+          { label: "Tripod Socket", value: '1/4" (ISO 1222)' },
+          { label: "4K UHD", value: "Yes" },
+        ],
+      },
     ],
   },
 
+  // Insta360 brand start from here camera's
+
   {
-    category: "Movie",
-    items: [
-      { label: "Video Resolution", value: "4K UHD up to 30p, Full HD up to 120p" },
-      { label: "Movie File Format", value: "MOV, MP4" },
-      { label: "Video Compression", value: "H.264 / MPEG-4 AVC" },
-      { label: "Maximum Recording Time", value: "125 minutes" },
-      { label: "Audio", value: "Built-in stereo or external microphone" },
+    id: "insta360-x4-air",
+    name: "Insta360 X4 Air",
+    categories: ["Action Cameras", "Compact Cameras"],
+    brand: "Insta360",
+    price: "₹45,990",
+    slug: "insta360-x4-air",
+    status: "In Stock",
+
+    colors: [
+      {
+        name: "Gray",
+        images: [
+          "/products/insta360/x4-1.jpg",
+          "/products/insta360/x4-2.jpg",
+          "/products/insta360/x4-3.jpg",
+        ],
+      },
+    ],
+  },
+  {
+    id: "insta360-x5-standalone",
+    name: "Insta X5 Standalone",
+    category: "Action Cameras",
+    brand: "Insta360",
+    price: "₹58,990",
+    slug: "insta360-x5-standalone",
+    status: "In Stock",
+
+    colors: [
+      {
+        name: "Black",
+        images: [
+          "/products/insta360/x5-1.jpg",
+          "/products/insta360/x5-2.jpg",
+          "/products/insta360/x5-3.jpg",
+          "/products/insta360/x5-4.jpg",
+          "/products/insta360/x5-5.jpg",
+          "/products/insta360/x5-6.jpg",
+          "/products/insta360/x5-7.jpg",
+          "/products/insta360/x5-8.jpg",
+        ],
+      },
+    ],
+  },
+  {
+    id: "insta360-flow-2",
+    name: "Insta Flow 2",
+    category: "Action Cameras",
+    brand: "Insta360",
+    price: "₹58,990",
+    slug: "insta360-flow-2",
+    status: "In Stock",
+
+    colors: [
+      {
+        name: "Black",
+        images: [
+          "/products/insta360/link1.jpg",
+          "/products/insta360/link2.jpg",
+          "/products/insta360/link3.jpg",
+          "/products/insta360/link4.jpg",
+          "/products/insta360/link5.jpg",
+          "/products/insta360/link6.jpg",
+          "/products/insta360/link7.jpg",
+          "/products/insta360/link8.jpg",
+        ],
+      },
+    ],
+  },
+  {
+    id: "insta360-link-2",
+    name: "Insta link 2",
+    category: "Action Cameras",
+    brand: "Insta360",
+    price: "₹58,990",
+    slug: "insta360-flow-2",
+    status: "In Stock",
+
+    colors: [
+      {
+        name: "Gray",
+        images: [
+          "/products/insta360/flow1.jpg",
+          "/products/insta360/flow2.jpg",
+          "/products/insta360/flow3.jpg",
+          "/products/insta360/flow4.jpg",
+          "/products/insta360/flow5.jpg",
+        ],
+      },
+    ],
+  },
+  {
+    id: "insta360-x5-motorcycle-bundle",
+    name: "Insta X5 Motorcycle Bundle",
+    category: "Action Cameras",
+    brand: "Insta360",
+    price: "₹58,990",
+    slug: "insta360-x5-motorcycle-bundle",
+    status: "In Stock",
+
+    colors: [
+      {
+        name: "Black",
+        images: [
+          "/products/insta360/bundle1.jpg",
+          "/products/insta360/bundle2.jpg",
+          "/products/insta360/bundle3.jpg",
+          "/products/insta360/bundle4.jpg",
+        ],
+      },
     ],
   },
 
-  {
-    category: "Storage",
-    items: [
-      { label: "Storage Media", value: "SD Memory Card" },
-      { label: "Card Slots", value: "Single Slot" },
-    ],
-  },
+  // dji brand start from here camera's
 
   {
-    category: "Viewfinder",
-    items: [
-      { label: "Lens Compatibility", value: "Z mount NIKKOR lenses, F mount NIKKOR lenses (adapter required)" },
+    id: "osmo-pocket-4-creator-combo",
+    name: "Osmo Pocket 4 Creator Combo",
+    categories: ["Action Cameras", "Compact Cameras"],
+    brand: "DJI",
+    price: "₹69,990",
+    slug: "osmo-pocket-4-creator-combo",
+    status: "In Stock",
+
+    colors: [
+      {
+        name: "Black",
+        images: [
+          "/products/dji/creator1.jpg",
+          "/products/dji/creator2.jpg",
+          "/products/dji/creator3.jpg",
+          "/products/dji/creator4.jpg",
+          "/products/dji/creator5.jpg",
+          "/products/dji/creator6.jpg",
+        ],
+      },
     ],
-  },
-
-  {
-    category: "Shutter",
-    items: [
-      { label: "Shutter Type", value: "Mechanical, Electronic Front-Curtain, Electronic" },
-      { label: "Shutter Speed", value: "30 sec to 1/4000 sec" },
-      { label: "Continuous Shooting", value: "Up to 11 fps" },
-    ],
-  },
-
-  {
-    category: "Exposure & ISO",
-    items: [
-      { label: "Exposure Compensation", value: "±5 EV in 1/3-step increments" },
-      { label: "ISO Range", value: "ISO 100–51200 (expandable to ISO 204800)" },
-      { label: "Metering", value: "Matrix, Center-weighted, Spot, Highlight-weighted" },
-    ],
-  },
-
-  {
-    category: "Autofocus",
-    items: [
-      { label: "Autofocus System", value: "Hybrid phase-detection / contrast AF" },
-      { label: "Focus Points", value: "209" },
-      { label: "Detection Range", value: "-4.5 to +19 EV" },
-      { label: "Animal Eye AF", value: "Yes" },
-    ],
-  },
-
-  {
-    category: "Monitor",
-    items: [
-      { label: "Monitor Size", value: "3.0-inch" },
-      { label: "Resolution", value: "Approx. 1040k-dot" },
-      { label: "Type", value: "Vari-angle TFT Touch-Sensitive LCD" },
-    ],
-  },
-
-  {
-    category: "Connectivity",
-    items: [
-      { label: "USB", value: "USB Type-C (SuperSpeed USB)" },
-      { label: "HDMI", value: "Type-D HDMI" },
-      { label: "Wi-Fi", value: "IEEE 802.11 b/g/n" },
-      { label: "Microphone Input", value: "3.5mm Stereo Mini Jack" },
-    ],
-  },
-
-  {
-    category: "Power",
-    items: [
-      { label: "Battery", value: "EN-EL25 Rechargeable Li-ion Battery" },
-      { label: "Battery Charger", value: "EH-7P Charging AC Adapter (optional)" },
-    ],
-  },
-
-  {
-    category: "Physical",
-    items: [
-      { label: "Weight", value: "Approx. 405g (with battery and memory card)" },
-      { label: "Dimensions", value: "128 × 73.5 × 59.5 mm" },
-      { label: "4K UHD", value: "Yes" },
-    ],
-  },
-],
-},
-{
-  id: "z-50",
-  name: "Z 50",
-  category: "Mirrorless Cameras",
-  brand: "Nikon",
-  price: "₹70,995",
-  slug: "z-50",
-  status: "In Stock",
-
-  colors: [
-    {
-      name: "Black",
-      images: [
-        "/products/nikon/z-50/n1.jpg",
-        "/products/nikon/z-50/n2.jpg",
-        "/products/nikon/z-50/n3.jpg",
-        "/products/nikon/z-50/n4.jpg",
-        "/products/nikon/z-50/n5.jpg",
-      ],
-    },
-  ],
-
-  lenses: ["Body Only"],
-
-  overview:
-        "Small but mighty, simple but powerful—a Z series camera for creating amazing online stories. Professional looking stills, 4K Ultra HD videos, slow motion, time-lapse and more. Wi-Fi® and Bluetooth enabled, plus in-camera video editing. Beautifully designed with a comfortable grip, flip-down touchscreen LCD, smart button layout, extended Electronic Viewfinder and travel-proof ruggedness.",
-  specs: [
-  {
-    category: "General Specifications",
-    items: [
-      { label: "Type", value: "Digital camera with support for interchangeable lenses" },
-      { label: "Lens Mount", value: "Nikon Z mount" },
-      { label: "Picture Angle", value: "APS-C Size / DX-Format" },
-    ],
-  },
-
-  {
-    category: "Image Sensor",
-    items: [
-      { label: "Sensor Size", value: "23.5 × 15.7 mm" },
-      { label: "Sensor Type", value: "CMOS" },
-      { label: "Effective Pixels", value: "20.9 million" },
-      { label: "Total Pixels", value: "21.51 million" },
-      { label: "Image Sensor Format", value: "APS-C / DX-format" },
-    ],
-  },
-
-  {
-    category: "Movie",
-    items: [
-      { label: "Video Resolution", value: "4K UHD up to 30p, Full HD up to 120p" },
-      { label: "Movie File Format", value: "MOV, MP4" },
-      { label: "Video Compression", value: "H.264 / MPEG-4 AVC" },
-      { label: "Maximum Recording Time", value: "29 min 59 sec" },
-      { label: "Audio", value: "Built-in stereo or external microphone" },
-    ],
-  },
-
-  {
-    category: "Storage",
-    items: [
-      { label: "Storage Media", value: "SD, SDHC, SDXC (UHS-I)" },
-      { label: "Card Slots", value: "Single Slot" },
-    ],
-  },
-
-  {
-    category: "Viewfinder",
-    items: [
-      { label: "Viewfinder Type", value: "OLED Electronic Viewfinder" },
-      { label: "Resolution", value: "Approx. 2360k-dot" },
-      { label: "Frame Coverage", value: "Approx. 100% horizontal and vertical" },
-      { label: "Magnification", value: "Approx. 1.02x" },
-    ],
-  },
-
-  {
-    category: "Shutter",
-    items: [
-      { label: "Shutter Type", value: "Mechanical, Electronic Front-Curtain, Electronic" },
-      { label: "Shutter Speed", value: "1/8000 sec to 30 sec" },
-      { label: "Continuous Shooting", value: "Up to 11 fps" },
-    ],
-  },
-
-  {
-    category: "Exposure & ISO",
-    items: [
-      { label: "Exposure Modes", value: "P, S, A, M, U1, U2, U3" },
-      { label: "ISO Range", value: "ISO 100–51200 (expandable to ISO 204800)" },
-    ],
-  },
-
-  {
-    category: "Autofocus",
-    items: [
-      { label: "Autofocus System", value: "Hybrid phase-detection / contrast AF" },
-      { label: "Focus Points", value: "209" },
-      { label: "Image Stabilization", value: "Lens-shift VR (lens dependent)" },
-      { label: "Animal Eye AF", value: "No" },
-    ],
-  },
-
-  {
-    category: "Monitor",
-    items: [
-      { label: "Monitor Size", value: "3.2-inch" },
-      { label: "Resolution", value: "Approx. 1040k-dot" },
-      { label: "Type", value: "Tilting TFT Touch-Sensitive LCD" },
-    ],
-  },
-
-  {
-    category: "Connectivity",
-    items: [
-      { label: "USB", value: "Micro-B USB" },
-      { label: "HDMI", value: "Type-D" },
-      { label: "Wi-Fi", value: "IEEE 802.11 b/g/n/a/ac" },
-      { label: "App Connectivity", value: "SnapBridge" },
-    ],
-  },
-
-  {
-    category: "Power",
-    items: [
-      { label: "Battery", value: "EN-EL25 Rechargeable Li-ion Battery" },
-    ],
-  },
-
-  {
-    category: "Physical",
-    items: [
-      { label: "Weight", value: "Approx. 395g" },
-      { label: "Dimensions", value: "126.5 × 93.5 × 60 mm" },
-      { label: "4K UHD", value: "Yes" },
-    ],
-  },
-],
-},
-{
-  id: "z-50-ii",
-  name: "Z 50II",
-  category: "Mirrorless Cameras",
-  brand: "Nikon",
-  price: "₹77,995",
-  slug: "z-50-ii",
-  status: "In Stock",
-
-  colors: [
-    {
-      name: "Black",
-      images: [
-        "/products/nikon/z-50ii/n1.webp",
-        "/products/nikon/z-50ii/n2.webp",
-        "/products/nikon/z-50ii/n3.webp",
-        "/products/nikon/z-50ii/n4.webp",
-        "/products/nikon/z-50ii/n5.webp",
-        "/products/nikon/z-50ii/n6.webp",
-        "/products/nikon/z-50ii/n7.webp",
-        "/products/nikon/z-50ii/n8.webp",
-        "/products/nikon/z-50ii/n9.webp",
-      ],
-    },
-  ],
-
-  lenses: ["Body Only"],
-
-  overview:
-        "Free your imagination with the Z50II, a compact APS-C mirrorless camera   (DX-format) with mighty yet intuitive features for the emerging content creators. Create cinematic stories and shoot 4K videos with rich detail, even in low light, using the 5.6K oversampling sensor  . Perfect for vlogging and livestreaming, Z50II features product review mode, Hi-Res Zoom, plug-and-play webcam support, and audio recording options. Express your individuality with diverse colour settings,   creator-crafted Imaging Recipes, and 31 types of Creative Picture Controls. Enjoy excellent subject detection, AF performance and powerful image processing for confident and stylish creations.",
- specs: [
-  {
-    category: "General Specifications",
-    items: [
-      { label: "Type", value: "Digital camera with support for interchangeable lenses" },
-      { label: "Lens Mount", value: "Nikon Z mount" },
-      { label: "Picture Angle", value: "DX-Format (APS-C)" },
-    ],
-  },
-
-  {
-    category: "Image Sensor",
-    items: [
-      { label: "Sensor Size", value: "23.5 × 15.7 mm" },
-      { label: "Sensor Type", value: "CMOS" },
-      { label: "Effective Pixels", value: "20.9 million" },
-      { label: "Total Pixels", value: "21.51 million" },
-      { label: "Dust Reduction", value: "Image Dust Off reference data support" },
-    ],
-  },
-
-  {
-    category: "Video",
-    items: [
-      { label: "Video Resolution", value: "4K UHD up to 60p, Full HD up to 120p" },
-      { label: "Video File Format", value: "MOV, MP4" },
-      { label: "Video Compression", value: "H.265/HEVC (8/10-bit), H.264/AVC (8-bit)" },
-      { label: "Audio Recording", value: "Linear PCM, AAC" },
-      { label: "Special Video Features", value: "N-Log, HLG HDR, Time-lapse, Hi-Res Zoom, Time Codes" },
-    ],
-  },
-
-  {
-    category: "Storage",
-    items: [
-      { label: "Storage Media", value: "SD, SDHC, SDXC (UHS-II Compatible)" },
-      { label: "Card Slots", value: "1 × SD Card Slot" },
-      { label: "File System", value: "DCF 2.0, Exif 2.32, MPEG-A MIAF" },
-    ],
-  },
-
-  {
-    category: "Viewfinder",
-    items: [
-      { label: "Viewfinder Type", value: "0.39-inch OLED Electronic Viewfinder" },
-      { label: "Resolution", value: "Approx. 2360k-dot" },
-      { label: "Frame Coverage", value: "Approx. 100% Horizontal and Vertical" },
-      { label: "Magnification", value: "Approx. 1.02x" },
-      { label: "Eyepoint", value: "19.5 mm" },
-    ],
-  },
-
-  {
-    category: "Shutter",
-    items: [
-      { label: "Shutter Type", value: "Mechanical, Electronic Front-Curtain, Electronic" },
-      { label: "Shutter Speed", value: "1/4000 sec to 30 sec (extendable to 900 sec)" },
-      { label: "Continuous Shooting", value: "Up to 30 fps" },
-      { label: "Flash Sync Speed", value: "Up to 1/250 sec" },
-    ],
-  },
-
-  {
-    category: "Exposure & ISO",
-    items: [
-      { label: "Exposure Modes", value: "P, S, A, M, Auto, Scene Modes" },
-      { label: "Metering", value: "Matrix, Center-Weighted, Spot, Highlight-Weighted" },
-      { label: "Exposure Compensation", value: "±5 EV" },
-      { label: "ISO Range", value: "ISO 100–51200 (expandable to ISO 204800)" },
-    ],
-  },
-
-  {
-    category: "Autofocus",
-    items: [
-      { label: "AF Modes", value: "AF-S, AF-C, AF-A, AF-F, Manual Focus" },
-      { label: "AF Area Modes", value: "Pinpoint, Single-Point, Dynamic-Area, Wide-Area, Auto-Area, 3D Tracking" },
-      { label: "Detection Range", value: "-9 to +19 EV" },
-      { label: "Focus Lock", value: "Half-Press Shutter or AE-L/AF-L Button" },
-    ],
-  },
-
-  {
-    category: "White Balance",
-    items: [
-      { label: "White Balance Modes", value: "Auto, Natural Light Auto, Daylight, Cloudy, Shade, Incandescent, Fluorescent, Flash" },
-      { label: "Color Temperature", value: "2500K – 10000K" },
-      { label: "Custom Presets", value: "Up to 6 Presets" },
-    ],
-  },
-
-  {
-    category: "Monitor",
-    items: [
-      { label: "Monitor Size", value: "3.2-inch Vari-angle LCD" },
-      { label: "Resolution", value: "Approx. 1040k-dot" },
-      { label: "Type", value: "TFT Touch-Sensitive LCD" },
-      { label: "Viewing Angle", value: "170°" },
-    ],
-  },
-
-  {
-    category: "Connectivity",
-    items: [
-      { label: "USB", value: "USB Type-C (SuperSpeed USB)" },
-      { label: "HDMI", value: "Type-D HDMI" },
-      { label: "Microphone Input", value: "3.5 mm Stereo Mini Jack" },
-      { label: "Headphone Output", value: "3.5 mm Stereo Mini Jack" },
-    ],
-  },
-
-  {
-    category: "Power",
-    items: [
-      { label: "Battery", value: "EN-EL25a Rechargeable Li-ion Battery" },
-      { label: "AC Adapter Support", value: "EH-8P AC Adapter (Optional)" },
-    ],
-  },
-
-  {
-    category: "Physical",
-    items: [
-      { label: "Weight", value: "Approx. 550 g with Battery & Card, 495 g Body Only" },
-      { label: "Dimensions", value: "127 × 96.8 × 66.5 mm" },
-      { label: "Card Slot", value: "Single SD Card Slot" },
-    ],
-  },
-]
-},
-{
-  id: "z-f-c",
-  name: "Z FC",
-  category: "Mirrorless Cameras",
-  brand: "Nikon",
-  price: "₹84,995",
-  slug: "z-f-c",
-  status: "In Stock",
-
-  colors: [
-    {
-      name: "All",
-      images: [
-        "/products/nikon/z-fc/n1.webp",
-        "/products/nikon/z-fc/n2.webp",
-        "/products/nikon/z-fc/n3.webp",
-        "/products/nikon/z-fc/n4.webp",
-        "/products/nikon/z-fc/n5.webp",
-        "/products/nikon/z-fc/n6.webp",
-        "/products/nikon/z-fc/n7.webp",
-        "/products/nikon/z-fc/n8.webp",
-        "/products/nikon/z-fc/n9.webp",
-        "/products/nikon/z-fc/n10.webp",
-      ],
-    },
-  ],
-
-  lenses: ["Body Only"],
-
-  overview:
-        "Z fc fuses classic design with Z series technology. Small size with big image quality. 4K videos with full-time Eye-Detection AF. A flip out vlogger screen with live streaming capabilities. This is a camera you think you’ve seen before. But the performance is entirely new.",
- specs: [
-  {
-    category: "General Specifications",
-    items: [
-      { label: "Type", value: "Digital camera with support for interchangeable lenses" },
-      { label: "Lens Mount", value: "Nikon Z mount" },
-      { label: "Picture Angle", value: "APS-C Size / DX-Format" },
-    ],
-  },
-
-  {
-    category: "Image Sensor",
-    items: [
-      { label: "Sensor Size", value: "23.5 × 15.7 mm" },
-      { label: "Sensor Type", value: "CMOS" },
-      { label: "Effective Pixels", value: "20.9 million" },
-      { label: "Total Pixels", value: "21.51 million" },
-      { label: "Image Sensor Format", value: "APS-C / DX-Format" },
-    ],
-  },
-
-  {
-    category: "Movie",
-    items: [
-      { label: "Video Resolution", value: "4K UHD up to 30p, Full HD up to 120p" },
-      { label: "Movie File Format", value: "MOV, MP4" },
-      { label: "Video Compression", value: "H.264 / MPEG-4 AVC" },
-      { label: "Maximum Recording Time", value: "29 min 59 sec" },
-      { label: "Audio", value: "Built-in Stereo or External Microphone" },
-      { label: "Special Features", value: "Time-Lapse Movie, HDMI Output, Time Code, Active D-Lighting" },
-    ],
-  },
-
-  {
-    category: "Storage",
-    items: [
-      { label: "Storage Media", value: "SD, SDHC, SDXC (UHS-I)" },
-      { label: "Card Slots", value: "Single Slot" },
-      { label: "File System", value: "DCF 2.0, Exif 2.31" },
-    ],
-  },
-
-  {
-    category: "Viewfinder",
-    items: [
-      { label: "Viewfinder Type", value: "OLED Electronic Viewfinder" },
-      { label: "Resolution", value: "Approx. 2360k-dot" },
-      { label: "Frame Coverage", value: "Approx. 100% Horizontal and Vertical" },
-      { label: "Magnification", value: "Approx. 1.02x" },
-      { label: "Eyepoint", value: "19.5 mm" },
-    ],
-  },
-
-  {
-    category: "Shutter",
-    items: [
-      { label: "Shutter Type", value: "Mechanical, Electronic Front-Curtain, Electronic" },
-      { label: "Shutter Speed", value: "1/4000 sec to 900 sec" },
-      { label: "Continuous Shooting", value: "Up to 11 fps" },
-      { label: "Flash Sync Speed", value: "1/200 sec" },
-    ],
-  },
-
-  {
-    category: "Exposure & ISO",
-    items: [
-      { label: "Exposure Modes", value: "Auto, P, S, A, M" },
-      { label: "Metering", value: "Matrix, Center-Weighted, Spot, Highlight-Weighted" },
-      { label: "Exposure Compensation", value: "±3 EV (up to ±5 EV with compensation dial)" },
-      { label: "ISO Range", value: "ISO 100–51200 (expandable to ISO 204800)" },
-    ],
-  },
-
-  {
-    category: "Autofocus",
-    items: [
-      { label: "Autofocus System", value: "Hybrid Phase-Detection / Contrast AF" },
-      { label: "Focus Points", value: "209" },
-      { label: "AF Modes", value: "AF-S, AF-C, AF-A, AF-F, Manual Focus" },
-      { label: "Detection Range", value: "-4.5 to +19 EV" },
-      { label: "Animal Eye AF", value: "Yes" },
-    ],
-  },
-
-  {
-    category: "Monitor",
-    items: [
-      { label: "Monitor Size", value: "3.0-inch" },
-      { label: "Resolution", value: "Approx. 1040k-dot" },
-      { label: "Type", value: "Vari-angle TFT Touch-Sensitive LCD" },
-      { label: "Viewing Angle", value: "170°" },
-    ],
-  },
-
-  {
-    category: "Connectivity",
-    items: [
-      { label: "USB", value: "USB Type-C (SuperSpeed USB)" },
-      { label: "HDMI", value: "Type-D HDMI" },
-      { label: "Microphone Input", value: "3.5 mm Stereo Mini Jack" },
-      { label: "Wi-Fi", value: "IEEE 802.11 b/g/n/a/ac" },
-      { label: "GPS", value: "No" },
-    ],
-  },
-
-  {
-    category: "White Balance",
-    items: [
-      { label: "White Balance Modes", value: "Auto, Daylight, Cloudy, Shade, Incandescent, Fluorescent, Flash" },
-      { label: "White Balance Bracketing", value: "Yes" },
-      { label: "Custom Presets", value: "Supported" },
-    ],
-  },
-
-  {
-    category: "Power",
-    items: [
-      { label: "Battery", value: "EN-EL25 Rechargeable Li-ion Battery" },
-      { label: "Battery Life", value: "Approx. 300 Shots (CIPA)" },
-      { label: "Movie Recording Time", value: "Approx. 75 Minutes" },
-      { label: "Battery Charger", value: "MH-32" },
-    ],
-  },
-
-  {
-    category: "Physical",
-    items: [
-      { label: "Weight", value: "Approx. 380 g" },
-      { label: "Dimensions", value: "134.5 × 93.5 × 43.5 mm" },
-      { label: "Tripod Socket", value: '1/4" (ISO 1222)' },
-      { label: "4K UHD", value: "Yes" },
-    ],
-  },
-]
-},
-
-// Insta360 brand start from here camera's
-
-{
-  id: "insta360-x4-air",
-  name: "Insta360 X4 Air",
-  category: "360 Cameras",
-  brand: "Insta360",
-  price: "₹45,990",
-  slug: "insta360-x4-air",
-  status: "In Stock",
-
-  colors: [
-    {
-      name: "Gray",
-      images: [
-        "/products/insta360/x4-1.jpg",
-        "/products/insta360/x4-2.jpg",
-        "/products/insta360/x4-3.jpg",
-      ],
-    },
-  ],
-},
-{
-  id: "insta360-x5-standalone",
-  name: "Insta X5 Standalone",
-  category: "360 Cameras",
-  brand: "Insta360",
-  price: "₹58,990",
-  slug: "insta360-x5-standalone",
-  status: "In Stock",
-
-  colors: [
-    {
-      name: "Black",
-      images: [
-        "/products/insta360/x5-1.jpg",
-        "/products/insta360/x5-2.jpg",
-        "/products/insta360/x5-3.jpg",
-        "/products/insta360/x5-4.jpg",
-        "/products/insta360/x5-5.jpg",
-        "/products/insta360/x5-6.jpg",
-        "/products/insta360/x5-7.jpg",
-        "/products/insta360/x5-8.jpg",
-      ],
-    },
-  ],
-},
-{
-  id: "insta360-flow-2",
-  name: "Insta Flow 2",
-  category: "360 Cameras",
-  brand: "Insta360",
-  price: "₹58,990",
-  slug: "insta360-flow-2",
-  status: "In Stock",
-
-  colors: [
-    {
-      name: "Black",
-      images: [
-        "/products/insta360/link1.jpg",
-        "/products/insta360/link2.jpg",
-        "/products/insta360/link3.jpg",
-        "/products/insta360/link4.jpg",
-        "/products/insta360/link5.jpg",
-        "/products/insta360/link6.jpg",
-        "/products/insta360/link7.jpg",
-        "/products/insta360/link8.jpg",
-      ],
-    },
-  ],
-},
-{
-  id: "insta360-link-2",
-  name: "Insta link 2",
-  category: "360 Cameras",
-  brand: "Insta360",
-  price: "₹58,990",
-  slug: "insta360-flow-2",
-  status: "In Stock",
-
-  colors: [
-    {
-      name: "Gray",
-      images: [
-        "/products/insta360/flow1.jpg",
-        "/products/insta360/flow2.jpg",
-        "/products/insta360/flow3.jpg",
-        "/products/insta360/flow4.jpg",
-        "/products/insta360/flow5.jpg",
-      ],
-    },
-  ],
-},
-{
-  id: "insta360-x5-motorcycle-bundle",
-  name: "Insta X5 Motorcycle Bundle",
-  category: "360 Cameras",
-  brand: "Insta360",
-  price: "₹58,990",
-  slug: "insta360-x5-motorcycle-bundle",
-  status: "In Stock",
-
-  colors: [
-    {
-      name: "Black",
-      images: [
-        "/products/insta360/bundle1.jpg",
-        "/products/insta360/bundle2.jpg",
-        "/products/insta360/bundle3.jpg",
-        "/products/insta360/bundle4.jpg",
-      ],
-    },
-  ],
-},
-
-// dji brand start from here camera's
-
-{
-  id: "osmo-pocket-4-creator-combo",
-  name: "Osmo Pocket 4 Creator Combo",
-  category: "Mirrorless Cameras",
-  brand: "DJI",
-  price: "₹69,990",
-  slug: "osmo-pocket-4-creator-combo",
-  status: "In Stock",
-
-  colors: [
-    {
-      name: "Black",
-      images: [
-        "/products/dji/creator1.jpg",
-        "/products/dji/creator2.jpg",
-        "/products/dji/creator3.jpg",
-        "/products/dji/creator4.jpg",
-        "/products/dji/creator5.jpg",
-        "/products/dji/creator6.jpg",
-      ],
-    },
-  ],
-  keyFeatures: [
+    keyFeatures: [
       '1" CMOS & 4K/240fps',
       "14-Stop Dynamic Range",
       "10-bit D-Log",
@@ -6430,31 +6640,31 @@ export const products: Product[] = [
       "2× Lossless Zoom",
       "107GB Built-In Storage & 800MB/s Transfer",
       "New ActiveTrack & Intelligent Focusing",
-      "OsmoAudio 4-Channel Output"
+      "OsmoAudio 4-Channel Output",
     ],
-},
-{
-  id: "osmo-pocket-4-standard-combo",
-  name: "Osmo Pocket 4 Standard Combo",
-  category: "Mirrorless Cameras",
-  brand: "DJI",
-  price: "₹52,990",
-  slug: "osmo-pocket-4-standard-combo",
-  status: "In Stock",
+  },
+  {
+    id: "osmo-pocket-4-standard-combo",
+    name: "Osmo Pocket 4 Standard Combo",
+    category: "Action Cameras",
+    brand: "DJI",
+    price: "₹52,990",
+    slug: "osmo-pocket-4-standard-combo",
+    status: "In Stock",
 
-  colors: [
-    {
-      name: "Black",
-      images: [
-        "/products/dji/standard.jpg",
-        "/products/dji/creator3.jpg",
-        "/products/dji/creator4.jpg",
-        "/products/dji/creator5.jpg",
-        "/products/dji/creator6.jpg",
-      ],
-    },
-  ],
-  keyFeatures: [
+    colors: [
+      {
+        name: "Black",
+        images: [
+          "/products/dji/standard.jpg",
+          "/products/dji/creator3.jpg",
+          "/products/dji/creator4.jpg",
+          "/products/dji/creator5.jpg",
+          "/products/dji/creator6.jpg",
+        ],
+      },
+    ],
+    keyFeatures: [
       '1" CMOS & 4K/240fps',
       "14-Stop Dynamic Range",
       "10-bit D-Log",
@@ -6462,33 +6672,33 @@ export const products: Product[] = [
       "2× Lossless Zoom",
       "107GB Built-In Storage & 800MB/s Transfer",
       "New ActiveTrack & Intelligent Focusing",
-      "Osmo Audio 4-Channel Output"
+      "Osmo Audio 4-Channel Output",
     ],
-},
-{
-  id: "osmo-mobile-7p",
-  name: "Osmo Mobile 7P",
-  category: "Mirrorless Cameras",
-  brand: "DJI",
-  price: "₹52,990",
-  slug: "osmo-mobile-7p",
-  status: "In Stock",
+  },
+  {
+    id: "osmo-mobile-7p",
+    name: "Osmo Mobile 7P",
+    category: "Action Cameras",
+    brand: "DJI",
+    price: "₹52,990",
+    slug: "osmo-mobile-7p",
+    status: "In Stock",
 
-  colors: [
-    {
-      name: "Black",
-      images: [
-        "/products/dji/7p-1.jpg",
-        "/products/dji/7p-3.jpg",
-        "/products/dji/7p-4.jpg",
-        "/products/dji/7p-5.jpg",
-        "/products/dji/7p-6.jpg",
-        "/products/dji/7p-7.jpg",
-        "/products/dji/7p-8.jpg",
-      ],
-    },
-  ],
-  keyFeatures: [
+    colors: [
+      {
+        name: "Black",
+        images: [
+          "/products/dji/7p-1.jpg",
+          "/products/dji/7p-3.jpg",
+          "/products/dji/7p-4.jpg",
+          "/products/dji/7p-5.jpg",
+          "/products/dji/7p-6.jpg",
+          "/products/dji/7p-7.jpg",
+          "/products/dji/7p-8.jpg",
+        ],
+      },
+    ],
+    keyFeatures: [
       "Native Tracking With Integrated Audio & Lighting Capabilities [1]",
       "Robust 3-Axis Gimbal Stabilization",
       "Robust 3-Axis Gimbal Stabilization",
@@ -6496,1170 +6706,2496 @@ export const products: Product[] = [
       "Built-in Extension Rod & Tripod",
       "Quick Fold & Quick Launch",
       "10-Hour Battery Life & Phone Charging",
-      "Includes the Multifunctional Module offering intelligent tracking, DJI Mic Mini reception, and lighting features. Unlock tracking with your phone's native camera app or third-party apps, and use the built-in extension rod and tripod for effortless filming."
+      "Includes the Multifunctional Module offering intelligent tracking, DJI Mic Mini reception, and lighting features. Unlock tracking with your phone's native camera app or third-party apps, and use the built-in extension rod and tripod for effortless filming.",
     ],
-},
-{
-  id: "dji-osmo-action-5-pro-adventure-combo",
-  name: "DJI Osmo Action 5 Pro Adventure Combo",
-  category: "Mirrorless Cameras",
-  brand: "DJI",
-  price: "₹45,990",
-  slug: "dji-osmo-action-5-pro-adventure-combo",
-  status: "In Stock",
-
-  colors: [
-    {
-      name: "Black",
-      images: [
-        "/products/dji/adventure1.jpg",
-        "/products/dji/adventure2.jpg",
-        "/products/dji/adventure3.jpg",
-        "/products/dji/adventure4.jpg",
-        "/products/dji/adventure5.jpg",
-        "/products/dji/adventure6.jpg",
-        "/products/dji/adventure7.jpg",
-        "/products/dji/adventure8.jpg",
-        "/products/dji/adventure9.jpg",
-        "/products/dji/adventure10.jpg",
-      ],
-    },
-  ],
-  keyFeatures: [
-    "Revolutionary Imaging Performance With an All-New 1/1.3' Sensor",
-    "Center and Track Subjects With Enhanced Precision",
-    "capture more With 4hrs Extended Battery Life",
-    "Dual OLED High-Brightness Touchscreens",
-    "Robust Stabilization With 360 Horizon Steady",
-    "Professional Audio Recording With DJI Microphone Connection",
-    "Includes two additional Extreme Batteries Plus (1950mAh), a Multifunctional Battery Case2, and a 1.5m Extension Rod, ideal for extended outdoor shooting and capturing various angles."
-  ],
-},
-{
-  id: "dji-rs-4-mini",
-  name: "DJI RS 4 Mini",
-  category: "Mirrorless Cameras",
-  brand: "DJI",
-  price: "₹32,990",
-  slug: "dji-rs-4-mini",
-  status: "In Stock",
-
-  colors: [
-    {
-      name: "Gray",
-      images: [
-        "/products/dji/mini1.jpg",
-        "/products/dji/mini3.jpg",
-        "/products/dji/mini4.jpg",
-        "/products/dji/mini5.jpg",
-        "/products/dji/mini6.jpg",
-        "/products/dji/mini7.jpg",
-        "/products/dji/mini8.jpg",
-        "/products/dji/mini9.jpg",
-      ],
-    },
-  ],
-  keyFeatures: [
-    "2nd-Gen Automated Axis Locks",
-    "Intelligent Tracking and Composition",
-    "Teflon™ Enhanced Balancing",
-    "3rd-Gen Native Vertical Shooting",
-    "Responsive Follow Mode",
-    "Handles Cameras and Smartphones"
-  ],
-},
-{
-  id: "osmo-pocket-3-creator-combo",
-  name: "Osmo Pocket 3 Creator Combo",
-  category: "Mirrorless Cameras",
-  brand: "DJI",
-  price: "₹60,990",
-  slug: "osmo-pocket-3-creator-combo",
-  status: "In Stock",
-
-  colors: [
-    {
-      name: "Black",
-      images: [
-        "/products/dji/combo1.jpg",
-        "/products/dji/combo3.jpg",
-        "/products/dji/combo4.jpg",
-        "/products/dji/combo5.jpg",
-        "/products/dji/combo6.jpg",
-        "/products/dji/combo7.jpg",
-      ],
-    },
-  ],
-  keyFeatures: [
-    "1-Inch CMOS & 4K/120fps",
-    "2-inch Rotatable Screen & Smart Horizontal-Vertical Shooting",
-    "3-Axis Gimbal Mechanical Stabilization",
-    "ActiveTrack 6.0",
-    "Full-Pixel Fast Focusing",
-    "D-Log M & 10-Bit",
-    "Stereo Recording",
-    "pocket-Sized"
-  ],
-},
-
-// GoPro brand start from here
-// compact part
-{
-  id: "mission-1",
-  name: "Mission 1",
-  category: "Compact Cameras",
-  brand: "GoPro",
-  price: "$599.99",
-  slug: "mission-1",
-  status: "In Stock",
-
-  colors: [
-    {
-      name: "Black",
-      images: [
-        "/products/gopro/mission1.webp",
-      ],
-    },
-  ],
-
-  lenses: ["Body Only"],
-  overview:"Compact cinematic camera with a fixed 14mm GoPro lens for serious creators",
-specs: [
+  },
   {
-    category: "General Specifications",
-    items: [
-      { label: "Category", value: "Single-Lens Capture" },
-      { label: "Processor", value: "GP3" },
-      { label: "Image Sensor", value: '1-inch' },
-      { label: "Lens Aperture", value: "F2.8" },
-      { label: "35mm Equivalent Focal Length", value: "15mm - 27mm" },
+    id: "dji-osmo-action-5-pro-adventure-combo",
+    name: "DJI Osmo Action 5 Pro Adventure Combo",
+    category: "Action Cameras",
+    brand: "DJI",
+    price: "₹45,990",
+    slug: "dji-osmo-action-5-pro-adventure-combo",
+    status: "In Stock",
+
+    colors: [
+      {
+        name: "Black",
+        images: [
+          "/products/dji/adventure1.jpg",
+          "/products/dji/adventure2.jpg",
+          "/products/dji/adventure3.jpg",
+          "/products/dji/adventure4.jpg",
+          "/products/dji/adventure5.jpg",
+          "/products/dji/adventure6.jpg",
+          "/products/dji/adventure7.jpg",
+          "/products/dji/adventure8.jpg",
+          "/products/dji/adventure9.jpg",
+          "/products/dji/adventure10.jpg",
+        ],
+      },
+    ],
+    keyFeatures: [
+      "Revolutionary Imaging Performance With an All-New 1/1.3' Sensor",
+      "Center and Track Subjects With Enhanced Precision",
+      "capture more With 4hrs Extended Battery Life",
+      "Dual OLED High-Brightness Touchscreens",
+      "Robust Stabilization With 360 Horizon Steady",
+      "Professional Audio Recording With DJI Microphone Connection",
+      "Includes two additional Extreme Batteries Plus (1950mAh), a Multifunctional Battery Case2, and a 1.5m Extension Rod, ideal for extended outdoor shooting and capturing various angles.",
+    ],
+  },
+  {
+    id: "dji-rs-4-mini",
+    name: "DJI RS 4 Mini",
+    category: "Action Cameras",
+    brand: "DJI",
+    price: "₹32,990",
+    slug: "dji-rs-4-mini",
+    status: "In Stock",
+
+    colors: [
+      {
+        name: "Gray",
+        images: [
+          "/products/dji/mini1.jpg",
+          "/products/dji/mini3.jpg",
+          "/products/dji/mini4.jpg",
+          "/products/dji/mini5.jpg",
+          "/products/dji/mini6.jpg",
+          "/products/dji/mini7.jpg",
+          "/products/dji/mini8.jpg",
+          "/products/dji/mini9.jpg",
+        ],
+      },
+    ],
+    keyFeatures: [
+      "2nd-Gen Automated Axis Locks",
+      "Intelligent Tracking and Composition",
+      "Teflon™ Enhanced Balancing",
+      "3rd-Gen Native Vertical Shooting",
+      "Responsive Follow Mode",
+      "Handles Cameras and Smartphones",
+    ],
+  },
+  {
+    id: "osmo-pocket-3-creator-combo",
+    name: "Osmo Pocket 3 Creator Combo",
+    category: "Action Cameras",
+    brand: "DJI",
+    price: "₹60,990",
+    slug: "osmo-pocket-3-creator-combo",
+    status: "In Stock",
+
+    colors: [
+      {
+        name: "Black",
+        images: [
+          "/products/dji/combo1.jpg",
+          "/products/dji/combo3.jpg",
+          "/products/dji/combo4.jpg",
+          "/products/dji/combo5.jpg",
+          "/products/dji/combo6.jpg",
+          "/products/dji/combo7.jpg",
+        ],
+      },
+    ],
+    keyFeatures: [
+      "1-Inch CMOS & 4K/120fps",
+      "2-inch Rotatable Screen & Smart Horizontal-Vertical Shooting",
+      "3-Axis Gimbal Mechanical Stabilization",
+      "ActiveTrack 6.0",
+      "Full-Pixel Fast Focusing",
+      "D-Log M & 10-Bit",
+      "Stereo Recording",
+      "pocket-Sized",
     ],
   },
 
+  // GoPro brand start from here
+  // compact part
   {
-    category: "Video",
-    items: [
-      { label: "Maximum Resolution", value: "8K up to 60fps" },
-      { label: "4K Recording", value: "Up to 240fps" },
-      { label: "1080p Recording", value: "Up to 480fps" },
-      { label: "Video Format", value: "MP4" },
-      { label: "Video Compression", value: "H.265 (HEVC)" },
-      { label: "Maximum Bit Rate", value: "240 Mbps" },
-      { label: "Color Depth", value: "8-bit, 10-bit" },
-      { label: "GP-Log Encoding", value: "GP-Log2 with LUT Support" },
+    id: "mission-1",
+    name: "Mission 1",
+    category: "Compact Cameras",
+    brand: "GoPro",
+    price: "$599.99",
+    slug: "mission-1",
+    status: "In Stock",
+
+    colors: [
+      {
+        name: "Black",
+        images: ["/products/gopro/mission1.webp"],
+      },
+    ],
+
+    lenses: ["Body Only"],
+    overview:
+      "Compact cinematic camera with a fixed 14mm GoPro lens for serious creators",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Category", value: "Single-Lens Capture" },
+          { label: "Processor", value: "GP3" },
+          { label: "Image Sensor", value: "1-inch" },
+          { label: "Lens Aperture", value: "F2.8" },
+          { label: "35mm Equivalent Focal Length", value: "15mm - 27mm" },
+        ],
+      },
+
+      {
+        category: "Video",
+        items: [
+          { label: "Maximum Resolution", value: "8K up to 60fps" },
+          { label: "4K Recording", value: "Up to 240fps" },
+          { label: "1080p Recording", value: "Up to 480fps" },
+          { label: "Video Format", value: "MP4" },
+          { label: "Video Compression", value: "H.265 (HEVC)" },
+          { label: "Maximum Bit Rate", value: "240 Mbps" },
+          { label: "Color Depth", value: "8-bit, 10-bit" },
+          { label: "GP-Log Encoding", value: "GP-Log2 with LUT Support" },
+        ],
+      },
+
+      {
+        category: "Photo",
+        items: [
+          { label: "Photo Resolution", value: "50MP, 12MP" },
+          { label: "Photo Format", value: "JPG, GPR (RAW)" },
+          { label: "Photo Output", value: "SuperPhoto, Standard, RAW" },
+          { label: "Photo Aspect Ratio", value: "4:3" },
+          {
+            label: "Frame Grabs From Video",
+            value: "Up to 44.2MP from 8K video",
+          },
+        ],
+      },
+
+      {
+        category: "Time Lapse",
+        items: [
+          { label: "TimeWarp", value: "8K30, 4K30, 1080p30" },
+          { label: "Time Lapse", value: "Video up to 8K30, Photo up to 44MP" },
+          { label: "Night Lapse", value: "Integrated with Time Lapse" },
+          {
+            label: "Creative Effects",
+            value: "Star Trails, Light Painting, Vehicle Lights",
+          },
+        ],
+      },
+
+      {
+        category: "Imaging",
+        items: [
+          { label: "ISO Range", value: "Video: 25-6400, Photo: 100-3200" },
+          { label: "White Balance", value: "2300K - 6500K" },
+          { label: "Exposure Compensation", value: "±2 EV" },
+          { label: "Shutter Speed", value: "1/8 sec - 1/16000 sec (Photo)" },
+          {
+            label: "Color Profiles",
+            value: "Vibrant, Natural, Cinematic, Flat, GP-Log2",
+          },
+        ],
+      },
+
+      {
+        category: "Stabilization",
+        items: [
+          { label: "Video Stabilization", value: "HyperSmooth" },
+          { label: "Horizon Lock", value: "360° Horizon Lock" },
+          { label: "HDR Video", value: "HLG HDR" },
+        ],
+      },
+
+      {
+        category: "Audio",
+        items: [
+          { label: "Audio Modes", value: "Stereo" },
+          { label: "Microphones", value: "4" },
+          { label: "RAW Audio", value: "24-bit PCM, 32-bit Float" },
+          { label: "Multitrack Audio", value: "Up to 3 Tracks" },
+          { label: "Directional Audio", value: "Supported" },
+          { label: "USB Audio", value: "Supported" },
+          { label: "Wireless Audio", value: "Supported" },
+        ],
+      },
+
+      {
+        category: "Capture Modes",
+        items: [
+          {
+            label: "Video Modes",
+            value:
+              "Video, Low Light, Slo-Mo, Burst Slo-Mo, HLG HDR, Subject Tracking, Looping, Endurance",
+          },
+          { label: "Photo Modes", value: "Single Photo, Interval, Burst" },
+          {
+            label: "Time Lapse Modes",
+            value:
+              "Time Lapse, Night Lapse, Star Trails, Light Painting, Vehicle Lights",
+          },
+        ],
+      },
+
+      {
+        category: "Lens Options",
+        items: [
+          { label: "Digital Lenses (Video)", value: "SuperView, Wide, Linear" },
+          { label: "Digital Lenses (Photo)", value: "Wide, Linear" },
+          { label: "Aspect Ratios", value: "16:9, 4:3, 9:16" },
+        ],
+      },
     ],
   },
-
   {
-    category: "Photo",
-    items: [
-      { label: "Photo Resolution", value: "50MP, 12MP" },
-      { label: "Photo Format", value: "JPG, GPR (RAW)" },
-      { label: "Photo Output", value: "SuperPhoto, Standard, RAW" },
-      { label: "Photo Aspect Ratio", value: "4:3" },
-      { label: "Frame Grabs From Video", value: "Up to 44.2MP from 8K video" },
+    id: "mission-1-pro",
+    name: "Mission 1 Pro",
+    category: "Compact Cameras",
+    brand: "GoPro",
+    price: "$699.99",
+    slug: "mission-1-pro",
+    status: "In Stock",
+
+    colors: [
+      {
+        name: "Black",
+        images: ["/products/gopro/mission-1-pro.webp"],
+      },
+    ],
+
+    lenses: ["Body Only"],
+    overview:
+      "Advance features with a fixed 14mm GoPro lens for Pro level capture",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Category", value: "Single-Lens Capture" },
+          { label: "Processor", value: "GP3" },
+          { label: "Image Sensor", value: '1"' },
+          { label: "Lens Aperture", value: "F2.8" },
+          { label: "35mm Equivalent Focal Length", value: "15mm - 27mm" },
+        ],
+      },
+
+      {
+        category: "Imaging",
+        items: [
+          {
+            label: "Shutter Speed",
+            value: "Video: 1/7680 sec, Photo: 1/8 - 1/16000 sec",
+          },
+          { label: "Exposure Compensation", value: "±2 EV" },
+          { label: "White Balance", value: "2300K - 6500K" },
+          { label: "ISO Range", value: "Video: 25-6400, Photo: 100-3200" },
+          {
+            label: "Color Profiles",
+            value: "Vibrant, Natural, Cinematic, Flat, GP-Log2",
+          },
+        ],
+      },
+
+      {
+        category: "Video",
+        items: [
+          { label: "Maximum Resolution", value: "8K up to 60fps" },
+          { label: "4K Recording", value: "Up to 240fps" },
+          { label: "1080p Recording", value: "Up to 480fps" },
+          { label: "Slow Motion", value: "Up to 16x (480fps)" },
+          { label: "Burst Slow Motion", value: "32x (960fps for 10 sec)" },
+          { label: "Video Format", value: "MP4" },
+          { label: "Video Compression", value: "H.265 (HEVC)" },
+          { label: "Color Bit Depth", value: "8-bit, 10-bit" },
+          { label: "Max Bit Rate", value: "240 Mbps" },
+          { label: "GP-Log", value: "GP-Log2 with LUT Support" },
+        ],
+      },
+
+      {
+        category: "Photo",
+        items: [
+          { label: "Photo Resolution", value: "50MP, 12MP" },
+          { label: "Photo Output", value: "SuperPhoto, Standard, RAW" },
+          { label: "Photo Format", value: "JPG, GPR (RAW)" },
+          { label: "Aspect Ratio", value: "4:3" },
+          { label: "Frame Grabs", value: "Up to 44.2MP from 8K Video" },
+        ],
+      },
+
+      {
+        category: "Time Lapse",
+        items: [
+          { label: "TimeWarp", value: "8K30, 4K30, 1080p30" },
+          { label: "Time Lapse", value: "Video up to 8K30, Photo up to 44MP" },
+          { label: "Night Lapse", value: "Supported" },
+          {
+            label: "Creative Effects",
+            value: "Star Trails, Light Painting, Vehicle Lights",
+          },
+        ],
+      },
+
+      {
+        category: "Stabilization",
+        items: [
+          { label: "Video Stabilization", value: "HyperSmooth" },
+          { label: "Horizon Lock", value: "360° Horizon Lock" },
+          { label: "HDR Video", value: "HLG HDR" },
+        ],
+      },
+
+      {
+        category: "Capture Modes",
+        items: [
+          {
+            label: "Video Modes",
+            value:
+              "Video, Low Light, Slo-Mo, Burst Slo-Mo, HLG HDR, Subject Tracking, Looping, Endurance",
+          },
+          { label: "Photo Modes", value: "Single Photo, Interval, Burst" },
+          {
+            label: "Time Lapse Modes",
+            value:
+              "Time Lapse, Night Lapse, Star Trails, Light Painting, Vehicle Lights",
+          },
+        ],
+      },
+
+      {
+        category: "Lens Options",
+        items: [
+          { label: "Digital Lenses (Video)", value: "SuperView, Wide, Linear" },
+          { label: "Digital Lenses (Photo)", value: "Wide, Linear" },
+          { label: "Aspect Ratios", value: "16:9, 4:3, 9:16" },
+        ],
+      },
     ],
   },
-
   {
-    category: "Time Lapse",
-    items: [
-      { label: "TimeWarp", value: "8K30, 4K30, 1080p30" },
-      { label: "Time Lapse", value: "Video up to 8K30, Photo up to 44MP" },
-      { label: "Night Lapse", value: "Integrated with Time Lapse" },
-      { label: "Creative Effects", value: "Star Trails, Light Painting, Vehicle Lights" },
+    id: "mission-1-pro-ils",
+    name: "Mission 1 Pro Ils",
+    category: "Compact Cameras",
+    brand: "GoPro",
+    price: "$699.99",
+    slug: "mission-1-pro",
+    status: "In Stock",
+
+    colors: [
+      {
+        name: "Black",
+        images: ["/products/gopro/mission-1-pro-ils.webp"],
+      },
+    ],
+
+    lenses: ["Body Only"],
+    overview:
+      "Specialized version for compatibility with interchangeable Micro Four Thirds (MFT) lenses",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Category", value: "Single-Lens Capture" },
+          { label: "Processor", value: "GP3" },
+          { label: "Image Sensor", value: '1"' },
+          { label: "Lens Aperture", value: "F2.8" },
+          { label: "35mm Equivalent Focal Length", value: "15mm - 27mm" },
+        ],
+      },
+
+      {
+        category: "Imaging",
+        items: [
+          {
+            label: "Shutter Speed",
+            value: "Video: 1/7680 sec, Photo: 1/8 - 1/16000 sec",
+          },
+          { label: "Exposure Compensation", value: "±2 EV" },
+          { label: "White Balance", value: "2300K - 6500K" },
+          { label: "ISO Range", value: "Video: 25-6400, Photo: 100-3200" },
+          {
+            label: "Color Profiles",
+            value: "Vibrant, Natural, Cinematic, Flat, GP-Log2",
+          },
+        ],
+      },
+
+      {
+        category: "Video",
+        items: [
+          { label: "Maximum Resolution", value: "8K up to 60fps" },
+          { label: "4K Recording", value: "Up to 240fps" },
+          { label: "1080p Recording", value: "Up to 480fps" },
+          { label: "Slow Motion", value: "Up to 16x (480fps)" },
+          { label: "Burst Slow Motion", value: "32x (960fps for 10 sec)" },
+          { label: "Video Format", value: "MP4" },
+          { label: "Video Compression", value: "H.265 (HEVC)" },
+          { label: "Color Bit Depth", value: "8-bit, 10-bit" },
+          { label: "Max Bit Rate", value: "240 Mbps" },
+          { label: "GP-Log", value: "GP-Log2 with LUT Support" },
+        ],
+      },
+
+      {
+        category: "Photo",
+        items: [
+          { label: "Photo Resolution", value: "50MP, 12MP" },
+          { label: "Photo Output", value: "SuperPhoto, Standard, RAW" },
+          { label: "Photo Format", value: "JPG, GPR (RAW)" },
+          { label: "Aspect Ratio", value: "4:3" },
+          { label: "Frame Grabs", value: "Up to 44.2MP from 8K Video" },
+        ],
+      },
+
+      {
+        category: "Time Lapse",
+        items: [
+          { label: "TimeWarp", value: "8K30, 4K30, 1080p30" },
+          { label: "Time Lapse", value: "Video up to 8K30, Photo up to 44MP" },
+          { label: "Night Lapse", value: "Supported" },
+          {
+            label: "Creative Effects",
+            value: "Star Trails, Light Painting, Vehicle Lights",
+          },
+        ],
+      },
+
+      {
+        category: "Stabilization",
+        items: [
+          { label: "Video Stabilization", value: "HyperSmooth" },
+          { label: "Horizon Lock", value: "360° Horizon Lock" },
+          { label: "HDR Video", value: "HLG HDR" },
+        ],
+      },
+
+      {
+        category: "Capture Modes",
+        items: [
+          {
+            label: "Video Modes",
+            value:
+              "Video, Low Light, Slo-Mo, Burst Slo-Mo, HLG HDR, Subject Tracking, Looping, Endurance",
+          },
+          { label: "Photo Modes", value: "Single Photo, Interval, Burst" },
+          {
+            label: "Time Lapse Modes",
+            value:
+              "Time Lapse, Night Lapse, Star Trails, Light Painting, Vehicle Lights",
+          },
+        ],
+      },
+
+      {
+        category: "Lens Options",
+        items: [
+          { label: "Digital Lenses (Video)", value: "SuperView, Wide, Linear" },
+          { label: "Digital Lenses (Photo)", value: "Wide, Linear" },
+          { label: "Aspect Ratios", value: "16:9, 4:3, 9:16" },
+        ],
+      },
     ],
   },
-
+  // action camera part
   {
-    category: "Imaging",
-    items: [
-      { label: "ISO Range", value: "Video: 25-6400, Photo: 100-3200" },
-      { label: "White Balance", value: "2300K - 6500K" },
-      { label: "Exposure Compensation", value: "±2 EV" },
-      { label: "Shutter Speed", value: "1/8 sec - 1/16000 sec (Photo)" },
-      { label: "Color Profiles", value: "Vibrant, Natural, Cinematic, Flat, GP-Log2" },
+    id: "hero-13-black",
+    name: "HERO13 Black",
+    category: "Action Cameras",
+    brand: "GoPro",
+    price: "$429.99",
+    slug: "hero-13-black",
+    status: "In Stock",
+
+    colors: [
+      {
+        name: "Black",
+        images: ["/products/gopro/hero-13-black.webp"],
+      },
+    ],
+
+    lenses: ["Body Only"],
+    overview:
+      "Works with the new HB-Series Lenses, improved power solutions, magnetic mounting + more",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Category", value: "Single-Lens Capture" },
+          { label: "Processor", value: "GP2" },
+          { label: "Image Sensor", value: '1/1.9" CMOS (27.6MP)' },
+          { label: "Lens Aperture", value: "F2.5" },
+          { label: "35mm Equivalent Focal Length", value: "12mm - 39mm" },
+        ],
+      },
+
+      {
+        category: "Design & Build",
+        items: [
+          { label: "Dimensions", value: "71.8 × 50.8 × 33.6 mm" },
+          {
+            label: "Weight",
+            value: "159g (with battery), 125g (without battery)",
+          },
+          { label: "Battery", value: "1900mAh Enduro Battery" },
+          { label: "Waterproof", value: "10m (33ft)" },
+          { label: "Operating Temperature", value: "-10°C to 35°C" },
+        ],
+      },
+
+      {
+        category: "Display",
+        items: [
+          { label: "Rear Display", value: '2.27" Touch Display' },
+          { label: "Front Display", value: '1.4" Color Display' },
+          {
+            label: "Cover Glass",
+            value: "Removable Water-Repelling Cover Glass",
+          },
+        ],
+      },
+
+      {
+        category: "Video",
+        items: [
+          { label: "Maximum Resolution", value: "5.3K up to 60fps" },
+          { label: "4K Recording", value: "Up to 120fps" },
+          { label: "1080p Recording", value: "Up to 240fps" },
+          {
+            label: "Slow Motion",
+            value: "8x (1080p, 2.7K), 4x (4K), 2x (5.3K)",
+          },
+          { label: "Burst Slow Motion", value: "13x (400fps), 12x (360fps)" },
+          { label: "Video Compression", value: "H.265 (HEVC)" },
+          { label: "Color Bit Depth", value: "8-bit, 10-bit (4K and higher)" },
+          { label: "Maximum Bit Rate", value: "120 Mbps" },
+          { label: "HDR Video", value: "Supported" },
+        ],
+      },
+
+      {
+        category: "Photo",
+        items: [
+          { label: "Photo Resolution", value: "27.13MP (5568 × 4872)" },
+          { label: "Photo Output", value: "SuperPhoto, HDR, Standard, RAW" },
+          { label: "Photo Format", value: "JPG, GPR (RAW)" },
+          { label: "RAW Capture", value: "27.13MP" },
+          { label: "Frame Grabs", value: "Up to 24.69MP from 5.3K Video" },
+        ],
+      },
+
+      {
+        category: "Time Lapse",
+        items: [
+          { label: "TimeWarp", value: "TimeWarp 3.0 up to 5.3K" },
+          { label: "TimeWarp Speeds", value: "Auto, 2x, 5x, 10x, 15x, 30x" },
+          { label: "Time Lapse Resolution", value: "Up to 5.3K" },
+          { label: "Night Lapse", value: "Up to 5.3K" },
+          {
+            label: "Creative Effects",
+            value: "Star Trails, Light Painting, Vehicle Light Trails",
+          },
+        ],
+      },
+
+      {
+        category: "Stabilization",
+        items: [
+          { label: "Video Stabilization", value: "HyperSmooth 6.0" },
+          {
+            label: "Horizon Lock",
+            value: "360° Horizon Lock & Horizon Leveling",
+          },
+          { label: "Exposure Control", value: "Supported" },
+          { label: "Exposure Compensation", value: "±2 EV" },
+        ],
+      },
+
+      {
+        category: "Capture Modes",
+        items: [
+          {
+            label: "Photo Modes",
+            value: "Standard Photo, Burst Photo, Night Photo",
+          },
+          { label: "Looping Video", value: "Supported" },
+          { label: "HindSight", value: "Supported" },
+          { label: "Scheduled Capture", value: "Supported" },
+          { label: "Duration Capture", value: "Supported" },
+        ],
+      },
+
+      {
+        category: "Lens Options",
+        items: [
+          {
+            label: "Digital Lenses (Video)",
+            value: "HyperView, SuperView, Wide, Linear, Linear + Horizon Lock",
+          },
+          { label: "Digital Lenses (Photo)", value: "Wide, Linear" },
+          { label: "Aspect Ratios", value: "16:9, 9:16, 4:3, 8:7" },
+        ],
+      },
+
+      {
+        category: "Connectivity",
+        items: [
+          { label: "Storage", value: "microSD (A2 V30 or higher)" },
+          { label: "USB", value: "USB-C" },
+          { label: "Live Streaming", value: "1080p30 with HyperSmooth" },
+          { label: "Webcam Mode", value: "Up to 1080p30" },
+          { label: "Timecode Sync", value: "Supported" },
+        ],
+      },
     ],
   },
-
   {
-    category: "Stabilization",
-    items: [
-      { label: "Video Stabilization", value: "HyperSmooth" },
-      { label: "Horizon Lock", value: "360° Horizon Lock" },
-      { label: "HDR Video", value: "HLG HDR" },
+    id: "hero-13-black-creator-edition",
+    name: "HERO13 Black Creator Edition",
+    category: "Action Cameras",
+    brand: "GoPro",
+    price: "$649.99",
+    slug: "hero-13-black-creator-edition",
+    status: "In Stock",
+
+    colors: [
+      {
+        name: "Black",
+        images: ["/products/gopro/creator-edition.webp"],
+      },
+    ],
+
+    lenses: ["Body Only"],
+    overview:
+      "HERO13 Black, battery hand grip, directional mic + LED lighting.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Processor", value: "GP2" },
+          { label: "Image Sensor", value: '1/1.9" CMOS, 27.6MP' },
+          { label: "Lens Aperture", value: "F2.5" },
+          { label: "35mm Equivalent Focal Length", value: "12mm - 39mm" },
+          { label: "Battery", value: "Removable 1900mAh Enduro Battery" },
+        ],
+      },
+
+      {
+        category: "Design & Build",
+        items: [
+          { label: "Dimensions", value: "71.8 × 50.8 × 33.6 mm" },
+          {
+            label: "Weight",
+            value: "159g (with battery), 125g (without battery)",
+          },
+          {
+            label: "Displays",
+            value: 'Rear 2.27" Touch Display, Front 1.4" Color Display',
+          },
+          { label: "Waterproof Rating", value: "10m (33ft)" },
+          { label: "Operating Temperature", value: "-10°C to 35°C" },
+        ],
+      },
+
+      {
+        category: "Video",
+        items: [
+          { label: "Maximum Resolution", value: "5.3K up to 60fps" },
+          { label: "4K Recording", value: "Up to 120fps" },
+          { label: "1080p Recording", value: "Up to 240fps" },
+          { label: "Slow Motion", value: "Up to 8x" },
+          { label: "Burst Slow Motion", value: "Up to 13x (400fps)" },
+          { label: "Video Compression", value: "H.265 (HEVC)" },
+          { label: "Color Bit Depth", value: "8-bit, 10-bit (4K and above)" },
+          { label: "Maximum Bit Rate", value: "120 Mbps" },
+          { label: "Aspect Ratios", value: "16:9, 9:16, 4:3, 8:7" },
+          { label: "Video Stabilization", value: "HyperSmooth 6.0" },
+        ],
+      },
+
+      {
+        category: "Photo",
+        items: [
+          { label: "Photo Resolution", value: "27.13MP (5568 × 4872)" },
+          {
+            label: "Photo Modes",
+            value: "Standard Photo, Burst Photo, Night Photo",
+          },
+          { label: "Photo Output", value: "SuperPhoto, HDR, Standard, RAW" },
+          { label: "Photo Format", value: "JPG, GPR (RAW)" },
+          { label: "RAW Capture", value: "27.13MP RAW" },
+          { label: "Frame Grabs", value: "Up to 24.69MP from 5.3K Video" },
+        ],
+      },
+
+      {
+        category: "Time Lapse",
+        items: [
+          { label: "TimeWarp", value: "TimeWarp 3.0 up to 5.3K" },
+          { label: "TimeWarp Speeds", value: "Auto, 2x, 5x, 10x, 15x, 30x" },
+          { label: "Time Lapse Resolution", value: "Up to 5.3K" },
+          { label: "Night Lapse", value: "Supported up to 5.3K" },
+          {
+            label: "Creative Effects",
+            value: "Star Trails, Light Painting, Vehicle Light Trails",
+          },
+        ],
+      },
+
+      {
+        category: "Stabilization & HDR",
+        items: [
+          { label: "Video Stabilization", value: "HyperSmooth 6.0" },
+          {
+            label: "Horizon Lock",
+            value: "360° Horizon Lock & Horizon Leveling",
+          },
+          { label: "HDR Video", value: "Supported up to 5.3K" },
+          { label: "Exposure Compensation", value: "±2 EV" },
+        ],
+      },
+
+      {
+        category: "Lens Options",
+        items: [
+          {
+            label: "Digital Lenses (Video)",
+            value: "HyperView, SuperView, Wide, Linear",
+          },
+          {
+            label: "Horizon Lock Lens",
+            value: "Linear + Horizon Lock / Leveling",
+          },
+          { label: "Digital Lenses (Photo)", value: "Wide, Linear" },
+          { label: "Video Zoom", value: "Up to 2x" },
+        ],
+      },
+
+      {
+        category: "Connectivity & Storage",
+        items: [
+          { label: "Storage", value: "microSD (Class A2 V30 or higher)" },
+          { label: "USB", value: "USB-C" },
+          { label: "HDMI", value: "Media Mod Compatible" },
+          { label: "Live Streaming", value: "1080p30 with HyperSmooth" },
+          { label: "Webcam Mode", value: "Up to 1080p30" },
+        ],
+      },
+
+      {
+        category: "Advanced Features",
+        items: [
+          { label: "Looping Video", value: "Yes" },
+          { label: "HindSight", value: "Yes" },
+          { label: "Scheduled Capture", value: "Yes" },
+          { label: "Duration Capture", value: "Yes" },
+          { label: "Timecode Sync", value: "Yes" },
+        ],
+      },
     ],
   },
-
   {
-    category: "Audio",
-    items: [
-      { label: "Audio Modes", value: "Stereo" },
-      { label: "Microphones", value: "4" },
-      { label: "RAW Audio", value: "24-bit PCM, 32-bit Float" },
-      { label: "Multitrack Audio", value: "Up to 3 Tracks" },
-      { label: "Directional Audio", value: "Supported" },
-      { label: "USB Audio", value: "Supported" },
-      { label: "Wireless Audio", value: "Supported" },
+    id: "hero-13-black-ultra-wide-edition",
+    name: "HERO13 Black Ultra Wide Edition",
+    category: "Action Cameras",
+    brand: "GoPro",
+    price: "$649.99",
+    slug: "hero-13-black-ultra-wide-edition",
+    status: "In Stock",
+
+    colors: [
+      {
+        name: "Black",
+        images: ["/products/gopro/ultra-wide-edition.webp"],
+      },
+    ],
+
+    lenses: ["Body Only"],
+    overview:
+      "Widest + tallest POV shots, including a 177° field of view in 4K60.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Processor", value: "GP2" },
+          { label: "Image Sensor", value: '1/1.9" CMOS, 27.6MP' },
+          { label: "Lens Aperture", value: "F2.5" },
+          { label: "35mm Equivalent Focal Length", value: "12mm - 39mm" },
+          { label: "Battery", value: "Removable 1900mAh Enduro Battery" },
+        ],
+      },
+
+      {
+        category: "Design & Build",
+        items: [
+          {
+            label: "Dimensions",
+            value: "71.8 × 50.8 × 33.6 mm (Standard Lens)",
+          },
+          {
+            label: "Dimensions (Ultra Wide Lens)",
+            value: "72.4 × 51.3 × 42.1 mm",
+          },
+          {
+            label: "Weight",
+            value: "159g (Standard Lens), 178g (Ultra Wide Lens)",
+          },
+          {
+            label: "Displays",
+            value: 'Rear 2.27" Touch Display, Front 1.4" Color Display',
+          },
+          {
+            label: "Waterproof Rating",
+            value: "10m (Standard Lens), 5m (Ultra Wide Lens)",
+          },
+        ],
+      },
+
+      {
+        category: "Video",
+        items: [
+          {
+            label: "Maximum Resolution",
+            value: "5.3K up to 60fps (Standard Lens)",
+          },
+          {
+            label: "4K Recording",
+            value: "Up to 120fps (Standard Lens), 60fps (Ultra Wide Lens)",
+          },
+          { label: "1080p Recording", value: "Up to 240fps" },
+          { label: "Video Compression", value: "H.265 (HEVC)" },
+          { label: "Color Bit Depth", value: "8-bit, 10-bit (4K and above)" },
+          { label: "Maximum Bit Rate", value: "120 Mbps" },
+          { label: "Aspect Ratios", value: "16:9, 9:16, 4:3, 8:7, 1:1" },
+          { label: "Video Stabilization", value: "HyperSmooth 6.0" },
+        ],
+      },
+
+      {
+        category: "Photo",
+        items: [
+          {
+            label: "Photo Resolution",
+            value: "27.13MP (Standard Lens), 15MP (Ultra Wide Lens)",
+          },
+          {
+            label: "Photo Modes",
+            value: "Standard Photo, Burst Photo, Night Photo",
+          },
+          { label: "Photo Output", value: "SuperPhoto, HDR, Standard, RAW" },
+          { label: "Photo Format", value: "JPG, GPR (RAW)" },
+          { label: "RAW Capture", value: "27.13MP RAW (Standard Lens)" },
+          { label: "Frame Grabs", value: "Up to 24.69MP from 5.3K Video" },
+        ],
+      },
+
+      {
+        category: "Time Lapse",
+        items: [
+          {
+            label: "TimeWarp",
+            value:
+              "TimeWarp 3.0 up to 5.3K (Standard Lens), 4K (Ultra Wide Lens)",
+          },
+          { label: "TimeWarp Speeds", value: "Auto, 2x, 5x, 10x, 15x, 30x" },
+          { label: "Time Lapse Resolution", value: "Up to 5.3K" },
+          { label: "Night Lapse", value: "Supported up to 5.3K" },
+          {
+            label: "Creative Effects",
+            value: "Star Trails, Light Painting, Vehicle Light Trails",
+          },
+        ],
+      },
+
+      {
+        category: "Stabilization & HDR",
+        items: [
+          { label: "Video Stabilization", value: "HyperSmooth 6.0" },
+          {
+            label: "Horizon Lock",
+            value: "360° Horizon Lock (Ultra Wide Lens Mod)",
+          },
+          { label: "HDR Video", value: "Supported up to 5.3K" },
+          { label: "Exposure Control", value: "Supported" },
+        ],
+      },
+
+      {
+        category: "Lens Options",
+        items: [
+          {
+            label: "Digital Lenses (Standard Lens)",
+            value: "HyperView, SuperView, Wide, Linear",
+          },
+          {
+            label: "Digital Lenses (Ultra Wide Lens)",
+            value: "Ultra HyperView, Ultra SuperView, Ultra Wide, Wide, Linear",
+          },
+          {
+            label: "Horizon Lock Lens",
+            value: "Linear + Horizon Lock / Leveling",
+          },
+          { label: "Video Zoom", value: "Up to 2x (Standard Lens)" },
+        ],
+      },
+
+      {
+        category: "Connectivity & Storage",
+        items: [
+          { label: "Storage", value: "microSD (Class A2 V30 or higher)" },
+          { label: "USB", value: "USB-C" },
+          { label: "HDMI", value: "Media Mod Compatible" },
+          { label: "Live Streaming", value: "1080p30 with HyperSmooth" },
+          { label: "Webcam Mode", value: "Up to 1080p30" },
+        ],
+      },
+
+      {
+        category: "Advanced Features",
+        items: [
+          { label: "Looping Video", value: "Yes" },
+          { label: "HindSight", value: "Yes" },
+          { label: "Scheduled Capture", value: "Yes" },
+          { label: "Duration Capture", value: "Yes" },
+          { label: "Timecode Sync", value: "Yes" },
+        ],
+      },
     ],
   },
-
   {
-    category: "Capture Modes",
-    items: [
-      { label: "Video Modes", value: "Video, Low Light, Slo-Mo, Burst Slo-Mo, HLG HDR, Subject Tracking, Looping, Endurance" },
-      { label: "Photo Modes", value: "Single Photo, Interval, Burst" },
-      { label: "Time Lapse Modes", value: "Time Lapse, Night Lapse, Star Trails, Light Painting, Vehicle Lights" },
+    id: "hero-12-black",
+    name: "HERO12 Black",
+    category: "Action Cameras",
+    brand: "GoPro",
+    price: "$649.99",
+    slug: "hero-12-black",
+    status: "In Stock",
+
+    colors: [
+      {
+        name: "Black",
+        images: ["/products/gopro/hero-12.webp"],
+      },
+    ],
+
+    lenses: ["Body Only"],
+    overview: "Iconic design for immersive videos.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Processor", value: "GP2" },
+          { label: "Image Sensor", value: '1/1.9" CMOS, 27.6MP' },
+          { label: "Lens Aperture", value: "F2.5" },
+          { label: "Field of View", value: "156° (8:7 aspect ratio)" },
+          { label: "35mm Equivalent Focal Length", value: "12mm - 39mm" },
+        ],
+      },
+
+      {
+        category: "Design & Build",
+        items: [
+          { label: "Dimensions", value: "71.8 × 50.8 × 33.6 mm" },
+          {
+            label: "Weight",
+            value: "154g (with battery), 121g (without battery)",
+          },
+          {
+            label: "Displays",
+            value: 'Rear 2.27" Touch Display, Front 1.4" Color Display',
+          },
+          {
+            label: "Waterproof Rating",
+            value: "10m without housing, 60m with protective housing",
+          },
+          { label: "Battery", value: "Removable 1720mAh Enduro Battery" },
+        ],
+      },
+
+      {
+        category: "Video",
+        items: [
+          { label: "Maximum Resolution", value: "5.3K up to 60fps" },
+          { label: "4K Recording", value: "Up to 120fps" },
+          { label: "1080p Recording", value: "Up to 240fps" },
+          { label: "Slow Motion", value: "Up to 8x" },
+          { label: "Video Compression", value: "H.265 (HEVC)" },
+          { label: "Color Bit Depth", value: "8-bit, 10-bit (4K and higher)" },
+          { label: "Maximum Bit Rate", value: "120 Mbps" },
+          { label: "Aspect Ratios", value: "16:9, 9:16, 4:3, 8:7" },
+          { label: "Video Stabilization", value: "HyperSmooth 6.0" },
+        ],
+      },
+
+      {
+        category: "Photo",
+        items: [
+          { label: "Photo Resolution", value: "27.13MP (5568 × 4872)" },
+          {
+            label: "Photo Modes",
+            value: "Standard Photo, Burst Photo, Night Photo",
+          },
+          { label: "Photo Output", value: "SuperPhoto, HDR, Standard, RAW" },
+          { label: "Photo Format", value: "JPG, GPR (RAW)" },
+          { label: "RAW Capture", value: "27.13MP RAW" },
+          { label: "Frame Grabs", value: "Up to 24.69MP from 5.3K Video" },
+        ],
+      },
+
+      {
+        category: "Time Lapse",
+        items: [
+          { label: "TimeWarp", value: "TimeWarp 3.0 up to 5.3K" },
+          { label: "TimeWarp Speeds", value: "Auto, 2x, 5x, 10x, 15x, 30x" },
+          { label: "Time Lapse Resolution", value: "Up to 5.3K" },
+          { label: "Night Lapse", value: "Supported up to 5.3K" },
+          {
+            label: "Creative Effects",
+            value: "Star Trails, Light Painting, Vehicle Light Trails",
+          },
+        ],
+      },
+
+      {
+        category: "Stabilization & HDR",
+        items: [
+          { label: "Video Stabilization", value: "HyperSmooth 6.0" },
+          {
+            label: "Horizon Lock",
+            value: "360° Horizon Lock & Horizon Leveling",
+          },
+          { label: "HDR Video", value: "Supported up to 5.3K" },
+          { label: "Exposure Compensation", value: "±2 EV" },
+        ],
+      },
+
+      {
+        category: "Lens Options",
+        items: [
+          {
+            label: "Digital Lenses (Video)",
+            value: "HyperView, SuperView, Wide, Linear",
+          },
+          {
+            label: "Horizon Lock Lens",
+            value: "Linear + Horizon Lock / Leveling",
+          },
+          { label: "Digital Lenses (Photo)", value: "Wide, Linear" },
+          { label: "Video Zoom", value: "Up to 2x" },
+        ],
+      },
+
+      {
+        category: "Connectivity & Storage",
+        items: [
+          { label: "Storage", value: "microSD (Class A2 V30 or higher)" },
+          { label: "USB", value: "USB-C" },
+          { label: "HDMI", value: "Media Mod Compatible" },
+          { label: "Live Streaming", value: "1080p60 with HyperSmooth" },
+          { label: "Webcam Mode", value: "Up to 1080p30" },
+        ],
+      },
+
+      {
+        category: "Advanced Features",
+        items: [
+          { label: "Looping Video", value: "Yes" },
+          { label: "HindSight", value: "Yes" },
+          { label: "Scheduled Capture", value: "Yes" },
+          { label: "Duration Capture", value: "Yes" },
+          { label: "Timecode Sync", value: "Yes" },
+        ],
+      },
     ],
   },
+  // 360 camera
+  {
+    id: "max-2",
+    name: "Max2",
+    category: "360 Cameras",
+    brand: "GoPro",
+    price: "$499.99",
+    slug: "max-2",
+    status: "In Stock",
+
+    colors: [
+      {
+        name: "Black",
+        images: ["/products/gopro/max2.webp"],
+      },
+    ],
+
+    lenses: ["Body Only"],
+    overview:
+      "True 8K 360 video, replaceable glass lenses + new Reframe tools.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          {
+            label: "Video Modes",
+            value: "360 Video, POV, Selfie, Looping, Single-Lens Video",
+          },
+          { label: "Image Processor", value: "GP2" },
+          { label: "Image Sensor", value: '1/2.3"' },
+          { label: "Lens Aperture", value: "F1.8" },
+          { label: "35mm Equivalent Focal Length", value: "14mm - 26mm" },
+        ],
+      },
+
+      {
+        category: "Design & Build",
+        items: [
+          { label: "Dimensions", value: "64.0 × 69.7 × 48.7 mm" },
+          { label: "Weight", value: "195g" },
+          { label: "Battery", value: "1960mAh Enduro Battery" },
+          { label: "Display", value: '1.82" Touch LCD' },
+          { label: "Waterproof Rating", value: "5m (16 ft)" },
+          { label: "Replaceable Lenses", value: "Yes" },
+        ],
+      },
+
+      {
+        category: "Video",
+        items: [
+          {
+            label: "360 Video Resolution",
+            value: "8K up to 30fps, 5.6K up to 60fps, 4K up to 100fps",
+          },
+          {
+            label: "Single-Lens Resolution",
+            value: "4K up to 60fps, 1080p up to 60fps",
+          },
+          { label: "Slow Motion", value: "Up to 3x (4K100)" },
+          {
+            label: "Video Stabilization",
+            value: "Max HyperSmooth with 360° Horizon Lock",
+          },
+          { label: "Video Format", value: ".360, .MP4" },
+          { label: "Video Compression", value: "H.265 (HEVC)" },
+          { label: "Color Bit Depth", value: "8-bit, 10-bit" },
+          { label: "Max Bit Rate", value: "120 Mbps" },
+          { label: "GP-Log", value: "GP-Log with LUT Support" },
+        ],
+      },
+
+      {
+        category: "Photo",
+        items: [
+          { label: "360 Photo Resolution", value: "29MP (7680 × 3840)" },
+          {
+            label: "Single-Lens Photo Resolution",
+            value: "12MP (4000 × 3000)",
+          },
+          { label: "Photo Output", value: "Standard, RAW (Single Lens)" },
+          { label: "Photo Formats", value: ".36P, JPG, GPR" },
+          { label: "Aspect Ratio", value: "4:3" },
+          { label: "Frame Grabs", value: "Up to 12MP from 4K (4:3) Video" },
+        ],
+      },
+
+      {
+        category: "Time Lapse",
+        items: [
+          {
+            label: "TimeWarp",
+            value: "360: 8K30, 5.6K30 | Single-Lens: 4K30, 1080p30",
+          },
+          { label: "Time Lapse", value: "360: 8K30, 5.6K30" },
+          { label: "Night Lapse", value: "360: 8K30, 5.6K30" },
+          {
+            label: "Creative Effects",
+            value: "Star Trails, Light Painting, Vehicle Lights",
+          },
+        ],
+      },
+
+      {
+        category: "Stabilization",
+        items: [
+          { label: "Video Stabilization", value: "Max HyperSmooth" },
+          { label: "Horizon Lock", value: "360° Horizon Lock" },
+          { label: "Lens Priority Exposure", value: "Supported" },
+        ],
+      },
+
+      {
+        category: "Capture Modes",
+        items: [
+          { label: "360 Modes", value: "Video, POV, Selfie, Looping" },
+          { label: "Single-Lens Modes", value: "Video, Photo, TimeWarp" },
+          { label: "Photo Modes", value: "Photo, Burst Photo, Night Photo" },
+          {
+            label: "Time Lapse Modes",
+            value:
+              "TimeWarp, Time Lapse, Night Lapse, Star Trails, Light Painting, Vehicle Lights",
+          },
+        ],
+      },
+
+      {
+        category: "Lens Options",
+        items: [
+          {
+            label: "Digital Lenses",
+            value: "Max HyperView, Max SuperView, Ultra Wide, Wide, Linear",
+          },
+          { label: "Photo Lenses", value: "Ultra Wide, Wide, Linear" },
+          { label: "Aspect Ratios", value: "16:9, 9:16, 4:3" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "max",
+    name: "Max",
+    category: "360 Cameras",
+    brand: "GoPro",
+    price: "$369.99",
+    slug: "max",
+    status: "In Stock",
+
+    colors: [
+      {
+        name: "Black",
+        images: ["/products/gopro/max.webp"],
+      },
+    ],
+
+    lenses: ["Body Only"],
+    overview: "5.6K 360 video, easy Reframing + more.",
+    specs: [
+      {
+        category: "Camera Features",
+        items: [
+          {
+            label: "Capture Types",
+            value: "Traditional GoPro HERO Capture, 360 Capture",
+          },
+          { label: "Video Stabilization", value: "Max HyperSmooth" },
+          { label: "Horizon Leveling", value: "Supported" },
+          { label: "PowerPano", value: "Supported" },
+          {
+            label: "Audio",
+            value: "Premium 360 Audio, Stereo Audio, Directional Audio",
+          },
+          { label: "Live Streaming", value: "1080p Live Streaming" },
+          { label: "Voice Control", value: "Supported" },
+          {
+            label: "360 Editing",
+            value: "In-Camera Stitching, Reframe via GoPro App",
+          },
+          {
+            label: "Design",
+            value: "Compact Design with Built-In Folding Fingers",
+          },
+          { label: "Waterproof Rating", value: "5m (16 ft)" },
+        ],
+      },
+
+      {
+        category: "Audio & Connectivity",
+        items: [
+          {
+            label: "Microphone System",
+            value: "6-Mic Processing with Advanced Wind Noise Reduction",
+          },
+          {
+            label: "Audio Recording",
+            value: "Stereo Audio, 360 Audio, RAW Audio (.wav)",
+          },
+          { label: "Wireless Connectivity", value: "Wi-Fi, Bluetooth" },
+          { label: "GPS", value: "Built-in GPS" },
+          { label: "Mobile Connectivity", value: "GoPro App Support" },
+          {
+            label: "Cloud Backup",
+            value: "Auto Upload with GoPro PLUS Subscription",
+          },
+          { label: "Port", value: "USB-C" },
+        ],
+      },
+
+      {
+        category: "Video",
+        items: [
+          {
+            label: "360 Video",
+            value: "6K Source / 5.6K Stitched, 3K Source / Stitched",
+          },
+          { label: "HERO Video", value: "1440p, 1080p" },
+          { label: "Video Format", value: "MP4 (H.264/AVC, H.265/HEVC)" },
+          { label: "Max Bit Rate", value: "78 Mbps" },
+          { label: "Slow Motion", value: "Up to 2x" },
+          {
+            label: "Additional Features",
+            value:
+              "Exposure Control, Live Streaming, Short Clips, On-Screen Shortcuts",
+          },
+        ],
+      },
+
+      {
+        category: "Photo",
+        items: [
+          { label: "360 Photos", value: "18MP Source, 16.6MP Stitched" },
+          { label: "HERO Photo", value: "5.5MP" },
+          { label: "PowerPano", value: "6.2MP 270° Panoramic Photo" },
+          { label: "Photo Lenses", value: "Max SuperView, Wide" },
+          {
+            label: "Additional Features",
+            value: "Photo Timer, Horizon Leveling, Protune",
+          },
+        ],
+      },
+
+      {
+        category: "Time Lapse",
+        items: [
+          { label: "TimeWarp", value: "360 TimeWarp, HERO TimeWarp" },
+          {
+            label: "Time Lapse Modes",
+            value:
+              "360 Time Lapse Video, 360 Time Lapse Photo, HERO Time Lapse Video, HERO Time Lapse Photo",
+          },
+          { label: "Intervals", value: "0.5s to 60min" },
+          {
+            label: "Additional Features",
+            value: "Protune, On-Screen Shortcuts",
+          },
+        ],
+      },
+
+      {
+        category: "Hardware",
+        items: [
+          { label: "Processor", value: "GP1" },
+          {
+            label: "Battery",
+            value: "Removable 1600mAh Enduro Lithium-Ion Battery",
+          },
+          { label: "Digital Lenses", value: "Supported" },
+          {
+            label: "Touch Display",
+            value: "Intuitive Touch Screen with Touch Zoom",
+          },
+        ],
+      },
+
+      {
+        category: "In The Box",
+        items: [
+          {
+            label: "Included Items",
+            value:
+              "GoPro MAX Camera, Enduro Battery, Curved Adhesive Mount, 2 Rubber Lens Caps, Microfiber Bag, Mounting Buckle, USB-C Cable, Long Thumbscrew, Stickers, Warranty",
+          },
+        ],
+      },
+
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Accessories Support",
+            value: "Compatible with 30+ GoPro Accessories",
+          },
+        ],
+      },
+    ],
+  },
+  
+  // lenses
 
   {
-    category: "Lens Options",
+    id: "fujifilm-xF23mmf2.8-rwr",
+    name: "Fujifilm XF23mmF 2.8 RWR",
+    category: "Lenses",
+    brand: "Fujifilm",
+    price: "₹41,999",
+    slug: "fujifilm-xF23mmf2.8-rwr",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/products/fujifilms X series/lenses/XF23mmF/1.png",
+          "/products/fujifilms X series/lenses/XF23mmF/2.png",
+          "/products/fujifilms X series/lenses/XF23mmF/3.png",
+          "/products/fujifilms X series/lenses/XF23mmF/4.png",
+          "/products/fujifilms X series/lenses/XF23mmF/5.png",
+          "/products/fujifilms X series/lenses/XF23mmF/6.png",
+          "/products/fujifilms X series/lenses/XF23mmF/7.png",
+          "/products/fujifilms X series/lenses/XF23mmF/8.png",
+          "/products/fujifilms X series/lenses/XF23mmF/9.png",
+        ],
+      },
+    ],
+    overview:
+      "Inspired by the iconic 23mm focal length that defined the first X Series camera, the XF23mmF2.8 R WR delivers a natural field of view in a compact, interchangeable design. With weather resistance, smooth autofocus, and high-resolution performance, it’s lightweight, discreet, and a pleasure to use for everyday photography.",
+ specs: [
+  {
+    category: "Lens Specifications",
     items: [
-      { label: "Digital Lenses (Video)", value: "SuperView, Wide, Linear" },
-      { label: "Digital Lenses (Photo)", value: "Wide, Linear" },
-      { label: "Aspect Ratios", value: "16:9, 4:3, 9:16" },
+      {
+        label: "Model Name",
+        value: "XF23mmF2.8 R WR",
+      },
+      {
+        label: "Lens Configuration",
+        value: "8 elements in 6 groups (includes 2 aspherical elements)",
+      },
+      {
+        label: "Focal Length (35mm Equivalent)",
+        value: "23mm (35mm format equivalent)",
+      },
+      {
+        label: "Angle of View",
+        value: "63.4°",
+      },
+      {
+        label: "Maximum Aperture",
+        value: "F2.8",
+      },
+      {
+        label: "Minimum Aperture",
+        value: "F16",
+      },
+      {
+        label: "Aperture Control",
+        value:
+          "11 diaphragm blades (rounded aperture), 1/3 EV steps (16 stops)",
+      },
+    ],
+  },
+  {
+    category: "Focus & Performance",
+    items: [
+      {
+        label: "Minimum Focus Distance",
+        value: "0.2 m (from focal plane)",
+      },
+      {
+        label: "Maximum Magnification",
+        value: "0.15×",
+      },
+    ],
+  },
+  {
+    category: "Physical Specifications",
+    items: [
+      {
+        label: "External Dimensions",
+        value: "Φ61.8 mm × 23 mm (from lens mount flange)",
+      },
+      {
+        label: "Weight",
+        value: "Approx. 90 g (excluding caps, hoods and tripod collar foot)",
+      },
+      {
+        label: "Filter Diameter",
+        value: "Φ39 mm",
+      },
+    ],
+  },
+  {
+    category: "Accessories",
+    items: [
+      {
+        label: "Included Accessories",
+        value:
+          "Front lens cap FLCP-39 II, Rear lens cap RLCP-001, Lens hood LH-X27, Lens hood cap LHCP-27, Lens wrapping cloth",
+      },
+    ],
+  },
+]
+  },
+  {
+    id: "fujifilm-xc50-230mmf4.5-6.7-oisii",
+    name: "Fujifilm XC50-230mmF4.5-6.7 OISII",
+    category: "Lenses",
+    brand: "Fujifilm",
+    price: "₹27,499",
+    slug: "fujifilm-xc50-230mmf4.5-6.7-oisii",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/products/fujifilms X series/lenses/XC50/1.png",
+          "/products/fujifilms X series/lenses/XC50/2.png",
+          "/products/fujifilms X series/lenses/XC50/3.png",
+        ],
+      },
+    ],
+    overview:
+      "The XC50-230mm F4.5–6.7 OIS II is a lightweight telephoto zoom featuring advanced optics for clear, detailed images across long distances. With fast, silent autofocus and approximately 3.5-stop optical image stabilization, it delivers sharp, steady results for both stills and video when shooting handheld.",
+ specs: [
+  {
+    category: "Lens Specifications",
+    items: [
+      {
+        label: "Model Number",
+        value: "XC50-230mmF4.5-6.7 OIS II",
+      },
+      {
+        label: "Release Date",
+        value: "June 25, 2015",
+      },
+      {
+        label: "Lens Configuration",
+        value:
+          "13 elements in 10 groups (1 aspherical lens, 1 anomalous dispersion lens)",
+      },
+      {
+        label: "Focal Length",
+        value: "50–230 mm (35mm equivalent: 76–350 mm)",
+      },
+      {
+        label: "Angle of View",
+        value: "31.7° – 7.1°",
+      },
+      {
+        label: "Maximum Aperture",
+        value: "F4.5 – F6.7",
+      },
+      {
+        label: "Minimum Aperture",
+        value: "F22",
+      },
+      {
+        label: "Aperture",
+        value: "7-blade circular diaphragm, 1/3-step adjustment (15 steps)",
+      },
+    ],
+  },
+  {
+    category: "Focus & Performance",
+    items: [
+      {
+        label: "Shortest Shooting Distance",
+        value: "Standard: 1.1 m – ∞ | Macro: 1.1 m – 3 m",
+      },
+      {
+        label: "Maximum Magnification",
+        value: "0.2× (tele end)",
+      },
+    ],
+  },
+  {
+    category: "Physical Specifications",
+    items: [
+      {
+        label: "External Dimensions",
+        value:
+          "Ø69.5 mm × 111 mm (wide end) / 177 mm (tele end), measured from tip to mount reference plane",
+      },
+      {
+        label: "Weight",
+        value: "Approx. 375 g (excluding lens cap and hood)",
+      },
+      {
+        label: "Filter Size",
+        value: "Ø58 mm",
+      },
     ],
   },
 ],
-},
-{
-  id: "mission-1-pro",
-  name: "Mission 1 Pro",
-  category: "Compact Cameras",
-  brand: "GoPro",
-  price: "$699.99",
-  slug: "mission-1-pro",
-  status: "In Stock",
-
-  colors: [
-    {
-      name: "Black",
-      images: [
-        "/products/gopro/mission-1-pro.webp",
-      ],
-    },
-  ],
-
-  lenses: ["Body Only"],
-  overview:"Advance features with a fixed 14mm GoPro lens for Pro level capture",
-specs: [
+  },
   {
-  category: "General Specifications",
-  items: [
-    { label: "Category", value: "Single-Lens Capture" },
-    { label: "Processor", value: "GP3" },
-    { label: "Image Sensor", value: '1"' },
-    { label: "Lens Aperture", value: "F2.8" },
-    { label: "35mm Equivalent Focal Length", value: "15mm - 27mm" },
-  ],
-},
-
-{
-  category: "Imaging",
-  items: [
-    { label: "Shutter Speed", value: "Video: 1/7680 sec, Photo: 1/8 - 1/16000 sec" },
-    { label: "Exposure Compensation", value: "±2 EV" },
-    { label: "White Balance", value: "2300K - 6500K" },
-    { label: "ISO Range", value: "Video: 25-6400, Photo: 100-3200" },
-    { label: "Color Profiles", value: "Vibrant, Natural, Cinematic, Flat, GP-Log2" },
-  ],
-},
-
-{
-  category: "Video",
-  items: [
-    { label: "Maximum Resolution", value: "8K up to 60fps" },
-    { label: "4K Recording", value: "Up to 240fps" },
-    { label: "1080p Recording", value: "Up to 480fps" },
-    { label: "Slow Motion", value: "Up to 16x (480fps)" },
-    { label: "Burst Slow Motion", value: "32x (960fps for 10 sec)" },
-    { label: "Video Format", value: "MP4" },
-    { label: "Video Compression", value: "H.265 (HEVC)" },
-    { label: "Color Bit Depth", value: "8-bit, 10-bit" },
-    { label: "Max Bit Rate", value: "240 Mbps" },
-    { label: "GP-Log", value: "GP-Log2 with LUT Support" },
-  ],
-},
-
-{
-  category: "Photo",
-  items: [
-    { label: "Photo Resolution", value: "50MP, 12MP" },
-    { label: "Photo Output", value: "SuperPhoto, Standard, RAW" },
-    { label: "Photo Format", value: "JPG, GPR (RAW)" },
-    { label: "Aspect Ratio", value: "4:3" },
-    { label: "Frame Grabs", value: "Up to 44.2MP from 8K Video" },
-  ],
-},
-
-{
-  category: "Time Lapse",
-  items: [
-    { label: "TimeWarp", value: "8K30, 4K30, 1080p30" },
-    { label: "Time Lapse", value: "Video up to 8K30, Photo up to 44MP" },
-    { label: "Night Lapse", value: "Supported" },
-    { label: "Creative Effects", value: "Star Trails, Light Painting, Vehicle Lights" },
-  ],
-},
-
-{
-  category: "Stabilization",
-  items: [
-    { label: "Video Stabilization", value: "HyperSmooth" },
-    { label: "Horizon Lock", value: "360° Horizon Lock" },
-    { label: "HDR Video", value: "HLG HDR" },
-  ],
-},
-
-{
-  category: "Capture Modes",
-  items: [
-    { label: "Video Modes", value: "Video, Low Light, Slo-Mo, Burst Slo-Mo, HLG HDR, Subject Tracking, Looping, Endurance" },
-    { label: "Photo Modes", value: "Single Photo, Interval, Burst" },
-    { label: "Time Lapse Modes", value: "Time Lapse, Night Lapse, Star Trails, Light Painting, Vehicle Lights" },
-  ],
-},
-
-{
-  category: "Lens Options",
-  items: [
-    { label: "Digital Lenses (Video)", value: "SuperView, Wide, Linear" },
-    { label: "Digital Lenses (Photo)", value: "Wide, Linear" },
-    { label: "Aspect Ratios", value: "16:9, 4:3, 9:16" },
-  ],
-},
-],
-},
-{
-  id: "mission-1-pro-ils",
-  name: "Mission 1 Pro Ils",
-  category: "Compact Cameras",
-  brand: "GoPro",
-  price: "$699.99",
-  slug: "mission-1-pro",
-  status: "In Stock",
-
-  colors: [
-    {
-      name: "Black",
-      images: [
-        "/products/gopro/mission-1-pro-ils.webp",
-      ],
-    },
-  ],
-
-  lenses: ["Body Only"],
-  overview:"Specialized version for compatibility with interchangeable Micro Four Thirds (MFT) lenses",
-specs: [
+    id: "fujifilm-xc35mmf2",
+    name: "Fujifilm-XC35mmF2",
+    category: "Lenses",
+    brand: "Fujifilm",
+    price: "₹53,000",
+    slug: "fujifilm-xc35mmf2",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/products/fujifilms X series/lenses/XC3/1.png",
+          "/products/fujifilms X series/lenses/XC3/2.png",
+        ],
+      },
+    ],
+    overview:
+      "The FUJINON XC35mmF2 offers a classic 52mm equivalent view in an ultra-compact, lightweight 130g design. With a refined optical structure for sharp, crisp images, fast and near-silent autofocus, and smooth, creamy bokeh, it combines excellent portability with high-performance everyday shooting.",
+ specs: [
   {
-  category: "General Specifications",
-  items: [
-    { label: "Category", value: "Single-Lens Capture" },
-    { label: "Processor", value: "GP3" },
-    { label: "Image Sensor", value: '1"' },
-    { label: "Lens Aperture", value: "F2.8" },
-    { label: "35mm Equivalent Focal Length", value: "15mm - 27mm" },
-  ],
-},
-
-{
-  category: "Imaging",
-  items: [
-    { label: "Shutter Speed", value: "Video: 1/7680 sec, Photo: 1/8 - 1/16000 sec" },
-    { label: "Exposure Compensation", value: "±2 EV" },
-    { label: "White Balance", value: "2300K - 6500K" },
-    { label: "ISO Range", value: "Video: 25-6400, Photo: 100-3200" },
-    { label: "Color Profiles", value: "Vibrant, Natural, Cinematic, Flat, GP-Log2" },
-  ],
-},
-
-{
-  category: "Video",
-  items: [
-    { label: "Maximum Resolution", value: "8K up to 60fps" },
-    { label: "4K Recording", value: "Up to 240fps" },
-    { label: "1080p Recording", value: "Up to 480fps" },
-    { label: "Slow Motion", value: "Up to 16x (480fps)" },
-    { label: "Burst Slow Motion", value: "32x (960fps for 10 sec)" },
-    { label: "Video Format", value: "MP4" },
-    { label: "Video Compression", value: "H.265 (HEVC)" },
-    { label: "Color Bit Depth", value: "8-bit, 10-bit" },
-    { label: "Max Bit Rate", value: "240 Mbps" },
-    { label: "GP-Log", value: "GP-Log2 with LUT Support" },
-  ],
-},
-
-{
-  category: "Photo",
-  items: [
-    { label: "Photo Resolution", value: "50MP, 12MP" },
-    { label: "Photo Output", value: "SuperPhoto, Standard, RAW" },
-    { label: "Photo Format", value: "JPG, GPR (RAW)" },
-    { label: "Aspect Ratio", value: "4:3" },
-    { label: "Frame Grabs", value: "Up to 44.2MP from 8K Video" },
-  ],
-},
-
-{
-  category: "Time Lapse",
-  items: [
-    { label: "TimeWarp", value: "8K30, 4K30, 1080p30" },
-    { label: "Time Lapse", value: "Video up to 8K30, Photo up to 44MP" },
-    { label: "Night Lapse", value: "Supported" },
-    { label: "Creative Effects", value: "Star Trails, Light Painting, Vehicle Lights" },
-  ],
-},
-
-{
-  category: "Stabilization",
-  items: [
-    { label: "Video Stabilization", value: "HyperSmooth" },
-    { label: "Horizon Lock", value: "360° Horizon Lock" },
-    { label: "HDR Video", value: "HLG HDR" },
-  ],
-},
-
-{
-  category: "Capture Modes",
-  items: [
-    { label: "Video Modes", value: "Video, Low Light, Slo-Mo, Burst Slo-Mo, HLG HDR, Subject Tracking, Looping, Endurance" },
-    { label: "Photo Modes", value: "Single Photo, Interval, Burst" },
-    { label: "Time Lapse Modes", value: "Time Lapse, Night Lapse, Star Trails, Light Painting, Vehicle Lights" },
-  ],
-},
-
-{
-  category: "Lens Options",
-  items: [
-    { label: "Digital Lenses (Video)", value: "SuperView, Wide, Linear" },
-    { label: "Digital Lenses (Photo)", value: "Wide, Linear" },
-    { label: "Aspect Ratios", value: "16:9, 4:3, 9:16" },
-  ],
-},
-],
-},
-// action camera part
-{
-  id: "hero-13-black",
-  name: "HERO13 Black",
-  category: "Action Cameras",
-  brand: "GoPro",
-  price: "$429.99",
-  slug: "hero-13-black",
-  status: "In Stock",
-
-  colors: [
-    {
-      name: "Black",
-      images: [
-        "/products/gopro/hero-13-black.webp",
-      ],
-    },
-  ],
-
-  lenses: ["Body Only"],
-  overview:"Works with the new HB-Series Lenses, improved power solutions, magnetic mounting + more",
-specs: [
-  {
-    category: "General Specifications",
+    category: "Lens Specifications",
     items: [
-      { label: "Category", value: "Single-Lens Capture" },
-      { label: "Processor", value: "GP2" },
-      { label: "Image Sensor", value: '1/1.9" CMOS (27.6MP)' },
-      { label: "Lens Aperture", value: "F2.5" },
-      { label: "35mm Equivalent Focal Length", value: "12mm - 39mm" },
+      {
+        label: "Model Number",
+        value: "XC35mmF2",
+      },
+      {
+        label: "Release Date",
+        value: "February 27, 2020",
+      },
+      {
+        label: "Lens Configuration",
+        value: "9 elements in 6 groups (2 aspherical lenses)",
+      },
+      {
+        label: "Focal Length",
+        value: "35 mm (35mm equivalent: 53 mm)",
+      },
+      {
+        label: "Angle of View",
+        value: "44.2°",
+      },
+      {
+        label: "Maximum Aperture",
+        value: "F2",
+      },
+      {
+        label: "Minimum Aperture",
+        value: "F16",
+      },
+      {
+        label: "Aperture",
+        value: "9-blade circular diaphragm, 1/3-step adjustment (19 steps)",
+      },
     ],
   },
-
   {
-    category: "Design & Build",
+    category: "Focus & Performance",
     items: [
-      { label: "Dimensions", value: "71.8 × 50.8 × 33.6 mm" },
-      { label: "Weight", value: "159g (with battery), 125g (without battery)" },
-      { label: "Battery", value: "1900mAh Enduro Battery" },
-      { label: "Waterproof", value: "10m (33ft)" },
-      { label: "Operating Temperature", value: "-10°C to 35°C" },
+      {
+        label: "Shortest Shooting Distance",
+        value: "35 cm – ∞",
+      },
+      {
+        label: "Maximum Magnification",
+        value: "0.14×",
+      },
     ],
   },
-
   {
-    category: "Display",
+    category: "Physical Specifications",
     items: [
-      { label: "Rear Display", value: '2.27" Touch Display' },
-      { label: "Front Display", value: '1.4" Color Display' },
-      { label: "Cover Glass", value: "Removable Water-Repelling Cover Glass" },
+      {
+        label: "External Dimensions",
+        value: "φ58.4 mm × 46.5 mm (from the tip to the mount reference surface)",
+      },
+      {
+        label: "Weight",
+        value: "Approx. 130 g (excluding lens cap)",
+      },
+      {
+        label: "Filter Size",
+        value: "φ43 mm",
+      },
     ],
   },
-
   {
-    category: "Video",
+    category: "Accessories",
     items: [
-      { label: "Maximum Resolution", value: "5.3K up to 60fps" },
-      { label: "4K Recording", value: "Up to 120fps" },
-      { label: "1080p Recording", value: "Up to 240fps" },
-      { label: "Slow Motion", value: "8x (1080p, 2.7K), 4x (4K), 2x (5.3K)" },
-      { label: "Burst Slow Motion", value: "13x (400fps), 12x (360fps)" },
-      { label: "Video Compression", value: "H.265 (HEVC)" },
-      { label: "Color Bit Depth", value: "8-bit, 10-bit (4K and higher)" },
-      { label: "Maximum Bit Rate", value: "120 Mbps" },
-      { label: "HDR Video", value: "Supported" },
-    ],
-  },
-
-  {
-    category: "Photo",
-    items: [
-      { label: "Photo Resolution", value: "27.13MP (5568 × 4872)" },
-      { label: "Photo Output", value: "SuperPhoto, HDR, Standard, RAW" },
-      { label: "Photo Format", value: "JPG, GPR (RAW)" },
-      { label: "RAW Capture", value: "27.13MP" },
-      { label: "Frame Grabs", value: "Up to 24.69MP from 5.3K Video" },
-    ],
-  },
-
-  {
-    category: "Time Lapse",
-    items: [
-      { label: "TimeWarp", value: "TimeWarp 3.0 up to 5.3K" },
-      { label: "TimeWarp Speeds", value: "Auto, 2x, 5x, 10x, 15x, 30x" },
-      { label: "Time Lapse Resolution", value: "Up to 5.3K" },
-      { label: "Night Lapse", value: "Up to 5.3K" },
-      { label: "Creative Effects", value: "Star Trails, Light Painting, Vehicle Light Trails" },
-    ],
-  },
-
-  {
-    category: "Stabilization",
-    items: [
-      { label: "Video Stabilization", value: "HyperSmooth 6.0" },
-      { label: "Horizon Lock", value: "360° Horizon Lock & Horizon Leveling" },
-      { label: "Exposure Control", value: "Supported" },
-      { label: "Exposure Compensation", value: "±2 EV" },
-    ],
-  },
-
-  {
-    category: "Capture Modes",
-    items: [
-      { label: "Photo Modes", value: "Standard Photo, Burst Photo, Night Photo" },
-      { label: "Looping Video", value: "Supported" },
-      { label: "HindSight", value: "Supported" },
-      { label: "Scheduled Capture", value: "Supported" },
-      { label: "Duration Capture", value: "Supported" },
-    ],
-  },
-
-  {
-    category: "Lens Options",
-    items: [
-      { label: "Digital Lenses (Video)", value: "HyperView, SuperView, Wide, Linear, Linear + Horizon Lock" },
-      { label: "Digital Lenses (Photo)", value: "Wide, Linear" },
-      { label: "Aspect Ratios", value: "16:9, 9:16, 4:3, 8:7" },
-    ],
-  },
-
-  {
-    category: "Connectivity",
-    items: [
-      { label: "Storage", value: "microSD (A2 V30 or higher)" },
-      { label: "USB", value: "USB-C" },
-      { label: "Live Streaming", value: "1080p30 with HyperSmooth" },
-      { label: "Webcam Mode", value: "Up to 1080p30" },
-      { label: "Timecode Sync", value: "Supported" },
+      {
+        label: "In The Box",
+        value: "Lens cap FLCP-43",
+      },
     ],
   },
 ],
-},
-{
-  id: "hero-13-black-creator-edition",
-  name: "HERO13 Black Creator Edition",
-  category: "Action Cameras",
-  brand: "GoPro",
-  price: "$649.99",
-  slug: "hero-13-black-creator-edition",
-  status: "In Stock",
-
-  colors: [
-    {
-      name: "Black",
-      images: [
-        "/products/gopro/creator-edition.webp",
-      ],
-    },
-  ],
-
-  lenses: ["Body Only"],
-  overview:"HERO13 Black, battery hand grip, directional mic + LED lighting.",
-specs: [
+  },
   {
-    category: "General Specifications",
+    id: "fujifilm-xf16-55mm-f2-8-r-lm-wr-ii",
+    name: "Fujifilm XF16-55mmF2.8 R LM WRII",
+    category: "Lenses",
+    brand: "Fujifilm",
+    price: "₹106,499",
+    slug: "fujifilm-xf16-55mm-f2-8-r-lm-wr-ii",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/products/fujifilms X series/lenses/XF16/1.png",
+          "/products/fujifilms X series/lenses/XF16/2.png",
+        ],
+      },
+    ],
+    overview:
+      "We reintroduce our flagship standard zoom with the FUJINON XF16-55mmF2.8 R LM WR II—now more compact, lightweight, and technologically advanced. Designed to deliver prime-level image quality with enhanced video capabilities, this versatile F2.8 zoom sets a new benchmark for uncompromising performance across every shooting scenario.",
+ specs: [
+  {
+    category: "Lens Specifications",
     items: [
-      { label: "Processor", value: "GP2" },
-      { label: "Image Sensor", value: '1/1.9" CMOS, 27.6MP' },
-      { label: "Lens Aperture", value: "F2.5" },
-      { label: "35mm Equivalent Focal Length", value: "12mm - 39mm" },
-      { label: "Battery", value: "Removable 1900mAh Enduro Battery" },
+      {
+        label: "Model Number",
+        value: "XF16-55mmF2.8 R LM WR II",
+      },
+      {
+        label: "Lens Configuration",
+        value:
+          "16 elements in 11 groups (4 aspherical, 3 ED, 1 Super ED element)",
+      },
+      {
+        label: "Focal Length",
+        value: "16–55 mm (35mm equivalent: 24–84 mm)",
+      },
+      {
+        label: "Angle of View",
+        value: "83.2° – 29°",
+      },
+      {
+        label: "Maximum Aperture",
+        value: "F2.8",
+      },
+      {
+        label: "Minimum Aperture",
+        value: "F22",
+      },
+      {
+        label: "Aperture",
+        value: "11-blade rounded diaphragm, 1/3 EV steps (19 stops)",
+      },
     ],
   },
-
   {
-    category: "Design & Build",
+    category: "Focus & Performance",
     items: [
-      { label: "Dimensions", value: "71.8 × 50.8 × 33.6 mm" },
-      { label: "Weight", value: "159g (with battery), 125g (without battery)" },
-      { label: "Displays", value: 'Rear 2.27" Touch Display, Front 1.4" Color Display' },
-      { label: "Waterproof Rating", value: "10m (33ft)" },
-      { label: "Operating Temperature", value: "-10°C to 35°C" },
+      {
+        label: "Minimum Focus Distance",
+        value: "0.3 m (measured from focal plane)",
+      },
+      {
+        label: "Maximum Magnification",
+        value: "0.21× (Tele)",
+      },
     ],
   },
-
   {
-    category: "Video",
+    category: "Physical Specifications",
     items: [
-      { label: "Maximum Resolution", value: "5.3K up to 60fps" },
-      { label: "4K Recording", value: "Up to 120fps" },
-      { label: "1080p Recording", value: "Up to 240fps" },
-      { label: "Slow Motion", value: "Up to 8x" },
-      { label: "Burst Slow Motion", value: "Up to 13x (400fps)" },
-      { label: "Video Compression", value: "H.265 (HEVC)" },
-      { label: "Color Bit Depth", value: "8-bit, 10-bit (4K and above)" },
-      { label: "Maximum Bit Rate", value: "120 Mbps" },
-      { label: "Aspect Ratios", value: "16:9, 9:16, 4:3, 8:7" },
-      { label: "Video Stabilization", value: "HyperSmooth 6.0" },
+      {
+        label: "External Dimensions",
+        value:
+          "Wide: φ78.3 mm × 95 mm | Tele: φ78.3 mm × 122 mm",
+      },
+      {
+        label: "Weight",
+        value: "Approx. 410 g (excluding cap and hood)",
+      },
+      {
+        label: "Filter Size",
+        value: "Ø72 mm",
+      },
     ],
   },
-
   {
-    category: "Photo",
+    category: "Accessories",
     items: [
-      { label: "Photo Resolution", value: "27.13MP (5568 × 4872)" },
-      { label: "Photo Modes", value: "Standard Photo, Burst Photo, Night Photo" },
-      { label: "Photo Output", value: "SuperPhoto, HDR, Standard, RAW" },
-      { label: "Photo Format", value: "JPG, GPR (RAW)" },
-      { label: "RAW Capture", value: "27.13MP RAW" },
-      { label: "Frame Grabs", value: "Up to 24.69MP from 5.3K Video" },
-    ],
-  },
-
-  {
-    category: "Time Lapse",
-    items: [
-      { label: "TimeWarp", value: "TimeWarp 3.0 up to 5.3K" },
-      { label: "TimeWarp Speeds", value: "Auto, 2x, 5x, 10x, 15x, 30x" },
-      { label: "Time Lapse Resolution", value: "Up to 5.3K" },
-      { label: "Night Lapse", value: "Supported up to 5.3K" },
-      { label: "Creative Effects", value: "Star Trails, Light Painting, Vehicle Light Trails" },
-    ],
-  },
-
-  {
-    category: "Stabilization & HDR",
-    items: [
-      { label: "Video Stabilization", value: "HyperSmooth 6.0" },
-      { label: "Horizon Lock", value: "360° Horizon Lock & Horizon Leveling" },
-      { label: "HDR Video", value: "Supported up to 5.3K" },
-      { label: "Exposure Compensation", value: "±2 EV" },
-    ],
-  },
-
-  {
-    category: "Lens Options",
-    items: [
-      { label: "Digital Lenses (Video)", value: "HyperView, SuperView, Wide, Linear" },
-      { label: "Horizon Lock Lens", value: "Linear + Horizon Lock / Leveling" },
-      { label: "Digital Lenses (Photo)", value: "Wide, Linear" },
-      { label: "Video Zoom", value: "Up to 2x" },
-    ],
-  },
-
-  {
-    category: "Connectivity & Storage",
-    items: [
-      { label: "Storage", value: "microSD (Class A2 V30 or higher)" },
-      { label: "USB", value: "USB-C" },
-      { label: "HDMI", value: "Media Mod Compatible" },
-      { label: "Live Streaming", value: "1080p30 with HyperSmooth" },
-      { label: "Webcam Mode", value: "Up to 1080p30" },
-    ],
-  },
-
-  {
-    category: "Advanced Features",
-    items: [
-      { label: "Looping Video", value: "Yes" },
-      { label: "HindSight", value: "Yes" },
-      { label: "Scheduled Capture", value: "Yes" },
-      { label: "Duration Capture", value: "Yes" },
-      { label: "Timecode Sync", value: "Yes" },
+      {
+        label: "In The Box",
+        value:
+          "Front lens cap FLCP-72 II, Rear lens cap RLCP-001, Lens hood, Lens wrapping cloth",
+      },
     ],
   },
 ],
-},
-{
-  id: "hero-13-black-ultra-wide-edition",
-  name: "HERO13 Black Ultra Wide Edition",
-  category: "Action Cameras",
-  brand: "GoPro",
-  price: "$649.99",
-  slug: "hero-13-black-ultra-wide-edition",
-  status: "In Stock",
-
-  colors: [
-    {
-      name: "Black",
-      images: [
-        "/products/gopro/ultra-wide-edition.webp",
-      ],
-    },
-  ],
-
-  lenses: ["Body Only"],
-  overview:"Widest + tallest POV shots, including a 177° field of view in 4K60.",
-specs: [
+  },
   {
-    category: "General Specifications",
+    id: "fujifilm-xf55-200mm-f3-5-4-8-r-lm-ois",
+    name: "Fujifilm XF55-200mmF3.5-4.8 R LM v",
+    category: "Lenses",
+    brand: "Fujifilm",
+    price: "₹54,499",
+    slug: "fujifilm-xf55-200mm-f3-5-4-8-r-lm-ois",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/products/fujifilms X series/lenses/XF55/1.png",
+          "/products/fujifilms X series/lenses/XF55/2.png",
+          "/products/fujifilms X series/lenses/XF55/3.png",
+          "/products/fujifilms X series/lenses/XF55/4.png",
+          "/products/fujifilms X series/lenses/XF55/5.png",
+          "/products/fujifilms X series/lenses/XF55/6.png",
+          "/products/fujifilms X series/lenses/XF55/7.png",
+        ],
+      },
+    ],
+    overview:
+      "Highly Portable Telephoto Zoom Built with an optical design that offers a large maximum aperture, and a linear motor that delivers high-speed AF performance, while featuring the image stabilization function that allows the use of shutter speeds 5.0 stops slower.  This is a lens you can trust even in the toughest of shooting conditions. Using high-performance glass lens elements throughout.  Containing two ED lens elements, including one Super ED lens element that boasts performance equivalent to that of fluorite lens, to control chromatic aberration, which typically occurs in long focal lengths.Sharp and crisp image description across its entire zoom range.",
+ specs: [
+  {
+    category: "Lens Specifications",
     items: [
-      { label: "Processor", value: "GP2" },
-      { label: "Image Sensor", value: '1/1.9" CMOS, 27.6MP' },
-      { label: "Lens Aperture", value: "F2.5" },
-      { label: "35mm Equivalent Focal Length", value: "12mm - 39mm" },
-      { label: "Battery", value: "Removable 1900mAh Enduro Battery" },
+      {
+        label: "Model Number",
+        value: "XF55-200mmF3.5-4.8 R LM OIS",
+      },
+      {
+        label: "Release Date",
+        value: "May 25, 2013",
+      },
+      {
+        label: "Lens Configuration",
+        value:
+          "14 elements in 10 groups (1 aspherical lens, 2 anomalous dispersion lenses)",
+      },
+      {
+        label: "Focal Length",
+        value: "55–200 mm (35mm equivalent: 84–305 mm)",
+      },
+      {
+        label: "Angle of View",
+        value: "29° – 8.1°",
+      },
+      {
+        label: "Maximum Aperture",
+        value: "F3.5 – F4.8",
+      },
+      {
+        label: "Minimum Aperture",
+        value: "F22",
+      },
+      {
+        label: "Aperture",
+        value: "7-blade circular diaphragm, 1/3-step adjustment (17 steps)",
+      },
     ],
   },
-
   {
-    category: "Design & Build",
+    category: "Focus & Performance",
     items: [
-      { label: "Dimensions", value: "71.8 × 50.8 × 33.6 mm (Standard Lens)" },
-      { label: "Dimensions (Ultra Wide Lens)", value: "72.4 × 51.3 × 42.1 mm" },
-      { label: "Weight", value: "159g (Standard Lens), 178g (Ultra Wide Lens)" },
-      { label: "Displays", value: 'Rear 2.27" Touch Display, Front 1.4" Color Display' },
-      { label: "Waterproof Rating", value: "10m (Standard Lens), 5m (Ultra Wide Lens)" },
+      {
+        label: "Minimum Focus Distance",
+        value:
+          "Standard: 1.1 m – ∞ (entire zoom range) | Macro: 1.1 m – 3 m (entire zoom range)",
+      },
+      {
+        label: "Maximum Magnification",
+        value: "0.18× (tele end)",
+      },
     ],
   },
-
   {
-    category: "Video",
+    category: "Physical Specifications",
     items: [
-      { label: "Maximum Resolution", value: "5.3K up to 60fps (Standard Lens)" },
-      { label: "4K Recording", value: "Up to 120fps (Standard Lens), 60fps (Ultra Wide Lens)" },
-      { label: "1080p Recording", value: "Up to 240fps" },
-      { label: "Video Compression", value: "H.265 (HEVC)" },
-      { label: "Color Bit Depth", value: "8-bit, 10-bit (4K and above)" },
-      { label: "Maximum Bit Rate", value: "120 Mbps" },
-      { label: "Aspect Ratios", value: "16:9, 9:16, 4:3, 8:7, 1:1" },
-      { label: "Video Stabilization", value: "HyperSmooth 6.0" },
-    ],
-  },
-
-  {
-    category: "Photo",
-    items: [
-      { label: "Photo Resolution", value: "27.13MP (Standard Lens), 15MP (Ultra Wide Lens)" },
-      { label: "Photo Modes", value: "Standard Photo, Burst Photo, Night Photo" },
-      { label: "Photo Output", value: "SuperPhoto, HDR, Standard, RAW" },
-      { label: "Photo Format", value: "JPG, GPR (RAW)" },
-      { label: "RAW Capture", value: "27.13MP RAW (Standard Lens)" },
-      { label: "Frame Grabs", value: "Up to 24.69MP from 5.3K Video" },
-    ],
-  },
-
-  {
-    category: "Time Lapse",
-    items: [
-      { label: "TimeWarp", value: "TimeWarp 3.0 up to 5.3K (Standard Lens), 4K (Ultra Wide Lens)" },
-      { label: "TimeWarp Speeds", value: "Auto, 2x, 5x, 10x, 15x, 30x" },
-      { label: "Time Lapse Resolution", value: "Up to 5.3K" },
-      { label: "Night Lapse", value: "Supported up to 5.3K" },
-      { label: "Creative Effects", value: "Star Trails, Light Painting, Vehicle Light Trails" },
-    ],
-  },
-
-  {
-    category: "Stabilization & HDR",
-    items: [
-      { label: "Video Stabilization", value: "HyperSmooth 6.0" },
-      { label: "Horizon Lock", value: "360° Horizon Lock (Ultra Wide Lens Mod)" },
-      { label: "HDR Video", value: "Supported up to 5.3K" },
-      { label: "Exposure Control", value: "Supported" },
-    ],
-  },
-
-  {
-    category: "Lens Options",
-    items: [
-      { label: "Digital Lenses (Standard Lens)", value: "HyperView, SuperView, Wide, Linear" },
-      { label: "Digital Lenses (Ultra Wide Lens)", value: "Ultra HyperView, Ultra SuperView, Ultra Wide, Wide, Linear" },
-      { label: "Horizon Lock Lens", value: "Linear + Horizon Lock / Leveling" },
-      { label: "Video Zoom", value: "Up to 2x (Standard Lens)" },
-    ],
-  },
-
-  {
-    category: "Connectivity & Storage",
-    items: [
-      { label: "Storage", value: "microSD (Class A2 V30 or higher)" },
-      { label: "USB", value: "USB-C" },
-      { label: "HDMI", value: "Media Mod Compatible" },
-      { label: "Live Streaming", value: "1080p30 with HyperSmooth" },
-      { label: "Webcam Mode", value: "Up to 1080p30" },
-    ],
-  },
-
-  {
-    category: "Advanced Features",
-    items: [
-      { label: "Looping Video", value: "Yes" },
-      { label: "HindSight", value: "Yes" },
-      { label: "Scheduled Capture", value: "Yes" },
-      { label: "Duration Capture", value: "Yes" },
-      { label: "Timecode Sync", value: "Yes" },
+      {
+        label: "Dimensions",
+        value:
+          "Wide: Ø75 mm × 118 mm | Tele: Ø75 mm × 177 mm",
+      },
+      {
+        label: "Weight",
+        value: "Approx. 580 g (excluding lens cap and hood)",
+      },
+      {
+        label: "Filter Size",
+        value: "Ø62 mm",
+      },
     ],
   },
 ],
-},
-{
-  id: "hero-12-black",
-  name: "HERO12 Black",
-  category: "Action Cameras",
-  brand: "GoPro",
-  price: "$649.99",
-  slug: "hero-12-black",
-  status: "In Stock",
-
-  colors: [
-    {
-      name: "Black",
-      images: [
-        "/products/gopro/hero-12.webp",
-      ],
-    },
-  ],
-
-  lenses: ["Body Only"],
-  overview:"Iconic design for immersive videos.",
-specs: [
+  },
   {
-    category: "General Specifications",
+    id: "fujifilm-xf18mm-f2-r",
+    name: "Fujifilm XF18mmF2 R",
+    category: "Lenses",
+    brand: "Fujifilm",
+    price: "₹53,000",
+    slug: "fujifilm-xf18mm-f2-r",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/products/fujifilms X series/lenses/XF55/1.png",
+          "/products/fujifilms X series/lenses/XF55/2.png",
+        ],
+      },
+    ],
+    overview:
+      "This highly portable, easy-to-handle wide-angle lens has a field of view equivalent to 27mm in the 35mm film format so it’s perfect for landscapes, general snapshots, and by virtue of the 18cm minimum focusing distance, close-ups. The outstanding sharpness, combined with the maximum aperture of F2 for silky bokeh also makes it suitable for portraiture; the lens’ small size means your subjects won’t feel intimidated.Compact and lightweight “Pancake” type.Using glass-mold aspheric lenses at the 5th and 7th elements is effective in increasing the maximum aperture (5th element) and reducing the overall thickness of the lens (7th element).The final element, positioned as closely to the sensor as possible, makes the incidence angle of light reaching the sensor smaller and reduces vignetting and color shading while helping to keep the lens’s overall size small.",
+ specs: [
+  {
+    category: "Lens Specifications",
     items: [
-      { label: "Processor", value: "GP2" },
-      { label: "Image Sensor", value: '1/1.9" CMOS, 27.6MP' },
-      { label: "Lens Aperture", value: "F2.5" },
-      { label: "Field of View", value: "156° (8:7 aspect ratio)" },
-      { label: "35mm Equivalent Focal Length", value: "12mm - 39mm" },
+      {
+        label: "Model Number",
+        value: "XF18mmF2 R",
+      },
+      {
+        label: "Release Date",
+        value: "February 18, 2012",
+      },
+      {
+        label: "Lens Configuration",
+        value: "8 elements in 7 groups (2 aspherical lenses)",
+      },
+      {
+        label: "Focal Length",
+        value: "18 mm (35mm equivalent: 27 mm)",
+      },
+      {
+        label: "Angle of View",
+        value: "76.5°",
+      },
+      {
+        label: "Maximum Aperture",
+        value: "F2.0",
+      },
+      {
+        label: "Minimum Aperture",
+        value: "F16",
+      },
+      {
+        label: "Aperture",
+        value: "7-blade circular diaphragm, 1/3-step adjustment (19 steps)",
+      },
     ],
   },
-
   {
-    category: "Design & Build",
+    category: "Focus & Performance",
     items: [
-      { label: "Dimensions", value: "71.8 × 50.8 × 33.6 mm" },
-      { label: "Weight", value: "154g (with battery), 121g (without battery)" },
-      { label: "Displays", value: 'Rear 2.27" Touch Display, Front 1.4" Color Display' },
-      { label: "Waterproof Rating", value: "10m without housing, 60m with protective housing" },
-      { label: "Battery", value: "Removable 1720mAh Enduro Battery" },
+      {
+        label: "Minimum Focus Distance",
+        value: "Standard: 0.8 m – ∞ | Macro: 18 cm – 2.0 m",
+      },
+      {
+        label: "Maximum Magnification",
+        value: "0.14×",
+      },
     ],
   },
-
   {
-    category: "Video",
+    category: "Physical Specifications",
     items: [
-      { label: "Maximum Resolution", value: "5.3K up to 60fps" },
-      { label: "4K Recording", value: "Up to 120fps" },
-      { label: "1080p Recording", value: "Up to 240fps" },
-      { label: "Slow Motion", value: "Up to 8x" },
-      { label: "Video Compression", value: "H.265 (HEVC)" },
-      { label: "Color Bit Depth", value: "8-bit, 10-bit (4K and higher)" },
-      { label: "Maximum Bit Rate", value: "120 Mbps" },
-      { label: "Aspect Ratios", value: "16:9, 9:16, 4:3, 8:7" },
-      { label: "Video Stabilization", value: "HyperSmooth 6.0" },
-    ],
-  },
-
-  {
-    category: "Photo",
-    items: [
-      { label: "Photo Resolution", value: "27.13MP (5568 × 4872)" },
-      { label: "Photo Modes", value: "Standard Photo, Burst Photo, Night Photo" },
-      { label: "Photo Output", value: "SuperPhoto, HDR, Standard, RAW" },
-      { label: "Photo Format", value: "JPG, GPR (RAW)" },
-      { label: "RAW Capture", value: "27.13MP RAW" },
-      { label: "Frame Grabs", value: "Up to 24.69MP from 5.3K Video" },
-    ],
-  },
-
-  {
-    category: "Time Lapse",
-    items: [
-      { label: "TimeWarp", value: "TimeWarp 3.0 up to 5.3K" },
-      { label: "TimeWarp Speeds", value: "Auto, 2x, 5x, 10x, 15x, 30x" },
-      { label: "Time Lapse Resolution", value: "Up to 5.3K" },
-      { label: "Night Lapse", value: "Supported up to 5.3K" },
-      { label: "Creative Effects", value: "Star Trails, Light Painting, Vehicle Light Trails" },
-    ],
-  },
-
-  {
-    category: "Stabilization & HDR",
-    items: [
-      { label: "Video Stabilization", value: "HyperSmooth 6.0" },
-      { label: "Horizon Lock", value: "360° Horizon Lock & Horizon Leveling" },
-      { label: "HDR Video", value: "Supported up to 5.3K" },
-      { label: "Exposure Compensation", value: "±2 EV" },
-    ],
-  },
-
-  {
-    category: "Lens Options",
-    items: [
-      { label: "Digital Lenses (Video)", value: "HyperView, SuperView, Wide, Linear" },
-      { label: "Horizon Lock Lens", value: "Linear + Horizon Lock / Leveling" },
-      { label: "Digital Lenses (Photo)", value: "Wide, Linear" },
-      { label: "Video Zoom", value: "Up to 2x" },
-    ],
-  },
-
-  {
-    category: "Connectivity & Storage",
-    items: [
-      { label: "Storage", value: "microSD (Class A2 V30 or higher)" },
-      { label: "USB", value: "USB-C" },
-      { label: "HDMI", value: "Media Mod Compatible" },
-      { label: "Live Streaming", value: "1080p60 with HyperSmooth" },
-      { label: "Webcam Mode", value: "Up to 1080p30" },
-    ],
-  },
-
-  {
-    category: "Advanced Features",
-    items: [
-      { label: "Looping Video", value: "Yes" },
-      { label: "HindSight", value: "Yes" },
-      { label: "Scheduled Capture", value: "Yes" },
-      { label: "Duration Capture", value: "Yes" },
-      { label: "Timecode Sync", value: "Yes" },
+      {
+        label: "External Dimensions",
+        value:
+          "Ø64.5 mm × 33.7 mm (from the tip to the mount reference surface)",
+      },
+      {
+        label: "Weight",
+        value: "Approx. 116 g (excluding lens cap and hood)",
+      },
+      {
+        label: "Filter Size",
+        value: "Ø52 mm",
+      },
     ],
   },
 ],
-},
-// 360 camera
-{
-  id: "max-2",
-  name: "Max2",
-  category: "360 Cameras",
-  brand: "GoPro",
-  price: "$499.99",
-  slug: "max-2",
-  status: "In Stock",
-
-  colors: [
-    {
-      name: "Black",
-      images: [
-        "/products/gopro/max2.webp",
-      ],
-    },
-  ],
-
-  lenses: ["Body Only"],
-  overview:"True 8K 360 video, replaceable glass lenses + new Reframe tools.",
-specs: [
+  },
   {
-    category: "General Specifications",
+    id: "fujifilm-xf18-120mm-f4-lm-pz-wr",
+    name: "Fujifilm XF18-120mmF4 LM PZ WR",
+    category: "Lenses",
+    brand: "Fujifilm",
+    price: "₹83,500",
+    slug: "fujifilm-xf18-120mm-f4-lm-pz-wr",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/products/fujifilms X series/lenses/120mmF4/1.png",
+          "/products/fujifilms X series/lenses/120mmF4/2.png",
+          "/products/fujifilms X series/lenses/120mmF4/3.png",
+          "/products/fujifilms X series/lenses/120mmF4/4.png",
+          "/products/fujifilms X series/lenses/120mmF4/5.png",
+          "/products/fujifilms X series/lenses/120mmF4/6.png",
+        ],
+      },
+    ],
+    overview:
+      "Compact, lightweight, and versatile, this lens is tailor-made for motion production professionals and enthusiasts alike. XF18-120mmF4 LM PZ WR features a variable power zoom, smooth manual focus, and stepless aperture adjustments to ensure a seamless recording experience.",
+ specs: [
+  {
+    category: "Lens Specifications",
     items: [
-      { label: "Video Modes", value: "360 Video, POV, Selfie, Looping, Single-Lens Video" },
-      { label: "Image Processor", value: "GP2" },
-      { label: "Image Sensor", value: '1/2.3"' },
-      { label: "Lens Aperture", value: "F1.8" },
-      { label: "35mm Equivalent Focal Length", value: "14mm - 26mm" },
+      {
+        label: "Type",
+        value: "XF18-120mmF4 LM PZ WR",
+      },
+      {
+        label: "Lens Configuration",
+        value:
+          "15 elements in 12 groups (3 aspherical elements, 3 ED elements)",
+      },
+      {
+        label: "Focal Length",
+        value: "18–120 mm (35mm equivalent: 27–183 mm)",
+      },
+      {
+        label: "Angle of View",
+        value: "76.5° – 13.5°",
+      },
+      {
+        label: "Maximum Aperture",
+        value: "F4",
+      },
+      {
+        label: "Minimum Aperture",
+        value: "F22",
+      },
+      {
+        label: "Aperture",
+        value: "7-blade rounded diaphragm, 1/3 EV steps (16 steps)",
+      },
     ],
   },
-
   {
-    category: "Design & Build",
+    category: "Focus & Performance",
     items: [
-      { label: "Dimensions", value: "64.0 × 69.7 × 48.7 mm" },
-      { label: "Weight", value: "195g" },
-      { label: "Battery", value: "1960mAh Enduro Battery" },
-      { label: "Display", value: '1.82" Touch LCD' },
-      { label: "Waterproof Rating", value: "5m (16 ft)" },
-      { label: "Replaceable Lenses", value: "Yes" },
+      {
+        label: "Minimum Focus Distance",
+        value: "0.6 m (measured from focal plane)",
+      },
+      {
+        label: "Maximum Magnification",
+        value: "0.2×",
+      },
     ],
   },
-
   {
-    category: "Video",
+    category: "Physical Specifications",
     items: [
-      { label: "360 Video Resolution", value: "8K up to 30fps, 5.6K up to 60fps, 4K up to 100fps" },
-      { label: "Single-Lens Resolution", value: "4K up to 60fps, 1080p up to 60fps" },
-      { label: "Slow Motion", value: "Up to 3x (4K100)" },
-      { label: "Video Stabilization", value: "Max HyperSmooth with 360° Horizon Lock" },
-      { label: "Video Format", value: ".360, .MP4" },
-      { label: "Video Compression", value: "H.265 (HEVC)" },
-      { label: "Color Bit Depth", value: "8-bit, 10-bit" },
-      { label: "Max Bit Rate", value: "120 Mbps" },
-      { label: "GP-Log", value: "GP-Log with LUT Support" },
+      {
+        label: "External Dimensions",
+        value: "Ø77.3 mm × 123.5 mm",
+      },
+      {
+        label: "Weight",
+        value: "Approx. 460 g",
+      },
+      {
+        label: "Filter Size",
+        value: "Ø72 mm",
+      },
     ],
   },
-
   {
-    category: "Photo",
+    category: "Accessories",
     items: [
-      { label: "360 Photo Resolution", value: "29MP (7680 × 3840)" },
-      { label: "Single-Lens Photo Resolution", value: "12MP (4000 × 3000)" },
-      { label: "Photo Output", value: "Standard, RAW (Single Lens)" },
-      { label: "Photo Formats", value: ".36P, JPG, GPR" },
-      { label: "Aspect Ratio", value: "4:3" },
-      { label: "Frame Grabs", value: "Up to 12MP from 4K (4:3) Video" },
-    ],
-  },
-
-  {
-    category: "Time Lapse",
-    items: [
-      { label: "TimeWarp", value: "360: 8K30, 5.6K30 | Single-Lens: 4K30, 1080p30" },
-      { label: "Time Lapse", value: "360: 8K30, 5.6K30" },
-      { label: "Night Lapse", value: "360: 8K30, 5.6K30" },
-      { label: "Creative Effects", value: "Star Trails, Light Painting, Vehicle Lights" },
-    ],
-  },
-
-  {
-    category: "Stabilization",
-    items: [
-      { label: "Video Stabilization", value: "Max HyperSmooth" },
-      { label: "Horizon Lock", value: "360° Horizon Lock" },
-      { label: "Lens Priority Exposure", value: "Supported" },
-    ],
-  },
-
-  {
-    category: "Capture Modes",
-    items: [
-      { label: "360 Modes", value: "Video, POV, Selfie, Looping" },
-      { label: "Single-Lens Modes", value: "Video, Photo, TimeWarp" },
-      { label: "Photo Modes", value: "Photo, Burst Photo, Night Photo" },
-      { label: "Time Lapse Modes", value: "TimeWarp, Time Lapse, Night Lapse, Star Trails, Light Painting, Vehicle Lights" },
-    ],
-  },
-
-  {
-    category: "Lens Options",
-    items: [
-      { label: "Digital Lenses", value: "Max HyperView, Max SuperView, Ultra Wide, Wide, Linear" },
-      { label: "Photo Lenses", value: "Ultra Wide, Wide, Linear" },
-      { label: "Aspect Ratios", value: "16:9, 9:16, 4:3" },
+      {
+        label: "Included Accessories",
+        value:
+          "Front lens cap FLCP-72 II, Rear lens cap RLCP-001, Lens hood, Lens wrapping cloth",
+      },
     ],
   },
 ],
-},
-{
-  id: "max",
-  name: "Max",
-  category: "360 Cameras",
-  brand: "GoPro",
-  price: "$369.99",
-  slug: "max",
-  status: "In Stock",
-
-  colors: [
-    {
-      name: "Black",
-      images: [
-        "/products/gopro/max.webp",
-      ],
-    },
-  ],
-
-  lenses: ["Body Only"],
-  overview:"5.6K 360 video, easy Reframing + more.",
+  },
+  {
+    id: "fujifilm-xf150-600mm-f5-6-8-r-lm-ois-wr",
+    name: "Fujifilm XF150-600mmF5.6-8 R LM OIS WR",
+    category: "Lenses",
+    brand: "Fujifilm",
+    price: "₹165,999",
+    slug: "fujifilm-xf150-600mm-f5-6-8-r-lm-ois-wr",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/products/fujifilms X series/lenses/600mmF5.6/1.png",
+          "/products/fujifilms X series/lenses/600mmF5.6/2.png",
+          "/products/fujifilms X series/lenses/600mmF5.6/3.png",
+          "/products/fujifilms X series/lenses/600mmF5.6/4.png",
+          "/products/fujifilms X series/lenses/600mmF5.6/5.png",
+          "/products/fujifilms X series/lenses/600mmF5.6/6.png",
+        ],
+      },
+    ],
+    overview:
+      "Have limitless creative options to make the perfect image from the sidelines of a stadium or the open fields of nature with XF150-600mmF5.6-8 R LM OIS WR, a small and light super-telephoto zoom lens with high-speed autofocus and an equivalent focal range of 229mm to 914mm.",
+ specs: [
+  {
+    category: "Lens Specifications",
+    items: [
+      {
+        label: "Type",
+        value: "XF150-600mmF5.6-8 R LM OIS WR",
+      },
+      {
+        label: "Lens Configuration",
+        value:
+          "24 elements in 17 groups (3 ED elements, 4 Super ED elements)",
+      },
+      {
+        label: "Focal Length",
+        value: "150–600 mm (35mm equivalent: 229–914 mm)",
+      },
+      {
+        label: "Angle of View",
+        value: "10.8° – 2.7°",
+      },
+      {
+        label: "Maximum Aperture",
+        value: "F5.6 – F8",
+      },
+      {
+        label: "Minimum Aperture",
+        value: "F22",
+      },
+      {
+        label: "Aperture",
+        value: "9-blade rounded diaphragm, 1/3 EV steps (13 steps)",
+      },
+    ],
+  },
+  {
+    category: "Focus & Performance",
+    items: [
+      {
+        label: "Minimum Focus Distance",
+        value: "2.4 m (measured from focal plane)",
+      },
+      {
+        label: "Maximum Magnification",
+        value: "0.24× (Tele)",
+      },
+    ],
+  },
+  {
+    category: "Physical Specifications",
+    items: [
+      {
+        label: "External Dimensions",
+        value: "Ø99 mm × 314.5 mm",
+      },
+      {
+        label: "Weight",
+        value: "Approx. 1,605 g",
+      },
+      {
+        label: "Filter Size",
+        value: "Ø82 mm",
+      },
+    ],
+  },
+  {
+    category: "Accessories",
+    items: [
+      {
+        label: "Included Accessories",
+        value:
+          "Front lens cap FLCP-82, Rear lens cap RLCP-001, Lens hood, Lens pouch, Tripod collar foot, Shoulder strap",
+      },
+    ],
+  },
+],
+  },
+  {
+    id: "fujifilm-xf56mm-f1-2-r-wr",
+    name: "Fujifilm XF56mmF1.2 R WR",
+    category: "Lenses",
+    brand: "Fujifilm",
+    price: "₹54,499",
+    slug: "fujifilm-xf56mm-f1-2-r-wr",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/products/fujifilms X series/lenses/XF56mmF1.2/1.png",
+          "/products/fujifilms X series/lenses/XF56mmF1.2/2.png",
+          "/products/fujifilms X series/lenses/XF56mmF1.2/3.png",
+          "/products/fujifilms X series/lenses/XF56mmF1.2/4.png",
+          "/products/fujifilms X series/lenses/XF56mmF1.2/5.png",
+          "/products/fujifilms X series/lenses/XF56mmF1.2/6.png",
+          "/products/fujifilms X series/lenses/XF56mmF1.2/7.png",
+          "/products/fujifilms X series/lenses/XF56mmF1.2/8.png"
+        ],
+      },
+    ],
+    overview:
+      "The high-resolution stage is set and XF56mmF1.2 R WR is ready to perform. Its fast maximum aperture delivers precise control over depth-of-field and beautiful bokeh effects, while its optical construction produces high-resolution, aberration-free results packed with detail and color. Harness the versatility of the latest X-Trans sensors and unleash your creativity.",
+ specs: [
+  {
+    category: "Lens Specifications",
+    items: [
+      {
+        label: "Type",
+        value: "FUJINON XF56mmF1.2 R WR",
+      },
+      {
+        label: "Lens Configuration",
+        value:
+          "13 elements in 8 groups (2 aspherical elements, 1 ED element)",
+      },
+      {
+        label: "Focal Length",
+        value: "56 mm (35mm equivalent: 85 mm)",
+      },
+      {
+        label: "Angle of View",
+        value: "28.5°",
+      },
+      {
+        label: "Maximum Aperture",
+        value: "F1.2",
+      },
+      {
+        label: "Minimum Aperture",
+        value: "F16",
+      },
+      {
+        label: "Aperture",
+        value:
+          "11-blade rounded diaphragm, 1/3 EV steps (23 steps, 1/2 EV for the final stop to maximum aperture)",
+      },
+    ],
+  },
+  {
+    category: "Focus & Performance",
+    items: [
+      {
+        label: "Minimum Focus Distance",
+        value: "0.5 m (measured from focal plane)",
+      },
+      {
+        label: "Maximum Magnification",
+        value: "0.14×",
+      },
+    ],
+  },
+  {
+    category: "Physical Specifications",
+    items: [
+      {
+        label: "External Dimensions",
+        value: "Ø79.4 mm × 76 mm",
+      },
+      {
+        label: "Weight",
+        value: "Approx. 445 g",
+      },
+      {
+        label: "Filter Size",
+        value: "Ø67 mm",
+      },
+    ],
+  },
+  {
+    category: "Accessories",
+    items: [
+      {
+        label: "Included Accessories",
+        value:
+          "Front lens cap FLCP-67 II, Rear lens cap RLCP-001, Lens hood, Lens wrapping cloth",
+      },
+    ],
+  },
+],
+  },
+  {
+    id: "fujifilm-xf100-400mm-f4-5-5-6-r-lm-ois-wr",
+    name: "Fujifilm XF100-400mmF4.5-5.6 R LM OIS WR",
+    category: "Lenses",
+    brand: "Fujifilm",
+    price: "₹156,999",
+    slug: "fujifilm-xf100-400mm-f4-5-5-6-r-lm-ois-wr",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/products/fujifilms X series/lenses/400mmF4/1.png",
+          "/products/fujifilms X series/lenses/400mmF4/2.png",
+          "/products/fujifilms X series/lenses/400mmF4/3.png",
+          "/products/fujifilms X series/lenses/400mmF4/4.png",
+          "/products/fujifilms X series/lenses/400mmF4/5.png",
+          "/products/fujifilms X series/lenses/400mmF4/6.png",
+          "/products/fujifilms X series/lenses/400mmF4/7.png",
+        ],
+      },
+    ],
+    overview:
+      " The FUJINON XF100-400mmF4.5-5.6 R LM OIS WR is a super-telephoto zoom lens that covers a 35mm focal length equivalent of 152-609mm. The high-performance optical construction of 21 elements in 14 groups includes five ED lenses and one Super ED lens to help reduce chromatic aberration that often occurs in telephoto lenses. As a result, it delivers the highest image quality in its class. The lens has been designed for handheld shooting with a 5.0-stop* image stabilization system and weighs less than 1.4kg. Linear motor for fast autofocusing makes it perfect for shooting fast-moving subjects including aircraft and motorsports. The lens is also both water and dust-resistant and can operate in temperatures as low as -10°C, so it’s suitable for use in a wide range of outdoor shooting conditions. A fluorine coating has also been applied to the front lens element to repel water and dirt, further improving the toughness of the lens.",
+ specs: [
+  {
+    category: "Lens Specifications",
+    items: [
+      {
+        label: "Model Number",
+        value: "XF100-400mmF4.5-5.6 R LM OIS WR",
+      },
+      {
+        label: "Release Date",
+        value: "February 18, 2016",
+      },
+      {
+        label: "Lens Configuration",
+        value:
+          "21 elements in 14 groups (6 ED elements, including 1 Super ED element)",
+      },
+      {
+        label: "Focal Length",
+        value: "100–400 mm (35mm equivalent: 152–609 mm)",
+      },
+      {
+        label: "Angle of View",
+        value: "16.2° – 4.1°",
+      },
+      {
+        label: "Maximum Aperture",
+        value: "F4.5 (Wide) – F5.6 (Tele)",
+      },
+      {
+        label: "Minimum Aperture",
+        value: "F22",
+      },
+      {
+        label: "Aperture",
+        value: "9-blade circular diaphragm, 1/3-step adjustment (15 steps)",
+      },
+    ],
+  },
+  {
+    category: "Focus & Performance",
+    items: [
+      {
+        label: "Minimum Focus Distance",
+        value: "1.75 m – ∞ (entire zoom range)",
+      },
+      {
+        label: "Maximum Magnification",
+        value: "0.19× (tele end)",
+      },
+    ],
+  },
+  {
+    category: "Physical Specifications",
+    items: [
+      {
+        label: "Dimensions",
+        value: "Wide: Ø94.8 mm × 210.5 mm | Tele: Ø94.8 mm × 270 mm",
+      },
+      {
+        label: "Weight",
+        value:
+          "Approx. 1,375 g (excluding lens cap, hood, and tripod mount)",
+      },
+      {
+        label: "Filter Size",
+        value: "Ø77 mm",
+      },
+    ],
+  },
+  {
+    category: "Accessories",
+    items: [
+      {
+        label: "In The Box",
+        value:
+          "Lens cap FLCP-77, Rear lens cap RLCP-001, Lens hood, Lens wrapping cloth",
+      },
+    ],
+  },
+],
+  },
+  {
+    id: "fujifilm-xf70-300mm-f4-5-5-6-r-lm-ois-wr",
+    name: "Fujifilm XF70-300mmF4-5.6 R LM OIS WR",
+    category: "Lenses",
+    brand: "Fujifilm",
+    price: "₹72,499",
+    slug: "fujifilm-xf70-300mm-f4-5-5-6-r-lm-ois-wr",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/products/fujifilms X series/lenses/300mmF4/1.png",
+          "/products/fujifilms X series/lenses/300mmF4/2.png",
+          "/products/fujifilms X series/lenses/300mmF4/3.png",
+          "/products/fujifilms X series/lenses/300mmF4/4.png",
+          "/products/fujifilms X series/lenses/300mmF4/5.png",
+          "/products/fujifilms X series/lenses/300mmF4/6.png",
+          "/products/fujifilms X series/lenses/300mmF4/7.png",
+        ],
+      },
+    ],
+    overview:
+      "Compact, lightweight, and weather-resistant, XF70-300mmF4-5.6 R LM makes it easy to make super-telephoto images on your greatest adventures and create images that show the true excitement and awe of your experience. With a huge focal range, state-of-the-art autofocus, advanced image stabilization, and close focusing performance equivalent to half-macro, XF70-300mm ensures you’re always ready to make images, whether your subject’s in the undergrowth beneath your feet, or in a tree on the distant horizon.",
 specs: [
   {
-  category: "Camera Features",
-  items: [
-    { label: "Capture Types", value: "Traditional GoPro HERO Capture, 360 Capture" },
-    { label: "Video Stabilization", value: "Max HyperSmooth" },
-    { label: "Horizon Leveling", value: "Supported" },
-    { label: "PowerPano", value: "Supported" },
-    { label: "Audio", value: "Premium 360 Audio, Stereo Audio, Directional Audio" },
-    { label: "Live Streaming", value: "1080p Live Streaming" },
-    { label: "Voice Control", value: "Supported" },
-    { label: "360 Editing", value: "In-Camera Stitching, Reframe via GoPro App" },
-    { label: "Design", value: "Compact Design with Built-In Folding Fingers" },
-    { label: "Waterproof Rating", value: "5m (16 ft)" },
-  ],
-},
-
-{
-  category: "Audio & Connectivity",
-  items: [
-    { label: "Microphone System", value: "6-Mic Processing with Advanced Wind Noise Reduction" },
-    { label: "Audio Recording", value: "Stereo Audio, 360 Audio, RAW Audio (.wav)" },
-    { label: "Wireless Connectivity", value: "Wi-Fi, Bluetooth" },
-    { label: "GPS", value: "Built-in GPS" },
-    { label: "Mobile Connectivity", value: "GoPro App Support" },
-    { label: "Cloud Backup", value: "Auto Upload with GoPro PLUS Subscription" },
-    { label: "Port", value: "USB-C" },
-  ],
-},
-
-{
-  category: "Video",
-  items: [
-    { label: "360 Video", value: "6K Source / 5.6K Stitched, 3K Source / Stitched" },
-    { label: "HERO Video", value: "1440p, 1080p" },
-    { label: "Video Format", value: "MP4 (H.264/AVC, H.265/HEVC)" },
-    { label: "Max Bit Rate", value: "78 Mbps" },
-    { label: "Slow Motion", value: "Up to 2x" },
-    { label: "Additional Features", value: "Exposure Control, Live Streaming, Short Clips, On-Screen Shortcuts" },
-  ],
-},
-
-{
-  category: "Photo",
-  items: [
-    { label: "360 Photos", value: "18MP Source, 16.6MP Stitched" },
-    { label: "HERO Photo", value: "5.5MP" },
-    { label: "PowerPano", value: "6.2MP 270° Panoramic Photo" },
-    { label: "Photo Lenses", value: "Max SuperView, Wide" },
-    { label: "Additional Features", value: "Photo Timer, Horizon Leveling, Protune" },
-  ],
-},
-
-{
-  category: "Time Lapse",
-  items: [
-    { label: "TimeWarp", value: "360 TimeWarp, HERO TimeWarp" },
-    { label: "Time Lapse Modes", value: "360 Time Lapse Video, 360 Time Lapse Photo, HERO Time Lapse Video, HERO Time Lapse Photo" },
-    { label: "Intervals", value: "0.5s to 60min" },
-    { label: "Additional Features", value: "Protune, On-Screen Shortcuts" },
-  ],
-},
-
-{
-  category: "Hardware",
-  items: [
-    { label: "Processor", value: "GP1" },
-    { label: "Battery", value: "Removable 1600mAh Enduro Lithium-Ion Battery" },
-    { label: "Digital Lenses", value: "Supported" },
-    { label: "Touch Display", value: "Intuitive Touch Screen with Touch Zoom" },
-  ],
-},
-
-{
-  category: "In The Box",
-  items: [
-    { label: "Included Items", value: "GoPro MAX Camera, Enduro Battery, Curved Adhesive Mount, 2 Rubber Lens Caps, Microfiber Bag, Mounting Buckle, USB-C Cable, Long Thumbscrew, Stickers, Warranty" },
-  ],
-},
-
-{
-  category: "Compatibility",
-  items: [
-    { label: "Accessories Support", value: "Compatible with 30+ GoPro Accessories" },
-  ],
-},
+    category: "Lens Specifications",
+    items: [
+      {
+        label: "Model Number",
+        value: "XF70-300mmF4-5.6 R LM OIS WR",
+      },
+      {
+        label: "Release Date",
+        value: "March 18, 2021",
+      },
+      {
+        label: "Lens Configuration",
+        value:
+          "17 elements in 12 groups (1 aspherical lens, 2 ED lenses)",
+      },
+      {
+        label: "Focal Length",
+        value: "70–300 mm (35mm equivalent: 107–457 mm)",
+      },
+      {
+        label: "Angle of View",
+        value: "22.9° – 5.4°",
+      },
+      {
+        label: "Maximum Aperture",
+        value: "F4–F5.6",
+      },
+      {
+        label: "Minimum Aperture",
+        value: "F22",
+      },
+      {
+        label: "Aperture",
+        value: "9-blade circular diaphragm, 1/3-step adjustment (16 steps)",
+      },
+    ],
+  },
+  {
+    category: "Focus & Performance",
+    items: [
+      {
+        label: "Minimum Focus Distance",
+        value: "0.83 m",
+      },
+      {
+        label: "Maximum Magnification",
+        value: "0.33× (wide end)",
+      },
+    ],
+  },
+  {
+    category: "Physical Specifications",
+    items: [
+      {
+        label: "Dimensions",
+        value: "Wide: Ø75 mm × 132.5 mm | Tele: Ø75 mm × 205.5 mm",
+      },
+      {
+        label: "Weight",
+        value: "Approx. 580 g (excluding lens cap and hood)",
+      },
+      {
+        label: "Filter Size",
+        value: "Ø67 mm",
+      },
+    ],
+  },
+  {
+    category: "Accessories",
+    items: [
+      {
+        label: "In The Box",
+        value:
+          "Lens front cap, Lens rear cap, Lens hood, Lens wrapping cloth",
+      },
+    ],
+  },
 ],
-},
+  },
+
 ];

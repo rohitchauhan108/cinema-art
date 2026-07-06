@@ -37,12 +37,21 @@ export default function ShopPage() {
   };
 
   const filteredProducts = products.filter(product => {
-    const matchesCategory = activeCategory === "All" || product.category === activeCategory;
+    // Support both single category and multiple categories
+    const productCategories = product.categories || (product.category ? [product.category] : []);
+    const matchesCategory = activeCategory === "All" || productCategories.includes(activeCategory);
     const matchesBrand = selectedBrands.length === 0 || selectedBrands.includes(product.brand);
     const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
                           product.brand.toLowerCase().includes(searchQuery.toLowerCase());
     return matchesCategory && matchesBrand && matchesSearch;
   });
+
+  // Helper to get primary category for display and links
+  const getPrimaryCategory = (product: typeof products[0]) => {
+    return (product.categories && product.categories.length > 0) 
+      ? product.categories[0] 
+      : (product.category || "Unknown");
+  };
 
   return (
     <>
@@ -171,12 +180,12 @@ export default function ShopPage() {
                     <img 
                       src={product.colors[0].images[0]} 
                       alt={product.name} 
-                      className={`max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-700 ease-out drop-shadow-xl ${product.category === 'Action Cameras' || product.category === '360 Cameras' ? 'p-4' : ''}`}
+                      className={`max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-700 ease-out drop-shadow-xl ${getPrimaryCategory(product) === 'Action Cameras' || getPrimaryCategory(product) === '360 Cameras' ? 'p-4' : ''}`}
                     />
 
                     {/* Hover Action Button */}
                     <div className="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 z-20 w-3/4">
-                      <Link href={`/shop/${product.category.toLowerCase().replace(/ & | /g, '-')}/${product.slug}`} className="block w-full text-center bg-[#111] text-white font-syncopate text-[10px] uppercase tracking-widest py-3 hover:bg-black transition-colors shadow-lg">
+                      <Link href={`/shop/${getPrimaryCategory(product).toLowerCase().replace(/ & | /g, '-')}/${product.slug}`} className="block w-full text-center bg-[#111] text-white font-syncopate text-[10px] uppercase tracking-widest py-3 hover:bg-black transition-colors shadow-lg">
                         View Details
                       </Link>
                     </div>
@@ -184,13 +193,13 @@ export default function ShopPage() {
 
                   {/* Content Area */}
                   <div className="pt-5 pb-5 px-5 flex flex-col flex-1 bg-white z-10 relative border-t border-gray-100">
-                    <p className="text-[9px] text-gray-400 font-syncopate mb-1 uppercase tracking-[0.2em]">{product.category}</p>
+                    <p className="text-[9px] text-gray-400 font-syncopate mb-1 uppercase tracking-[0.2em]">{getPrimaryCategory(product)}</p>
                     <h3 className="font-space text-lg font-bold text-[#111] mb-1 line-clamp-1">{product.name}</h3>
                     <p className="text-xs text-gray-500 font-space mb-4 line-clamp-2 min-h-8">{product.desc}</p>
                     
                     <div className="mt-auto flex items-end justify-between">
                       <span className="font-space font-medium text-lg text-[#111] tracking-tight hidden">{product.price}</span>
-                      <Link href={`/shop/${product.category.toLowerCase().replace(/ & | /g, '-')}/${product.slug}`} className="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center text-[#111] group-hover:bg-[#111] group-hover:text-white transition-colors ml-auto">
+                      <Link href={`/shop/${getPrimaryCategory(product).toLowerCase().replace(/ & | /g, '-')}/${product.slug}`} className="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center text-[#111] group-hover:bg-[#111] group-hover:text-white transition-colors ml-auto">
                         <ArrowUpRight className="w-4 h-4" />
                       </Link>
                     </div>
