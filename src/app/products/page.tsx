@@ -62,7 +62,7 @@ export default function ProductsPage() {
       ? product.categories[0]
       : product.category || "Unknown";
   };
-  const [openCategory, setOpenCategory] = useState(null);
+  const [openCategory, setOpenCategory] = useState<string | null>(null);
   const toggleBrand = (brand: string) => {
     setSelectedBrands((prev) =>
       prev.includes(brand) ? prev.filter((b) => b !== brand) : [...prev, brand],
