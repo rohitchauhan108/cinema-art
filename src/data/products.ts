@@ -6502,7 +6502,7 @@ export const products: Product[] = [
     price: "₹45,990",
     slug: "insta360-x4-air",
     status: "In Stock",
-
+    overview: "The Insta360 X4 Air is a compact, lightweight 360° action camera designed for creators, travelers, vloggers, and adventure enthusiasts. Weighing just 165g, it delivers stunning 8K 360° video with dual-lens capture, allowing you to record every angle and choose the perfect perspective later using AI-powered reframing tools. Its pocket-friendly design makes it easy to carry anywhere without compromising on professional-quality performance.",
     colors: [
       {
         name: "Gray",
@@ -6522,7 +6522,7 @@ export const products: Product[] = [
     price: "₹58,990",
     slug: "insta360-x5-standalone",
     status: "In Stock",
-
+    overview:"The Insta360 X5 Standalone is a next-generation 360° action camera built for creators, adventurers, vloggers, and professionals who demand exceptional image quality and creative flexibility. Featuring 8K 360° video recording, 72MP 360° photos, and upgraded 1/1.28-inch sensors, the X5 captures stunning detail, vibrant colors, and impressive low-light performance. Advanced supersampling from 11K to 8K ensures incredibly sharp, immersive footage for every adventure.",
     colors: [
       {
         name: "Black",
@@ -6547,7 +6547,7 @@ export const products: Product[] = [
     price: "₹58,990",
     slug: "insta360-flow-2",
     status: "In Stock",
-
+    overview:"The Insta360 Flow 2 is an intelligent 3-axis smartphone gimbal designed to help creators capture smooth, professional-quality videos with ease. Combining advanced Deep Track 4.0 AI subject tracking, powerful stabilization, and an all-in-one foldable design, the Flow 2 is perfect for vlogging, live streaming, travel, family moments, and social media content. Its built-in selfie stick and sturdy metal tripod let you film anywhere without carrying extra accessories.",
     colors: [
       {
         name: "Black",
@@ -6572,7 +6572,7 @@ export const products: Product[] = [
     price: "₹58,990",
     slug: "insta360-flow-2",
     status: "In Stock",
-
+    overview: "The Insta360 Link 2 is a premium 4K AI webcam designed for professionals, streamers, educators, remote workers, and content creators who want exceptional video quality for online meetings and live streaming. Equipped with a 1/2-inch sensor, 4K Ultra HD recording, and a 2-axis AI-powered gimbal, the Link 2 delivers crystal-clear video with smooth, intelligent tracking that keeps you perfectly framed as you move.",
     colors: [
       {
         name: "Gray",
@@ -6594,7 +6594,7 @@ export const products: Product[] = [
     price: "₹58,990",
     slug: "insta360-x5-motorcycle-bundle",
     status: "In Stock",
-
+    overview: "The Insta360 X5 Motorcycle Bundle is the ultimate action camera kit designed specifically for motorcycle riders, motovloggers, and adventure enthusiasts. Featuring the powerful Insta360 X5 with 8K 360° video recording, 72MP 360° photos, and advanced dual 1/1.28-inch sensors, it captures every ride in breathtaking detail. The included motorcycle mounting accessories make it easy to record immersive first-person and cinematic third-person perspectives, ensuring every journey is documented from every angle.",
     colors: [
       {
         name: "Black",
@@ -6618,7 +6618,7 @@ export const products: Product[] = [
     price: "₹69,990",
     slug: "osmo-pocket-4-creator-combo",
     status: "In Stock",
-
+    overview: "The DJI Osmo Pocket 4 Creator Combo is a complete all-in-one content creation kit designed for vloggers, filmmakers, travelers, and social media creators. Featuring a 1-inch CMOS sensor, 4K video at up to 240fps, and a 3-axis mechanical gimbal, it delivers stunningly smooth, cinematic footage with exceptional detail and dynamic range. Whether you're recording travel adventures, daily vlogs, interviews, or professional content, the Pocket 4 offers flagship imaging performance in an ultra-compact design.",
     colors: [
       {
         name: "Black",
@@ -6651,7 +6651,7 @@ export const products: Product[] = [
     price: "₹52,990",
     slug: "osmo-pocket-4-standard-combo",
     status: "In Stock",
-
+    overview: "The DJI Osmo Pocket 4 Standard is a compact, all-in-one gimbal camera designed for creators, vloggers, travelers, and everyday storytellers who want professional-quality video in a pocket-sized device. Equipped with a 1-inch CMOS sensor, 4K Ultra HD recording at up to 240fps, and a 3-axis mechanical gimbal, it captures exceptionally smooth, detailed footage with outstanding color accuracy and dynamic range. Its lightweight design makes it the perfect companion for travel, daily vlogs, family moments, and cinematic content creation.",
     colors: [
       {
         name: "Black",
@@ -6683,7 +6683,7 @@ export const products: Product[] = [
     price: "₹52,990",
     slug: "osmo-mobile-7p",
     status: "In Stock",
-
+    overview: "The DJI Osmo Mobile 7P is a premium 3-axis smartphone gimbal designed for creators, vloggers, travelers, and live streamers who want smooth, cinematic footage with their smartphones. Combining advanced stabilization, intelligent AI tracking, and a compact foldable design, it helps you capture professional-quality videos anytime, anywhere.",
     colors: [
       {
         name: "Black",
@@ -6717,7 +6717,7 @@ export const products: Product[] = [
     price: "₹45,990",
     slug: "dji-osmo-action-5-pro-adventure-combo",
     status: "In Stock",
-
+    overview:"The DJI Osmo Action 5 Pro Adventure Combo is a complete action camera package built for adventurers, vloggers, athletes, and content creators who demand exceptional performance in every environment. Equipped with a 1/1.3-inch CMOS sensor, 4K video recording at up to 120fps, and 40MP photos, it captures stunningly sharp footage with vibrant colors and excellent low-light performance. Whether you're hiking, biking, diving, or traveling, the Action 5 Pro delivers professional-quality results in a compact, rugged design.",
     colors: [
       {
         name: "Black",
@@ -6753,7 +6753,7 @@ export const products: Product[] = [
     price: "₹32,990",
     slug: "dji-rs-4-mini",
     status: "In Stock",
-
+    overview: "The DJI RS 4 Mini is a compact and lightweight 3-axis camera gimbal designed for mirrorless cameras and content creators who need professional stabilization in a portable form. Supporting camera setups weighing up to 2kg, it delivers smooth, cinematic footage for filmmaking, vlogging, travel videos, weddings, and commercial productions. Its lightweight design makes it ideal for solo creators and on-the-go shooting.",
     colors: [
       {
         name: "Gray",
@@ -6786,7 +6786,7 @@ export const products: Product[] = [
     price: "₹60,990",
     slug: "osmo-pocket-3-creator-combo",
     status: "In Stock",
-
+    overview: "The DJI Osmo Pocket 3 Creator Combo is an all-in-one camera kit designed for vloggers, filmmakers, travelers, and content creators. Featuring a 1-inch CMOS sensor, 4K video recording at up to 120fps, and a 3-axis mechanical gimbal, it delivers cinematic, ultra-smooth footage with exceptional image quality in a compact, pocket-sized design.",
     colors: [
       {
         name: "Black",
@@ -9192,6 +9192,1279 @@ specs: [
         label: "In The Box",
         value:
           "Lens front cap, Lens rear cap, Lens hood, Lens wrapping cloth",
+      },
+    ],
+  },
+],
+  },
+
+  // SJ Cam section start
+
+  {
+    id: "sjcam-sj8-pro",
+    name: "SJCAM SJ8 Pro",
+    category: "Action Cameras",
+    brand: "SJ Cam",
+    price: "$239.00",
+    slug: "sjcam-sj8-pro",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/products/sjcam/sj8-pro.png",
+        ],
+      },
+    ],
+    overview:
+      "Capture every adventure in stunning 4K at 60fps with the SJCAM SJ8 Pro. Featuring 6-axis electronic image stabilization, a 170° ultra-wide lens, dual screens, and a responsive 2.33-inch touchscreen, it delivers smooth, immersive footage in any environment. With Wi-Fi connectivity, external microphone support, and waterproof capability up to 30m with the included case, the SJ8 Pro is built for travel, sports, and everyday content creation.",
+specs: [
+  {
+    category: "Video & Photo",
+    items: [
+      {
+        label: "Video Resolution",
+        value:
+          "4K: 60/50/30/25/24 FPS | 4K Ultra: 30/24 FPS | 2.7K: 60/50/30/25/24 FPS | 1440P: 60/50/30/25/24 FPS | 1080P: 120/60/50/30/25/24 FPS | 1080P Ultra: 60/30 FPS | 720P: 240 FPS",
+      },
+      {
+        label: "Photo Resolution",
+        value: "12MP, 10MP, 8MP, 5MP, 3MP, 2MP",
+      },
+      {
+        label: "Video Modes",
+        value:
+          "Normal, Time-lapse, Slow Motion, Video & Photo, Car Mode, Loop Recording",
+      },
+      {
+        label: "Photo Modes",
+        value: "Single Shot, Interval Shooting, Continuous Shooting",
+      },
+      {
+        label: "Video Format",
+        value: "MP4",
+      },
+      {
+        label: "Video Encoding",
+        value: "H.264",
+      },
+      {
+        label: "Photo Format",
+        value: "JPG",
+      },
+    ],
+  },
+  {
+    category: "Imaging & Performance",
+    items: [
+      {
+        label: "Image Stabilization",
+        value: "6-axis gyroscope",
+      },
+      {
+        label: "Digital Zoom",
+        value: "8×",
+      },
+      {
+        label: "Field of View (FOV)",
+        value: "170° with distortion correction",
+      },
+      {
+        label: "Exposure Compensation",
+        value: "±2.0 EV to ±0.3 EV",
+      },
+      {
+        label: "White Balance",
+        value:
+          "Auto, Daylight, Cloudy, Tungsten, Fluorescent, Underwater",
+      },
+    ],
+  },
+  {
+    category: "Display & Connectivity",
+    items: [
+      {
+        label: "Rear Display",
+        value: '2.33" Touchscreen',
+      },
+      {
+        label: "Front Display",
+        value: '0.96"',
+      },
+      {
+        label: "App Support",
+        value: "SJCAM ZONE",
+      },
+      {
+        label: "Wi-Fi",
+        value: "2.4 GHz / 5 GHz",
+      },
+      {
+        label: "USB Port",
+        value: "USB Type-C",
+      },
+      {
+        label: "Remote Control",
+        value: "Supported (sold separately)",
+      },
+    ],
+  },
+  {
+    category: "Audio",
+    items: [
+      {
+        label: "Built-in Microphone",
+        value: "Dual microphones",
+      },
+      {
+        label: "External Microphone",
+        value: "Supported (sold separately)",
+      },
+      {
+        label: "Built-in Speaker",
+        value: "1 Speaker",
+      },
+    ],
+  },
+  {
+    category: "Battery & Power",
+    items: [
+      {
+        label: "Battery Capacity",
+        value: "1200 mAh",
+      },
+      {
+        label: "Battery Energy",
+        value: "4.56 Wh",
+      },
+      {
+        label: "Battery Voltage",
+        value: "3.8 V",
+      },
+      {
+        label: "Battery Life",
+        value: "Up to 70 minutes (4K 60 FPS recording)",
+      },
+    ],
+  },
+  {
+    category: "Physical Specifications",
+    items: [
+      {
+        label: "Dimensions",
+        value: "62.5 × 41 × 28.8 mm",
+      },
+      {
+        label: "Weight",
+        value: "85 g",
+      },
+      {
+        label: "Waterproof",
+        value: "Up to 30 m with waterproof case",
+      },
+    ],
+  },
+],
+  },
+  {
+    id: "sj10-pro-dual-screen",
+    name: "SJ10 Pro Dual Screen",
+    category: "Action Cameras",
+    brand: "SJ Cam",
+    price: "$249.00",
+    slug: "sj10-pro-dual-screen",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/products/sjcam/sj10.png",
+        ],
+      },
+    ],
+    overview:
+      "The SJCAM SJ10 Pro Dual Screen is designed for creators who need reliable performance on the go. Its front and rear displays make framing selfies and vlogs effortless, while advanced stabilization keeps footage steady during fast-paced activities. With crisp 4K recording, fast wireless connectivity, and a rugged, water-resistant design, it's an excellent companion for travel, cycling, hiking, and everyday content creation.",
+      specs: [
+        {
+          category: "Video & Photo",
+          items: [
+            {
+              label: "Video Resolution",
+              value:
+                "4K: 60/50/30/25/24 FPS | 2.7K: 60/50/30/25/24 FPS | 1440P: 60/50/30/25/24 FPS | 1080P: 120/60/50/30/25/24 FPS | 1080P Ultra: 60/30 FPS | 720P: 240 FPS",
+            },
+            {
+              label: "Photo Resolution",
+              value: "20MP, 16MP, 12MP, 10MP, 8MP, 5MP, 3MP, 2MP",
+            },
+            {
+              label: "Video Format",
+              value: "MP4",
+            },
+            {
+              label: "Video Encoding",
+              value: "H.264",
+            },
+            {
+              label: "Photo Format",
+              value: "JPG",
+            },
+          ],
+        },
+        {
+          category: "Imaging & Performance",
+          items: [
+            {
+              label: "Model",
+              value: "SJ10 Pro Dual Screen",
+            },
+            {
+              label: "Image Sensor",
+              value: "Sony IMX377",
+            },
+            {
+              label: "Image Stabilization",
+              value: "6-axis gyroscope",
+            },
+            {
+              label: "Field of View (FOV)",
+              value: "154° wide-angle",
+            },
+            {
+              label: "Frequency",
+              value: "50 Hz / 60 Hz",
+            },
+          ],
+        },
+        {
+          category: "Display & Connectivity",
+          items: [
+            {
+              label: "Rear Display",
+              value: '2.33" LCD Touchscreen',
+            },
+            {
+              label: "Front Display",
+              value: '1.3" LCD',
+            },
+            {
+              label: "App Support",
+              value: "SJCAM ZONE",
+            },
+            {
+              label: "Wi-Fi",
+              value: "2.4 GHz / 5 GHz",
+            },
+            {
+              label: "USB Port",
+              value: "USB Type-C",
+            },
+            {
+              label: "Storage",
+              value: "MicroSD cards (32GB, 64GB, 128GB supported)",
+            },
+            {
+              label: "Operating System",
+              value: "Windows 7/8/10 or later, macOS 10.8 or later",
+            },
+            {
+              label: "Languages",
+              value:
+                "English, Simplified Chinese, Traditional Chinese, French, German, Spanish, Italian, Portuguese, Japanese, Russian, Polish, Czech, Slovenian, Hungarian, Danish, Dutch, Turkish, Finnish, Romanian",
+            },
+          ],
+        },
+        {
+          category: "Battery & Power",
+          items: [
+            {
+              label: "Battery",
+              value: "1300 mAh detachable battery",
+            },
+            {
+              label: "Power Supply",
+              value: "5V / 2A",
+            },
+            {
+              label: "Battery Life",
+              value: "Up to 70 minutes (4K 30 FPS recording)",
+            },
+            {
+              label: "Charging Time",
+              value: "Approx. 3 hours",
+            },
+          ],
+        },
+        {
+          category: "Physical Specifications",
+          items: [
+            {
+              label: "Dimensions",
+              value: "64.45 × 44.5 × 30.6 mm",
+            },
+            {
+              label: "Weight",
+              value: "112.5 g",
+            },
+          ],
+        },
+      ],
+  },
+  {
+    id: "sj11-active",
+    name: "SJ11 Active",
+    category: "Action Cameras",
+    brand: "SJ Cam",
+    price: "$189.00",
+    slug: "sj11-active",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/products/sjcam/sj11.png",
+        ],
+      },
+    ],
+    overview:
+      "The SJCAM SJ11 Active is a compact action camera built for everyday adventures and content creation. Equipped with dual screens for effortless framing, 4K recording, and advanced gyro stabilization, it captures smooth, vibrant footage wherever you go. Its waterproof design, live streaming capability, and webcam mode make it a versatile choice for travel, vlogging, cycling, and outdoor sports.",
+      specs: [
+  {
+    category: "Video & Photo",
+    items: [
+      {
+        label: "Video Resolution",
+        value:
+          "4K: 30 FPS | 2K: 60/30 FPS | 1080P: 30/60/120 FPS | 720P: 30/60/120 FPS",
+      },
+      {
+        label: "Photo Resolution",
+        value: "2MP, 3MP, 5MP, 8MP, 10MP, 12MP, 14MP, 16MP, 20MP",
+      },
+      {
+        label: "Video Modes",
+        value:
+          "Normal, Time-lapse, Slow Motion, Video + Photo, Car Mode, Loop Recording, Motion Detection",
+      },
+      {
+        label: "Photo Modes",
+        value:
+          "Single Shot, Continuous Shooting, Timed Shooting, Interval Shooting",
+      },
+      {
+        label: "Video Format",
+        value: "MP4",
+      },
+      {
+        label: "Video Encoding",
+        value: "H.264",
+      },
+      {
+        label: "Photo Format",
+        value: "JPG",
+      },
+    ],
+  },
+  {
+    category: "Imaging & Performance",
+    items: [
+      {
+        label: "Image Stabilization",
+        value: "Six-axis gyroscope image stabilization",
+      },
+      {
+        label: "Field of View (FOV)",
+        value: "154° with distortion correction",
+      },
+      {
+        label: "Digital Zoom",
+        value: "8×",
+      },
+      {
+        label: "Exposure Compensation",
+        value: "±2.0 EV to ±0.3 EV",
+      },
+      {
+        label: "White Balance",
+        value:
+          "Auto, Daylight, Cloudy, Tungsten, Fluorescent, Underwater",
+      },
+    ],
+  },
+  {
+    category: "Battery & Power",
+    items: [
+      {
+        label: "Battery Type",
+        value: "Li-ion",
+      },
+      {
+        label: "Battery Capacity",
+        value: "1300 mAh",
+      },
+      {
+        label: "Battery Voltage",
+        value: "3.8 V",
+      },
+      {
+        label: "Battery Energy",
+        value: "4.94 Wh",
+      },
+      {
+        label: "Battery Life",
+        value: "Up to 100 minutes (4K 30 FPS recording)",
+      },
+      {
+        label: "Charging Port",
+        value: "USB Type-C",
+      },
+    ],
+  },
+  {
+    category: "General Specifications",
+    items: [
+      {
+        label: "Other Features",
+        value: "Webcam, Live Streaming",
+      },
+      {
+        label: "Dimensions",
+        value: "64.5 × 44.5 × 30.5 mm",
+      },
+      {
+        label: "Weight",
+        value: "108 g",
+      },
+      {
+        label: "Waterproof",
+        value: "Up to 30 m with waterproof case",
+      },
+    ],
+  },
+],
+  },
+  {
+    id: "sj20-dual-lens",
+    name: "SJ20 Dual Lens",
+    category: "Action Cameras",
+    brand: "SJ Cam",
+    price: "$229.00",
+    slug: "sj20-dual-lens",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/products/sjcam/sj20.png",
+        ],
+      },
+    ],
+    overview:
+      "The SJCAM SJ20 Dual Lens redefines action photography with its innovative dual-lens design, delivering exceptional performance in both daylight and low-light conditions. Built for creators who never stop exploring, it combines crisp 4K recording, intelligent image stabilization, dual displays, and extended battery life to capture every adventure with confidence. Whether you're riding through the city after dark or exploring the outdoors, the SJ20 is ready for every moment.",
+      specs: [
+  {
+    category: "Video & Photo",
+    items: [
+      {
+        label: "Video Resolution",
+        value:
+          "4K: 30 FPS | 2K: 60/30 FPS | 1080P: 120/60/30 FPS | 720P: 120/60/30 FPS",
+      },
+      {
+        label: "Photo Resolution",
+        value: "20MP, 16MP, 14MP, 12MP, 10MP, 8MP",
+      },
+      {
+        label: "Video Modes",
+        value:
+          "Motion Detection, Normal, Timelapse, Slow Motion, Car Mode, Pre-recording, Livestream, Webcam",
+      },
+      {
+        label: "Photo Modes",
+        value: "Single Shot, Interval Shooting, Continuous Shooting",
+      },
+      {
+        label: "Video Format",
+        value: "MP4",
+      },
+      {
+        label: "Video Encoding",
+        value: "H.264",
+      },
+      {
+        label: "Photo Format",
+        value: "JPG",
+      },
+    ],
+  },
+  {
+    category: "Imaging & Performance",
+    items: [
+      {
+        label: "Image Stabilization",
+        value: "6-axis gyroscope stabilization",
+      },
+      {
+        label: "Field of View (FOV)",
+        value: "135°",
+      },
+      {
+        label: "Digital Zoom",
+        value: "8×",
+      },
+      {
+        label: "Exposure Compensation",
+        value: "+2.0 EV to -2.0 EV",
+      },
+      {
+        label: "White Balance",
+        value:
+          "Auto, Daylight, Cloudy, Tungsten, Fluorescent, Underwater",
+      },
+    ],
+  },
+  {
+    category: "Display & Connectivity",
+    items: [
+      {
+        label: "Rear Display",
+        value: '2.29" Touchscreen',
+      },
+      {
+        label: "Front Display",
+        value: '1.3" LCD',
+      },
+      {
+        label: "App Support",
+        value: "SJCAM Zone",
+      },
+      {
+        label: "Wi-Fi",
+        value: "2.4 GHz / 5 GHz",
+      },
+      {
+        label: "USB Port",
+        value: "USB Type-C",
+      },
+      {
+        label: "Remote",
+        value: "Supported (sold separately)",
+      },
+    ],
+  },
+  {
+    category: "Audio",
+    items: [
+      {
+        label: "Built-in Microphone",
+        value: "1 Microphone",
+      },
+      {
+        label: "External Microphone",
+        value: "Supported (sold separately)",
+      },
+      {
+        label: "Built-in Speaker",
+        value: "1 Speaker",
+      },
+    ],
+  },
+  {
+    category: "Battery & Power",
+    items: [
+      {
+        label: "Battery Type",
+        value: "Li-ion",
+      },
+      {
+        label: "Battery Capacity",
+        value: "800 mAh (built-in) + 1050 mAh (external battery)",
+      },
+      {
+        label: "Battery Voltage",
+        value: "3.7 V",
+      },
+      {
+        label: "Battery Energy",
+        value: "2.96 Wh (built-in) + 3.89 Wh (external battery)",
+      },
+      {
+        label: "Battery Life",
+        value: "60–180 minutes (4K 30 FPS recording, depending on battery configuration)",
+      },
+    ],
+  },
+  {
+    category: "General Specifications",
+    items: [
+      {
+        label: "Dimensions",
+        value: "70.5 × 55 × 30 mm",
+      },
+      {
+        label: "Weight",
+        value: "Approx. 370 g (camera with battery grip)",
+      },
+      {
+        label: "Waterproof",
+        value: "Up to 16 ft (5 m) with protective frame, up to 131 ft (40 m) with waterproof case",
+      },
+      {
+        label: "Special Features",
+        value:
+          "Dual-lens system, Best Night Vision, Dual Screens, Up to 8-hour recording with battery grip, Live Streaming, Webcam support",
+      },
+    ],
+  },
+],
+  },
+  {
+    id: "sj6-ultra",
+    name: "SJ6 Ultra",
+    category: "Action Cameras",
+    brand: "SJ Cam",
+    price: "$129.00",
+    slug: "sj6-ultra",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/products/sjcam/sj6.png",
+        ],
+      },
+    ],
+    overview:
+      "The SJCAM SJ6 Ultra is a lightweight action camera that delivers sharp 4K video and stunning 20MP photos in a compact, travel-friendly design. Featuring dual screens, advanced SteadyMotion stabilization with horizon correction, voice control, and a 166° ultra-wide lens, it helps you capture smooth, immersive footage from every angle. Perfect for vlogging, biking, travel, and outdoor adventures.",
+    specs: [
+  {
+    category: "Video & Photo",
+    items: [
+      {
+        label: "Video Resolution",
+        value:
+          "4K (3840×2160): 30 FPS | 2K (2560×1440): 60/30 FPS | 1080P: 120/60/30 FPS | 720P: 120/60 FPS",
+      },
+      {
+        label: "Photo Resolution",
+        value: "20MP, 16MP, 12MP, 8MP, 5MP, 2MP",
+      },
+      {
+        label: "Video Modes",
+        value:
+          "Video, Slow Motion, Live Streaming, Dash Cam Mode, Time-lapse Video, Video Snapshot",
+      },
+      {
+        label: "Photo Modes",
+        value: "Single Photo, Interval Photo, Continuous Shooting",
+      },
+      {
+        label: "Video Format",
+        value: "MP4, MOV",
+      },
+      {
+        label: "Photo Format",
+        value: "JPG",
+      },
+    ],
+  },
+  {
+    category: "Imaging & Performance",
+    items: [
+      {
+        label: "Lens",
+        value: "166° Wide-angle Lens",
+      },
+      {
+        label: "Image Stabilization",
+        value: "6-axis gyroscope stabilization (SteadyMotion 2.0)",
+      },
+      {
+        label: "Vertical Shooting",
+        value: "Lossless Vertical Shooting supported",
+      },
+      {
+        label: "Horizon Correction",
+        value: "45° Horizon Correction",
+      },
+      {
+        label: "Lens Distortion Correction",
+        value: "Supported",
+      },
+    ],
+  },
+  {
+    category: "Display & Connectivity",
+    items: [
+      {
+        label: "Rear Display",
+        value: '2.0" LCD Touchscreen',
+      },
+      {
+        label: "Front Display",
+        value: '1.3" LCD',
+      },
+      {
+        label: "Storage",
+        value: "microSD card (supports up to 512GB)",
+      },
+      {
+        label: "Wi-Fi",
+        value: "2.4 GHz / 5 GHz",
+      },
+      {
+        label: "USB Port",
+        value: "USB Type-C",
+      },
+      {
+        label: "Remote Control",
+        value: "Supported",
+      },
+      {
+        label: "Voice Control",
+        value: "Multi-language voice control",
+      },
+      {
+        label: "Frequency",
+        value: "50 Hz / 60 Hz",
+      },
+    ],
+  },
+  {
+    category: "Audio",
+    items: [
+      {
+        label: "External Microphone",
+        value: "Supported via USB Type-C (wireless microphone supported)",
+      },
+    ],
+  },
+  {
+    category: "Battery & Power",
+    items: [
+      {
+        label: "Battery Capacity",
+        value: "1000 mAh (Removable)",
+      },
+      {
+        label: "Power Supply",
+        value: "5V / 2A",
+      },
+    ],
+  },
+  {
+    category: "General Specifications",
+    items: [
+      {
+        label: "Weight",
+        value: "77 g",
+      },
+      {
+        label: "Waterproof",
+        value: "Up to 30 m with waterproof case",
+      },
+      {
+        label: "Special Features",
+        value:
+          "Live Streaming, Dash Cam Mode, Lossless Vertical Shooting, 45° Horizon Correction, Webcam Support",
+      },
+      {
+        label: "Languages",
+        value:
+          "English, French, German, Spanish, Italian, Portuguese, Simplified Chinese, Traditional Chinese, Japanese, Russian, Polish, Czech, Hungarian, Turkish",
+      },
+    ],
+  },
+],
+  },
+  {
+    id: "sj30",
+    name: "SJ30",
+    category: "Action Cameras",
+    brand: "SJ Cam",
+    price: "$259.00",
+    slug: "sj30",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/products/sjcam/sj30.png",
+        ],
+      },
+    ],
+    overview:
+      "The SJCAM SJ30 is a next-generation action camera built for creators who demand exceptional quality in every lighting condition. Its innovative dual-lens system captures vibrant daytime scenes and clearer night footage, while 8K video, advanced SteadyMotion 2.0 stabilization, and a flip touchscreen make filming effortless from any angle. Designed for adventure, vlogging, and travel, the SJ30 also features voice control, wireless microphone support, and a durable waterproof design ready for every journey.",
+    specs: [
+  {
+    category: "Video & Photo",
+    items: [
+      {
+        label: "Video Resolution",
+        value:
+          "8K: 20 FPS | 6K: 30 FPS | 5K: 45/30 FPS | 4K: 60/30 FPS | 2K: 120/60/30 FPS | 1080P: 240/120/60/30 FPS | 720P: 120/60/30 FPS",
+      },
+      {
+        label: "Photo Resolution",
+        value:
+          "48MP, 32MP, 20MP, 16MP, 14MP, 12MP, 10MP, 8MP, 5MP, 3MP, 2MP",
+      },
+      {
+        label: "Video Modes",
+        value:
+          "Normal Recording, Time-lapse, Slow Motion, Car Mode, Loop Recording, Pre-recording, Delayed Recording, Motion Detection, Portrait Mode",
+      },
+      {
+        label: "Photo Modes",
+        value: "Single Photo, Interval Photo, Burst Shooting",
+      },
+      {
+        label: "Video Format",
+        value: "MP4",
+      },
+      {
+        label: "Photo Format",
+        value: "JPG",
+      },
+    ],
+  },
+  {
+    category: "Imaging & Performance",
+    items: [
+      {
+        label: "Image Sensor",
+        value: '1/2.0" Daylight Sensor + 1/1.8" Starlight Sensor',
+      },
+      {
+        label: "Lens",
+        value: "140° Wide-angle Lens",
+      },
+      {
+        label: "Aperture",
+        value: "f/2.8 (Day) / f/1.8 (Night)",
+      },
+      {
+        label: "Image Stabilization",
+        value: "SteadyMotion 2.0 (6-axis Gyroscope)",
+      },
+      {
+        label: "Digital Zoom",
+        value: "8×",
+      },
+      {
+        label: "ISO Range",
+        value: "ISO 100–3200",
+      },
+      {
+        label: "Exposure Compensation",
+        value: "±3 EV",
+      },
+      {
+        label: "White Balance",
+        value:
+          "Auto, Daylight, Cloudy, Tungsten, Fluorescent, Diving Mode",
+      },
+      {
+        label: "Noise Reduction",
+        value: "Supported",
+      },
+    ],
+  },
+  {
+    category: "Display & Connectivity",
+    items: [
+      {
+        label: "Display",
+        value: '2.51" Flip Touchscreen',
+      },
+      {
+        label: "Storage",
+        value: "microSD card support up to 512GB",
+      },
+      {
+        label: "Wi-Fi",
+        value: "2.4 GHz / 5 GHz",
+      },
+      {
+        label: "External Microphone",
+        value: "Supports SJCAM M4 Wireless Microphone",
+      },
+      {
+        label: "Voice Control",
+        value: "Supported",
+      },
+      {
+        label: "Live Streaming",
+        value: "Supported",
+      },
+    ],
+  },
+  {
+    category: "Battery & Power",
+    items: [
+      {
+        label: "Battery Capacity",
+        value: "2000 mAh (camera) + 4200 mAh (Power Handle)",
+      },
+      {
+        label: "Battery Life",
+        value:
+          "Up to 150 minutes without Power Handle or up to 420 minutes with Power Handle (4K 30 FPS)",
+      },
+      {
+        label: "Operating Temperature",
+        value: "-20°C to 45°C",
+      },
+    ],
+  },
+  {
+    category: "General Specifications",
+    items: [
+      {
+        label: "Dimensions",
+        value: "74 × 52 × 38 mm",
+      },
+      {
+        label: "Weight",
+        value: "162 g",
+      },
+      {
+        label: "Special Features",
+        value:
+          "Dual-Lens Day & Night Recording, 8K Video, Flip Touchscreen, Voice Control, Live Streaming, Pre-recording, Portrait Mode, Removable Windshield",
+      },
+    ],
+  },
+    ],
+  },
+  {
+    id: "c100+",
+    name: "C100+",
+    category: "Action Cameras",
+    brand: "SJ Cam",
+    price: "$129.00",
+    slug: "c100+",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/products/sjcam/c100.png",
+        ],
+      },
+    ],
+    overview:
+      "The SJCAM C100 is an ultra-compact wearable action camera designed to capture life's moments hands-free. Its magnetic body and lightweight design make it easy to clip, mount, or carry anywhere, while Full HD recording and electronic image stabilization ensure clear, steady footage. With Wi-Fi connectivity, webcam functionality, and multiple shooting modes, the C100 is a practical companion for cycling, travel, daily adventures, and point-of-view recording.",
+    specs: [
+  {
+    category: "Video & Photo",
+    items: [
+      {
+        label: "Video Resolution",
+        value:
+          "4K: 30 FPS | 2K: 30 FPS | 1080P: 60/30 FPS | 720P: 120/60 FPS",
+      },
+      {
+        label: "Photo Resolution",
+        value: "15MP, 12MP, 10MP, 8MP, 5MP, 3MP",
+      },
+      {
+        label: "Video Modes",
+        value:
+          "Normal, Time-lapse, Car Mode, Vertical Recording (9:16), Loop Recording",
+      },
+      {
+        label: "Photo Modes",
+        value: "Single Shot, Continuous Shooting, Timed Photo",
+      },
+      {
+        label: "Video Format",
+        value: "MP4",
+      },
+      {
+        label: "Photo Format",
+        value: "JPG",
+      },
+    ],
+  },
+  {
+    category: "Imaging & Performance",
+    items: [
+      {
+        label: "Image Stabilization",
+        value: "Electronic Image Stabilization (EIS)",
+      },
+      {
+        label: "Digital Zoom",
+        value: "8×",
+      },
+      {
+        label: "Field of View (FOV)",
+        value: "120° with distortion correction",
+      },
+      {
+        label: "Exposure Compensation",
+        value: "±2.0 EV to ±0.3 EV",
+      },
+      {
+        label: "White Balance",
+        value:
+          "Auto, Daylight, Cloudy, Tungsten, Fluorescent, Underwater",
+      },
+    ],
+  },
+  {
+    category: "Display & Connectivity",
+    items: [
+      {
+        label: "Rear Display",
+        value: "None",
+      },
+      {
+        label: "Front Display",
+        value: "None",
+      },
+      {
+        label: "App Support",
+        value: "SJCAM ZONE",
+      },
+      {
+        label: "Wi-Fi",
+        value: "2.4 GHz",
+      },
+      {
+        label: "USB Port",
+        value: "Micro USB",
+      },
+      {
+        label: "Remote Control",
+        value: "Not Supported",
+      },
+    ],
+  },
+  {
+    category: "Audio",
+    items: [
+      {
+        label: "Built-in Microphone",
+        value: "1 Microphone",
+      },
+      {
+        label: "External Microphone",
+        value: "Not Supported",
+      },
+      {
+        label: "Built-in Speaker",
+        value: "1 Speaker",
+      },
+    ],
+  },
+  {
+    category: "Battery & Power",
+    items: [
+      {
+        label: "Battery Capacity",
+        value: "730 mAh",
+      },
+      {
+        label: "Battery Energy",
+        value: "2.7 Wh",
+      },
+      {
+        label: "Battery Voltage",
+        value: "3.7 V",
+      },
+      {
+        label: "Battery Life",
+        value: "Not Specified",
+      },
+    ],
+  },
+  {
+    category: "Physical Specifications",
+    items: [
+      {
+        label: "Dimensions",
+        value: "60 × 20 × 26 mm",
+      },
+      {
+        label: "Weight",
+        value: "34 g",
+      },
+      {
+        label: "Waterproof",
+        value: "Up to 30 m with waterproof case",
+      },
+    ],
+  },
+],
+  },
+  {
+    id: "c110-plus",
+    name: "C110 Plus",
+    category: "Action Cameras",
+    brand: "SJ Cam",
+    price: "$149.00",
+    slug: "c100+",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/products/sjcam/c110.png",
+        ],
+      },
+    ],
+    overview:
+      "The SJCAM C110 Plus is a pocket-sized action camera that delivers powerful performance in an incredibly compact form. Its magnetic, wearable design lets you capture hands-free moments with ease, while 4K video recording and gyro stabilization ensure every shot stays sharp and smooth. Perfect for vlogging, cycling, travel, and everyday adventures, the C110 Plus combines portability, long battery life, and wireless connectivity into a camera that's always ready to go",
+    specs: [
+  {
+    category: "Video & Photo",
+    items: [
+      {
+        label: "Video Resolution",
+        value:
+          "4K: 30 FPS | 2K: 60/30 FPS | 1080P: 120/60/30 FPS | 720P: 120/60/30 FPS | Vertical: 1080P 30 FPS, 720P 30 FPS",
+      },
+      {
+        label: "Photo Resolution",
+        value: "20MP, 16MP, 14MP, 12MP, 10MP, 8MP, 5MP, 3MP, 2MP",
+      },
+      {
+        label: "Video Modes",
+        value:
+          "Normal Recording, Time-lapse, Slow Motion, Car Mode, Loop Recording, Portrait Mode, Video + Photo",
+      },
+      {
+        label: "Photo Modes",
+        value: "Single Photo, Interval Photo, Burst Shooting, Timed Photo",
+      },
+      {
+        label: "Video Format",
+        value: "MP4",
+      },
+      {
+        label: "Video Encoding",
+        value: "H.264",
+      },
+      {
+        label: "Photo Format",
+        value: "JPG",
+      },
+    ],
+  },
+  {
+    category: "Imaging & Performance",
+    items: [
+      {
+        label: "Image Stabilization",
+        value: "6-axis Gyroscope Stabilization",
+      },
+      {
+        label: "Lens",
+        value: "170° Ultra Wide-angle Lens (F1.8 Aperture)",
+      },
+      {
+        label: "Exposure Compensation",
+        value: "+2.0 EV to -2.0 EV",
+      },
+      {
+        label: "White Balance",
+        value:
+          "Auto, Daylight, Cloudy, Tungsten, Fluorescent, Underwater",
+      },
+    ],
+  },
+  {
+    category: "Display & Connectivity",
+    items: [
+      {
+        label: "Display",
+        value: "No built-in display (controlled via SJCAM Zone App)",
+      },
+      {
+        label: "App Support",
+        value: "SJCAM Zone",
+      },
+      {
+        label: "Wi-Fi",
+        value: "2.4 GHz",
+      },
+      {
+        label: "USB Port",
+        value: "USB Type-C",
+      },
+      {
+        label: "Storage",
+        value: "microSD card (up to 128GB)",
+      },
+      {
+        label: "Remote Control",
+        value: "Not Supported",
+      },
+    ],
+  },
+  {
+    category: "Audio",
+    items: [
+      {
+        label: "Built-in Microphone",
+        value: "1 Microphone",
+      },
+      {
+        label: "External Microphone",
+        value: "Not Supported",
+      },
+      {
+        label: "Built-in Speaker",
+        value: "1 Speaker",
+      },
+    ],
+  },
+  {
+    category: "Battery & Power",
+    items: [
+      {
+        label: "Battery Type",
+        value: "Li-ion",
+      },
+      {
+        label: "Battery Capacity",
+        value: "1100 mAh",
+      },
+      {
+        label: "Battery Voltage",
+        value: "3.7 V",
+      },
+      {
+        label: "Battery Energy",
+        value: "4.18 Wh",
+      },
+      {
+        label: "Battery Life",
+        value: "Up to 120 minutes",
+      },
+    ],
+  },
+  {
+    category: "General Specifications",
+    items: [
+      {
+        label: "Dimensions",
+        value: "64 × 31 × 32.5 mm",
+      },
+      {
+        label: "Weight",
+        value: "78 g",
+      },
+      {
+        label: "Waterproof",
+        value: "Up to 30 m with waterproof case",
+      },
+      {
+        label: "Special Features",
+        value:
+          "Magnetic body design, Hands-free POV recording, Splash resistant, Live Streaming, Webcam support",
       },
     ],
   },
