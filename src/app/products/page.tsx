@@ -7,23 +7,27 @@ import { Search, SlidersHorizontal, ArrowUpRight } from "lucide-react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { products } from "@/data/products";
+import { ChevronDown } from "lucide-react";
+import { AnimatePresence } from "framer-motion";
 
 // Comprehensive categories matched with the Home Page
 const categories = [
-  "All", 
-  "Lenses",
-  "Mirrorless Cameras", 
-  "Compact Cameras", 
-  "Action Cameras", 
-  "360 Cameras", 
-  "Gimbals & Gear", 
-  "Binoculars & Optics", 
-  "Lenses", 
-  "Accessories"
+  {
+    name: "All",
+    subcategories: [],
+  },
+  {
+    name: "Mirrorless Cameras",
+    subcategories: ["Sony", "Fujifilm", "Canon", "Nikon"],
+  },
+  {
+    name: "Action Cameras",
+    subcategories: ["GoPro", "DJI", "Insta360", "SJ Cam"],
+  },
 ];
 
 // Comprehensive brands matched with the Home Page BrandShowcase
-const brands = ["Sony", "Fujifilm", "Canon", "Nikon", "GoPro", "DJI", "Insta360", "Sigma", "Rode", "Ulanzi"];
+// const brands = ["Sony", "Fujifilm", "Canon", "Nikon", "GoPro", "DJI", "Insta360", "Sigma", "Rode", "Ulanzi"];
 
 export default function ProductsPage() {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -31,11 +35,11 @@ export default function ProductsPage() {
   const [selectedBrands, setSelectedBrands] = useState<string[]>([]);
   const [isMobileFilterOpen, setIsMobileFilterOpen] = useState(false);
 
-  const toggleBrand = (brand: string) => {
-    setSelectedBrands(prev => 
-      prev.includes(brand) ? prev.filter(b => b !== brand) : [...prev, brand]
-    );
-  };
+  // const toggleBrand = (brand: string) => {
+  //   setSelectedBrands(prev => 
+  //     prev.includes(brand) ? prev.filter(b => b !== brand) : [...prev, brand]
+  //   );
+  // };
 
   const filteredProducts = products.filter(product => {
     // Support both single category and multiple categories
@@ -53,6 +57,7 @@ export default function ProductsPage() {
       ? product.categories[0] 
       : (product.category || "Unknown");
   };
+    const [openCategory, setOpenCategory] = useState(null);
 
   return (
     <>
@@ -107,7 +112,7 @@ export default function ProductsPage() {
               </div>
 
               {/* Brands */}
-              <div>
+              {/* <div>
                 <h3 className="font-syncopate text-sm font-bold tracking-widest text-[#111] mb-4">BRANDS</h3>
                 <ul className="space-y-3 font-space text-sm text-gray-600">
                   {brands.map((brand) => (
@@ -123,7 +128,7 @@ export default function ProductsPage() {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </div> */}
 
               {/* Categories */}
               <div>
@@ -133,15 +138,54 @@ export default function ProductsPage() {
                 </div>
                 <ul className="space-y-3 font-space text-sm text-gray-600">
                   {categories.map((cat) => (
-                    <li key={cat}>
-                      <button 
-                        onClick={() => setActiveCategory(cat)}
-                        className={`hover:text-[#111] transition-colors text-left ${activeCategory === cat ? 'text-[#111] font-bold' : ''}`}
-                      >
-                        {cat}
-                      </button>
-                    </li>
-                  ))}
+                        <li
+                          key={cat.name}
+                          className="border-b border-gray-200 pb-2"
+                        >
+                          <button
+                            onClick={() =>
+                              setOpenCategory(
+                                openCategory === cat.name ? null : cat.name,
+                              )
+                            }
+                            className="w-full flex items-center justify-between py-2 text-left hover:text-black transition-colors"
+                          >
+                            <span>{cat.name}</span>
+
+                            {cat.subcategories.length > 0 && (
+                              <ChevronDown
+                                size={16}
+                                className={`transition-transform duration-300 ${
+                                  openCategory === cat.name ? "rotate-180" : ""
+                                }`}
+                              />
+                            )}
+                          </button>
+
+                          <AnimatePresence>
+                            {openCategory === cat.name && (
+                              <motion.ul
+                                initial={{ height: 0, opacity: 0 }}
+                                animate={{ height: "auto", opacity: 1 }}
+                                exit={{ height: 0, opacity: 0 }}
+                                transition={{ duration: 0.3 }}
+                                className="overflow-hidden ml-4"
+                              >
+                                {cat.subcategories.map((sub) => (
+                                  <li key={sub} className="py-2">
+                                    <button
+                                      onClick={() => setActiveCategory(sub)}
+                                      className="text-sm text-gray-500 hover:text-black transition-colors"
+                                    >
+                                      {sub}
+                                    </button>
+                                  </li>
+                                ))}
+                              </motion.ul>
+                            )}
+                          </AnimatePresence>
+                        </li>
+                      ))}
                 </ul>
               </div>
 

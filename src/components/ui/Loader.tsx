@@ -7,11 +7,11 @@ const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+";
 
 export default function Loader() {
   const [loading, setLoading] = useState(true);
-  const [text, setText] = useState("CINEMA ART STUDIOS");
+  const [text, setText] = useState("CINEMA ART STUDIO");
 
   useEffect(() => {
     let iterations = 0;
-    const targetText = "CINEMA ART STUDIOS";
+    const targetText = "CINEMA ART STUDIO";
     
     const interval = setInterval(() => {
       setText((prev) => 
@@ -51,7 +51,7 @@ export default function Loader() {
     return (
       <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#111]">
         <h1 className="font-syncopate text-2xl font-bold tracking-widest text-white md:text-5xl lg:text-7xl text-center px-4 flex">
-          {"CINEMA ART STUDIOS".split("").map((char, index) => (
+          {"CINEMA ART STUDIO".split("").map((char, index) => (
             <span key={index} className={index >= 11 ? "text-[#FF0000]" : ""}>
               {char === " " ? "\u00A0" : char}
             </span>
