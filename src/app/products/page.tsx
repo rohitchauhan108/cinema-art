@@ -62,7 +62,7 @@ export default function ProductsPage() {
       ? product.categories[0]
       : product.category || "Unknown";
   };
-  const [openCategory, setOpenCategory] = useState<string | null>(null);
+  const [openCategory, setOpenCategory] = useState("Mirrorless Cameras");
   const toggleBrand = (brand: string) => {
     setSelectedBrands((prev) =>
       prev.includes(brand) ? prev.filter((b) => b !== brand) : [...prev, brand],
@@ -169,12 +169,14 @@ export default function ProductsPage() {
                             setActiveBrand("");
 
                             if (cat.name === "All") {
-                              setSelectedBrands([]); // Clear all selected brands
+                              setSelectedBrands([]);
                             }
 
-                            setOpenCategory(
-                              openCategory === cat.name ? null : cat.name,
-                            );
+                            // Only open the clicked category.
+                            // Never close the currently open one.
+                            if (cat.subcategories.length > 0) {
+                              setOpenCategory(cat.name);
+                            }
                           }}
                           className="w-full flex items-center justify-between py-2 text-left hover:text-black transition-colors"
                         >
