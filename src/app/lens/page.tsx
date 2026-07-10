@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Search, SlidersHorizontal, ArrowUpRight } from "lucide-react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import lens from "@/data/lens";
+import lenses from "@/data/lens";
 import { ChevronDown } from "lucide-react";
 import { AnimatePresence } from "framer-motion";
 
@@ -45,10 +45,9 @@ export default function lensPage() {
   const [selectedBrands, setSelectedBrands] = useState<string[]>([]);
   const [isMobileFilterOpen, setIsMobileFilterOpen] = useState(false);
 
-  const filteredlens = lens.filter((lens) => {
+const filteredLenses = lenses.filter((lens) => {
     // Support both single category and multiple categories
-    const lensCategories =
-      lens.categories || (lens.category ? [lens.category] : []);
+    const lensCategories = lens.category ? [lens.category] : [];
     const matchesCategory =
       activeCategory === "All Lenses"
         ? lensCategories.some((cat) => ["Lenses", "Samyang Lens"].includes(cat))
@@ -62,10 +61,10 @@ export default function lensPage() {
   });
 
   // Helper to get primary category for display and links
-  const getPrimaryCategory = (lens: (typeof lens)[0]) => {
-    return lens.categories && lens.categories.length > 0
-      ? lens.categories[0]
-      : lens.category || "Unknown";
+  type Lens = (typeof lenses)[number];
+
+  const getPrimaryCategory = (lens: Lens) => {
+    return lens.category || "Unknown";
   };
   const [openCategory, setOpenCategory] = useState("All Lenses");
   const toggleBrand = (brand: string) => {
@@ -216,8 +215,8 @@ export default function lensPage() {
             {/* Product Grid */}
             <div id="products" className="flex-1">
               <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-                {filteredlens.length > 0 ? (
-                  filteredlens.map((lens, index) => (
+                {filteredLenses.length > 0 ? (
+                  filteredLenses.map((lens, index) => (
                     <motion.div
                       key={lens.id}
                       initial={{ opacity: 0, y: 20 }}

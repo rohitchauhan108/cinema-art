@@ -26,29 +26,29 @@ export default function LensPage({
   const lens = lenses.find((p) => p.slug === resolvedParams.slug);
 
   const [activeColorIdx, setActiveColorIdx] = useState(0);
-  const [activeLens, setActiveLens] = useState<string | null>(
-    lens?.lenses?.[0] || null,
-  );
+  // const [activeLens, setActiveLens] = useState<string | null>(
+  //   lens?.lenses?.[0] || null,
+  // );
   const [currentImage, setCurrentImage] = useState(0);
   const [openSpecCategory, setOpenSpecCategory] = useState<string | null>(null);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
 
   // Handle lens selection logic
-  useEffect(() => {
-    if (!lens) return;
-    if (activeLens === "XC 15-45mm Lens") {
-      // Find Silver color index
-      const silverIdx = lens.colors.findIndex((c) => c.name === "Silver");
-      if (silverIdx !== -1) {
-        setActiveColorIdx(silverIdx);
-        // Assuming f1.webp is the 0th image in silver
-        setCurrentImage(0);
-      }
-    } else if (activeLens === "Body") {
-      // Just reset image to body only if needed, currently leaving color as is
-      setCurrentImage(0);
-    }
-  }, [activeLens, lens]);
+  // useEffect(() => {
+  //   if (!lens) return;
+  //   if (activeLens === "XC 15-45mm Lens") {
+  //     // Find Silver color index
+  //     const silverIdx = lens.colors.findIndex((c) => c.name === "Silver");
+  //     if (silverIdx !== -1) {
+  //       setActiveColorIdx(silverIdx);
+  //       // Assuming f1.webp is the 0th image in silver
+  //       setCurrentImage(0);
+  //     }
+  //   } else if (activeLens === "Body") {
+  //     // Just reset image to body only if needed, currently leaving color as is
+  //     setCurrentImage(0);
+  //   }
+  // }, [activeLens, lens]);
 
   if (!lens) {
     return (
@@ -245,7 +245,7 @@ export default function LensPage({
               )}
 
               {/* Lenses Selection */}
-              {lens.lenses && lens.lenses.length > 0 && (
+              {/* {lens.lenses && lens.lenses.length > 0 && (
                 <div className="mb-8">
                   <h3 className="font-syncopate text-xs font-bold tracking-[0.2em] text-[#111] uppercase mb-3">
                     LENSES:{" "}
@@ -269,7 +269,7 @@ export default function LensPage({
                     ))}
                   </div>
                 </div>
-              )}
+              )} */}
 
               <div className="space-y-4 mb-10">
                 {/* <h3 className="font-syncopate text-sm font-bold tracking-[0.2em] text-[#111] uppercase">KEY FEATURES</h3>
@@ -282,7 +282,7 @@ export default function LensPage({
                 ))}
               </ul> */}
                 {/* fix code when feature are not in the data there */}
-                {lens.keyFeatures && lens.keyFeatures.length > 0 && (
+                {/* {lens.keyFeatures && lens.keyFeatures.length > 0 && (
                   <>
                     <h3 className="font-syncopate text-sm font-bold tracking-[0.2em] text-[#111] uppercase">
                       KEY FEATURES
@@ -302,7 +302,7 @@ export default function LensPage({
                       ))}
                     </ul>
                   </>
-                )}
+                )} */}
               </div>
 
               {/* Information Section - No Pricing or Add to Cart */}
