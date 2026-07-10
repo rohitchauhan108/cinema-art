@@ -13,41 +13,49 @@ import { AnimatePresence } from "framer-motion";
 // Comprehensive categories matched with the Home Page
 const categories = [
   {
-    name: "All",
-    subcategories: [],
-  },
-  {
-    name: "Mirrorless Cameras",
+    name: "All Lenses",
     subcategories: ["Sony", "Fujifilm", "Canon", "Nikon"],
   },
   {
-    name: "Action Cameras",
-    subcategories: ["GoPro", "DJI", "Insta360", "SJ Cam"],
+    name: "Samyang Lens",
+    subcategories: ["Sony", "Fujifilm", "Canon", "Nikon"],
+  },
+  {
+    name: "Sigma Lens",
+    subcategories: ["Sony", "Fujifilm", "Canon", "Nikon"],
+  },
+  {
+    name: "Meike Lens",
+    subcategories: ["Sony", "Fujifilm", "Canon", "Nikon"],
+  },
+  {
+    name: "Tamron Lens",
+    subcategories: ["Sony", "Fujifilm", "Canon", "Nikon"],
+  },
+  {
+    name: "Viltrox Lens",
+    subcategories: ["Sony", "Fujifilm", "Canon", "Nikon"],
   },
 ];
 
-// Comprehensive brands matched with the Home Page BrandShowcase
-// const brands = ["Sony", "Fujifilm", "Canon", "Nikon", "GoPro", "DJI", "Insta360", "Sigma", "Rode", "Ulanzi"];
-
 export default function ProductsPage() {
-  const [activeCategory, setActiveCategory] = useState("All");
+  const [activeCategory, setActiveCategory] = useState("All Lenses");
   const [activeBrand, setActiveBrand] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedBrands, setSelectedBrands] = useState<string[]>([]);
   const [isMobileFilterOpen, setIsMobileFilterOpen] = useState(false);
-
-  // const toggleBrand = (brand: string) => {
-  //   setSelectedBrands(prev =>
-  //     prev.includes(brand) ? prev.filter(b => b !== brand) : [...prev, brand]
-  //   );
-  // };
-
+    
+  
   const filteredProducts = products.filter((product) => {
     // Support both single category and multiple categories
     const productCategories =
       product.categories || (product.category ? [product.category] : []);
-    const matchesCategory =
-      activeCategory === "All" || productCategories.includes(activeCategory);
+  const matchesCategory =
+  activeCategory === "All Lenses"
+    ? productCategories.some((cat) =>
+        ["Lenses", "Samyang Lens"].includes(cat)
+      )
+    : productCategories.includes(activeCategory);
     const matchesBrand =
       selectedBrands.length === 0 || selectedBrands.includes(product.brand);
     const matchesSearch =
@@ -62,7 +70,7 @@ export default function ProductsPage() {
       ? product.categories[0]
       : product.category || "Unknown";
   };
-  const [openCategory, setOpenCategory] = useState("Mirrorless Cameras");
+  const [openCategory, setOpenCategory] = useState("All Lenses");
   const toggleBrand = (brand: string) => {
     setSelectedBrands((prev) =>
       prev.includes(brand) ? prev.filter((b) => b !== brand) : [...prev, brand],
@@ -90,8 +98,8 @@ export default function ProductsPage() {
             className="mb-12 border-b border-gray-300 pb-8"
           >
             <h1 className="font-syncopate text-4xl md:text-6xl font-bold text-[#111] uppercase tracking-tighter">
-              Premium <br />{" "}
-              <span className="text-gray-400">Cameras</span>
+              Lens <br />{" "}
+              <span className="text-gray-400">Collection</span>
             </h1>
             <p className="font-space mt-4 text-gray-600 max-w-xl">
               Explore detailed specifications and information about our
@@ -130,25 +138,6 @@ export default function ProductsPage() {
                   />
                 </div>
 
-                {/* Brands */}
-                {/* <div>
-                <h3 className="font-syncopate text-sm font-bold tracking-widest text-[#111] mb-4">BRANDS</h3>
-                <ul className="space-y-3 font-space text-sm text-gray-600">
-                  {brands.map((brand) => (
-                    <li key={brand} className="flex items-center gap-2">
-                      <input 
-                        type="checkbox" 
-                        id={brand} 
-                        checked={selectedBrands.includes(brand)}
-                        onChange={() => toggleBrand(brand)}
-                        className="accent-[#111] w-4 h-4 rounded-none" 
-                      />
-                      <label htmlFor={brand} className="cursor-pointer hover:text-[#111] transition-colors">{brand}</label>
-                    </li>
-                  ))}
-                </ul>
-              </div> */}
-
                 {/* Categories */}
                 <div>
                   <div className="flex items-center gap-2 mb-4">
@@ -168,7 +157,7 @@ export default function ProductsPage() {
                             setActiveCategory(cat.name);
                             setActiveBrand("");
 
-                            if (cat.name === "All") {
+                            if (cat.name === "All Lenses") {
                               setSelectedBrands([]);
                             }
 
@@ -178,7 +167,7 @@ export default function ProductsPage() {
                               setOpenCategory(cat.name);
                             }
                           }}
-                          className="w-full flex items-center justify-between py-2 text-left hover:text-black transition-colors"
+                          className="w-full flex cursor-pointer items-center justify-between py-2 text-left hover:text-black transition-colors"
                         >
                           <span>{cat.name}</span>
 
@@ -227,24 +216,6 @@ export default function ProductsPage() {
                   </ul>
                 </div>
 
-                {/* Brands
-              <div>
-                <h3 className="font-syncopate text-sm font-bold tracking-widest text-[#111] mb-4">BRANDS</h3>
-                <ul className="space-y-3 font-space text-sm text-gray-600">
-                  {brands.map((brand) => (
-                    <li key={brand} className="flex items-center gap-2">
-                      <input 
-                        type="checkbox" 
-                        id={brand} 
-                        checked={selectedBrands.includes(brand)}
-                        onChange={() => toggleBrand(brand)}
-                        className="accent-[#111] w-4 h-4 rounded-none" 
-                      />
-                      <label htmlFor={brand} className="cursor-pointer hover:text-[#111] transition-colors">{brand}</label>
-                    </li>
-                  ))}
-                </ul>
-              </div> */}
               </div>
             </motion.aside>
 
@@ -331,7 +302,7 @@ export default function ProductsPage() {
                     </p>
                     <button
                       onClick={() => {
-                        setActiveCategory("All");
+                        setActiveCategory("All Lenses");
                         setActiveBrand("");
                         setSearchQuery("");
                         setSelectedBrands([]); // Clear selected brands

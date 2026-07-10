@@ -60,7 +60,7 @@ export default function Navbar() {
 
   const navItems = [
     { name: "CAMERAS", href: "/products", meta: "F/1.8" },
-    // { name: "LENSES", href: "/lens", meta: "V/1.9" },
+    { name: "LENSES", href: "/lens", meta: "V/1.9" },
     { name: "ABOUT US", href: "/about", meta: "TV 1/250s" },
     { name: "PORTFOLIO", href: "/portfolio", meta: "AV F/1.2" },
     {
