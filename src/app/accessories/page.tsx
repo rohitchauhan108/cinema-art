@@ -86,18 +86,16 @@ const categories = [
   },
 ];
 
-export default function accessoriesPage() {
+export default function AccessoriesPage() {
   const [activeCategory, setActiveCategory] = useState("All Accessories");
   const [activeBrand, setActiveBrand] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedBrands, setSelectedBrands] = useState<string[]>([]);
   const [isMobileFilterOpen, setIsMobileFilterOpen] = useState(false);
 
-  const filteredaccessories = accessories.filter((accessories) => {
+  const filteredaccessories = accessories.filter((item) => {
     // Support both single category and multiple categories
-    const accessoriesCategories =
-      accessories.categories ||
-      (accessories.category ? [accessories.category] : []);
+    const accessoriesCategories = item.category ? [item.category] : [];
     const matchesCategory =
       activeCategory === "All Accessories"
         ? true
@@ -108,28 +106,28 @@ export default function accessoriesPage() {
     const matchesBrand =
       selectedBrands.length === 0 ||
       selectedBrands.some(
-        (brand) => brand.toLowerCase() === accessories.brand.toLowerCase(),
+        (brand) => brand.toLowerCase() === item.brand.toLowerCase(),
       );
 
     const matchesSearch =
-      accessories.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      accessories.brand.toLowerCase().includes(searchQuery.toLowerCase());
+      item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      item.brand.toLowerCase().includes(searchQuery.toLowerCase());
 
     return matchesCategory && matchesBrand && matchesSearch;
   });
 
-  // Helper to get primary category for display and links
-  const getPrimaryCategory = (accessories: (typeof accessories)[0]) => {
-    return accessories.categories && accessories.categories.length > 0
-      ? accessories.categories[0]
-      : accessories.category || "Unknown";
+  // Fixed TypeScript reference down here to use lowercase 'filteredaccessories'
+  const getPrimaryCategory = (item: (typeof filteredaccessories)[0]) => {
+    return item.category || "Unknown";
   };
+
   const [openCategory, setOpenCategory] = useState("All Accessories");
   const toggleBrand = (brand: string) => {
     setSelectedBrands((prev) =>
       prev.includes(brand) ? prev.filter((b) => b !== brand) : [...prev, brand],
     );
   };
+
   useEffect(() => {
     const el = document.getElementById("accessories");
 
@@ -140,6 +138,7 @@ export default function accessoriesPage() {
       });
     }
   }, [activeCategory, selectedBrands]);
+
   return (
     <>
       <Navbar />
@@ -275,9 +274,9 @@ export default function accessoriesPage() {
             <div id="accessories" className="flex-1">
               <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
                 {filteredaccessories.length > 0 ? (
-                  filteredaccessories.map((accessories, index) => (
+                  filteredaccessories.map((item, index) => (
                     <motion.div
-                      key={accessories.id}
+                      key={item.id}
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.05 * index }}
@@ -291,31 +290,31 @@ export default function accessoriesPage() {
                         {/* Top Badges */}
                         <div className="absolute top-4 left-4 flex flex-col gap-2 z-10">
                           <span className="bg-[#111] text-white text-[9px] font-syncopate px-2.5 py-1 uppercase tracking-[0.2em] font-bold">
-                            {accessories.brand}
+                            {item.brand}
                           </span>
-                          {accessories.status !== "In Stock" && (
+                          {item.status !== "In Stock" && (
                             <span
                               className={`hidden text-[9px] font-syncopate px-2.5 py-1 uppercase tracking-[0.2em] font-bold ${
-                                accessories.status === "Pre-order"
+                                item.status === "Pre-order"
                                   ? "bg-blue-600 text-white"
                                   : "bg-orange-500 text-white"
                               }`}
                             >
-                              {accessories.status}
+                              {item.status}
                             </span>
                           )}
                         </div>
 
                         <img
-                          src={accessories.colors[0].images[0]}
-                          alt={accessories.name}
-                          className={`max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-700 ease-out drop-shadow-xl ${getPrimaryCategory(accessories) === "Action Cameras" || getPrimaryCategory(accessories) === "360 Cameras" ? "p-4" : ""}`}
+                          src={item.colors[0].images[0]}
+                          alt={item.name}
+                          className={`max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-700 ease-out drop-shadow-xl ${getPrimaryCategory(item) === "Action Cameras" || getPrimaryCategory(item) === "360 Cameras" ? "p-4" : ""}`}
                         />
 
                         {/* Hover Action Button */}
                         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 z-20 w-3/4">
                           <Link
-                            href={`/accessories/${accessories.slug}`}
+                            href={`/accessories/${item.slug}`}
                             className="block w-full text-center bg-[#111] text-white font-syncopate text-[10px] uppercase tracking-widest py-3 hover:bg-black transition-colors shadow-lg"
                           >
                             View Details
@@ -326,18 +325,18 @@ export default function accessoriesPage() {
                       {/* Content Area */}
                       <div className="pt-5 pb-5 px-5 flex flex-col flex-1 bg-white z-10 relative border-t border-gray-100">
                         <p className="text-[9px] text-gray-400 font-syncopate mb-1 uppercase tracking-[0.2em]">
-                          {getPrimaryCategory(accessories)}
+                          {getPrimaryCategory(item)}
                         </p>
                         <h3 className="font-space text-lg font-bold text-[#111] mb-1 line-clamp-1">
-                          {accessories.name}
+                          {item.name}
                         </h3>
                         <p className="text-xs text-gray-500 font-space mb-4 line-clamp-2 min-h-8">
-                          {accessories.overview}
+                          {item.overview}
                         </p>
 
                         <div className="mt-auto flex items-end justify-between">
                           <Link
-                            href={`/accessories/${accessories.slug}`}
+                            href={`/accessories/${item.slug}`}
                             className="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center text-[#111] group-hover:bg-[#111] group-hover:text-white transition-colors ml-auto"
                           >
                             <ArrowUpRight className="w-4 h-4" />

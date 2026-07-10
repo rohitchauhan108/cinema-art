@@ -10,12 +10,13 @@ import {
   ChevronRight,
   ChevronDown,
 } from "lucide-react";
-import { use, useState, useEffect } from "react";
+import { use, useState } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import accessoriesData from "@/data/accessories";
 
-export default function accessoriesPage({
+
+export default function AccessoriesPage({
   params,
 }: {
   params: Promise<{ slug: string }>;
@@ -30,29 +31,29 @@ console.log("Slug:", resolvedParams.slug);
 console.log("Data:", accessoriesData);
 console.log("Found:", accessories);
   const [activeColorIdx, setActiveColorIdx] = useState(0);
-  const [activeaccessories, setActiveaccessories] = useState<string | null>(
-    accessories?.accessorieses?.[0] || null,
-  );
+  // const [activeaccessories, setActiveaccessories] = useState<string | null>(
+  //   accessories?.accessories?.[0] || null,
+  // );
   const [currentImage, setCurrentImage] = useState(0);
   const [openSpecCategory, setOpenSpecCategory] = useState<string | null>(null);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
 
   // Handle accessories selection logic
-  useEffect(() => {
-    if (!accessories) return;
-    if (activeaccessories === "XC 15-45mm accessories") {
-      // Find Silver color index
-      const silverIdx = accessories.colors.findIndex((c) => c.name === "Silver");
-      if (silverIdx !== -1) {
-        setActiveColorIdx(silverIdx);
-        // Assuming f1.webp is the 0th image in silver
-        setCurrentImage(0);
-      }
-    } else if (activeaccessories === "Body") {
-      // Just reset image to body only if needed, currently leaving color as is
-      setCurrentImage(0);
-    }
-  }, [activeaccessories, accessories]);
+  // useEffect(() => {
+  //   if (!accessories) return;
+  //   if (activeaccessories === "XC 15-45mm accessories") {
+  //     // Find Silver color index
+  //     const silverIdx = accessories.colors.findIndex((c) => c.name === "Silver");
+  //     if (silverIdx !== -1) {
+  //       setActiveColorIdx(silverIdx);
+  //       // Assuming f1.webp is the 0th image in silver
+  //       setCurrentImage(0);
+  //     }
+  //   } else if (activeaccessories === "Body") {
+  //     // Just reset image to body only if needed, currently leaving color as is
+  //     setCurrentImage(0);
+  //   }
+  // }, [activeaccessories, accessories]);
 
   if (!accessories) {
     return (
@@ -249,16 +250,16 @@ console.log("Found:", accessories);
               )}
 
               {/* accessorieses Selection */}
-              {accessories.accessorieses && accessories.accessorieses.length > 0 && (
+              {/* {accessories.accessories && accessories.accessories.length > 0 && (
                 <div className="mb-8">
                   <h3 className="font-syncopate text-xs font-bold tracking-[0.2em] text-[#111] uppercase mb-3">
-                    accessoriesES:{" "}
+                    accessories:{" "}
                     <span className="text-gray-500 font-space font-normal tracking-normal">
                       {activeaccessories}
                     </span>
                   </h3>
                   <div className="flex flex-wrap gap-3">
-                    {accessories.accessorieses.map((accessories, idx) => (
+                    {accessories.accessories.map((accessories, idx) => (
                       <button
                         key={idx}
                         onClick={() => setActiveaccessories(accessories)}
@@ -273,7 +274,7 @@ console.log("Found:", accessories);
                     ))}
                   </div>
                 </div>
-              )}
+              )} */}
 
               <div className="space-y-4 mb-10">
                 {/* <h3 className="font-syncopate text-sm font-bold tracking-[0.2em] text-[#111] uppercase">KEY FEATURES</h3>
@@ -286,7 +287,7 @@ console.log("Found:", accessories);
                 ))}
               </ul> */}
                 {/* fix code when feature are not in the data there */}
-                {accessories.keyFeatures && accessories.keyFeatures.length > 0 && (
+                {/* {accessories.keyFeatures && accessories.keyFeatures.length > 0 && (
                   <>
                     <h3 className="font-syncopate text-sm font-bold tracking-[0.2em] text-[#111] uppercase">
                       KEY FEATURES
@@ -306,7 +307,7 @@ console.log("Found:", accessories);
                       ))}
                     </ul>
                   </>
-                )}
+                )} */}
               </div>
 
               {/* Information Section - No Pricing or Add to Cart */}
