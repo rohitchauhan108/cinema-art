@@ -62,15 +62,27 @@ export default function Navbar() {
     { name: "CAMERAS", href: "/products", meta: "F/1.8" },
     { name: "LENSES", href: "/lens", meta: "V/1.9" },
     { name: "ABOUT US", href: "/about", meta: "TV 1/250s" },
-    { name: "PORTFOLIO", href: "/portfolio", meta: "AV F/1.2" },
+    { name: "ACCESSORIES", href: "/accessories", meta: "AV F/1.2" },
     {
       name: "SERVICES",
-      href: "/services",
+      href: "",
       submenu: [
-        { name: "Glossy Print & Framing", href: "/services/glossy-print-framing" },
-        { name: "Matt Printing & Framing", href: "/services/matt-print-framing" },
-        { name: "Luster Printing & Framing", href: "/services/luster-print-framing" },
-        { name: "Canva Printing & Framing", href: "/services/canva-print-framing" },
+        {
+          name: "Glossy Print & Framing",
+          href: "/services/glossy-print-framing",
+        },
+        {
+          name: "Matt Printing & Framing",
+          href: "/services/matt-print-framing",
+        },
+        {
+          name: "Luster Printing & Framing",
+          href: "/services/luster-print-framing",
+        },
+        {
+          name: "Canva Printing & Framing",
+          href: "/services/canva-print-framing",
+        },
       ],
     },
     { name: "CONTACT", href: "/contact", meta: "LENS 50mm" },
@@ -130,7 +142,9 @@ export default function Navbar() {
             </Link>
 
             {navItems.map((item, index) => {
-              const isActive = pathname.startsWith(item.href);
+              const isActive = item.submenu
+                ? item.submenu.some((sub) => pathname === sub.href)
+                : item.href && pathname === item.href;
 
               return (
                 <div
