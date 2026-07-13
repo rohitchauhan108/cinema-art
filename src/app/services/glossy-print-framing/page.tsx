@@ -111,7 +111,7 @@ export default function Page() {
                 variants={fadeInLeft}
                 className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-[#111] md:ml-[5vw]"
               >
-                Print <span className="text-[#FF0000]">///</span>
+                Printing <span className="text-[#FF0000]">///</span>
               </motion.h1>
 
               <motion.h1
@@ -119,7 +119,7 @@ export default function Page() {
                 className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-transparent md:ml-[10vw]"
                 style={{ WebkitTextStroke: "2px #111" }}
               >
-                Framing
+                & Framing
               </motion.h1>
             </motion.div>
 
@@ -148,7 +148,7 @@ export default function Page() {
             initial="hidden"
             animate="visible"
             variants={staggerContainer}
-            className="lg:col-span-5 grid grid-cols-12 gap-4 relative h-[450px] md:h-[550px] w-full"
+            className="lg:col-span-5 grid grid-cols-12 gap-4 relative h-112.5 md:h-137.5 w-full"
           >
             {/* Main Image */}
             <motion.div 
@@ -277,7 +277,7 @@ export default function Page() {
             variants={scaleIn}
             className="h-80 bg-zinc-800 overflow-hidden border border-zinc-700 p-6 flex items-center justify-center"
           >
-            <div className="border-[12px] border-white w-full h-full overflow-hidden shadow-2xl">
+            <div className="border-12 border-white w-full h-full overflow-hidden shadow-2xl">
               <img 
                 src="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?q=80&w=600" 
                 alt="Framed Dynamic Art" 

@@ -106,12 +106,12 @@ export default function AccessoriesPage() {
     const matchesBrand =
       selectedBrands.length === 0 ||
       selectedBrands.some(
-        (brand) => brand.toLowerCase() === item.brand.toLowerCase(),
+        (brand) => brand.toLowerCase() === (item.brand ?? "").toLowerCase(),
       );
 
     const matchesSearch =
       item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      item.brand.toLowerCase().includes(searchQuery.toLowerCase());
+      (item.brand ?? "").toLowerCase().includes(searchQuery.toLowerCase());
 
     return matchesCategory && matchesBrand && matchesSearch;
   });
@@ -289,9 +289,12 @@ export default function AccessoriesPage() {
 
                         {/* Top Badges */}
                         <div className="absolute top-4 left-4 flex flex-col gap-2 z-10">
-                          <span className="bg-[#111] text-white text-[9px] font-syncopate px-2.5 py-1 uppercase tracking-[0.2em] font-bold">
-                            {item.brand}
-                          </span>
+                          {item.brand && (
+                            <span className="bg-[#111] text-white text-[9px] font-syncopate px-2.5 py-1 uppercase tracking-[0.2em] font-bold">
+                              {item.brand}
+                            </span>
+                          )}
+
                           {item.status !== "In Stock" && (
                             <span
                               className={`hidden text-[9px] font-syncopate px-2.5 py-1 uppercase tracking-[0.2em] font-bold ${

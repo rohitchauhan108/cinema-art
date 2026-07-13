@@ -76,7 +76,7 @@ export default function Equipment() {
   const prevSlide = () => setCurrentIndex((prev) => (prev - 1 + len) % len);
 
   return (
-    <section className="bg-background py-20 md:py-32 overflow-hidden flex flex-col items-center relative" id="equipment">
+    <section className="bg-background pt-20 md:pt-32 overflow-hidden flex flex-col items-center relative" id="equipment">
       <div className="w-full text-center mb-12 px-4">
         <motion.h2 
           initial={{ opacity: 0, y: 30 }}

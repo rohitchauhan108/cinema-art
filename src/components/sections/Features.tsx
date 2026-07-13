@@ -62,7 +62,7 @@ export default function Features() {
   const containerRef = useRef(null);
 
   return (
-    <section ref={containerRef} className="bg-background py-20 md:py-32 flex flex-col items-center" id="services">
+    <section ref={containerRef} className="bg-background pb-20 md:pb-32 flex flex-col items-center" id="services">
       
       {/* --- SECTION 1: ARTISAN SERVICES --- */}
       <div className="w-full text-center mb-12 md:mb-20">

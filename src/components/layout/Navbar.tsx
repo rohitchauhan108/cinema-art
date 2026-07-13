@@ -72,8 +72,8 @@ export default function Navbar() {
           href: "/services/glossy-print-framing",
         },
         {
-          name: "Matt Printing & Framing",
-          href: "/services/matt-print-framing",
+          name: "Photo Printing & Framing",
+          href: "/services/photo-print-framing",
         },
         {
           name: "Luster Printing & Framing",

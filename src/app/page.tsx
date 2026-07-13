@@ -9,14 +9,16 @@ import Marquee from "@/components/ui/Marquee";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Loader from "@/components/ui/Loader";
+import Frames from "@/components/sections/Frames";
 
 export default function Home() {
   return (
-    <main className="relative bg-[#E6E6E6]">
+    <main className="relative bg-background">
       <Loader />
       <Navbar />
       <Hero3D />
       <Marquee />
+      <Frames/>
       <Equipment />
       <Features />
       <BrandShowcase />

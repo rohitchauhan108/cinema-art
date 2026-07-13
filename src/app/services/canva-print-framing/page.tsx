@@ -103,14 +103,14 @@ export default function CanvasPrintFramingPage() {
                 variants={fadeInLeft}
                 className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-[#111]"
               >
-                Weave <span className="text-[#FF0000]">///</span>
+                Canvas <span className="text-[#FF0000]">///</span>
               </motion.h1>
 
               <motion.h1 
                 variants={fadeInLeft}
                 className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-[#111] md:ml-[5vw]"
               >
-                Canvas <span className="text-[#FF0000]">///</span>
+                Printing <span className="text-[#FF0000]">///</span>
               </motion.h1>
 
               <motion.h1
@@ -118,7 +118,7 @@ export default function CanvasPrintFramingPage() {
                 className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-transparent md:ml-[10vw]"
                 style={{ WebkitTextStroke: "2px #111" }}
               >
-                Texture
+                & Framing
               </motion.h1>
             </motion.div>
 
@@ -142,7 +142,7 @@ export default function CanvasPrintFramingPage() {
             initial="hidden"
             animate="visible"
             variants={staggerContainer}
-            className="lg:col-span-5 grid grid-cols-12 gap-4 relative h-[450px] md:h-[550px] w-full"
+            className="lg:col-span-5 grid grid-cols-12 gap-4 relative h-112.5 md:h-137.5 w-full"
           >
             <motion.div 
               variants={scaleIn}
@@ -269,7 +269,7 @@ export default function CanvasPrintFramingPage() {
             variants={scaleIn}
             className="h-80 bg-zinc-800 overflow-hidden border border-zinc-700 p-6 flex items-center justify-center"
           >
-            <div className="border-[14px] border-zinc-900 w-full h-full overflow-hidden shadow-2xl">
+            <div className="border-14 border-zinc-900 w-full h-full overflow-hidden shadow-2xl">
               <img 
                 src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=600" 
                 alt="Floating Frame Showcase" 

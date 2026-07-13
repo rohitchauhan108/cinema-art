@@ -885,7 +885,7 @@ const accessories = [
     id: "fujifilm-sdxc-pro-128",
     name: "Fujifilm Elite Pro SDXC 128GB Card",
     category: "Sd Card",
-    brand: "Fujifilm",
+    brand: "",
     price: "₹3,499",
     slug: "fujifilm-sdxc-pro-128",
     status: "In Stock",
@@ -918,7 +918,7 @@ const accessories = [
     id: "canon-microsd-extreme-64",
     name: "Canon High Endurance microSDXC 64GB",
     category: "Micro Sd Card",
-    brand: "Canon",
+    brand: "",
     price: "₹1,800",
     slug: "canon-microsd-extreme-64",
     status: "In Stock",
@@ -953,7 +953,7 @@ const accessories = [
     id: "nikon-media-ssd-1tb",
     name: "Nikon Direct-Stream Portable SSD 1TB",
     category: "Harddisk & SSD",
-    brand: "Nikon",
+    // brand: "Nikon",
     price: "₹12,500",
     slug: "nikon-media-ssd-1tb",
     status: "In Stock",
@@ -981,6 +981,187 @@ const accessories = [
         items: [{ label: "Transfer Speed", value: "Up to 1050 MB/s" }],
       },
     ],
+  },
+  {
+    id: "vmc-sa1",
+    name: "VMC-SA1",
+    category: "All Cable",
+    brand: "Sony",
+    price: "₹11,990",
+    slug: "vmc-sa1",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/accessories/sony/cable/cable.jpg",
+        ],
+      },
+    ],
+    overview:
+      "Extend your camera's Multi Interface (MI) Shoe connection with the Sony VMC-SA1 Shoe Audio Extension Cable. Designed for creators using compatible Sony audio accessories such as XLR adapters, this 600mm extension cable offers greater flexibility for mounting microphones and audio equipment while maintaining a secure digital connection for professional-quality sound.",
+    specs: [
+  {
+    category: "Accessory Specifications",
+    items: [
+      { label: "Model Number", value: "VMC-SA1" },
+      { label: "Accessory Type", value: "Shoe Audio Extension Cable" },
+      { label: "Brand", value: "Sony" },
+      { label: "Cable Length", value: "600 mm (23.6 in)" },
+      { label: "Weight", value: "93 g" },
+    ],
+  },
+  {
+    category: "Compatibility",
+    items: [
+      {
+        label: "Compatible Devices",
+        value: "Sony cameras and accessories with Multi Interface (MI) Shoe",
+      },
+      {
+        label: "Supports",
+        value: "Sony XLR adapters and MI Shoe audio accessories",
+      },
+    ],
+  },
+  {
+    category: "Physical Dimensions",
+    items: [
+      {
+        label: "Camera Side Dimensions",
+        value: "32.0 × 24.1 × 22.0 mm",
+      },
+      {
+        label: "Accessory Side Dimensions",
+        value: "34.5 × 32.8 × 25.6 mm",
+      },
+    ],
+  },
+],
+  },
+  {
+    id: "52mm-nc-filter",
+    name: "52MM NC Filter",
+    category: "Filter",
+    brand: "Nikon",
+    price: "₹1390",
+    slug: "52mm-nc-filter",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/accessories/nikon/filter/filter1.webp",
+        ],
+      },
+    ],
+    overview:
+      "These filters serve as lens protectors and do not affect color balance. A neutral clear, multi-coated filter that helps to reduce flare and ghosting as well as protecting the front lens surface from the elements. These filters do not affect color balance. Multilayer coating diminishes internal reflections and improves color rendition.",
+    specs: [
+  {
+    category: "Filter Specifications",
+    items: [
+      { label: "SKU", value: "FTA07701" },
+      { label: "Accessory Type", value: "Lens Filter" },
+      { label: "Brand", value: "Nikon" },
+    ],
+  },
+  {
+    category: "Compatibility",
+    items: [
+      {
+        label: "Compatible Lenses",
+        value:
+          "NIKKOR Z 28mm f/2.8 (SE), NIKKOR Z 24-50mm f/4-6.3, AF-S DX NIKKOR 55-200mm f/4-5.6G ED VR II, AF-S DX VR Zoom-Nikkor ED 55-200mm f/4-5.6G, AF-S DX Zoom-Nikkor ED 18-55mm f/3.5-5.6G, AF-S DX NIKKOR 18-55mm f/3.5-5.6G VR II",
+      },
+      {
+        label: "Additional Compatible Lenses",
+        value:
+          "AF-S NIKKOR 800mm f/5.6E FL ED VR, AF-S DX Micro NIKKOR 40mm f/2.8G, AF-S NIKKOR 200mm f/2G ED VR II, AF-S NIKKOR 200-400mm f/4G ED VR II, AF-S NIKKOR 300mm f/2.8G ED VR II, AF-S DX Micro NIKKOR 85mm f/3.5G ED VR",
+      },
+      {
+        label: "More Compatible Lenses",
+        value:
+          "AF-S DX NIKKOR 35mm f/1.8G, AF NIKKOR 28mm f/2.8D, AF-S VR NIKKOR 200mm f/2G IF-ED, AF-S DX Zoom-NIKKOR 18-55mm f/3.5-5.6G ED II, AF NIKKOR 50mm f/1.4D, AF-S VR Zoom-NIKKOR 200-400mm f/4G IF-ED",
+      },
+      {
+        label: "Other Compatible Lenses",
+        value:
+          "AF-S NIKKOR 500mm f/4G ED VR, AF-S DX Zoom-NIKKOR 55-200mm f/4-5.6G ED, AF-S NIKKOR 600mm f/4G ED VR, AF-S NIKKOR 400mm f/2.8G ED VR, AF-S VR NIKKOR 300mm f/2.8G IF-ED, AF NIKKOR 50mm f/1.8D, AF NIKKOR 24mm f/2.8D, AF NIKKOR 35mm f/2D",
+      },
+    ],
+  },
+],
+  },
+  {
+    id: "dji-rs-3-mini",
+    name: "DJI RS 3 Mini, 3-Axis Gimbal Stabilizer for Cameras",
+    category: "Gimbal",
+    brand: "Dji",
+    price: "₹18,987",
+    slug: "dji-rs-3-mini",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/accessories/gimbal/gimbal1.jpg",
+        ],
+      },
+    ],
+    overview:
+      "The DJI RS 3 Mini is a compact and lightweight 3-axis gimbal designed for mirrorless cameras, delivering professional-grade stabilization in a travel-friendly form. Weighing just 795g, it supports camera setups up to 2kg, features native vertical shooting, Bluetooth shutter control, and DJI's 3rd-generation stabilization algorithm for smooth, cinematic footage. Ideal for content creators, filmmakers, and vloggers on the go.",
+    specs: [
+  {
+    category: "Gimbal Specifications",
+    items: [
+      { label: "Model Number", value: "DJI RS 3 Mini" },
+      { label: "Product Type", value: "3-Axis Camera Gimbal Stabilizer" },
+      { label: "Brand", value: "DJI" },
+      { label: "Tested Payload", value: "0.4–2 kg (0.8–4.4 lbs)" },
+      { label: "Weight", value: "795 g (Portrait) / 850 g (Horizontal)" },
+    ],
+  },
+  {
+    category: "Battery & Performance",
+    items: [
+      { label: "Battery Capacity", value: "2450 mAh (17.64 Wh)" },
+      { label: "Battery Type", value: "18650 Li-ion 2S" },
+      { label: "Operating Time", value: "Up to 10 hours" },
+      { label: "Charging Time", value: "Approx. 2.5 hours" },
+      { label: "Charging Port", value: "USB Type-C (5V/2A)" },
+    ],
+  },
+  {
+    category: "Connectivity",
+    items: [
+      { label: "Wireless Connection", value: "Bluetooth 5.1" },
+      { label: "Accessory Ports", value: "1/4\"-20 Mount, NATO Port, USB-C RSS Camera Control Port" },
+      { label: "Mobile App", value: "DJI Ronin (iOS 11.0+, Android 7.0+)" },
+    ],
+  },
+  {
+    category: "Physical Specifications",
+    items: [
+      { label: "Folded Dimensions", value: "323 × 195 × 98 mm" },
+      { label: "Unfolded Dimensions", value: "180 × 159 × 296 mm" },
+      { label: "Operating Temperature", value: "-10°C to 45°C (14°F to 113°F)" },
+    ],
+  },
+  {
+    category: "Compatibility",
+    items: [
+      {
+        label: "Compatible Cameras",
+        value: "Mirrorless cameras from Sony, Canon, Nikon, Panasonic, Fujifilm, and other supported models (up to 2 kg payload)",
+      },
+      {
+        label: "Shooting Modes",
+        value: "Horizontal & Native Vertical Shooting",
+      },
+    ],
+  },
+],
   },
 ];
 

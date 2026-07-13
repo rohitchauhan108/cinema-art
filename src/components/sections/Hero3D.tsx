@@ -17,7 +17,7 @@ const slides = [
     brand: "GOPRO",
     model: "HERO 12",
     desc: "Rugged, waterproof, and ready for any adventure. Capture the impossible anywhere you go.",
-    img: "/heroimg/gopro.png",
+    img: "/heroimg/go-pro.png",
   },
   {
     id: "03",
