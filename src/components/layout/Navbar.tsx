@@ -68,16 +68,16 @@ export default function Navbar() {
       href: "",
       submenu: [
         {
-          name: "Glossy Print & Framing",
-          href: "/services/glossy-print-framing",
+          name: "Customised Photo Albums and Photo Books",
+          href: "/services/custom-photo-&-album",
         },
         {
           name: "Photo Printing & Framing",
           href: "/services/photo-print-framing",
         },
         {
-          name: "Luster Printing & Framing",
-          href: "/services/luster-print-framing",
+          name: "Passport photo service",
+          href: "/services/passport-photo-service",
         },
         {
           name: "Canva Printing & Framing",

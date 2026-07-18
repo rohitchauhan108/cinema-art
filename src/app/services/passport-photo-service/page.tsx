@@ -1,11 +1,12 @@
-﻿"use client";
+"use client";
 
 import React from "react";
 import { motion, Variants } from "framer-motion";
+
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
-// Animation Presets
+// Animation Presets (Consistent with previous pages)
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 50 },
   visible: {
@@ -65,14 +66,15 @@ const staggerContainer: Variants = {
   },
 };
 
-export default function Page() {
+
+export default function PassportPhotoServicePage() {
   return (
     <>
       <Navbar />
 
-      {/* 1. HERO SECTION WITH IMAGES ON THE RIGHT */}
+      {/* 1. HERO SECTION */}
       <section className="relative pt-40 pb-20 px-6 md:px-16 overflow-hidden bg-white">
-        {/* Vertical Text (Fades in on page load) */}
+        {/* Vertical Text */}
         <motion.div 
           initial={{ opacity: 0, y: "-40%" }}
           animate={{ opacity: 1, y: "-50%" }}
@@ -87,7 +89,7 @@ export default function Page() {
               transform: "rotate(180deg)",
             }}
           >
-            Fine Art Printing & Framing
+            Studio Quality Biometric ID
           </span>
         </motion.div>
 
@@ -104,14 +106,14 @@ export default function Page() {
                 variants={fadeInLeft}
                 className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-[#111]"
               >
-                Glossy <span className="text-[#FF0000]">///</span>
+                Passport<span className="text-[#FF0000]">///</span>
               </motion.h1>
 
               <motion.h1 
                 variants={fadeInLeft}
                 className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-[#111] md:ml-[5vw]"
               >
-                Printing <span className="text-[#FF0000]">///</span>
+                Photos <span className="text-[#FF0000]">///</span>
               </motion.h1>
 
               <motion.h1
@@ -119,7 +121,7 @@ export default function Page() {
                 className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-transparent md:ml-[10vw]"
                 style={{ WebkitTextStroke: "2px #111" }}
               >
-                & Framing
+                services
               </motion.h1>
             </motion.div>
 
@@ -127,18 +129,13 @@ export default function Page() {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.8,
-                delay: 0.4,
-                ease: "easeOut",
-              }}
+              transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
               className="mt-12 md:mt-20 max-w-2xl border-l-2 border-[#FF0000] pl-6 md:pl-10 md:ml-[5vw]"
             >
               <p className="font-space text-sm md:text-base leading-relaxed text-gray-800 uppercase font-medium">
-                CinemaArt Studio brings together premium imaging equipment,
-                thoughtful advisory, and finishing services for modern creators.
-                We exist for photographers, filmmakers, studios, and visual
-                brands who want more than a transaction.
+                Government-compliant, studio-lit, and instantly processed. We merge strict 
+                biometric standards with high-end portrait illumination. Perfect for passports, 
+                visa applications, and professional identification documents.
               </p>
             </motion.div>
           </div>
@@ -150,37 +147,35 @@ export default function Page() {
             variants={staggerContainer}
             className="lg:col-span-5 grid grid-cols-12 gap-4 relative h-112.5 md:h-137.5 w-full"
           >
-            {/* Main Image */}
             <motion.div 
               variants={scaleIn}
-              className="col-span-8 h-full bg-gray-100 rounded-sm overflow-hidden relative group border border-gray-200"
+              className="col-span-8 h-full bg-zinc-100 rounded-sm overflow-hidden relative border border-zinc-200"
             >
               <img 
-                src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?q=80&w=800" 
-                alt="Main Creative Work"
+                src="https://images.pexels.com/photos/13987298/pexels-photo-13987298.jpeg"
+                alt="Professional Portrait Capture"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
               />
             </motion.div>
 
-            {/* Side Grid Stack */}
             <div className="col-span-4 flex flex-col gap-4 h-full justify-between">
               <motion.div 
                 variants={scaleIn}
-                className="h-[48%] bg-gray-100 rounded-sm overflow-hidden border border-gray-200"
+                className="h-[48%] bg-zinc-100 rounded-sm overflow-hidden border border-zinc-200"
               >
                 <img 
-                  src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=500" 
-                  alt="Detail Focus"
+                  src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=500" 
+                  alt="Precision Studio Camera Setup"
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 />
               </motion.div>
               <motion.div 
                 variants={scaleIn}
-                className="h-[48%] bg-gray-100 rounded-sm overflow-hidden border border-gray-200"
+                className="h-[48%] bg-zinc-100 rounded-sm overflow-hidden border border-zinc-200"
               >
                 <img 
-                  src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?q=80&w=500" 
-                  alt="Studio Gear"
+                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800" 
+                  alt="Symmetric Studio Lighting Portrait"
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 />
               </motion.div>
@@ -189,7 +184,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* 2. GLOSSY SECTION */}
+      {/* 2. BIOMETRIC PRECISION SECTION */}
       <section className="py-24 px-6 md:px-16 bg-zinc-50 border-t border-zinc-200 overflow-hidden">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -198,10 +193,10 @@ export default function Page() {
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeInLeft}
           >
-            <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-4">// 01 / THE SHINE</span>
-            <h2 className="font-syncopate text-3xl md:text-4xl font-black uppercase text-zinc-950 mb-6">Glossy Finish</h2>
+            <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-4">// 01 / GLOBAL ACCURACY</span>
+            <h2 className="font-syncopate text-3xl md:text-4xl font-black uppercase text-zinc-950 mb-6">Biometric Match</h2>
             <p className="font-space text-sm md:text-base text-zinc-600 leading-relaxed uppercase">
-              Our high-gloss medium options amplify deep blacks, razor-sharp contrasts, and ultra-vivid color spaces. Designed specifically for high-fashion photography and ultra-modern digital exhibitions where crisp detail is non-negotiable.
+              Our capture process strictly adheres to international ICAO regulations. We map exact eye alignments, facial symmetry, and neutral background values to guarantee 100% acceptance rates for any embassy or government portal globally.
             </p>
           </motion.div>
           
@@ -213,15 +208,15 @@ export default function Page() {
             className="h-80 bg-zinc-200 overflow-hidden relative border border-zinc-300"
           >
             <img 
-              src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800" 
-              alt="Glossy Texture" 
-              className="w-full h-full object-cover mix-blend-multiply opacity-90 hover:scale-105 transition-transform duration-700"
+              src="https://images.pexels.com/photos/8090294/pexels-photo-8090294.jpeg" 
+              alt="Calibrated Biometric Target Face" 
+              className="w-full h-full object-cover grayscale hover:scale-105 transition-transform duration-700"
             />
           </motion.div>
         </div>
       </section>
 
-      {/* 3. PRINT SECTION */}
+      {/* 3. PREMIUM PRINT MEDIA SECTION */}
       <section className="py-24 px-6 md:px-16 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <motion.div 
@@ -232,9 +227,9 @@ export default function Page() {
             className="order-2 md:order-1 h-80 bg-zinc-100 overflow-hidden border border-zinc-200"
           >
             <img 
-              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=800" 
-              alt="Fine Art Printing" 
-              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              src="https://images.pexels.com/photos/1989747/pexels-photo-1989747.jpeg" 
+              alt="Heavyweight Matte Print Outputs" 
+              className="w-full h-full object-cover grayscale"
             />
           </motion.div>
           
@@ -245,16 +240,16 @@ export default function Page() {
             variants={fadeInRight}
             className="order-1 md:order-2 md:pl-12"
           >
-            <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-4">// 02 / THE INK</span>
-            <h2 className="font-syncopate text-3xl md:text-4xl font-black uppercase text-zinc-950 mb-6">Fine Art Printing</h2>
+            <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-4">// 02 / HIGH-DEFINITION PRINTS</span>
+            <h2 className="font-syncopate text-3xl md:text-4xl font-black uppercase text-zinc-950 mb-6">Archival Matte</h2>
             <p className="font-space text-sm md:text-base text-zinc-600 leading-relaxed uppercase">
-              Utilizing archival-grade giclée processes with 12-color pigment systems. We treat every print as an investment pieces, outputting onto museum-tier cotton rag paper stocks that retain depth and richness for lifetimes.
+              Printed on fingerprint-resistant archival media calibrated to render natural skin tones without color shifts. Exact, high-tolerance micro-cutting ensures clean borders matching your destination country's millimeter specifications.
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* 4. FRAMING SECTION */}
+      {/* 4. DIGITAL & PHYSICAL DELIVERY SECTION */}
       <section className="py-24 px-6 md:px-16 bg-zinc-950 text-white overflow-hidden">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -263,10 +258,10 @@ export default function Page() {
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeInLeft}
           >
-            <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-4">// 03 / THE BORDER</span>
-            <h2 className="font-syncopate text-3xl md:text-4xl font-black uppercase text-white mb-6">Premium Framing</h2>
+            <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-4">// 03 / HYBRID ASSET DELIVERY</span>
+            <h2 className="font-syncopate text-3xl md:text-4xl font-black uppercase text-white mb-6">Instant Sync</h2>
             <p className="font-space text-sm md:text-base text-zinc-400 leading-relaxed uppercase">
-              Custom-milled hardwood frames combined with anti-reflective, UV-protective gallery glass. Handcrafted specifically to structural specifications, creating a dramatic, geometric boundary for your visual stories.
+              Receive perfectly cut physical photo sheets instantly alongside high-resolution, web-optimized digital copies. Digital formats are pre-compressed and scaled to comply directly with rigorous online application portal requirements.
             </p>
           </motion.div>
           
@@ -277,10 +272,10 @@ export default function Page() {
             variants={scaleIn}
             className="h-80 bg-zinc-800 overflow-hidden border border-zinc-700 p-6 flex items-center justify-center"
           >
-            <div className="border-12 border-white w-full h-full overflow-hidden shadow-2xl">
+            <div className="border-12 border-zinc-100 w-full h-full overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?q=80&w=600" 
-                alt="Framed Dynamic Art" 
+                src="https://images.pexels.com/photos/4291533/pexels-photo-4291533.jpeg" 
+                alt="Passport Book and Print Deliverables" 
                 className="w-full h-full object-cover hover:scale-105 transition-all duration-700 grayscale hover:grayscale-0"
               />
             </div>
@@ -288,21 +283,21 @@ export default function Page() {
         </div>
       </section>
 
-      {/* 5. LAB PHILOSOPHY SECTION */}
+      {/* 5. STUDIO PHILOSOPHY SECTION */}
       <section className="py-28 px-6 md:px-16 bg-white text-zinc-950 overflow-hidden">
         <motion.div 
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
-          variants={fadeInUp}
+          // variants={fadeInUp}
           className="max-w-4xl mx-auto text-center flex flex-col items-center"
         >
-          <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-6">// 04 / VISION</span>
+          <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-6">// 04 / EXCELLENCE BY PRECISION</span>
           <h2 className="font-syncopate text-4xl md:text-6xl font-black uppercase tracking-tight mb-8">
-            Beyond The Screen.
+            The Compliant Portrait.
           </h2>
           <p className="font-space text-base md:text-lg text-zinc-600 leading-loose uppercase max-w-2xl">
-            We bridge the gap between digital precision and physical permanence. Our laboratory is an open collaborative ecosystem tailored entirely around uncompromised creative execution.
+            Uncompromising portraiture. We reject the sterile, unflattering lighting of standard commercial photo booths, offering professional-grade studio sessions designed to capture your best self while remaining completely system-compliant.
           </p>
         </motion.div>
       </section>

@@ -1,12 +1,11 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import { motion, Variants } from "framer-motion";
-
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
-// Animation Presets (Consistent with previous pages)
+// Animation Presets
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 50 },
   visible: {
@@ -66,13 +65,12 @@ const staggerContainer: Variants = {
   },
 };
 
-
-export default function LusterPrintFramingPage() {
+export default function Page() {
   return (
     <>
       <Navbar />
 
-      {/* 1. HERO SECTION */}
+      {/* 1. HERO SECTION WITH IMAGES ON THE RIGHT */}
       <section className="relative pt-40 pb-20 px-6 md:px-16 overflow-hidden bg-white">
         {/* Vertical Text */}
         <motion.div 
@@ -89,7 +87,7 @@ export default function LusterPrintFramingPage() {
               transform: "rotate(180deg)",
             }}
           >
-            Fine Art Printing & Framing
+            Customised Photo Albums & Photo Books
           </span>
         </motion.div>
 
@@ -106,14 +104,14 @@ export default function LusterPrintFramingPage() {
                 variants={fadeInLeft}
                 className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-[#111]"
               >
-                Luster<span className="text-[#FF0000]">///</span>
+                Customised photo's<span className="text-[#FF0000]">///</span>
               </motion.h1>
 
               <motion.h1 
                 variants={fadeInLeft}
                 className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-[#111] md:ml-[5vw]"
               >
-                Printing <span className="text-[#FF0000]">///</span>
+                 & albums  <span className="text-[#FF0000]">///</span>
               </motion.h1>
 
               <motion.h1
@@ -121,7 +119,7 @@ export default function LusterPrintFramingPage() {
                 className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-transparent md:ml-[10vw]"
                 style={{ WebkitTextStroke: "2px #111" }}
               >
-                & Framing
+                  books
               </motion.h1>
             </motion.div>
 
@@ -129,13 +127,18 @@ export default function LusterPrintFramingPage() {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+              transition={{
+                duration: 0.8,
+                delay: 0.4,
+                ease: "easeOut",
+              }}
               className="mt-12 md:mt-20 max-w-2xl border-l-2 border-[#FF0000] pl-6 md:pl-10 md:ml-[5vw]"
             >
               <p className="font-space text-sm md:text-base leading-relaxed text-gray-800 uppercase font-medium">
-                The absolute sweet spot of commercial framing. Merging the vivid, 
-                rich contrast properties of gloss with the anti-glare, fingerprint-resistant 
-                advantages of matte. Perfect for high-traffic gallery spaces and modern portfolio installations.
+                CinemaArt Studio architects physical archives for visual legacies.
+                We craft custom heirloom photo books and bespoke albums utilizing 
+                heavyweight archival papers, handcrafted flat-lay spines, and ultra-premium 
+                cover textiles built to outlast generations.
               </p>
             </motion.div>
           </div>
@@ -145,37 +148,41 @@ export default function LusterPrintFramingPage() {
             initial="hidden"
             animate="visible"
             variants={staggerContainer}
-            className="lg:col-span-5 grid grid-cols-12 gap-4 relative h-112.5 md:h-137.5 w-full"
+            className="lg:col-span-5 grid grid-cols-12 gap-4 relative h-[450px] md:h-[550px] w-full"
           >
+            {/* Main Image - Open Premium Layflat Photo Album */}
             <motion.div 
               variants={scaleIn}
-              className="col-span-8 h-full bg-zinc-100 rounded-sm overflow-hidden relative border border-zinc-200"
+              className="col-span-8 h-full bg-gray-100 rounded-sm overflow-hidden relative group border border-gray-200"
             >
               <img 
-                src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=800" 
-                alt="Luster Sheen Base"
+                src="https://images.pexels.com/photos/8057039/pexels-photo-8057039.jpeg" 
+                alt="Open premium handcrafted layflat photo album showcasing seamless panorama prints across pages"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
               />
             </motion.div>
 
+            {/* Side Grid Stack */}
             <div className="col-span-4 flex flex-col gap-4 h-full justify-between">
+              {/* Top Side - Bookbinding Details */}
               <motion.div 
                 variants={scaleIn}
-                className="h-[48%] bg-zinc-100 rounded-sm overflow-hidden border border-zinc-200"
+                className="h-[48%] bg-gray-100 rounded-sm overflow-hidden border border-gray-200"
               >
                 <img 
-                  src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?q=80&w=500" 
-                  alt="Midtone Dynamic Art"
+                  src="https://images.pexels.com/photos/35481573/pexels-photo-35481573.png" 
+                  alt="Close-up of premium leather bound book spine and hand-stitched detailing"
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 />
               </motion.div>
+              {/* Bottom Side - Minimalist Stack of Photo Books */}
               <motion.div 
                 variants={scaleIn}
-                className="h-[48%] bg-zinc-100 rounded-sm overflow-hidden border border-zinc-200"
+                className="h-[48%] bg-gray-100 rounded-sm overflow-hidden border border-gray-200"
               >
                 <img 
-                  src="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?q=80&w=500" 
-                  alt="Gallery Environment"
+                  src="https://media.istockphoto.com/id/2216640727/photo/family-sharing-photo-album-and-cherishing-memories.jpg?b=1&s=612x612&w=0&k=20&c=z7rufwOziqjYSREAWX7J_EYokrQxVVZQhOS9Fib-wXk=" 
+                  alt="Sleek minimalist stack of modern cloth-bound custom photo books on a clean workspace"
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 />
               </motion.div>
@@ -184,7 +191,7 @@ export default function LusterPrintFramingPage() {
         </div>
       </section>
 
-      {/* 2. LUSTER SURFACE FINISH SECTION */}
+      {/* 2. GLOSSY FINISH / CHROMATIC INTENSITY SECTION */}
       <section className="py-24 px-6 md:px-16 bg-zinc-50 border-t border-zinc-200 overflow-hidden">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -193,10 +200,10 @@ export default function LusterPrintFramingPage() {
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeInLeft}
           >
-            <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-4">// 01 / PEARLESCENT TEXTURE</span>
-            <h2 className="font-syncopate text-3xl md:text-4xl font-black uppercase text-zinc-950 mb-6">Satin Luster</h2>
+            <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-4">// 01 / THE CORE</span>
+            <h2 className="font-syncopate text-3xl md:text-4xl font-black uppercase text-zinc-950 mb-6">Chromatic Depth</h2>
             <p className="font-space text-sm md:text-base text-zinc-600 leading-relaxed uppercase">
-              Our professional luster surface implements an advanced, fine-grained pebbled surface profile. This custom texture limits uniform specular reflection, hiding direct handling marks while allowing bright whites and saturated blocks to punch off the canvas.
+              Select between ultra-vivid high-gloss inner sheets or deep satin lustres. Our album pages feature high-fidelity paper stocks optimized for dense shadows, absolute black points, and dynamic ranges that replicate digital gallery files perfectly.
             </p>
           </motion.div>
           
@@ -207,16 +214,17 @@ export default function LusterPrintFramingPage() {
             variants={fadeInRight}
             className="h-80 bg-zinc-200 overflow-hidden relative border border-zinc-300"
           >
+            {/* Visualizing dynamic rich color layout inside a premium album book */}
             <img 
-              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=800" 
-              alt="Luster Surface Finish" 
-              className="w-full h-full object-cover grayscale hover:scale-105 transition-transform duration-700"
+              src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800" 
+              alt="Vivid color abstractions printing perfectly inside a dynamic portfolio photo book layout" 
+              className="w-full h-full object-cover mix-blend-multiply opacity-90 hover:scale-105 transition-transform duration-700"
             />
           </motion.div>
         </div>
       </section>
 
-      {/* 3. PROFESSIONAL RC PAPERS SECTION */}
+      {/* 3. PRINT & PAPER SECTION */}
       <section className="py-24 px-6 md:px-16 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <motion.div 
@@ -226,10 +234,11 @@ export default function LusterPrintFramingPage() {
             variants={fadeInLeft}
             className="order-2 md:order-1 h-80 bg-zinc-100 overflow-hidden border border-zinc-200"
           >
+            {/* Fine Art Layflat Book Paper Details */}
             <img 
-              src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800" 
-              alt="Resin Coated Paper Stock" 
-              className="w-full h-full object-cover grayscale"
+              src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?q=80&w=800" 
+              alt="Inspecting high-end heavyweight cotton rag page textures before custom book compilation" 
+              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
             />
           </motion.div>
           
@@ -240,28 +249,28 @@ export default function LusterPrintFramingPage() {
             variants={fadeInRight}
             className="order-1 md:order-2 md:pl-12"
           >
-            <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-4">// 02 / RESIN COATED MEDIA</span>
-            <h2 className="font-syncopate text-3xl md:text-4xl font-black uppercase text-zinc-950 mb-6">Premium 260gsm</h2>
+            <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-4">// 02 / THE MEDIUM</span>
+            <h2 className="font-syncopate text-3xl md:text-4xl font-black uppercase text-zinc-950 mb-6">Archival Giclée Pages</h2>
             <p className="font-space text-sm md:text-base text-zinc-600 leading-relaxed uppercase">
-              Engineered on premium resin-coated substrates optimized for intense color gamut payloads. Highly stable base configurations guarantee flat structural drying surfaces that resist wrinkling under high ambient humidity changes.
+              No cheap cardstock or digital press paper. Every page is a verified museum-tier cotton rag or alpha-cellulose substrate printed via a 12-color pigment system, offering an uncompromised tactical experience upon every flip.
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* 4. BALANCED EXHIBITION FRAMING SECTION */}
+      {/* 4. LUXURY BINDING & MATERIALS SECTION */}
       <section className="py-24 px-6 md:px-16 bg-zinc-950 text-white overflow-hidden">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <motion.div
+          <motion.div 
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeInLeft}
           >
-            <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-4">// 03 / STUDIO CASING SYSTEMS</span>
-            <h2 className="font-syncopate text-3xl md:text-4xl font-black uppercase text-white mb-6">Studio Framing</h2>
+            <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-4">// 03 / THE ENCLOSURE</span>
+            <h2 className="font-syncopate text-3xl md:text-4xl font-black uppercase text-white mb-6">Bespoke Bookbinding</h2>
             <p className="font-space text-sm md:text-base text-zinc-400 leading-relaxed uppercase">
-              Assembled inside crisp shadow-box hardwood components using acid-free mounting barriers. Fitted with dynamic protective shields that enhance contrast depth from extreme angles without crushing deep-shadow detail.
+              Enclosed in custom-milled hardwoods, top-grain leathers, or heavy Japanese book cloths. Every spine is bound using true layflat structural geometry, allowing panoramic images to cross seamlessly over pages without gutter loss.
             </p>
           </motion.div>
           
@@ -272,10 +281,11 @@ export default function LusterPrintFramingPage() {
             variants={scaleIn}
             className="h-80 bg-zinc-800 overflow-hidden border border-zinc-700 p-6 flex items-center justify-center"
           >
-            <div className="border-12 border-zinc-100 w-full h-full overflow-hidden shadow-2xl">
+            <div className="border-[12px] border-white w-full h-full overflow-hidden shadow-2xl">
+              {/* Luxury Custom Presentation Box or Album casing */}
               <img 
-                src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?q=80&w=600" 
-                alt="Exhibition Framed Luster" 
+                src="https://media.istockphoto.com/id/1140122157/photo/bookbinding-hands-folding.jpg?b=1&s=612x612&w=0&k=20&c=hwmL7BcqPE0-LnW_INtEubCl61UStnhrD498GIT6AC4=" 
+                alt="A premium custom handcrafted display container holding luxury editorial photo books" 
                 className="w-full h-full object-cover hover:scale-105 transition-all duration-700 grayscale hover:grayscale-0"
               />
             </div>
@@ -283,21 +293,21 @@ export default function LusterPrintFramingPage() {
         </div>
       </section>
 
-      {/* 5. LAB LUSTER PHILOSOPHY SECTION */}
+      {/* 5. LAB PHILOSOPHY SECTION */}
       <section className="py-28 px-6 md:px-16 bg-white text-zinc-950 overflow-hidden">
         <motion.div 
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
-        //   variants={fadeInUp}
+          variants={fadeInUp}
           className="max-w-4xl mx-auto text-center flex flex-col items-center"
         >
-          <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-6">// 04 / EXCELLENCE BY ADAPTABILITY</span>
+          <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-6">// 04 / VISION</span>
           <h2 className="font-syncopate text-4xl md:text-6xl font-black uppercase tracking-tight mb-8">
-            The Midpoint Master.
+            Tangible Narratives.
           </h2>
           <p className="font-space text-base md:text-lg text-zinc-600 leading-loose uppercase max-w-2xl">
-            Uncompromising versatility. Our luster finishing engine targets the absolute convergence parameters of physical space, delivering unparalleled clarity across unpredictable lighting variables.
+            Digital files disappear in clouds. Our mission is pure physical permanence. We translate high-resolution data into structural, striking fine-art print artifacts built to withstand time.
           </p>
         </motion.div>
       </section>

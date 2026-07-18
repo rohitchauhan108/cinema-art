@@ -10,6 +10,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Loader from "@/components/ui/Loader";
 import Frames from "@/components/sections/Frames";
+import Slider from "@/components/sections/Slider";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Navbar />
       <Hero3D />
       <Marquee />
+      <Slider/>
       <Frames/>
       <Equipment />
       <Features />

@@ -237,79 +237,6 @@ const accessories = [
       },
     ],
   },
-  {
-    id: "fujifilm-lens-cap-flcp-58-ii",
-    name: "FUJIFILM Lens Cap FLCP-58 II",
-    category: "lens cap",
-    brand: "Fujifilm",
-    price: "₹599",
-    slug: "fujifilm-lens-cap-flcp-58-ii",
-    status: "In Stock",
-    colors: [
-      {
-        name: "All",
-        images: ["/accessories/fujifilm/Lens-Cap/LensCap2.webp"],
-      },
-    ],
-    overview:
-      "It prevents dust and dirt from adhering to the lens and protects the lens from scratches and dirt.",
-    specs: [
-      {
-        category: "Accessory Specifications",
-        items: [
-          {
-            label: "Model Number",
-            value: "FLCP-58 II",
-          },
-          {
-            label: "Accessory Type",
-            value: "Front Lens Cap",
-          },
-          {
-            label: "Brand",
-            value: "Fujifilm",
-          },
-        ],
-      },
-      {
-        category: "Compatibility",
-        items: [
-          {
-            label: "Compatible Models",
-            value:
-              "GF30mmF3.5 R WR, XF14mmF2.8 R, XF23mmF1.4 R LM WR, XF33mmF1.4 R LM WR, XF18-55mmF2.8-4 R LM OIS, XC16-50mmF3.5-5.6 OIS, XC16-50mmF3.5-5.6 OIS II, XC50-230mmF4.5-6.7 OIS, XC50-230mmF4.5-6.7 OIS II",
-          },
-        ],
-      },
-      {
-        category: "Manufacturer Information",
-        items: [
-          {
-            label: "Country of Origin",
-            value: "China",
-          },
-          {
-            label: "Manufacturer",
-            value: "Fujifilm Corporation",
-          },
-          {
-            label: "Manufacturer Address",
-            value:
-              "26-30, Nishiazabu 2-Chome, Minato-Ku, Tokyo 106-8620, Japan",
-          },
-          {
-            label: "Importer",
-            value: "FUJIFILM India Private Limited",
-          },
-          {
-            label: "Importer Address",
-            value:
-              "Business Centre Office No. 521, Level V, Caddie Commercial Tower, Hospitality District, Aerocity, IGI Airport, New Delhi - 110037",
-          },
-        ],
-      },
-    ],
-  },
 
   //   microphone
 
@@ -950,35 +877,98 @@ const accessories = [
     ],
   },
   {
-    id: "nikon-media-ssd-1tb",
-    name: "Nikon Direct-Stream Portable SSD 1TB",
+    id: "firecuda-x-vault-gaming-hard-drive",
+    name: "FireCuda X Vault Gaming Hard Drive",
     category: "Harddisk & SSD",
     // brand: "Nikon",
     price: "₹12,500",
-    slug: "nikon-media-ssd-1tb",
+    slug: "firecuda-x-vault-gaming-hard-drive",
     status: "In Stock",
     colors: [
       {
         name: "All",
         images: [
-          "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTOr_4jPiiO0dXJX8ytLffQ1kyxpPjs5cv4XzzG6BrHB2-QfpFUCg24CLb_gsIgS57TKrxBWaUKL_3jFHGxlb2vA9zI09s5",
+          "/accessories/hard-disk-ssd/1.png",
+          "/accessories/hard-disk-ssd/2.png",
+          "/accessories/hard-disk-ssd/3.png",
+          "/accessories/hard-disk-ssd/4.png",
+          "/accessories/hard-disk-ssd/5.png",
+          "/accessories/hard-disk-ssd/6.png",
         ],
       },
     ],
     overview:
-      "A swift, bus-powered pocket-sized external drive calibrated for lightning-fast high bit-rate camera video exports.",
+      "Built for gamers and streamers, FireCuda X Vault offers massive capacity, bus-powered transportability, and convenient single-cable connectivity. Vault’s striking design with customizable RGB illumination and Windows Dynamic Lighting keeps your vibe in check and syncs to your rig’s energy. Plus, level up protection for your gameplay footage and stored files with smart backup software and no-cost Rescue Data Recovery Services.",
     specs: [
       {
-        category: "Accessory Specifications",
+        category: "General Specifications",
         items: [
-          { label: "Model Number", value: "NK-SSD-1TB" },
-          { label: "Accessory Type", value: "External Solid State Drive" },
-          { label: "Brand", value: "Nikon" },
+          { label: "Product Name", value: "Seagate FireCuda Vault" },
+          { label: "Product Type", value: "External Gaming Hard Drive" },
+          { label: "Brand", value: "Seagate" },
+          { label: "Storage Capacity", value: "8TB" },
+          { label: "Interface", value: "USB Type-C" },
+          {
+            label: "Power Source",
+            value: "Bus-Powered (No External Power Adapter Required)",
+          },
         ],
       },
       {
-        category: "Performance",
-        items: [{ label: "Transfer Speed", value: "Up to 1050 MB/s" }],
+        category: "Features",
+        items: [
+          {
+            label: "RGB Lighting",
+            value: "Customizable RGB with Windows Dynamic Lighting Support",
+          },
+          { label: "Gaming Compatibility", value: "Designed for Xbox on PC" },
+          {
+            label: "Storage Use",
+            value:
+              "Ideal for large game libraries, gameplay recordings, and content creation files",
+          },
+          {
+            label: "Software",
+            value:
+              "Smart software for enhanced protection and drive management",
+          },
+          {
+            label: "Bonus Offers",
+            value:
+              "1-Month Xbox Game Pass Ultimate for PC and 2-Month Adobe Creative Cloud Plan",
+          },
+        ],
+      },
+      {
+        category: "Physical Specifications",
+        items: [
+          {
+            label: "Dimensions",
+            value: "198 × 53.2 × 132 mm (7.795 × 2.094 × 5.197 in)",
+          },
+          { label: "Weight", value: "1290 g (2.844 lb)" },
+        ],
+      },
+      {
+        category: "System Requirements",
+        items: [
+          {
+            label: "Operating System",
+            value: "Compatible with most Windows systems",
+          },
+          {
+            label: "USB Requirement",
+            value: "USB Type-C port with at least 15W power output",
+          },
+        ],
+      },
+      {
+        category: "In the Box",
+        items: [
+          { label: "Drive", value: "Seagate FireCuda Vault" },
+          { label: "Cable", value: "0.5 m USB Type-C Cable" },
+          { label: "Documentation", value: "Quick Install Guide" },
+        ],
       },
     ],
   },
@@ -993,51 +983,50 @@ const accessories = [
     colors: [
       {
         name: "All",
-        images: [
-          "/accessories/sony/cable/cable.jpg",
-        ],
+        images: ["/accessories/sony/cable/cable.jpg"],
       },
     ],
     overview:
       "Extend your camera's Multi Interface (MI) Shoe connection with the Sony VMC-SA1 Shoe Audio Extension Cable. Designed for creators using compatible Sony audio accessories such as XLR adapters, this 600mm extension cable offers greater flexibility for mounting microphones and audio equipment while maintaining a secure digital connection for professional-quality sound.",
     specs: [
-  {
-    category: "Accessory Specifications",
-    items: [
-      { label: "Model Number", value: "VMC-SA1" },
-      { label: "Accessory Type", value: "Shoe Audio Extension Cable" },
-      { label: "Brand", value: "Sony" },
-      { label: "Cable Length", value: "600 mm (23.6 in)" },
-      { label: "Weight", value: "93 g" },
+      {
+        category: "Accessory Specifications",
+        items: [
+          { label: "Model Number", value: "VMC-SA1" },
+          { label: "Accessory Type", value: "Shoe Audio Extension Cable" },
+          { label: "Brand", value: "Sony" },
+          { label: "Cable Length", value: "600 mm (23.6 in)" },
+          { label: "Weight", value: "93 g" },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Devices",
+            value:
+              "Sony cameras and accessories with Multi Interface (MI) Shoe",
+          },
+          {
+            label: "Supports",
+            value: "Sony XLR adapters and MI Shoe audio accessories",
+          },
+        ],
+      },
+      {
+        category: "Physical Dimensions",
+        items: [
+          {
+            label: "Camera Side Dimensions",
+            value: "32.0 × 24.1 × 22.0 mm",
+          },
+          {
+            label: "Accessory Side Dimensions",
+            value: "34.5 × 32.8 × 25.6 mm",
+          },
+        ],
+      },
     ],
-  },
-  {
-    category: "Compatibility",
-    items: [
-      {
-        label: "Compatible Devices",
-        value: "Sony cameras and accessories with Multi Interface (MI) Shoe",
-      },
-      {
-        label: "Supports",
-        value: "Sony XLR adapters and MI Shoe audio accessories",
-      },
-    ],
-  },
-  {
-    category: "Physical Dimensions",
-    items: [
-      {
-        label: "Camera Side Dimensions",
-        value: "32.0 × 24.1 × 22.0 mm",
-      },
-      {
-        label: "Accessory Side Dimensions",
-        value: "34.5 × 32.8 × 25.6 mm",
-      },
-    ],
-  },
-],
   },
   {
     id: "52mm-nc-filter",
@@ -1050,48 +1039,46 @@ const accessories = [
     colors: [
       {
         name: "All",
-        images: [
-          "/accessories/nikon/filter/filter1.webp",
-        ],
+        images: ["/accessories/nikon/filter/filter1.webp"],
       },
     ],
     overview:
       "These filters serve as lens protectors and do not affect color balance. A neutral clear, multi-coated filter that helps to reduce flare and ghosting as well as protecting the front lens surface from the elements. These filters do not affect color balance. Multilayer coating diminishes internal reflections and improves color rendition.",
     specs: [
-  {
-    category: "Filter Specifications",
-    items: [
-      { label: "SKU", value: "FTA07701" },
-      { label: "Accessory Type", value: "Lens Filter" },
-      { label: "Brand", value: "Nikon" },
+      {
+        category: "Filter Specifications",
+        items: [
+          { label: "SKU", value: "FTA07701" },
+          { label: "Accessory Type", value: "Lens Filter" },
+          { label: "Brand", value: "Nikon" },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Lenses",
+            value:
+              "NIKKOR Z 28mm f/2.8 (SE), NIKKOR Z 24-50mm f/4-6.3, AF-S DX NIKKOR 55-200mm f/4-5.6G ED VR II, AF-S DX VR Zoom-Nikkor ED 55-200mm f/4-5.6G, AF-S DX Zoom-Nikkor ED 18-55mm f/3.5-5.6G, AF-S DX NIKKOR 18-55mm f/3.5-5.6G VR II",
+          },
+          {
+            label: "Additional Compatible Lenses",
+            value:
+              "AF-S NIKKOR 800mm f/5.6E FL ED VR, AF-S DX Micro NIKKOR 40mm f/2.8G, AF-S NIKKOR 200mm f/2G ED VR II, AF-S NIKKOR 200-400mm f/4G ED VR II, AF-S NIKKOR 300mm f/2.8G ED VR II, AF-S DX Micro NIKKOR 85mm f/3.5G ED VR",
+          },
+          {
+            label: "More Compatible Lenses",
+            value:
+              "AF-S DX NIKKOR 35mm f/1.8G, AF NIKKOR 28mm f/2.8D, AF-S VR NIKKOR 200mm f/2G IF-ED, AF-S DX Zoom-NIKKOR 18-55mm f/3.5-5.6G ED II, AF NIKKOR 50mm f/1.4D, AF-S VR Zoom-NIKKOR 200-400mm f/4G IF-ED",
+          },
+          {
+            label: "Other Compatible Lenses",
+            value:
+              "AF-S NIKKOR 500mm f/4G ED VR, AF-S DX Zoom-NIKKOR 55-200mm f/4-5.6G ED, AF-S NIKKOR 600mm f/4G ED VR, AF-S NIKKOR 400mm f/2.8G ED VR, AF-S VR NIKKOR 300mm f/2.8G IF-ED, AF NIKKOR 50mm f/1.8D, AF NIKKOR 24mm f/2.8D, AF NIKKOR 35mm f/2D",
+          },
+        ],
+      },
     ],
-  },
-  {
-    category: "Compatibility",
-    items: [
-      {
-        label: "Compatible Lenses",
-        value:
-          "NIKKOR Z 28mm f/2.8 (SE), NIKKOR Z 24-50mm f/4-6.3, AF-S DX NIKKOR 55-200mm f/4-5.6G ED VR II, AF-S DX VR Zoom-Nikkor ED 55-200mm f/4-5.6G, AF-S DX Zoom-Nikkor ED 18-55mm f/3.5-5.6G, AF-S DX NIKKOR 18-55mm f/3.5-5.6G VR II",
-      },
-      {
-        label: "Additional Compatible Lenses",
-        value:
-          "AF-S NIKKOR 800mm f/5.6E FL ED VR, AF-S DX Micro NIKKOR 40mm f/2.8G, AF-S NIKKOR 200mm f/2G ED VR II, AF-S NIKKOR 200-400mm f/4G ED VR II, AF-S NIKKOR 300mm f/2.8G ED VR II, AF-S DX Micro NIKKOR 85mm f/3.5G ED VR",
-      },
-      {
-        label: "More Compatible Lenses",
-        value:
-          "AF-S DX NIKKOR 35mm f/1.8G, AF NIKKOR 28mm f/2.8D, AF-S VR NIKKOR 200mm f/2G IF-ED, AF-S DX Zoom-NIKKOR 18-55mm f/3.5-5.6G ED II, AF NIKKOR 50mm f/1.4D, AF-S VR Zoom-NIKKOR 200-400mm f/4G IF-ED",
-      },
-      {
-        label: "Other Compatible Lenses",
-        value:
-          "AF-S NIKKOR 500mm f/4G ED VR, AF-S DX Zoom-NIKKOR 55-200mm f/4-5.6G ED, AF-S NIKKOR 600mm f/4G ED VR, AF-S NIKKOR 400mm f/2.8G ED VR, AF-S VR NIKKOR 300mm f/2.8G IF-ED, AF NIKKOR 50mm f/1.8D, AF NIKKOR 24mm f/2.8D, AF NIKKOR 35mm f/2D",
-      },
-    ],
-  },
-],
   },
   {
     id: "dji-rs-3-mini",
@@ -1104,64 +1091,1730 @@ const accessories = [
     colors: [
       {
         name: "All",
-        images: [
-          "/accessories/gimbal/gimbal1.jpg",
-        ],
+        images: ["/accessories/gimbal/gimbal1.jpg"],
       },
     ],
     overview:
       "The DJI RS 3 Mini is a compact and lightweight 3-axis gimbal designed for mirrorless cameras, delivering professional-grade stabilization in a travel-friendly form. Weighing just 795g, it supports camera setups up to 2kg, features native vertical shooting, Bluetooth shutter control, and DJI's 3rd-generation stabilization algorithm for smooth, cinematic footage. Ideal for content creators, filmmakers, and vloggers on the go.",
     specs: [
-  {
-    category: "Gimbal Specifications",
-    items: [
-      { label: "Model Number", value: "DJI RS 3 Mini" },
-      { label: "Product Type", value: "3-Axis Camera Gimbal Stabilizer" },
-      { label: "Brand", value: "DJI" },
-      { label: "Tested Payload", value: "0.4–2 kg (0.8–4.4 lbs)" },
-      { label: "Weight", value: "795 g (Portrait) / 850 g (Horizontal)" },
-    ],
-  },
-  {
-    category: "Battery & Performance",
-    items: [
-      { label: "Battery Capacity", value: "2450 mAh (17.64 Wh)" },
-      { label: "Battery Type", value: "18650 Li-ion 2S" },
-      { label: "Operating Time", value: "Up to 10 hours" },
-      { label: "Charging Time", value: "Approx. 2.5 hours" },
-      { label: "Charging Port", value: "USB Type-C (5V/2A)" },
-    ],
-  },
-  {
-    category: "Connectivity",
-    items: [
-      { label: "Wireless Connection", value: "Bluetooth 5.1" },
-      { label: "Accessory Ports", value: "1/4\"-20 Mount, NATO Port, USB-C RSS Camera Control Port" },
-      { label: "Mobile App", value: "DJI Ronin (iOS 11.0+, Android 7.0+)" },
-    ],
-  },
-  {
-    category: "Physical Specifications",
-    items: [
-      { label: "Folded Dimensions", value: "323 × 195 × 98 mm" },
-      { label: "Unfolded Dimensions", value: "180 × 159 × 296 mm" },
-      { label: "Operating Temperature", value: "-10°C to 45°C (14°F to 113°F)" },
-    ],
-  },
-  {
-    category: "Compatibility",
-    items: [
       {
-        label: "Compatible Cameras",
-        value: "Mirrorless cameras from Sony, Canon, Nikon, Panasonic, Fujifilm, and other supported models (up to 2 kg payload)",
+        category: "Gimbal Specifications",
+        items: [
+          { label: "Model Number", value: "DJI RS 3 Mini" },
+          { label: "Product Type", value: "3-Axis Camera Gimbal Stabilizer" },
+          { label: "Brand", value: "DJI" },
+          { label: "Tested Payload", value: "0.4–2 kg (0.8–4.4 lbs)" },
+          { label: "Weight", value: "795 g (Portrait) / 850 g (Horizontal)" },
+        ],
       },
       {
-        label: "Shooting Modes",
-        value: "Horizontal & Native Vertical Shooting",
+        category: "Battery & Performance",
+        items: [
+          { label: "Battery Capacity", value: "2450 mAh (17.64 Wh)" },
+          { label: "Battery Type", value: "18650 Li-ion 2S" },
+          { label: "Operating Time", value: "Up to 10 hours" },
+          { label: "Charging Time", value: "Approx. 2.5 hours" },
+          { label: "Charging Port", value: "USB Type-C (5V/2A)" },
+        ],
+      },
+      {
+        category: "Connectivity",
+        items: [
+          { label: "Wireless Connection", value: "Bluetooth 5.1" },
+          {
+            label: "Accessory Ports",
+            value: '1/4"-20 Mount, NATO Port, USB-C RSS Camera Control Port',
+          },
+          { label: "Mobile App", value: "DJI Ronin (iOS 11.0+, Android 7.0+)" },
+        ],
+      },
+      {
+        category: "Physical Specifications",
+        items: [
+          { label: "Folded Dimensions", value: "323 × 195 × 98 mm" },
+          { label: "Unfolded Dimensions", value: "180 × 159 × 296 mm" },
+          {
+            label: "Operating Temperature",
+            value: "-10°C to 45°C (14°F to 113°F)",
+          },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Cameras",
+            value:
+              "Mirrorless cameras from Sony, Canon, Nikon, Panasonic, Fujifilm, and other supported models (up to 2 kg payload)",
+          },
+          {
+            label: "Shooting Modes",
+            value: "Horizontal & Native Vertical Shooting",
+          },
+        ],
       },
     ],
   },
-],
+  {
+    id: "tripod-ballhead",
+    name: "Tripod + Ballhead",
+    category: "Tripod",
+    brand: "Dji",
+    price: "$49.99",
+    slug: "tripod-ballhead",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/accessories/gopro/tripod/tripod-ballhead/1.webp",
+          "/accessories/gopro/tripod/tripod-ballhead/2.webp",
+          "/accessories/gopro/tripod/tripod-ballhead/3.webp",
+          "/accessories/gopro/tripod/tripod-ballhead/4.webp",
+          "/accessories/gopro/tripod/tripod-ballhead/5.webp",
+          "/accessories/gopro/tripod/tripod-ballhead/6.webp",
+          "/accessories/gopro/tripod/tripod-ballhead/7.webp",
+          "/accessories/gopro/tripod/tripod-ballhead/8.webp",
+          "/accessories/gopro/tripod/tripod-ballhead/9.webp",
+          "/accessories/gopro/tripod/tripod-ballhead/10.webp",
+        ],
+      },
+    ],
+    overview:
+      "This compact, waterproof aluminum tripod features adjustable legs for stable shots on uneven terrain, sand, or water. Its 360° rotating ball head tilts up to 90° and locks securely for precise angles, while the rubberized mount keeps your camera firmly in place. The foldable legs double as a comfortable hand grip, and the tripod is compatible with 1/4-20 extension poles for capturing invisible pole shots with 360 cameras.",
+    specs: [
+      {
+        category: "Product Specifications",
+        items: [
+          { label: "Product Type", value: "Compact Tripod with Ball Head" },
+          { label: "Brand", value: "GoPro" },
+          { label: "Included Accessories", value: "Tripod and Ball Head" },
+          { label: "Build", value: "Durable and Waterproof Construction" },
+        ],
+      },
+      {
+        category: "Tripod Features",
+        items: [
+          { label: "Leg Sections", value: "2-Section Telescoping Legs" },
+          { label: "Maximum Leg Extension", value: "Up to 9 in (20 cm)" },
+          { label: "Collapsed Length", value: "6 in (15 cm)" },
+          {
+            label: "Leg Positions",
+            value:
+              "Independently extendable, angle-locking, and flat-lay design for uneven terrain",
+          },
+        ],
+      },
+      {
+        category: "Ball Head",
+        items: [
+          { label: "Rotation", value: "360° Pan Rotation" },
+          { label: "Tilt Range", value: "Up to 90°" },
+          { label: "Locking Mechanism", value: "Secure Ball Head Lock" },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Extension Pole Support",
+            value:
+              'Compatible with 1/4"-20 extension poles (mounts to ball head or tripod base)',
+          },
+          {
+            label: "Tripod Adapter",
+            value: 'Compatible with 1/4"-20 Tripod Adapter (sold separately)',
+          },
+          {
+            label: "Camera Compatibility",
+            value:
+              'Works with GoPro cameras and compatible 1/4"-20 mounted devices',
+          },
+          {
+            label: "Legacy GoPro Support",
+            value:
+              "Supports older GoPro cameras and accessories using the optional Tripod Adapter",
+          },
+        ],
+      },
+      {
+        category: "Warranty",
+        items: [
+          {
+            label: "Warranty",
+            value: "Backed by GoPro's Lifetime Warranty",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "sandisk-extreme-256GB-microsdx",
+    name: "SanDisk Extreme® 256GB microSDXC™",
+    category: "Sd Card",
+    brand: "",
+    price: "$82.99",
+    slug: "sandisk-extreme-256GB-microsdx",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/sd-card/1.webp"],
+      },
+    ],
+    overview:
+      "This memory card delivers fast write speed up to 60MB/s for burst photo capture, recording 4K Video and Full HD video (1080p) and fast read speed up to 160MB/s for quicker data transfer.",
+    specs: [
+      {
+        category: "Memory Card Specifications",
+        items: [
+          { label: "Product Type", value: "microSDXC Memory Card" },
+          { label: "Brand", value: "SanDisk" },
+          { label: "Speed Class", value: "UHS Speed Class 1 (U3), Class 10" },
+          {
+            label: "Video Support",
+            value:
+              "Optimized for 4K UHD, Full HD (1080p), and other GoPro-supported video modes",
+          },
+        ],
+      },
+      {
+        category: "Performance",
+        items: [
+          {
+            label: "Recommended Use",
+            value:
+              "High-resolution photo capture and 4K/Full HD video recording",
+          },
+          {
+            label: "GoPro Compatibility",
+            value: "Verified by GoPro for compatibility with GoPro cameras",
+          },
+        ],
+      },
+      {
+        category: "Durability",
+        items: [
+          { label: "Water Resistance", value: "Waterproof" },
+          {
+            label: "Operating Temperature",
+            value: "-13°F to 185°F (-25°C to 85°C)",
+          },
+          { label: "Shock Resistance", value: "Shockproof" },
+          { label: "X-Ray Resistance", value: "X-Ray Proof" },
+        ],
+      },
+      {
+        category: "Software & Warranty",
+        items: [
+          {
+            label: "Recovery Software",
+            value:
+              "RescuePRO® Deluxe data recovery software (downloadable offer)",
+          },
+          {
+            label: "Warranty",
+            value: "Lifetime Limited Warranty",
+          },
+          {
+            label: "Seller of Record",
+            value: "Western Digital Technologies, Inc. (Americas)",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "light-mod",
+    name: "Light Mod",
+    category: "Lightning Solution",
+    brand: "Dji",
+    price: "$59.99",
+    slug: "light-mod",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/accessories/lightning-solution/1.webp",
+          "/accessories/lightning-solution/2.webp",
+          "/accessories/lightning-solution/3.webp",
+          "/accessories/lightning-solution/4.webp",
+          "/accessories/lightning-solution/5.webp",
+          "/accessories/lightning-solution/6.webp",
+        ],
+      },
+    ],
+    overview:
+      "Add compact yet powerful LED lighting to your next adventure. With Light Mod, you can illuminate your subject with wide, smooth, even light and capture ultra crisp footage. Light Mod attaches to HERO cameras via Media Mod (sold separately), or works as a handy standalone light for use with GoPro mounts.",
+    specs: [
+      {
+        category: "Light Specifications",
+        items: [
+          { label: "Product Type", value: "LED Light Mod" },
+          { label: "Brand", value: "GoPro" },
+          {
+            label: "Included Accessories",
+            value: "Light Mod, Light Diffuser, 2-Finger Adapter, USB-C Cable",
+          },
+          {
+            label: "Brightness Levels",
+            value: "4 Adjustable Levels (Up to 200 Lumens)",
+          },
+          { label: "Water Resistance", value: "Waterproof up to 33 ft (10 m)" },
+        ],
+      },
+      {
+        category: "Performance",
+        items: [
+          { label: "Maximum Brightness", value: "200 Lumens (Overdrive Mode)" },
+          { label: "Level 3", value: "125 Lumens, 120 Lux @ 1 m" },
+          { label: "Level 2", value: "60 Lumens" },
+          { label: "Level 1", value: "20 Lumens" },
+          { label: "Overdrive Duration", value: "Up to 30 Seconds" },
+          { label: "Strobe Mode", value: "Supported" },
+        ],
+      },
+      {
+        category: "Battery & Runtime",
+        items: [
+          { label: "Battery Type", value: "Built-In Rechargeable Battery" },
+          { label: "Maximum Runtime", value: "Up to 6 Hours" },
+          { label: "Runtime (Level 3)", value: "Up to 1 Hour" },
+          { label: "Runtime (Level 2)", value: "Up to 2 Hours" },
+          { label: "Runtime (Level 1)", value: "Up to 6 Hours" },
+          {
+            label: "Battery Note",
+            value:
+              "Battery life may vary depending on usage and environmental conditions",
+          },
+        ],
+      },
+      {
+        category: "Lighting Characteristics",
+        items: [
+          { label: "Color Temperature", value: "5700K (Without Diffuser)" },
+          { label: "Color Rendering Index (CRI)", value: "90+" },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Camera Compatibility",
+            value:
+              "Connects to GoPro HERO cameras via Media Mod (sold separately)",
+          },
+          {
+            label: "Standalone Use",
+            value: "Can be used independently with compatible GoPro mounts",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "sandisk-usb-c-flash-drive-64gb",
+    name: "SANDISK USB-C™ Flash Drive - 64GB",
+    category: "Pen Drive",
+    brand: "SANDISK",
+    price: "$19.99",
+    slug: "sandisk-usb-c-flash-drive-64gb",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/accessories/pen-drive/sandisk/sandisk1.png",
+          "/accessories/pen-drive/sandisk/sandisk2.png",
+          "/accessories/pen-drive/sandisk/sandisk3.png",
+          "/accessories/pen-drive/sandisk/sandisk4.png",
+          "/accessories/pen-drive/sandisk/sandisk5.png",
+          "/accessories/pen-drive/sandisk/sandisk6.webp",
+          "/accessories/pen-drive/sandisk/sandisk7.webp",
+          "/accessories/pen-drive/sandisk/sandisk8.webp",
+        ],
+      },
+    ],
+    overview:
+      "Introducing the SANDISK USB-C™ Flash Drive - designed for the way you use devices today — instant and ready for anything. A reversible USB-C™ connector connects easily to modern USB-C™ laptops, tablets, and more in either direction. No flipping. No adapters. Connect and go. Store up to 60,000 high-res photos4 with 256GB1 capacity in sleek, thumb-sized storage that simply works.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "USB-C Flash Drive" },
+          { label: "Brand", value: "SanDisk" },
+          { label: "Capacity", value: "64GB" },
+          { label: "Interface", value: "USB 3.2 Gen 1" },
+          { label: "Model Number", value: "SDCZB-064G-G46" },
+          { label: "Warranty", value: "3-Year Limited Warranty" },
+        ],
+      },
+      {
+        category: "Performance",
+        items: [
+          { label: "Sequential Read Speed", value: "Up to 250MB/s" },
+          {
+            label: "Storage Capacity",
+            value: "Stores up to 60,000 high-resolution photos (256GB model)",
+          },
+        ],
+      },
+      {
+        category: "Design & Build",
+        items: [
+          { label: "Dimensions", value: '1.94" × 0.81" × 0.46"' },
+          { label: "Weight", value: "6g" },
+          {
+            label: "Connector",
+            value: "Reversible USB-C™ connector",
+          },
+          {
+            label: "Design",
+            value: "Thumb-size design for convenient portable storage",
+          },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          { label: "macOS", value: "macOS 12+ (Monterey)" },
+          { label: "Windows", value: "Windows® 10 & Windows® 11" },
+        ],
+      },
+      {
+        category: "Package Contents",
+        items: [
+          { label: "Included in the Box", value: "SanDisk USB-C™ Flash Drive" },
+        ],
+      },
+      {
+        category: "Available Models",
+        items: [
+          { label: "64GB", value: "SDCZB-064G-G46" },
+          { label: "128GB", value: "SDCZB-128G-G46" },
+          { label: "256GB", value: "SDCZB-256G-G46" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "sandisk-extreme-pro-flash-drive-with-usb-a-512gb",
+    name: "SanDisk Extreme PRO Flash Drive with USB-A - 512GB",
+    category: "Pen Drive",
+    brand: "SANDISK",
+    price: "$134.99",
+    slug: "sandisk-extreme-pro-flash-drive-with-usb-a-512gb",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/accessories/pen-drive/sandisk/1.png",
+          "/accessories/pen-drive/sandisk/2.png",
+          "/accessories/pen-drive/sandisk/3.png",
+          "/accessories/pen-drive/sandisk/4.webp",
+        ],
+      },
+    ],
+    overview:
+      "Custom built for intense file storage and transfers, the SanDisk Extreme PRO® Flash Drive with USB-A delivers solid performance so you can set your own work pace. This over-achiever boasts rapid read speeds up to 1,000MB/s2 and write speeds up to 900MB/s.2 With USB 3.2 Gen 2 speeds, you can transfer 200x faster than standard USB 2.0 drives.5 For professionals on-the-go with demanding workflows, match your sleek style with a premium metal design and convenient keyring hole to clip your favorite bag or briefcase.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "USB-A Flash Drive" },
+          { label: "Brand", value: "SanDisk" },
+          { label: "Capacity", value: "512GB" },
+          { label: "Interface", value: "USB 3.2 Gen 2" },
+          { label: "Model Number", value: "SDCZ820-512G-G46" },
+          { label: "Warranty", value: "Lifetime Limited Warranty" },
+        ],
+      },
+      {
+        category: "Performance",
+        items: [
+          {
+            label: "Transfer Speed",
+            value: "SSD-like transfer speeds of up to 1000MB/s",
+          },
+          {
+            label: "Maximum Capacity",
+            value: "Available in capacities up to 2TB",
+          },
+          {
+            label: "Backup Support",
+            value:
+              "Fast backups across compatible devices with USB-A connector",
+          },
+        ],
+      },
+      {
+        category: "Software & Security",
+        items: [
+          {
+            label: "File Management",
+            value:
+              "Works with the SanDisk Memory Zone™ app for transferring, organizing, and backing up files",
+          },
+          {
+            label: "Supported Platforms",
+            value:
+              "SanDisk Memory Zone™ app available for compatible macOS and Windows® computers",
+          },
+          {
+            label: "Security",
+            value: "128-bit AES password protection encryption",
+          },
+        ],
+      },
+      {
+        category: "Design & Build",
+        items: [
+          { label: "Weight", value: "28g" },
+          {
+            label: "Connector",
+            value: "USB-A",
+          },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          { label: "macOS", value: "macOS 12+" },
+          { label: "Windows", value: "Windows® 10+" },
+        ],
+      },
+      {
+        category: "Package Contents",
+        items: [
+          {
+            label: "Included in the Box",
+            value: "SanDisk Extreme PRO Flash Drive with USB-A",
+          },
+        ],
+      },
+      {
+        category: "Available Models",
+        items: [
+          { label: "256GB", value: "SDCZ820-256G-G46" },
+          { label: "512GB", value: "SDCZ820-512G-G46" },
+          { label: "1TB", value: "SDCZ820-1T00-G46" },
+          { label: "2TB", value: "SDCZ820-2T00-G46" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "sandisk-extreme-pro-dual-drive-256gb",
+    name: "SanDisk Extreme PRO Dual Drive - 256GB",
+    category: "Pen Drive",
+    brand: "SANDISK",
+    price: "$76.99",
+    slug: "sandisk-extreme-pro-dual-drive-256gb",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/accessories/pen-drive/sandisk/6.png",
+          "/accessories/pen-drive/sandisk/7.png",
+          "/accessories/pen-drive/sandisk/8.webp",
+          "/accessories/pen-drive/sandisk/9.webp",
+        ],
+      },
+    ],
+    overview:
+      "Amplify your data management with the SanDisk Extreme PRO Dual Drive, boasting read speeds up to 1,000MB/s2 and write speeds up to 900MB/s.2 Transition seamlessly between your USB-C™ and USB-A devices, and store tons of content with up to 2TB1 capacity. The SanDisk Extreme PRO Dual Drive is where rugged construction meets state-of-the-art data protection and convenience — for on-the-go professionals that need high performance and portability.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Dual USB Flash Drive" },
+          { label: "Brand", value: "SanDisk" },
+          { label: "Capacity", value: "256GB" },
+          { label: "Interface", value: "USB 3.2 Gen 2" },
+          { label: "Connectors", value: "USB-C & USB-A" },
+          { label: "Warranty", value: "Lifetime Limited Warranty" },
+        ],
+      },
+      {
+        category: "Performance",
+        items: [
+          { label: "Sequential Read Speed", value: "Up to 1000MB/s" },
+          { label: "Sequential Write Speed", value: "Up to 900MB/s" },
+          {
+            label: "Storage",
+            value:
+              "High-capacity flash storage for creative projects and critical documents",
+          },
+          {
+            label: "Performance Benefit",
+            value:
+              "Fast read and write speeds help accelerate file transfers and backups",
+          },
+        ],
+      },
+      {
+        category: "Design & Build",
+        items: [
+          { label: "Dimensions", value: '3.15" × 0.72" × 0.42"' },
+          { label: "Weight", value: "23g" },
+          {
+            label: "Construction",
+            value: "Durable premium metal design",
+          },
+          {
+            label: "Portability",
+            value: "Compact dual-drive design for carrying files anywhere",
+          },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          { label: "Windows", value: "Windows® 10+" },
+          { label: "macOS", value: "macOS v12+" },
+          { label: "USB Type-A Devices", value: "Supported" },
+          { label: "USB Type-C™ Devices", value: "Supported" },
+        ],
+      },
+      {
+        category: "Package Contents",
+        items: [
+          {
+            label: "Included in the Box",
+            value: "SanDisk Extreme PRO Dual Drive",
+          },
+        ],
+      },
+      {
+        category: "Available Models",
+        items: [
+          { label: "256GB", value: "SDDDE1-256G-G46" },
+          { label: "512GB", value: "SDDDE1-512G-G46" },
+          { label: "1TB", value: "SDDDE1-1T00-G46" },
+          { label: "2TB", value: "SDDDE1-2T00-G46" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "fujifilm-protector-filter-prf-43",
+    name: "FUJIFILM PROTECTOR FLITER PRF-43",
+    category: "Filter",
+    brand: "Fujifilm",
+    price: "₹4,199",
+    slug: "fujifilm-protector-filter-prf-43",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/fujifilm/filter/1.webp"],
+      },
+    ],
+    overview:
+      "A completely colorless and transparent lens protection filter to prevent the lens from being damaged by dust and dirt. – This filter has a “Super EBC coating” that coats multiple layers of thin films. This effectively suppresses light reflection with a surface reflectance of 0.3% or less, allowing the color reproducibility of the lens to be exhibited as it is, supporting ultra-high image quality shooting.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Protective Lens Filter" },
+          { label: "Brand", value: "Fujifilm" },
+          { label: "Model", value: "PRF-43" },
+          { label: "Filter Diameter", value: "Ø43mm" },
+          { label: "Country of Origin", value: "China" },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Lenses",
+            value: "XF23mmF2 R WR / XF35mmF2 R WR / XC35mmF2",
+          },
+        ],
+      },
+      {
+        category: "Manufacturer Information",
+        items: [
+          {
+            label: "Manufacturer",
+            value: "Fujifilm Corporation",
+          },
+          {
+            label: "Manufacturer Address",
+            value:
+              "26-30, Nishiazabu, 2-Chome, Minato-Ku, Tokyo 106-8620, Japan",
+          },
+        ],
+      },
+      {
+        category: "Importer Information",
+        items: [
+          {
+            label: "Importer",
+            value: "FUJIFILM India Private Limited",
+          },
+          {
+            label: "Importer Address",
+            value:
+              "Business Centre Office No. 521, Level V, Caddie Commercial Tower, Hospitality District, Aerocity, IGI Airport, New Delhi - 110037",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "fujifilm-protector-filter-prf-49s",
+    name: "FUJIFILM PROTECTOR FLITER PRF-49S",
+    category: "Filter",
+    brand: "Fujifilm",
+    price: "₹3,999",
+    slug: "fujifilm-protector-filter-prf-49s",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/fujifilm/filter/2.webp"],
+      },
+    ],
+    overview:
+      "A completely colorless and transparent lens protection filter to prevent the lens from being damaged by dust and dirt. – This filter has a “Super EBC coating” that coats multiple layers of thin films. This effectively suppresses light reflection with a surface reflectance of 0.3% or less, allowing the color reproducibility of the lens to be exhibited as it is, supporting ultra-high image quality shooting.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Protective Lens Filter" },
+          { label: "Brand", value: "Fujifilm" },
+          { label: "Model", value: "PRF-49S" },
+          { label: "Filter Diameter", value: "φ49mm" },
+          { label: "Country of Origin", value: "China" },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Lens",
+            value: "XF16mmF2.8 R WR",
+          },
+          {
+            label: "X100 Series Compatibility",
+            value:
+              "Compatible with FUJIFILM X100V, X100F, X100T, X100S, and X100 when used with the separately sold LH-X100 Lens Hood (includes AR-X100 Adapter Ring) or AR-X100 Adapter Ring.",
+          },
+          {
+            label: "X70 Compatibility",
+            value:
+              "Compatible with FUJIFILM X70 when used with the adapter ring included with the separately sold LH-X70 Lens Hood.",
+          },
+        ],
+      },
+      {
+        category: "Manufacturer Information",
+        items: [
+          {
+            label: "Manufacturer",
+            value: "Fujifilm Corporation",
+          },
+          {
+            label: "Manufacturer Address",
+            value:
+              "26-30, Nishiazabu, 2-Chome, Minato-Ku, Tokyo 106-8620, Japan",
+          },
+        ],
+      },
+      {
+        category: "Importer Information",
+        items: [
+          {
+            label: "Importer",
+            value: "FUJIFILM India Private Limited",
+          },
+          {
+            label: "Importer Address",
+            value:
+              "Business Centre Office No. 521, Level V, Caddie Commercial Tower, Hospitality District, Aerocity, IGI Airport, New Delhi - 110037",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "fujifilm-protector-filter-prf-49",
+    name: "FUJIFILM PROTECTOR FLITER PRF-49",
+    category: "Filter",
+    brand: "Fujifilm",
+    price: "₹3,999",
+    slug: "fujifilm-protector-filter-prf-49",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/fujifilm/filter/1.webp"],
+      },
+    ],
+    overview:
+      "A completely colorless and transparent lens protection filter to prevent the lens from being damaged by dust and dirt. – This filter has a “Super EBC coating” that coats multiple layers of thin films. This effectively suppresses light reflection with a surface reflectance of 0.3% or less, allowing the color reproducibility of the lens to be exhibited as it is, supporting ultra-high image quality shooting.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Protective Lens Filter" },
+          { label: "Brand", value: "Fujifilm" },
+          { label: "Model", value: "PRF-49" },
+          { label: "Filter Diameter", value: "Ø49mm" },
+          { label: "Country of Origin", value: "China" },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Models",
+            value: "X100V / X100F / X100T / X100S / X100 / X70",
+          },
+          {
+            label: "X100 Series Installation",
+            value:
+              "Requires the separately sold LH-X100 lens hood (includes AR-X100 adapter ring) or the AR-X100 adapter ring.",
+          },
+          {
+            label: "X70 Installation",
+            value:
+              "Use the adapter ring included with the separately sold LH-X70 lens hood.",
+          },
+        ],
+      },
+      {
+        category: "Manufacturer Information",
+        items: [
+          {
+            label: "Manufacturer",
+            value: "Fujifilm Corporation",
+          },
+          {
+            label: "Manufacturer Address",
+            value:
+              "26-30, Nishiazabu, 2-Chome, Minato-Ku, Tokyo 106-8620, Japan",
+          },
+        ],
+      },
+      {
+        category: "Importer Information",
+        items: [
+          {
+            label: "Importer",
+            value: "FUJIFILM India Private Limited",
+          },
+          {
+            label: "Importer Address",
+            value:
+              "Business Centre Office No. 521, Level V, Caddie Commercial Tower, Hospitality District, Aerocity, IGI Airport, New Delhi - 110037",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "fujifilm-lens-cap-flcp-58-ii",
+    name: "FUJIFILM LENS CAP FLCP-58 II",
+    category: "Leas Rear Cap",
+    brand: "Fujifilm",
+    price: "₹599",
+    slug: "fujifilm-lens-lens-cap-flcp-58-ii",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/fujifilm/cap/1.webp"],
+      },
+    ],
+    overview:
+      "It prevents dust and dirt from adhering to the lens and protects the lens from scratches and dirt.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Front Lens Cap" },
+          { label: "Brand", value: "Fujifilm" },
+          { label: "Model", value: "FLCP-58 II" },
+          { label: "Lens Cap Size", value: "58mm" },
+          { label: "Country of Origin", value: "China" },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Models",
+            value:
+              "GF30mmF3.5 R WR / XF14mmF2.8 R / XF23mmF1.4 R LM WR / XF33mmF1.4 R LM WR / XF18-55mmF2.8-4 R LM OIS / XC16-50mmF3.5-5.6 OIS / XC16-50mmF3.5-5.6 OIS II / XC50-230mmF4.5-6.7 OIS / XC50-230mmF4.5-6.7 OIS II",
+          },
+        ],
+      },
+      {
+        category: "Manufacturer Information",
+        items: [
+          {
+            label: "Manufacturer",
+            value: "Fujifilm Corporation",
+          },
+          {
+            label: "Manufacturer Address",
+            value:
+              "26-30, Nishiazabu, 2-Chome, Minato-Ku, Tokyo 106-8620, Japan",
+          },
+        ],
+      },
+      {
+        category: "Importer Information",
+        items: [
+          {
+            label: "Importer",
+            value: "FUJIFILM India Private Limited",
+          },
+          {
+            label: "Importer Address",
+            value:
+              "Business Centre Office No. 521, Level V, Caddie Commercial Tower, Hospitality District, Aerocity, IGI Airport, New Delhi - 110037",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "fujifilm-lens-cap-rlcp-001",
+    name: "FUJIFILM LENS CAP RLCP-001",
+    category: "Leas Rear Cap",
+    brand: "Fujifilm",
+    price: "₹599",
+    slug: "fujifilm-lens-lens-cap-rlcp-001",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/fujifilm/cap/2.webp"],
+      },
+    ],
+    overview:
+      "It prevents dust and dirt from adhering to the lens and protects the lens from scratches and dirt.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Rear Lens Cap" },
+          { label: "Brand", value: "Fujifilm" },
+          { label: "Model", value: "RLCP-001" },
+          { label: "Mount Compatibility", value: "FUJIFILM X Mount" },
+          { label: "Country of Origin", value: "China" },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Models",
+            value: "All FUJIFILM X Mount Lenses",
+          },
+        ],
+      },
+      {
+        category: "Manufacturer Information",
+        items: [
+          {
+            label: "Manufacturer",
+            value: "Fujifilm Corporation",
+          },
+          {
+            label: "Manufacturer Address",
+            value:
+              "26-30, Nishiazabu, 2-Chome, Minato-Ku, Tokyo 106-8620, Japan",
+          },
+        ],
+      },
+      {
+        category: "Importer Information",
+        items: [
+          {
+            label: "Importer",
+            value: "FUJIFILM India Private Limited",
+          },
+          {
+            label: "Importer Address",
+            value:
+              "Business Centre Office No. 521, Level V, Caddie Commercial Tower, Hospitality District, Aerocity, IGI Airport, New Delhi - 110037",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "fujifilm-body-cap-bcp-002",
+    name: "FUJIFILM BODY CAP BCP-002",
+    category: "Camera Body Cap",
+    brand: "Fujifilm",
+    price: "₹749",
+    slug: "fujifilm-body-cap-bcp-002",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/fujifilm/body-cap/1.webp"],
+      },
+    ],
+    overview:
+      "Prevents light fog, dust, and dust from adhering to the camera body when the lens is not attached.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Camera Body Cap" },
+          { label: "Brand", value: "Fujifilm" },
+          { label: "Model", value: "BCP-002" },
+          { label: "Mount Compatibility", value: "FUJIFILM G Mount" },
+          { label: "Country of Origin", value: "China" },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Models",
+            value: "All FUJIFILM G Mount Camera Bodies",
+          },
+        ],
+      },
+      {
+        category: "Manufacturer Information",
+        items: [
+          {
+            label: "Manufacturer",
+            value: "Fujifilm Corporation",
+          },
+          {
+            label: "Manufacturer Address",
+            value:
+              "26-30, Nishiazabu, 2-Chome, Minato-Ku, Tokyo 106-8620, Japan",
+          },
+        ],
+      },
+      {
+        category: "Importer Information",
+        items: [
+          {
+            label: "Importer",
+            value: "FUJIFILM India Private Limited",
+          },
+          {
+            label: "Importer Address",
+            value:
+              "Business Centre Office No. 521, Level V, Caddie Commercial Tower, Hospitality District, Aerocity, IGI Airport, New Delhi - 110037",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "fujifilm-body-cap-bcp-001",
+    name: "FUJIFILM BODY CAP BCP-001",
+    category: "Camera Body Cap",
+    brand: "Fujifilm",
+    price: "₹749",
+    slug: "fujifilm-body-cap-bcp-001",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/fujifilm/body-cap/2.webp"],
+      },
+    ],
+    overview:
+      "Prevents light fog, dust, and dust from adhering to the camera body when the lens is not attached.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Camera Body Cap" },
+          { label: "Brand", value: "Fujifilm" },
+          { label: "Model", value: "BCP-001" },
+          { label: "Mount Compatibility", value: "FUJIFILM X Mount" },
+          { label: "Country of Origin", value: "China" },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Models",
+            value: "All FUJIFILM X Mount Camera Bodies",
+          },
+        ],
+      },
+      {
+        category: "Manufacturer Information",
+        items: [
+          {
+            label: "Manufacturer",
+            value: "Fujifilm Corporation",
+          },
+          {
+            label: "Manufacturer Address",
+            value:
+              "26-30, Nishiazabu, 2-Chome, Minato-Ku, Tokyo 106-8620, Japan",
+          },
+        ],
+      },
+      {
+        category: "Importer Information",
+        items: [
+          {
+            label: "Importer",
+            value: "FUJIFILM India Private Limited",
+          },
+          {
+            label: "Importer Address",
+            value:
+              "Business Centre Office No. 521, Level V, Caddie Commercial Tower, Hospitality District, Aerocity, IGI Airport, New Delhi - 110037",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "dji-osmo-mobile-8-standrad-combo",
+    name: "DJI Osmo Mobile 8 Standard Combo",
+    category: "Gimbal",
+    brand: "DJI",
+    price: "₹9,590",
+    slug: "dji-osmo-mobile-8-standrad-combo",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/accessories/gimbal/dji/1.jpg",
+          "/accessories/gimbal/dji/2.jpg",
+        ],
+      },
+    ],
+    overview:
+      "Seamless 360° Pan Rotation – Enjoy 360° horizontal rotation for immersive shots. Intelligent tracking lets you follow subjects freely, and the built-in tripod/selfie stick adds more flexibility.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Smartphone Gimbal Stabilizer" },
+          { label: "Brand", value: "DJI" },
+          { label: "Model", value: "Osmo Mobile 8 Standard Combo" },
+          { label: "Dimensions (Unfolded)", value: "288 × 107 × 96 mm" },
+          { label: "Dimensions (Folded)", value: "190 × 95 × 46 mm" },
+          {
+            label: "Weight",
+            value:
+              "Approx. 370 g (Gimbal + Built-in Tripod + Magnetic Phone Clamp + Multifunctional Module)",
+          },
+        ],
+      },
+      {
+        category: "Performance",
+        items: [
+          { label: "Stabilization", value: "3-Axis Gimbal Stabilization" },
+          { label: "Pan Rotation", value: "360° Unlimited Rotation" },
+          { label: "Maximum Control Speed", value: "120°/s" },
+          {
+            label: "Extension Rod",
+            value: "Built-in, up to 215 mm",
+          },
+          {
+            label: "Phone Charging",
+            value: "Supported",
+          },
+        ],
+      },
+      {
+        category: "Battery",
+        items: [
+          { label: "Battery Type", value: "Li-Po 1S" },
+          { label: "Capacity", value: "3350 mAh" },
+          { label: "Battery Energy", value: "12.06 Wh" },
+          { label: "Operating Time", value: "Up to 10 Hours" },
+          { label: "Charging Time", value: "Approx. 2.5 Hours" },
+          { label: "Charging Port", value: "USB-C" },
+        ],
+      },
+      {
+        category: "Phone Compatibility",
+        items: [
+          { label: "Compatible Phone Weight", value: "170–300 g" },
+          { label: "Compatible Phone Thickness", value: "6.9–10 mm" },
+          { label: "Compatible Phone Width", value: "67–84 mm" },
+          { label: "Bottom Mount", value: '1/4"-20 UNC Thread' },
+        ],
+      },
+      {
+        category: "Connectivity & Software",
+        items: [
+          { label: "Wireless", value: "Bluetooth 5.3" },
+          { label: "Companion App", value: "DJI Mimo" },
+        ],
+      },
+      {
+        category: "Key Features",
+        items: [
+          { label: "360° Pan Rotation", value: "Supported" },
+          { label: "Built-in Extension Rod", value: "Yes" },
+          { label: "Built-in Tripod", value: "Yes" },
+          { label: "Magnetic Phone Clamp", value: "Included" },
+          { label: "Multifunctional Module", value: "Included" },
+        ],
+      },
+      {
+        category: "Package Contents",
+        items: [
+          {
+            label: "Included in the Box",
+            value:
+              "Osmo Mobile 8 Gimbal, Magnetic Phone Clamp, Multifunctional Module, Built-in Tripod, USB-C Charging Cable, Storage Pouch, Documentation",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "dji-rs-4-mini-combo",
+    name: "DJI RS 4 Mini Combo",
+    category: "Gimbal",
+    brand: "DJI",
+    price: "₹9,590",
+    slug: "dji-rs-4-mini-combo",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/accessories/gimbal/dji/3.jpg",
+          "/accessories/gimbal/dji/4.jpg",
+          "/accessories/gimbal/dji/5.jpg",
+          "/accessories/gimbal/dji/6.jpg",
+          "/accessories/gimbal/dji/7.jpg",
+          "/accessories/gimbal/dji/8.jpg",
+        ],
+      },
+    ],
+    overview:
+      "**DJI RS 4 Mini Combo** is a lightweight 3-axis camera gimbal that delivers smooth, professional stabilization for mirrorless cameras and smartphones.Featuring intelligent tracking, native vertical shooting, and a 2 kg payload capacity, it's perfect for creators, vloggers, and filmmakers on the go.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "3-Axis Camera Gimbal Stabilizer" },
+          { label: "Brand", value: "DJI" },
+          { label: "Model", value: "RS 4 Mini Combo" },
+          { label: "Tested Payload", value: "0.4–2 kg (0.88–4.4 lbs)" },
+          { label: "Weight", value: "Approx. 890 g (Gimbal Only)" },
+          {
+            label: "Dimensions (Folded)",
+            value: "236 × 64 × 316 mm",
+          },
+          {
+            label: "Dimensions (Unfolded)",
+            value: "175 × 182 × 338 mm",
+          },
+        ],
+      },
+      {
+        category: "Performance",
+        items: [
+          { label: "Stabilization", value: "3-Axis Gimbal Stabilization" },
+          { label: "Pan Rotation", value: "360° Continuous Rotation" },
+          { label: "Tilt Range", value: "-110° to +210°" },
+          { label: "Roll Range", value: "-95° to +235°" },
+          { label: "Maximum Rotation Speed", value: "360°/s (Pan/Tilt/Roll)" },
+          {
+            label: "Vertical Shooting",
+            value: "3rd-Gen Native Vertical Shooting",
+          },
+          { label: "Axis Locks", value: "2nd-Generation Automatic Axis Locks" },
+          { label: "Follow Mode", value: "Responsive Follow Mode" },
+        ],
+      },
+      {
+        category: "Battery",
+        items: [
+          { label: "Battery Type", value: "LiPo 2S" },
+          { label: "Capacity", value: "3100 mAh" },
+          { label: "Battery Energy", value: "22.32 Wh" },
+          { label: "Battery Life", value: "Up to 13 Hours" },
+          { label: "Charging Time", value: "Approx. 1 Hour 50 Minutes" },
+          { label: "Charging Port", value: "USB-C" },
+        ],
+      },
+      {
+        category: "Connectivity",
+        items: [
+          { label: "Wireless", value: "Bluetooth 5.1" },
+          { label: "App Compatibility", value: "DJI Ronin App" },
+          { label: "Supported OS", value: "iOS 14.0+ / Android 9.0+" },
+          {
+            label: "Accessory Ports",
+            value:
+              'NATO Port, 1/4"-20 Mounting Hole, RSS Camera Control (USB-C), Pogo Pin',
+          },
+        ],
+      },
+      {
+        category: "Key Features",
+        items: [
+          {
+            label: "Intelligent Tracking",
+            value: "Supported (Tracking Module)",
+          },
+          { label: "Teflon™ Enhanced Balancing", value: "Yes" },
+          { label: "Quick Vertical Switch", value: "Supported" },
+          { label: "Auto Axis Locks", value: "Supported" },
+        ],
+      },
+      {
+        category: "Package Contents",
+        items: [
+          {
+            label: "Included in the Box",
+            value:
+              "DJI RS 4 Mini Gimbal, BG21 Battery Grip, Quick-Release Plate, RS Intelligent Tracking Module, Mini Briefcase Handle, Extended Grip/Tripod, USB-C Charging Cable, Multi-Camera Control Cable (USB-C), Screw Kit, Documentation",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "insta360-flow-2-pro",
+    name: "Insta360 Flow 2 Pro",
+    category: "Gimbal",
+    brand: "INSTA360",
+    price: "₹15,999",
+    slug: "insta360-flow-2-pro",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/accessories/gimbal/insta360/1.png",
+          "/accessories/gimbal/insta360/2.jfif",
+          "/accessories/gimbal/insta360/3.png",
+          "/accessories/gimbal/insta360/4.jfif",
+          "/accessories/gimbal/insta360/5.jfif",
+          "/accessories/gimbal/insta360/6.jfif",
+        ],
+      },
+    ],
+    overview:
+      "Insta360 Flow 2 Pro is an AI-powered smartphone gimbal that delivers ultra-smooth stabilization with intelligent subject tracking for professional-quality videos.Its foldable design, built-in selfie stick and tripod, plus long battery life make it the perfect companion for creators and vloggers on the go.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Smartphone Gimbal Stabilizer" },
+          { label: "Brand", value: "Insta360" },
+          {
+            label: "Weight",
+            value: "Gimbal: Approx. 357g | Magnetic Phone Clamp: Approx. 25g",
+          },
+          { label: "Dimensions (Folded)", value: "97.9 × 178.4 × 36.7 mm" },
+          { label: "Dimensions (Unfolded)", value: "121.1 × 282.1 × 54 mm" },
+          { label: "Charging Port", value: "USB-C" },
+        ],
+      },
+      {
+        category: "Phone Compatibility",
+        items: [
+          { label: "Compatible Phone Thickness", value: "6.9–10 mm" },
+          { label: "Compatible Phone Width", value: "64–84 mm" },
+          { label: "Compatible Phone Weight", value: "130–300 g" },
+          { label: "Built-In Selfie Stick", value: "210 mm" },
+          {
+            label: "Built-In Tripod",
+            value: "Extended Length: 94 mm | Extended Diameter: 204 mm",
+          },
+        ],
+      },
+      {
+        category: "Battery",
+        items: [
+          { label: "Battery Capacity", value: "1100 mAh" },
+          { label: "Runtime", value: "Up to 10 Hours" },
+          { label: "Charging Time", value: "Approx. 2 Hours (5V/2A)" },
+          {
+            label: "Operating Temperature",
+            value: "-10°C to 40°C (14°F to 104°F)",
+          },
+          {
+            label: "Charging Temperature",
+            value: "0°C to 40°C (32°F to 104°F)",
+          },
+          {
+            label: "Battery Test Conditions",
+            value:
+              "Measured at 25°C with the gimbal balanced on a flat surface and the Tracking Ring Light turned off",
+          },
+        ],
+      },
+      {
+        category: "Gimbal Performance",
+        items: [
+          { label: "Stabilization", value: "3-Axis Gimbal Stabilization" },
+          { label: "Pan Range", value: "360° Continuous Rotation" },
+          { label: "Roll Range", value: "-390° to 135°" },
+          { label: "Tilt Range", value: "-99° to 231°" },
+          { label: "Maximum Control Speed", value: "120°/s" },
+        ],
+      },
+      {
+        category: "Connectivity",
+        items: [
+          { label: "Bluetooth", value: "Bluetooth 5.0" },
+          { label: "NFC", value: "Supports ISO/IEC 14443A Standard" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "insta360-flow-2-pro-ai-traker-bundle",
+    name: "Insta360 Flow 2 Pro AI Tracker Bundle",
+    category: "Gimbal",
+    brand: "INSTA360",
+    price: "₹18,990",
+    slug: "insta360-flow-2-pro-ai-traker-bundle",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/gimbal/insta360/7.webp"],
+      },
+    ],
+    overview:
+      "Insta360 Flow 2 Pro Creator Bundle is an all-in-one AI-powered smartphone gimbal kit that delivers ultra-smooth stabilization, intelligent subject tracking, and professional-quality mobile filmmaking.Complete with premium creator accessories, including a spotlight and magnetic phone mount, it's the perfect solution for vloggers, filmmakers, and content creators.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Smartphone Gimbal Stabilizer" },
+          { label: "Brand", value: "Insta360" },
+          {
+            label: "Weight",
+            value: "Gimbal: Approx. 357g | Magnetic Phone Clamp: Approx. 25g",
+          },
+          { label: "Dimensions (Folded)", value: "97.9 × 178.4 × 36.7 mm" },
+          { label: "Dimensions (Unfolded)", value: "121.1 × 282.1 × 54 mm" },
+          { label: "Port", value: "USB-C" },
+        ],
+      },
+      {
+        category: "Phone Compatibility",
+        items: [
+          { label: "Compatible Phone Thickness", value: "6.9–10 mm" },
+          { label: "Compatible Phone Width", value: "64–84 mm" },
+          { label: "Compatible Phone Weight", value: "130–300 g" },
+          { label: "Built-In Selfie Stick Length", value: "210 mm (8.3 in)" },
+          {
+            label: "Built-In Tripod",
+            value: "Extended Length: 94 mm | Extended Diameter: 204 mm",
+          },
+        ],
+      },
+      {
+        category: "Battery",
+        items: [
+          { label: "Battery Capacity", value: "1100 mAh" },
+          { label: "Runtime", value: "Up to 10 Hours" },
+          { label: "Charging Time", value: "Approx. 2 Hours (5V/2A)" },
+          {
+            label: "Operating Temperature",
+            value: "-10°C to 40°C (14°F to 104°F)",
+          },
+          {
+            label: "Charging Temperature",
+            value: "0°C to 40°C (32°F to 104°F)",
+          },
+          {
+            label: "Test Conditions",
+            value:
+              "Measured at 25°C with the gimbal fully balanced on a flat surface and the Tracking Ring Light turned off.",
+          },
+        ],
+      },
+      {
+        category: "Gimbal Performance",
+        items: [
+          { label: "Pan Range", value: "360° Continuous Rotation" },
+          { label: "Roll Range", value: "-390° to 135°" },
+          { label: "Tilt Range", value: "-99° to 231°" },
+          { label: "Maximum Control Speed", value: "120°/s" },
+        ],
+      },
+      {
+        category: "Wireless Connectivity",
+        items: [
+          { label: "Bluetooth", value: "Bluetooth 5.0" },
+          { label: "NFC", value: "Supports ISO/IEC 14443A Standard" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "insta360-luna-ultra-standrad",
+    name: "Insta 360 Luna Ultra Standard",
+    category: "Gimbal",
+    brand: "INSTA360",
+    price: "₹85,990",
+    slug: "insta360-luna-ultra-standrad",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: [
+          "/accessories/gimbal/insta360/8.jpg",
+          "/accessories/gimbal/insta360/9.jpg",
+          "/accessories/gimbal/insta360/10.jpg",
+          "/accessories/gimbal/insta360/11.jpg",
+          "/accessories/gimbal/insta360/12.jpg",
+        ],
+      },
+    ],
+    overview:
+      "Insta360 Luna Ultra is a premium AI-powered 3-axis gimbal camera featuring Leica optics, dual-lens imaging, and stunning 8K video recording for cinematic content creation.Its intelligent tracking, detachable touchscreen, and advanced stabilization make it the perfect companion for vloggers, filmmakers, and professional creators.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Dual-Lens 3-Axis Gimbal Camera" },
+          { label: "Brand", value: "Insta360" },
+          { label: "Model", value: "Luna Ultra" },
+          { label: "Release Date", value: "June 2026" },
+          {
+            label: "Available Colors",
+            value: "Cosmic Black, Stellar White",
+          },
+          {
+            label: "Dimensions",
+            value: "52.4 × 169.9 × 38.5 mm",
+          },
+          {
+            label: "Weight",
+            value: "233 g (Cosmic Black), 235 g (Stellar White)",
+          },
+        ],
+      },
+      {
+        category: "Camera & Optics",
+        items: [
+          { label: "Main Sensor", value: "1-inch CMOS" },
+          { label: "Telephoto Sensor", value: "1/1.3-inch CMOS" },
+          { label: "Main Lens Aperture", value: "f/1.8" },
+          { label: "Telephoto Lens Aperture", value: "f/2.0" },
+          {
+            label: "35mm Equivalent Focal Length",
+            value: "20mm (Main), 60mm (Telephoto)",
+          },
+          {
+            label: "Minimum Focus Distance",
+            value: "9 cm (Main), 15 cm (Telephoto)",
+          },
+        ],
+      },
+      {
+        category: "Display & Storage",
+        items: [
+          { label: "Display", value: '2.0" OLED Touchscreen' },
+          { label: "Display Resolution", value: "318 × 564 pixels" },
+          { label: "Peak Brightness", value: "1000 nits" },
+          { label: "Internal Storage", value: "47GB" },
+          { label: "USB Interface", value: "USB Type-C (USB 3.0)" },
+          {
+            label: "Microphones",
+            value: "4 (3 on camera + 1 on detachable remote)",
+          },
+        ],
+      },
+      {
+        category: "Gimbal Performance",
+        items: [
+          { label: "Stabilization", value: "3-Axis Mechanical Gimbal" },
+          { label: "Mechanical Pan Range", value: "-63° to 240°" },
+          { label: "Mechanical Pitch Range", value: "-98° to 180°" },
+          { label: "Mechanical Roll Range", value: "-63° to 220°" },
+          { label: "Maximum Control Speed", value: "210°/s" },
+          { label: "Jitter Suppression", value: "±0.005°" },
+        ],
+      },
+      {
+        category: "Battery",
+        items: [
+          { label: "Main Battery Capacity", value: "1550 mAh" },
+          { label: "Remote Battery Capacity", value: "210 mAh" },
+          { label: "Battery Life", value: "Up to 240 Minutes" },
+          { label: "Charging Time", value: "80% in ~23 min, 100% in ~38 min" },
+          { label: "Fast Charging", value: "Supported" },
+        ],
+      },
+      {
+        category: "Connectivity",
+        items: [
+          { label: "Wi-Fi", value: "Wi-Fi 6 (802.11 a/b/g/n/ac/ax)" },
+          { label: "Bluetooth", value: "BR / EDR / BLE" },
+          { label: "Operating Temperature", value: "0°C to 40°C" },
+          {
+            label: "Water Resistance",
+            value: "Not waterproof, dustproof, or splashproof",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "rechargeable-li-ion-batt-en-el18c(tw)-f",
+    name: "Rechargeable Li-ion Batt EN-EL18c(TW)/F",
+    category: "Battery",
+    brand: "Nikon",
+    price: "₹11,190",
+    slug: "rechargeable-li-ion-batt-en-el18c(tw)-f",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/nikon/battery/1.webp"],
+      },
+    ],
+    overview:
+      "The EN-EL18c is a Rechargeable Li-ion Battery that is used to power the D5, D4s and D4 Nikon D-SLR cameras. The EN-EL18c Li-ion Battery can be charged using either the MH-26a or MH-26aAK Adapter Kit battery chargers. The EN-EL18c Rechargeable Lithium-ion Battery is also used with select Nikon cameras and Multi-Power Battery Packs, powering the cameras.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Battery Adapter" },
+          { label: "Brand", value: "Nikon" },
+          { label: "Display SKU", value: "VFB12303" },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Products",
+            value: "Nikon D6, D5, D4S, and D4",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "battery-en-el25a",
+    name: "Battery EN-EL25a",
+    category: "Battery",
+    brand: "Nikon",
+    price: "₹3,295",
+    slug: "battery-en-el25a",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/nikon/battery/2.webp"],
+      },
+    ],
+    overview:
+      "The EN-EL25a is a rechargeable Lithium-ion battery that is used to power specific Nikon digital cameras. The battery can be charged using the MH-32 battery charger or it can be charged while in the camera using the EH-73P charging AC adapter.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Battery Charger" },
+          { label: "Brand", value: "Nikon" },
+          { label: "Display SKU", value: "VFB12505" },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Products",
+            value: "Nikon Z fc, Z 30, and Z 50",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "rechargeable-li-ion-battery-en-el18d(in)",
+    name: "Rechargeable Li-ion Battery EN-EL18d(IN)",
+    category: "Battery",
+    brand: "Nikon",
+    price: "₹17,495",
+    slug: "rechargeable-li-ion-battery-en-el18d(in)",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/nikon/battery/3.webp"],
+      },
+    ],
+    overview:
+      "The EN-EL18d is a Rechargeable Li-ion Battery that is used to power the Z 9 Z camera. The EN-EL18d Li-ion Battery can be charged using either the MH-33 battery charger. The EN-EL18d Rechargeable Lithium-ion Battery is also used with select Nikon cameras and Multi-Power Battery Packs, powering the cameras.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Battery Charger" },
+          { label: "Brand", value: "Nikon" },
+          { label: "Display SKU", value: "VFB12905" },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Products",
+            value: "Nikon Z 9",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "battery-en-el25(in)-f",
+    name: "Battery EN-EL25(IN)/F",
+    category: "Battery",
+    brand: "Nikon",
+    price: "₹3,295",
+    slug: "battery-en-el25(in)-f",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/nikon/battery/4.webp"],
+      },
+    ],
+    overview:
+      "The EN-EL25 is a rechargeable Lithium-ion battery that is used to power specific Nikon digital cameras. The battery can be charged using the MH-32 battery charger or it can be charged while in the camera using the EH-73P charging AC adapter.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Battery Charger" },
+          { label: "Brand", value: "Nikon" },
+          { label: "Display SKU", value: "VFB12505" },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Products",
+            value: "Nikon Z fc, Nikon Z 30, and Nikon Z 50",
+          },
+        ],
+      },
+    ],
   },
 ];
 
