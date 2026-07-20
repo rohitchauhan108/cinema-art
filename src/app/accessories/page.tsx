@@ -37,7 +37,7 @@ const categories = [
     subcategories: ["Sony", "Fujifilm", "Canon", "Nikon"],
   },
   {
-    name: "Leas Rear Cap",
+    name: "Lens Rear Cap",
     subcategories: ["Sony", "Fujifilm", "Canon", "Nikon"],
   },
   {
@@ -128,16 +128,27 @@ export default function AccessoriesPage() {
     );
   };
 
-  useEffect(() => {
-    const el = document.getElementById("accessories");
+useEffect(() => {
+  if (filteredaccessories.length > 0) {
+    setTimeout(() => {
+      const firstProduct = document.getElementById(
+        `product-${filteredaccessories[0].id}`
+      );
 
-    if (el) {
-      window.scrollTo({
-        top: el.offsetTop - 120, // adjust for your navbar height
-        behavior: "smooth",
-      });
-    }
-  }, [activeCategory, selectedBrands]);
+      if (firstProduct) {
+        const y =
+          firstProduct.getBoundingClientRect().top +
+          window.pageYOffset -
+          120; // Navbar height
+
+        window.scrollTo({
+          top: y,
+          behavior: "smooth",
+        });
+      }
+    }, 100);
+  }
+}, [activeCategory, selectedBrands]);
 
   return (
     <>
@@ -277,10 +288,11 @@ export default function AccessoriesPage() {
                   filteredaccessories.map((item, index) => (
                     <motion.div
                       key={item.id}
+                      id={`product-${item.id}`}
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.05 * index }}
-                      className="group relative bg-white rounded-sm border border-transparent hover:border-gray-200 hover:shadow-2xl transition-all duration-500 flex flex-col overflow-hidden"
+                      className="scroll-mt-32 group relative bg-white rounded-sm border border-transparent hover:border-gray-200 hover:shadow-2xl transition-all duration-500 flex flex-col overflow-hidden"
                     >
                       {/* Image Backdrop Container */}
                       <div className="relative h-60 w-full bg-[#F5F5F5] flex items-center justify-center p-8 overflow-hidden">

@@ -485,53 +485,6 @@ const accessories = [
     ],
   },
   {
-    id: "sony-bc-qz1",
-    name: "Sony BC-QZ1 Battery Charger",
-    category: "Charger",
-    brand: "Sony",
-    price: "₹6,990",
-    slug: "sony-bc-qz1",
-    status: "In Stock",
-    colors: [
-      {
-        name: "All",
-        images: [
-          "https://images.unsplash.com/photo-1642884422166-256f19bcbd85?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8U29ueSUyMEJDLVFaMSUyMEJhdHRlcnklMjBDaGFyZ2VyfGVufDB8fDB8fHww",
-        ],
-      },
-    ],
-    overview:
-      "A high-speed charging cradle for the NP-FZ100 battery, capable of fully charging your camera battery safely.",
-    specs: [
-      {
-        category: "Accessory Specifications",
-        items: [
-          {
-            label: "Model Number",
-            value: "BC-QZ1",
-          },
-          {
-            label: "Accessory Type",
-            value: "Battery Charger",
-          },
-          {
-            label: "Brand",
-            value: "Sony",
-          },
-        ],
-      },
-      {
-        category: "Compatibility",
-        items: [
-          {
-            label: "Compatible Batteries",
-            value: "NP-FZ100",
-          },
-        ],
-      },
-    ],
-  },
-  {
     id: "fujifilm-flcp-62ii",
     name: "Fujifilm FLCP-62 II Front Lens Cap",
     category: "Lens Cap",
@@ -637,7 +590,7 @@ const accessories = [
   {
     id: "sony-alc-r1em",
     name: "Sony E-Mount Lens Rear Cap",
-    category: "Leas Rear Cap",
+    category: "Lens Rear Cap",
     brand: "Sony",
     price: "₹590",
     slug: "sony-alc-r1em",
@@ -1920,7 +1873,7 @@ const accessories = [
   {
     id: "fujifilm-lens-cap-flcp-58-ii",
     name: "FUJIFILM LENS CAP FLCP-58 II",
-    category: "Leas Rear Cap",
+    category: "Lens Rear Cap",
     brand: "Fujifilm",
     price: "₹599",
     slug: "fujifilm-lens-lens-cap-flcp-58-ii",
@@ -1928,7 +1881,7 @@ const accessories = [
     colors: [
       {
         name: "All",
-        images: ["/accessories/fujifilm/cap/1.webp"],
+        images: ["/accessories/fujifilm/lens-cap/1.webp"],
       },
     ],
     overview:
@@ -1987,7 +1940,7 @@ const accessories = [
   {
     id: "fujifilm-lens-cap-rlcp-001",
     name: "FUJIFILM LENS CAP RLCP-001",
-    category: "Leas Rear Cap",
+    category: "Lens Rear Cap",
     brand: "Fujifilm",
     price: "₹599",
     slug: "fujifilm-lens-lens-cap-rlcp-001",
@@ -1995,7 +1948,7 @@ const accessories = [
     colors: [
       {
         name: "All",
-        images: ["/accessories/fujifilm/cap/2.webp"],
+        images: ["/accessories/fujifilm/lens-cap/2.webp"],
       },
     ],
     overview:
@@ -2816,6 +2769,1003 @@ const accessories = [
       },
     ],
   },
+  {
+    id: "battery-charger-mh-25a-in",
+    name: "BATTERY CHARGER MH-25a IN",
+    category: "Charger",
+    brand: "Nikon",
+    price: "₹2,650",
+    slug: "battery-charger-mh-25a-in",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/nikon/charger/1.webp"],
+      },
+    ],
+    overview:
+      "The MH-25a is a battery charger designed specifically for recharging Nikon EN-EL15/EN-EL15a/b/c Lithium-ion batteries.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Battery Charger" },
+          { label: "Brand", value: "Nikon" },
+          { label: "Display SKU", value: "VEA016NA" },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Products",
+            value:
+              "Nikon Z8, Nikon Z6III, Nikon Z5II, Nikon Zf, Nikon Z7, Nikon Z6, Nikon Z7II, Nikon Z6II, Nikon Z5, Nikon D780, Nikon D610, Nikon D7500, Nikon D850, Nikon D7200, Nikon D500, Nikon D7100, Nikon D810A, Nikon D750, Nikon D810, Nikon D800E, Nikon D600, and Nikon D800",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "battery-charger-mh-24-in",
+    name: "BATTERY CHARGER MH-24 IN",
+    category: "Charger",
+    brand: "Nikon",
+    price: "₹2,900",
+    slug: "battery-charger-mh-24-in",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/nikon/charger/2.webp"],
+      },
+    ],
+    overview:
+      "Battery charger for rechargeable EN-EL 14 Lithium Ion (Li-ion) battery.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Battery Charger" },
+          { label: "Brand", value: "Nikon" },
+          { label: "Display SKU", value: "VEA006ND" },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Products",
+            value:
+              "Nikon D3500, Nikon D5600, Nikon D3400, Nikon D3300, Nikon D5300, Nikon D5500, Nikon D3200, Nikon Df, Nikon COOLPIX P7800, Nikon COOLPIX P7700, Nikon COOLPIX P7100, Nikon COOLPIX P7000, Nikon D5200, Nikon D3100, and Nikon D5100",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "battery-charger-mh-33(in)-f",
+    name: "Battery Charger MH-33(IN)/F",
+    category: "Charger",
+    brand: "Nikon",
+    price: "₹9,795",
+    slug: "battery-charger-mh-33(in)-f",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/nikon/charger/3.webp"],
+      },
+    ],
+    overview:
+      "The MH-33 is a battery charger specifically designed to charge EN-EL18d Li-ion battery.Please note, to power the MH-33 charger, you will need the EH-7P charging AC adapter (Sold separately).",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Battery Charger" },
+          { label: "Brand", value: "Nikon" },
+          { label: "Display SKU", value: "VEA02505" },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Products",
+            value:
+              "Nikon EN-EL18d, Nikon EN-EL18c, and Nikon EN-EL18b Rechargeable Li-ion Batteries",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "battery-charger-cover-bl-6",
+    name: "BATTERY CHAMBER COVER BL-6",
+    category: "Charger",
+    brand: "Nikon",
+    price: "₹1,450",
+    slug: "battery-charger-cover-bl-6",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/nikon/charger/4.webp"],
+      },
+    ],
+    overview:
+      "The BL-6 is a Battery Chamber Cover for the D4, D4s, D5 and D6 and EN-EL18/a,b,c rechargeable battery.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Battery Charger" },
+          { label: "Brand", value: "Nikon" },
+          { label: "Display SKU", value: "VFD10004" },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Products",
+            value: "Nikon D6, Nikon D5, Nikon D4S, and Nikon D4",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "hb-119-lens-hood",
+    name: "HB-119 Lens Hood",
+    category: "Lens Hood",
+    brand: "Nikon",
+    price: "₹4,795",
+    slug: "hb-119-lens-hood",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/nikon/lens-hood/1.webp"],
+      },
+    ],
+    overview:
+      "The Nikon HB-119 Lens Hood is designed for the NIKKOR Z 70-200mm f/2.8 VR S II lens, helping reduce flare and unwanted stray light for improved image quality. It also provides added protection to the front element while featuring a convenient filter adjustment window for rotating filters.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Lens Hood" },
+          { label: "Brand", value: "Nikon" },
+          { label: "Display SKU", value: "JMB04601" },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Products",
+            value: "NIKKOR Z 70-200mm f/2.8 VR S II",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "hb-93-b-lens-hood",
+    name: "HB-93B Lens Hood",
+    category: "Lens Hood",
+    brand: "Nikon",
+    price: "₹4,795",
+    slug: "hb-93-b-lens-hood",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/nikon/lens-hood/1.webp"],
+      },
+    ],
+    overview:
+      "The Nikon HB-93B Lens Hood is a bayonet-style hood designed specifically for the NIKKOR Z 24-105mm f/4-7.1 lens, helping reduce flare and improve image contrast. It also protects the front element from accidental impacts, dust, and scratches during everyday shooting.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Lens Hood" },
+          { label: "Brand", value: "Nikon" },
+          { label: "Display SKU", value: "JMB04801" },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Products",
+            value: "NIKKOR Z 24-105mm f/4-7.1",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "hn-43-lens-hood",
+    name: "HN-43 Lens Hood",
+    category: "Lens Hood",
+    brand: "Nikon",
+    price: "₹4,795",
+    slug: "hn-43-lens-hood",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/nikon/lens-hood/3.webp"],
+      },
+    ],
+    overview:
+      "The Nikon HN-43 Lens Hood is a screw-on lens hood designed for select NIKKOR Z lenses, helping reduce flare and stray light for sharper, higher-contrast images. It also provides added protection for the front lens element against accidental bumps, dust, and scratches.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Lens Hood" },
+          { label: "Brand", value: "Nikon" },
+          { label: "Display SKU", value: "JMB04701" },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Products",
+            value:
+              "NIKKOR Z DX MC 35mm f/1.7, NIKKOR Z 28mm f/2.8, NIKKOR Z 28mm f/2.8 (SE), NIKKOR Z 40mm f/2, and NIKKOR Z 40mm f/2 (SE)",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "hn-118-lens-hood",
+    name: "HB-118 Lens Hood",
+    category: "Lens Hood",
+    brand: "Nikon",
+    price: "₹4,795",
+    slug: "hn-118-lens-hood",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/nikon/lens-hood/4.webp"],
+      },
+    ],
+    overview:
+      "The Nikon HB-118 Lens Hood is a petal-shaped bayonet hood designed for the NIKKOR Z DX 16-50mm f/2.8 VR lens, helping minimize flare and improve image contrast. It also protects the front lens element from accidental bumps, dust, and scratches during everyday use.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Lens Hood" },
+          { label: "Brand", value: "Nikon" },
+          { label: "Display SKU", value: "JMB04901" },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Products",
+            value: "NIKKOR Z DX 16-50mm f/2.8 VR",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "lens-dust-cap-rf-ii",
+    name: "Lens Dust Cap RF II",
+    category: "Lens Rear Cap",
+    brand: "Canon",
+    price: "$8.99",
+    slug: "lens-dust-cap-rf-ii",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/canon/lens-rear-cap/1.webp"],
+      },
+    ],
+    overview:
+      "Protect your lens' rear glass from dust and scratches. Lens Dust Cap RF II features three mounting points to affix the dust cap to an RF or RF-S lens' red mount index point. This cap replaces and is compatible with all lenses as the original Lens Dust Cap RF.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Lens Dust Cap" },
+          { label: "Brand", value: "Canon" },
+          { label: "Display SKU", value: "7464C001" },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Products",
+            value: "All Canon RF and RF-S lenses",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "lens-cap-3-9",
+    name: "Lens Cap 3.9",
+    category: "Lens Rear Cap",
+    brand: "Canon",
+    price: "$57.99",
+    slug: "lens-cap-3-9",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/canon/lens-rear-cap/2.webp"],
+      },
+    ],
+    overview:
+      "Specifically designed for the RF-S3.9mm F3.5 STM DUAL FISHEYE lens, this cap protects the lens from smudges, dust and other unwanted particles or damage that can occur when carried in a camera bag or simply being stored. This cap has a center pinch design that makes it easy to remove or replace.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Lens Cap" },
+          { label: "Brand", value: "Canon" },
+          { label: "Display SKU", value: "LCAPE-95" },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Products",
+            value:
+              "Canon RF 28-70mm F2L USM, Canon RF 800mm F11 IS STM, Canon RF 200-800mm F6.3-9 IS USM, and all Canon lenses with a 95mm filter thread",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "lens-cap-10-20",
+    name: "Lens Cap 10-20",
+    category: "Lens Rear Cap",
+    brand: "Canon",
+    price: "$27.99",
+    slug: "lens-cap-10-20",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/canon/lens-rear-cap/3.webp"],
+      },
+    ],
+    overview:
+      "Lens cap for the RF10-20mm F4 L IS STM to helps protect the front glass from dust and scratches.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Lens Cap" },
+          { label: "Brand", value: "Canon" },
+          { label: "Display SKU", value: "LENSCAP10-20" },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Products",
+            value: "Canon RF10-20mm F4 L IS STM",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "fluid-pro-ai",
+    name: "Fluid Pro AI",
+    category: "Gimbal",
+    brand: "Go Pro",
+    price: "$229.99",
+    slug: "fluid-pro-ai",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/gopro/gimbal/1.webp"],
+      },
+    ],
+    overview:
+      "This premium gimbal delivers super-smooth video stabilization plus the power of AI subject tracking. Made for videographers, vloggers and content creators, it automatically tracks your subject throughout your shot using an attached sensor with a built-in fill light",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "3-Axis Camera & Smartphone Gimbal" },
+          { label: "Brand", value: "GoPro" },
+          {
+            label: "Compatible Devices",
+            value: "Smartphones, GoPro Cameras, and Point-and-Shoot Cameras",
+          },
+        ],
+      },
+      {
+        category: "Performance",
+        items: [
+          { label: "Maximum Payload", value: "400g" },
+          { label: "Gimbal Type", value: "3-Axis Stabilization" },
+          { label: "Pan Rotation", value: "Unlimited 360°" },
+          { label: "Tilt & Roll Range", value: "335°" },
+          {
+            label: "AI Tracking",
+            value: "Forward- and Rear-Facing AI Subject Tracking Module",
+          },
+          { label: "Integrated Fill Light", value: "Yes" },
+          {
+            label: "Wireless Control",
+            value:
+              "Phone Camera Shutter, Zoom, Focus & GoPro Shutter (Select Models)",
+          },
+          { label: "Battery Runtime", value: "Up to 18 Hours" },
+          { label: "Power Bank Function", value: "Yes, USB Power-Out Port" },
+        ],
+      },
+      {
+        category: "Package Contents",
+        items: [
+          {
+            label: "Included Accessories",
+            value:
+              "Gimbal, AI Tracking Module, Phone Mounting Bracket, GoPro Mounting Bracket & Finger Adapter, Thumb Screw, Tripod Base, Gimbal USB-C Charging Cable, Camera USB-C Charging Cable, and Zippered Carry Case",
+          },
+        ],
+      },
+      {
+        category: "Warranty",
+        items: [
+          { label: "Warranty", value: "GoPro Limited Lifetime Warranty" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "3-prong-to-1-4-adapter",
+    name: "3-Prong to 1/4 Adapter",
+    category: "Action Camera Accessories",
+    brand: "Insta 360",
+    price: "₹1,799.00",
+    slug: "3-prong-to-1-4-adapter",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/insta360/action-camera-accessories/1.webp"],
+      },
+    ],
+    overview:
+      "The **Insta360 3-Prong to 1/4 Adapter** lets you securely mount compatible Insta360 cameras to standard 1/4-20 like tripods, selfie sticks, and extension poles.Its durable, lightweight design with an adjustable angle and included thumb screw ensures stable and flexible shooting.",
+    specs: [
+  {
+    category: "General Specifications",
+    items: [
+      { label: "Product Type", value: '3-Prong to 1/4" Adapter' },
+      { label: "Brand", value: "Insta360" },
+      { label: "Material", value: "Durable Lightweight Construction" },
+    ],
+  },
+  {
+    category: "Features",
+    items: [
+      {
+        label: "Mount Type",
+        value: '3-Prong Mount to 1/4"-20 Thread Adapter',
+      },
+      {
+        label: "Adjustability",
+        value: "Adjustable Camera Angle",
+      },
+      {
+        label: "Included Accessory",
+        value: "Thumb Screw",
+      },
+    ],
+  },
+  {
+    category: "Compatibility",
+    items: [
+      {
+        label: "Compatible Products",
+        value:
+          "Insta360 X5, Insta360 Ace Pro 2, Insta360 Ace Pro, Insta360 Ace, Insta360 ONE RS (Twin/4K), and Insta360 ONE R",
+      },
+    ],
+  },
+],
+  },
+  {
+    id: "heavy-duty-clamp",
+    name: "Heavy Duty Clamp",
+    category: "Action Camera Accessories",
+    brand: "Insta 360",
+    price: "₹4,950.00",
+    slug: "heavy-duty-clamp",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/insta360/action-camera-accessories/2.webp"],
+      },
+    ],
+    overview:
+      "The Insta360 Heavy Duty Clamp provides a strong, secure grip for mounting your camera on handlebars, poles, and other surfaces, delivering stable footage even during high-action adventures.Its ball-joint-free design minimizes vibration for steadier shots, making it an ideal accessory for motorcycle rides and outdoor filming",
+    specs: [
+  {
+    category: "General Specifications",
+    items: [
+      { label: "Product Type", value: "Heavy Duty Camera Clamp" },
+      { label: "Brand", value: "Insta360" },
+      { label: "Mount Type", value: "Universal Clamp Mount with 1/4\" Thread & 3-Prong Adapter" },
+    ],
+  },
+  {
+    category: "Features",
+    items: [
+      { label: "Design", value: "Ball-Joint-Free Design for Maximum Stability" },
+      { label: "Application", value: "Motorcycle Handlebars, Bars, Poles, Tubes, and Similar Mounting Points" },
+      { label: "Quick Release Support", value: "Requires Quick Release Mount for Insta360 GO 3S/GO 3" },
+      { label: "Construction", value: "Heavy-Duty Metal Construction" },
+    ],
+  },
+  {
+    category: "Compatibility",
+    items: [
+      {
+        label: "Compatible Products",
+        value:
+          "Insta360 X5, X4 Air, X4, GO Ultra, GO 3S, Ace Pro 2, Ace Pro, Ace, GO 3, X3, ONE RS (Twin/4K), GO 2, ONE X2, ONE R, ONE X, and ONE",
+      },
+    ],
+  },
+  {
+    category: "Package Contents",
+    items: [
+      {
+        label: "Included Accessories",
+        value:
+          "Heavy Duty Clamp, 4× Anti-Slip Rings, Hex Wrench, 3-Prong to 1/4\" Adapter, Thumb Screw, and Clamp Mount Wrench",
+      },
+    ],
+  },
+],
+  },
+  {
+    id: "chest-strap",
+    name: "Insta360 Chest Strap",
+    category: "Action Camera Accessories",
+    brand: "Insta 360",
+    price: "₹5,363.00",
+    slug: "chest-strap",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/insta360/action-camera-accessories/3.webp"],
+      },
+    ],
+    overview:
+      "The Insta360 Chest Strap lets you capture immersive, hands-free first-person POV footage with a secure and comfortable fit for action-packed adventures.Its adjustable, non-slip design keeps your camera stable, making it ideal for cycling, hiking, skiing, and other outdoor activities.",
+   specs: [
+  {
+    category: "General Specifications",
+    items: [
+      { label: "Product Type", value: "Chest Strap Mount" },
+      { label: "Brand", value: "Insta360" },
+      { label: "Mount Type", value: "Adjustable Hands-Free Chest Harness" },
+    ],
+  },
+  {
+    category: "Features",
+    items: [
+      { label: "Design", value: "Adjustable, Comfortable, Non-Slip Chest Strap" },
+      { label: "Usage", value: "Hands-Free First-Person (POV) Shooting" },
+      { label: "Quick Release Support", value: "GO 3/GO 3S Requires Quick Release Mount; GO 2 Requires Action Mount Adapter" },
+    ],
+  },
+  {
+    category: "Compatibility",
+    items: [
+      {
+        label: "Compatible Products",
+        value:
+          "Insta360 X5, X4 Air, GO Ultra, Ace Pro 2, X4, GO 3S, Ace Pro, Ace, GO 3, X3, ONE RS (Twin/4K), GO 2, ONE X2, and ONE R",
+      },
+    ],
+  },
+  {
+    category: "Package Contents",
+    items: [
+      {
+        label: "Included Accessories",
+        value: "Chest Strap",
+      },
+    ],
+  },
+],
+  },
+  {
+  id: "all-purpose-tripod",
+  name: "Insta360 All-Purpose Tripod",
+  category: "Action Camera Accessories",
+  brand: "Insta 360",
+  price: "₹3,628.00",
+  slug: "all-purpose-tripod",
+  status: "In Stock",
+  colors: [
+    {
+      name: "All",
+      images: ["/accessories/insta360/action-camera-accessories/4.webp"],
+    },
+  ],
+  overview:
+    "The Insta360 All-Purpose Tripod provides a stable platform for capturing photos, videos, and time-lapse shots. Its compact foldable design and sturdy construction make it ideal for both indoor and outdoor shooting.",
+  specs: [
+    {
+      category: "General Specifications",
+      items: [
+        { label: "Product Type", value: "Tripod" },
+        { label: "Brand", value: "Insta360" },
+        { label: "Mount Type", value: '1/4" Screw Mount' },
+      ],
+    },
+    {
+      category: "Features",
+      items: [
+        { label: "Design", value: "Compact, Foldable, Stable Legs" },
+        { label: "Usage", value: "Photography, Video Recording, Time-lapse" },
+        { label: "Compatibility Note", value: "Ace Pro 2/Ace Pro/Ace require Quick Release Mount or 3-Prong to 1/4 Adapter (sold separately)." },
+      ],
+    },
+    {
+      category: "Compatibility",
+      items: [
+        {
+          label: "Compatible Products",
+          value: "All Insta360 cameras with 1/4-inch mounting support",
+        },
+      ],
+    },
+    {
+      category: "Package Contents",
+      items: [
+        {
+          label: "Included Accessories",
+          value: "All-Purpose Tripod",
+        },
+      ],
+    },
+  ],
+},
+{
+  id: "dual-suction-cup-car-mount",
+  name: "Insta360 Dual Suction Cup Car Mount",
+  category: "Action Camera Accessories",
+  brand: "Insta 360",
+  price: "₹26,484.00",
+  slug: "dual-suction-cup-car-mount",
+  status: "Out of Stock",
+  colors: [
+    {
+      name: "All",
+      images: ["/accessories/insta360/action-camera-accessories/5.webp"],
+    },
+  ],
+  overview:
+    "The Insta360 Dual Suction Cup Car Mount delivers ultra-secure mounting for smooth third-person driving shots. Its powerful suction cups provide exceptional stability for creative automotive filmmaking.",
+  specs: [
+    {
+      category: "General Specifications",
+      items: [
+        { label: "Product Type", value: "Car Mount" },
+        { label: "Brand", value: "Insta360" },
+        { label: "Mount Type", value: "Dual/Triple Suction Cup Mount" },
+      ],
+    },
+    {
+      category: "Features",
+      items: [
+        { label: "Design", value: "Heavy-Duty Triple Suction Cup System" },
+        { label: "Usage", value: "Third-Person Vehicle Filming" },
+        { label: "Special Feature", value: "Can be configured as single, dual or triple suction cup mount." },
+      ],
+    },
+    {
+      category: "Compatibility",
+      items: [
+        {
+          label: "Compatible Products",
+          value: "Insta360 X5, X4, Ace Pro 2, Ace Pro, Ace, GO 3S, GO 3, X3, ONE RS, GO 2, ONE X2, ONE R and ONE X",
+        },
+      ],
+    },
+    {
+      category: "Package Contents",
+      items: [
+        {
+          label: "Included Accessories",
+          value: "Dual/Triple Suction Cup Car Mount",
+        },
+      ],
+    },
+  ],
+},
+{
+  id: "helmet-chin-mount",
+  name: "Insta360 Helmet Chin Mount",
+  category: "Action Camera Accessories",
+  brand: "Insta 360",
+  price: "₹2,672.00",
+  slug: "helmet-chin-mount",
+  status: "In Stock",
+  colors: [
+    {
+      name: "All",
+      images: ["/accessories/insta360/action-camera-accessories/6.webp"],
+    },
+  ],
+  overview:
+    "The Insta360 Helmet Chin Mount lets you capture immersive first-person riding footage with a secure fit on full-face helmets. It is lightweight, easy to install, and designed for stable POV recording.",
+  specs: [
+    {
+      category: "General Specifications",
+      items: [
+        { label: "Product Type", value: "Helmet Mount" },
+        { label: "Brand", value: "Insta360" },
+        { label: "Mount Type", value: "Helmet Chin Mount" },
+      ],
+    },
+    {
+      category: "Features",
+      items: [
+        { label: "Design", value: "Secure, Lightweight, Easy to Install" },
+        { label: "Usage", value: "Hands-Free Motorcycle & Cycling POV Recording" },
+        { label: "Quick Release Support", value: "GO 3/GO 3S requires Quick Release Mount." },
+      ],
+    },
+    {
+      category: "Compatibility",
+      items: [
+        {
+          label: "Compatible Products",
+          value: "Insta360 X5, X4, Ace Pro 2, Ace Pro, Ace, GO 3S, GO 3, X3, ONE RS, ONE X2, ONE X, GO 2 and ONE R",
+        },
+      ],
+    },
+    {
+      category: "Package Contents",
+      items: [
+        {
+          label: "Included Accessories",
+          value: "Helmet Chin Mount, 2 Screws, Mount Extension",
+        },
+      ],
+    },
+  ],
+},
+{
+  id: "quick-release-mount",
+  name: "Insta360 Quick Release Mount",
+  category: "Action Camera Accessories",
+  brand: "Insta 360",
+  price: "₹9,898.00",
+  slug: "quick-release-mount",
+  status: "In Stock",
+  colors: [
+    {
+      name: "All",
+      images: ["/accessories/insta360/action-camera-accessories/7.webp"],
+    },
+  ],
+  overview:
+    "The Insta360 Quick Release Mount allows you to switch your camera between different mounts in seconds. Its secure locking mechanism ensures fast installation while keeping your camera firmly attached.",
+  specs: [
+    {
+      category: "General Specifications",
+      items: [
+        { label: "Product Type", value: "Quick Release Mount" },
+        { label: "Brand", value: "Insta360" },
+        { label: "Mount Type", value: "Quick Release System" },
+      ],
+    },
+    {
+      category: "Features",
+      items: [
+        { label: "Design", value: "Quick Locking, Compact, Secure" },
+        { label: "Usage", value: "Fast Camera Mount Switching" },
+        { label: "Special Feature", value: "Tool-Free Installation and Removal" },
+      ],
+    },
+    {
+      category: "Compatibility",
+      items: [
+        {
+          label: "Compatible Products",
+          value: "Insta360 Ace Pro 2, Ace Pro, Ace, GO 3S, GO 3 and compatible Insta360 mounting accessories",
+        },
+      ],
+    },
+    {
+      category: "Package Contents",
+      items: [
+        {
+          label: "Included Accessories",
+          value: "Quick Release Mount",
+        },
+      ],
+    },
+  ],
+},
+{
+  id: "sandisk-extreme-pro-sdxc-uhs-ii",
+  name: "SanDisk Extreme PRO® SDXC™ UHS-II Card",
+  category: "Sd Card",
+  brand: "SanDisk",
+  price: "$59.99",
+  slug: "sandisk-extreme-pro-sdxc-uhs-ii",
+  status: "In Stock",
+  colors: [
+    {
+      name: "All",
+      images: ["/accessories/sd-card/2.webp"],
+    },
+  ],
+  overview:
+    "The SanDisk Extreme PRO SDXC UHS-II Card delivers professional-grade performance with ultra-fast read and write speeds, making it ideal for recording 8K, 4K UHD, and Full HD video as well as continuous burst photography.",
+  specs: [
+    {
+      category: "Memory Card Specifications",
+      items: [
+        { label: "Product Type", value: "SDXC Memory Card" },
+        { label: "Brand", value: "SanDisk" },
+        { label: "Interface", value: "UHS-II" },
+        { label: "Speed Class", value: "U3, V90, Class 10" },
+      ],
+    },
+    {
+      category: "Performance",
+      items: [
+        { label: "Read Speed", value: "Up to 300MB/s" },
+        { label: "Write Speed", value: "Up to 260MB/s" },
+        { label: "Recommended Use", value: "8K, 4K UHD, Full HD Video & RAW Photography" },
+      ],
+    },
+    {
+      category: "Durability",
+      items: [
+        { label: "Water Resistance", value: "Waterproof" },
+        { label: "Shock Resistance", value: "Shockproof" },
+        { label: "Temperature Resistance", value: "Temperature Proof" },
+        { label: "X-Ray Resistance", value: "X-Ray Proof" },
+      ],
+    },
+    {
+      category: "Warranty",
+      items: [
+        { label: "Warranty", value: "Limited Lifetime Warranty" },
+      ],
+    },
+  ],
+},
+{
+  id: "sandisk-extreme-pro-sdxc-uhs-i",
+  name: "SanDisk Extreme PRO® SDXC™ UHS-I Card",
+  category: "Sd Card",
+  brand: "SanDisk",
+  price: "$24.99",
+  slug: "sandisk-extreme-pro-sdxc-uhs-i",
+  status: "In Stock",
+  colors: [
+    {
+      name: "All",
+      images: ["/accessories/sd-card/3.webp"],
+    },
+  ],
+  overview:
+    "Capture stunning 6K, 4K UHD, and Full HD video with the SanDisk Extreme PRO SDXC UHS-I Card, designed for DSLR, mirrorless cameras, and professional photography workflows.",
+  specs: [
+    {
+      category: "Memory Card Specifications",
+      items: [
+        { label: "Product Type", value: "SDXC Memory Card" },
+        { label: "Brand", value: "SanDisk" },
+        { label: "Interface", value: "UHS-I" },
+        { label: "Speed Class", value: "U3, V30, Class 10" },
+      ],
+    },
+    {
+      category: "Performance",
+      items: [
+        { label: "Read Speed", value: "Up to 200MB/s" },
+        { label: "Write Speed", value: "Up to 140MB/s" },
+        { label: "Recommended Use", value: "6K, 4K UHD Video & High-Speed Burst Photography" },
+      ],
+    },
+    {
+      category: "Durability",
+      items: [
+        { label: "Water Resistance", value: "Waterproof" },
+        { label: "Shock Resistance", value: "Shockproof" },
+        { label: "Temperature Resistance", value: "Temperature Proof" },
+        { label: "X-Ray Resistance", value: "X-Ray Proof" },
+      ],
+    },
+    {
+      category: "Warranty",
+      items: [
+        { label: "Warranty", value: "Limited Lifetime Warranty" },
+      ],
+    },
+  ],
+},
+{
+  id: "sandisk-extreme-sd-uhs-i",
+  name: "SanDisk Extreme® SD UHS-I Card",
+  category: "Sd Card",
+  brand: "SanDisk",
+  price: "$19.99",
+  slug: "sandisk-extreme-sd-uhs-i",
+  status: "In Stock",
+  colors: [
+    {
+      name: "All",
+      images: ["/accessories/sd-card/4.webp"],
+    },
+  ],
+  overview:
+    "The SanDisk Extreme SD UHS-I Card offers reliable high-speed performance for capturing Full HD, 4K UHD video, and high-resolution photos with compatible DSLR and mirrorless cameras.",
+  specs: [
+    {
+      category: "Memory Card Specifications",
+      items: [
+        { label: "Product Type", value: "SDXC Memory Card" },
+        { label: "Brand", value: "SanDisk" },
+        { label: "Interface", value: "UHS-I" },
+        { label: "Speed Class", value: "U3, V30, Class 10" },
+      ],
+    },
+    {
+      category: "Performance",
+      items: [
+        { label: "Read Speed", value: "Up to 180MB/s" },
+        { label: "Write Speed", value: "Up to 130MB/s" },
+        { label: "Recommended Use", value: "4K UHD Video Recording & Photography" },
+      ],
+    },
+    {
+      category: "Durability",
+      items: [
+        { label: "Water Resistance", value: "Waterproof" },
+        { label: "Shock Resistance", value: "Shockproof" },
+        { label: "Temperature Resistance", value: "Temperature Proof" },
+        { label: "X-Ray Resistance", value: "X-Ray Proof" },
+      ],
+    },
+    {
+      category: "Warranty",
+      items: [
+        { label: "Warranty", value: "Limited Lifetime Warranty" },
+      ],
+    },
+  ],
+},
 ];
 
 export default accessories;
