@@ -1281,7 +1281,7 @@ const accessories = [
     id: "light-mod",
     name: "Light Mod",
     category: "Lightning Solution",
-    brand: "Dji",
+    brand: "Go Pro",
     price: "$59.99",
     slug: "light-mod",
     status: "In Stock",
@@ -3254,42 +3254,42 @@ const accessories = [
     overview:
       "The **Insta360 3-Prong to 1/4 Adapter** lets you securely mount compatible Insta360 cameras to standard 1/4-20 like tripods, selfie sticks, and extension poles.Its durable, lightweight design with an adjustable angle and included thumb screw ensures stable and flexible shooting.",
     specs: [
-  {
-    category: "General Specifications",
-    items: [
-      { label: "Product Type", value: '3-Prong to 1/4" Adapter' },
-      { label: "Brand", value: "Insta360" },
-      { label: "Material", value: "Durable Lightweight Construction" },
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: '3-Prong to 1/4" Adapter' },
+          { label: "Brand", value: "Insta360" },
+          { label: "Material", value: "Durable Lightweight Construction" },
+        ],
+      },
+      {
+        category: "Features",
+        items: [
+          {
+            label: "Mount Type",
+            value: '3-Prong Mount to 1/4"-20 Thread Adapter',
+          },
+          {
+            label: "Adjustability",
+            value: "Adjustable Camera Angle",
+          },
+          {
+            label: "Included Accessory",
+            value: "Thumb Screw",
+          },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Products",
+            value:
+              "Insta360 X5, Insta360 Ace Pro 2, Insta360 Ace Pro, Insta360 Ace, Insta360 ONE RS (Twin/4K), and Insta360 ONE R",
+          },
+        ],
+      },
     ],
-  },
-  {
-    category: "Features",
-    items: [
-      {
-        label: "Mount Type",
-        value: '3-Prong Mount to 1/4"-20 Thread Adapter',
-      },
-      {
-        label: "Adjustability",
-        value: "Adjustable Camera Angle",
-      },
-      {
-        label: "Included Accessory",
-        value: "Thumb Screw",
-      },
-    ],
-  },
-  {
-    category: "Compatibility",
-    items: [
-      {
-        label: "Compatible Products",
-        value:
-          "Insta360 X5, Insta360 Ace Pro 2, Insta360 Ace Pro, Insta360 Ace, Insta360 ONE RS (Twin/4K), and Insta360 ONE R",
-      },
-    ],
-  },
-],
   },
   {
     id: "heavy-duty-clamp",
@@ -3308,44 +3308,57 @@ const accessories = [
     overview:
       "The Insta360 Heavy Duty Clamp provides a strong, secure grip for mounting your camera on handlebars, poles, and other surfaces, delivering stable footage even during high-action adventures.Its ball-joint-free design minimizes vibration for steadier shots, making it an ideal accessory for motorcycle rides and outdoor filming",
     specs: [
-  {
-    category: "General Specifications",
-    items: [
-      { label: "Product Type", value: "Heavy Duty Camera Clamp" },
-      { label: "Brand", value: "Insta360" },
-      { label: "Mount Type", value: "Universal Clamp Mount with 1/4\" Thread & 3-Prong Adapter" },
-    ],
-  },
-  {
-    category: "Features",
-    items: [
-      { label: "Design", value: "Ball-Joint-Free Design for Maximum Stability" },
-      { label: "Application", value: "Motorcycle Handlebars, Bars, Poles, Tubes, and Similar Mounting Points" },
-      { label: "Quick Release Support", value: "Requires Quick Release Mount for Insta360 GO 3S/GO 3" },
-      { label: "Construction", value: "Heavy-Duty Metal Construction" },
-    ],
-  },
-  {
-    category: "Compatibility",
-    items: [
       {
-        label: "Compatible Products",
-        value:
-          "Insta360 X5, X4 Air, X4, GO Ultra, GO 3S, Ace Pro 2, Ace Pro, Ace, GO 3, X3, ONE RS (Twin/4K), GO 2, ONE X2, ONE R, ONE X, and ONE",
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Heavy Duty Camera Clamp" },
+          { label: "Brand", value: "Insta360" },
+          {
+            label: "Mount Type",
+            value: 'Universal Clamp Mount with 1/4" Thread & 3-Prong Adapter',
+          },
+        ],
+      },
+      {
+        category: "Features",
+        items: [
+          {
+            label: "Design",
+            value: "Ball-Joint-Free Design for Maximum Stability",
+          },
+          {
+            label: "Application",
+            value:
+              "Motorcycle Handlebars, Bars, Poles, Tubes, and Similar Mounting Points",
+          },
+          {
+            label: "Quick Release Support",
+            value: "Requires Quick Release Mount for Insta360 GO 3S/GO 3",
+          },
+          { label: "Construction", value: "Heavy-Duty Metal Construction" },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Products",
+            value:
+              "Insta360 X5, X4 Air, X4, GO Ultra, GO 3S, Ace Pro 2, Ace Pro, Ace, GO 3, X3, ONE RS (Twin/4K), GO 2, ONE X2, ONE R, ONE X, and ONE",
+          },
+        ],
+      },
+      {
+        category: "Package Contents",
+        items: [
+          {
+            label: "Included Accessories",
+            value:
+              'Heavy Duty Clamp, 4× Anti-Slip Rings, Hex Wrench, 3-Prong to 1/4" Adapter, Thumb Screw, and Clamp Mount Wrench',
+          },
+        ],
       },
     ],
-  },
-  {
-    category: "Package Contents",
-    items: [
-      {
-        label: "Included Accessories",
-        value:
-          "Heavy Duty Clamp, 4× Anti-Slip Rings, Hex Wrench, 3-Prong to 1/4\" Adapter, Thumb Screw, and Clamp Mount Wrench",
-      },
-    ],
-  },
-],
   },
   {
     id: "chest-strap",
@@ -3363,409 +3376,751 @@ const accessories = [
     ],
     overview:
       "The Insta360 Chest Strap lets you capture immersive, hands-free first-person POV footage with a secure and comfortable fit for action-packed adventures.Its adjustable, non-slip design keeps your camera stable, making it ideal for cycling, hiking, skiing, and other outdoor activities.",
-   specs: [
-  {
-    category: "General Specifications",
-    items: [
-      { label: "Product Type", value: "Chest Strap Mount" },
-      { label: "Brand", value: "Insta360" },
-      { label: "Mount Type", value: "Adjustable Hands-Free Chest Harness" },
-    ],
-  },
-  {
-    category: "Features",
-    items: [
-      { label: "Design", value: "Adjustable, Comfortable, Non-Slip Chest Strap" },
-      { label: "Usage", value: "Hands-Free First-Person (POV) Shooting" },
-      { label: "Quick Release Support", value: "GO 3/GO 3S Requires Quick Release Mount; GO 2 Requires Action Mount Adapter" },
-    ],
-  },
-  {
-    category: "Compatibility",
-    items: [
+    specs: [
       {
-        label: "Compatible Products",
-        value:
-          "Insta360 X5, X4 Air, GO Ultra, Ace Pro 2, X4, GO 3S, Ace Pro, Ace, GO 3, X3, ONE RS (Twin/4K), GO 2, ONE X2, and ONE R",
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Chest Strap Mount" },
+          { label: "Brand", value: "Insta360" },
+          { label: "Mount Type", value: "Adjustable Hands-Free Chest Harness" },
+        ],
+      },
+      {
+        category: "Features",
+        items: [
+          {
+            label: "Design",
+            value: "Adjustable, Comfortable, Non-Slip Chest Strap",
+          },
+          { label: "Usage", value: "Hands-Free First-Person (POV) Shooting" },
+          {
+            label: "Quick Release Support",
+            value:
+              "GO 3/GO 3S Requires Quick Release Mount; GO 2 Requires Action Mount Adapter",
+          },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Products",
+            value:
+              "Insta360 X5, X4 Air, GO Ultra, Ace Pro 2, X4, GO 3S, Ace Pro, Ace, GO 3, X3, ONE RS (Twin/4K), GO 2, ONE X2, and ONE R",
+          },
+        ],
+      },
+      {
+        category: "Package Contents",
+        items: [
+          {
+            label: "Included Accessories",
+            value: "Chest Strap",
+          },
+        ],
       },
     ],
   },
   {
-    category: "Package Contents",
-    items: [
+    id: "all-purpose-tripod",
+    name: "Insta360 All-Purpose Tripod",
+    category: "Action Camera Accessories",
+    brand: "Insta 360",
+    price: "₹3,628.00",
+    slug: "all-purpose-tripod",
+    status: "In Stock",
+    colors: [
       {
-        label: "Included Accessories",
-        value: "Chest Strap",
+        name: "All",
+        images: ["/accessories/insta360/action-camera-accessories/4.webp"],
+      },
+    ],
+    overview:
+      "The Insta360 All-Purpose Tripod provides a stable platform for capturing photos, videos, and time-lapse shots. Its compact foldable design and sturdy construction make it ideal for both indoor and outdoor shooting.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Tripod" },
+          { label: "Brand", value: "Insta360" },
+          { label: "Mount Type", value: '1/4" Screw Mount' },
+        ],
+      },
+      {
+        category: "Features",
+        items: [
+          { label: "Design", value: "Compact, Foldable, Stable Legs" },
+          { label: "Usage", value: "Photography, Video Recording, Time-lapse" },
+          {
+            label: "Compatibility Note",
+            value:
+              "Ace Pro 2/Ace Pro/Ace require Quick Release Mount or 3-Prong to 1/4 Adapter (sold separately).",
+          },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Products",
+            value: "All Insta360 cameras with 1/4-inch mounting support",
+          },
+        ],
+      },
+      {
+        category: "Package Contents",
+        items: [
+          {
+            label: "Included Accessories",
+            value: "All-Purpose Tripod",
+          },
+        ],
       },
     ],
   },
-],
+  {
+    id: "dual-suction-cup-car-mount",
+    name: "Insta360 Dual Suction Cup Car Mount",
+    category: "Action Camera Accessories",
+    brand: "Insta 360",
+    price: "₹26,484.00",
+    slug: "dual-suction-cup-car-mount",
+    status: "Out of Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/insta360/action-camera-accessories/5.webp"],
+      },
+    ],
+    overview:
+      "The Insta360 Dual Suction Cup Car Mount delivers ultra-secure mounting for smooth third-person driving shots. Its powerful suction cups provide exceptional stability for creative automotive filmmaking.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Car Mount" },
+          { label: "Brand", value: "Insta360" },
+          { label: "Mount Type", value: "Dual/Triple Suction Cup Mount" },
+        ],
+      },
+      {
+        category: "Features",
+        items: [
+          { label: "Design", value: "Heavy-Duty Triple Suction Cup System" },
+          { label: "Usage", value: "Third-Person Vehicle Filming" },
+          {
+            label: "Special Feature",
+            value:
+              "Can be configured as single, dual or triple suction cup mount.",
+          },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Products",
+            value:
+              "Insta360 X5, X4, Ace Pro 2, Ace Pro, Ace, GO 3S, GO 3, X3, ONE RS, GO 2, ONE X2, ONE R and ONE X",
+          },
+        ],
+      },
+      {
+        category: "Package Contents",
+        items: [
+          {
+            label: "Included Accessories",
+            value: "Dual/Triple Suction Cup Car Mount",
+          },
+        ],
+      },
+    ],
   },
   {
-  id: "all-purpose-tripod",
-  name: "Insta360 All-Purpose Tripod",
-  category: "Action Camera Accessories",
-  brand: "Insta 360",
-  price: "₹3,628.00",
-  slug: "all-purpose-tripod",
-  status: "In Stock",
-  colors: [
-    {
-      name: "All",
-      images: ["/accessories/insta360/action-camera-accessories/4.webp"],
-    },
-  ],
-  overview:
-    "The Insta360 All-Purpose Tripod provides a stable platform for capturing photos, videos, and time-lapse shots. Its compact foldable design and sturdy construction make it ideal for both indoor and outdoor shooting.",
-  specs: [
-    {
-      category: "General Specifications",
-      items: [
-        { label: "Product Type", value: "Tripod" },
-        { label: "Brand", value: "Insta360" },
-        { label: "Mount Type", value: '1/4" Screw Mount' },
-      ],
-    },
-    {
-      category: "Features",
-      items: [
-        { label: "Design", value: "Compact, Foldable, Stable Legs" },
-        { label: "Usage", value: "Photography, Video Recording, Time-lapse" },
-        { label: "Compatibility Note", value: "Ace Pro 2/Ace Pro/Ace require Quick Release Mount or 3-Prong to 1/4 Adapter (sold separately)." },
-      ],
-    },
-    {
-      category: "Compatibility",
-      items: [
-        {
-          label: "Compatible Products",
-          value: "All Insta360 cameras with 1/4-inch mounting support",
-        },
-      ],
-    },
-    {
-      category: "Package Contents",
-      items: [
-        {
-          label: "Included Accessories",
-          value: "All-Purpose Tripod",
-        },
-      ],
-    },
-  ],
-},
-{
-  id: "dual-suction-cup-car-mount",
-  name: "Insta360 Dual Suction Cup Car Mount",
-  category: "Action Camera Accessories",
-  brand: "Insta 360",
-  price: "₹26,484.00",
-  slug: "dual-suction-cup-car-mount",
-  status: "Out of Stock",
-  colors: [
-    {
-      name: "All",
-      images: ["/accessories/insta360/action-camera-accessories/5.webp"],
-    },
-  ],
-  overview:
-    "The Insta360 Dual Suction Cup Car Mount delivers ultra-secure mounting for smooth third-person driving shots. Its powerful suction cups provide exceptional stability for creative automotive filmmaking.",
-  specs: [
-    {
-      category: "General Specifications",
-      items: [
-        { label: "Product Type", value: "Car Mount" },
-        { label: "Brand", value: "Insta360" },
-        { label: "Mount Type", value: "Dual/Triple Suction Cup Mount" },
-      ],
-    },
-    {
-      category: "Features",
-      items: [
-        { label: "Design", value: "Heavy-Duty Triple Suction Cup System" },
-        { label: "Usage", value: "Third-Person Vehicle Filming" },
-        { label: "Special Feature", value: "Can be configured as single, dual or triple suction cup mount." },
-      ],
-    },
-    {
-      category: "Compatibility",
-      items: [
-        {
-          label: "Compatible Products",
-          value: "Insta360 X5, X4, Ace Pro 2, Ace Pro, Ace, GO 3S, GO 3, X3, ONE RS, GO 2, ONE X2, ONE R and ONE X",
-        },
-      ],
-    },
-    {
-      category: "Package Contents",
-      items: [
-        {
-          label: "Included Accessories",
-          value: "Dual/Triple Suction Cup Car Mount",
-        },
-      ],
-    },
-  ],
-},
-{
-  id: "helmet-chin-mount",
-  name: "Insta360 Helmet Chin Mount",
-  category: "Action Camera Accessories",
-  brand: "Insta 360",
-  price: "₹2,672.00",
-  slug: "helmet-chin-mount",
-  status: "In Stock",
-  colors: [
-    {
-      name: "All",
-      images: ["/accessories/insta360/action-camera-accessories/6.webp"],
-    },
-  ],
-  overview:
-    "The Insta360 Helmet Chin Mount lets you capture immersive first-person riding footage with a secure fit on full-face helmets. It is lightweight, easy to install, and designed for stable POV recording.",
-  specs: [
-    {
-      category: "General Specifications",
-      items: [
-        { label: "Product Type", value: "Helmet Mount" },
-        { label: "Brand", value: "Insta360" },
-        { label: "Mount Type", value: "Helmet Chin Mount" },
-      ],
-    },
-    {
-      category: "Features",
-      items: [
-        { label: "Design", value: "Secure, Lightweight, Easy to Install" },
-        { label: "Usage", value: "Hands-Free Motorcycle & Cycling POV Recording" },
-        { label: "Quick Release Support", value: "GO 3/GO 3S requires Quick Release Mount." },
-      ],
-    },
-    {
-      category: "Compatibility",
-      items: [
-        {
-          label: "Compatible Products",
-          value: "Insta360 X5, X4, Ace Pro 2, Ace Pro, Ace, GO 3S, GO 3, X3, ONE RS, ONE X2, ONE X, GO 2 and ONE R",
-        },
-      ],
-    },
-    {
-      category: "Package Contents",
-      items: [
-        {
-          label: "Included Accessories",
-          value: "Helmet Chin Mount, 2 Screws, Mount Extension",
-        },
-      ],
-    },
-  ],
-},
-{
-  id: "quick-release-mount",
-  name: "Insta360 Quick Release Mount",
-  category: "Action Camera Accessories",
-  brand: "Insta 360",
-  price: "₹9,898.00",
-  slug: "quick-release-mount",
-  status: "In Stock",
-  colors: [
-    {
-      name: "All",
-      images: ["/accessories/insta360/action-camera-accessories/7.webp"],
-    },
-  ],
-  overview:
-    "The Insta360 Quick Release Mount allows you to switch your camera between different mounts in seconds. Its secure locking mechanism ensures fast installation while keeping your camera firmly attached.",
-  specs: [
-    {
-      category: "General Specifications",
-      items: [
-        { label: "Product Type", value: "Quick Release Mount" },
-        { label: "Brand", value: "Insta360" },
-        { label: "Mount Type", value: "Quick Release System" },
-      ],
-    },
-    {
-      category: "Features",
-      items: [
-        { label: "Design", value: "Quick Locking, Compact, Secure" },
-        { label: "Usage", value: "Fast Camera Mount Switching" },
-        { label: "Special Feature", value: "Tool-Free Installation and Removal" },
-      ],
-    },
-    {
-      category: "Compatibility",
-      items: [
-        {
-          label: "Compatible Products",
-          value: "Insta360 Ace Pro 2, Ace Pro, Ace, GO 3S, GO 3 and compatible Insta360 mounting accessories",
-        },
-      ],
-    },
-    {
-      category: "Package Contents",
-      items: [
-        {
-          label: "Included Accessories",
-          value: "Quick Release Mount",
-        },
-      ],
-    },
-  ],
-},
-{
-  id: "sandisk-extreme-pro-sdxc-uhs-ii",
-  name: "SanDisk Extreme PRO® SDXC™ UHS-II Card",
-  category: "Sd Card",
-  brand: "SanDisk",
-  price: "$59.99",
-  slug: "sandisk-extreme-pro-sdxc-uhs-ii",
-  status: "In Stock",
-  colors: [
-    {
-      name: "All",
-      images: ["/accessories/sd-card/2.webp"],
-    },
-  ],
-  overview:
-    "The SanDisk Extreme PRO SDXC UHS-II Card delivers professional-grade performance with ultra-fast read and write speeds, making it ideal for recording 8K, 4K UHD, and Full HD video as well as continuous burst photography.",
-  specs: [
-    {
-      category: "Memory Card Specifications",
-      items: [
-        { label: "Product Type", value: "SDXC Memory Card" },
-        { label: "Brand", value: "SanDisk" },
-        { label: "Interface", value: "UHS-II" },
-        { label: "Speed Class", value: "U3, V90, Class 10" },
-      ],
-    },
-    {
-      category: "Performance",
-      items: [
-        { label: "Read Speed", value: "Up to 300MB/s" },
-        { label: "Write Speed", value: "Up to 260MB/s" },
-        { label: "Recommended Use", value: "8K, 4K UHD, Full HD Video & RAW Photography" },
-      ],
-    },
-    {
-      category: "Durability",
-      items: [
-        { label: "Water Resistance", value: "Waterproof" },
-        { label: "Shock Resistance", value: "Shockproof" },
-        { label: "Temperature Resistance", value: "Temperature Proof" },
-        { label: "X-Ray Resistance", value: "X-Ray Proof" },
-      ],
-    },
-    {
-      category: "Warranty",
-      items: [
-        { label: "Warranty", value: "Limited Lifetime Warranty" },
-      ],
-    },
-  ],
-},
-{
-  id: "sandisk-extreme-pro-sdxc-uhs-i",
-  name: "SanDisk Extreme PRO® SDXC™ UHS-I Card",
-  category: "Sd Card",
-  brand: "SanDisk",
-  price: "$24.99",
-  slug: "sandisk-extreme-pro-sdxc-uhs-i",
-  status: "In Stock",
-  colors: [
-    {
-      name: "All",
-      images: ["/accessories/sd-card/3.webp"],
-    },
-  ],
-  overview:
-    "Capture stunning 6K, 4K UHD, and Full HD video with the SanDisk Extreme PRO SDXC UHS-I Card, designed for DSLR, mirrorless cameras, and professional photography workflows.",
-  specs: [
-    {
-      category: "Memory Card Specifications",
-      items: [
-        { label: "Product Type", value: "SDXC Memory Card" },
-        { label: "Brand", value: "SanDisk" },
-        { label: "Interface", value: "UHS-I" },
-        { label: "Speed Class", value: "U3, V30, Class 10" },
-      ],
-    },
-    {
-      category: "Performance",
-      items: [
-        { label: "Read Speed", value: "Up to 200MB/s" },
-        { label: "Write Speed", value: "Up to 140MB/s" },
-        { label: "Recommended Use", value: "6K, 4K UHD Video & High-Speed Burst Photography" },
-      ],
-    },
-    {
-      category: "Durability",
-      items: [
-        { label: "Water Resistance", value: "Waterproof" },
-        { label: "Shock Resistance", value: "Shockproof" },
-        { label: "Temperature Resistance", value: "Temperature Proof" },
-        { label: "X-Ray Resistance", value: "X-Ray Proof" },
-      ],
-    },
-    {
-      category: "Warranty",
-      items: [
-        { label: "Warranty", value: "Limited Lifetime Warranty" },
-      ],
-    },
-  ],
-},
-{
-  id: "sandisk-extreme-sd-uhs-i",
-  name: "SanDisk Extreme® SD UHS-I Card",
-  category: "Sd Card",
-  brand: "SanDisk",
-  price: "$19.99",
-  slug: "sandisk-extreme-sd-uhs-i",
-  status: "In Stock",
-  colors: [
-    {
-      name: "All",
-      images: ["/accessories/sd-card/4.webp"],
-    },
-  ],
-  overview:
-    "The SanDisk Extreme SD UHS-I Card offers reliable high-speed performance for capturing Full HD, 4K UHD video, and high-resolution photos with compatible DSLR and mirrorless cameras.",
-  specs: [
-    {
-      category: "Memory Card Specifications",
-      items: [
-        { label: "Product Type", value: "SDXC Memory Card" },
-        { label: "Brand", value: "SanDisk" },
-        { label: "Interface", value: "UHS-I" },
-        { label: "Speed Class", value: "U3, V30, Class 10" },
-      ],
-    },
-    {
-      category: "Performance",
-      items: [
-        { label: "Read Speed", value: "Up to 180MB/s" },
-        { label: "Write Speed", value: "Up to 130MB/s" },
-        { label: "Recommended Use", value: "4K UHD Video Recording & Photography" },
-      ],
-    },
-    {
-      category: "Durability",
-      items: [
-        { label: "Water Resistance", value: "Waterproof" },
-        { label: "Shock Resistance", value: "Shockproof" },
-        { label: "Temperature Resistance", value: "Temperature Proof" },
-        { label: "X-Ray Resistance", value: "X-Ray Proof" },
-      ],
-    },
-    {
-      category: "Warranty",
-      items: [
-        { label: "Warranty", value: "Limited Lifetime Warranty" },
-      ],
-    },
-  ],
-},
+    id: "helmet-chin-mount",
+    name: "Insta360 Helmet Chin Mount",
+    category: "Action Camera Accessories",
+    brand: "Insta 360",
+    price: "₹2,672.00",
+    slug: "helmet-chin-mount",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/insta360/action-camera-accessories/6.webp"],
+      },
+    ],
+    overview:
+      "The Insta360 Helmet Chin Mount lets you capture immersive first-person riding footage with a secure fit on full-face helmets. It is lightweight, easy to install, and designed for stable POV recording.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Helmet Mount" },
+          { label: "Brand", value: "Insta360" },
+          { label: "Mount Type", value: "Helmet Chin Mount" },
+        ],
+      },
+      {
+        category: "Features",
+        items: [
+          { label: "Design", value: "Secure, Lightweight, Easy to Install" },
+          {
+            label: "Usage",
+            value: "Hands-Free Motorcycle & Cycling POV Recording",
+          },
+          {
+            label: "Quick Release Support",
+            value: "GO 3/GO 3S requires Quick Release Mount.",
+          },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Products",
+            value:
+              "Insta360 X5, X4, Ace Pro 2, Ace Pro, Ace, GO 3S, GO 3, X3, ONE RS, ONE X2, ONE X, GO 2 and ONE R",
+          },
+        ],
+      },
+      {
+        category: "Package Contents",
+        items: [
+          {
+            label: "Included Accessories",
+            value: "Helmet Chin Mount, 2 Screws, Mount Extension",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "quick-release-mount",
+    name: "Insta360 Quick Release Mount",
+    category: "Action Camera Accessories",
+    brand: "Insta 360",
+    price: "₹9,898.00",
+    slug: "quick-release-mount",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/insta360/action-camera-accessories/7.webp"],
+      },
+    ],
+    overview:
+      "The Insta360 Quick Release Mount allows you to switch your camera between different mounts in seconds. Its secure locking mechanism ensures fast installation while keeping your camera firmly attached.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Quick Release Mount" },
+          { label: "Brand", value: "Insta360" },
+          { label: "Mount Type", value: "Quick Release System" },
+        ],
+      },
+      {
+        category: "Features",
+        items: [
+          { label: "Design", value: "Quick Locking, Compact, Secure" },
+          { label: "Usage", value: "Fast Camera Mount Switching" },
+          {
+            label: "Special Feature",
+            value: "Tool-Free Installation and Removal",
+          },
+        ],
+      },
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Products",
+            value:
+              "Insta360 Ace Pro 2, Ace Pro, Ace, GO 3S, GO 3 and compatible Insta360 mounting accessories",
+          },
+        ],
+      },
+      {
+        category: "Package Contents",
+        items: [
+          {
+            label: "Included Accessories",
+            value: "Quick Release Mount",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "sandisk-extreme-pro-sdxc-uhs-ii",
+    name: "SanDisk Extreme PRO® SDXC™ UHS-II Card",
+    category: "Sd Card",
+    brand: "SanDisk",
+    price: "$59.99",
+    slug: "sandisk-extreme-pro-sdxc-uhs-ii",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/sd-card/2.webp"],
+      },
+    ],
+    overview:
+      "The SanDisk Extreme PRO SDXC UHS-II Card delivers professional-grade performance with ultra-fast read and write speeds, making it ideal for recording 8K, 4K UHD, and Full HD video as well as continuous burst photography.",
+    specs: [
+      {
+        category: "Memory Card Specifications",
+        items: [
+          { label: "Product Type", value: "SDXC Memory Card" },
+          { label: "Brand", value: "SanDisk" },
+          { label: "Interface", value: "UHS-II" },
+          { label: "Speed Class", value: "U3, V90, Class 10" },
+        ],
+      },
+      {
+        category: "Performance",
+        items: [
+          { label: "Read Speed", value: "Up to 300MB/s" },
+          { label: "Write Speed", value: "Up to 260MB/s" },
+          {
+            label: "Recommended Use",
+            value: "8K, 4K UHD, Full HD Video & RAW Photography",
+          },
+        ],
+      },
+      {
+        category: "Durability",
+        items: [
+          { label: "Water Resistance", value: "Waterproof" },
+          { label: "Shock Resistance", value: "Shockproof" },
+          { label: "Temperature Resistance", value: "Temperature Proof" },
+          { label: "X-Ray Resistance", value: "X-Ray Proof" },
+        ],
+      },
+      {
+        category: "Warranty",
+        items: [{ label: "Warranty", value: "Limited Lifetime Warranty" }],
+      },
+    ],
+  },
+  {
+    id: "sandisk-extreme-pro-sdxc-uhs-i",
+    name: "SanDisk Extreme PRO® SDXC™ UHS-I Card",
+    category: "Sd Card",
+    brand: "SanDisk",
+    price: "$24.99",
+    slug: "sandisk-extreme-pro-sdxc-uhs-i",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/sd-card/3.webp"],
+      },
+    ],
+    overview:
+      "Capture stunning 6K, 4K UHD, and Full HD video with the SanDisk Extreme PRO SDXC UHS-I Card, designed for DSLR, mirrorless cameras, and professional photography workflows.",
+    specs: [
+      {
+        category: "Memory Card Specifications",
+        items: [
+          { label: "Product Type", value: "SDXC Memory Card" },
+          { label: "Brand", value: "SanDisk" },
+          { label: "Interface", value: "UHS-I" },
+          { label: "Speed Class", value: "U3, V30, Class 10" },
+        ],
+      },
+      {
+        category: "Performance",
+        items: [
+          { label: "Read Speed", value: "Up to 200MB/s" },
+          { label: "Write Speed", value: "Up to 140MB/s" },
+          {
+            label: "Recommended Use",
+            value: "6K, 4K UHD Video & High-Speed Burst Photography",
+          },
+        ],
+      },
+      {
+        category: "Durability",
+        items: [
+          { label: "Water Resistance", value: "Waterproof" },
+          { label: "Shock Resistance", value: "Shockproof" },
+          { label: "Temperature Resistance", value: "Temperature Proof" },
+          { label: "X-Ray Resistance", value: "X-Ray Proof" },
+        ],
+      },
+      {
+        category: "Warranty",
+        items: [{ label: "Warranty", value: "Limited Lifetime Warranty" }],
+      },
+    ],
+  },
+  {
+    id: "sandisk-extreme-sd-uhs-i",
+    name: "SanDisk Extreme® SD UHS-I Card",
+    category: "Sd Card",
+    brand: "SanDisk",
+    price: "$19.99",
+    slug: "sandisk-extreme-sd-uhs-i",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/sd-card/4.webp"],
+      },
+    ],
+    overview:
+      "The SanDisk Extreme SD UHS-I Card offers reliable high-speed performance for capturing Full HD, 4K UHD video, and high-resolution photos with compatible DSLR and mirrorless cameras.",
+    specs: [
+      {
+        category: "Memory Card Specifications",
+        items: [
+          { label: "Product Type", value: "SDXC Memory Card" },
+          { label: "Brand", value: "SanDisk" },
+          { label: "Interface", value: "UHS-I" },
+          { label: "Speed Class", value: "U3, V30, Class 10" },
+        ],
+      },
+      {
+        category: "Performance",
+        items: [
+          { label: "Read Speed", value: "Up to 180MB/s" },
+          { label: "Write Speed", value: "Up to 130MB/s" },
+          {
+            label: "Recommended Use",
+            value: "4K UHD Video Recording & Photography",
+          },
+        ],
+      },
+      {
+        category: "Durability",
+        items: [
+          { label: "Water Resistance", value: "Waterproof" },
+          { label: "Shock Resistance", value: "Shockproof" },
+          { label: "Temperature Resistance", value: "Temperature Proof" },
+          { label: "X-Ray Resistance", value: "X-Ray Proof" },
+        ],
+      },
+      {
+        category: "Warranty",
+        items: [{ label: "Warranty", value: "Limited Lifetime Warranty" }],
+      },
+    ],
+  },
+  {
+    id: "wireless-microphone-me-w1",
+    name: "WIRELESS MICROPHONE ME-W1",
+    category: "Microphone",
+    brand: "Nikon",
+    price: "₹13,990",
+    slug: "wireless-microphone-me-w1",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/nikon/microphone/1.webp"],
+      },
+    ],
+    overview:
+      "The SanDisk Extreme SD UHS-I Card offers reliable high-speed performance for capturing Full HD, 4K UHD video, and high-resolution photos with compatible DSLR and mirrorless cameras.",
+    specs: [
+      {
+        category: "Remote & Transmitter Specifications",
+        items: [
+          { label: "Display SKU", value: "VWA105AK" },
+          { label: "Product Category", value: "Remotes and Transmitters" },
+        ],
+      },
+      {
+        category: "Compatible Products",
+        items: [
+          {
+            label: "Supported Cameras",
+            value:
+              "Z fc, Z 7, Z 6, Z 7II, Z 6II, Z 5, Z 50, D6, COOLPIX P950, D780, D610, D7500, COOLPIX P1000, D850, D7200, D5600, D500, D3300, D5300, D5500, D5, D7100, D3200, D810A, D750, D810, Nikon 1 V3, D4S, D800E, COOLPIX P7800, D5200, Nikon 1 V2, D600, D7000, COOLPIX P7700, Nikon 1 V1, D800, D4, COOLPIX P7100, D5100, COOLPIX P7000",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "me-d10-shotgun-microphone",
+    name: "ME-D10 Shotgun Microphone",
+    category: "Microphone",
+    brand: "Nikon",
+    price: "₹23,995",
+    slug: "me-d10-shotgun-microphone",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/nikon/microphone/2.webp"],
+      },
+    ],
+    overview:
+      "Ideal for run-and-gun shooting, short films, and event coverage, the highly directional ME-D10 shotgun microphone delivers pro-level clarity in an ultra-compact form. It features Pure Mode for 32-bit float recording (no clipping, no retakes!) and Focus Mode to isolate your subject in noisy environments. Seamlessly compatible with the Nikon ZR and equipped with a visible REC lamp, it ensures you never miss a moment nor a mic check.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Shotgun Microphone" },
+          { label: "Polar Pattern", value: "Omnidirectional, Front, Rear" },
+          {
+            label: "Frequency Response",
+            value: "40–20,000 Hz (PURE), 90–20,000 Hz (FOCUS)",
+          },
+          {
+            label: "Sampling Frequency / Bit Length",
+            value:
+              "48 kHz / 24-bit, 48 kHz / 32-bit Float (when attached to C1)",
+          },
+          {
+            label: "Power Supply",
+            value: "Supplied by the Camera",
+          },
+        ],
+      },
+      {
+        category: "Physical Specifications",
+        items: [
+          {
+            label: "Dimensions (W × H × D)",
+            value: "Approx. 34 × 58.5 × 73 mm (1.4 × 2.4 × 2.9 in.)",
+          },
+          {
+            label: "Weight",
+            value: "Approx. 86 g (3.1 oz) (Body Only)",
+          },
+          {
+            label: "Operating Temperature",
+            value: "-10°C to 40°C (+14°F to 104°F)",
+          },
+        ],
+      },
+      {
+        category: "Included Accessories",
+        items: [
+          {
+            label: "Supplied Accessories",
+            value: "Wind Muff, Soft Case, Digital Accessory Foot Cover",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "fujifilm-stereo-microphone-mic-st1",
+    name: "FUJIFILM STEREO MICROPHONE MIC-ST1",
+    category: "Microphone",
+    brand: "Nikon",
+    price: "₹9,999",
+    slug: "fujifilm-stereo-microphone-mic-st1",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/fujifilm/microphone/1.webp"],
+      },
+    ],
+    overview:
+      "Capture clear, natural stereo audio for your videos with the FUJIFILM MIC-ST1, designed to deliver enhanced sound quality for compatible X Series and GFX cameras. Its compact on-camera design and included 2.5mm to 3.5mm adapter make it a convenient choice for creators on the go.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Model Number", value: "MIC-ST1" },
+          { label: "Product Type", value: "Stereo Microphone" },
+          {
+            label: "Compatible Models",
+            value:
+              "GFX100, GFX100S, GFX50S II, GFX 50S, GFX 50R, X-H1, X-Pro3, X-Pro2, X-T4, X-T3, X-T2, X-T1, X-S10, X-T30 II, X-T30, X-T20, X-T10, X-T200, X-T100, X-E4, X-E3, X-E2S, X-E2, X-E1, X-A7, X-A5, X100V, X100F, X100T, X70, X30, X-S1, FinePix HS50EXR",
+          },
+        ],
+      },
+      {
+        category: "Audio Features",
+        items: [
+          {
+            label: "Recording",
+            value: "Records Clear Stereo Sound",
+          },
+          {
+            label: "Microphone Level Control",
+            value: "4-Step Adjustable Input Level with On-Camera Level Meter",
+          },
+          {
+            label: "Audio Protection",
+            value: "Helps Prevent Recording Omissions and Sound Clipping",
+          },
+        ],
+      },
+      {
+        category: "Connectivity",
+        items: [
+          {
+            label: "Microphone Connector",
+            value: "Φ2.5 mm",
+          },
+          {
+            label: "Included Adapter",
+            value: "Φ2.5 mm to 3.5 mm Conversion Adapter",
+          },
+          {
+            label: "Compatibility",
+            value:
+              "Supports Compatible X Series Cameras Using the Included Adapter",
+          },
+        ],
+      },
+      {
+        category: "Origin & Manufacturer",
+        items: [
+          { label: "Country of Origin", value: "China" },
+          { label: "Manufacturer", value: "Fujifilm Corporation" },
+          {
+            label: "Manufacturer Address",
+            value:
+              "26-30, Nishiazabu, 2-Chome, Minato-Ku, Tokyo 106-8620, Japan",
+          },
+          {
+            label: "Importer",
+            value: "FUJIFILM India Private Limited",
+          },
+          {
+            label: "Importer Address",
+            value:
+              "Business Centre Office No. 521, Level V, Caddie Commercial Tower, Hospitality District, Aerocity, IGI Airport, New Delhi - 110037, India",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "sb-700-speedlight",
+    name: "SB-700 SPEEDLIGHT",
+    category: "Lightning Solution",
+    brand: "Nikon",
+    price: "₹24,400",
+    slug: "sb-700-speedlight",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/nikon/lightning-solution/1.webp"],
+      },
+    ],
+    overview:
+      "Versatility meets portability. The i-TTL-optimized SB-700 offers the perfect balance of exposure, performance and portability for any photographer on the go. It’s flexible flash head provides creative lighting freedom for nearly any subject. Achieve brilliant results and seamless lighting system integration with hot shoe operation or wirelessly as a master, commander or remote light source.",
+    specs: [
+      {
+        category: "General Specifications",
+        items: [
+          { label: "Product Type", value: "Speedlight" },
+          { label: "Display SKU", value: "FSA03901" },
+          {
+            label: "Guide Number",
+            value:
+              "28 m / 92 ft. (ISO 100, 35mm zoom head, FX format, Standard illumination, 20°C/68°F) to 39 m / 128 ft. (ISO 200, 35mm zoom head, FX format, Standard illumination, 20°C/68°F)",
+          },
+        ],
+      },
+      {
+        category: "Lighting Performance",
+        items: [
+          {
+            label: "Illumination Pattern",
+            value:
+              "Automatically adjusts the light distribution angle to the camera's image area in both FX and DX formats. Supports Standard, Even, and Center-weighted illumination patterns.",
+          },
+          {
+            label: "Transmission Range",
+            value: "Not specified by the manufacturer",
+          },
+        ],
+      },
+      {
+        category: "Physical Specifications",
+        items: [
+          {
+            label: "Dimensions (W × H × D)",
+            value: "71 × 126 × 104.5 mm (2.8 × 5.0 × 4.1 in.)",
+          },
+          {
+            label: "Weight",
+            value: "360 g (12.7 oz.) (Body Only)",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "ef-x8",
+    name: "Shoe mount flash EF-X8",
+    category: "Lightning Solution",
+    brand: "FUjiFilm",
+    price: "₹24,400",
+    slug: "ef-x8",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/fujifilm/lightning-solution/1.webp"],
+      },
+    ],
+    overview:
+      "This small hot shoe flash is now available as an optional accessory.",
+    specs: [
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Cameras",
+            value:
+              "X-H2S, X-H2, X-H1, X-Pro3, X-Pro2, X-T5, X-T4, X-T3, X-T2, X-T1, X-E5, X-E4, X-E3, X-M5",
+          },
+          {
+            label: "Compatible Flash",
+            value: "Shoe Mount Flash EF-X8",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "ef-x500",
+    name: "Shoe mount flash EF-X500",
+    category: "Lightning Solution",
+    brand: "FUjiFilm",
+    price: "₹24,400",
+    slug: "ef-x500",
+    status: "In Stock",
+    colors: [
+      {
+        name: "All",
+        images: ["/accessories/fujifilm/lightning-solution/2.webp"],
+      },
+    ],
+    overview:
+      "The EF-X500 is a hot-shoe mount flash with the maximum guide number of approx. 50 (ISO100·m) / 164 (ISO100·ft). Its support for the FP mode (high-speed flash sync) means the flash can be fired at any shutter speed.",
+    specs: [
+      {
+        category: "Compatibility",
+        items: [
+          {
+            label: "Compatible Cameras",
+            value:
+              "GFX100 II, GFX100, GFX100S II, GFX100S, GFX50S II, GFX 50S, GFX 50R, GFX100RF, X-H2S, X-H2, X-H1, X-Pro3, X-Pro2, X-T5, X-T4, X-T3, X-T2, X-T1, X-S20, X-S10, X-T50, X-T30 III, X-T30 II, X-T20, X-T200, X-E5, X-E4, X-E3, X-M5, X100VI, X100V, X100F",
+          },
+          {
+            label: "Compatible Flash",
+            value: "Shoe Mount Flash EF-X500",
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 export default accessories;
