@@ -128,27 +128,27 @@ export default function AccessoriesPage() {
     );
   };
 
-useEffect(() => {
-  if (filteredaccessories.length > 0) {
-    setTimeout(() => {
-      const firstProduct = document.getElementById(
-        `product-${filteredaccessories[0].id}`
-      );
+  useEffect(() => {
+    if (filteredaccessories.length > 0) {
+      setTimeout(() => {
+        const firstProduct = document.getElementById(
+          `product-${filteredaccessories[0].id}`
+        );
 
-      if (firstProduct) {
-        const y =
-          firstProduct.getBoundingClientRect().top +
-          window.pageYOffset -
-          120; // Navbar height
+        if (firstProduct) {
+          const y =
+            firstProduct.getBoundingClientRect().top +
+            window.pageYOffset -
+            120; // Navbar height
 
-        window.scrollTo({
-          top: y,
-          behavior: "smooth",
-        });
-      }
-    }, 100);
-  }
-}, [activeCategory, selectedBrands]);
+          window.scrollTo({
+            top: y,
+            behavior: "smooth",
+          });
+        }
+      }, 100);
+    }
+  }, [activeCategory, selectedBrands]);
 
   return (
     <>
@@ -188,7 +188,7 @@ useEffect(() => {
               transition={{ delay: 0.2 }}
               className={`w-full lg:w-64 shrink-0 ${isMobileFilterOpen ? "block" : "hidden lg:block"}`}
             >
-              <div className="sticky top-32 space-y-10 bg-background lg:bg-transparent pb-6 lg:pb-0 z-10">
+              <div className="space-y-10 bg-background lg:bg-transparent pb-6 lg:pb-0 z-10">
                 {/* Search */}
                 <div className="relative">
                   <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
@@ -224,10 +224,21 @@ useEffect(() => {
                               setSelectedBrands([]);
                             }
 
-                            // Only open the clicked category.
-                            // Never close the currently open one.
                             if (cat.subcategories.length > 0) {
                               setOpenCategory(cat.name);
+                            }
+
+                            const accessoriesSection = document.getElementById("accessories");
+                            if (accessoriesSection) {
+                              const y =
+                                accessoriesSection.getBoundingClientRect().top +
+                                window.pageYOffset -
+                                120;
+
+                              window.scrollTo({
+                                top: y,
+                                behavior: "smooth",
+                              });
                             }
                           }}
                           className="w-full flex cursor-pointer items-center justify-between py-2 text-left hover:text-black transition-colors"
@@ -371,7 +382,7 @@ useEffect(() => {
                         setActiveCategory("All Accessories");
                         setActiveBrand("");
                         setSearchQuery("");
-                        setSelectedBrands([]); // Clear selected brands
+                        setSelectedBrands([]);
                       }}
                       className="mt-4 text-[#111] font-syncopate text-xs tracking-widest border-b border-[#111] pb-1 hover:text-[#FF0000] hover:border-[#FF0000] transition-colors"
                     >

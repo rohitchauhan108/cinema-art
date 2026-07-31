@@ -64,7 +64,7 @@ export default function Navbar() {
     { name: "ABOUT US", href: "/about", meta: "TV 1/250s" },
     { name: "ACCESSORIES", href: "/accessories", meta: "AV F/1.2" },
     {
-      name: "SERVICES",
+      name: "PHOTO Printing",
       href: "",
       submenu: [
         {
