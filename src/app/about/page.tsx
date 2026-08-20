@@ -8,43 +8,43 @@ import Footer from "@/components/layout/Footer";
 
 const principles = [
   {
-    title: "CURATED OVER CROWDED",
-    description: "We focus on equipment and services that meaningfully improve image quality, workflow confidence, and long-term value instead of filling shelves with noise.",
+    title: "QUALITY OVER QUANTITY",
+    description: "We only offer reliable gear and services that truly improve your photos, videos, and daily work, instead of selling clutter you do not need.",
   },
   {
-    title: "ADVISORY BEFORE SELLING",
-    description: "Every creator works differently. We help match systems, lenses, audio, support gear, and finishing services to real use cases, not just specifications.",
+    title: "GUIDANCE FIRST",
+    description: "Every creator works differently. We help you choose the right cameras, lenses, audio, and support gear for your exact needs, not just specs.",
   },
   {
-    title: "FINISH MATTERS",
-    description: "From color-managed output to museum-grade framing and print presentation, we care about what happens after the shutter just as much as the capture itself.",
+    title: "THE FINAL TOUCH",
+    description: "From color matching to high-end framing and printing, we care just as much about how your final work looks after you press the shutter.",
   },
 ];
 
 const capabilities = [
-  "Premium mirrorless cameras, lenses, audio, support gear",
-  "Authorized brand guidance for Fujifilm, Sony, Canon, DJI",
-  "Hybrid photo-video recommendations for studios & commercial teams",
-  "Fine art printing, display preparation, archival framing",
-  "Workflow-first advice for vlogging, portraiture, client shoots",
+  "Top cameras, lenses, microphones, and support gear",
+  "Trusted guidance for Fujifilm, Sony, Canon, and DJI",
+  "Hybrid photo and video setups for studios and teams",
+  "Fine art printing, display prep, and custom framing",
+  "Practical advice for vlogging, portraits, and client shoots",
 ];
 
 const whoWeServe = [
   {
     title: "CONTENT CREATORS",
-    description: "Compact, reliable setups for daily publishing, reels, shorts, podcasts, and fast-turnaround production.",
+    description: "Easy-to-use gear for daily videos, reels, shorts, podcasts, and fast projects.",
   },
   {
     title: "WORKING PROFESSIONALS",
-    description: "High-performance bodies, lenses, and workflow guidance for commercial, portrait, event, and studio assignments.",
+    description: "High-performance cameras and lenses for commercial, portrait, event, and studio work.",
   },
   {
-    title: "EMERGING FILMMAKERS",
-    description: "Balanced kits built around image quality, audio clarity, stabilization, and practical production flexibility.",
+    title: "FILMMAKERS",
+    description: "Balanced kits focused on great picture quality, clear audio, and steady movement.",
   },
   {
     title: "COLLECTORS & BUYERS",
-    description: "Presentation-focused services for fine art prints, premium framing, and gallery-ready visual finishing.",
+    description: "Special services for fine art prints, professional framing, and gallery displays.",
   },
 ];
 
@@ -57,7 +57,7 @@ export default function AboutPage() {
       <section className="relative pt-40 pb-20 px-6 md:px-16 overflow-hidden">
         <div className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-20 pointer-events-none hidden md:block">
            <span className="font-space tracking-[0.6em] text-[10px] font-bold text-gray-800" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>
-              ABOUT CINEMAART
+             ABOUT CINEMAART
            </span>
         </div>
 
@@ -86,7 +86,7 @@ export default function AboutPage() {
             className="mt-12 md:mt-20 max-w-2xl border-l-2 border-[#FF0000] pl-6 md:pl-10 md:ml-[20vw]"
           >
             <p className="font-space text-sm md:text-base leading-relaxed text-gray-800 uppercase font-medium">
-              CinemaArt Studio brings together premium imaging equipment, thoughtful advisory, and finishing services for modern creators. We exist for photographers, filmmakers, studios, and visual brands who want more than a transaction.
+              CinemaArt Studio combines great camera gear, expert advice, and professional finishing services in one place. We are here for photographers, filmmakers, and studios who want a true partner, not just a store.
             </p>
           </motion.div>
         </div>
@@ -99,9 +99,9 @@ export default function AboutPage() {
             <div className="absolute inset-0 bg-[#FF0000] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out z-0" />
             <div className="relative z-10">
               <p className="font-space text-[10px] font-bold tracking-[0.2em] mb-6 opacity-60 group-hover:opacity-100 transition-opacity duration-500">01 // POSITION</p>
-              <h2 className="font-syncopate text-2xl md:text-3xl font-bold mb-6 group-hover:text-white transition-colors duration-500">INTERSECTION OF RETAIL & CONSULTANCY</h2>
+              <h2 className="font-syncopate text-2xl md:text-3xl font-bold mb-6 group-hover:text-white transition-colors duration-500">SHOP AND ADVISORY COMBINED</h2>
               <p className="font-space text-sm md:text-base leading-relaxed group-hover:text-white/90 transition-colors duration-500">
-                We operate at the intersection of premium retail, creator consultancy, and visual finishing, helping clients move from selection to output with confidence.
+                We bridge the gap between selling high-end gear and offering expert advice so you can move from choosing equipment to creating your final piece with confidence.
               </p>
             </div>
           </div>
@@ -109,9 +109,9 @@ export default function AboutPage() {
             <div className="absolute inset-0 bg-[#FF0000] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out z-0" />
             <div className="relative z-10">
               <p className="font-space text-[10px] font-bold tracking-[0.2em] mb-6 opacity-60 group-hover:opacity-100 transition-opacity duration-500">02 // DIFFERENCE</p>
-              <h2 className="font-syncopate text-2xl md:text-3xl font-bold mb-6 group-hover:text-white transition-colors duration-500">EXPERTISE IS NOT SEPARATED FROM BUYING</h2>
+              <h2 className="font-syncopate text-2xl md:text-3xl font-bold mb-6 group-hover:text-white transition-colors duration-500">REAL EXPERTISE WITH EVERY PURCHASE</h2>
               <p className="font-space text-sm md:text-base leading-relaxed group-hover:text-white/90 transition-colors duration-500">
-                The same mindset that values a strong sensor, a good lens pairing, or reliable audio also values print fidelity, framing quality, and presentation.
+                We care about finding you the right lens or camera sensor, and we care just as much about how your final prints and framing look in the real world.
               </p>
             </div>
           </div>
@@ -129,17 +129,17 @@ export default function AboutPage() {
             </div>
             <div className="w-full md:w-2/3 flex flex-col gap-12 font-space text-sm md:text-base leading-relaxed text-gray-800">
               <p className="text-xl md:text-2xl font-bold text-[#111]">
-                The imaging world has changed. Today's buyers are rarely choosing for still photography alone.
+                The world of creative media has changed. Today, creators rarely shoot photos alone.
               </p>
               <p>
-                They need hybrid systems for photo and video, creator-friendly workflows, dependable autofocus, better audio, lighter kits, and stronger visual output across social, commercial, and printed formats. CinemaArt Studio is shaped around that reality.
+                You need hybrid systems that handle both photo and video, workflows that save time, sharp autofocus, clean audio, and lightweight kits that look great across social media, client sites, and print. CinemaArt Studio was built for this exact modern setup.
               </p>
               <p>
-                Our approach is informed by how professionals and creators actually work: they need portability without compromise, product advice without confusion, and finishing services that respect the image after capture. That is why our platform combines leading camera systems, creator tools, printing expertise, and premium framing into one coherent experience.
+                We understand how creators work: you want gear that is easy to carry, advice that makes sense, and printing options that do your work justice. That is why we bring together top camera brands, helpful creator tools, and fine art printing under one roof.
               </p>
               <div className="p-8 border-2 border-[#111] bg-[#111] text-white">
                 <p className="font-bold text-lg">
-                  We believe good equipment should not feel intimidating and premium service should not feel vague. The result is a studio-led retail environment designed to help clients buy well, create better, and present their work with more confidence.
+                  We believe good gear should never feel confusing, and customer service should always be clear. Our goal is to help you buy the right equipment, create better work, and share it proudly.
                 </p>
               </div>
             </div>

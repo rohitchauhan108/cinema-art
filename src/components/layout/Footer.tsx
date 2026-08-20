@@ -24,9 +24,7 @@ export default function Footer() {
               <h3 className="font-syncopate text-sm font-bold tracking-widest">LOCATION</h3>
             </div>
             <address className="font-space not-italic text-gray-400">
-              123 Creative District<br />
-              Artisan Avenue<br />
-              New Delhi, India 110001
+              18, Chakrata Rd,<br/> Connaught Place, Dehradun, Uttarakhand 248001<br/>
             </address>
           </div>
 

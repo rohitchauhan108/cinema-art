@@ -17,9 +17,9 @@ export default function Home() {
     <main className="relative bg-background">
       <Loader />
       <Navbar />
-      <Hero3D />
-      <Marquee />
+      {/* <Hero3D /> */}
       <Slider/>
+      <Marquee />
       <Frames/>
       <Equipment />
       <Features />

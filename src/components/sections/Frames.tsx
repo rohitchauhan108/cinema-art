@@ -51,7 +51,7 @@ function Frames() {
 
             {/* Floating Top Badge */}
             <div className="absolute top-6 left-6 z-20 bg-white/10 backdrop-blur-md border border-white/10 text-white text-[10px] tracking-widest font-medium py-1.5 px-3.5 rounded-full uppercase">
-              Cameras
+              Products
             </div>
 
             {/* Bottom Content Area - Starts at black/50, animates to black/70 on hover */}
@@ -65,7 +65,7 @@ function Frames() {
                 style={microShadow}
                 className="text-2xl sm:text-3xl font-light text-white tracking-wide mb-3"
               >
-                Cameras
+                Products
               </h3>
 
               {/* Animated Reveal Description */}

@@ -65,23 +65,23 @@ export default function Navbar() {
     { name: "ACCESSORIES", href: "/accessories", meta: "AV F/1.2" },
     {
       name: "PHOTO Printing",
-      href: "",
+      href: "/photo-printing",
       submenu: [
         {
           name: "Customised Photo Albums and Photo Books",
-          href: "/services/custom-photo-&-album",
+          href: "/photo-printing",
         },
         {
           name: "Photo Printing & Framing",
-          href: "/services/photo-print-framing",
+          href: "/photo-printing",
         },
         {
           name: "Passport photo service",
-          href: "/services/passport-photo-service",
+          href: "/photo-printing",
         },
         {
-          name: "Canva Printing & Framing",
-          href: "/services/canva-print-framing",
+          name: "Canva's Printing & Framing",
+          href: "/photo-printing",
         },
       ],
     },
@@ -113,7 +113,7 @@ export default function Navbar() {
             damping: 38,
             mass: 0.7,
           }}
-          className="flex items-center justify-between pointer-events-auto text-black border-t-0 border-x-0"
+          className="flex bg-white items-center justify-between pointer-events-auto text-black border-t-0 border-x-0"
         >
           {/* LEFT: Logo & Metadata Matrix */}
           <div className="flex items-center gap-4 select-none">

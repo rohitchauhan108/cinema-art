@@ -14,17 +14,17 @@ const SLIDES_DATA: SlideItem[] = [
   {
     id: 1,
     frameImg: "/frames1.jpg",
-    cameraImg: "/cameras1.jpg",
+    cameraImg: "/cameras2.jpg",
   },
   {
     id: 2,
     frameImg: "/frames2.jpg",
-    cameraImg: "/cameras2.jpg",
+    cameraImg: "lense.webp",
   },
   {
     id: 3,
     frameImg: "/frames3.jpg",
-    cameraImg: "/cameras3.jpg",
+    cameraImg: "accessories.webp",
   },
 ];
 
@@ -61,7 +61,7 @@ export default function CleanFullWidthSlider() {
   }, [isPaused, nextSlide]);
 
   return (
-    <div className="relative w-screen overflow-hidden bg-gray-950 select-none left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+    <div className="relative w-screen overflow-hidden bg-gray-950 select-none left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mt-20">
       
       {/* Main Container Window */}
       <div
@@ -112,7 +112,7 @@ export default function CleanFullWidthSlider() {
                     </div>
                   ) : (
                     <Image
-                      src={slide.frameImg}
+                      src={slide.cameraImg}
                       alt="Gallery Presentation Frames"
                       fill
                       priority={slide.id === 1}
@@ -132,7 +132,7 @@ export default function CleanFullWidthSlider() {
                     </div>
                   ) : (
                     <Image
-                      src={slide.cameraImg}
+                      src={slide.frameImg}
                       alt="Gallery Presentation Cameras"
                       fill
                       priority={slide.id === 1}

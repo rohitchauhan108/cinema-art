@@ -70,8 +70,7 @@ export default function ContactPage() {
                 <span className="font-space text-[10px] font-bold tracking-[0.2em] mb-4 block text-[#FF0000] group-hover:text-white transition-colors duration-500">[ LOCATION ]</span>
                 <h3 className="font-syncopate text-2xl font-bold mb-2 uppercase group-hover:text-white transition-colors duration-500">THE STUDIO</h3>
                 <p className="font-space text-sm leading-relaxed uppercase font-medium group-hover:text-white/90 transition-colors duration-500">
-                  120 Creator's Ave, Suite 400<br/>
-                  New York, NY 10012<br/><br/>
+                  18, Chakrata Rd, Connaught Place, <br/>Dehradun, Uttarakhand 248001<br/>
                   <span className="text-[#FF0000] group-hover:text-white transition-colors duration-500">/// BY APPOINTMENT ONLY</span>
                 </p>
               </div>
@@ -82,7 +81,7 @@ export default function ContactPage() {
               <div className="relative z-10">
                 <span className="font-space text-[10px] font-bold tracking-[0.2em] mb-4 block text-[#FF0000] group-hover:text-white transition-colors duration-500">[ PHONE ]</span>
                 <h3 className="font-syncopate text-2xl font-bold mb-2 uppercase group-hover:text-white transition-colors duration-500">DIRECT LINE</h3>
-                <a href="tel:+1234567890" className="font-space text-lg font-bold group-hover:text-white transition-colors duration-500">+1 (234) 567-890</a>
+                <a href="tel:9837243388" className="font-space text-lg font-bold group-hover:text-white transition-colors duration-500">9837243388</a>
                 <p className="font-space text-[10px] mt-2 text-gray-500 group-hover:text-white/80 transition-colors duration-500 uppercase">Mon-Fri, 9am - 6pm EST</p>
               </div>
             </div>
