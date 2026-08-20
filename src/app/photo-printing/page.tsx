@@ -78,12 +78,7 @@ export default function ServicesPage() {
               <br />
               PRINTING <span className="text-[#FF0000]">///</span>
               <br />
-              <span
-                className="text-transparent"
-                style={{ WebkitTextStroke: "2px #111" }}
-              >
-                SERVICES
-              </span>
+              SERVICES
             </h1>
             <p className="mt-8 font-space text-gray-800 uppercase font-medium border-l-2 border-[#FF0000] pl-6">
               Turning digital moments into physical memories.

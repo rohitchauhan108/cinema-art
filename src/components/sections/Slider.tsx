@@ -28,7 +28,7 @@ const SLIDES_DATA: SlideItem[] = [
   },
 ];
 
-const AUTOPLAY_DELAY = 4000;
+const AUTOPLAY_DELAY = 3000;
 
 export default function CleanFullWidthSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
