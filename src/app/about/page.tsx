@@ -86,7 +86,7 @@ export default function AboutPage() {
             className="mt-12 md:mt-20 max-w-2xl border-l-2 border-[#FF0000] pl-6 md:pl-10 md:ml-[20vw]"
           >
             <p className="font-space text-sm md:text-base leading-relaxed text-gray-800 uppercase font-medium">
-              CinemaArt Studio combines great camera gear, expert advice, and professional finishing services in one place. We are here for photographers, filmmakers, and studios who want a true partner, not just a store.
+              Cinema Art Studio combines great camera gear, expert advice, and professional finishing services in one place. We are here for photographers, filmmakers, and studios who want a true partner, not just a store.
             </p>
           </motion.div>
         </div>

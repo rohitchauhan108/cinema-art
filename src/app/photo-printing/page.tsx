@@ -12,7 +12,7 @@ const services = [
     title: "CUSTOMISED PHOTO ALBUMS AND PHOTO BOOKS",
     description:
       "Beautifully bound photo books and albums made to keep your wedding memories, family trips, and personal moments safe for years to come.",
-    highlight: true,
+    highlight: false, // Changed from true to false
   },
   {
     id: "02",
@@ -30,9 +30,9 @@ const services = [
   },
   {
     id: "04",
-    title: "CANVA'S PRINTING & FRAMING",
+    title: "CANVAS PRINTING & FRAMING",
     description:
-      "Turn your custom Canva's designs, posters, and graphics into real physical prints with professional quality.",
+      "Turn your custom Canvas designs, posters, and graphics into real physical prints with professional quality.",
     highlight: false,
   },
 ];
@@ -42,7 +42,7 @@ const workflowSteps = [
     step: "01",
     title: "SHARE YOUR FILES",
     description:
-      "Bring in your digital pictures, album ideas, or Canva's designs to talk about what you need.",
+      "Bring in your digital pictures, album ideas, or Canvas designs to talk about what you need.",
   },
   {
     step: "02",
@@ -198,7 +198,7 @@ export default function ServicesPage() {
               <span className="text-[#FF0000]">FAVORITE</span> PHOTOS?
             </h2>
             <p className="font-space text-sm md:text-base text-gray-400 leading-relaxed">
-              Whether you need passport pictures, custom Canva's art framed for
+              Whether you need passport pictures, custom Canvas art framed for
               your room, or a complete wedding photo album, we are here to help
               you get great results.
             </p>

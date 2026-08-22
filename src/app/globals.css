@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'ClarendonCustom';
+  src: url('/fonts/clarendon.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 @utility no-scrollbar {
   &::-webkit-scrollbar {
     display: none;
@@ -9,9 +17,9 @@
 }
 
 @theme {
-  --font-space: var(--font-space);
-  --font-syncopate: var(--font-syncopate);
-  --font-caveat: var(--font-caveat);
+  --font-space: var(--font-space), sans-serif;
+  --font-syncopate: var(--font-syncopate), sans-serif;
+  --font-caveat: var(--font-caveat), cursive;
   
   --color-background: #E6E6E6;
   --color-foreground: #111111;
@@ -21,16 +29,17 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
-    font-family: var(--font-space);
+    font-family: var(--font-space), sans-serif;
     overflow-x: hidden;
   }
 }
 
-/* Hide scrollbar for smooth experience */
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent;
 }
-h1,h2,h3,h4,h5,h6{
-  font-family: "Clarendon", serif;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "ClarendonCustom", "Clarendon", "New Clarendon", serif;
+  font-weight: bold;
 }

@@ -11,7 +11,7 @@ export default function Footer() {
           
           {/* Brand */}
           <div className="lg:col-span-2">
-            <h2 className="font-syncopate text-4xl md:text-7xl">CA.</h2>
+            <h2 className="font-syncopate text-2xl md:text-5xl">Cinema Art</h2>
             <p className="font-space mt-4 md:mt-6 max-w-sm text-gray-400 text-sm md:text-base">
               Elevating the art of photography through premium equipment, custom printing, and expert framing.
             </p>
@@ -32,13 +32,12 @@ export default function Footer() {
           <div>
             <div className="mb-6 flex items-center gap-3">
               <Award className="h-5 w-5 text-gray-400" />
-              <h3 className="font-syncopate text-sm font-bold tracking-widest">AUTHORIZED</h3>
+              <h3 className="font-syncopate text-sm font-bold tracking-widest">Brands We Deal With</h3>
             </div>
             <ul className="font-space space-y-2 text-gray-400">
-              <li>Fujifilm Premium Partner</li>
-              <li>Sony Pro Dealer</li>
-              <li>Canon Master Reseller</li>
-              <li>DJI Enterprise Auth</li>
+              <li>Sony</li>
+              <li>Nikon</li>
+              <li>Fujifilm</li>
             </ul>
           </div>
 
@@ -47,9 +46,9 @@ export default function Footer() {
         <div className="mt-32 flex flex-col items-center justify-between border-t border-white/10 pt-8 md:flex-row">
           <p className="font-space text-sm text-gray-500">© 2026 CinemaArt Studio. All rights reserved.</p>
           <div className="font-space mt-4 flex gap-6 text-sm text-gray-500 md:mt-0">
-            <a href="#" className="hover:text-[#00E5FF] transition-colors">Instagram</a>
-            <a href="#" className="hover:text-[#00E5FF] transition-colors">Twitter</a>
-            <a href="#" className="hover:text-[#00E5FF] transition-colors">LinkedIn</a>
+            <a href="https://www.google.co.in/maps/place/CINEMA+ART+STUDIO+-+DSLR+Cameras+%7C+Photo+Store+%7C+Photo+Framing+Store/@30.3264343,78.0336197,17z/data=!3m2!4b1!5s0x390929ec0e670c25:0x252633877a31e141!4m6!3m5!1s0x390929ec11e0fea3:0xc7bd3d977b410651!8m2!3d30.3264343!4d78.0361946!16s%2Fg%2F126300wmr?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D" className="hover:text-[#00E5FF] transition-colors">Google</a>
+            <a href="https://www.instagram.com/" className="hover:text-[#00E5FF] transition-colors">Instagram</a>
+            <a href="https://www.facebook.com/" className="hover:text-[#00E5FF] transition-colors">Facebook</a>
           </div>
         </div>
       </div>

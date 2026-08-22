@@ -5,41 +5,41 @@ import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const equipment = [
-  { 
-    brand: "Category", 
-    title: "Mirrorless Cameras", 
-    desc: "Professional-grade mirrorless systems offering unparalleled image quality, speed, and versatility for both photo and video.", 
-    img: "/nikonz8.jpg" 
+  {
+    brand: "Category",
+    title: "Mirrorless Cameras",
+    desc: "High-quality cameras that are great for both photos and videos. They are fast, flexible, and easy to use.",
+    img: "/nikonz8.jpg"
   },
-  { 
-    brand: "Category", 
-    title: "Compact Pocket Cameras", 
-    desc: "Powerful yet portable everyday carry cameras that deliver premium quality without the bulk.", 
-    img: "/fujifilms.webp" 
+  {
+    brand: "Category",
+    title: "Compact Pocket Cameras",
+    desc: "Small and easy-to-carry cameras that give you great photos and videos wherever you go.",
+    img: "/fujifilms.webp"
   },
-  { 
-    brand: "Category", 
-    title: "Action Cameras", 
-    desc: "Rugged, waterproof, and ready for any adventure. Capture the impossible anywhere you go.", 
-    img: "/gopro.webp" 
+  {
+    brand: "Category",
+    title: "Action Cameras",
+    desc: "Strong and waterproof cameras made for travel, sports, and outdoor adventures.",
+    img: "/gopro.webp"
   },
-  { 
-    brand: "Category", 
-    title: "360 Cameras", 
-    desc: "Reframe your perspective with cutting-edge 360-degree capture, allowing you to shoot first and point later.", 
-    img: "/equipmemt/360.webp" 
+  {
+    brand: "Category",
+    title: "360 Cameras",
+    desc: "Cameras that capture everything around you in 360 degrees. You can choose the view later.",
+    img: "/equipmemt/360.webp"
   },
-  { 
-    brand: "Category", 
-    title: "Gimbals & Vlogging Gear", 
-    desc: "Camera and mobile gimbals, tripods, light setups, podcasting setups, and essential vlogging gears.", 
-    img: "/equipmemt/gimbal.png" 
+  {
+    brand: "Category",
+    title: "Gimbals & Vlogging Gear",
+    desc: "Gimbals, tripods, lights, microphones, and other useful gear for smooth videos and vlogging.",
+    img: "/equipmemt/gimbal.png"
   },
-  { 
-    brand: "Category", 
-    title: "Binoculars & Optics", 
-    desc: "Premium binoculars, rangefinders, and spotting scopes for wildlife, sports, and observation.", 
-    img: "/equipmemt/bina.png" 
+  {
+    brand: "Category",
+    title: "Binoculars & Optics",
+    desc: "Binoculars, spotting scopes, and other optical tools for wildlife, sports, travel, and outdoor viewing.",
+    img: "/equipmemt/bina.png"
   }
 ];
 
@@ -153,9 +153,9 @@ export default function Equipment() {
                   <p className="font-space text-xs md:text-sm text-gray-700 leading-relaxed mb-4 md:mb-6">
                     {item.desc}
                   </p>
-                  <button className="font-space font-bold text-xs md:text-sm text-gray-900 hover:text-gray-500 transition-colors">
+                  {/* <button className="font-space font-bold text-xs md:text-sm text-gray-900 hover:text-gray-500 transition-colors">
                     Explore Category
-                  </button>
+                  </button> */}
                 </div>
               </motion.div>
             </motion.div>

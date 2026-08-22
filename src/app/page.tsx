@@ -24,7 +24,8 @@ export default function Home() {
       <Equipment />
       <Features />
       <BrandShowcase />
-      <ProductsCarousel />
+      <Hero3D />
+      {/* <ProductsCarousel /> */}
       <LensAnatomy />
       <AuthorizedCertificates />
       <Footer />

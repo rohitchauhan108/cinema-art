@@ -80,7 +80,7 @@ export default function Navbar() {
           href: "/photo-printing",
         },
         {
-          name: "Canva's Printing & Framing",
+          name: "Canvas Printing & Framing",
           href: "/photo-printing",
         },
       ],
@@ -119,17 +119,17 @@ export default function Navbar() {
           <div className="flex items-center gap-4 select-none">
             <Link
               href="/"
-              className="font-syncopate text-2xl font-bold tracking-widest hover:text-[#FF0000] transition-colors duration-300"
+              className="font-syncopate text-3xl font-bold tracking-widest hover:text-[#FF0000] transition-colors duration-300"
             >
-              CA.
+              <h1>Cinema Art</h1>
             </Link>
 
-            <div className="hidden lg:flex flex-col font-mono text-[9px] font-bold text-black/40 tracking-mono leading-none gap-1 border-l-2 border-black/20 pl-3">
+            {/* <div className="hidden lg:flex flex-col font-mono text-[9px] font-bold text-black/40 tracking-mono leading-none gap-1 border-l-2 border-black/20 pl-3">
               <div>MODE: RAW</div>
               <div className="text-black font-extrabold tabular-nums">
                 FPS: {fpsReadout}
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* DESKTOP CENTER MENU */}

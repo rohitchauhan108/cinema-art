@@ -86,7 +86,7 @@ function Frames() {
                   style={microShadow}
                   className="border-b border-white/40 pb-0.5 transition-colors duration-300 group-hover:border-white"
                 >
-                  Explore Cameras
+                  Explore Collections
                 </span>
                 <div className="w-7 h-7 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center transition-all duration-500 ease-out group-hover:bg-white group-hover:text-black shadow-lg">
                   <GoArrowUpRight className="text-base transition-transform duration-500 ease-out group-hover:rotate-45" />
@@ -136,14 +136,14 @@ function Frames() {
 
               {/* Connected Explore Section Link */}
               <Link
-                href="/services"
+                href="/photo-printing"
                 className="flex items-center gap-2 text-white font-medium text-sm tracking-wide mt-2 w-fit cursor-pointer"
               >
                 <span
                   style={microShadow}
                   className="border-b border-white/40 pb-0.5 transition-colors duration-300 group-hover:border-white"
                 >
-                  Explore Frames
+                  Explore Collections
                 </span>
                 <div className="w-7 h-7 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center transition-all duration-500 ease-out group-hover:bg-white group-hover:text-black shadow-lg">
                   <GoArrowUpRight className="text-base transition-transform duration-500 ease-out group-hover:rotate-45" />
