@@ -164,7 +164,7 @@ export default function BrandShowcase() {
             whileInView={{ opacity: 1, filter: "blur(0px)" }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="font-syncopate text-xl md:text-3xl font-bold tracking-widest uppercase text-white"
+            className="text-xl md:text-3xl font-extrabold tracking-widest uppercase text-white"
           >
             Authorized Brands
           </motion.h2>

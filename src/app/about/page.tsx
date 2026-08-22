@@ -68,13 +68,13 @@ export default function AboutPage() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="flex flex-col"
           >
-            <h1 className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black text-[#111] leading-none tracking-tighter uppercase">
+            <h1 className="text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black text-[#111] leading-none tracking-tighter uppercase">
               IMAGE <span className="text-[#FF0000]">///</span>
             </h1>
-            <h1 className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black text-[#111] leading-none tracking-tighter uppercase md:ml-[5vw]">
+            <h1 className="text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black text-[#111] leading-none tracking-tighter uppercase md:ml-[5vw]">
               CRAFT <span className="text-[#FF0000]">///</span>
             </h1>
-            <h1 className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black text-transparent leading-none tracking-tighter uppercase md:ml-[10vw]" style={{ WebkitTextStroke: '2px #111' }}>
+            <h1 className="text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black text-transparent leading-none tracking-tighter uppercase md:ml-[10vw]" style={{ WebkitTextStroke: '2px #111' }}>
               PROCESS
             </h1>
           </motion.div>
@@ -99,7 +99,7 @@ export default function AboutPage() {
             <div className="absolute inset-0 bg-[#FF0000] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out z-0" />
             <div className="relative z-10">
               <p className="font-space text-[10px] font-bold tracking-[0.2em] mb-6 opacity-60 group-hover:opacity-100 transition-opacity duration-500">01 // POSITION</p>
-              <h2 className="font-syncopate text-2xl md:text-3xl font-bold mb-6 group-hover:text-white transition-colors duration-500">SHOP AND ADVISORY COMBINED</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-6 group-hover:text-white transition-colors duration-500">SHOP AND ADVISORY COMBINED</h2>
               <p className="font-space text-sm md:text-base leading-relaxed group-hover:text-white/90 transition-colors duration-500">
                 We bridge the gap between selling high-end gear and offering expert advice so you can move from choosing equipment to creating your final piece with confidence.
               </p>
@@ -109,7 +109,7 @@ export default function AboutPage() {
             <div className="absolute inset-0 bg-[#FF0000] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out z-0" />
             <div className="relative z-10">
               <p className="font-space text-[10px] font-bold tracking-[0.2em] mb-6 opacity-60 group-hover:opacity-100 transition-opacity duration-500">02 // DIFFERENCE</p>
-              <h2 className="font-syncopate text-2xl md:text-3xl font-bold mb-6 group-hover:text-white transition-colors duration-500">REAL EXPERTISE WITH EVERY PURCHASE</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-6 group-hover:text-white transition-colors duration-500">REAL EXPERTISE WITH EVERY PURCHASE</h2>
               <p className="font-space text-sm md:text-base leading-relaxed group-hover:text-white/90 transition-colors duration-500">
                 We care about finding you the right lens or camera sensor, and we care just as much about how your final prints and framing look in the real world.
               </p>
@@ -123,7 +123,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row gap-12 md:gap-24">
             <div className="w-full md:w-1/3">
-               <h2 className="font-syncopate text-4xl md:text-6xl font-black text-[#111] leading-[0.9] uppercase sticky top-32">
+               <h2 className="text-4xl md:text-6xl font-black text-[#111] leading-[0.9] uppercase sticky top-32">
                  STUDIO<br/>MINDSET<br/><span className="text-[#FF0000]">INSIDE</span><br/>RETAIL
                </h2>
             </div>
@@ -152,13 +152,13 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center gap-4 mb-16">
              <div className="w-12 h-1 bg-[#FF0000]" />
-             <h2 className="font-syncopate text-2xl md:text-4xl font-bold">OUR PRINCIPLES</h2>
+             <h2 className="text-2xl md:text-4xl font-bold">OUR PRINCIPLES</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
             {principles.map((item, i) => (
               <div key={i} className="flex flex-col">
                 <span className="font-space text-6xl font-black text-white/10 mb-4">0{i+1}</span>
-                <h3 className="font-syncopate text-lg md:text-xl font-bold mb-4 text-[#FF0000]">{item.title}</h3>
+                <h3 className="text-lg md:text-xl font-bold mb-4 text-[#FF0000]">{item.title}</h3>
                 <p className="font-space text-sm leading-relaxed text-gray-400">
                   {item.description}
                 </p>
@@ -172,7 +172,7 @@ export default function AboutPage() {
       <section className="py-20 md:py-32 px-6 md:px-16">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
           <div>
-            <h2 className="font-syncopate text-3xl font-black text-[#111] mb-12 uppercase">
+            <h2 className="text-3xl font-black text-[#111] mb-12 uppercase">
               CAPABILITIES <span className="text-[#FF0000]">///</span>
             </h2>
             <div className="flex flex-col gap-6 font-space text-sm font-medium text-gray-800 uppercase">
@@ -186,13 +186,13 @@ export default function AboutPage() {
           </div>
 
           <div>
-            <h2 className="font-syncopate text-3xl font-black text-[#111] mb-12 uppercase">
+            <h2 className="text-3xl font-black text-[#111] mb-12 uppercase">
               WHO WE SERVE <span className="text-[#FF0000]">///</span>
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12">
               {whoWeServe.map((item, i) => (
                 <div key={i} className="flex flex-col">
-                  <h3 className="font-syncopate text-sm font-bold text-[#111] mb-3 border-b-2 border-[#111] inline-block pb-1 self-start">{item.title}</h3>
+                  <h3 className="text-sm font-bold text-[#111] mb-3 border-b-2 border-[#111] inline-block pb-1 self-start">{item.title}</h3>
                   <p className="font-space text-xs leading-relaxed text-gray-600">
                     {item.description}
                   </p>
@@ -207,7 +207,7 @@ export default function AboutPage() {
       <section className="relative py-32 px-6 md:px-16 border-t border-[#111] bg-background overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.03] pointer-events-none" />
         <div className="max-w-4xl mx-auto text-center flex flex-col items-center relative z-10">
-          <h2 className="font-syncopate text-4xl md:text-6xl font-black text-[#111] uppercase leading-tight mb-8">
+          <h2 className="text-4xl md:text-6xl font-black text-[#111] uppercase leading-tight mb-8">
             EXPLORE THE <br/> <span className="text-transparent" style={{ WebkitTextStroke: '2px #111' }}>STUDIO</span>
           </h2>
           <div className="flex flex-col sm:flex-row gap-6 mt-8">

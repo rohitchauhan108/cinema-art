@@ -161,7 +161,7 @@ export default function AccessoriesPage() {
             animate={{ opacity: 1, y: 0 }}
             className="mb-12 border-b border-gray-300 pb-8"
           >
-            <h1 className="font-syncopate text-4xl md:text-6xl font-bold text-[#111] uppercase tracking-tighter">
+            <h1 className="text-4xl md:text-6xl font-bold text-[#111] uppercase tracking-tighter">
               Accessories <br />{" "}
               <span className="text-gray-400">Collection</span>
             </h1>
@@ -174,7 +174,7 @@ export default function AccessoriesPage() {
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
             {/* Mobile Filter Toggle */}
             <button
-              className="lg:hidden w-full flex items-center justify-center gap-2 bg-white border border-gray-300 py-3 font-syncopate text-xs tracking-widest text-[#111]"
+              className="lg:hidden w-full flex items-center justify-center gap-2 bg-white border border-gray-300 py-3 text-xs tracking-widest text-[#111]"
               onClick={() => setIsMobileFilterOpen(!isMobileFilterOpen)}
             >
               <SlidersHorizontal className="w-4 h-4" />
@@ -205,7 +205,7 @@ export default function AccessoriesPage() {
                 <div>
                   <div className="flex items-center gap-2 mb-4">
                     <SlidersHorizontal className="w-4 h-4 text-[#111]" />
-                    <h3 className="font-syncopate text-sm font-bold tracking-widest text-[#111]">
+                    <h3 className="text-sm font-bold tracking-widest text-[#111]">
                       CATEGORIES
                     </h3>
                   </div>
