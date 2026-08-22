@@ -101,7 +101,7 @@ export default function Hero3D() {
               animate={{ opacity: 1, filter: "blur(0px)", x: 0 }}
               exit={{ opacity: 0, filter: "blur(10px)", x: 50 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="font-syncopate text-[12vw] md:text-[8vw] lg:text-[7vw] font-black text-black/30 leading-none whitespace-nowrap"
+              className="  text-[12vw] md:text-[8vw] lg:text-[7vw] font-black text-black/30 leading-none whitespace-nowrap"
             >
               {slide.brand}
             </motion.h1>
@@ -113,7 +113,7 @@ export default function Hero3D() {
               animate={{ opacity: 1, filter: "blur(0px)", x: 0 }}
               exit={{ opacity: 0, filter: "blur(10px)", x: -50 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
-              className="font-syncopate text-[10vw] md:text-[6vw] lg:text-[5vw] font-bold text-black/40 leading-none flex items-center gap-4 ml-[5vw] md:ml-[12vw] -mt-2"
+              className="  text-[10vw] md:text-[6vw] lg:text-[5vw] font-bold text-black/40 leading-none flex items-center gap-4 ml-[5vw] md:ml-[12vw] -mt-2"
             >
               <span className="text-[#FF0000] drop-shadow-[0_0_8px_rgba(255,0,0,0.8)] text-[9vw] md:text-[5vw] lg:text-[4vw]">
                 ///

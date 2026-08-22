@@ -101,21 +101,21 @@ export default function CanvasPrintFramingPage() {
             >
               <motion.h1 
                 variants={fadeInLeft}
-                className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-[#111]"
+                className="  text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-[#111]"
               >
                 Canvas <span className="text-[#FF0000]">///</span>
               </motion.h1>
 
               <motion.h1 
                 variants={fadeInLeft}
-                className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-[#111] md:ml-[5vw]"
+                className="  text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-[#111] md:ml-[5vw]"
               >
                 Printing <span className="text-[#FF0000]">///</span>
               </motion.h1>
 
               <motion.h1
                 variants={fadeInLeft}
-                className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-transparent md:ml-[10vw]"
+                className="  text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-transparent md:ml-[10vw]"
                 style={{ WebkitTextStroke: "2px #111" }}
               >
                 & Framing
@@ -191,7 +191,7 @@ export default function CanvasPrintFramingPage() {
             variants={fadeInLeft}
           >
             <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-4">// 01 / FIBER ARCHITECTURE</span>
-            <h2 className="font-syncopate text-3xl md:text-4xl font-black uppercase text-zinc-950 mb-6">Tactile Matte Weave</h2>
+            <h2 className="  text-3xl md:text-4xl font-black uppercase text-zinc-950 mb-6">Tactile Matte Weave</h2>
             <p className="font-space text-sm md:text-base text-zinc-600 leading-relaxed uppercase">
               Woven from a heavy 400gsm poly-cotton archival canvas blend. The pronounced physical pattern accentuates loose brushstrokes and wide landscapes, creating a fine-art dimensionality that feels raw and handcrafted.
             </p>
@@ -238,7 +238,7 @@ export default function CanvasPrintFramingPage() {
             className="order-1 md:order-2 md:pl-12"
           >
             <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-4">// 02 / STRUCTURAL INTEGRITY</span>
-            <h2 className="font-syncopate text-3xl md:text-4xl font-black uppercase text-zinc-950 mb-6">Gallery Precision</h2>
+            <h2 className="  text-3xl md:text-4xl font-black uppercase text-zinc-950 mb-6">Gallery Precision</h2>
             <p className="font-space text-sm md:text-base text-zinc-600 leading-relaxed uppercase">
               Hand-stretched over kiln-dried custom cedar wood stretcher frameworks. Precision-cut corner miters shield against sagging or warping over long intervals, maintaining continuous uniform grid tension indefinitely.
             </p>
@@ -256,7 +256,7 @@ export default function CanvasPrintFramingPage() {
             variants={fadeInLeft}
           >
             <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-4">// 03 / THREE-DIMENSIONAL BORDERS</span>
-            <h2 className="font-syncopate text-3xl md:text-4xl font-black uppercase text-white mb-6">Floating Shadow Box</h2>
+            <h2 className="  text-3xl md:text-4xl font-black uppercase text-white mb-6">Floating Shadow Box</h2>
             <p className="font-space text-sm md:text-base text-zinc-400 leading-relaxed uppercase">
               Suspended within premium custom hardwood float casings. A exact 5mm architectural reveal spacing gives the print the illusion of floating unsupported inside its protective framework enclosure.
             </p>
@@ -290,7 +290,7 @@ export default function CanvasPrintFramingPage() {
           className="max-w-4xl mx-auto text-center flex flex-col items-center"
         >
           <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-6">// 04 / EXCELLENCE BY VOLUME</span>
-          <h2 className="font-syncopate text-4xl md:text-6xl font-black uppercase tracking-tight mb-8">
+          <h2 className="  text-4xl md:text-6xl font-black uppercase tracking-tight mb-8">
             The Structural Scale.
           </h2>
           <p className="font-space text-base md:text-lg text-zinc-600 leading-loose uppercase max-w-2xl">

@@ -54,7 +54,7 @@ export default function ProductsCarousel() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="font-syncopate text-2xl md:text-5xl font-bold text-[#111] uppercase tracking-widest"
+          className="  text-2xl md:text-5xl font-bold text-[#111] uppercase tracking-widest"
         >
           Top Highlights
         </motion.h2>
@@ -123,7 +123,7 @@ export default function ProductsCarousel() {
             >
               <div className="w-full h-full bg-white rounded-lg shadow-2xl flex flex-col p-2 border border-gray-100">
                 <div className="w-full h-[70%] bg-gray-100 rounded-md overflow-hidden relative">
-                  <span className="absolute top-4 left-4 bg-black/80 backdrop-blur text-white text-xs font-syncopate px-3 py-1 rounded-full z-10">
+                  <span className="absolute top-4 left-4 bg-black/80 backdrop-blur text-white text-xs   px-3 py-1 rounded-full z-10">
                     {product.brand}
                   </span>
                   <img
@@ -133,7 +133,7 @@ export default function ProductsCarousel() {
                   />
                 </div>
                 <div className="flex flex-col justify-center items-center h-[30%] text-center p-4">
-                  <h3 className="font-syncopate text-xl md:text-2xl font-bold text-gray-900">{product.title}</h3>
+                  <h3 className="  text-xl md:text-2xl font-bold text-gray-900">{product.title}</h3>
                   <p className="font-space text-sm text-gray-500 mt-2">{product.desc}</p>
                 </div>
               </div>

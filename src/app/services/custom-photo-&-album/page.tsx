@@ -102,21 +102,21 @@ export default function Page() {
             >
               <motion.h1 
                 variants={fadeInLeft}
-                className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-[#111]"
+                className="  text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-[#111]"
               >
                 Customised photo's<span className="text-[#FF0000]">///</span>
               </motion.h1>
 
               <motion.h1 
                 variants={fadeInLeft}
-                className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-[#111] md:ml-[5vw]"
+                className="  text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-[#111] md:ml-[5vw]"
               >
                  & albums  <span className="text-[#FF0000]">///</span>
               </motion.h1>
 
               <motion.h1
                 variants={fadeInLeft}
-                className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-transparent md:ml-[10vw]"
+                className="  text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-transparent md:ml-[10vw]"
                 style={{ WebkitTextStroke: "2px #111" }}
               >
                   books
@@ -201,7 +201,7 @@ export default function Page() {
             variants={fadeInLeft}
           >
             <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-4">// 01 / THE CORE</span>
-            <h2 className="font-syncopate text-3xl md:text-4xl font-black uppercase text-zinc-950 mb-6">Chromatic Depth</h2>
+            <h2 className="  text-3xl md:text-4xl font-black uppercase text-zinc-950 mb-6">Chromatic Depth</h2>
             <p className="font-space text-sm md:text-base text-zinc-600 leading-relaxed uppercase">
               Select between ultra-vivid high-gloss inner sheets or deep satin lustres. Our album pages feature high-fidelity paper stocks optimized for dense shadows, absolute black points, and dynamic ranges that replicate digital gallery files perfectly.
             </p>
@@ -250,7 +250,7 @@ export default function Page() {
             className="order-1 md:order-2 md:pl-12"
           >
             <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-4">// 02 / THE MEDIUM</span>
-            <h2 className="font-syncopate text-3xl md:text-4xl font-black uppercase text-zinc-950 mb-6">Archival Giclée Pages</h2>
+            <h2 className="  text-3xl md:text-4xl font-black uppercase text-zinc-950 mb-6">Archival Giclée Pages</h2>
             <p className="font-space text-sm md:text-base text-zinc-600 leading-relaxed uppercase">
               No cheap cardstock or digital press paper. Every page is a verified museum-tier cotton rag or alpha-cellulose substrate printed via a 12-color pigment system, offering an uncompromised tactical experience upon every flip.
             </p>
@@ -268,7 +268,7 @@ export default function Page() {
             variants={fadeInLeft}
           >
             <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-4">// 03 / THE ENCLOSURE</span>
-            <h2 className="font-syncopate text-3xl md:text-4xl font-black uppercase text-white mb-6">Bespoke Bookbinding</h2>
+            <h2 className="  text-3xl md:text-4xl font-black uppercase text-white mb-6">Bespoke Bookbinding</h2>
             <p className="font-space text-sm md:text-base text-zinc-400 leading-relaxed uppercase">
               Enclosed in custom-milled hardwoods, top-grain leathers, or heavy Japanese book cloths. Every spine is bound using true layflat structural geometry, allowing panoramic images to cross seamlessly over pages without gutter loss.
             </p>
@@ -303,7 +303,7 @@ export default function Page() {
           className="max-w-4xl mx-auto text-center flex flex-col items-center"
         >
           <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-6">// 04 / VISION</span>
-          <h2 className="font-syncopate text-4xl md:text-6xl font-black uppercase tracking-tight mb-8">
+          <h2 className="  text-4xl md:text-6xl font-black uppercase tracking-tight mb-8">
             Tangible Narratives.
           </h2>
           <p className="font-space text-base md:text-lg text-zinc-600 leading-loose uppercase max-w-2xl">

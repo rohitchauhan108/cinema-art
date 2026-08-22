@@ -11,7 +11,7 @@ export default function Marquee() {
         transition={{ ease: "linear", duration: 20, repeat: Infinity }}
       >
         {[...Array(2)].map((_, i) => (
-          <div key={i} className="flex gap-12 items-center text-white font-syncopate text-xl md:text-2xl tracking-widest uppercase">
+          <div key={i} className="flex gap-12 items-center text-white   text-xl md:text-2xl tracking-widest uppercase" id="header">
             <span>Authorized Sony Dealer</span>
             <span className="text-gray-600">✽</span>
             <span>Canon Master Partner</span>

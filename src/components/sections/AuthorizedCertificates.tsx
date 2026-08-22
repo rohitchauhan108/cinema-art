@@ -21,7 +21,7 @@ export default function AuthorizedCertificates() {
              whileInView={{ opacity: 1, y: 0 }}
              viewport={{ once: true, margin: "-100px" }}
              transition={{ duration: 0.8, ease: "easeOut" }}
-             className="font-syncopate text-3xl md:text-5xl font-bold text-[#111]"
+             className="  text-3xl md:text-5xl font-bold text-[#111]"
            >
              AUTHORIZED PARTNER
            </motion.h2>

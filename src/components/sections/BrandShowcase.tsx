@@ -177,7 +177,7 @@ export default function BrandShowcase() {
           {categories.map((category, idx) => (
             <div key={idx} className="flex flex-col md:flex-row md:items-center group border-t border-white/10 py-8 md:py-10">
               <div className="md:w-1/4 mb-6 md:mb-0">
-                <h3 className="font-syncopate text-xs md:text-sm font-bold tracking-widest uppercase text-gray-500 group-hover:text-white transition-colors duration-500">
+                <h3 className="  text-xs md:text-sm font-bold tracking-widest uppercase text-gray-500 group-hover:text-white transition-colors duration-500">
                   {category.title}
                 </h3>
               </div>

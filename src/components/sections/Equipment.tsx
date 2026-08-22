@@ -83,7 +83,7 @@ export default function Equipment() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="font-syncopate text-2xl md:text-5xl font-bold text-[#111]"
+          className="  text-2xl md:text-5xl font-bold text-[#111]"
         >
           EQUIPMENT CATEGORIES
         </motion.h2>

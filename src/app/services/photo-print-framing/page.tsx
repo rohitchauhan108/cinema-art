@@ -103,21 +103,21 @@ export default function MattPrintFramingPage() {
             >
               <motion.h1 
                 variants={fadeInLeft}
-                className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-[#111]"
+                className="  text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-[#111]"
               >
                 Photo <span className="text-[#FF0000]">///</span>
               </motion.h1>
 
               <motion.h1 
                 variants={fadeInLeft}
-                className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-[#111] md:ml-[5vw]"
+                className="  text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-[#111] md:ml-[5vw]"
               >
                 Printing <span className="text-[#FF0000]">///</span>
               </motion.h1>
 
               <motion.h1
                 variants={fadeInLeft}
-                className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-transparent md:ml-[10vw]"
+                className="  text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-transparent md:ml-[10vw]"
                 style={{ WebkitTextStroke: "2px #111" }}
               >
                 & Framing
@@ -193,7 +193,7 @@ export default function MattPrintFramingPage() {
             variants={fadeInLeft}
           >
             <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-4">// 01 / ABSOLUTE MATTE</span>
-            <h2 className="font-syncopate text-3xl md:text-4xl font-black uppercase text-zinc-950 mb-6">Velvet Smooth</h2>
+            <h2 className="  text-3xl md:text-4xl font-black uppercase text-zinc-950 mb-6">Velvet Smooth</h2>
             <p className="font-space text-sm md:text-base text-zinc-600 leading-relaxed uppercase">
               Our absolute matte finish eliminates distracting ambient reflections entirely. Light is evenly dispersed across the substrate surface, preserving intricate skin tones, granular charcoal shadows, and smoky, painterly gradients.
             </p>
@@ -240,7 +240,7 @@ export default function MattPrintFramingPage() {
             className="order-1 md:order-2 md:pl-12"
           >
             <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-4">// 02 / COTTON RAG</span>
-            <h2 className="font-syncopate text-3xl md:text-4xl font-black uppercase text-zinc-950 mb-6">Textured Rag</h2>
+            <h2 className="  text-3xl md:text-4xl font-black uppercase text-zinc-950 mb-6">Textured Rag</h2>
             <p className="font-space text-sm md:text-base text-zinc-600 leading-relaxed uppercase">
               Printed exclusively on 310gsm heavy-density cotton cellulose substrates. Raw fiber tooth profiles catch natural atmosphere profiles, producing an organic depth impossible to duplicate on digital displays.
             </p>
@@ -258,7 +258,7 @@ export default function MattPrintFramingPage() {
             variants={fadeInLeft}
           >
             <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-4">// 03 / ANTI-REFLECTIVE ARCHITECTURE</span>
-            <h2 className="font-syncopate text-3xl md:text-4xl font-black uppercase text-white mb-6">Invisible Glass</h2>
+            <h2 className="  text-3xl md:text-4xl font-black uppercase text-white mb-6">Invisible Glass</h2>
             <p className="font-space text-sm md:text-base text-zinc-400 leading-relaxed uppercase">
               Encased using museum-grade Optium acrylic glazing layers. Completely non-reflective and scratch-resistant coatings allow viewers to experience intense artwork dynamics with absolutely zero glare interface barriers.
             </p>
@@ -292,7 +292,7 @@ export default function MattPrintFramingPage() {
           className="max-w-4xl mx-auto text-center flex flex-col items-center"
         >
           <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-6">// 04 / ARTISAN TRADITION</span>
-          <h2 className="font-syncopate text-4xl md:text-6xl font-black uppercase tracking-tight mb-8">
+          <h2 className="  text-4xl md:text-6xl font-black uppercase tracking-tight mb-8">
             Pure Raw Reality.
           </h2>
           <p className="font-space text-base md:text-lg text-zinc-600 leading-loose uppercase max-w-2xl">

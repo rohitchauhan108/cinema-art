@@ -17,7 +17,7 @@ export default function LensAnatomy() {
       <div className="sticky top-0 flex flex-col h-screen items-center justify-center overflow-hidden p-6 md:p-24">
          
          <div className="relative z-30 pointer-events-none text-center mb-8 md:mb-12">
-           <h2 className="font-syncopate text-3xl md:text-5xl lg:text-6xl font-bold text-black">LENS INTERIOR</h2>
+           <h2 className="  text-3xl md:text-5xl lg:text-6xl font-bold text-black">LENS INTERIOR</h2>
            <p className="font-space mt-2 md:mt-4 max-w-70 md:max-w-sm mx-auto text-gray-600 text-sm md:text-base">
              Scroll to slide and reveal the internal engineering.
            </p>

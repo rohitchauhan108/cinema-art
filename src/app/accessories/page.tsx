@@ -313,14 +313,14 @@ export default function AccessoriesPage() {
                         {/* Top Badges */}
                         <div className="absolute top-4 left-4 flex flex-col gap-2 z-10">
                           {item.brand && (
-                            <span className="bg-[#111] text-white text-[9px] font-syncopate px-2.5 py-1 uppercase tracking-[0.2em] font-bold">
+                            <span className="bg-[#111] text-white text-[9px]   px-2.5 py-1 uppercase tracking-[0.2em] font-bold">
                               {item.brand}
                             </span>
                           )}
 
                           {item.status !== "In Stock" && (
                             <span
-                              className={`hidden text-[9px] font-syncopate px-2.5 py-1 uppercase tracking-[0.2em] font-bold ${
+                              className={`hidden text-[9px]   px-2.5 py-1 uppercase tracking-[0.2em] font-bold ${
                                 item.status === "Pre-order"
                                   ? "bg-blue-600 text-white"
                                   : "bg-orange-500 text-white"
@@ -341,7 +341,7 @@ export default function AccessoriesPage() {
                         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 z-20 w-3/4">
                           <Link
                             href={`/accessories/${item.slug}`}
-                            className="block w-full text-center bg-[#111] text-white font-syncopate text-[10px] uppercase tracking-widest py-3 hover:bg-black transition-colors shadow-lg"
+                            className="block w-full text-center bg-[#111] text-white   text-[10px] uppercase tracking-widest py-3 hover:bg-black transition-colors shadow-lg"
                           >
                             View Details
                           </Link>
@@ -350,7 +350,7 @@ export default function AccessoriesPage() {
 
                       {/* Content Area */}
                       <div className="pt-5 pb-5 px-5 flex flex-col flex-1 bg-white z-10 relative border-t border-gray-100">
-                        <p className="text-[9px] text-gray-400 font-syncopate mb-1 uppercase tracking-[0.2em]">
+                        <p className="text-[9px] text-gray-400   mb-1 uppercase tracking-[0.2em]">
                           {getPrimaryCategory(item)}
                         </p>
                         <h3 className="font-space text-lg font-bold text-[#111] mb-1 line-clamp-1">
@@ -384,7 +384,7 @@ export default function AccessoriesPage() {
                         setSearchQuery("");
                         setSelectedBrands([]);
                       }}
-                      className="mt-4 text-[#111] font-syncopate text-xs tracking-widest border-b border-[#111] pb-1 hover:text-[#FF0000] hover:border-[#FF0000] transition-colors"
+                      className="mt-4 text-[#111]   text-xs tracking-widest border-b border-[#111] pb-1 hover:text-[#FF0000] hover:border-[#FF0000] transition-colors"
                     >
                       Clear Filters
                     </button>

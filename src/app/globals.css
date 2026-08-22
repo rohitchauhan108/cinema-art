@@ -18,7 +18,7 @@
 
 @theme {
   --font-space: var(--font-space), sans-serif;
-  /* --font-syncopate: var(--font-syncopate), sans-serif; */
+  /* -- : var(-- ), sans-serif; */
   --font-caveat: var(--font-caveat), cursive;
   
   --color-background: #E6E6E6;
@@ -40,6 +40,10 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "ClarendonCustom", "Clarendon", "New Clarendon", serif;
+  font-weight: bold;
+}
+#header{
   font-family: "ClarendonCustom", "Clarendon", "New Clarendon", serif;
   font-weight: bold;
 }

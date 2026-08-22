@@ -13,7 +13,7 @@ const space = Space_Grotesk({
 const syncopate = Syncopate({
   subsets: ["latin"],
   weight: ["400", "700"],
-  variable: "--font-syncopate",
+  variable: "-- ",
 });
 
 const caveat = Caveat({

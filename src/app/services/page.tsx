@@ -53,13 +53,13 @@ export default function ServicesPage() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="flex flex-col"
           >
-            <h1 className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black text-[#111] leading-none tracking-tighter uppercase">
+            <h1 className="  text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black text-[#111] leading-none tracking-tighter uppercase">
               END-TO-END <span className="text-[#FF0000]">///</span>
             </h1>
-            <h1 className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black text-transparent leading-none tracking-tighter uppercase md:ml-[5vw]" style={{ WebkitTextStroke: '2px #111' }}>
+            <h1 className="  text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black text-transparent leading-none tracking-tighter uppercase md:ml-[5vw]" style={{ WebkitTextStroke: '2px #111' }}>
               TECHNICAL
             </h1>
-            <h1 className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black text-[#111] leading-none tracking-tighter uppercase md:ml-[10vw]">
+            <h1 className="  text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black text-[#111] leading-none tracking-tighter uppercase md:ml-[10vw]">
               SUPPORT <span className="text-[#FF0000]">///</span>
             </h1>
           </motion.div>
@@ -93,7 +93,7 @@ export default function ServicesPage() {
                   <span className="font-space text-[10px] font-bold tracking-[0.2em] mb-4 block text-[#FF0000] group-hover:text-white transition-colors duration-500">
                     [ 0{idx + 1} ]
                   </span>
-                  <h3 className="font-syncopate text-xl md:text-2xl font-bold mb-6 tracking-tight uppercase leading-tight group-hover:text-white transition-colors duration-500">
+                  <h3 className="  text-xl md:text-2xl font-bold mb-6 tracking-tight uppercase leading-tight group-hover:text-white transition-colors duration-500">
                     {service.title}
                   </h3>
                   <p className="font-space text-xs leading-relaxed text-gray-700 group-hover:text-white/90 transition-colors duration-500">
@@ -114,7 +114,7 @@ export default function ServicesPage() {
       <section className="relative py-32 px-6 md:px-16 border-t border-[#111] bg-background overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.03] pointer-events-none" />
         <div className="max-w-4xl mx-auto text-center flex flex-col items-center relative z-10">
-          <h2 className="font-syncopate text-4xl md:text-6xl font-black text-[#111] uppercase leading-tight mb-8">
+          <h2 className="  text-4xl md:text-6xl font-black text-[#111] uppercase leading-tight mb-8">
             BOOK A <br/> <span className="text-transparent" style={{ WebkitTextStroke: '2px #111' }}>CONSULTATION</span>
           </h2>
           <p className="font-space text-sm md:text-base text-gray-700 mb-10 max-w-2xl leading-relaxed uppercase font-medium">

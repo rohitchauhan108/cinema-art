@@ -104,21 +104,21 @@ export default function PassportPhotoServicePage() {
             >
               <motion.h1 
                 variants={fadeInLeft}
-                className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-[#111]"
+                className="  text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-[#111]"
               >
                 Passport<span className="text-[#FF0000]">///</span>
               </motion.h1>
 
               <motion.h1 
                 variants={fadeInLeft}
-                className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-[#111] md:ml-[5vw]"
+                className="  text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-[#111] md:ml-[5vw]"
               >
                 Photos <span className="text-[#FF0000]">///</span>
               </motion.h1>
 
               <motion.h1
                 variants={fadeInLeft}
-                className="font-syncopate text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-transparent md:ml-[10vw]"
+                className="  text-[8vw] md:text-[5vw] lg:text-[4.5vw] font-black leading-none tracking-tighter uppercase text-transparent md:ml-[10vw]"
                 style={{ WebkitTextStroke: "2px #111" }}
               >
                 services
@@ -194,7 +194,7 @@ export default function PassportPhotoServicePage() {
             variants={fadeInLeft}
           >
             <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-4">// 01 / GLOBAL ACCURACY</span>
-            <h2 className="font-syncopate text-3xl md:text-4xl font-black uppercase text-zinc-950 mb-6">Biometric Match</h2>
+            <h2 className="  text-3xl md:text-4xl font-black uppercase text-zinc-950 mb-6">Biometric Match</h2>
             <p className="font-space text-sm md:text-base text-zinc-600 leading-relaxed uppercase">
               Our capture process strictly adheres to international ICAO regulations. We map exact eye alignments, facial symmetry, and neutral background values to guarantee 100% acceptance rates for any embassy or government portal globally.
             </p>
@@ -241,7 +241,7 @@ export default function PassportPhotoServicePage() {
             className="order-1 md:order-2 md:pl-12"
           >
             <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-4">// 02 / HIGH-DEFINITION PRINTS</span>
-            <h2 className="font-syncopate text-3xl md:text-4xl font-black uppercase text-zinc-950 mb-6">Archival Matte</h2>
+            <h2 className="  text-3xl md:text-4xl font-black uppercase text-zinc-950 mb-6">Archival Matte</h2>
             <p className="font-space text-sm md:text-base text-zinc-600 leading-relaxed uppercase">
               Printed on fingerprint-resistant archival media calibrated to render natural skin tones without color shifts. Exact, high-tolerance micro-cutting ensures clean borders matching your destination country's millimeter specifications.
             </p>
@@ -259,7 +259,7 @@ export default function PassportPhotoServicePage() {
             variants={fadeInLeft}
           >
             <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-4">// 03 / HYBRID ASSET DELIVERY</span>
-            <h2 className="font-syncopate text-3xl md:text-4xl font-black uppercase text-white mb-6">Instant Sync</h2>
+            <h2 className="  text-3xl md:text-4xl font-black uppercase text-white mb-6">Instant Sync</h2>
             <p className="font-space text-sm md:text-base text-zinc-400 leading-relaxed uppercase">
               Receive perfectly cut physical photo sheets instantly alongside high-resolution, web-optimized digital copies. Digital formats are pre-compressed and scaled to comply directly with rigorous online application portal requirements.
             </p>
@@ -293,7 +293,7 @@ export default function PassportPhotoServicePage() {
           className="max-w-4xl mx-auto text-center flex flex-col items-center"
         >
           <span className="font-space text-xs font-bold tracking-widest text-[#FF0000] uppercase block mb-6">// 04 / EXCELLENCE BY PRECISION</span>
-          <h2 className="font-syncopate text-4xl md:text-6xl font-black uppercase tracking-tight mb-8">
+          <h2 className="  text-4xl md:text-6xl font-black uppercase tracking-tight mb-8">
             The Compliant Portrait.
           </h2>
           <p className="font-space text-base md:text-lg text-zinc-600 leading-loose uppercase max-w-2xl">

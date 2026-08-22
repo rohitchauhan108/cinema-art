@@ -73,7 +73,7 @@ export default function ServicesPage() {
       <section className="relative pt-40 pb-20 px-6 md:px-16 overflow-hidden">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="flex flex-col">
-            <h1 className="font-syncopate text-[6vw] font-black text-[#111] leading-none uppercase">
+            <h1 className="  text-[6vw] font-black text-[#111] leading-none uppercase">
               PHOTO <span className="text-[#FF0000]">///</span>
               <br />
               PRINTING <span className="text-[#FF0000]">///</span>
@@ -136,7 +136,7 @@ export default function ServicesPage() {
                   {item.id} // SERVICE
                 </p>
                 <h2
-                  className={`font-syncopate text-2xl md:text-3xl font-bold mb-6 transition-colors duration-500 ${
+                  className={`  text-2xl md:text-3xl font-bold mb-6 transition-colors duration-500 ${
                     item.highlight
                       ? "text-[#FF0000] group-hover:text-white"
                       : "group-hover:text-white"
@@ -164,7 +164,7 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center gap-4 mb-16">
             <div className="w-12 h-1 bg-[#FF0000]" />
-            <h2 className="font-syncopate text-2xl md:text-4xl font-bold text-[#111]">
+            <h2 className="  text-2xl md:text-4xl font-bold text-[#111]">
               HOW IT WORKS
             </h2>
           </div>
@@ -177,7 +177,7 @@ export default function ServicesPage() {
                 <span className="font-space text-4xl font-black text-[#111]/20 mb-6 group-hover:text-[#FF0000] transition-colors">
                   {step.step}
                 </span>
-                <h3 className="font-syncopate text-base font-bold text-[#111] mb-4">
+                <h3 className="  text-base font-bold text-[#111] mb-4">
                   {step.title}
                 </h3>
                 <p className="font-space text-xs leading-relaxed text-gray-600">
@@ -193,7 +193,7 @@ export default function ServicesPage() {
       <section className="bg-white text-[#111] py-20 md:py-32 px-6 md:px-16 border-t-2 border-b-2 border-[#FF0000] mb-5">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-center justify-between">
           <div className="max-w-2xl">
-            <h2 className="font-syncopate text-3xl md:text-5xl font-black mb-6 leading-tight">
+            <h2 className="  text-3xl md:text-5xl font-black mb-6 leading-tight">
               WANT TO PRINT YOUR{" "}
               <span className="text-[#FF0000]">FAVORITE</span> PHOTOS?
             </h2>

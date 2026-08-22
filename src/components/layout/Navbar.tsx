@@ -90,7 +90,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="fixed left-0 right-0 top-0 z-150 flex w-full justify-center pointer-events-none">
+      <div className="fixed left-0 right-0 top-0 z-150 flex w-full justify-center pointer-events-none" id="header">
         <motion.nav
           layout
           style={{
@@ -119,7 +119,7 @@ export default function Navbar() {
           <div className="flex items-center gap-4 select-none">
             <Link
               href="/"
-              className="font-syncopate text-3xl font-bold tracking-widest hover:text-[#FF0000] transition-colors duration-300"
+              className="text-3xl font-bold tracking-widest hover:text-[#FF0000] transition-colors duration-300 uppercase"
             >
               <h1>Cinema Art</h1>
             </Link>
@@ -133,7 +133,7 @@ export default function Navbar() {
           </div>
 
           {/* DESKTOP CENTER MENU */}
-          <div className="hidden md:flex gap-12 items-center text-xs font-syncopate font-medium tracking-[0.25em]">
+          <div className="hidden md:flex gap-12 items-center text-xs font-medium tracking-[0.25em]">
             <Link
               href="/"
               className={`font-caveat text-4xl tracking-normal normal-case leading-none transition-colors duration-300 ${pathname === "/" ? "text-[#FF0000]" : "text-black/60 hover:text-black"}`}
@@ -260,7 +260,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "-100%" }}
             transition={{ duration: 0.45, ease: [0.76, 0, 0.24, 1] }}
-            className="fixed inset-0 z-140 flex flex-col justify-center bg-white/95 backdrop-blur-xl px-10 font-syncopate text-black"
+            className="fixed inset-0 z-140 flex flex-col justify-center bg-white/95 backdrop-blur-xl px-10 text-black"
           >
             {/* Context Grid Info */}
             <div className="absolute inset-6 border border-black/4 pointer-events-none flex justify-between items-end p-3 font-mono text-[8px] text-black/30">

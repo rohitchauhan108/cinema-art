@@ -65,7 +65,7 @@ export default function ShopPage() {
           animate={{ opacity: 1, y: 0 }}
           className="mb-12 border-b border-gray-300 pb-8"
         >
-          <h1 className="font-syncopate text-4xl md:text-6xl font-bold text-[#111] uppercase tracking-tighter">
+          <h1 className="  text-4xl md:text-6xl font-bold text-[#111] uppercase tracking-tighter">
             Equipment <br/> <span className="text-gray-400">Catalog</span>
           </h1>
           <p className="font-space mt-4 text-gray-600 max-w-xl">
@@ -77,7 +77,7 @@ export default function ShopPage() {
           
           {/* Mobile Filter Toggle */}
           <button 
-            className="lg:hidden w-full flex items-center justify-center gap-2 bg-white border border-gray-300 py-3 font-syncopate text-xs tracking-widest text-[#111]"
+            className="lg:hidden w-full flex items-center justify-center gap-2 bg-white border border-gray-300 py-3   text-xs tracking-widest text-[#111]"
             onClick={() => setIsMobileFilterOpen(!isMobileFilterOpen)}
           >
             <SlidersHorizontal className="w-4 h-4" /> 
@@ -109,7 +109,7 @@ export default function ShopPage() {
               <div>
                 <div className="flex items-center gap-2 mb-4">
                   <SlidersHorizontal className="w-4 h-4 text-[#111]" />
-                  <h3 className="font-syncopate text-sm font-bold tracking-widest text-[#111]">CATEGORIES</h3>
+                  <h3 className="  text-sm font-bold tracking-widest text-[#111]">CATEGORIES</h3>
                 </div>
                 <ul className="space-y-3 font-space text-sm text-gray-600">
                   {categories.map((cat) => (
@@ -127,7 +127,7 @@ export default function ShopPage() {
 
               {/* Brands */}
               <div>
-                <h3 className="font-syncopate text-sm font-bold tracking-widest text-[#111] mb-4">BRANDS</h3>
+                <h3 className="  text-sm font-bold tracking-widest text-[#111] mb-4">BRANDS</h3>
                 <ul className="space-y-3 font-space text-sm text-gray-600">
                   {brands.map((brand) => (
                     <li key={brand} className="flex items-center gap-2">
@@ -165,11 +165,11 @@ export default function ShopPage() {
                     
                     {/* Top Badges */}
                     <div className="absolute top-4 left-4 flex flex-col gap-2 z-10">
-                      <span className="bg-[#111] text-white text-[9px] font-syncopate px-2.5 py-1 uppercase tracking-[0.2em] font-bold">
+                      <span className="bg-[#111] text-white text-[9px]   px-2.5 py-1 uppercase tracking-[0.2em] font-bold">
                         {product.brand}
                       </span>
                       {product.status !== 'In Stock' && (
-                        <span className={`hidden text-[9px] font-syncopate px-2.5 py-1 uppercase tracking-[0.2em] font-bold ${
+                        <span className={`hidden text-[9px]   px-2.5 py-1 uppercase tracking-[0.2em] font-bold ${
                           product.status === 'Pre-order' ? 'bg-blue-600 text-white' : 'bg-orange-500 text-white'
                         }`}>
                           {product.status}
@@ -185,7 +185,7 @@ export default function ShopPage() {
 
                     {/* Hover Action Button */}
                     <div className="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 z-20 w-3/4">
-                      <Link href={`/shop/${getPrimaryCategory(product).toLowerCase().replace(/ & | /g, '-')}/${product.slug}`} className="block w-full text-center bg-[#111] text-white font-syncopate text-[10px] uppercase tracking-widest py-3 hover:bg-black transition-colors shadow-lg">
+                      <Link href={`/shop/${getPrimaryCategory(product).toLowerCase().replace(/ & | /g, '-')}/${product.slug}`} className="block w-full text-center bg-[#111] text-white   text-[10px] uppercase tracking-widest py-3 hover:bg-black transition-colors shadow-lg">
                         View Details
                       </Link>
                     </div>
@@ -193,7 +193,7 @@ export default function ShopPage() {
 
                   {/* Content Area */}
                   <div className="pt-5 pb-5 px-5 flex flex-col flex-1 bg-white z-10 relative border-t border-gray-100">
-                    <p className="text-[9px] text-gray-400 font-syncopate mb-1 uppercase tracking-[0.2em]">{getPrimaryCategory(product)}</p>
+                    <p className="text-[9px] text-gray-400   mb-1 uppercase tracking-[0.2em]">{getPrimaryCategory(product)}</p>
                     <h3 className="font-space text-lg font-bold text-[#111] mb-1 line-clamp-1">{product.name}</h3>
                     <p className="text-xs text-gray-500 font-space mb-4 line-clamp-2 min-h-8">{product.desc}</p>
                     
@@ -211,7 +211,7 @@ export default function ShopPage() {
                   <p className="font-space text-lg">No products found matching your filters.</p>
                   <button 
                     onClick={() => { setActiveCategory("All"); setSelectedBrands([]); setSearchQuery(""); }}
-                    className="mt-4 text-[#111] font-syncopate text-xs tracking-widest border-b border-[#111] pb-1 hover:text-[#FF0000] hover:border-[#FF0000] transition-colors"
+                    className="mt-4 text-[#111]   text-xs tracking-widest border-b border-[#111] pb-1 hover:text-[#FF0000] hover:border-[#FF0000] transition-colors"
                   >
                     Clear Filters
                   </button>

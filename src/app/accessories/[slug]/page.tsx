@@ -58,7 +58,7 @@ console.log("Found:", accessories);
   if (!accessories) {
     return (
       <main className="min-h-screen bg-background pt-40 pb-24 flex items-center justify-center">
-        <h1 className="font-syncopate text-2xl">accessories Not Found</h1>
+        <h1 className="  text-2xl">accessories Not Found</h1>
       </main>
     );
   }
@@ -117,12 +117,12 @@ console.log("Found:", accessories);
               <div className="bg-[#F5F5F5] border border-transparent rounded-sm p-12 flex items-center justify-center min-h-125 relative overflow-hidden shadow-sm group">
                 <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
                 <div className="absolute top-6 left-6 z-20 flex flex-col gap-2">
-                  <span className="bg-[#111] text-white text-[10px] font-syncopate px-3 py-1.5 uppercase tracking-[0.2em] font-bold shadow-sm">
+                  <span className="bg-[#111] text-white text-[10px]   px-3 py-1.5 uppercase tracking-[0.2em] font-bold shadow-sm">
                     {accessories.brand}
                   </span>
                   {accessories.status !== "In Stock" && (
                     <span
-                      className={`text-[10px] font-syncopate px-3 py-1.5 uppercase tracking-[0.2em] font-bold shadow-sm ${
+                      className={`text-[10px]   px-3 py-1.5 uppercase tracking-[0.2em] font-bold shadow-sm ${
                         accessories.status === "Pre-order"
                           ? "bg-blue-600 text-white"
                           : "bg-orange-500 text-white"
@@ -210,7 +210,7 @@ console.log("Found:", accessories);
               transition={{ delay: 0.2 }}
               className="flex flex-col justify-center"
             >
-              <h1 className="font-syncopate text-2xl md:text-4xl font-semibold text-[#111] mb-4 leading-tight">
+              <h1 className="  text-2xl md:text-4xl font-semibold text-[#111] mb-4 leading-tight">
                 {accessories.name}
               </h1>
 
@@ -221,7 +221,7 @@ console.log("Found:", accessories);
               {/* Color Selection */}
               {accessories.colors && accessories.colors.length > 0 && (
                 <div className="mb-8">
-                  <h3 className="font-syncopate text-xs font-bold tracking-[0.2em] text-[#111] uppercase mb-3">
+                  <h3 className="  text-xs font-bold tracking-[0.2em] text-[#111] uppercase mb-3">
                     COLOR:{" "}
                     <span className="text-gray-500 font-space font-normal tracking-normal">
                       {activeColor.name}
@@ -252,7 +252,7 @@ console.log("Found:", accessories);
               {/* accessorieses Selection */}
               {/* {accessories.accessories && accessories.accessories.length > 0 && (
                 <div className="mb-8">
-                  <h3 className="font-syncopate text-xs font-bold tracking-[0.2em] text-[#111] uppercase mb-3">
+                  <h3 className="  text-xs font-bold tracking-[0.2em] text-[#111] uppercase mb-3">
                     accessories:{" "}
                     <span className="text-gray-500 font-space font-normal tracking-normal">
                       {activeaccessories}
@@ -277,7 +277,7 @@ console.log("Found:", accessories);
               )} */}
 
               <div className="space-y-4 mb-10">
-                {/* <h3 className="font-syncopate text-sm font-bold tracking-[0.2em] text-[#111] uppercase">KEY FEATURES</h3>
+                {/* <h3 className="  text-sm font-bold tracking-[0.2em] text-[#111] uppercase">KEY FEATURES</h3>
               <ul className="space-y-3">
                 {accessories.keyFeatures?.map((feature, i) => (
                   <li key={i} className="flex items-start gap-3 font-space text-sm text-gray-600">
@@ -289,7 +289,7 @@ console.log("Found:", accessories);
                 {/* fix code when feature are not in the data there */}
                 {/* {accessories.keyFeatures && accessories.keyFeatures.length > 0 && (
                   <>
-                    <h3 className="font-syncopate text-sm font-bold tracking-[0.2em] text-[#111] uppercase">
+                    <h3 className="  text-sm font-bold tracking-[0.2em] text-[#111] uppercase">
                       KEY FEATURES
                     </h3>
 
@@ -336,7 +336,7 @@ console.log("Found:", accessories);
           {/* {accessories.richFeatures && accessories.richFeatures.length > 0 && (
           <div className="mt-32 border-t border-gray-300 pt-24">
             <div className="text-center mb-24">
-              <h2 className="font-syncopate text-3xl md:text-5xl font-bold text-[#111] uppercase tracking-tighter">
+              <h2 className="  text-3xl md:text-5xl font-bold text-[#111] uppercase tracking-tighter">
                 Discover The <span className="text-gray-400">Details</span>
               </h2>
             </div>
@@ -350,7 +350,7 @@ console.log("Found:", accessories);
                   <span className="font-space text-sm font-medium text-gray-400 mb-2">
                     {String(idx + 1).padStart(2, '0')}
                   </span>
-                  <h3 className="font-syncopate text-xl md:text-2xl font-bold text-[#111] uppercase tracking-tight leading-tight">
+                  <h3 className="  text-xl md:text-2xl font-bold text-[#111] uppercase tracking-tight leading-tight">
                     {feat.title}
                   </h3>
                   <p className="font-space text-base text-gray-600 leading-relaxed">
@@ -366,7 +366,7 @@ console.log("Found:", accessories);
           {accessories.specs && accessories.specs.length > 0 && (
             <div className="mt-32 max-w-4xl mx-auto border-t border-gray-300 pt-20">
               <div className="text-center mb-16">
-                <h2 className="font-syncopate text-2xl md:text-4xl font-bold text-[#111] uppercase tracking-tighter">
+                <h2 className="  text-2xl md:text-4xl font-bold text-[#111] uppercase tracking-tighter">
                   Technical <span className="text-gray-400">Specs</span>
                 </h2>
               </div>
@@ -387,7 +387,7 @@ console.log("Found:", accessories);
                       }
                       className="w-full px-6 py-5 flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition-colors"
                     >
-                      <h3 className="font-syncopate text-sm font-bold text-[#111] tracking-widest uppercase">
+                      <h3 className="  text-sm font-bold text-[#111] tracking-widest uppercase">
                         {specGroup.category}
                       </h3>
                       <ChevronDown
@@ -410,7 +410,7 @@ console.log("Found:", accessories);
                                 key={i}
                                 className="py-4 border-b border-gray-100 last:border-0 flex flex-col md:flex-row md:gap-8"
                               >
-                                <div className="md:w-1/3 font-syncopate text-xs text-gray-500 uppercase tracking-wider mb-2 md:mb-0">
+                                <div className="md:w-1/3   text-xs text-gray-500 uppercase tracking-wider mb-2 md:mb-0">
                                   {item.label}
                                 </div>
                                 <div className="md:w-2/3 font-space text-sm text-[#111]">

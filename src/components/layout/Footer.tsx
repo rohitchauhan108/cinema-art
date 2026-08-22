@@ -11,7 +11,7 @@ export default function Footer() {
           
           {/* Brand */}
           <div className="lg:col-span-2">
-            <h2 className="font-syncopate text-2xl md:text-5xl">Cinema Art</h2>
+            <h2 className="  text-xl md:text-3xl uppercase">Cinema Art</h2>
             <p className="font-space mt-4 md:mt-6 max-w-sm text-gray-400 text-sm md:text-base">
               Elevating the art of photography through premium equipment, custom printing, and expert framing.
             </p>
@@ -21,7 +21,7 @@ export default function Footer() {
           <div>
             <div className="mb-6 flex items-center gap-3">
               <MapPin className="h-5 w-5 text-gray-400" />
-              <h3 className="font-syncopate text-sm font-bold tracking-widest">LOCATION</h3>
+              <h3 className="  text-sm font-bold tracking-widest">LOCATION</h3>
             </div>
             <address className="font-space not-italic text-gray-400">
               18, Chakrata Rd,<br/> Connaught Place, Dehradun, Uttarakhand 248001<br/>
@@ -32,7 +32,7 @@ export default function Footer() {
           <div>
             <div className="mb-6 flex items-center gap-3">
               <Award className="h-5 w-5 text-gray-400" />
-              <h3 className="font-syncopate text-sm font-bold tracking-widest">Brands We Deal With</h3>
+              <h3 className="  text-sm font-bold tracking-widest">Brands We Deal With</h3>
             </div>
             <ul className="font-space space-y-2 text-gray-400">
               <li>Sony</li>

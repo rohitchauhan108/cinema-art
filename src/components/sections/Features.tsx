@@ -77,7 +77,7 @@ export default function Features() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: premiumEase }}
-          className="font-syncopate text-2xl md:text-5xl font-bold text-[#111] tracking-tight"
+          className="  text-2xl md:text-5xl font-bold text-[#111] tracking-tight"
         >
           ARTISAN SERVICES
         </motion.h2>
@@ -158,7 +158,7 @@ export default function Features() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: premiumEase }}
-              className="font-syncopate text-xl md:text-3xl font-bold text-[#111] tracking-tight uppercase"
+              className="  text-xl md:text-3xl font-bold text-[#111] tracking-tight uppercase"
             >
               CREATOR <br className="hidden lg:block" />
               SOLUTIONS
