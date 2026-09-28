@@ -2,8 +2,16 @@
 
 @font-face {
   font-family: 'ClarendonCustom';
-  src: url('/fonts/clarendon.woff2') format('woff2');
-  font-weight: bold;
+  src: url('/fonts/clarendon.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ClarendonCustom';
+  src: url('/fonts/clarendon.otf') format('opentype');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -18,9 +26,9 @@
 
 @theme {
   --font-space: var(--font-space), sans-serif;
-  /* -- : var(-- ), sans-serif; */
+  --font-clarendon: "ClarendonCustom", "Clarendon", "New Clarendon", serif;
   --font-caveat: var(--font-caveat), cursive;
-  
+
   --color-background: #E6E6E6;
   --color-foreground: #111111;
 }
@@ -29,8 +37,12 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
-    font-family: var(--font-space), sans-serif;
+    font-family: "ClarendonCustom", "Clarendon", "New Clarendon", serif;
     overflow-x: hidden;
+  }
+
+  p, li, label, input, textarea, select {
+    font-family: var(--font-space), sans-serif;
   }
 }
 
@@ -39,11 +51,7 @@
   background: transparent;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,
+button, a, #header, .font-clarendon {
   font-family: "ClarendonCustom", "Clarendon", "New Clarendon", serif;
-  font-weight: bold;
-}
-#header{
-  font-family: "ClarendonCustom", "Clarendon", "New Clarendon", serif;
-  font-weight: bold;
 }

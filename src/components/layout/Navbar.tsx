@@ -64,7 +64,7 @@ export default function Navbar() {
     { name: "ABOUT US", href: "/about", meta: "TV 1/250s" },
     { name: "ACCESSORIES", href: "/accessories", meta: "AV F/1.2" },
     {
-      name: "PHOTO Printing",
+      name: "PRINTING",
       href: "/photo-printing",
       submenu: [
         {
@@ -136,9 +136,24 @@ export default function Navbar() {
           <div className="hidden md:flex gap-12 items-center text-xs font-medium tracking-[0.25em]">
             <Link
               href="/"
-              className={`font-caveat text-4xl tracking-normal normal-case leading-none transition-colors duration-300 ${pathname === "/" ? "text-[#FF0000]" : "text-black/60 hover:text-black"}`}
+              className={`transition-colors duration-300 font-medium relative ${
+                pathname === "/"
+                  ? "text-[#FF0000]"
+                  : "text-black/60 hover:text-black"
+              }`}
             >
-              Home
+              HOME
+              {(pathname === "/") && (
+                <motion.span
+                  layoutId="focusBracket"
+                  transition={{
+                    type: "spring",
+                    stiffness: 380,
+                    damping: 30,
+                  }}
+                  className={`absolute -inset-x-3 -inset-y-0.5 border-x-2 pointer-events-none border-[#FF0000]/40`}
+                />
+              )}
             </Link>
 
             {navItems.map((item, index) => {
