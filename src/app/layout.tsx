@@ -26,6 +26,14 @@ export const metadata: Metadata = {
   title: "CinemaArt Studio | Premium Camera & Photography",
   description:
     "Showcasing the different types of cameras in a beautifully animated modern way.",
+  icons: {
+    icon: [
+      { url: "/favicon.png" },
+      { url: "/icon", sizes: "any" },
+    ],
+    shortcut: ["/favicon.png"],
+    apple: [{ url: "/apple-icon.png" }],
+  },
 };
 
 export default function RootLayout({
