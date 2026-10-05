@@ -15,7 +15,7 @@ import Slider from "@/components/sections/Slider";
 export default function Home() {
   return (
     <main className="relative bg-background">
-      <Loader />
+      {/* <Loader /> */}
       <Navbar />
       {/* <Hero3D /> */}
       <Slider/>
