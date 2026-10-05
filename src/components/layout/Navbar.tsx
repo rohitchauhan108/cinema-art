@@ -12,8 +12,19 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 
+type NavItem = {
+  name: string;
+  href: string;
+  meta?: string;
+  submenu?: {
+    name: string;
+    href: string;
+  }[];
+};
+
 export default function Navbar() {
   const pathname = usePathname();
+
   const { scrollY } = useScroll();
   const [isOpen, setIsOpen] = useState(false);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -21,24 +32,35 @@ export default function Navbar() {
 
   // 1. Scroll velocity monitoring for dynamic FPS
   const scrollVelocity = useVelocity(scrollY);
+
   const smoothedVelocity = useSpring(scrollVelocity, {
     stiffness: 60,
     damping: 20,
   });
+
   const dynamicFPS = useTransform(smoothedVelocity, [0, 3000], [24, 120]);
+
   const [fpsReadout, setFpsReadout] = useState(24);
 
   useEffect(() => {
     return dynamicFPS.on("change", (latest) => {
       const calculatedFps = Math.min(120, Math.max(24, Math.round(latest)));
+
       setFpsReadout(calculatedFps);
     });
   }, [dynamicFPS]);
 
   // 2. Structural geometry variables on scroll
   const navWidth = useTransform(scrollY, [0, 120], ["100%", "94%"]);
+
   const topMargin = useTransform(scrollY, [0, 120], ["0px", "12px"]);
-  const paddingX = useTransform(scrollY, [0, 120], ["3rem", "1.25rem"]); // Slightly tighter on mobile scroll
+
+  const paddingX = useTransform(
+    scrollY,
+    [0, 120],
+    ["3rem", "1.25rem"],
+  ); // Slightly tighter on mobile scroll
+
   const paddingY = useTransform(scrollY, [0, 120], ["1rem", "0.5rem"]);
 
   // 3. Desktop Glass Configuration
@@ -47,18 +69,22 @@ export default function Navbar() {
     [0, 120],
     ["rgba(255, 255, 255, 0)", "rgba(255, 255, 255, 0.75)"],
   );
+
   const borderTint = useTransform(
     scrollY,
     [0, 120],
     ["rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 0.15)"],
   );
+
   const glassBlur = useTransform(
     scrollY,
     [0, 120],
     ["blur(0px)", "blur(20px)"],
   );
 
-  const navItems = [
+  // 4. Navigation Items
+  // Explicit type added so optional submenu is recognized by TypeScript.
+  const navItems: NavItem[] = [
     { name: "Our Collection's", href: "/collections" },
     { name: "CONTACT", href: "/contact", meta: "LENS 50mm" },
   ];
@@ -102,12 +128,14 @@ export default function Navbar() {
               <h1>Cinema Art</h1>
             </Link>
 
-            {/* <div className="hidden lg:flex flex-col font-mono text-[9px] font-bold text-black/40 tracking-mono leading-none gap-1 border-l-2 border-black/20 pl-3">
+            {/* 
+            <div className="hidden lg:flex flex-col font-mono text-[9px] font-bold text-black/40 tracking-mono leading-none gap-1 border-l-2 border-black/20 pl-3">
               <div>MODE: RAW</div>
               <div className="text-black font-extrabold tabular-nums">
                 FPS: {fpsReadout}
               </div>
-            </div> */}
+            </div>
+            */}
           </div>
 
           {/* DESKTOP CENTER MENU */}
@@ -121,6 +149,7 @@ export default function Navbar() {
               }`}
             >
               HOME
+
               {pathname === "/" && (
                 <motion.span
                   layoutId="focusBracket"
@@ -129,7 +158,7 @@ export default function Navbar() {
                     stiffness: 380,
                     damping: 30,
                   }}
-                  className={`absolute -inset-x-3 -inset-y-0.5 border-x-2 pointer-events-none border-[#FF0000]/40`}
+                  className="absolute -inset-x-3 -inset-y-0.5 border-x-2 pointer-events-none border-[#FF0000]/40"
                 />
               )}
             </Link>
@@ -152,7 +181,10 @@ export default function Navbar() {
                       opacity: hoveredIndex === index || isActive ? 1 : 0,
                       y: hoveredIndex === index || isActive ? -3 : 3,
                     }}
-                    transition={{ duration: 0.15, ease: [0.76, 0, 0.24, 1] }}
+                    transition={{
+                      duration: 0.15,
+                      ease: [0.76, 0, 0.24, 1],
+                    }}
                     className="text-[7px] font-mono font-bold text-[#FF0000] tracking-normal absolute top-0"
                   >
                     {item.meta}
@@ -177,7 +209,9 @@ export default function Navbar() {
                           damping: 30,
                         }}
                         className={`absolute -inset-x-3 -inset-y-0.5 border-x-2 pointer-events-none ${
-                          isActive ? "border-[#FF0000]/40" : "border-black/40"
+                          isActive
+                            ? "border-[#FF0000]/40"
+                            : "border-black/40"
                         }`}
                       />
                     )}
@@ -209,6 +243,7 @@ export default function Navbar() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FF0000] opacity-90" />
                 <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-[#FF0000]" />
               </span>
+
               <span className="font-extrabold text-black text-[8px] tracking-widest">
                 REC
               </span>
@@ -227,16 +262,23 @@ export default function Navbar() {
                       ? { rotate: 45, y: 9, width: "24px" }
                       : { rotate: 0, y: 0, width: "24px" }
                   }
-                  transition={{ duration: 0.3, ease: [0.76, 0, 0.24, 1] }}
+                  transition={{
+                    duration: 0.3,
+                    ease: [0.76, 0, 0.24, 1],
+                  }}
                   className="h-[1.5px] bg-black block"
                 />
+
                 <motion.span
                   animate={
                     isOpen
                       ? { rotate: -45, y: -9, width: "24px" }
                       : { rotate: 0, y: 0, width: "14px" }
                   }
-                  transition={{ duration: 0.3, ease: [0.76, 0, 0.24, 1] }}
+                  transition={{
+                    duration: 0.3,
+                    ease: [0.76, 0, 0.24, 1],
+                  }}
                   className="h-[1.5px] bg-black block group-hover:w-6 transition-all"
                 />
               </div>
@@ -252,7 +294,10 @@ export default function Navbar() {
             initial={{ opacity: 0, y: "-100%" }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "-100%" }}
-            transition={{ duration: 0.45, ease: [0.76, 0, 0.24, 1] }}
+            transition={{
+              duration: 0.45,
+              ease: [0.76, 0, 0.24, 1],
+            }}
             className="fixed inset-0 z-140 flex flex-col justify-center bg-white/95 backdrop-blur-xl px-10 text-black"
           >
             {/* Context Grid Info */}
@@ -293,14 +338,21 @@ export default function Navbar() {
                     key={item.name}
                     initial={{ opacity: 0, x: -15 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.08 + (index + 1) * 0.04 }}
+                    transition={{
+                      delay: 0.08 + (index + 1) * 0.04,
+                    }}
                     className="flex flex-col border-b border-black/6 pb-3"
                   >
                     <span
-                      className={`text-[7px] font-mono font-bold tracking-normal mb-1 ${isActive ? "text-[#FF0000]" : "text-black/35"}`}
+                      className={`text-[7px] font-mono font-bold tracking-normal mb-1 ${
+                        isActive
+                          ? "text-[#FF0000]"
+                          : "text-black/35"
+                      }`}
                     >
                       {item.meta}
                     </span>
+
                     <Link
                       href={item.href}
                       onClick={() => setIsOpen(false)}
