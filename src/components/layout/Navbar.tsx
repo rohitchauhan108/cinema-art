@@ -60,9 +60,9 @@ export default function Navbar() {
 
   const navItems = [
     { name: "CAMERAS", href: "/products", meta: "F/1.8" },
-    { name: "LENSES", href: "/lens", meta: "V/1.9" },
-    { name: "ABOUT US", href: "/about", meta: "TV 1/250s" },
-    { name: "ACCESSORIES", href: "/accessories", meta: "AV F/1.2" },
+    // { name: "LENSES", href: "/lens", meta: "V/1.9" },
+    // { name: "ABOUT US", href: "/about", meta: "TV 1/250s" },
+    // { name: "ACCESSORIES", href: "/accessories", meta: "AV F/1.2" },
     {
       name: "PRINTING",
       href: "/photo-printing",
@@ -86,6 +86,7 @@ export default function Navbar() {
       ],
     },
     { name: "CONTACT", href: "/contact", meta: "LENS 50mm" },
+    { name: "New-Page", href: "/camera-icons",},
   ];
 
   return (
