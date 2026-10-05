@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { MapPin, Award } from "lucide-react";
 
 export default function Footer() {

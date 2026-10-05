@@ -38,7 +38,7 @@ const categories = [
   },
 ];
 
-export default function lensPage() {
+export default function LensPage() {
   const [activeCategory, setActiveCategory] = useState("All Lenses");
   const [activeBrand, setActiveBrand] = useState("");
   const [searchQuery, setSearchQuery] = useState("");

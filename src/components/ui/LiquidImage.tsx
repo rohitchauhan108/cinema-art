@@ -43,7 +43,7 @@ function LiquidPlane({ imgUrl }: { imgUrl: string }) {
   const [hovered, setHover] = useState(false);
 
   // Calculate aspect ratio 
-  const img = texture.image as any;
+  const img = texture.image as HTMLImageElement | null;
   const aspect = img ? img.width / img.height : 1;
 
   // Use useMemo to avoid recreating uniforms 

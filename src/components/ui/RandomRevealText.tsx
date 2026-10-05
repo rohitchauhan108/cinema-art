@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&*";
 

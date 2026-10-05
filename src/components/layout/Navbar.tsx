@@ -26,12 +26,10 @@ export default function Navbar() {
     damping: 20,
   });
   const dynamicFPS = useTransform(smoothedVelocity, [0, 3000], [24, 120]);
-  const [fpsReadout, setFpsReadout] = useState(24);
 
   useEffect(() => {
-    return dynamicFPS.on("change", (latest) => {
-      const calculatedFps = Math.min(120, Math.max(24, Math.round(latest)));
-      setFpsReadout(calculatedFps);
+    return dynamicFPS.on("change", () => {
+      // Dynamic FPS readout (used by commented-out HUD)
     });
   }, [dynamicFPS]);
 
@@ -208,7 +206,7 @@ export default function Navbar() {
                   {/* Dropdown */}
                   {item.submenu && (
                     <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 min-w-64 rounded-xl bg-white shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-out z-50 p-1.5 overflow-hidden">
-                      {item.submenu.map((subItem, index) => (
+                      {item.submenu.map((subItem) => (
                         <Link
                           key={subItem.name}
                           href={subItem.href}

@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { desc, img } from "framer-motion/client";
 import React, { useEffect, useState } from "react";
 
 const slides = [

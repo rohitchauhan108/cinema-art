@@ -1,13 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Award, CheckCircle, ShieldCheck } from "lucide-react";
-
-const certificates = [
-  { title: "Fujifilm Premium Partner", desc: "Authorized dealer for X-Series & GFX systems", icon: Award },
-  { title: "Sony Pro Dealer", desc: "Certified for Alpha series and Cinema Line", icon: ShieldCheck },
-  { title: "Canon Master Reseller", desc: "Highest tier partner for EOS cameras and lenses", icon: CheckCircle },
-];
 
 export default function AuthorizedCertificates() {
   return (

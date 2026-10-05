@@ -169,7 +169,7 @@ export default function BrandShowcase() {
             Authorized Brands
           </motion.h2>
           <p className="font-space mt-3 text-gray-400 max-w-2xl text-xs md:text-sm">
-            Partnering with the industry's leading manufacturers to bring you original, premium equipment.
+            Partnering with the industry&apos;s leading manufacturers to bring you original, premium equipment.
           </p>
         </motion.div>
 
