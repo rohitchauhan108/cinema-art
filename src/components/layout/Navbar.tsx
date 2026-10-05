@@ -59,39 +59,16 @@ export default function Navbar() {
   );
 
   const navItems = [
-    { name: "CAMERAS", href: "/products", meta: "F/1.8" },
-    // { name: "LENSES", href: "/lens", meta: "V/1.9" },
-    // { name: "ABOUT US", href: "/about", meta: "TV 1/250s" },
-    // { name: "ACCESSORIES", href: "/accessories", meta: "AV F/1.2" },
-    {
-      name: "PRINTING",
-      href: "/photo-printing",
-      submenu: [
-        {
-          name: "Customised Photo Albums and Photo Books",
-          href: "/photo-printing",
-        },
-        {
-          name: "Photo Printing & Framing",
-          href: "/photo-printing",
-        },
-        {
-          name: "Passport photo service",
-          href: "/photo-printing",
-        },
-        {
-          name: "Canvas Printing & Framing",
-          href: "/photo-printing",
-        },
-      ],
-    },
+    { name: "Our Collection's", href: "/collections" },
     { name: "CONTACT", href: "/contact", meta: "LENS 50mm" },
-    { name: "New-Page", href: "/camera-icons",},
   ];
 
   return (
     <>
-      <div className="fixed left-0 right-0 top-0 z-150 flex w-full justify-center pointer-events-none" id="header">
+      <div
+        className="fixed left-0 right-0 top-0 z-150 flex w-full justify-center pointer-events-none"
+        id="header"
+      >
         <motion.nav
           layout
           style={{
@@ -144,7 +121,7 @@ export default function Navbar() {
               }`}
             >
               HOME
-              {(pathname === "/") && (
+              {pathname === "/" && (
                 <motion.span
                   layoutId="focusBracket"
                   transition={{
