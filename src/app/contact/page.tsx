@@ -15,19 +15,30 @@ import {
   ShieldCheck,
   Award,
   Navigation,
+  AlertTriangle,
 } from "lucide-react";
 
+const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
+const WEB3FORMS_ACCESS_KEY =
+  process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ||
+  "a061df5a-0e2b-4f4a-84e4-9c6b07720ce1";
+
+const DEFAULT_SUBJECT = "GENERAL STORE INQUIRY";
+const DEFAULT_FORM = {
+  name: "",
+  email: "",
+  phone: "",
+  subject: DEFAULT_SUBJECT,
+  message: "",
+};
+
 export default function CinemaArtContactApp() {
-  const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    subject: "General Inquiry",
-    message: "",
-  });
+  const [formState, setFormState] = useState(DEFAULT_FORM);
+  const [honeypot, setHoneypot] = useState("");
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>,
@@ -38,21 +49,54 @@ export default function CinemaArtContactApp() {
     }));
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    if (honeypot) return;
+
     setIsSubmitting(true);
-    // Simulate API submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-      setFormState({
-        name: "",
-        email: "",
-        phone: "",
-        subject: "General Inquiry",
-        message: "",
+    setSubmitError(null);
+
+    try {
+      const payload = {
+        access_key: WEB3FORMS_ACCESS_KEY,
+        from_name: "Cinema Art Studio — Website Contact Form",
+        subject: `[CINEMA ART] ${formState.subject || DEFAULT_SUBJECT}`,
+        reply_to: formState.email,
+        name: formState.name,
+        email: formState.email,
+        phone: formState.phone,
+        category: formState.subject,
+        message: formState.message,
+        redirect: "false",
+      };
+
+      const res = await fetch(WEB3FORMS_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
       });
-    }, 1200);
+
+      const data = await res.json();
+
+      if (!res.ok || !data.success) {
+        throw new Error(data.message || "Failed to dispatch the inquiry.");
+      }
+
+      setIsSubmitted(true);
+      setFormState(DEFAULT_FORM);
+    } catch (err) {
+      const msg =
+        err instanceof Error
+          ? err.message
+          : "Something went wrong while sending the message.";
+      setSubmitError(msg);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -81,14 +125,14 @@ export default function CinemaArtContactApp() {
               <p className="mb-4 font-space text-xs font-bold tracking-[0.24em] text-[#FF0000]">
                 CONTACT
               </p>
-              <h1 className="max-w-3xl text-4xl font-normal md:text-6xl tracking-tight">
-                Let&apos;s make
-                <span className="text-[#FF0000]"> a frame.</span>
+              <h1 className="max-w-3xl text-4xl font-normal md:text-6xl tracking-tight uppercase">
+                CONNECT WITH
+                <span className="text-[#FF0000]"> US</span>
               </h1>
-              <p className="mt-7 max-w-lg font-space text-sm leading-7 text-black/60 md:text-base">
-                Cameras, optics, professional lighting, and creators who breathe
-                visual storytelling. Drop by our flagship studio in Connaught
-                Place or talk to our experts.
+              <p className="mt-7 max-w-lg font-space text-sm leading-7 text-black/60 md:text-base uppercase">
+                CAMERAS, OPTICS, PROFESSIONAL LIGHTING, AND CREATORS WHO BREATHE
+                VISUAL STORYTELLING. DROP BY OUR FLAGSHIP STUDIO IN CONNAUGHT
+                PLACE OR TALK TO OUR EXPERTS.
               </p>
             </div>
 
@@ -146,66 +190,165 @@ export default function CinemaArtContactApp() {
         </motion.div>
       </section>
 
-      {/* Enhanced About Section */}
-      <section className="mx-auto max-w-7xl px-6 py-20 md:px-12 md:py-28 border-y border-black/15 bg-white/50">
-        <div className="grid gap-12 lg:grid-cols-12 lg:gap-16 items-center">
-          <div className="lg:col-span-5">
-            <span className="font-space text-xs font-bold tracking-[0.3em] text-[#FF0000]">
-              WHO WE ARE
-            </span>
-            <h2 className="mt-3 text-3xl md:text-4xl tracking-tight">
-              About <span className="text-[#FF0000]">Cinema Art</span>
+      {/* Redesigned About Section — Cinema / Film-Strip Theme */}
+      <section className="relative mx-auto max-w-7xl px-6 py-20 md:px-12 md:py-28 border-y border-black/15 overflow-hidden">
+        {/* Film perforation strip accents (top + bottom) */}
+        <div className="pointer-events-none absolute inset-x-0 top-0 flex justify-between px-14 py-1 text-black/10 md:px-28">
+          {Array.from({ length: 22 }).map((_, i) => (
+            <span key={`tp-${i}`} className="h-3 w-5 rounded-sm bg-current" />
+          ))}
+        </div>
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 flex justify-between px-14 py-1 text-black/10 md:px-28">
+          {Array.from({ length: 22 }).map((_, i) => (
+            <span key={`bp-${i}`} className="h-3 w-5 rounded-sm bg-current" />
+          ))}
+        </div>
+
+        <div className="relative grid gap-16 lg:grid-cols-12 lg:gap-20">
+          {/* Left Column — Heading + Narrative */}
+          <div className="lg:col-span-6">
+            {/* Eyebrow + Label */}
+         
+
+            <h2 className="font-syncopate text-4xl font-bold leading-[1.05] tracking-tight text-black md:text-6xl">
+              ABOUT
+              <br />
+              <span className="relative inline-block">
+                <span className="relative z-10 text-[#FF0000]">CINEMA ART</span>
+                <span className="absolute inset-x-0 bottom-2 z-0 h-3 bg-[#FF0000]/15" />
+              </span>
             </h2>
-            <p className="mt-6 font-space text-base leading-8 text-black/65">
-              Cinema Art is a leading authorized dealer for Nikon, Canon, Sony,
-              Fujifilm, Panasonic, DJI, RODE, Moza, Godox, and more, committed
-              to catering to all your photography and videography requirements.
+
+            {/* Divider with label */}
+            <div className="my-10 flex items-center gap-5">
+              <div className="flex items-center gap-2">
+                <span className="h-px w-10 bg-[#FF0000]" />
+                <span className="h-2 w-2 rotate-45 bg-[#FF0000]" />
+              </div>
+              <p className="font-mono text-[10px] font-bold tracking-[0.3em] text-black/50">
+                THE STORY BEHIND THE LENS
+              </p>
+            </div>
+
+            <p className="font-space text-lg leading-8 text-black/70 md:text-xl uppercase">
+              CINEMA ART IS A LEADING AUTHORIZED DEALER FOR <span className="font-semibold text-black">NIKON, CANON, SONY, FUJIFILM, PANASONIC, DJI, RODE, MOZA, GODOX</span>, AND MORE — COMMITTED TO CATERING TO ALL YOUR PHOTOGRAPHY AND VIDEOGRAPHY REQUIREMENTS UNDER ONE ROOF.
             </p>
-            <p className="mt-4 font-space text-base leading-8 text-black/65">
-              Our unwavering commitment to customer satisfaction through
-              superlative service and genuine guidance has made us the most
-              preferred camera and photo store in Dehradun.
+
+            <p className="mt-6 font-space text-lg leading-8 text-black/70 md:text-xl uppercase">
+              OUR UNWAVERING COMMITMENT TO CUSTOMER SATISFACTION THROUGH SUPERLATIVE SERVICE AND GENUINE GUIDANCE HAS MADE US THE MOST PREFERRED CAMERA AND PHOTO STORE IN <span className="font-semibold text-black">DEHRADUN & ACROSS UTTARAKHAND</span>.
             </p>
+
+           
           </div>
 
-          <div className="lg:col-span-7 grid gap-6 sm:grid-cols-2">
-            <div className="border border-black/10 bg-white p-6 shadow-sm">
-              <div className="mb-4 inline-block rounded bg-[#FF0000]/10 p-3 text-[#FF0000]">
-                <ShieldCheck className="h-6 w-6" />
+          {/* Right Column — Feature Cards + CTA */}
+          <div className="lg:col-span-6 space-y-5">
+            {/* Feature Card 01 */}
+            <div className="group relative overflow-hidden border border-black/10 bg-white p-7 shadow-[0_1px_0_rgba(0,0,0,0.04)] transition-all duration-300 hover:border-[#FF0000]/40 hover:shadow-[0_10px_40px_-12px_rgba(255,0,0,0.15)]">
+              {/* corner tick */}
+              <div className="absolute left-0 top-0 h-14 w-14 border-l-2 border-t-2 border-[#FF0000]/0 transition-colors duration-300 group-hover:border-[#FF0000]/60" />
+              <div className="absolute right-0 bottom-0 h-14 w-14 border-r-2 border-b-2 border-[#FF0000]/0 transition-colors duration-300 group-hover:border-[#FF0000]/60" />
+
+              <div className="flex gap-6">
+                <div className="shrink-0">
+                  <div className="relative flex h-16 w-16 items-center justify-center border border-black/10 bg-[#f1eee6] transition-colors duration-300 group-hover:bg-[#FF0000]/10 group-hover:border-[#FF0000]/30">
+                    {/* film reel decoration */}
+                    <div className="absolute -left-1.5 -top-1.5 grid grid-cols-2 gap-0.5 text-[#FF0000]/30">
+                      <span className="h-1.5 w-1.5 rounded-full bg-current" />
+                      <span className="h-1.5 w-1.5 rounded-full bg-current" />
+                      <span className="h-1.5 w-1.5 rounded-full bg-current" />
+                      <span className="h-1.5 w-1.5 rounded-full bg-current" />
+                    </div>
+                    <ShieldCheck className="h-7 w-7 text-[#FF0000] transition-transform duration-300 group-hover:scale-110" />
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <div className="mb-2 flex items-center gap-3">
+                    <span className="font-mono text-[9px] font-bold tracking-[0.3em] text-black/35">
+                      FEATURE · 01
+                    </span>
+                    <span className="h-px flex-1 bg-black/10" />
+                  </div>
+                  <h3 className="font-space text-xl font-bold uppercase tracking-wide text-[#111]">
+                    100% AUTHORIZED GEAR
+                  </h3>
+                  <p className="mt-2 font-space text-sm leading-7 text-black/60 md:text-base">
+                    OFFICIAL DEALER PARTNERSHIPS GUARANTEEING GENUINE MANUFACTURER WARRANTIES ON EVERY BODY, LENS, AND ACCESSORY — ZERO GREY MARKET, ZERO RISK.
+                  </p>
+                </div>
               </div>
-              <h3 className="font-space text-base font-bold text-[#111]">
-                100% Authorized Gear
-              </h3>
-              <p className="mt-2 font-space text-sm leading-6 text-black/60">
-                Official dealer partnerships guaranteeing genuine manufacturer
-                warranties on every body and lens.
-              </p>
             </div>
 
-            <div className="border border-black/10 bg-white p-6 shadow-sm">
-              <div className="mb-4 inline-block rounded bg-[#FF0000]/10 p-3 text-[#FF0000]">
-                <Award className="h-6 w-6" />
+            {/* Feature Card 02 */}
+            <div className="group relative overflow-hidden border border-black/10 bg-white p-7 shadow-[0_1px_0_rgba(0,0,0,0.04)] transition-all duration-300 hover:border-[#FF0000]/40 hover:shadow-[0_10px_40px_-12px_rgba(255,0,0,0.15)]">
+              <div className="absolute left-0 top-0 h-14 w-14 border-l-2 border-t-2 border-[#FF0000]/0 transition-colors duration-300 group-hover:border-[#FF0000]/60" />
+              <div className="absolute right-0 bottom-0 h-14 w-14 border-r-2 border-b-2 border-[#FF0000]/0 transition-colors duration-300 group-hover:border-[#FF0000]/60" />
+
+              <div className="flex gap-6">
+                <div className="shrink-0">
+                  <div className="relative flex h-16 w-16 items-center justify-center border border-black/10 bg-[#f1eee6] transition-colors duration-300 group-hover:bg-[#FF0000]/10 group-hover:border-[#FF0000]/30">
+                    <div className="absolute -left-1.5 -top-1.5 grid grid-cols-2 gap-0.5 text-[#FF0000]/30">
+                      <span className="h-1.5 w-1.5 rounded-full bg-current" />
+                      <span className="h-1.5 w-1.5 rounded-full bg-current" />
+                      <span className="h-1.5 w-1.5 rounded-full bg-current" />
+                      <span className="h-1.5 w-1.5 rounded-full bg-current" />
+                    </div>
+                    <Award className="h-7 w-7 text-[#FF0000] transition-transform duration-300 group-hover:scale-110" />
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <div className="mb-2 flex items-center gap-3">
+                    <span className="font-mono text-[9px] font-bold tracking-[0.3em] text-black/35">
+                      FEATURE · 02
+                    </span>
+                    <span className="h-px flex-1 bg-black/10" />
+                  </div>
+                  <h3 className="font-space text-xl font-bold uppercase tracking-wide text-[#111]">
+                    EXPERT CREATOR GUIDANCE
+                  </h3>
+                  <p className="mt-2 font-space text-sm leading-7 text-black/60 md:text-base">
+                    TAILORED ADVICE FROM WORKING PROFESSIONALS WHO UNDERSTAND LIGHTING, AUDIO, AND VISUAL WORKFLOWS — NOT SALESMEN, ACTUAL SHOOTERS.
+                  </p>
+                </div>
               </div>
-              <h3 className="font-space text-base font-bold text-[#111]">
-                Expert Creator Guidance
-              </h3>
-              <p className="mt-2 font-space text-sm leading-6 text-black/60">
-                Tailored advice from experienced professionals who understand
-                lighting, audio, and visual workflows.
-              </p>
             </div>
 
-            <div className="sm:col-span-2 border border-black/10 bg-white p-6 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
-              <div className="flex items-center gap-3 font-space text-xs font-bold tracking-[0.2em] text-black/70">
-                <Camera className="h-5 w-5 text-[#FF0000]" />
-                YOUR PREFERRED DESTINATION FOR CREator SHOPPING IN UTTARAKHAND
+            {/* Brand Strip / CTA Bar */}
+            <div className="relative overflow-hidden border border-black/10 bg-gradient-to-r from-[#171916] via-[#1c1f1b] to-[#171916] px-6 py-5 md:px-8 md:py-6">
+              {/* running marquee-dot pattern */}
+              <div aria-hidden className="pointer-events-none absolute inset-0 opacity-[0.08]" style={{
+                backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)',
+                backgroundSize: '12px 12px',
+              }} />
+
+              <div className="relative flex flex-col items-start justify-between gap-5 sm:flex-row sm:items-center">
+                <div className="flex items-center gap-4">
+                  <div className="relative flex h-12 w-12 shrink-0 items-center justify-center border border-[#FF0000]/50 bg-[#FF0000]/10">
+                    <Camera className="h-6 w-6 text-[#FF0000]" />
+                    {/* blinking rec corner */}
+                    <span className="absolute -right-1 -top-1 h-2.5 w-2.5 animate-ping rounded-full bg-[#FF0000] opacity-75" />
+                    <span className="absolute -right-1 -top-1 h-2.5 w-2.5 rounded-full bg-[#FF0000]" />
+                  </div>
+                  <div>
+                    <p className="font-mono text-[9px] font-bold tracking-[0.35em] text-white/50">
+                      UTTARAKHAND · FLAGSHIP
+                    </p>
+                    <p className="mt-1 font-space text-sm font-bold uppercase tracking-[0.22em] text-white md:text-base">
+                      #1 DESTINATION FOR CREATOR SHOPPING
+                    </p>
+                  </div>
+                </div>
+
+                <a
+                  href="tel:+919837243388"
+                  className="group relative shrink-0 overflow-hidden border border-[#FF0000] bg-[#FF0000] px-6 py-3 font-space text-xs font-bold tracking-[0.25em] text-white transition-all duration-300 hover:border-white hover:bg-transparent hover:text-white"
+                >
+                  <span className="relative z-10 flex items-center gap-2">
+                    VISIT TODAY
+                    <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                  </span>
+                </a>
               </div>
-              <a
-                href="tel:+919837243388"
-                className="shrink-0 rounded-sm bg-[#111] px-5 py-3 font-space text-xs font-bold tracking-widest text-white transition-colors hover:bg-[#FF0000]"
-              >
-                VISIT TODAY
-              </a>
             </div>
           </div>
         </div>
@@ -220,10 +363,10 @@ export default function CinemaArtContactApp() {
               <span className="font-space text-xs font-bold tracking-[0.3em] text-[#FF0000]">
                 INQUIRIES & ORDERS
               </span>
-              <h2 className="mt-2 text-3xl md:text-4xl">Send us a message</h2>
-              <p className="mt-2 font-space text-sm leading-6 text-black/60">
-                Looking for specific gear availability, lens rentals, or studio
-                setup? Let us know.
+              <h2 className="mt-2 text-3xl md:text-4xl uppercase tracking-tight">SEND US A MESSAGE</h2>
+              <p className="mt-2 font-space text-sm leading-6 text-black/60 uppercase">
+                LOOKING FOR SPECIFIC GEAR AVAILABILITY, LENS RENTALS, OR STUDIO
+                SETUP? LET US KNOW.
               </p>
             </div>
 
@@ -236,18 +379,18 @@ export default function CinemaArtContactApp() {
                 <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-emerald-700/10 text-emerald-700">
                   <CheckCircle2 className="w-8 h-8" />
                 </div>
-                <h3 className="mb-2 text-2xl font-bold text-[#111]">
-                  Message Dispatched!
+                <h3 className="mb-2 text-2xl font-bold uppercase tracking-wide text-[#111]">
+                  MESSAGE DISPATCHED!
                 </h3>
-                <p className="mx-auto mb-6 max-w-md font-space text-sm leading-6 text-black/60">
-                  Thank you for reaching out to Cinema Art. One of our camera
-                  specialists will get back to you shortly.
+                <p className="mx-auto mb-6 max-w-md font-space text-sm leading-6 text-black/60 uppercase">
+                  THANK YOU FOR REACHING OUT TO CINEMA ART. ONE OF OUR CAMERA
+                  SPECIALISTS WILL GET BACK TO YOU SHORTLY.
                 </p>
                 <button
                   onClick={() => setIsSubmitted(false)}
                   className="bg-[#171916] px-6 py-3 font-space text-xs uppercase tracking-widest text-white transition-colors hover:bg-[#30332f]"
                 >
-                  Send Another Inquiry
+                  SEND ANOTHER INQUIRY
                 </button>
               </motion.div>
             ) : (
@@ -268,8 +411,8 @@ export default function CinemaArtContactApp() {
                       value={formState.name}
                       onChange={handleChange}
                       autoComplete="name"
-                      placeholder="Your name"
-                      className="w-full rounded-sm border border-black/15 bg-background px-4 py-3 font-space text-sm text-[#111] transition-colors placeholder:text-black/35 focus:border-[#FF0000] focus:outline-none"
+                      placeholder="YOUR FULL NAME"
+                      className="w-full rounded-sm border border-black/15 bg-background px-4 py-3 font-space text-sm uppercase text-[#111] transition-colors placeholder:text-black/35 focus:border-[#FF0000] focus:outline-none"
                     />
                   </div>
                   <div>
@@ -287,7 +430,7 @@ export default function CinemaArtContactApp() {
                       value={formState.email}
                       onChange={handleChange}
                       autoComplete="email"
-                      placeholder="you@example.com"
+                      placeholder="YOU@EXAMPLE.COM"
                       className="w-full rounded-sm border border-black/15 bg-background px-4 py-3 font-space text-sm text-[#111] transition-colors placeholder:text-black/35 focus:border-[#FF0000] focus:outline-none"
                     />
                   </div>
@@ -310,7 +453,7 @@ export default function CinemaArtContactApp() {
                       onChange={handleChange}
                       autoComplete="tel"
                       placeholder="+91 98765 43210"
-                      className="w-full rounded-sm border border-black/15 bg-background px-4 py-3 font-space text-sm text-[#111] transition-colors placeholder:text-black/35 focus:border-[#FF0000] focus:outline-none"
+                      className="w-full rounded-sm border border-black/15 bg-background px-4 py-3 font-space text-sm uppercase text-[#111] transition-colors placeholder:text-black/35 focus:border-[#FF0000] focus:outline-none"
                     />
                   </div>
                   <div>
@@ -325,19 +468,19 @@ export default function CinemaArtContactApp() {
                       id="contact-subject"
                       value={formState.subject}
                       onChange={handleChange}
-                      className="w-full cursor-pointer rounded-sm border border-black/15 bg-background px-4 py-3 font-space text-sm text-[#111] transition-colors focus:border-[#FF0000] focus:outline-none"
+                      className="w-full cursor-pointer rounded-sm border border-black/15 bg-background px-4 py-3 font-space text-sm uppercase text-[#111] transition-colors focus:border-[#FF0000] focus:outline-none"
                     >
-                      <option value="General Inquiry">
-                        General Store Inquiry
+                      <option value="GENERAL STORE INQUIRY">
+                        GENERAL STORE INQUIRY
                       </option>
-                      <option value="Camera Purchase">
-                        Camera Body / Lens Purchase
+                      <option value="CAMERA BODY / LENS PURCHASE">
+                        CAMERA BODY / LENS PURCHASE
                       </option>
-                      <option value="Studio Lighting">
-                        Lighting & Audio Gear (Godox/Rode)
+                      <option value="LIGHTING & AUDIO GEAR (GODOX/RODE)">
+                        LIGHTING & AUDIO GEAR (GODOX/RODE)
                       </option>
-                      <option value="Maintenance & Support">
-                        Service & Repair Support
+                      <option value="SERVICE & REPAIR SUPPORT">
+                        SERVICE & REPAIR SUPPORT
                       </option>
                     </select>
                   </div>
@@ -357,10 +500,51 @@ export default function CinemaArtContactApp() {
                     id="contact-message"
                     value={formState.message}
                     onChange={handleChange}
-                    placeholder="Tell us what you're looking for (e.g. Sony FX3 availability, Fujifilm GFX lens testing)..."
-                    className="w-full resize-y rounded-sm border border-black/15 bg-background px-4 py-3 font-space text-sm text-[#111] transition-colors placeholder:text-black/35 focus:border-[#FF0000] focus:outline-none"
+                    placeholder="TELL US WHAT YOU'RE LOOKING FOR (E.G. SONY FX3 AVAILABILITY, FUJIFILM GFX LENS TESTING)..."
+                    className="w-full resize-y rounded-sm border border-black/15 bg-background px-4 py-3 font-space text-sm uppercase text-[#111] transition-colors placeholder:text-black/35 focus:border-[#FF0000] focus:outline-none"
                   ></textarea>
                 </div>
+
+                {/* Honeypot anti-spam trap — hidden from real users, bots fill this */}
+                <div className="hidden" aria-hidden="true">
+                  <label htmlFor="website-field-bot">
+                    DO NOT FILL THIS FIELD
+                  </label>
+                  <input
+                    id="website-field-bot"
+                    type="text"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    value={honeypot}
+                    onChange={(e) => setHoneypot(e.target.value)}
+                  />
+                </div>
+
+                {submitError && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="flex items-start gap-3 rounded-sm border border-[#FF0000]/40 bg-[#FF0000]/5 px-4 py-4"
+                  >
+                    <AlertTriangle className="mt-0.5 h-5 w-5 shrink-0 text-[#FF0000]" />
+                    <div className="flex-1">
+                      <p className="font-space text-xs font-bold uppercase tracking-widest text-[#FF0000]">
+                        DISPATCH FAILED
+                      </p>
+                      <p className="mt-1 font-space text-sm leading-6 text-black/70 uppercase">
+                        {submitError}
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => setSubmitError(null)}
+                      aria-label="Dismiss error"
+                      className="shrink-0 text-black/40 transition-colors hover:text-[#FF0000]"
+                    >
+                      ×
+                    </button>
+                  </motion.div>
+                )}
 
                 <button
                   type="submit"
@@ -387,7 +571,7 @@ export default function CinemaArtContactApp() {
             {/* Map Interactive Box */}
             <div className="overflow-hidden rounded-sm border border-black/10 bg-white shadow-sm">
               <div className="flex items-center justify-between border-b border-black/10 bg-[#f1eee6] px-6 py-4">
-                <span className="flex items-center gap-2 font-space text-xs font-bold tracking-widest text-[#FF0000]">
+                <span className="flex items-center gap-2 font-space text-xs font-bold tracking-widest uppercase text-[#FF0000]">
                   <Navigation className="w-3.5 h-3.5" /> CONNAUGHT PLACE,
                   DEHRADUN
                 </span>
@@ -403,13 +587,13 @@ export default function CinemaArtContactApp() {
               <div className="relative h-64 w-full bg-[#f1eee6]">
                 <iframe
                   title="Cinema Art Location Map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.025595511246!2d78.0321889!3d30.316495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDE4JzU5LjQiTiA3OMKwMDInMjUuOCJF!5e0!3m2!1sen!2sin!4v1650000000000!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52386.12523078901!2d77.99699898833008!3d30.30638219269644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929ec11e0fea3%3A0xc7bd3d977b410651!2sCINEMA%20ART%20STUDIO%20-%20DSLR%20Cameras%20%7C%20Photo%20Store%20%7C%20Photo%20Framing%20Store!5e1!3m2!1sen!2sin!4v1791271352093!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
+                  referrerPolicy="strict-origin-when-cross-origin"
                 ></iframe>
               </div>
             </div>
@@ -421,11 +605,11 @@ export default function CinemaArtContactApp() {
                   <Clock className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="font-space text-xs font-bold tracking-widest text-black/50">
+                  <h3 className="font-space text-xs font-bold tracking-widest text-black/50 uppercase">
                     STORE HOURS
                   </h3>
-                  <p className="text-lg font-bold text-[#111]">
-                    Open 7 Days a Week
+                  <p className="text-lg font-bold uppercase text-[#111]">
+                    OPEN 7 DAYS A WEEK
                   </p>
                 </div>
               </div>
