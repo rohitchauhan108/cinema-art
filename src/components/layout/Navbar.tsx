@@ -58,8 +58,8 @@ export default function Navbar() {
   const paddingX = useTransform(
     scrollY,
     [0, 120],
-    ["3rem", "1.25rem"],
-  ); // Slightly tighter on mobile scroll
+    ["1rem", "0.75rem"],
+  );
 
   const paddingY = useTransform(scrollY, [0, 120], ["1rem", "0.5rem"]);
 
@@ -120,26 +120,17 @@ export default function Navbar() {
           className="flex bg-white items-center pointer-events-auto text-black border-t-0 border-x-0"
         >
           {/* LEFT: Logo & Metadata Matrix */}
-          <div className="flex-1 flex items-center gap-4 select-none">
+          <div className="flex-1 flex items-center gap-2 select-none sm:gap-4">
             <Link
               href="/"
-              className="text-3xl font-bold tracking-widest hover:text-[#FF0000] transition-colors duration-300 uppercase"
+              className="text-xl font-bold tracking-widest hover:text-[#FF0000] transition-colors duration-300 uppercase sm:text-2xl md:text-3xl"
             >
               <h1>Cinema Art</h1>
             </Link>
-
-            {/* 
-            <div className="hidden lg:flex flex-col font-mono text-[9px] font-bold text-black/40 tracking-mono leading-none gap-1 border-l-2 border-black/20 pl-3">
-              <div>MODE: RAW</div>
-              <div className="text-black font-extrabold tabular-nums">
-                FPS: {fpsReadout}
-              </div>
-            </div>
-            */}
           </div>
 
           {/* DESKTOP CENTER MENU */}
-          <div className="flex-1 hidden md:flex gap-12 items-center justify-center text-xs font-medium tracking-[0.25em]">
+          <div className="flex-1 hidden md:flex gap-6 lg:gap-10 xl:gap-12 items-center justify-center text-[10px] md:text-xs font-medium tracking-[0.2em] lg:tracking-[0.25em]">
             <Link
               href="/"
               className={`transition-colors duration-300 font-medium relative ${
@@ -298,33 +289,42 @@ export default function Navbar() {
               duration: 0.45,
               ease: [0.76, 0, 0.24, 1],
             }}
-            className="fixed inset-0 z-140 flex flex-col justify-center bg-white/95 backdrop-blur-xl px-10 text-black"
+            className="fixed inset-0 z-140 flex flex-col justify-center bg-white/95 backdrop-blur-xl px-6 sm:px-10 text-black"
           >
             {/* Context Grid Info */}
-            <div className="absolute inset-6 border border-black/4 pointer-events-none flex justify-between items-end p-3 font-mono text-[8px] text-black/30">
+            <div className="absolute inset-4 sm:inset-6 border border-black/4 pointer-events-none flex justify-between items-end p-2 sm:p-3 font-mono text-[7px] sm:text-[8px] text-black/30">
               <span>MATRIX_DISP</span>
               <span>SYS_OK</span>
             </div>
 
             {/* Scaled-down list components */}
-            <div className="flex flex-col gap-6 text-sm font-semibold tracking-[0.2em] max-w-xs">
+            <div className="flex flex-col gap-5 sm:gap-6 text-sm font-semibold tracking-[0.2em] max-w-xs">
               {/* Home Link Frame */}
               <motion.div
                 initial={{ opacity: 0, x: -15 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.08 }}
               >
-                <Link
-                  href="/"
-                  onClick={() => setIsOpen(false)}
-                  className={`font-caveat text-4xl lowercase tracking-normal block leading-none pb-2 transition-colors ${
-                    isHomeActive
-                      ? "text-[#FF0000]"
-                      : "text-black/70 hover:text-[#FF0000]"
-                  }`}
-                >
-                  home
-                </Link>
+                <div className="flex flex-col border-b border-black/6 pb-3">
+                  <span
+                    className={`text-[7px] font-mono font-bold tracking-normal mb-1 ${
+                      isHomeActive ? "text-[#FF0000]" : "text-black/35"
+                    }`}
+                  >
+                    HOME
+                  </span>
+                  <Link
+                    href="/"
+                    onClick={() => setIsOpen(false)}
+                    className={`transition-colors duration-200 text-xs tracking-[0.25em] font-semibold ${
+                      isHomeActive
+                        ? "text-[#FF0000]"
+                        : "text-black/80 hover:text-black"
+                    }`}
+                  >
+                    HOME
+                  </Link>
+                </div>
               </motion.div>
 
               {/* Other Options - Compact Font Sizing */}
