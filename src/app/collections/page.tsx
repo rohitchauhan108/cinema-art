@@ -102,8 +102,8 @@ export default function Page() {
                 <span className="inline-block h-2 w-2 rounded-full bg-emerald-600" />
                 <p className="font-space text-xs uppercase tracking-widest text-black/65">Catalog Index / Gear Series</p>
               </div>
-              <h1 className="text-4xl font-light tracking-tight md:text-6xl capitalize">
-                {activeCategory === 'all' ? 'Our Collection' : `${activeCategory} Collection`}
+              <h1 className="text-4xl font-light tracking-tight md:text-6xl uppercase">
+                {activeCategory === 'all' ? 'OUR COLLECTION' : `${activeCategory} COLLECTION`}
               </h1>
             </div>
 
@@ -139,7 +139,7 @@ export default function Page() {
                   />
                 )}
               </div>
-              <span className="mt-2 text-sm font-medium tracking-wide">Cameras</span>
+              <span className="mt-2 text-sm font-medium tracking-wide uppercase">CAMERAS</span>
             </div>
 
             {/* Lenses Card */}
@@ -162,7 +162,7 @@ export default function Page() {
                   />
                 )}
               </div>
-              <span className="mt-2 text-sm font-medium tracking-wide">Lenses</span>
+              <span className="mt-2 text-sm font-medium tracking-wide uppercase">LENSES</span>
             </div>
 
             {/* Accessories Card */}
@@ -185,7 +185,7 @@ export default function Page() {
                   />
                 )}
               </div>
-              <span className="mt-2 text-sm font-medium tracking-wide">Accessories</span>
+              <span className="mt-2 text-sm font-medium tracking-wide uppercase">ACCESSORIES</span>
             </div>
 
           </div>
