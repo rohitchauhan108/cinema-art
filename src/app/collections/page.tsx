@@ -211,11 +211,11 @@ export default function Page() {
                   className="object-contain transition-transform duration-500 group-hover:scale-105 hover:-rotate-5"
                 />
               </div>
-              {item.name && (
+              {/* {item.name && (
                 <div className="mt-2 text-center">
                   <p className="text-sm font-medium text-black/80">{item.name}</p>
                 </div>
-              )}
+              )} */}
             </div>
           ))}
         </section>
