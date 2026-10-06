@@ -13,22 +13,22 @@ function PrintingServices() {
       id: 2,
       title: "Photo Engagements",
       description: "Professional offset printing for large-scale projects and marketing materials.",
-      image1: "/printservice/1.webp",
-      image2: "/printservice/1.1.webp",
+      image1: "/printservice/2.webp",
+      image2: "/printservice/2.2.webp",
     },
     {
       id: 3,
       title: "Canva's Printing",
       description: "High-quality digital printing services for various materials and formats.",
-      image1: "/printservice/1.webp",
-      image2: "/printservice/1.1.webp",
+      image1: "/printservice/3.webp",
+      image2: "/printservice/3.3.webp",
     },
     {
       id: 4,
       title: "Customised Photo Printing",
       description: "Professional offset printing for large-scale projects and marketing materials.",
-      image1: "/printservice/1.webp",
-      image2: "/printservice/1.1.webp",
+      image1: "/printservice/4.webp",
+      image2: "/printservice/4.4.webp",
     }
   ];
 
@@ -44,7 +44,7 @@ function PrintingServices() {
               key={service.id} 
               className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col w-full md:w-1/4 group cursor-pointer border border-gray-100"
             >
-              {/* Image Container with Fill-in Hover Animation */}
+              {/* Image Container with Center Circle Reveal Animation */}
               <div className="relative h-48 w-full overflow-hidden bg-gray-200">
                 {/* Default Image (image2) */}
                 <img 
@@ -53,8 +53,8 @@ function PrintingServices() {
                   className="absolute inset-0 w-full h-full object-cover"
                 />
                 
-                {/* Hover Image (image1) with a smooth fill/wipe effect from left to right */}
-                <div className="absolute inset-0 w-full h-full overflow-hidden [clip-path:inset(0_100%_0_0)] group-hover:[clip-path:inset(0_0%_0_0)] transition-all duration-1000 ease-in-out">
+                {/* Hover Image (image1) with a smooth circular expansion from the center */}
+                <div className="absolute inset-0 w-full h-full overflow-hidden [clip-path:circle(0%_at_50%_50%)] group-hover:[clip-path:circle(100%_at_50%_50%)] transition-all duration-2000 ease-in-out">
                   <img 
                     src={service.image1} 
                     alt={`${service.title} hover`}
