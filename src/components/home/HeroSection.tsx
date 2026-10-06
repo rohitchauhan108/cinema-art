@@ -1,4 +1,5 @@
 import React from "react";
+import { FaCameraRetro } from "react-icons/fa";
 
 function HeroSection() {
   return (
@@ -13,7 +14,8 @@ function HeroSection() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 w-full py-16 lg:py-0">
           <div className="max-w-2xl text-left">
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-4 drop-shadow-md font-serif">
-              Capture. Create. Preserve.
+              <span>Capture. Create. Reserve.</span>
+              <FaCameraRetro className="inline-block ml-5 -rotate-10 text-4xl" />
             </h1>
             <p className="text-base sm:text-xl text-gray-200 font-light leading-relaxed mb-8 drop-shadow">
               Everything you need for photography — from professional cameras
