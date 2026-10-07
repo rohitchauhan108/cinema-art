@@ -16,14 +16,14 @@ function PrintingServices() {
     },
     {
       id: 2,
-      title: "Photo Engagements",
+      title: "Photo Enlargements",
       description: "Professional offset printing for large-scale projects and marketing materials.",
       image1: "/printservice/2.webp",
       image2: "/printservice/2.2.webp",
     },
     {
       id: 3,
-      title: "Canva's Printing",
+      title: "Canvas Printing",
       description: "High-quality digital printing services for various materials and formats.",
       image1: "/printservice/3.webp",
       image2: "/printservice/3.3.webp",

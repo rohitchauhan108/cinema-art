@@ -1,41 +1,77 @@
-import React from "react";
-import { FaCameraRetro } from "react-icons/fa";
+"use client"
+import React, { useState, useEffect } from "react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 function HeroSection() {
-  return (
-    <div className="pt-20 lg:pt-25">
-      {" "}
-      {/* Replaced large margin with responsive padding */}
-      <section className="relative min-h-[85vh] lg:h-screen flex items-center bg-[url('/hero-img.webp')] bg-cover bg-[center_20%] bg-no-repeat">
-        {/* Dark gradient overlay */}
-        <div className="absolute inset-0 bg-black/70"></div>
+  const slides = [
+    {
+      img: "1.webp",
+    },
+    {
+      img: "/2.webp",
+    },
+    {
+      img: "3.webp",
+    }
+  ];
 
-        {/* Content Container */}
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 w-full py-16 lg:py-0">
-          <div className="max-w-2xl text-left">
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-4 drop-shadow-md font-serif">
-              <span>Capture. Create. Reserve.</span>
-              <FaCameraRetro className="inline-block ml-5 -rotate-10 text-4xl" />
-            </h1>
-            <p className="text-base sm:text-xl text-gray-200 font-light leading-relaxed mb-8 drop-shadow">
-              Everything you need for photography — from professional cameras
-              and lenses to essential accessories, vibrant color printing, and
-              beautiful photo framing.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a href="/collections">
-                <button className="bg-white cursor-pointer text-black font-medium px-8 py-3 rounded-full hover:bg-gray-100 transition shadow-lg text-center">
-                  Explore Collection
-                </button>
-              </a>
-              <a href="/contact">
-                <button className="border border-white/80 text-white cursor-pointer font-medium px-8 py-3 rounded-full hover:bg-white/10 transition backdrop-blur-sm text-center">
-                  Contact Us
-                </button>
-              </a>
-            </div>
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex === slides.length - 1 ? 0 : prevIndex + 1));
+    }, 5000);
+    return () => clearInterval(timer);
+  }, [slides.length]);
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? slides.length - 1 : prevIndex - 1));
+  };
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === slides.length - 1 ? 0 : prevIndex + 1));
+  };
+
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
+  };
+
+  return (
+    <div className="pt-20 lg:pt-20 w-full font-sans">
+      <section className="relative min-h-[490px] lg:h-screen flex items-center justify-center overflow-hidden bg-gray-900 shadow-xl">
+        
+        {/* Background Slides with Fade Transition */}
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out ${
+              index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+            }`}
+            style={{ backgroundImage: `url(${slide.img})` }}
+          >
+            {/* Dark Gradient Overlay for text readability */}
+            {/* <div className="absolute inset-0 bg-black/40" />  */}
           </div>
-        </div>
+        ))}
+
+        {/* Left Arrow */}
+        <button
+          onClick={prevSlide}
+          aria-label="Previous Slide"
+          className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-3 rounded-full bg-black/30 hover:bg-[#FF0000] cursor-pointer text-white backdrop-blur-sm border border-white/20 transition shadow-md focus:outline-none"
+        >
+          <FaChevronLeft className="w-5 h-5" />
+        </button>
+
+        {/* Right Arrow */}
+        <button
+          onClick={nextSlide}
+          aria-label="Next Slide"
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-3 rounded-full bg-black/30 hover:bg-[#FF0000] cursor-pointer text-white backdrop-blur-sm border border-white/20 transition shadow-md focus:outline-none"
+        >
+          <FaChevronRight className="w-5 h-5" />
+        </button>
+
       </section>
     </div>
   );

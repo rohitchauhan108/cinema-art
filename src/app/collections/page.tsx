@@ -1,8 +1,9 @@
 'use client'
 import React, { useState } from 'react'
 import Image from 'next/image'
+import { motion, useReducedMotion } from 'framer-motion'
 import { accessories, cameraIcons, lensIcons as lenses } from '@/data/collections'
-
+import { GiFlowerStar } from "react-icons/gi";
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 
@@ -37,8 +38,43 @@ const normalizeCatalog = <T extends { img?: string; name?: string }>(items: T[],
   })
 }
 
+// Cameras categories
+
+const camera_cat = [
+  "Mirrorless Cameras",
+  "Action Cameras",
+  "Point & Shoot Cameras",
+  "DSLR Cameras",
+  "Film Cameras",
+  "Instant Cameras"
+];
+
+// Lense categories 
+
+const lens_cat: string[] = [
+
+]
+
+// accessories categories
+
+const accessories_cat = [
+  "Battery",
+  "Charger",
+  "Lens Cap",
+  "Microphone",
+  "Tripod",
+  "Harddisk & SSD"
+]
+
+const categoryCatalog = [
+  { id: 'cameras', label: 'Cameras', categories: camera_cat },
+  { id: 'lenses', label: 'Lenses', categories: lens_cat },
+  { id: 'accessories', label: 'Accessories', categories: accessories_cat },
+] as const
+
 export default function Page() {
   const [activeCategory, setActiveCategory] = useState<'all' | 'cameras' | 'lenses' | 'accessories'>('all')
+  const reducedMotion = useReducedMotion()
 
   const playClickSound = () => {
     try {
@@ -82,6 +118,9 @@ export default function Page() {
   }
 
   const currentItems = getCurrentData()
+  const activeCategoryGroup = activeCategory === 'all'
+    ? undefined
+    : categoryCatalog.find((group) => group.id === activeCategory)
 
   const handleCategoryChange = (category: 'all' | 'cameras' | 'lenses' | 'accessories') => {
     playClickSound()
@@ -191,6 +230,41 @@ export default function Page() {
           </div>
         </header>
 
+        {activeCategoryGroup && activeCategoryGroup.categories.length > 0 && (
+          <section
+            aria-label={`${activeCategoryGroup.label} subcategories`}
+            className={`mx-auto mb-8 max-w-7xl border-b border-black/15 pb-5 ${reducedMotion ? 'overflow-x-auto no-scrollbar' : 'overflow-hidden'}`}
+          >
+            <h2 className="mb-3 text-center font-space text-[15px] font-semibold uppercase tracking-widest text-black">
+              {activeCategoryGroup.label}
+            </h2>
+            <motion.div
+              className={`flex w-max ${reducedMotion ? 'mx-auto' : ''}`}
+              animate={reducedMotion ? { x: 0 } : { x: ['0%', '-50%'] }}
+              transition={{ ease: 'linear', duration: 18, repeat: Infinity }}
+            >
+              {Array.from({ length: reducedMotion ? 1 : 2 }, (_, repeatIndex) => (
+                <div
+                  key={`${activeCategoryGroup.id}-${repeatIndex}`}
+                  aria-hidden={repeatIndex > 0}
+                  className="shrink-0 px-4"
+                >
+                  <ul className="flex w-max flex-nowrap items-center justify-center gap-x-3 whitespace-nowrap">
+                    {activeCategoryGroup.categories.map((category, index) => (
+                      <li key={category} className="flex shrink-0 items-center gap-3">
+                        <span className="flex items-center gap-2 font-space text-lg font-semibold uppercase tracking-wide text-black/70"><GiFlowerStar className='text-[#FF0000]'/>{category}</span>
+                        {index < activeCategoryGroup.categories.length - 1 && (
+                          <span aria-hidden="true" className="text-black/25">/</span>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </motion.div>
+          </section>
+        )}
+
         <section
           aria-label="catalog grid"
           className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
@@ -211,11 +285,6 @@ export default function Page() {
                   className="object-contain transition-transform duration-500 group-hover:scale-105 hover:-rotate-5"
                 />
               </div>
-              {/* {item.name && (
-                <div className="mt-2 text-center">
-                  <p className="text-sm font-medium text-black/80">{item.name}</p>
-                </div>
-              )} */}
             </div>
           ))}
         </section>
