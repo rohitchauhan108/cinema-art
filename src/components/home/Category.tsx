@@ -174,7 +174,7 @@ function CategoryGallery({
         </h2>
       </div>
 
-      <div className="absolute inset-0 z-10 cursor-grab overflow-hidden active:cursor-grabbing">
+      <div className="inset-0 z-10 cursor-grab overflow-hidden active:cursor-grabbing">
         <div
           ref={trackRef}
           className="absolute left-0 top-0 h-full will-change-transform"
@@ -204,13 +204,13 @@ function CategoryGallery({
       </div>
 
       <div className="absolute inset-x-6 bottom-6 z-30 flex flex-col items-start justify-between gap-4 border-t border-zinc-300 pt-5 md:inset-x-12 md:bottom-12 md:flex-row md:items-end lg:inset-x-16 lg:bottom-16">
-        <div className="max-w-xs text-[11px] leading-relaxed tracking-wide text-zinc-500">
+        {/* <div className="max-w-xs text-[11px] leading-relaxed tracking-wide text-zinc-500">
           {category.images.length} pieces in this collection
         </div>
         <div className="flex items-center gap-6 text-[11px] uppercase tracking-[0.2em] text-zinc-500">
           <span>Scroll / Drag to explore</span>
           <span aria-hidden="true">&darr;</span>
-        </div>
+        </div> */}
       </div>
     </section>
   );
