@@ -42,7 +42,7 @@ function HeroSection() {
 
   return (
     <div className="pt-20 lg:pt-20 w-full font-sans">
-      <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-gray-900 shadow-xl">
+      <section className="relative h-[200px] lg:min-h-screen w-full flex items-center justify-center overflow-hidden bg-gray-900 shadow-xl">
         
         {/* Background Slides with Fade Transition */}
         {slides.map((slide, index) => (
