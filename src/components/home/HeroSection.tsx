@@ -50,7 +50,7 @@ function HeroSection() {
             style={{ backgroundImage: `url(${slide.img})` }}
           >
             {/* Dark Gradient Overlay for text readability */}
-            <div className="absolute inset-0 bg-black/40" /> 
+            {/* <div className="absolute inset-0 bg-black/40" />  */}
           </div>
         ))}
 

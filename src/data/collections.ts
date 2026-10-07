@@ -45,4 +45,6 @@ export const accessories = [
     { id: 38, name: 'Accessory 10', img: '/accessories-icons/11.png' },
     { id: 39, name: 'Accessory 11', img: '/accessories-icons/12.png' },
     { id: 40, name: 'Accessory 12', img: '/accessories-icons/13.png' },
+    { id: 41, name: 'Accessory 13', img: '/accessories-icons/14.png' },
+    { id: 42, name: 'Accessory 14', img: '/accessories-icons/15.png' },
 ]
