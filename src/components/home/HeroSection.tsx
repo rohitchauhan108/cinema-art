@@ -1,17 +1,21 @@
 "use client"
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 function HeroSection() {
   const slides = [
     {
-      img: "1.webp",
+      img: "/1.webp",
     },
     {
       img: "/2.webp",
     },
     {
-      img: "3.webp",
+      img: "/3.webp",
+    },
+    {
+      img: "/4.webp",
     }
   ];
 
@@ -20,7 +24,7 @@ function HeroSection() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex === slides.length - 1 ? 0 : prevIndex + 1));
-    }, 5000);
+    }, 10000);
     return () => clearInterval(timer);
   }, [slides.length]);
 
@@ -38,19 +42,24 @@ function HeroSection() {
 
   return (
     <div className="pt-20 lg:pt-20 w-full font-sans">
-      <section className="relative min-h-[490px] lg:h-screen flex items-center justify-center overflow-hidden bg-gray-900 shadow-xl">
+      <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-gray-900 shadow-xl">
         
         {/* Background Slides with Fade Transition */}
         {slides.map((slide, index) => (
           <div
             key={index}
-            className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out ${
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
               index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
             }`}
-            style={{ backgroundImage: `url(${slide.img})` }}
           >
-            {/* Dark Gradient Overlay for text readability */}
-            {/* <div className="absolute inset-0 bg-black/40" />  */}
+            <Image
+              src={slide.img}
+              alt={`Cinema Art hero slide ${index + 1}`}
+              fill
+              sizes="100vw"
+              preload={index === 0}
+              className="object-[cover 10px]"
+            />
           </div>
         ))}
 
