@@ -169,7 +169,7 @@ function CategoryGallery({
         <p className="mb-1 text-[10px] font-medium uppercase tracking-[0.3em] text-zinc-400 md:text-xs">
           Equipment collection
         </p>
-        <h2 className="text-xl font-normal italic leading-[0.9] text-zinc-900 sm:text-7xl md:text-3xl lg:text-5xl">
+        <h2 className="text-xl font-normal italic leading-[0.9] uppercase text-zinc-900 sm:text-7xl md:text-3xl lg:text-5xl">
           {category.title}
         </h2>
       </div>
