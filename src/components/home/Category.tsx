@@ -155,20 +155,20 @@ function CategoryGallery({
       id={category.id}
       className="relative h-svh min-h-155 w-full select-none overflow-hidden bg-zinc-50 p-6 text-zinc-900 md:p-12 lg:p-16"
     >
-      <header className="relative z-30 flex w-full items-center justify-between">
+      {/* <header className="relative z-30 flex w-full items-center justify-between">
         <div className="text-[11px] font-medium uppercase tracking-[0.25em] text-zinc-500">
           [ Equipment / 2026 ]
         </div>
         <div className="text-[11px] uppercase tracking-[0.25em] text-zinc-500">
           {String(categoryIndex + 1).padStart(2, "0")} / {String(categories.length).padStart(2, "0")}
         </div>
-      </header>
+      </header> */}
 
       {/* Title positioned at top-center */}
       <div className="pointer-events-none relative z-30 mx-auto mt-6 text-center max-w-5xl md:mt-8">
-        <p className="mb-1 text-[10px] font-medium uppercase tracking-[0.3em] text-zinc-400 md:text-xs">
+        {/* <p className="mb-1 text-[10px] font-medium uppercase tracking-[0.3em] text-zinc-400 md:text-xs">
           Equipment collection
-        </p>
+        </p> */}
         <h2 className="text-xl font-normal italic leading-[0.9] uppercase text-zinc-900 sm:text-7xl md:text-3xl lg:text-5xl">
           {category.title}
         </h2>
