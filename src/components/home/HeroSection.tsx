@@ -67,7 +67,7 @@ function HeroSection() {
         <button
           onClick={prevSlide}
           aria-label="Previous Slide"
-          className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-3 rounded-full bg-black/30 hover:bg-[#FF0000] cursor-pointer text-white backdrop-blur-sm border border-white/20 transition shadow-md focus:outline-none"
+          className="hidden lg:block absolute left-4 top-1/2 -translate-y-1/2 z-30 p-3 rounded-full bg-black/30 hover:bg-[#FF0000] cursor-pointer text-white backdrop-blur-sm border border-white/20 transition shadow-md focus:outline-none"
         >
           <FaChevronLeft className="w-5 h-5" />
         </button>
@@ -76,7 +76,7 @@ function HeroSection() {
         <button
           onClick={nextSlide}
           aria-label="Next Slide"
-          className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-3 rounded-full bg-black/30 hover:bg-[#FF0000] cursor-pointer text-white backdrop-blur-sm border border-white/20 transition shadow-md focus:outline-none"
+          className="hidden lg:block absolute right-4 top-1/2 -translate-y-1/2 z-30 p-3 rounded-full bg-black/30 hover:bg-[#FF0000] cursor-pointer text-white backdrop-blur-sm border border-white/20 transition shadow-md focus:outline-none"
         >
           <FaChevronRight className="w-5 h-5" />
         </button>

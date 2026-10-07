@@ -1,9 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import Image from 'next/image'
-import { motion, useReducedMotion } from 'framer-motion'
 import { accessories, cameraIcons, lensIcons as lenses } from '@/data/collections'
-import { GiFlowerStar } from "react-icons/gi";
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 
@@ -46,6 +44,7 @@ const camera_cat = [
   "Point & Shoot Cameras",
   "DSLR Cameras",
   "Film Cameras",
+  "Camcorders",
   "Instant Cameras"
 ];
 
@@ -58,6 +57,14 @@ const lens_cat: string[] = [
 // accessories categories
 
 const accessories_cat = [
+  "Tripods & Support",
+  "Bags & Roller Cases",
+  "Gimbals",
+  "Binoculars",
+  "Audio",
+  "Flash & Lights",
+  "Mobile Accessories",
+  "Open Box",
   "Battery",
   "Charger",
   "Lens Cap",
@@ -74,7 +81,6 @@ const categoryCatalog = [
 
 export default function Page() {
   const [activeCategory, setActiveCategory] = useState<'all' | 'cameras' | 'lenses' | 'accessories'>('all')
-  const reducedMotion = useReducedMotion()
 
   const playClickSound = () => {
     try {
@@ -233,35 +239,23 @@ export default function Page() {
         {activeCategoryGroup && activeCategoryGroup.categories.length > 0 && (
           <section
             aria-label={`${activeCategoryGroup.label} subcategories`}
-            className={`mx-auto mb-8 max-w-7xl border-b border-black/15 pb-5 ${reducedMotion ? 'overflow-x-auto no-scrollbar' : 'overflow-hidden'}`}
+            className="mx-auto mb-8 max-w-7xl border-b border-black/15 pb-5"
           >
             <h2 className="mb-3 text-center font-space text-[15px] font-semibold uppercase tracking-widest text-black">
               {activeCategoryGroup.label}
             </h2>
-            <motion.div
-              className={`flex w-max ${reducedMotion ? 'mx-auto' : ''}`}
-              animate={reducedMotion ? { x: 0 } : { x: ['0%', '-50%'] }}
-              transition={{ ease: 'linear', duration: 18, repeat: Infinity }}
-            >
-              {Array.from({ length: reducedMotion ? 1 : 2 }, (_, repeatIndex) => (
-                <div
-                  key={`${activeCategoryGroup.id}-${repeatIndex}`}
-                  aria-hidden={repeatIndex > 0}
-                  className="shrink-0 px-4"
-                >
-                  <ul className="flex w-max flex-nowrap items-center justify-center gap-x-3 whitespace-nowrap">
-                    {activeCategoryGroup.categories.map((category, index) => (
-                      <li key={category} className="flex shrink-0 items-center gap-3">
-                        <span className="flex items-center gap-2 font-space text-lg font-semibold uppercase tracking-wide text-black/70"><GiFlowerStar className='text-[#FF0000]'/>{category}</span>
-                        {index < activeCategoryGroup.categories.length - 1 && (
-                          <span aria-hidden="true" className="text-black/25">/</span>
-                        )}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+            <ul className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-center">
+              {activeCategoryGroup.categories.map((category, index) => (
+                <li key={category} className="flex items-center gap-3">
+                  <span className="font-space text-xs font-semibold uppercase tracking-wide text-black/70 sm:text-sm md:text-lg">
+                    {category}
+                  </span>
+                  {index < activeCategoryGroup.categories.length - 1 && (
+                    <span aria-hidden="true" className="text-[#ff0000]">/</span>
+                  )}
+                </li>
               ))}
-            </motion.div>
+            </ul>
           </section>
         )}
 
