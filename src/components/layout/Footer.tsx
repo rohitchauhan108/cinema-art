@@ -65,7 +65,7 @@ export default function Footer() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="font-space text-[10px] font-semibold tracking-[0.18em] text-white/60 uppercase transition-colors duration-300 hover:text-[#FF0000] sm:text-xs sm:tracking-[0.22em]"
+                className="font-space text-[10px] font-semibold tracking-[0.18em] text-white uppercase transition-colors duration-300 hover:text-[#FF0000] sm:text-xs sm:tracking-[0.22em]"
               >
                 {link.name}
               </Link>
@@ -77,21 +77,21 @@ export default function Footer() {
             <a
               href="https://www.instagram.com/"
               aria-label="Instagram"
-              className="flex h-8 w-8 items-center justify-center border border-white/10 text-white/55 transition-all duration-300 hover:border-[#FF0000]/60 hover:text-[#FF0000] sm:h-9 sm:w-9"
+              className="flex h-8 w-8 items-center justify-center border border-white/10 text-white/80 transition-all duration-300 hover:border-[#FF0000]/60 hover:text-[#FF0000] sm:h-9 sm:w-9"
             >
               <InstagramMark className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
             </a>
             <a
               href="https://www.facebook.com/"
               aria-label="Facebook"
-              className="flex h-8 w-8 items-center justify-center border border-white/10 text-white/55 transition-all duration-300 hover:border-[#FF0000]/60 hover:text-[#FF0000] sm:h-9 sm:w-9"
+              className="flex h-8 w-8 items-center justify-center border border-white/10 text-white/80 transition-all duration-300 hover:border-[#FF0000]/60 hover:text-[#FF0000] sm:h-9 sm:w-9"
             >
               <FacebookMark className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
             </a>
             <a
               href="https://www.google.co.in/maps/place/CINEMA+ART+STUDIO+-+DSLR+Cameras+%7C+Photo+Store+%7C+Photo+Framing+Store/@30.3264343,78.0336197,17z/data=!3m2!4b1!5s0x390929ec0e670c25:0x252633877a31e141!4m6!3m5!1s0x390929ec11e0fea3:0xc7bd3d977b410651!8m2!3d30.3264343!4d78.0361946!16s%2Fg%2F126300wmr?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D"
               aria-label="Google Maps"
-              className="flex h-8 w-8 items-center justify-center border border-white/10 text-white/55 transition-all duration-300 hover:border-[#FF0000]/60 hover:text-[#FF0000] sm:h-9 sm:w-9"
+              className="flex h-8 w-8 items-center justify-center border border-white/10 text-white/80 transition-all duration-300 hover:border-[#FF0000]/60 hover:text-[#FF0000] sm:h-9 sm:w-9"
             >
               <MapPin className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
             </a>
@@ -100,7 +100,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="mt-6 sm:mt-8 border-t border-white/5 pt-4 sm:pt-5 text-center">
-          <p className="font-mono text-[8px] font-bold uppercase tracking-[0.2em] text-white/35 sm:text-[9px] sm:tracking-[0.25em]">
+          <p className="font-mono text-[8px] font-bold uppercase tracking-[0.2em] text-white/80 sm:text-[10px] sm:tracking-[0.25em]">
             © 2026 CinemaArt Studio · All Rights Reserved
           </p>
         </div>

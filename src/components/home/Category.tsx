@@ -172,6 +172,7 @@ function CategoryGallery({
         <h2 className="text-xl font-normal italic leading-[0.9] uppercase text-zinc-900 sm:text-7xl md:text-3xl lg:text-5xl">
           {category.title}
         </h2>
+        <div aria-hidden="true" className="mx-auto mt-2 mb-10 h-0.5 w-36 bg-[#FF0000]"></div>
       </div>
 
       <div className="inset-0 z-10 cursor-grab overflow-hidden active:cursor-grabbing">
