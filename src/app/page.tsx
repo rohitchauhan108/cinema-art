@@ -10,7 +10,7 @@ import Category from "@/components/home/Category";
 export default function Home() {
   return (
     <main className="relative bg-background">
-      {/* <Loader /> */}
+      <Loader />
       <Navbar />
       <HeroSection/>
       <PrintingServices />

@@ -40,7 +40,7 @@ function Use() {
 
       {/* Section Header */}
       <div className="max-w-7xl mx-auto text-center mb-16 relative z-10">
-        <h2 className="text-3xl md:text-4xl font-black text-slate-900 uppercase tracking-tight">Where You Can Use These</h2>
+        <h2 className="text-xl font-normal italic leading-[0.9] uppercase text-zinc-900 sm:text-7xl md:text-3xl lg:text-5xl text-center">Where You Can Use These</h2>
         <div aria-hidden="true" className="mx-auto mt-2 mb-5 h-0.5 w-52 bg-[#FF0000]"></div>
         <p className="text-slate-500 mt-2 text-sm md:text-base">Explore the ideal setups for every creator style</p>
       </div>

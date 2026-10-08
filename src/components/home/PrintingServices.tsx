@@ -66,11 +66,11 @@ function PrintingServices() {
   return (
     <div className="w-full py-10 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl font-bold text-center mb-3 text-gray-800 uppercase">Our Printing Services</h2>
-        <div aria-hidden="true" className="mx-auto mt-2 mb-10 h-0.5 w-52 bg-[#FF0000]"></div>
+        <h2 className="text-xl font-normal italic leading-[0.9] uppercase text-zinc-900 sm:text-7xl md:text-3xl lg:text-5xl text-center pt-5">Our Printing Services </h2>
+        <div aria-hidden="true" className="mx-auto mt-2 mb-10 h-0.5 w-52 bg-[#FF0000] "></div>
         
         {/* Row container for all services */}
-        <div ref={servicesRef} className="flex flex-wrap md:flex-nowrap gap-6 justify-center">
+        <div ref={servicesRef} className="flex flex-wrap md:flex-nowrap gap-6 justify-center pt-5">
           {printingServices.map((service) => (
             <div 
               key={service.id} 
