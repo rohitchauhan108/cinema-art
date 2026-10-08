@@ -6,7 +6,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 function HeroSection() {
   const slides = [
     {
-      img: "/1.webp",
+      img: "/new-1.webp",
     },
     {
       img: "/2.webp",
